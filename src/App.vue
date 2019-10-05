@@ -1,20 +1,25 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+    <div id="recentProjects">
+      <div v-for="project of recentProjects">Some project</div>
+    </div>
+    <button @click="importProject">Import Project</button>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import HelloWorld from './components/HelloWorld.vue';
 
 @Component({
   components: {
-    HelloWorld,
   },
 })
-export default class App extends Vue {}
+export default class App extends Vue {
+  recentProjects: Array<string> = []
+  importProject() {
+
+  }
+}
 </script>
 
 <style lang="scss">
