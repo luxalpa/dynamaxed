@@ -5,7 +5,7 @@ import {
   Action,
   getModule
 } from "vuex-module-decorators";
-import store from "@/store";
+import { store } from "@/store";
 import { remote } from "electron";
 import { Dialog, ViewManager } from "@/modules/view-manager";
 

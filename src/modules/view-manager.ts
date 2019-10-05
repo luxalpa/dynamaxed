@@ -5,7 +5,7 @@ import {
   Action,
   getModule
 } from "vuex-module-decorators";
-import store from "@/store";
+import { store } from "@/store";
 import ImportDialog from "@/views/import-dialog";
 import { Component } from "vue";
 

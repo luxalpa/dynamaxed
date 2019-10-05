@@ -1,6 +1,7 @@
 "use strict";
 
 import { app, protocol, BrowserWindow } from "electron";
+import path from "path";
 import {
   createProtocol,
   installVueDevtools
@@ -78,6 +79,7 @@ app.on("ready", async () => {
     //   console.error('Vue Devtools failed to install:', e.toString())
     // }
   }
+
   createWindow();
 });
 

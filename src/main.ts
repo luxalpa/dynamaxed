@@ -1,5 +1,5 @@
 import Vue from "vue";
-import store from "./store";
+import { store } from "./store";
 import App from "@/app";
 
 import "./styles/_styles.scss";
@@ -10,3 +10,5 @@ new Vue({
   store,
   render: h => h(App)
 }).$mount("#app");
+
+console.log(store);
