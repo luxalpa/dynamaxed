@@ -1,21 +1,17 @@
 import { Component, Vue } from "vue-property-decorator";
 import Button from "@/components/button";
-import { ProjectManager } from "@/modules/project-manager";
 import { ViewManager } from "@/modules/view-manager";
-import ImportDialog from "@/views/import-dialog";
+import { ProjectManager } from "@/modules/project-manager";
+import { store } from "@/store";
 
 @Component({
   name: "App"
 })
 export default class App extends Vue {
-  created() {
-    console.log(ViewManager);
-  }
+  store = store;
 
   render(h: any) {
-    const CurrentDialog: any = ViewManager.currentDialog as any;
-    console.log(CurrentDialog);
-
+    const CurrentDialog: any = ViewManager.currentDialog;
     return (
       <div id="app">
         <div id="recentProjects">
@@ -39,9 +35,7 @@ export default class App extends Vue {
         </div>
         {ViewManager.showDialog && (
           <div id="dialog">
-            <div class="window">
-              <CurrentDialog />
-            </div>
+            <div class="window">{<CurrentDialog />}</div>
           </div>
         )}
 

@@ -1,26 +1,14 @@
-import {
-  Module,
-  VuexModule,
-  Mutation,
-  Action,
-  getModule
-} from "vuex-module-decorators";
-import { store } from "@/store";
 import ImportDialog from "@/views/import-dialog";
-import { Component } from "vue";
 
 export const enum Dialog {
   None,
   ImportProject
 }
 
-@Module({ name: "view-manager", dynamic: true, store })
-class ViewManagerModule extends VuexModule {
-  showDialog: boolean = false;
-  showFader: boolean = false;
-  private _currentDialog: Dialog = Dialog.None;
+export const ViewManager = new (class {
+  _currentDialog: Dialog = Dialog.None;
 
-  get currentDialog(): Component | undefined {
+  get currentDialog() {
     switch (this._currentDialog) {
       case Dialog.None:
         return undefined;
@@ -29,19 +17,19 @@ class ViewManagerModule extends VuexModule {
     }
   }
 
-  @Mutation
+  get showDialog(): boolean {
+    return this._currentDialog !== Dialog.None;
+  }
+
+  get showFader(): boolean {
+    return this._currentDialog !== Dialog.None;
+  }
+
   openDialog(dialog: Dialog) {
     this._currentDialog = dialog;
-    this.showFader = true;
-    this.showDialog = true;
   }
 
-  @Mutation
   closeDialog() {
-    this.showDialog = false;
-    this.showFader = false;
     this._currentDialog = Dialog.None;
   }
-}
-
-export const ViewManager = getModule(ViewManagerModule);
+})();

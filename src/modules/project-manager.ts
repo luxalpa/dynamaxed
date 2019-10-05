@@ -1,11 +1,3 @@
-import {
-  Module,
-  VuexModule,
-  Mutation,
-  Action,
-  getModule
-} from "vuex-module-decorators";
-import { store } from "@/store";
 import { remote } from "electron";
 import { Dialog, ViewManager } from "@/modules/view-manager";
 
@@ -24,13 +16,9 @@ const NoProject: IProjectInfo = {
   path: "<No Path>"
 };
 
-function getProjectInfo(path: string): IProjectInfo | undefined {
-  return;
-}
-
-@Module({ name: "project-manager", dynamic: true, store })
-class ProjectManagerModule extends VuexModule {
+export const ProjectManager = new (class {
   currentProject: IProjectInfo = NoProject;
+  counter = [0, 0, 1];
 
   recentProjects: Array<IRecentProject> = [
     {
@@ -39,7 +27,6 @@ class ProjectManagerModule extends VuexModule {
     }
   ];
 
-  @Action
   async importProject() {
     const { filePaths } = await remote.dialog.showOpenDialog({
       title: "Select folder",
@@ -50,6 +37,4 @@ class ProjectManagerModule extends VuexModule {
     }
     ViewManager.openDialog(Dialog.ImportProject);
   }
-}
-
-export const ProjectManager = getModule(ProjectManagerModule);
+})();
