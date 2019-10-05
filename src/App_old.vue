@@ -3,28 +3,29 @@
     <div id="recentProjects">
       <div v-for="project of recentProjects">Some project</div>
     </div>
-    <button @click="importProject">Import Project</button>
+    <Button @click="importProject">Import Project</Button>
   </div>
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
+import { Component, Vue } from "vue-property-decorator";
+import { ProjectManager } from "@/modules/project-manager";
 
 @Component({
-  components: {
-  },
+  components: {}
 })
 export default class App extends Vue {
-  recentProjects: Array<string> = []
-  importProject() {
-
+  get recentProjects() {
+    return ProjectManager.recentProjects;
   }
+  created() {}
+  importProject() {}
 }
 </script>
 
 <style lang="scss">
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
