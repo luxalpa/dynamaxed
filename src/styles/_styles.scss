@@ -1,0 +1,58 @@
+@import "dialog";
+
+#app {
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+  margin-top: 60px;
+  cursor: default;
+}
+
+#recentProjects {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3px;
+  border: 1px solid black;
+  &:hover {
+    background-color: #e0efff;
+  }
+
+  flex-direction: column;
+}
+
+.importbtn-wrapper {
+  height: 40px;
+  width: 200px;
+  padding: 6px;
+}
+
+.importbtn {
+  width: 100%;
+  text-align: center;
+}
+
+.importbtn-name, .importbtn-path {
+  font-size: 15px;
+  display: block;
+}
+
+.importbtn-name {
+}
+
+.importbtn-path {
+
+}
+
+.hidden {
+  display: none;
+}
