@@ -1,35 +1,33 @@
-import ImportDialog from "@/views/import-dialog";
+// import ImportDialog from "@/views/import-dialog";
+
+import ProjectSettingsView from "@/views/project-settings-view";
+import TrainersView from "@/views/trainers-view";
 
 export const enum Dialog {
   None,
-  ImportProject
+  ImportProject,
+  EditTrainer
 }
 
+export const Views = {
+  Project: ProjectSettingsView,
+  Trainers: TrainersView
+};
+
+export interface EditTrainerOptions {
+  trainerId: string;
+}
+
+type DialogOptions = EditTrainerOptions;
+
 export const ViewManager = new (class {
-  _currentDialog: Dialog = Dialog.None;
+  _activeView: keyof typeof Views = "Project";
 
-  get currentDialog() {
-    switch (this._currentDialog) {
-      case Dialog.None:
-        return undefined;
-      case Dialog.ImportProject:
-        return ImportDialog;
-    }
+  setActiveView(view: keyof typeof Views) {
+    this._activeView = view;
   }
 
-  get showDialog(): boolean {
-    return this._currentDialog !== Dialog.None;
-  }
-
-  get showFader(): boolean {
-    return this._currentDialog !== Dialog.None;
-  }
-
-  openDialog(dialog: Dialog) {
-    this._currentDialog = dialog;
-  }
-
-  closeDialog() {
-    this._currentDialog = Dialog.None;
+  get activeView() {
+    return Views[this._activeView];
   }
 })();

@@ -1,31 +1,48 @@
 import { remote } from "electron";
-import { Dialog, ViewManager } from "@/modules/view-manager";
+import { GameModel } from "@/model/model";
+import fs from "fs";
+import path from "path";
 
 export interface IRecentProject {
   name: string;
   path: string;
 }
 
-export interface IProjectInfo {
-  name: string;
-  path: string;
-}
-
-const NoProject: IProjectInfo = {
-  name: "<No Project>",
-  path: "<No Path>"
-};
+export const META_DIR = ".project-mewtwo";
 
 export const ProjectManager = new (class {
-  currentProject: IProjectInfo = NoProject;
-  counter = [0, 0, 1];
+  currentProjectPath: string = "";
+  get enableEditing(): boolean {
+    return this.currentProjectPath !== "";
+  }
 
-  recentProjects: Array<IRecentProject> = [
-    {
-      name: "Some Recent Project",
-      path: "/dev/null"
+  recentProjects: Array<IRecentProject> = [];
+
+  openProject(path: string) {
+    this.currentProjectPath = path;
+    this.loadProject();
+  }
+
+  loadProject() {
+    if (fs.existsSync(path.join(this.currentProjectPath, META_DIR))) {
+      try {
+        GameModel.Deserialize();
+      } catch (e) {
+        console.error(e);
+        GameModel.createFromDefaults(); // TODO: Tell the user that things are missing and only recreate the missing stuff.
+      }
+    } else {
+      GameModel.createFromDefaults();
     }
-  ];
+  }
+
+  closeProject() {
+    this.currentProjectPath = "";
+  }
+
+  removeRecentProject(project: IRecentProject) {
+    this.recentProjects = this.recentProjects.filter(v => v !== project);
+  }
 
   async importProject() {
     const { filePaths } = await remote.dialog.showOpenDialog({
@@ -35,6 +52,7 @@ export const ProjectManager = new (class {
     if (!filePaths || filePaths.length == 0) {
       return;
     }
-    ViewManager.openDialog(Dialog.ImportProject);
+
+    this.openProject(filePaths[0]);
   }
 })();

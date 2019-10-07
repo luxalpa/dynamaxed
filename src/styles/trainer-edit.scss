@@ -1,0 +1,19 @@
+.trainer-edit {
+  border: 1px solid $colorActive;
+  background-color: $colorPrimary;
+  padding: 5px;
+  margin: 3px 3px;
+  width: 350px;
+  height: 80px;
+  cursor: pointer;
+  &:hover {
+    background-color: $colorActive;
+  }
+}
+
+#trainer-table {
+  margin: 3px;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}

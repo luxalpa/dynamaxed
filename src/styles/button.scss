@@ -1,0 +1,60 @@
+.button {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3px;
+  border: 1px solid black;
+  &:hover {
+    background-color: $colorPrimary;
+  }
+  flex-direction: column;
+  width: 100px;
+  padding: 5px;
+}
+
+.importbtn-wrapper {
+  height: 40px;
+  width: 400px;
+  padding: 6px;
+  position: relative;
+}
+
+.importbtn {
+  width: 100%;
+  text-align: center;
+}
+
+.importbtn-name,
+.importbtn-path {
+  font-size: 15px;
+  display: block;
+}
+
+.importbtn-path {
+  font-size: 11px;
+  margin-top: 7px;
+}
+
+.importbtn-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.importbtn-close-text {
+  opacity: 0;
+  font-size: 15px;
+  &:hover {
+    opacity: 1 !important;
+  }
+}
+
+.importbtn-wrapper:hover .importbtn-close-text {
+  opacity: 0.5;
+}

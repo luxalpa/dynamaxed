@@ -1,0 +1,18 @@
+#navbar {
+  background-color: $colorActive;
+  max-width: 150px;
+  min-width: 150px;
+}
+
+.navbar-btn {
+  cursor: pointer;
+  padding: 5px;
+  color: white;
+  &:hover {
+    background-color: $colorNavHover;
+  }
+  &.active {
+    background-color: $colorNavHover;
+    box-shadow: 1px 1px 5px inset black;
+  }
+}
