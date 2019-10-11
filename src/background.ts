@@ -20,8 +20,8 @@ protocol.registerSchemesAsPrivileged([
 function createWindow() {
   // Create the browser window.
   win = new BrowserWindow({
-    width: 800,
-    height: 600,
+    width: 1200,
+    height: 700,
     frame: true,
     icon: "public/icon.ico",
     autoHideMenuBar: true,

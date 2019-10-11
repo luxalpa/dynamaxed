@@ -10,6 +10,16 @@ module.exports = {
       }
     }
   },
+  css: {
+    loaderOptions: {
+      sass: {
+        indentedSyntax: true
+      },
+      scss: {
+        indentedSyntax: true
+      }
+    }
+  },
   // transpileDependencies: [
   //   'vuex-module-decorators'
   // ]
