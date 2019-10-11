@@ -1,7 +1,7 @@
 import Vue from "vue";
 import App from "@/app";
 
-import "./styles/_styles.styl";
+import "./styles/_styles.scss";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faSave } from "@fortawesome/free-regular-svg-icons";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
