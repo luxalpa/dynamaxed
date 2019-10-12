@@ -18,9 +18,7 @@ const ChooseMoveDialogCmp = componentFactory.create({
   }
 });
 
-export const ChooseMoveDialog = Dialog({
+export const ChooseMoveDialog: DialogOptions<undefined, ChooseMoveResult> = {
   component: ChooseMoveDialogCmp,
-  maxWidth: 500,
-  returnType: (undefined as unknown) as ChooseMoveResult,
-  paramsType: undefined
-});
+  maxWidth: 500
+};
