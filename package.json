@@ -12,6 +12,8 @@
   },
   "main": "background.js",
   "dependencies": {
+    "@babel/polyfill": "^7.4.4",
+    "@fortawesome/fontawesome-free": "^5.8.2",
     "@fortawesome/fontawesome-svg-core": "^1.2.25",
     "@fortawesome/free-regular-svg-icons": "^5.11.2",
     "@fortawesome/free-solid-svg-icons": "^5.11.2",
@@ -21,13 +23,17 @@
     "core-js": "^2.6.5",
     "deepmerge": "^4.0.0",
     "lodash.clonedeep": "^4.5.0",
-    "node-sass": "^4.12.0",
     "normalize.css": "^8.0.1",
+    "roboto-fontface": "*",
+    "sass": "^1.23.0",
     "stylus": "^0.54.7",
     "stylus-loader": "^3.0.2",
+    "typeface-fira-sans": "^0.0.75",
     "vue": "^2.6.10",
     "vue-class-component": "^7.0.2",
     "vue-property-decorator": "^8.1.0",
+    "vue-tsx-support": "^2.3.2",
+    "vuetify": "^2.1.0",
     "vuex": "^3.0.1",
     "vuex-module-decorators": "^0.10.1",
     "vuex-persist": "^2.1.0"
@@ -42,6 +48,7 @@
     "sass-loader": "^7.1.0",
     "typescript": "^3.4.3",
     "vue-cli-plugin-electron-builder": "^1.4.0",
+    "vue-cli-plugin-vuetify": "^1.0.1",
     "vue-template-compiler": "^2.6.10"
   },
   "postcss": {
@@ -51,6 +58,7 @@
   },
   "browserslist": [
     "> 1%",
-    "last 2 versions"
+    "last 2 versions",
+    "not ie <= 10"
   ]
 }

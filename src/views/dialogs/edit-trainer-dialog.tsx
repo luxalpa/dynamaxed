@@ -6,6 +6,7 @@ import Button from "@/components/button";
 import { DialogManager } from "@/modules/dialog-manager";
 import cloneDeep from "lodash.clonedeep";
 import { ChooseMoveDialog } from "@/views/dialogs/choose-move-dialog";
+import { componentFactory } from "vue-tsx-support";
 
 export interface EditTrainerOptions {
   trainerId: string;
@@ -15,29 +16,35 @@ export interface EditTrainerResult {
   trainerId: string;
 }
 
-@Component({
-  name: "EditTrainerDialog",
-  props: ["params"]
-})
-export class EditTrainerDialog extends Vue {
-  trainer: Trainer = NoTrainer;
-  oldTrainerID: string = "";
-  trainerID: string = "";
+export const EditTrainerDialog = componentFactory.create({
+  props: {
+    params: {}
+  },
 
-  accept() {
-    if (this.oldTrainerID !== this.trainerID) {
-      delete GameModel.model.trainers[this.oldTrainerID];
+  data() {
+    return {
+      trainer: NoTrainer,
+      oldTrainerID: "",
+      trainerID: ""
+    };
+  },
+
+  methods: {
+    accept() {
+      if (this.oldTrainerID !== this.trainerID) {
+        delete GameModel.model.trainers[this.oldTrainerID];
+      }
+      GameModel.model.trainers[this.trainerID] = this.trainer;
+      DialogManager.accept();
     }
-    GameModel.model.trainers[this.trainerID] = this.trainer;
-    DialogManager.accept();
-  }
+  },
 
   created() {
     const options: EditTrainerOptions = this.$props.params;
     this.trainer = cloneDeep(GameModel.model.trainers[options.trainerId]);
     this.trainerID = options.trainerId;
     this.oldTrainerID = options.trainerId;
-  }
+  },
 
   render() {
     return (
@@ -81,4 +88,4 @@ export class EditTrainerDialog extends Vue {
       </div>
     );
   }
-}
+});

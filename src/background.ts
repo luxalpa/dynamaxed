@@ -26,7 +26,8 @@ function createWindow() {
     icon: "public/icon.ico",
     autoHideMenuBar: true,
     webPreferences: {
-      nodeIntegration: true
+      nodeIntegration: true,
+      webSecurity: false
     }
   });
 

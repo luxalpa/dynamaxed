@@ -7,22 +7,25 @@ import { ViewManager, Views } from "@/modules/view-manager";
 export default class Navbar extends Vue {
   render() {
     return (
-      <div id="navbar">
-        {Object.keys(Views).map(view => {
-          let classes = ["navbar-btn"];
-          if (ViewManager._activeView === view) {
-            classes.push("active");
-          }
-          return (
-            <div
-              class={classes}
-              onclick={() => ViewManager.setActiveView(view as any)}
-            >
-              {view}
-            </div>
-          );
-        })}
-      </div>
+      <v-navigation-drawer permanent clipped={true} app stateless width={200}>
+        <v-list dense>
+          {Object.keys(Views).map(view => {
+            if (ViewManager._activeView === view) {
+            }
+            return (
+              <v-list-item
+                key={view}
+                input-value={ViewManager._activeView === view}
+                onclick={() => ViewManager.setActiveView(view as any)}
+              >
+                <v-list-item-content>
+                  <v-list-item-title>{view}</v-list-item-title>
+                </v-list-item-content>
+              </v-list-item>
+            );
+          })}
+        </v-list>
+      </v-navigation-drawer>
     );
   }
 }

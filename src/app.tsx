@@ -3,7 +3,7 @@ import { ViewManager } from "@/modules/view-manager";
 import { ProjectManager } from "@/modules/project-manager";
 import { persistStore, store } from "@/store";
 import RecentProjectsView from "@/views/recent-projects-view";
-import MainView from "@/views/main-view";
+import { MainView } from "@/views/main-view";
 import { GameModel } from "@/model/model";
 import { DialogManager } from "@/modules/dialog-manager";
 
@@ -33,19 +33,19 @@ export default class App extends Vue {
     }
 
     return (
-      <div id="app">
+      <v-app id="app">
         {DialogManager.dialogs.map((d, index) => {
           const Dialog: any = d.component;
           return (
-            <div class="dialog" style={{ zIndex: index + 10 }}>
-              <div class="window">
+            <v-dialog value={true} oninput={() => DialogManager.reject()}>
+              <v-card>
                 <Dialog params={d.params} />
-              </div>
-            </div>
+              </v-card>
+            </v-dialog>
           );
         })}
         <CurView />
-      </div>
+      </v-app>
     );
   }
 }

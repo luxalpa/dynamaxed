@@ -1,19 +1,66 @@
-.trainer-edit {
-  border: 1px solid $colorActive;
-  background-color: $colorPrimary;
-  padding: 5px;
-  margin: 3px 3px;
-  width: 350px;
-  height: 80px;
-  cursor: pointer;
-  &:hover {
-    background-color: $colorActive;
-  }
+.trainer-grid {
+  @include grid(540px)
 }
 
-#trainer-table {
-  margin: 3px;
-  display: inline-flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+.trainer-id {
+  font-size: 10px;
+  position: absolute;
+  right: 20px;
+  opacity: .50;
+}
+
+.trainer-name {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 12px;
+  margin-top: 6px;
+}
+
+.trainer-class {
+  font-size: 10px;
+  opacity: .7;
+}
+
+.trainer-main {
+  height: 100%;
+  $width: 90px;
+  padding: 14px 0 0;
+  border-right: 1px solid rgba(0, 0, 0, .12);
+  width: $width;
+  max-width: $width;
+  text-align: center;
+  border-radius: 0;
+}
+
+.trainer-pic, .party-pic {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto;
+}
+
+.trainer-card {
+  height: 150px;
+}
+
+.party-pic {
+  overflow: hidden;
+
+}
+
+.trainer-party {
+  margin-top: 20px;
+}
+
+.trainer-party-mon {
+  margin: 0 5px;
+  text-align: center;
+}
+
+.party-name {
+  font-size: 12px;
+}
+
+.party-lvl {
+  font-size: 10px;
 }

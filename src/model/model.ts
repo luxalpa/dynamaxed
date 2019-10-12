@@ -35,6 +35,12 @@ export const NoTrainer: Trainer = {
   trainerPic: ""
 };
 
+export const NoTrainerPartyMon: TrainerPartyMon = {
+  species: "None",
+  lvl: 0,
+  iv: 0
+};
+
 enum TrainerPartyType {
   NoItemDefaultMoves,
   ItemDefaultMoves,
