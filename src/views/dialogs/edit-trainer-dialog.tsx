@@ -1,22 +1,20 @@
-import { Component, Vue } from "vue-property-decorator";
-import { EditTrainerOptions, ViewManager } from "@/modules/view-manager";
-import { GameModel, NoTrainer, Trainer } from "@/model/model";
+import { GameModel, NoTrainer } from "@/model/model";
 import { HTMLElementEvent } from "@/utils";
 import Button from "@/components/button";
-import { DialogManager } from "@/modules/dialog-manager";
+import { Dialog, DialogManager } from "@/modules/dialog-manager";
 import cloneDeep from "lodash.clonedeep";
 import { ChooseMoveDialog } from "@/views/dialogs/choose-move-dialog";
 import { componentFactory } from "vue-tsx-support";
 
-export interface EditTrainerOptions {
+interface EditTrainerOptions {
   trainerId: string;
 }
 
-export interface EditTrainerResult {
+type EditTrainerResult = {
   trainerId: string;
-}
+};
 
-export const EditTrainerDialog = componentFactory.create({
+const EditTrainerDialogCmp = componentFactory.create({
   props: {
     params: {}
   },
@@ -88,4 +86,11 @@ export const EditTrainerDialog = componentFactory.create({
       </div>
     );
   }
+});
+
+export const EditTrainerDialog = Dialog({
+  component: EditTrainerDialogCmp,
+  maxWidth: 500,
+  paramsType: (undefined as unknown) as EditTrainerOptions,
+  returnType: (undefined as unknown) as EditTrainerResult
 });

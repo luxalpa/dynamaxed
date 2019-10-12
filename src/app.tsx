@@ -35,7 +35,7 @@ export default class App extends Vue {
     return (
       <v-app id="app">
         {DialogManager.dialogs.map((d, index) => {
-          const Dialog: any = d.component;
+          const Dialog: any = d.dialogOpts.component;
           return (
             <v-dialog value={true} oninput={() => DialogManager.reject()}>
               <v-card>

@@ -1,20 +1,22 @@
-import { Component } from "vue";
-import {
-  EditTrainerDialog,
-  EditTrainerOptions,
-  EditTrainerResult
-} from "@/views/dialogs/edit-trainer-dialog";
-import {
-  ChooseMoveDialog,
-  ChooseMoveOptions,
-  ChooseMoveResult
-} from "@/views/dialogs/choose-move-dialog";
-
 interface ActiveDialog {
   resolve(params?: any): void;
   reject(result?: any): void;
-  component: Component;
+  dialogOpts: DialogOptions<any, any>;
   params: any;
+}
+
+export interface DialogOptions<T, U> {
+  maxWidth?: number;
+  component: any;
+  paramsType: T;
+  returnType: U;
+}
+
+export function Dialog<T, U>(opt: DialogOptions<T, U>): DialogOptions<T, U> {
+  return {
+    maxWidth: opt.maxWidth,
+    component: opt.component
+  } as DialogOptions<T, U>;
 }
 
 export const DialogManager = new (class {
@@ -36,18 +38,13 @@ export const DialogManager = new (class {
     d.reject();
   }
 
-  async openDialog(
-    component: typeof EditTrainerDialog,
-    params: EditTrainerOptions
-  ): Promise<EditTrainerResult>;
-  async openDialog(
-    component: typeof ChooseMoveDialog,
-    params: ChooseMoveOptions
-  ): Promise<ChooseMoveResult>;
-  async openDialog(component: any, params: any) {
+  async openDialog<T, U>(
+    dialogOpts: DialogOptions<T, U>,
+    params?: T
+  ): Promise<U> {
     return new Promise<any>((resolve, reject) => {
       this.dialogs.push({
-        component,
+        dialogOpts,
         params,
         reject,
         resolve

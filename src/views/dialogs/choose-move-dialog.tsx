@@ -1,15 +1,13 @@
 import { Component, Vue } from "vue-property-decorator";
 import Button from "@/components/button";
-import { DialogManager } from "@/modules/dialog-manager";
+import { Dialog, DialogManager, DialogOptions } from "@/modules/dialog-manager";
+import { componentFactory } from "vue-tsx-support";
 
-export type ChooseMoveOptions = void;
+type ChooseMoveOptions = void;
 
-export type ChooseMoveResult = string;
+type ChooseMoveResult = string;
 
-@Component({
-  name: "ChooseMoveDialog"
-})
-export class ChooseMoveDialog extends Vue {
+const ChooseMoveDialogCmp = componentFactory.create({
   render() {
     return (
       <div>
@@ -18,4 +16,11 @@ export class ChooseMoveDialog extends Vue {
       </div>
     );
   }
-}
+});
+
+export const ChooseMoveDialog = Dialog({
+  component: ChooseMoveDialogCmp,
+  maxWidth: 500,
+  returnType: (undefined as unknown) as ChooseMoveResult,
+  paramsType: undefined
+});
