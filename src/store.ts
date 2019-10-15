@@ -1,5 +1,8 @@
-import { Dialog, ViewManager } from "@/modules/view-manager";
+import { ViewManager } from "@/modules/view-manager";
 import { ProjectManager } from "@/modules/project-manager";
+import { DialogManager } from "@/modules/dialog-manager";
+import { EditTrainerDialog } from "@/views/dialogs/edit-trainer-dialog";
+import { EditFlagsDialog } from "@/views/dialogs/edit-flags-dialog";
 
 export const store: any = {
   ViewManager,
@@ -30,9 +33,9 @@ if (process.env.NODE_ENV !== "development") {
     "C:\\Users\\Smaug\\Desktop\\Pokemon\\pokeemerald\\"
   );
   ViewManager.setActiveView("Trainers");
-  // ViewManager.openDialog(Dialog.EditTrainer, {
-  //   trainerId: "GABBY_AND_TY_5"
-  // });
+  DialogManager.openDialog(EditTrainerDialog, {
+    trainerId: "RANDALL"
+  }).catch(() => {});
 }
 
 export function persistStore() {

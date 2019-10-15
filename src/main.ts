@@ -11,7 +11,8 @@ import "typeface-fira-sans";
 import "@fortawesome/fontawesome-free/css/all.css";
 
 Vue.config.productionTip = false;
-Vue.config.devtools = true;
+//Vue.config.devtools = true;
+
 
 library.add(faSave, faTimes);
 

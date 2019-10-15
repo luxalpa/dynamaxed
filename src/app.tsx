@@ -37,10 +37,14 @@ export default class App extends Vue {
         {DialogManager.dialogs.map((d, index) => {
           const Dialog: any = d.dialogOpts.component;
           return (
-            <v-dialog value={true} oninput={() => DialogManager.reject()}>
-              <v-card>
-                <Dialog params={d.params} />
-              </v-card>
+            <v-dialog
+              persistent={d.dialogOpts.modal}
+              value={d.vmodel}
+              key={d.id}
+              oninput={() => DialogManager.reject()}
+              max-width={d.dialogOpts.maxWidth}
+            >
+              <Dialog params={d.params} />
             </v-dialog>
           );
         })}

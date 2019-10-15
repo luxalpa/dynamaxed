@@ -3,30 +3,40 @@ interface ActiveDialog {
   reject(result?: any): void;
   dialogOpts: DialogOptions<any, any>;
   params: any;
+  vmodel: boolean;
+  id: number;
 }
 
-export interface DialogOptions<T, U> {
+export interface DialogOptions<Params, ReturnType> {
   maxWidth?: number;
   component: any;
+  modal?: boolean;
 }
 
 export const DialogManager = new (class {
+  private _autoIncDialogID = 0;
   dialogs: ActiveDialog[] = [];
 
   accept<T>(params?: T) {
-    const d = this.dialogs.pop();
-    if (!d) {
+    this.closeTopmostDialog().resolve(params);
+  }
+
+  private closeTopmostDialog(): ActiveDialog {
+    if (this.dialogs.length === 0) {
       throw new Error("No Dialogs to close!");
     }
-    d.resolve(params);
+
+    const d = this.dialogs[this.dialogs.length - 1];
+    d.vmodel = false;
+    setTimeout(() => {
+      let idx = this.dialogs.indexOf(d);
+      this.dialogs.splice(idx, 1);
+    }, 500);
+    return d;
   }
 
   reject() {
-    const d = this.dialogs.pop();
-    if (!d) {
-      throw new Error("No Dialogs to close!");
-    }
-    d.reject();
+    this.closeTopmostDialog().reject();
   }
 
   async openDialog<T, U>(
@@ -34,12 +44,20 @@ export const DialogManager = new (class {
     params?: T
   ): Promise<U> {
     return new Promise<any>((resolve, reject) => {
-      this.dialogs.push({
+      let d: ActiveDialog = {
         dialogOpts,
         params,
         reject,
-        resolve
-      });
+        resolve,
+        vmodel: false,
+        id: this._autoIncDialogID++
+      };
+
+      setTimeout(() => {
+        d.vmodel = true;
+      }, 1);
+
+      this.dialogs.push(d);
     });
   }
 })();

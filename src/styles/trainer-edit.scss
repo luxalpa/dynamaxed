@@ -2,6 +2,10 @@
   @include grid(540px)
 }
 
+.trainer-class-grid {
+  @include grid(140px)
+}
+
 .trainer-id {
   font-size: 10px;
   position: absolute;

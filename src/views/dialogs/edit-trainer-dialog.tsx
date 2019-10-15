@@ -1,10 +1,14 @@
-import { GameModel, NoTrainer } from "@/model/model";
-import { HTMLElementEvent } from "@/utils";
-import Button from "@/components/button";
-import { Dialog, DialogManager, DialogOptions } from "@/modules/dialog-manager";
+import {GameModel, NoTrainer, Trainer} from "@/model/model";
+import {DialogManager, DialogOptions} from "@/modules/dialog-manager";
 import cloneDeep from "lodash.clonedeep";
-import { ChooseMoveDialog } from "@/views/dialogs/choose-move-dialog";
-import { componentFactory } from "vue-tsx-support";
+import {modifiers} from "vue-tsx-support";
+import {PathManager} from "@/modules/path-manager";
+import {DialogEntry} from "@/components/dialog-entry";
+import Component from "vue-class-component";
+import {Vue} from "vue-property-decorator";
+import {EditFlagsDialog} from "@/views/dialogs/edit-flags-dialog";
+import {ChooseTrainerPicDialog} from "@/views/dialogs/choose-trainer-pic-dialog";
+import {ChooseTrainerClassDialog} from "@/views/dialogs/choose-trainer-class-dialog";
 
 interface EditTrainerOptions {
   trainerId: string;
@@ -14,84 +18,164 @@ type EditTrainerResult = {
   trainerId: string;
 };
 
-const EditTrainerDialogCmp = componentFactory.create({
-  props: {
-    params: {}
-  },
+@Component({
+  name: "EditTrainerDialog",
+  props: ["params"]
+})
+class EditTrainerDialogCmp extends Vue {
+  trainer: Trainer = NoTrainer;
+  oldTrainerID: string = "";
+  trainerID: string = "";
 
-  data() {
-    return {
-      trainer: NoTrainer,
-      oldTrainerID: "",
-      trainerID: ""
-    };
-  },
-
-  methods: {
-    accept() {
-      if (this.oldTrainerID !== this.trainerID) {
-        delete GameModel.model.trainers[this.oldTrainerID];
-      }
-      GameModel.model.trainers[this.trainerID] = this.trainer;
-      DialogManager.accept();
+  accept() {
+    if (this.oldTrainerID !== this.trainerID) {
+      delete GameModel.model.trainers[this.oldTrainerID];
     }
-  },
+    GameModel.model.trainers[this.trainerID] = this.trainer;
+    DialogManager.accept();
+  }
+
+  async editFlags() {
+    const flags = await DialogManager.openDialog(
+      EditFlagsDialog,
+      this.trainer.aiFlags
+    ).catch(() => {});
+    if (flags) {
+      this.trainer.aiFlags = flags;
+    }
+  }
+
+  async editTrainerClass() {
+    const trainerClass = await DialogManager.openDialog(ChooseTrainerClassDialog, this.trainer.trainerClass).catch(() => {})
+    if(trainerClass) {
+      this.trainer.trainerClass = trainerClass;
+    }
+  }
+
+  async editPic() {
+    const trainerPic = await DialogManager.openDialog(ChooseTrainerPicDialog, this.trainer.trainerPic).catch(() => {});
+    if(trainerPic) {
+      this.trainer.trainerPic = trainerPic;
+    }
+  }
+
+  get items() {
+    return this.trainer.items.filter(item => item !== "NONE");
+  }
+
+  get trainerClass() {
+    return GameModel.model.trainerClasses[this.trainer.trainerClass].name
+  }
 
   created() {
     const options: EditTrainerOptions = this.$props.params;
     this.trainer = cloneDeep(GameModel.model.trainers[options.trainerId]);
     this.trainerID = options.trainerId;
     this.oldTrainerID = options.trainerId;
-  },
+  }
 
   render() {
+    const trainerImgPath = PathManager.trainerPic(this.trainer.trainerPic);
+
     return (
-      <div>
-        <table>
-          <tr>
-            <td>ID</td>
-            <td>
-              <input value={this.trainerID} />
-            </td>
-          </tr>
-          <tr>
-            <td>Name</td>
-            <td>
-              <input
-                value={this.trainer.trainerName}
-                oninput={(event: HTMLElementEvent<HTMLInputElement>) => {
-                  this.trainer.trainerName = event.target.value;
-                }}
+      <v-card class="dialog">
+        <v-container>
+          <DialogEntry label="ID">
+            <v-text-field solo dense hide-details vModel={this.trainerID} />
+          </DialogEntry>
+          <DialogEntry label="Picture">
+            <v-btn height={80} onclick={() => {this.editPic()}}>
+              <v-img src={trainerImgPath} />
+            </v-btn>
+          </DialogEntry>
+          <DialogEntry label="Name">
+            <v-text-field
+              solo
+              dense
+              hide-details
+              vModel={this.trainer.trainerName}
+            />
+          </DialogEntry>
+          <DialogEntry label="Trainer Class">
+            <v-btn onclick={() => this.editTrainerClass()}>{this.trainerClass}</v-btn>
+          </DialogEntry>
+          <DialogEntry label="Encounter Music">
+            <v-text-field
+              solo
+              dense
+              hide-details
+              vModel={this.trainer.encounterMusic_gender}
+            />
+          </DialogEntry>
+          <v-row>
+            <v-col cols={4} class="dialog-label py-1" />
+            <v-col cols={4} class="py-1">
+              <v-checkbox
+                vModel={this.trainer.doubleBattle}
+                label={"Double Battle"}
+                dense
+                hide-details
+                class="my-3 mt-0"
               />
-            </td>
-          </tr>
-          <tr>
-            <td>Class</td>
-            <td>{this.trainer.trainerClass}</td>
-          </tr>
-          <tr>
-            <td>Picture</td>
-            <td>{this.trainer.trainerPic}</td>
-          </tr>
-        </table>
-        <Button
-          onclick={() =>
-            DialogManager.openDialog(ChooseMoveDialog).catch(() => {})
-          }
-        >
-          Select Move
-        </Button>
-        <Button onclick={() => this.accept()}>OK</Button>
-        <Button onclick={() => DialogManager.reject()}>Cancel</Button>
-      </div>
+            </v-col>
+            <v-col cols={4} class="py-1">
+              <v-checkbox
+                vModel={this.trainer.isFemaleEncounter}
+                label={"Female"}
+                dense
+                hide-details
+                class="my-3 mt-0"
+              />
+            </v-col>
+          </v-row>
+          <DialogEntry label="Items">
+            <v-list elevation={2} dense class="mb-5">
+              {this.items.map(item => (
+                <v-list-item
+                  onclick={() => {
+                    console.log("Clicked");
+                  }}
+                >
+                  <v-list-item-content>
+                    <v-list-item-title>{item}</v-list-item-title>
+                  </v-list-item-content>
+                  <v-list-item-action>
+                    <v-btn icon small onclick={modifiers.stop(() => {})}>
+                      <v-icon small>fas fa-times</v-icon>
+                    </v-btn>
+                  </v-list-item-action>
+                </v-list-item>
+              ))}
+              <v-list-item>
+                <v-list-item-content>
+                  <v-btn>Add Item</v-btn>
+                </v-list-item-content>
+              </v-list-item>
+            </v-list>
+          </DialogEntry>
+          <DialogEntry label="AI Flags">
+            <v-btn onclick={() => this.editFlags()}>Edit Flags</v-btn>
+          </DialogEntry>
+        </v-container>
+        <v-card-actions>
+          <v-btn text large onclick={() => DialogManager.reject()}>
+            Cancel
+          </v-btn>
+          <v-spacer />
+          <v-btn text large onclick={() => this.accept()}>
+            OK
+          </v-btn>
+        </v-card-actions>
+      </v-card>
     );
   }
-});
+}
 
 export const EditTrainerDialog: DialogOptions<
   EditTrainerOptions,
   EditTrainerResult
 > = {
   component: EditTrainerDialogCmp,
-  maxWidth: 500
+  maxWidth: 500,
+  modal: true
 };

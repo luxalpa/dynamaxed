@@ -1,0 +1,255 @@
+{
+  "PKMN_TRAINER_1": {
+    "name": "{PKMN} TRAINER"
+  },
+  "PKMN_TRAINER_2": {
+    "name": "{PKMN} TRAINER"
+  },
+  "HIKER": {
+    "name": "HIKER",
+    "money": 10
+  },
+  "TEAM_AQUA": {
+    "name": "TEAM AQUA",
+    "money": 5
+  },
+  "PKMN_BREEDER": {
+    "name": "{PKMN} BREEDER",
+    "money": 10
+  },
+  "COOLTRAINER": {
+    "name": "COOLTRAINER",
+    "money": 12
+  },
+  "BIRD_KEEPER": {
+    "name": "BIRD KEEPER",
+    "money": 8
+  },
+  "COLLECTOR": {
+    "name": "COLLECTOR",
+    "money": 15
+  },
+  "SWIMMER_M": {
+    "name": "SWIMMER♂",
+    "money": 2
+  },
+  "TEAM_MAGMA": {
+    "name": "TEAM MAGMA",
+    "money": 5
+  },
+  "EXPERT": {
+    "name": "EXPERT",
+    "money": 10
+  },
+  "AQUA_ADMIN": {
+    "name": "AQUA ADMIN",
+    "money": 10
+  },
+  "BLACK_BELT": {
+    "name": "BLACK BELT",
+    "money": 8
+  },
+  "AQUA_LEADER": {
+    "name": "AQUA LEADER",
+    "money": 20
+  },
+  "HEX_MANIAC": {
+    "name": "HEX MANIAC",
+    "money": 6
+  },
+  "AROMA_LADY": {
+    "name": "AROMA LADY",
+    "money": 10
+  },
+  "RUIN_MANIAC": {
+    "name": "RUIN MANIAC",
+    "money": 15
+  },
+  "INTERVIEWER": {
+    "name": "INTERVIEWER",
+    "money": 12
+  },
+  "TUBER_F": {
+    "name": "TUBER",
+    "money": 1
+  },
+  "TUBER_M": {
+    "name": "TUBER",
+    "money": 1
+  },
+  "LADY": {
+    "name": "LADY",
+    "money": 50
+  },
+  "BEAUTY": {
+    "name": "BEAUTY",
+    "money": 20
+  },
+  "RICH_BOY": {
+    "name": "RICH BOY",
+    "money": 50
+  },
+  "POKEMANIAC": {
+    "name": "POKéMANIAC",
+    "money": 15
+  },
+  "GUITARIST": {
+    "name": "GUITARIST",
+    "money": 8
+  },
+  "KINDLER": {
+    "name": "KINDLER",
+    "money": 8
+  },
+  "CAMPER": {
+    "name": "CAMPER",
+    "money": 4
+  },
+  "PICNICKER": {
+    "name": "PICNICKER",
+    "money": 4
+  },
+  "BUG_MANIAC": {
+    "name": "BUG MANIAC",
+    "money": 15
+  },
+  "PSYCHIC": {
+    "name": "PSYCHIC",
+    "money": 6
+  },
+  "GENTLEMAN": {
+    "name": "GENTLEMAN",
+    "money": 20
+  },
+  "ELITE_FOUR": {
+    "name": "ELITE FOUR",
+    "money": 25
+  },
+  "LEADER": {
+    "name": "LEADER",
+    "money": 25
+  },
+  "SCHOOL_KID": {
+    "name": "SCHOOL KID",
+    "money": 5
+  },
+  "SR_AND_JR": {
+    "name": "SR. AND JR.",
+    "money": 4
+  },
+  "WINSTRATE": {
+    "name": "WINSTRATE",
+    "money": 10
+  },
+  "POKEFAN": {
+    "name": "POKéFAN",
+    "money": 20
+  },
+  "YOUNGSTER": {
+    "name": "YOUNGSTER",
+    "money": 4
+  },
+  "CHAMPION": {
+    "name": "CHAMPION",
+    "money": 50
+  },
+  "FISHERMAN": {
+    "name": "FISHERMAN",
+    "money": 10
+  },
+  "TRIATHLETE": {
+    "name": "TRIATHLETE",
+    "money": 10
+  },
+  "DRAGON_TAMER": {
+    "name": "DRAGON TAMER",
+    "money": 12
+  },
+  "NINJA_BOY": {
+    "name": "NINJA BOY",
+    "money": 3
+  },
+  "BATTLE_GIRL": {
+    "name": "BATTLE GIRL",
+    "money": 6
+  },
+  "PARASOL_LADY": {
+    "name": "PARASOL LADY",
+    "money": 10
+  },
+  "SWIMMER_F": {
+    "name": "SWIMMER♀",
+    "money": 2
+  },
+  "TWINS": {
+    "name": "TWINS",
+    "money": 3
+  },
+  "SAILOR": {
+    "name": "SAILOR",
+    "money": 8
+  },
+  "COOLTRAINER_2": {
+    "name": "COOLTRAINER"
+  },
+  "MAGMA_ADMIN": {
+    "name": "MAGMA ADMIN",
+    "money": 10
+  },
+  "PKMN_TRAINER_3": {
+    "name": "{PKMN} TRAINER",
+    "money": 15
+  },
+  "BUG_CATCHER": {
+    "name": "BUG CATCHER",
+    "money": 4
+  },
+  "PKMN_RANGER": {
+    "name": "{PKMN} RANGER",
+    "money": 12
+  },
+  "MAGMA_LEADER": {
+    "name": "MAGMA LEADER",
+    "money": 20
+  },
+  "LASS": {
+    "name": "LASS",
+    "money": 4
+  },
+  "YOUNG_COUPLE": {
+    "name": "YOUNG COUPLE",
+    "money": 8
+  },
+  "OLD_COUPLE": {
+    "name": "OLD COUPLE",
+    "money": 10
+  },
+  "SIS_AND_BRO": {
+    "name": "SIS AND BRO",
+    "money": 3
+  },
+  "SALON_MAIDEN": {
+    "name": "SALON MAIDEN"
+  },
+  "DOME_ACE": {
+    "name": "DOME ACE"
+  },
+  "PALACE_MAVEN": {
+    "name": "PALACE MAVEN"
+  },
+  "ARENA_TYCOON": {
+    "name": "ARENA TYCOON"
+  },
+  "FACTORY_HEAD": {
+    "name": "FACTORY HEAD"
+  },
+  "PIKE_QUEEN": {
+    "name": "PIKE QUEEN"
+  },
+  "PYRAMID_KING": {
+    "name": "PYRAMID KING"
+  },
+  "RS_PROTAG": {
+    "name": "{PKMN} TRAINER"
+  }
+}

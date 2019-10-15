@@ -1,6 +1,5 @@
-import { Component, Vue } from "vue-property-decorator";
 import Button from "@/components/button";
-import { Dialog, DialogManager, DialogOptions } from "@/modules/dialog-manager";
+import { DialogManager, DialogOptions } from "@/modules/dialog-manager";
 import { componentFactory } from "vue-tsx-support";
 
 type ChooseMoveOptions = void;

@@ -1,10 +1,10 @@
 import { Component, Vue } from "vue-property-decorator";
 import { GameModel, NoTrainerPartyMon, Trainer } from "@/model/model";
-import { Dialog, ViewManager } from "@/modules/view-manager";
 import { DialogManager } from "@/modules/dialog-manager";
 import { EditTrainerDialog } from "@/views/dialogs/edit-trainer-dialog";
 import { ProjectManager } from "@/modules/project-manager";
 import path from "path";
+import {PathManager} from "@/modules/path-manager";
 
 @Component({
   name: "TrainersView"
@@ -22,15 +22,10 @@ export class TrainersView extends Vue {
             party.push(NoTrainerPartyMon);
           }
 
-          const pic = path.join(
-            ProjectManager.currentProjectPath,
-            "graphics/trainers/front_pics",
-            trainer.trainerPic.toLowerCase() + "_front_pic.png"
-          );
+          const pic = PathManager.trainerPic(trainer.trainerPic);
 
           return (
             <v-card
-              // class="trainer-edit"
               onclick={() => {
                 DialogManager.openDialog(EditTrainerDialog, {
                   trainerId: name
@@ -58,7 +53,7 @@ export class TrainersView extends Vue {
                   if (mon === NoTrainerPartyMon) {
                     return (
                       <div class="trainer-party-mon">
-                        <div class="party-pic"></div>
+                        <div class="party-pic" />
                       </div>
                     );
                   }
