@@ -3,7 +3,7 @@ export const AIFlags = [
   "TRY_TO_FAINT",
   "CHECK_VIABILITY",
   "SETUP_FIRST_TURN",
-  "RISKY",
+  "RISKY"
   // "PREFER_STRONGEST_MOVE",
   // "PREFER_BATON_PASS",
   // "DOUBLE_BATTLE",
@@ -104,6 +104,5 @@ export const TrainerPics = [
   "RED",
   "LEAF",
   "RS_BRENDAN",
-  "RS_MAY",
-
-]
+  "RS_MAY"
+];

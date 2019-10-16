@@ -4,7 +4,7 @@ import { DialogManager } from "@/modules/dialog-manager";
 import { EditTrainerDialog } from "@/views/dialogs/edit-trainer-dialog";
 import { ProjectManager } from "@/modules/project-manager";
 import path from "path";
-import {PathManager} from "@/modules/path-manager";
+import { PathManager } from "@/modules/path-manager";
 
 @Component({
   name: "TrainersView"

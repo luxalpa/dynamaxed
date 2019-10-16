@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
-import {ProjectManager} from "@/modules/project-manager";
-import {Trainer} from "@/model/model";
+import { ProjectManager } from "@/modules/project-manager";
+import { Trainer } from "@/model/model";
 
 enum TrainerPartyType {
   NoItemDefaultMoves,
@@ -69,7 +69,7 @@ function compileParty(t: Trainer): string {
       if (useMoves) {
         rows.push(
           "                .moves = " +
-          mon.moves!.map(name => "MOVE_" + name).join(", ")
+            mon.moves!.map(name => "MOVE_" + name).join(", ")
         );
       }
 
@@ -126,8 +126,7 @@ function createTrainersFile(trainers: Record<string, Trainer>) {
 
     // Party Flags
     const partyFlagsV = getPartyFlags(trainer);
-    const partyFlags =
-      partyFlagsV.length == 0 ? "0" : partyFlagsV.join(" | ");
+    const partyFlags = partyFlagsV.length == 0 ? "0" : partyFlagsV.join(" | ");
 
     // Encounter Music
     let encounterMusic =
@@ -176,10 +175,7 @@ function createTrainersFile(trainers: Record<string, Trainer>) {
 
   // We can't delete this file easily because it's still required by something else (src/data.c)
   fs.writeFileSync(
-    path.join(
-      ProjectManager.currentProjectPath,
-      "src/data/trainer_parties.h"
-    ),
+    path.join(ProjectManager.currentProjectPath, "src/data/trainer_parties.h"),
     "\n"
   );
 }

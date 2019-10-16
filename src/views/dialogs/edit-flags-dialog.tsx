@@ -1,7 +1,7 @@
-import {Component, Prop, Vue} from "vue-property-decorator";
-import {DialogManager, DialogOptions} from "@/modules/dialog-manager";
-import {modifiers} from "vue-tsx-support";
-import {AIFlags} from "@/model/constants";
+import { Component, Prop, Vue } from "vue-property-decorator";
+import { DialogManager, DialogOptions } from "@/modules/dialog-manager";
+import { modifiers } from "vue-tsx-support";
+import { AIFlags } from "@/model/constants";
 
 type Params = string[];
 

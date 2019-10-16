@@ -26,6 +26,10 @@ export namespace PathManager {
   }
 
   export function metaPath(...subpath: string[]): string {
-    return path.join(ProjectManager.currentProjectPath, ".project-mewtwo", ...subpath)
+    return path.join(
+      ProjectManager.currentProjectPath,
+      ".project-mewtwo",
+      ...subpath
+    );
   }
 }

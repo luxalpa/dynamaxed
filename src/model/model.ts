@@ -1,10 +1,10 @@
 import trainerDefaults from "@/model/defaults/trainers.json";
-import trainerClassDefaults from "@/model/defaults/trainer-classes.json"
+import trainerClassDefaults from "@/model/defaults/trainer-classes.json";
 import fs from "fs";
 import path from "path";
 import { META_DIR, ProjectManager } from "@/modules/project-manager";
-import {compileTrainers} from "@/model/serialize/trainers";
-import {PathManager} from "@/modules/path-manager";
+import { compileTrainers } from "@/model/serialize/trainers";
+import { PathManager } from "@/modules/path-manager";
 
 export interface TrainerPartyMon {
   iv: number;
@@ -55,7 +55,7 @@ export const NoTrainerPartyMon: TrainerPartyMon = {
 
 export interface Model {
   trainers: Record<string, Trainer>;
-  trainerClasses: Record<string, TrainerClass>
+  trainerClasses: Record<string, TrainerClass>;
 }
 
 export const GameModel = new (class {
@@ -67,7 +67,7 @@ export const GameModel = new (class {
   createFromDefaults() {
     this.model = {
       trainers: { ...trainerDefaults },
-      trainerClasses: {...trainerClassDefaults}
+      trainerClasses: { ...trainerClassDefaults }
     };
   }
 
@@ -90,16 +90,20 @@ export const GameModel = new (class {
 
   Deserialize() {
     const files = {
-      "trainers": ["trainers.json", trainerDefaults],
-      "trainerClasses": ["trainer-classes.json", trainerClassDefaults]
+      trainers: ["trainers.json", trainerDefaults],
+      trainerClasses: ["trainer-classes.json", trainerClassDefaults]
     } as const;
 
-    for(const [key, [file, defaults]] of Object.entries(files)) {
+    for (const [key, [file, defaults]] of Object.entries(files)) {
       const filepath = PathManager.metaPath(file);
-      if(fs.existsSync(filepath)) {
-        this.model[key as keyof typeof GameModel.model] = JSON.parse(fs.readFileSync(filepath).toString())
+      if (fs.existsSync(filepath)) {
+        this.model[key as keyof typeof GameModel.model] = JSON.parse(
+          fs.readFileSync(filepath).toString()
+        );
       } else {
-        this.model[key as keyof typeof GameModel.model] = {...defaults} as any
+        this.model[key as keyof typeof GameModel.model] = {
+          ...defaults
+        } as any;
       }
     }
   }
@@ -107,9 +111,9 @@ export const GameModel = new (class {
   // Creates the .json files in our own project folder.
   async Serialize() {
     const files = {
-      "trainers": "trainers.json",
-      "trainerClasses": "trainer-classes.json",
-    }
+      trainers: "trainers.json",
+      trainerClasses: "trainer-classes.json"
+    };
 
     const projectPath = PathManager.metaPath();
 
@@ -117,18 +121,16 @@ export const GameModel = new (class {
       await fs.promises.mkdir(path.join(projectPath));
     }
 
-    for(const [key, filename] of Object.entries(files)) {
+    for (const [key, filename] of Object.entries(files)) {
       fs.writeFileSync(
         PathManager.metaPath(filename),
         JSON.stringify(this.model[key as keyof typeof GameModel.model])
       );
     }
-
-
   }
 
   // Creates the .h and .inc files etc.
   Compile() {
-    compileTrainers(this.model.trainers)
+    compileTrainers(this.model.trainers);
   }
 })();

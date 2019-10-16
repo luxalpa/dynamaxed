@@ -1,14 +1,14 @@
-import {GameModel, NoTrainer, Trainer} from "@/model/model";
-import {DialogManager, DialogOptions} from "@/modules/dialog-manager";
+import { GameModel, NoTrainer, Trainer } from "@/model/model";
+import { DialogManager, DialogOptions } from "@/modules/dialog-manager";
 import cloneDeep from "lodash.clonedeep";
-import {modifiers} from "vue-tsx-support";
-import {PathManager} from "@/modules/path-manager";
-import {DialogEntry} from "@/components/dialog-entry";
+import { modifiers } from "vue-tsx-support";
+import { PathManager } from "@/modules/path-manager";
+import { DialogEntry } from "@/components/dialog-entry";
 import Component from "vue-class-component";
-import {Vue} from "vue-property-decorator";
-import {EditFlagsDialog} from "@/views/dialogs/edit-flags-dialog";
-import {ChooseTrainerPicDialog} from "@/views/dialogs/choose-trainer-pic-dialog";
-import {ChooseTrainerClassDialog} from "@/views/dialogs/choose-trainer-class-dialog";
+import { Vue } from "vue-property-decorator";
+import { EditFlagsDialog } from "@/views/dialogs/edit-flags-dialog";
+import { ChooseTrainerPicDialog } from "@/views/dialogs/choose-trainer-pic-dialog";
+import { ChooseTrainerClassDialog } from "@/views/dialogs/choose-trainer-class-dialog";
 
 interface EditTrainerOptions {
   trainerId: string;
@@ -46,15 +46,21 @@ class EditTrainerDialogCmp extends Vue {
   }
 
   async editTrainerClass() {
-    const trainerClass = await DialogManager.openDialog(ChooseTrainerClassDialog, this.trainer.trainerClass).catch(() => {})
-    if(trainerClass) {
+    const trainerClass = await DialogManager.openDialog(
+      ChooseTrainerClassDialog,
+      this.trainer.trainerClass
+    ).catch(() => {});
+    if (trainerClass) {
       this.trainer.trainerClass = trainerClass;
     }
   }
 
   async editPic() {
-    const trainerPic = await DialogManager.openDialog(ChooseTrainerPicDialog, this.trainer.trainerPic).catch(() => {});
-    if(trainerPic) {
+    const trainerPic = await DialogManager.openDialog(
+      ChooseTrainerPicDialog,
+      this.trainer.trainerPic
+    ).catch(() => {});
+    if (trainerPic) {
       this.trainer.trainerPic = trainerPic;
     }
   }
@@ -64,7 +70,7 @@ class EditTrainerDialogCmp extends Vue {
   }
 
   get trainerClass() {
-    return GameModel.model.trainerClasses[this.trainer.trainerClass].name
+    return GameModel.model.trainerClasses[this.trainer.trainerClass].name;
   }
 
   created() {
@@ -84,7 +90,12 @@ class EditTrainerDialogCmp extends Vue {
             <v-text-field solo dense hide-details vModel={this.trainerID} />
           </DialogEntry>
           <DialogEntry label="Picture">
-            <v-btn height={80} onclick={() => {this.editPic()}}>
+            <v-btn
+              height={80}
+              onclick={() => {
+                this.editPic();
+              }}
+            >
               <v-img src={trainerImgPath} />
             </v-btn>
           </DialogEntry>
@@ -97,7 +108,9 @@ class EditTrainerDialogCmp extends Vue {
             />
           </DialogEntry>
           <DialogEntry label="Trainer Class">
-            <v-btn onclick={() => this.editTrainerClass()}>{this.trainerClass}</v-btn>
+            <v-btn onclick={() => this.editTrainerClass()}>
+              {this.trainerClass}
+            </v-btn>
           </DialogEntry>
           <DialogEntry label="Encounter Music">
             <v-text-field
