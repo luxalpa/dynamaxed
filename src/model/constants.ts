@@ -106,3 +106,20 @@ export const TrainerPics = [
   "RS_BRENDAN",
   "RS_MAY"
 ];
+
+export const EncounterMusic = [
+  "MALE",
+  "FEMALE",
+  "GIRL",
+  "SUSPICIOUS",
+  "INTENSE",
+  "COOL",
+  "AQUA",
+  "MAGMA",
+  "SWIMMER",
+  "TWINS",
+  "ELITE_FOUR",
+  "HIKER",
+  "INTERVIEWER",
+  "RICH"
+];

@@ -129,8 +129,7 @@ function createTrainersFile(trainers: Record<string, Trainer>) {
     const partyFlags = partyFlagsV.length == 0 ? "0" : partyFlagsV.join(" | ");
 
     // Encounter Music
-    let encounterMusic =
-      "TRAINER_ENCOUNTER_MUSIC_" + trainer.encounterMusic_gender;
+    let encounterMusic = "TRAINER_ENCOUNTER_MUSIC_" + trainer.encounterMusic;
     if (trainer.isFemaleEncounter) {
       encounterMusic += " | F_TRAINER_FEMALE";
     }

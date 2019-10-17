@@ -1,8 +1,8 @@
 import trainerDefaults from "@/model/defaults/trainers.json";
 import trainerClassDefaults from "@/model/defaults/trainer-classes.json";
+import itemDefaults from "@/model/defaults/items.json";
 import fs from "fs";
 import path from "path";
-import { META_DIR, ProjectManager } from "@/modules/project-manager";
 import { compileTrainers } from "@/model/serialize/trainers";
 import { PathManager } from "@/modules/path-manager";
 
@@ -16,7 +16,7 @@ export interface TrainerPartyMon {
 
 export interface Trainer {
   trainerClass: string;
-  encounterMusic_gender: string;
+  encounterMusic: string;
   trainerPic: string;
   trainerName: string;
   items: string[];
@@ -33,7 +33,7 @@ export const NoTrainer: Trainer = {
   doubleBattle: false,
   items: [],
   trainerName: "",
-  encounterMusic_gender: "",
+  encounterMusic: "",
   isFemaleEncounter: false,
   trainerPic: ""
 };
@@ -53,21 +53,28 @@ export const NoTrainerPartyMon: TrainerPartyMon = {
   iv: 0
 };
 
+export interface Item {
+  name: string;
+}
+
 export interface Model {
   trainers: Record<string, Trainer>;
   trainerClasses: Record<string, TrainerClass>;
+  items: Record<string, Item>;
 }
 
 export const GameModel = new (class {
   model: Model = {
     trainers: {},
-    trainerClasses: {}
+    trainerClasses: {},
+    items: itemDefaults
   };
 
   createFromDefaults() {
     this.model = {
       trainers: { ...trainerDefaults },
-      trainerClasses: { ...trainerClassDefaults }
+      trainerClasses: { ...trainerClassDefaults },
+      items: { ...itemDefaults }
     };
   }
 

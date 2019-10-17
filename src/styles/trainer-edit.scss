@@ -1,16 +1,16 @@
 .trainer-grid {
-  @include grid(540px)
+  @include grid(540px);
 }
 
 .trainer-class-grid {
-  @include grid(140px)
+  @include grid(140px);
 }
 
 .trainer-id {
   font-size: 10px;
   position: absolute;
   right: 20px;
-  opacity: .50;
+  opacity: 0.5;
 }
 
 .trainer-name {
@@ -23,21 +23,22 @@
 
 .trainer-class {
   font-size: 10px;
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .trainer-main {
   height: 100%;
   $width: 90px;
   padding: 14px 0 0;
-  border-right: 1px solid rgba(0, 0, 0, .12);
+  border-right: 1px solid rgba(0, 0, 0, 0.12);
   width: $width;
   max-width: $width;
   text-align: center;
   border-radius: 0;
 }
 
-.trainer-pic, .party-pic {
+.trainer-pic,
+.party-pic {
   width: 64px;
   height: 64px;
   margin: 0 auto;
@@ -49,7 +50,6 @@
 
 .party-pic {
   overflow: hidden;
-
 }
 
 .trainer-party {

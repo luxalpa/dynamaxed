@@ -4,7 +4,7 @@ import { GameModel } from "@/model/model";
 
 @Component
 class ChooseTrainerClassDialogCmp extends Vue {
-  @Prop() params: string = "";
+  @Prop() readonly params!: string;
 
   render() {
     return (

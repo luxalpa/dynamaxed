@@ -9,6 +9,7 @@ import { Vue } from "vue-property-decorator";
 import { EditFlagsDialog } from "@/views/dialogs/edit-flags-dialog";
 import { ChooseTrainerPicDialog } from "@/views/dialogs/choose-trainer-pic-dialog";
 import { ChooseTrainerClassDialog } from "@/views/dialogs/choose-trainer-class-dialog";
+import { ChooseEncounterMusicDialog } from "@/views/dialogs/choose-encounter-music-dialog";
 
 interface EditTrainerOptions {
   trainerId: string;
@@ -52,6 +53,16 @@ class EditTrainerDialogCmp extends Vue {
     ).catch(() => {});
     if (trainerClass) {
       this.trainer.trainerClass = trainerClass;
+    }
+  }
+
+  async editEncounterMusic() {
+    const encounterMusic = await DialogManager.openDialog(
+      ChooseEncounterMusicDialog,
+      this.trainer.encounterMusic
+    ).catch(() => {});
+    if (encounterMusic) {
+      this.trainer.encounterMusic = encounterMusic;
     }
   }
 
@@ -113,12 +124,9 @@ class EditTrainerDialogCmp extends Vue {
             </v-btn>
           </DialogEntry>
           <DialogEntry label="Encounter Music">
-            <v-text-field
-              solo
-              dense
-              hide-details
-              vModel={this.trainer.encounterMusic_gender}
-            />
+            <v-btn onclick={() => this.editEncounterMusic()}>
+              {this.trainer.encounterMusic}
+            </v-btn>
           </DialogEntry>
           <v-row>
             <v-col cols={4} class="dialog-label py-1" />
