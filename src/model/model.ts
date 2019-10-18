@@ -63,19 +63,23 @@ export interface Model {
   items: Record<string, Item>;
 }
 
+const files = {
+  trainers: ["trainers.json", trainerDefaults],
+  trainerClasses: ["trainer-classes.json", trainerClassDefaults],
+  items: ["items.json", itemDefaults]
+} as const;
+
 export const GameModel = new (class {
   model: Model = {
     trainers: {},
     trainerClasses: {},
-    items: itemDefaults
+    items: {}
   };
 
   createFromDefaults() {
-    this.model = {
-      trainers: { ...trainerDefaults },
-      trainerClasses: { ...trainerClassDefaults },
-      items: { ...itemDefaults }
-    };
+    this.model = (Object.fromEntries(
+      Object.entries(files).map(([key, value]) => [key, { ...value[1] }])
+    ) as unknown) as Model;
   }
 
   async Save() {
@@ -96,11 +100,6 @@ export const GameModel = new (class {
   }
 
   Deserialize() {
-    const files = {
-      trainers: ["trainers.json", trainerDefaults],
-      trainerClasses: ["trainer-classes.json", trainerClassDefaults]
-    } as const;
-
     for (const [key, [file, defaults]] of Object.entries(files)) {
       const filepath = PathManager.metaPath(file);
       if (fs.existsSync(filepath)) {
@@ -117,18 +116,13 @@ export const GameModel = new (class {
 
   // Creates the .json files in our own project folder.
   async Serialize() {
-    const files = {
-      trainers: "trainers.json",
-      trainerClasses: "trainer-classes.json"
-    };
-
     const projectPath = PathManager.metaPath();
 
     if (!fs.existsSync(projectPath)) {
       await fs.promises.mkdir(path.join(projectPath));
     }
 
-    for (const [key, filename] of Object.entries(files)) {
+    for (const [key, [filename]] of Object.entries(files)) {
       fs.writeFileSync(
         PathManager.metaPath(filename),
         JSON.stringify(this.model[key as keyof typeof GameModel.model])
