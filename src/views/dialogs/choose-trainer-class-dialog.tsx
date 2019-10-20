@@ -1,6 +1,7 @@
 import { Component, Prop, Vue } from "vue-property-decorator";
 import { DialogManager, DialogOptions } from "@/modules/dialog-manager";
 import { GameModel } from "@/model/model";
+import { TrainerClass } from "@/components/trainer-class";
 
 @Component
 class ChooseTrainerClassDialogCmp extends Vue {
@@ -14,7 +15,7 @@ class ChooseTrainerClassDialogCmp extends Vue {
             {Object.entries(GameModel.model.trainerClasses).map(
               ([key, props]) => (
                 <v-btn class="ma-1" onclick={() => DialogManager.accept(key)}>
-                  {props.name}
+                  <TrainerClass classId={key} />
                 </v-btn>
               )
             )}

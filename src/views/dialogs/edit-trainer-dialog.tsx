@@ -11,6 +11,7 @@ import { ChooseTrainerPicDialog } from "@/views/dialogs/choose-trainer-pic-dialo
 import { ChooseTrainerClassDialog } from "@/views/dialogs/choose-trainer-class-dialog";
 import { ChooseEncounterMusicDialog } from "@/views/dialogs/choose-encounter-music-dialog";
 import { ChooseItemDialog } from "@/views/dialogs/choose-item-dialog";
+import { TrainerClass } from "@/components/trainer-class";
 
 interface EditTrainerOptions {
   trainerId: string;
@@ -90,10 +91,6 @@ class EditTrainerDialogCmp extends Vue {
     this.trainer.items.splice(index, 1);
   }
 
-  get trainerClass() {
-    return GameModel.model.trainerClasses[this.trainer.trainerClass].name;
-  }
-
   created() {
     const options: EditTrainerOptions = this.$props.params;
     this.trainer = cloneDeep(GameModel.model.trainers[options.trainerId]);
@@ -130,7 +127,7 @@ class EditTrainerDialogCmp extends Vue {
           </DialogEntry>
           <DialogEntry label="Trainer Class">
             <v-btn onclick={() => this.editTrainerClass()}>
-              {this.trainerClass}
+              <TrainerClass classId={this.trainer.trainerClass} />
             </v-btn>
           </DialogEntry>
           <DialogEntry label="Encounter Music">
