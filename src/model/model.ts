@@ -53,8 +53,39 @@ export const NoTrainerPartyMon: TrainerPartyMon = {
   iv: 0
 };
 
+/*
+*
+    u8 name[ITEM_NAME_LENGTH];
+    u16 itemId;
+    u16 price;
+    u8 holdEffect;
+    u8 holdEffectParam;
+    const u8 *description;
+    u8 importance;
+    u8 unk19;
+    u8 pocket;
+    u8 type;
+    ItemUseFunc fieldUseFunc;
+    u8 battleUsage;
+    ItemUseFunc battleUseFunc;
+    u8 secondaryId;
+* */
+
 export interface Item {
   name: string;
+  price: number;
+  holdEffect?: string;
+  holdEffectParam?: number;
+  description?: string;
+  importance?: number;
+  unk19?: number;
+  pocket: string;
+  type: number;
+  fieldUseFunc?: string;
+  battleUsage?: number;
+  battleUseFunc?: string;
+  secondaryId: number;
+  icon?: [string, string];
 }
 
 export interface Model {

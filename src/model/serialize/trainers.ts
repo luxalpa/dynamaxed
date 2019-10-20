@@ -2,6 +2,7 @@ import fs from "fs";
 import path from "path";
 import { ProjectManager } from "@/modules/project-manager";
 import { Trainer } from "@/model/model";
+import { extendArray } from "@/utils";
 
 enum TrainerPartyType {
   NoItemDefaultMoves,
@@ -69,7 +70,9 @@ function compileParty(t: Trainer): string {
       if (useMoves) {
         rows.push(
           "                .moves = " +
-            mon.moves!.map(name => "MOVE_" + name).join(", ")
+            extendArray(mon.moves!, 4, "NONE")
+              .map(name => "MOVE_" + name)
+              .join(", ")
         );
       }
 
@@ -134,13 +137,12 @@ function createTrainersFile(trainers: Record<string, Trainer>) {
       encounterMusic += " | F_TRAINER_FEMALE";
     }
 
-    // Items
-    const numItems = trainer.items.length;
-    if (numItems != 4 && numItems != 0) {
-      trainer.items.length = 4;
-      trainer.items.fill("NONE", numItems);
-    }
-    let items = trainer.items.map(name => "ITEM_" + name).join(", ");
+    let items =
+      trainer.items.length != 0
+        ? extendArray(trainer.items, 4, "NONE")
+            .map(name => "ITEM_" + name)
+            .join(", ")
+        : "";
 
     let doubleBattle = trainer.doubleBattle ? "TRUE" : "FALSE";
 

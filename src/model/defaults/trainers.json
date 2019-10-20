@@ -204,7 +204,7 @@
     "encounterMusic": "COOL",
     "trainerPic": "COOLTRAINER_M",
     "trainerName": "MARCEL",
-    "items": ["HYPER_POTION", "NONE", "NONE", "NONE"],
+    "items": ["HYPER_POTION"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -577,7 +577,7 @@
     "encounterMusic": "AQUA",
     "trainerPic": "AQUA_ADMIN_M",
     "trainerName": "MATT",
-    "items": ["SUPER_POTION", "NONE", "NONE", "NONE"],
+    "items": ["SUPER_POTION"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -660,7 +660,7 @@
     "encounterMusic": "AQUA",
     "trainerPic": "AQUA_LEADER_ARCHIE",
     "trainerName": "ARCHIE",
-    "items": ["SUPER_POTION", "SUPER_POTION", "NONE", "NONE"],
+    "items": ["SUPER_POTION", "SUPER_POTION"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -753,7 +753,7 @@
     "encounterMusic": "COOL",
     "trainerPic": "COOLTRAINER_M",
     "trainerName": "FELIX",
-    "items": ["FULL_RESTORE", "NONE", "NONE", "NONE"],
+    "items": ["FULL_RESTORE"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -761,13 +761,13 @@
         "iv": 0,
         "lvl": 43,
         "species": "MEDICHAM",
-        "moves": ["PSYCHIC", "NONE", "NONE", "NONE"]
+        "moves": ["PSYCHIC"]
       },
       {
         "iv": 0,
         "lvl": 43,
         "species": "CLAYDOL",
-        "moves": ["SKILL_SWAP", "EARTHQUAKE", "NONE", "NONE"]
+        "moves": ["SKILL_SWAP", "EARTHQUAKE"]
       }
     ],
     "isFemaleEncounter": false
@@ -1453,7 +1453,7 @@
     "encounterMusic": "COOL",
     "trainerPic": "COOLTRAINER_M",
     "trainerName": "RANDALL",
-    "items": ["HYPER_POTION", "NONE", "NONE", "NONE"],
+    "items": ["HYPER_POTION"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -1462,7 +1462,7 @@
         "lvl": 26,
         "species": "SWELLOW",
         "heldItem": "NONE",
-        "moves": ["QUICK_ATTACK", "AGILITY", "WING_ATTACK", "NONE"]
+        "moves": ["QUICK_ATTACK", "AGILITY", "WING_ATTACK"]
       }
     ],
     "isFemaleEncounter": false
@@ -1472,7 +1472,7 @@
     "encounterMusic": "COOL",
     "trainerPic": "COOLTRAINER_M",
     "trainerName": "PARKER",
-    "items": ["HYPER_POTION", "NONE", "NONE", "NONE"],
+    "items": ["HYPER_POTION"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -1481,7 +1481,7 @@
         "lvl": 26,
         "species": "SPINDA",
         "heldItem": "NONE",
-        "moves": ["TEETER_DANCE", "DIZZY_PUNCH", "FOCUS_PUNCH", "NONE"]
+        "moves": ["TEETER_DANCE", "DIZZY_PUNCH", "FOCUS_PUNCH"]
       }
     ],
     "isFemaleEncounter": false
@@ -1491,7 +1491,7 @@
     "encounterMusic": "COOL",
     "trainerPic": "COOLTRAINER_M",
     "trainerName": "GEORGE",
-    "items": ["HYPER_POTION", "NONE", "NONE", "NONE"],
+    "items": ["HYPER_POTION"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -1500,7 +1500,7 @@
         "lvl": 26,
         "species": "SLAKOTH",
         "heldItem": "SITRUS_BERRY",
-        "moves": ["SLACK_OFF", "COUNTER", "SHADOW_BALL", "NONE"]
+        "moves": ["SLACK_OFF", "COUNTER", "SHADOW_BALL"]
       }
     ],
     "isFemaleEncounter": false
@@ -1510,7 +1510,7 @@
     "encounterMusic": "COOL",
     "trainerPic": "COOLTRAINER_M",
     "trainerName": "BERKE",
-    "items": ["HYPER_POTION", "NONE", "NONE", "NONE"],
+    "items": ["HYPER_POTION"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -1519,7 +1519,7 @@
         "lvl": 26,
         "species": "VIGOROTH",
         "heldItem": "NONE",
-        "moves": ["FOCUS_ENERGY", "SLASH", "NONE", "NONE"]
+        "moves": ["FOCUS_ENERGY", "SLASH"]
       }
     ],
     "isFemaleEncounter": false
@@ -1529,7 +1529,7 @@
     "encounterMusic": "COOL",
     "trainerPic": "COOLTRAINER_M",
     "trainerName": "BRAXTON",
-    "items": ["HYPER_POTION", "NONE", "NONE", "NONE"],
+    "items": ["HYPER_POTION"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -1571,7 +1571,7 @@
     "encounterMusic": "COOL",
     "trainerPic": "COOLTRAINER_M",
     "trainerName": "VINCENT",
-    "items": ["FULL_RESTORE", "NONE", "NONE", "NONE"],
+    "items": ["FULL_RESTORE"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -1598,7 +1598,7 @@
     "encounterMusic": "COOL",
     "trainerPic": "COOLTRAINER_M",
     "trainerName": "LEROY",
-    "items": ["FULL_RESTORE", "NONE", "NONE", "NONE"],
+    "items": ["FULL_RESTORE"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -1620,7 +1620,7 @@
     "encounterMusic": "COOL",
     "trainerPic": "COOLTRAINER_M",
     "trainerName": "WILTON",
-    "items": ["SUPER_POTION", "NONE", "NONE", "NONE"],
+    "items": ["SUPER_POTION"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -1647,7 +1647,7 @@
     "encounterMusic": "COOL",
     "trainerPic": "COOLTRAINER_M",
     "trainerName": "EDGAR",
-    "items": ["FULL_RESTORE", "NONE", "NONE", "NONE"],
+    "items": ["FULL_RESTORE"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -1669,7 +1669,7 @@
     "encounterMusic": "COOL",
     "trainerPic": "COOLTRAINER_M",
     "trainerName": "ALBERT",
-    "items": ["FULL_RESTORE", "NONE", "NONE", "NONE"],
+    "items": ["FULL_RESTORE"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -1691,7 +1691,7 @@
     "encounterMusic": "COOL",
     "trainerPic": "COOLTRAINER_M",
     "trainerName": "SAMUEL",
-    "items": ["FULL_RESTORE", "NONE", "NONE", "NONE"],
+    "items": ["FULL_RESTORE"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -1718,7 +1718,7 @@
     "encounterMusic": "COOL",
     "trainerPic": "COOLTRAINER_M",
     "trainerName": "VITO",
-    "items": ["FULL_RESTORE", "NONE", "NONE", "NONE"],
+    "items": ["FULL_RESTORE"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -1750,7 +1750,7 @@
     "encounterMusic": "COOL",
     "trainerPic": "COOLTRAINER_M",
     "trainerName": "OWEN",
-    "items": ["FULL_RESTORE", "NONE", "NONE", "NONE"],
+    "items": ["FULL_RESTORE"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -1777,7 +1777,7 @@
     "encounterMusic": "COOL",
     "trainerPic": "COOLTRAINER_M",
     "trainerName": "WILTON",
-    "items": ["HYPER_POTION", "NONE", "NONE", "NONE"],
+    "items": ["HYPER_POTION"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -1804,7 +1804,7 @@
     "encounterMusic": "COOL",
     "trainerPic": "COOLTRAINER_M",
     "trainerName": "WILTON",
-    "items": ["HYPER_POTION", "NONE", "NONE", "NONE"],
+    "items": ["HYPER_POTION"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -1831,7 +1831,7 @@
     "encounterMusic": "COOL",
     "trainerPic": "COOLTRAINER_M",
     "trainerName": "WILTON",
-    "items": ["FULL_RESTORE", "NONE", "NONE", "NONE"],
+    "items": ["FULL_RESTORE"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -1858,7 +1858,7 @@
     "encounterMusic": "COOL",
     "trainerPic": "COOLTRAINER_M",
     "trainerName": "WILTON",
-    "items": ["FULL_RESTORE", "NONE", "NONE", "NONE"],
+    "items": ["FULL_RESTORE"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -1885,7 +1885,7 @@
     "encounterMusic": "COOL",
     "trainerPic": "COOLTRAINER_M",
     "trainerName": "WARREN",
-    "items": ["FULL_RESTORE", "NONE", "NONE", "NONE"],
+    "items": ["FULL_RESTORE"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -1907,7 +1907,7 @@
     "encounterMusic": "COOL",
     "trainerPic": "COOLTRAINER_F",
     "trainerName": "MARY",
-    "items": ["HYPER_POTION", "NONE", "NONE", "NONE"],
+    "items": ["HYPER_POTION"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -1916,7 +1916,7 @@
         "lvl": 26,
         "species": "DELCATTY",
         "heldItem": "NONE",
-        "moves": ["FAINT_ATTACK", "SHOCK_WAVE", "NONE", "NONE"]
+        "moves": ["FAINT_ATTACK", "SHOCK_WAVE"]
       }
     ],
     "isFemaleEncounter": true
@@ -1926,7 +1926,7 @@
     "encounterMusic": "COOL",
     "trainerPic": "COOLTRAINER_F",
     "trainerName": "ALEXIA",
-    "items": ["HYPER_POTION", "NONE", "NONE", "NONE"],
+    "items": ["HYPER_POTION"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -1935,7 +1935,7 @@
         "lvl": 26,
         "species": "WIGGLYTUFF",
         "heldItem": "NONE",
-        "moves": ["DEFENSE_CURL", "DOUBLE_EDGE", "SHADOW_BALL", "NONE"]
+        "moves": ["DEFENSE_CURL", "DOUBLE_EDGE", "SHADOW_BALL"]
       }
     ],
     "isFemaleEncounter": true
@@ -1945,7 +1945,7 @@
     "encounterMusic": "COOL",
     "trainerPic": "COOLTRAINER_F",
     "trainerName": "JODY",
-    "items": ["HYPER_POTION", "NONE", "NONE", "NONE"],
+    "items": ["HYPER_POTION"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "SETUP_FIRST_TURN"],
     "party": [
@@ -1954,7 +1954,7 @@
         "lvl": 26,
         "species": "ZANGOOSE",
         "heldItem": "NONE",
-        "moves": ["SWORDS_DANCE", "SLASH", "NONE", "NONE"]
+        "moves": ["SWORDS_DANCE", "SLASH"]
       }
     ],
     "isFemaleEncounter": true
@@ -1964,7 +1964,7 @@
     "encounterMusic": "COOL",
     "trainerPic": "COOLTRAINER_F",
     "trainerName": "WENDY",
-    "items": ["FULL_RESTORE", "NONE", "NONE", "NONE"],
+    "items": ["FULL_RESTORE"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "SETUP_FIRST_TURN"],
     "party": [
@@ -1994,7 +1994,7 @@
     "encounterMusic": "COOL",
     "trainerPic": "COOLTRAINER_F",
     "trainerName": "KEIRA",
-    "items": ["FULL_RESTORE", "NONE", "NONE", "NONE"],
+    "items": ["FULL_RESTORE"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "SETUP_FIRST_TURN"],
     "party": [
@@ -2016,7 +2016,7 @@
     "encounterMusic": "COOL",
     "trainerPic": "COOLTRAINER_F",
     "trainerName": "BROOKE",
-    "items": ["SUPER_POTION", "NONE", "NONE", "NONE"],
+    "items": ["SUPER_POTION"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -2043,7 +2043,7 @@
     "encounterMusic": "COOL",
     "trainerPic": "COOLTRAINER_F",
     "trainerName": "JENNIFER",
-    "items": ["FULL_RESTORE", "NONE", "NONE", "NONE"],
+    "items": ["FULL_RESTORE"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -2060,7 +2060,7 @@
     "encounterMusic": "COOL",
     "trainerPic": "COOLTRAINER_F",
     "trainerName": "HOPE",
-    "items": ["FULL_RESTORE", "NONE", "NONE", "NONE"],
+    "items": ["FULL_RESTORE"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -2077,7 +2077,7 @@
     "encounterMusic": "COOL",
     "trainerPic": "COOLTRAINER_F",
     "trainerName": "SHANNON",
-    "items": ["FULL_RESTORE", "NONE", "NONE", "NONE"],
+    "items": ["FULL_RESTORE"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -2094,7 +2094,7 @@
     "encounterMusic": "COOL",
     "trainerPic": "COOLTRAINER_F",
     "trainerName": "MICHELLE",
-    "items": ["FULL_RESTORE", "NONE", "NONE", "NONE"],
+    "items": ["FULL_RESTORE"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -2121,7 +2121,7 @@
     "encounterMusic": "COOL",
     "trainerPic": "COOLTRAINER_F",
     "trainerName": "CAROLINE",
-    "items": ["FULL_RESTORE", "NONE", "NONE", "NONE"],
+    "items": ["FULL_RESTORE"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -2143,7 +2143,7 @@
     "encounterMusic": "COOL",
     "trainerPic": "COOLTRAINER_F",
     "trainerName": "JULIE",
-    "items": ["FULL_RESTORE", "NONE", "NONE", "NONE"],
+    "items": ["FULL_RESTORE"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -2170,7 +2170,7 @@
     "encounterMusic": "COOL",
     "trainerPic": "COOLTRAINER_F",
     "trainerName": "BROOKE",
-    "items": ["HYPER_POTION", "NONE", "NONE", "NONE"],
+    "items": ["HYPER_POTION"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -2197,7 +2197,7 @@
     "encounterMusic": "COOL",
     "trainerPic": "COOLTRAINER_F",
     "trainerName": "BROOKE",
-    "items": ["HYPER_POTION", "NONE", "NONE", "NONE"],
+    "items": ["HYPER_POTION"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -2224,7 +2224,7 @@
     "encounterMusic": "COOL",
     "trainerPic": "COOLTRAINER_F",
     "trainerName": "BROOKE",
-    "items": ["FULL_RESTORE", "NONE", "NONE", "NONE"],
+    "items": ["FULL_RESTORE"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -2251,7 +2251,7 @@
     "encounterMusic": "COOL",
     "trainerPic": "COOLTRAINER_F",
     "trainerName": "BROOKE",
-    "items": ["FULL_RESTORE", "NONE", "NONE", "NONE"],
+    "items": ["FULL_RESTORE"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -2471,7 +2471,7 @@
     "encounterMusic": "FEMALE",
     "trainerPic": "LADY",
     "trainerName": "CINDY",
-    "items": ["FULL_RESTORE", "NONE", "NONE", "NONE"],
+    "items": ["FULL_RESTORE"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE"],
     "party": [
@@ -2489,7 +2489,7 @@
     "encounterMusic": "FEMALE",
     "trainerPic": "LADY",
     "trainerName": "DAPHNE",
-    "items": ["FULL_RESTORE", "NONE", "NONE", "NONE"],
+    "items": ["FULL_RESTORE"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE"],
     "party": [
@@ -2542,7 +2542,7 @@
     "encounterMusic": "FEMALE",
     "trainerPic": "LADY",
     "trainerName": "CINDY",
-    "items": ["FULL_RESTORE", "NONE", "NONE", "NONE"],
+    "items": ["FULL_RESTORE"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE"],
     "party": [
@@ -2551,7 +2551,7 @@
         "lvl": 11,
         "species": "ZIGZAGOON",
         "heldItem": "NUGGET",
-        "moves": ["TACKLE", "TAIL_WHIP", "NONE", "NONE"]
+        "moves": ["TACKLE", "TAIL_WHIP"]
       }
     ],
     "isFemaleEncounter": true
@@ -2561,7 +2561,7 @@
     "encounterMusic": "FEMALE",
     "trainerPic": "LADY",
     "trainerName": "BRIANNA",
-    "items": ["FULL_RESTORE", "NONE", "NONE", "NONE"],
+    "items": ["FULL_RESTORE"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE"],
     "party": [
@@ -2579,7 +2579,7 @@
     "encounterMusic": "FEMALE",
     "trainerPic": "LADY",
     "trainerName": "NAOMI",
-    "items": ["FULL_RESTORE", "NONE", "NONE", "NONE"],
+    "items": ["FULL_RESTORE"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE"],
     "party": [
@@ -2597,7 +2597,7 @@
     "encounterMusic": "FEMALE",
     "trainerPic": "LADY",
     "trainerName": "CINDY",
-    "items": ["FULL_RESTORE", "NONE", "NONE", "NONE"],
+    "items": ["FULL_RESTORE"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE"],
     "party": [
@@ -2615,7 +2615,7 @@
     "encounterMusic": "FEMALE",
     "trainerPic": "LADY",
     "trainerName": "CINDY",
-    "items": ["FULL_RESTORE", "NONE", "NONE", "NONE"],
+    "items": ["FULL_RESTORE"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE"],
     "party": [
@@ -2633,7 +2633,7 @@
     "encounterMusic": "FEMALE",
     "trainerPic": "LADY",
     "trainerName": "CINDY",
-    "items": ["FULL_RESTORE", "NONE", "NONE", "NONE"],
+    "items": ["FULL_RESTORE"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE"],
     "party": [
@@ -2651,7 +2651,7 @@
     "encounterMusic": "FEMALE",
     "trainerPic": "LADY",
     "trainerName": "CINDY",
-    "items": ["FULL_RESTORE", "NONE", "NONE", "NONE"],
+    "items": ["FULL_RESTORE"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE"],
     "party": [
@@ -2793,7 +2793,7 @@
         "iv": 100,
         "lvl": 37,
         "species": "CORPHISH",
-        "moves": ["TAUNT", "CRABHAMMER", "WATER_PULSE", "NONE"]
+        "moves": ["TAUNT", "CRABHAMMER", "WATER_PULSE"]
       },
       {
         "iv": 100,
@@ -2927,7 +2927,7 @@
     "encounterMusic": "RICH",
     "trainerPic": "RICH_BOY",
     "trainerName": "WINSTON",
-    "items": ["FULL_RESTORE", "NONE", "NONE", "NONE"],
+    "items": ["FULL_RESTORE"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE"],
     "party": [
@@ -2967,7 +2967,7 @@
     "encounterMusic": "RICH",
     "trainerPic": "RICH_BOY",
     "trainerName": "GARRET",
-    "items": ["FULL_RESTORE", "NONE", "NONE", "NONE"],
+    "items": ["FULL_RESTORE"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE"],
     "party": [
@@ -2985,7 +2985,7 @@
     "encounterMusic": "RICH",
     "trainerPic": "RICH_BOY",
     "trainerName": "WINSTON",
-    "items": ["FULL_RESTORE", "NONE", "NONE", "NONE"],
+    "items": ["FULL_RESTORE"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE"],
     "party": [
@@ -3003,7 +3003,7 @@
     "encounterMusic": "RICH",
     "trainerPic": "RICH_BOY",
     "trainerName": "WINSTON",
-    "items": ["FULL_RESTORE", "NONE", "NONE", "NONE"],
+    "items": ["FULL_RESTORE"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE"],
     "party": [
@@ -3021,7 +3021,7 @@
     "encounterMusic": "RICH",
     "trainerPic": "RICH_BOY",
     "trainerName": "WINSTON",
-    "items": ["FULL_RESTORE", "NONE", "NONE", "NONE"],
+    "items": ["FULL_RESTORE"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE"],
     "party": [
@@ -3039,7 +3039,7 @@
     "encounterMusic": "RICH",
     "trainerPic": "RICH_BOY",
     "trainerName": "WINSTON",
-    "items": ["FULL_RESTORE", "NONE", "NONE", "NONE"],
+    "items": ["FULL_RESTORE"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE"],
     "party": [
@@ -4027,7 +4027,7 @@
         "iv": 100,
         "lvl": 17,
         "species": "VOLTORB",
-        "moves": ["CHARGE", "SHOCK_WAVE", "SCREECH", "NONE"]
+        "moves": ["CHARGE", "SHOCK_WAVE", "SCREECH"]
       }
     ],
     "isFemaleEncounter": false
@@ -4964,7 +4964,7 @@
         "iv": 0,
         "lvl": 15,
         "species": "ABRA",
-        "moves": ["HIDDEN_POWER", "NONE", "NONE", "NONE"]
+        "moves": ["HIDDEN_POWER"]
       }
     ],
     "isFemaleEncounter": false
@@ -5187,7 +5187,7 @@
         "iv": 0,
         "lvl": 16,
         "species": "ABRA",
-        "moves": ["HIDDEN_POWER", "NONE", "NONE", "NONE"]
+        "moves": ["HIDDEN_POWER"]
       }
     ],
     "isFemaleEncounter": true
@@ -5518,7 +5518,7 @@
         "iv": 30,
         "lvl": 39,
         "species": "MANECTRIC",
-        "moves": ["QUICK_ATTACK", "SPARK", "ODOR_SLEUTH", "NONE"]
+        "moves": ["QUICK_ATTACK", "SPARK", "ODOR_SLEUTH"]
       }
     ],
     "isFemaleEncounter": false
@@ -5558,7 +5558,7 @@
     "encounterMusic": "ELITE_FOUR",
     "trainerPic": "ELITE_FOUR_SIDNEY",
     "trainerName": "SIDNEY",
-    "items": ["FULL_RESTORE", "FULL_RESTORE", "NONE", "NONE"],
+    "items": ["FULL_RESTORE", "FULL_RESTORE"],
     "doubleBattle": false,
     "aiFlags": [
       "CHECK_BAD_MOVE",
@@ -5610,7 +5610,7 @@
     "encounterMusic": "ELITE_FOUR",
     "trainerPic": "ELITE_FOUR_PHOEBE",
     "trainerName": "PHOEBE",
-    "items": ["FULL_RESTORE", "FULL_RESTORE", "NONE", "NONE"],
+    "items": ["FULL_RESTORE", "FULL_RESTORE"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -5657,7 +5657,7 @@
     "encounterMusic": "ELITE_FOUR",
     "trainerPic": "ELITE_FOUR_GLACIA",
     "trainerName": "GLACIA",
-    "items": ["FULL_RESTORE", "FULL_RESTORE", "NONE", "NONE"],
+    "items": ["FULL_RESTORE", "FULL_RESTORE"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -5704,7 +5704,7 @@
     "encounterMusic": "ELITE_FOUR",
     "trainerPic": "ELITE_FOUR_DRAKE",
     "trainerName": "DRAKE",
-    "items": ["FULL_RESTORE", "FULL_RESTORE", "NONE", "NONE"],
+    "items": ["FULL_RESTORE", "FULL_RESTORE"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -5751,7 +5751,7 @@
     "encounterMusic": "FEMALE",
     "trainerPic": "LEADER_ROXANNE",
     "trainerName": "ROXANNE",
-    "items": ["POTION", "POTION", "NONE", "NONE"],
+    "items": ["POTION", "POTION"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -5784,7 +5784,7 @@
     "encounterMusic": "MALE",
     "trainerPic": "LEADER_BRAWLY",
     "trainerName": "BRAWLY",
-    "items": ["SUPER_POTION", "SUPER_POTION", "NONE", "NONE"],
+    "items": ["SUPER_POTION", "SUPER_POTION"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -5817,7 +5817,7 @@
     "encounterMusic": "MALE",
     "trainerPic": "LEADER_WATTSON",
     "trainerName": "WATTSON",
-    "items": ["SUPER_POTION", "SUPER_POTION", "NONE", "NONE"],
+    "items": ["SUPER_POTION", "SUPER_POTION"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -5857,7 +5857,7 @@
     "encounterMusic": "FEMALE",
     "trainerPic": "LEADER_FLANNERY",
     "trainerName": "FLANNERY",
-    "items": ["HYPER_POTION", "HYPER_POTION", "NONE", "NONE"],
+    "items": ["HYPER_POTION", "HYPER_POTION"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -5897,7 +5897,7 @@
     "encounterMusic": "MALE",
     "trainerPic": "LEADER_NORMAN",
     "trainerName": "NORMAN",
-    "items": ["HYPER_POTION", "HYPER_POTION", "NONE", "NONE"],
+    "items": ["HYPER_POTION", "HYPER_POTION"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -5937,7 +5937,7 @@
     "encounterMusic": "FEMALE",
     "trainerPic": "LEADER_WINONA",
     "trainerName": "WINONA",
-    "items": ["HYPER_POTION", "HYPER_POTION", "NONE", "NONE"],
+    "items": ["HYPER_POTION", "HYPER_POTION"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY", "RISKY"],
     "party": [
@@ -6024,7 +6024,7 @@
     "encounterMusic": "MALE",
     "trainerPic": "LEADER_JUAN",
     "trainerName": "JUAN",
-    "items": ["HYPER_POTION", "HYPER_POTION", "NONE", "NONE"],
+    "items": ["HYPER_POTION", "HYPER_POTION"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -6390,7 +6390,7 @@
         "iv": 0,
         "lvl": 17,
         "species": "MAKUHITA",
-        "moves": ["TACKLE", "FOCUS_ENERGY", "ARM_THRUST", "NONE"]
+        "moves": ["TACKLE", "FOCUS_ENERGY", "ARM_THRUST"]
       }
     ],
     "isFemaleEncounter": false
@@ -6414,7 +6414,7 @@
         "iv": 10,
         "lvl": 30,
         "species": "MAKUHITA",
-        "moves": ["TACKLE", "FOCUS_ENERGY", "ARM_THRUST", "NONE"]
+        "moves": ["TACKLE", "FOCUS_ENERGY", "ARM_THRUST"]
       }
     ],
     "isFemaleEncounter": false
@@ -6438,7 +6438,7 @@
         "iv": 20,
         "lvl": 33,
         "species": "MAKUHITA",
-        "moves": ["TACKLE", "FOCUS_ENERGY", "ARM_THRUST", "NONE"]
+        "moves": ["TACKLE", "FOCUS_ENERGY", "ARM_THRUST"]
       }
     ],
     "isFemaleEncounter": false
@@ -6462,7 +6462,7 @@
         "iv": 30,
         "lvl": 36,
         "species": "MAKUHITA",
-        "moves": ["TACKLE", "FOCUS_ENERGY", "ARM_THRUST", "NONE"]
+        "moves": ["TACKLE", "FOCUS_ENERGY", "ARM_THRUST"]
       }
     ],
     "isFemaleEncounter": false
@@ -6486,7 +6486,7 @@
         "iv": 40,
         "lvl": 38,
         "species": "HARIYAMA",
-        "moves": ["TACKLE", "FOCUS_ENERGY", "ARM_THRUST", "NONE"]
+        "moves": ["TACKLE", "FOCUS_ENERGY", "ARM_THRUST"]
       }
     ],
     "isFemaleEncounter": false
@@ -7114,7 +7114,7 @@
         "iv": 100,
         "lvl": 10,
         "species": "GEODUDE",
-        "moves": ["TACKLE", "NONE", "NONE", "NONE"]
+        "moves": ["TACKLE"]
       }
     ],
     "isFemaleEncounter": false
@@ -7187,7 +7187,7 @@
     "encounterMusic": "COOL",
     "trainerPic": "COOLTRAINER_M",
     "trainerName": "QUINCY",
-    "items": ["FULL_RESTORE", "NONE", "NONE", "NONE"],
+    "items": ["FULL_RESTORE"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -7211,7 +7211,7 @@
     "encounterMusic": "COOL",
     "trainerPic": "COOLTRAINER_F",
     "trainerName": "KATELYNN",
-    "items": ["FULL_RESTORE", "NONE", "NONE", "NONE"],
+    "items": ["FULL_RESTORE"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -9173,7 +9173,7 @@
     "encounterMusic": "COOL",
     "trainerPic": "COOLTRAINER_F",
     "trainerName": "DIANNE",
-    "items": ["FULL_RESTORE", "NONE", "NONE", "NONE"],
+    "items": ["FULL_RESTORE"],
     "doubleBattle": false,
     "aiFlags": [],
     "party": [
@@ -9182,14 +9182,14 @@
         "lvl": 43,
         "species": "CLAYDOL",
         "heldItem": "NONE",
-        "moves": ["SKILL_SWAP", "EARTHQUAKE", "NONE", "NONE"]
+        "moves": ["SKILL_SWAP", "EARTHQUAKE"]
       },
       {
         "iv": 0,
         "lvl": 43,
         "species": "LANTURN",
         "heldItem": "NONE",
-        "moves": ["THUNDERBOLT", "EARTHQUAKE", "NONE", "NONE"]
+        "moves": ["THUNDERBOLT", "EARTHQUAKE"]
       }
     ],
     "isFemaleEncounter": true
@@ -9282,7 +9282,7 @@
         "iv": 0,
         "lvl": 24,
         "species": "KOFFING",
-        "moves": ["POISON_GAS", "TACKLE", "SLUDGE", "NONE"]
+        "moves": ["POISON_GAS", "TACKLE", "SLUDGE"]
       },
       {
         "iv": 0,
@@ -9294,7 +9294,7 @@
         "iv": 0,
         "lvl": 26,
         "species": "KOFFING",
-        "moves": ["TACKLE", "SLUDGE", "NONE", "NONE"]
+        "moves": ["TACKLE", "SLUDGE"]
       }
     ],
     "isFemaleEncounter": false
@@ -9324,13 +9324,13 @@
         "iv": 20,
         "lvl": 27,
         "species": "KOFFING",
-        "moves": ["POISON_GAS", "TACKLE", "SLUDGE", "NONE"]
+        "moves": ["POISON_GAS", "TACKLE", "SLUDGE"]
       },
       {
         "iv": 20,
         "lvl": 29,
         "species": "KOFFING",
-        "moves": ["TACKLE", "SLUDGE", "NONE", "NONE"]
+        "moves": ["TACKLE", "SLUDGE"]
       }
     ],
     "isFemaleEncounter": false
@@ -9348,25 +9348,25 @@
         "iv": 30,
         "lvl": 30,
         "species": "KOFFING",
-        "moves": ["POISON_GAS", "TACKLE", "SLUDGE", "NONE"]
+        "moves": ["POISON_GAS", "TACKLE", "SLUDGE"]
       },
       {
         "iv": 30,
         "lvl": 30,
         "species": "KOFFING",
-        "moves": ["POISON_GAS", "TACKLE", "SLUDGE", "NONE"]
+        "moves": ["POISON_GAS", "TACKLE", "SLUDGE"]
       },
       {
         "iv": 30,
         "lvl": 30,
         "species": "KOFFING",
-        "moves": ["POISON_GAS", "TACKLE", "SLUDGE", "NONE"]
+        "moves": ["POISON_GAS", "TACKLE", "SLUDGE"]
       },
       {
         "iv": 30,
         "lvl": 32,
         "species": "KOFFING",
-        "moves": ["TACKLE", "SLUDGE", "NONE", "NONE"]
+        "moves": ["TACKLE", "SLUDGE"]
       }
     ],
     "isFemaleEncounter": false
@@ -9385,7 +9385,7 @@
         "lvl": 33,
         "species": "KOFFING",
         "heldItem": "NONE",
-        "moves": ["POISON_GAS", "TACKLE", "SLUDGE", "NONE"]
+        "moves": ["POISON_GAS", "TACKLE", "SLUDGE"]
       },
       {
         "iv": 40,
@@ -9406,7 +9406,7 @@
         "lvl": 35,
         "species": "WEEZING",
         "heldItem": "SMOKE_BALL",
-        "moves": ["TACKLE", "SLUDGE", "NONE", "NONE"]
+        "moves": ["TACKLE", "SLUDGE"]
       }
     ],
     "isFemaleEncounter": false
@@ -10689,13 +10689,13 @@
         "iv": 0,
         "lvl": 10,
         "species": "DUSKULL",
-        "moves": ["NIGHT_SHADE", "DISABLE", "NONE", "NONE"]
+        "moves": ["NIGHT_SHADE", "DISABLE"]
       },
       {
         "iv": 0,
         "lvl": 10,
         "species": "SHROOMISH",
-        "moves": ["ABSORB", "LEECH_SEED", "NONE", "NONE"]
+        "moves": ["ABSORB", "LEECH_SEED"]
       }
     ],
     "isFemaleEncounter": false
@@ -11085,7 +11085,7 @@
     "encounterMusic": "COOL",
     "trainerPic": "COOLTRAINER_F",
     "trainerName": "JAZMYN",
-    "items": ["HYPER_POTION", "NONE", "NONE", "NONE"],
+    "items": ["HYPER_POTION"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -11182,7 +11182,7 @@
     "encounterMusic": "COOL",
     "trainerPic": "COOLTRAINER_F",
     "trainerName": "MARLEY",
-    "items": ["HYPER_POTION", "NONE", "NONE", "NONE"],
+    "items": ["HYPER_POTION"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -11421,7 +11421,7 @@
     "encounterMusic": "MALE",
     "trainerPic": "WALLY",
     "trainerName": "WALLY",
-    "items": ["FULL_RESTORE", "FULL_RESTORE", "NONE", "NONE"],
+    "items": ["FULL_RESTORE", "FULL_RESTORE"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -12182,7 +12182,7 @@
     "encounterMusic": "COOL",
     "trainerPic": "COOLTRAINER_F",
     "trainerName": "HALLE",
-    "items": ["FULL_RESTORE", "NONE", "NONE", "NONE"],
+    "items": ["FULL_RESTORE"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -12389,7 +12389,7 @@
     "encounterMusic": "COOL",
     "trainerPic": "POKEMON_RANGER_M",
     "trainerName": "JACKSON",
-    "items": ["FULL_RESTORE", "NONE", "NONE", "NONE"],
+    "items": ["FULL_RESTORE"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -12406,7 +12406,7 @@
     "encounterMusic": "COOL",
     "trainerPic": "POKEMON_RANGER_M",
     "trainerName": "LORENZO",
-    "items": ["FULL_RESTORE", "NONE", "NONE", "NONE"],
+    "items": ["FULL_RESTORE"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -12433,7 +12433,7 @@
     "encounterMusic": "COOL",
     "trainerPic": "POKEMON_RANGER_M",
     "trainerName": "SEBASTIAN",
-    "items": ["FULL_RESTORE", "NONE", "NONE", "NONE"],
+    "items": ["FULL_RESTORE"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -12450,7 +12450,7 @@
     "encounterMusic": "COOL",
     "trainerPic": "POKEMON_RANGER_M",
     "trainerName": "JACKSON",
-    "items": ["FULL_RESTORE", "NONE", "NONE", "NONE"],
+    "items": ["FULL_RESTORE"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "SETUP_FIRST_TURN"],
     "party": [
@@ -12467,7 +12467,7 @@
     "encounterMusic": "COOL",
     "trainerPic": "POKEMON_RANGER_M",
     "trainerName": "JACKSON",
-    "items": ["FULL_RESTORE", "NONE", "NONE", "NONE"],
+    "items": ["FULL_RESTORE"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -12484,7 +12484,7 @@
     "encounterMusic": "COOL",
     "trainerPic": "POKEMON_RANGER_M",
     "trainerName": "JACKSON",
-    "items": ["FULL_RESTORE", "NONE", "NONE", "NONE"],
+    "items": ["FULL_RESTORE"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "SETUP_FIRST_TURN"],
     "party": [
@@ -12501,7 +12501,7 @@
     "encounterMusic": "COOL",
     "trainerPic": "POKEMON_RANGER_M",
     "trainerName": "JACKSON",
-    "items": ["FULL_RESTORE", "NONE", "NONE", "NONE"],
+    "items": ["FULL_RESTORE"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -12523,7 +12523,7 @@
     "encounterMusic": "COOL",
     "trainerPic": "POKEMON_RANGER_F",
     "trainerName": "CATHERINE",
-    "items": ["FULL_RESTORE", "NONE", "NONE", "NONE"],
+    "items": ["FULL_RESTORE"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "SETUP_FIRST_TURN"],
     "party": [
@@ -12545,7 +12545,7 @@
     "encounterMusic": "COOL",
     "trainerPic": "POKEMON_RANGER_F",
     "trainerName": "JENNA",
-    "items": ["FULL_RESTORE", "NONE", "NONE", "NONE"],
+    "items": ["FULL_RESTORE"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "SETUP_FIRST_TURN"],
     "party": [
@@ -12572,7 +12572,7 @@
     "encounterMusic": "COOL",
     "trainerPic": "POKEMON_RANGER_F",
     "trainerName": "SOPHIA",
-    "items": ["FULL_RESTORE", "NONE", "NONE", "NONE"],
+    "items": ["FULL_RESTORE"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -12594,7 +12594,7 @@
     "encounterMusic": "COOL",
     "trainerPic": "POKEMON_RANGER_F",
     "trainerName": "CATHERINE",
-    "items": ["FULL_RESTORE", "NONE", "NONE", "NONE"],
+    "items": ["FULL_RESTORE"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "SETUP_FIRST_TURN"],
     "party": [
@@ -12616,7 +12616,7 @@
     "encounterMusic": "COOL",
     "trainerPic": "POKEMON_RANGER_F",
     "trainerName": "CATHERINE",
-    "items": ["FULL_RESTORE", "NONE", "NONE", "NONE"],
+    "items": ["FULL_RESTORE"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -12638,7 +12638,7 @@
     "encounterMusic": "COOL",
     "trainerPic": "POKEMON_RANGER_F",
     "trainerName": "CATHERINE",
-    "items": ["FULL_RESTORE", "NONE", "NONE", "NONE"],
+    "items": ["FULL_RESTORE"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "SETUP_FIRST_TURN"],
     "party": [
@@ -12660,7 +12660,7 @@
     "encounterMusic": "COOL",
     "trainerPic": "POKEMON_RANGER_F",
     "trainerName": "CATHERINE",
-    "items": ["FULL_RESTORE", "NONE", "NONE", "NONE"],
+    "items": ["FULL_RESTORE"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -12894,7 +12894,7 @@
     "encounterMusic": "COOL",
     "trainerPic": "COOLTRAINER_F",
     "trainerName": "ATHENA",
-    "items": ["HYPER_POTION", "NONE", "NONE", "NONE"],
+    "items": ["HYPER_POTION"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -12903,14 +12903,14 @@
         "lvl": 32,
         "species": "MANECTRIC",
         "heldItem": "NONE",
-        "moves": ["THUNDER", "THUNDER_WAVE", "QUICK_ATTACK", "NONE"]
+        "moves": ["THUNDER", "THUNDER_WAVE", "QUICK_ATTACK"]
       },
       {
         "iv": 100,
         "lvl": 32,
         "species": "LINOONE",
         "heldItem": "NONE",
-        "moves": ["SURF", "THIEF", "NONE", "NONE"]
+        "moves": ["SURF", "THIEF"]
       }
     ],
     "isFemaleEncounter": true
@@ -13300,7 +13300,7 @@
     "encounterMusic": "COOL",
     "trainerPic": "COOLTRAINER_M",
     "trainerName": "JONATHAN",
-    "items": ["HYPER_POTION", "NONE", "NONE", "NONE"],
+    "items": ["HYPER_POTION"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "SETUP_FIRST_TURN"],
     "party": [
@@ -13366,7 +13366,7 @@
     "encounterMusic": "MAGMA",
     "trainerPic": "MAGMA_LEADER_MAXIE",
     "trainerName": "MAXIE",
-    "items": ["SUPER_POTION", "SUPER_POTION", "NONE", "NONE"],
+    "items": ["SUPER_POTION", "SUPER_POTION"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -13393,7 +13393,7 @@
     "encounterMusic": "MAGMA",
     "trainerPic": "MAGMA_LEADER_MAXIE",
     "trainerName": "MAXIE",
-    "items": ["SUPER_POTION", "SUPER_POTION", "NONE", "NONE"],
+    "items": ["SUPER_POTION", "SUPER_POTION"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -14108,7 +14108,7 @@
         "iv": 0,
         "lvl": 9,
         "species": "WAILMER",
-        "moves": ["SPLASH", "WATER_GUN", "NONE", "NONE"]
+        "moves": ["SPLASH", "WATER_GUN"]
       }
     ],
     "isFemaleEncounter": false
@@ -14126,13 +14126,13 @@
         "iv": 0,
         "lvl": 10,
         "species": "PELIPPER",
-        "moves": ["GUST", "GROWL", "NONE", "NONE"]
+        "moves": ["GUST", "GROWL"]
       },
       {
         "iv": 0,
         "lvl": 10,
         "species": "POOCHYENA",
-        "moves": ["BITE", "SCARY_FACE", "NONE", "NONE"]
+        "moves": ["BITE", "SCARY_FACE"]
       }
     ],
     "isFemaleEncounter": false
@@ -14468,7 +14468,7 @@
     "encounterMusic": "COOL",
     "trainerPic": "COOLTRAINER_M",
     "trainerName": "GERALD",
-    "items": ["HYPER_POTION", "NONE", "NONE", "NONE"],
+    "items": ["HYPER_POTION"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -14666,7 +14666,7 @@
     "encounterMusic": "MALE",
     "trainerPic": "WALLY",
     "trainerName": "WALLY",
-    "items": ["FULL_RESTORE", "FULL_RESTORE", "NONE", "NONE"],
+    "items": ["FULL_RESTORE", "FULL_RESTORE"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -14708,7 +14708,7 @@
     "encounterMusic": "MALE",
     "trainerPic": "WALLY",
     "trainerName": "WALLY",
-    "items": ["FULL_RESTORE", "FULL_RESTORE", "NONE", "NONE"],
+    "items": ["FULL_RESTORE", "FULL_RESTORE"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -14750,7 +14750,7 @@
     "encounterMusic": "MALE",
     "trainerPic": "WALLY",
     "trainerName": "WALLY",
-    "items": ["FULL_RESTORE", "FULL_RESTORE", "NONE", "NONE"],
+    "items": ["FULL_RESTORE", "FULL_RESTORE"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -14792,7 +14792,7 @@
     "encounterMusic": "MALE",
     "trainerPic": "WALLY",
     "trainerName": "WALLY",
-    "items": ["FULL_RESTORE", "FULL_RESTORE", "NONE", "NONE"],
+    "items": ["FULL_RESTORE", "FULL_RESTORE"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -15102,7 +15102,7 @@
     "encounterMusic": "COOL",
     "trainerPic": "COOLTRAINER_F",
     "trainerName": "ALEXA",
-    "items": ["FULL_RESTORE", "NONE", "NONE", "NONE"],
+    "items": ["FULL_RESTORE"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -15124,7 +15124,7 @@
     "encounterMusic": "COOL",
     "trainerPic": "COOLTRAINER_M",
     "trainerName": "RUBEN",
-    "items": ["HYPER_POTION", "NONE", "NONE", "NONE"],
+    "items": ["HYPER_POTION"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -15675,7 +15675,7 @@
     "encounterMusic": "FEMALE",
     "trainerPic": "LADY",
     "trainerName": "SARAH",
-    "items": ["FULL_RESTORE", "NONE", "NONE", "NONE"],
+    "items": ["FULL_RESTORE"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE"],
     "party": [
@@ -16405,7 +16405,7 @@
     "encounterMusic": "COOL",
     "trainerPic": "COOLTRAINER_F",
     "trainerName": "DARCY",
-    "items": ["HYPER_POTION", "NONE", "NONE", "NONE"],
+    "items": ["HYPER_POTION"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -16576,7 +16576,7 @@
     "encounterMusic": "COOL",
     "trainerPic": "COOLTRAINER_F",
     "trainerName": "CAROLINA",
-    "items": ["HYPER_POTION", "NONE", "NONE", "NONE"],
+    "items": ["HYPER_POTION"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -16940,7 +16940,7 @@
     "encounterMusic": "INTENSE",
     "trainerPic": "EXPERT_F",
     "trainerName": "MAKAYLA",
-    "items": ["HYPER_POTION", "NONE", "NONE", "NONE"],
+    "items": ["HYPER_POTION"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -17018,7 +17018,7 @@
     "encounterMusic": "COOL",
     "trainerPic": "COOLTRAINER_M",
     "trainerName": "LEONEL",
-    "items": ["HYPER_POTION", "NONE", "NONE", "NONE"],
+    "items": ["HYPER_POTION"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -17026,7 +17026,7 @@
         "iv": 100,
         "lvl": 30,
         "species": "MANECTRIC",
-        "moves": ["THUNDER", "QUICK_ATTACK", "THUNDER_WAVE", "NONE"]
+        "moves": ["THUNDER", "QUICK_ATTACK", "THUNDER_WAVE"]
       }
     ],
     "isFemaleEncounter": false
@@ -17164,7 +17164,7 @@
     "encounterMusic": "COOL",
     "trainerPic": "COOLTRAINER_F",
     "trainerName": "CRISTIN",
-    "items": ["HYPER_POTION", "NONE", "NONE", "NONE"],
+    "items": ["HYPER_POTION"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -17230,7 +17230,7 @@
     "encounterMusic": "FEMALE",
     "trainerPic": "LEADER_ROXANNE",
     "trainerName": "ROXANNE",
-    "items": ["FULL_RESTORE", "FULL_RESTORE", "FULL_RESTORE", "NONE"],
+    "items": ["FULL_RESTORE", "FULL_RESTORE", "FULL_RESTORE"],
     "doubleBattle": true,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -17270,7 +17270,7 @@
     "encounterMusic": "FEMALE",
     "trainerPic": "LEADER_ROXANNE",
     "trainerName": "ROXANNE",
-    "items": ["FULL_RESTORE", "FULL_RESTORE", "FULL_RESTORE", "NONE"],
+    "items": ["FULL_RESTORE", "FULL_RESTORE", "FULL_RESTORE"],
     "doubleBattle": true,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -17317,7 +17317,7 @@
     "encounterMusic": "FEMALE",
     "trainerPic": "LEADER_ROXANNE",
     "trainerName": "ROXANNE",
-    "items": ["FULL_RESTORE", "FULL_RESTORE", "FULL_RESTORE", "NONE"],
+    "items": ["FULL_RESTORE", "FULL_RESTORE", "FULL_RESTORE"],
     "doubleBattle": true,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -17364,7 +17364,7 @@
     "encounterMusic": "FEMALE",
     "trainerPic": "LEADER_ROXANNE",
     "trainerName": "ROXANNE",
-    "items": ["FULL_RESTORE", "FULL_RESTORE", "FULL_RESTORE", "NONE"],
+    "items": ["FULL_RESTORE", "FULL_RESTORE", "FULL_RESTORE"],
     "doubleBattle": true,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -17418,7 +17418,7 @@
     "encounterMusic": "MALE",
     "trainerPic": "LEADER_BRAWLY",
     "trainerName": "BRAWLY",
-    "items": ["FULL_RESTORE", "FULL_RESTORE", "FULL_RESTORE", "NONE"],
+    "items": ["FULL_RESTORE", "FULL_RESTORE", "FULL_RESTORE"],
     "doubleBattle": true,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -17458,7 +17458,7 @@
     "encounterMusic": "MALE",
     "trainerPic": "LEADER_BRAWLY",
     "trainerName": "BRAWLY",
-    "items": ["FULL_RESTORE", "FULL_RESTORE", "FULL_RESTORE", "NONE"],
+    "items": ["FULL_RESTORE", "FULL_RESTORE", "FULL_RESTORE"],
     "doubleBattle": true,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -17498,7 +17498,7 @@
     "encounterMusic": "MALE",
     "trainerPic": "LEADER_BRAWLY",
     "trainerName": "BRAWLY",
-    "items": ["FULL_RESTORE", "FULL_RESTORE", "FULL_RESTORE", "NONE"],
+    "items": ["FULL_RESTORE", "FULL_RESTORE", "FULL_RESTORE"],
     "doubleBattle": true,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -17545,7 +17545,7 @@
     "encounterMusic": "MALE",
     "trainerPic": "LEADER_BRAWLY",
     "trainerName": "BRAWLY",
-    "items": ["FULL_RESTORE", "FULL_RESTORE", "FULL_RESTORE", "NONE"],
+    "items": ["FULL_RESTORE", "FULL_RESTORE", "FULL_RESTORE"],
     "doubleBattle": true,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -17599,7 +17599,7 @@
     "encounterMusic": "MALE",
     "trainerPic": "LEADER_WATTSON",
     "trainerName": "WATTSON",
-    "items": ["FULL_RESTORE", "FULL_RESTORE", "FULL_RESTORE", "NONE"],
+    "items": ["FULL_RESTORE", "FULL_RESTORE", "FULL_RESTORE"],
     "doubleBattle": true,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -17639,7 +17639,7 @@
     "encounterMusic": "MALE",
     "trainerPic": "LEADER_WATTSON",
     "trainerName": "WATTSON",
-    "items": ["FULL_RESTORE", "FULL_RESTORE", "FULL_RESTORE", "NONE"],
+    "items": ["FULL_RESTORE", "FULL_RESTORE", "FULL_RESTORE"],
     "doubleBattle": true,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -17686,7 +17686,7 @@
     "encounterMusic": "MALE",
     "trainerPic": "LEADER_WATTSON",
     "trainerName": "WATTSON",
-    "items": ["FULL_RESTORE", "FULL_RESTORE", "FULL_RESTORE", "NONE"],
+    "items": ["FULL_RESTORE", "FULL_RESTORE", "FULL_RESTORE"],
     "doubleBattle": true,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -17733,7 +17733,7 @@
     "encounterMusic": "MALE",
     "trainerPic": "LEADER_WATTSON",
     "trainerName": "WATTSON",
-    "items": ["FULL_RESTORE", "FULL_RESTORE", "FULL_RESTORE", "NONE"],
+    "items": ["FULL_RESTORE", "FULL_RESTORE", "FULL_RESTORE"],
     "doubleBattle": true,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -17787,7 +17787,7 @@
     "encounterMusic": "FEMALE",
     "trainerPic": "LEADER_FLANNERY",
     "trainerName": "FLANNERY",
-    "items": ["FULL_RESTORE", "FULL_RESTORE", "FULL_RESTORE", "NONE"],
+    "items": ["FULL_RESTORE", "FULL_RESTORE", "FULL_RESTORE"],
     "doubleBattle": true,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -17827,7 +17827,7 @@
     "encounterMusic": "FEMALE",
     "trainerPic": "LEADER_FLANNERY",
     "trainerName": "FLANNERY",
-    "items": ["FULL_RESTORE", "FULL_RESTORE", "FULL_RESTORE", "NONE"],
+    "items": ["FULL_RESTORE", "FULL_RESTORE", "FULL_RESTORE"],
     "doubleBattle": true,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -17874,7 +17874,7 @@
     "encounterMusic": "FEMALE",
     "trainerPic": "LEADER_FLANNERY",
     "trainerName": "FLANNERY",
-    "items": ["FULL_RESTORE", "FULL_RESTORE", "FULL_RESTORE", "NONE"],
+    "items": ["FULL_RESTORE", "FULL_RESTORE", "FULL_RESTORE"],
     "doubleBattle": true,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -17928,7 +17928,7 @@
     "encounterMusic": "FEMALE",
     "trainerPic": "LEADER_FLANNERY",
     "trainerName": "FLANNERY",
-    "items": ["FULL_RESTORE", "FULL_RESTORE", "FULL_RESTORE", "NONE"],
+    "items": ["FULL_RESTORE", "FULL_RESTORE", "FULL_RESTORE"],
     "doubleBattle": true,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -17982,7 +17982,7 @@
     "encounterMusic": "MALE",
     "trainerPic": "LEADER_NORMAN",
     "trainerName": "NORMAN",
-    "items": ["FULL_RESTORE", "FULL_RESTORE", "FULL_RESTORE", "NONE"],
+    "items": ["FULL_RESTORE", "FULL_RESTORE", "FULL_RESTORE"],
     "doubleBattle": true,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -18022,7 +18022,7 @@
     "encounterMusic": "MALE",
     "trainerPic": "LEADER_NORMAN",
     "trainerName": "NORMAN",
-    "items": ["FULL_RESTORE", "FULL_RESTORE", "FULL_RESTORE", "NONE"],
+    "items": ["FULL_RESTORE", "FULL_RESTORE", "FULL_RESTORE"],
     "doubleBattle": true,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -18069,7 +18069,7 @@
     "encounterMusic": "MALE",
     "trainerPic": "LEADER_NORMAN",
     "trainerName": "NORMAN",
-    "items": ["FULL_RESTORE", "FULL_RESTORE", "FULL_RESTORE", "NONE"],
+    "items": ["FULL_RESTORE", "FULL_RESTORE", "FULL_RESTORE"],
     "doubleBattle": true,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -18116,7 +18116,7 @@
     "encounterMusic": "MALE",
     "trainerPic": "LEADER_NORMAN",
     "trainerName": "NORMAN",
-    "items": ["FULL_RESTORE", "FULL_RESTORE", "FULL_RESTORE", "NONE"],
+    "items": ["FULL_RESTORE", "FULL_RESTORE", "FULL_RESTORE"],
     "doubleBattle": true,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -18170,7 +18170,7 @@
     "encounterMusic": "FEMALE",
     "trainerPic": "LEADER_WINONA",
     "trainerName": "WINONA",
-    "items": ["FULL_RESTORE", "FULL_RESTORE", "FULL_RESTORE", "NONE"],
+    "items": ["FULL_RESTORE", "FULL_RESTORE", "FULL_RESTORE"],
     "doubleBattle": true,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY", "RISKY"],
     "party": [
@@ -18217,7 +18217,7 @@
     "encounterMusic": "FEMALE",
     "trainerPic": "LEADER_WINONA",
     "trainerName": "WINONA",
-    "items": ["FULL_RESTORE", "FULL_RESTORE", "FULL_RESTORE", "NONE"],
+    "items": ["FULL_RESTORE", "FULL_RESTORE", "FULL_RESTORE"],
     "doubleBattle": true,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY", "RISKY"],
     "party": [
@@ -18271,7 +18271,7 @@
     "encounterMusic": "FEMALE",
     "trainerPic": "LEADER_WINONA",
     "trainerName": "WINONA",
-    "items": ["FULL_RESTORE", "FULL_RESTORE", "FULL_RESTORE", "NONE"],
+    "items": ["FULL_RESTORE", "FULL_RESTORE", "FULL_RESTORE"],
     "doubleBattle": true,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY", "RISKY"],
     "party": [
@@ -18325,7 +18325,7 @@
     "encounterMusic": "FEMALE",
     "trainerPic": "LEADER_WINONA",
     "trainerName": "WINONA",
-    "items": ["FULL_RESTORE", "FULL_RESTORE", "FULL_RESTORE", "NONE"],
+    "items": ["FULL_RESTORE", "FULL_RESTORE", "FULL_RESTORE"],
     "doubleBattle": true,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY", "RISKY"],
     "party": [
@@ -18379,7 +18379,7 @@
     "encounterMusic": "FEMALE",
     "trainerPic": "LEADER_TATE_AND_LIZA",
     "trainerName": "TATE&LIZA",
-    "items": ["FULL_RESTORE", "FULL_RESTORE", "FULL_RESTORE", "NONE"],
+    "items": ["FULL_RESTORE", "FULL_RESTORE", "FULL_RESTORE"],
     "doubleBattle": true,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -18426,7 +18426,7 @@
     "encounterMusic": "FEMALE",
     "trainerPic": "LEADER_TATE_AND_LIZA",
     "trainerName": "TATE&LIZA",
-    "items": ["FULL_RESTORE", "FULL_RESTORE", "FULL_RESTORE", "NONE"],
+    "items": ["FULL_RESTORE", "FULL_RESTORE", "FULL_RESTORE"],
     "doubleBattle": true,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -18480,7 +18480,7 @@
     "encounterMusic": "FEMALE",
     "trainerPic": "LEADER_TATE_AND_LIZA",
     "trainerName": "TATE&LIZA",
-    "items": ["FULL_RESTORE", "FULL_RESTORE", "FULL_RESTORE", "NONE"],
+    "items": ["FULL_RESTORE", "FULL_RESTORE", "FULL_RESTORE"],
     "doubleBattle": true,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -18534,7 +18534,7 @@
     "encounterMusic": "FEMALE",
     "trainerPic": "LEADER_TATE_AND_LIZA",
     "trainerName": "TATE&LIZA",
-    "items": ["FULL_RESTORE", "FULL_RESTORE", "FULL_RESTORE", "NONE"],
+    "items": ["FULL_RESTORE", "FULL_RESTORE", "FULL_RESTORE"],
     "doubleBattle": true,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -18588,7 +18588,7 @@
     "encounterMusic": "MALE",
     "trainerPic": "LEADER_JUAN",
     "trainerName": "JUAN",
-    "items": ["FULL_RESTORE", "FULL_RESTORE", "FULL_RESTORE", "NONE"],
+    "items": ["FULL_RESTORE", "FULL_RESTORE", "FULL_RESTORE"],
     "doubleBattle": true,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -18635,7 +18635,7 @@
     "encounterMusic": "MALE",
     "trainerPic": "LEADER_JUAN",
     "trainerName": "JUAN",
-    "items": ["FULL_RESTORE", "FULL_RESTORE", "FULL_RESTORE", "NONE"],
+    "items": ["FULL_RESTORE", "FULL_RESTORE", "FULL_RESTORE"],
     "doubleBattle": true,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -18682,7 +18682,7 @@
     "encounterMusic": "MALE",
     "trainerPic": "LEADER_JUAN",
     "trainerName": "JUAN",
-    "items": ["FULL_RESTORE", "FULL_RESTORE", "FULL_RESTORE", "NONE"],
+    "items": ["FULL_RESTORE", "FULL_RESTORE", "FULL_RESTORE"],
     "doubleBattle": true,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -18736,7 +18736,7 @@
     "encounterMusic": "MALE",
     "trainerPic": "LEADER_JUAN",
     "trainerName": "JUAN",
-    "items": ["FULL_RESTORE", "FULL_RESTORE", "FULL_RESTORE", "NONE"],
+    "items": ["FULL_RESTORE", "FULL_RESTORE", "FULL_RESTORE"],
     "doubleBattle": true,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -18799,14 +18799,14 @@
         "lvl": 17,
         "species": "ILLUMISE",
         "heldItem": "NONE",
-        "moves": ["SHOCK_WAVE", "QUICK_ATTACK", "CHARM", "NONE"]
+        "moves": ["SHOCK_WAVE", "QUICK_ATTACK", "CHARM"]
       },
       {
         "iv": 100,
         "lvl": 17,
         "species": "VOLBEAT",
         "heldItem": "NONE",
-        "moves": ["SHOCK_WAVE", "QUICK_ATTACK", "CONFUSE_RAY", "NONE"]
+        "moves": ["SHOCK_WAVE", "QUICK_ATTACK", "CONFUSE_RAY"]
       }
     ],
     "isFemaleEncounter": false
@@ -19423,7 +19423,7 @@
     "encounterMusic": "COOL",
     "trainerPic": "COOLTRAINER_F",
     "trainerName": "CRISTIN",
-    "items": ["HYPER_POTION", "NONE", "NONE", "NONE"],
+    "items": ["HYPER_POTION"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -19445,7 +19445,7 @@
     "encounterMusic": "COOL",
     "trainerPic": "COOLTRAINER_F",
     "trainerName": "CRISTIN",
-    "items": ["HYPER_POTION", "NONE", "NONE", "NONE"],
+    "items": ["HYPER_POTION"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -19472,7 +19472,7 @@
     "encounterMusic": "COOL",
     "trainerPic": "COOLTRAINER_F",
     "trainerName": "CRISTIN",
-    "items": ["HYPER_POTION", "NONE", "NONE", "NONE"],
+    "items": ["HYPER_POTION"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [
@@ -19499,7 +19499,7 @@
     "encounterMusic": "COOL",
     "trainerPic": "COOLTRAINER_F",
     "trainerName": "CRISTIN",
-    "items": ["HYPER_POTION", "NONE", "NONE", "NONE"],
+    "items": ["HYPER_POTION"],
     "doubleBattle": false,
     "aiFlags": ["CHECK_BAD_MOVE", "TRY_TO_FAINT", "CHECK_VIABILITY"],
     "party": [

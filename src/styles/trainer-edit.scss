@@ -6,6 +6,10 @@
   @include grid(140px);
 }
 
+.item-grid {
+  @include grid(140px);
+}
+
 .trainer-id {
   font-size: 10px;
   position: absolute;

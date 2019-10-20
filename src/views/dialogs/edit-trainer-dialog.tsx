@@ -10,6 +10,7 @@ import { EditFlagsDialog } from "@/views/dialogs/edit-flags-dialog";
 import { ChooseTrainerPicDialog } from "@/views/dialogs/choose-trainer-pic-dialog";
 import { ChooseTrainerClassDialog } from "@/views/dialogs/choose-trainer-class-dialog";
 import { ChooseEncounterMusicDialog } from "@/views/dialogs/choose-encounter-music-dialog";
+import { ChooseItemDialog } from "@/views/dialogs/choose-item-dialog";
 
 interface EditTrainerOptions {
   trainerId: string;
@@ -76,8 +77,17 @@ class EditTrainerDialogCmp extends Vue {
     }
   }
 
-  get items() {
-    return this.trainer.items.filter(item => item !== "NONE");
+  async addItem() {
+    const item = await DialogManager.openDialog(ChooseItemDialog, "").catch(
+      () => {}
+    );
+    if (item) {
+      this.trainer.items.push(item);
+    }
+  }
+
+  removeItem(index: number) {
+    this.trainer.items.splice(index, 1);
   }
 
   get trainerClass() {
@@ -151,27 +161,33 @@ class EditTrainerDialogCmp extends Vue {
           </v-row>
           <DialogEntry label="Items">
             <v-list elevation={2} dense class="mb-5">
-              {this.items.map(item => (
-                <v-list-item
-                  onclick={() => {
-                    console.log("Clicked");
-                  }}
-                >
+              {this.trainer.items.map((item, index) => (
+                <v-list-item>
                   <v-list-item-content>
-                    <v-list-item-title>{item}</v-list-item-title>
+                    <v-list-item-title>
+                      {GameModel.model.items[item].name}
+                    </v-list-item-title>
                   </v-list-item-content>
                   <v-list-item-action>
-                    <v-btn icon small onclick={modifiers.stop(() => {})}>
+                    <v-btn
+                      icon
+                      small
+                      onclick={modifiers.stop(() => {
+                        this.removeItem(index);
+                      })}
+                    >
                       <v-icon small>fas fa-times</v-icon>
                     </v-btn>
                   </v-list-item-action>
                 </v-list-item>
               ))}
-              <v-list-item>
-                <v-list-item-content>
-                  <v-btn>Add Item</v-btn>
-                </v-list-item-content>
-              </v-list-item>
+              {this.trainer.items.length < 4 && (
+                <v-list-item>
+                  <v-list-item-content>
+                    <v-btn onclick={() => this.addItem()}>Add Item</v-btn>
+                  </v-list-item-content>
+                </v-list-item>
+              )}
             </v-list>
           </DialogEntry>
           <DialogEntry label="AI Flags">
