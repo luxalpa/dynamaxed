@@ -2,14 +2,29 @@ import { Component, Vue } from "vue-property-decorator";
 import { GameModel, NoTrainerPartyMon, Trainer } from "@/model/model";
 import { DialogManager } from "@/modules/dialog-manager";
 import { EditTrainerDialog } from "@/views/dialogs/edit-trainer-dialog";
-import { ProjectManager } from "@/modules/project-manager";
-import path from "path";
 import { PathManager } from "@/modules/path-manager";
+import { CATCH_IGNORE } from "@/utils";
+import { EditTrainerMonDialog } from "@/views/dialogs/edit-trainer-mon-dialog";
 
 @Component({
   name: "TrainersView"
 })
 export class TrainersView extends Vue {
+  async editPartyMon(trainer: Trainer, partyIndex: number) {
+    let mon = await DialogManager.openDialog(
+      EditTrainerMonDialog,
+      trainer.party[partyIndex] || NoTrainerPartyMon
+    );
+    if (!mon) {
+      return;
+    }
+    if (trainer.party.length <= partyIndex) {
+      trainer.party.push(mon);
+    } else {
+      trainer.party[partyIndex] = mon;
+    }
+  }
+
   render() {
     const trainerList: [string, Trainer][] = Object.keys(
       GameModel.model.trainers
@@ -25,16 +40,15 @@ export class TrainersView extends Vue {
           const pic = PathManager.trainerPic(trainer.trainerPic);
 
           return (
-            <v-card
-              onclick={() => {
-                DialogManager.openDialog(EditTrainerDialog, {
-                  trainerId: name
-                }).catch(() => {});
-              }}
-              key={name}
-              class="flex-row d-flex trainer-card"
-            >
-              <div class="trainer-main">
+            <v-card key={name} class="flex-row d-flex trainer-card">
+              <div
+                class="trainer-main"
+                onclick={() => {
+                  DialogManager.openDialog(EditTrainerDialog, {
+                    trainerId: name
+                  }).catch(CATCH_IGNORE);
+                }}
+              >
                 <div class="trainer-id">{name}</div>
                 <div class="trainer-pic">
                   <img src={pic} alt={"ERROR"} />
@@ -43,22 +57,23 @@ export class TrainersView extends Vue {
                 <div class="trainer-class">{trainer.trainerClass}</div>
               </div>
               <div class="trainer-party d-flex flex-row">
-                {party.map(mon => {
-                  const pokepic = path.join(
-                    ProjectManager.currentProjectPath,
-                    "graphics/pokemon",
-                    mon.species.toLowerCase(),
-                    "front.png"
-                  );
+                {party.map((mon, idx) => {
+                  const pokepic = PathManager.pokePic(mon.species);
                   if (mon === NoTrainerPartyMon) {
                     return (
-                      <div class="trainer-party-mon">
+                      <div
+                        class="trainer-party-mon"
+                        onclick={() => this.editPartyMon(trainer, idx)}
+                      >
                         <div class="party-pic" />
                       </div>
                     );
                   }
                   return (
-                    <div class="trainer-party-mon">
+                    <div
+                      class="trainer-party-mon"
+                      onclick={() => this.editPartyMon(trainer, idx)}
+                    >
                       <div class="party-pic">
                         <img src={pokepic} />
                       </div>

@@ -12,6 +12,8 @@ import { ChooseTrainerClassDialog } from "@/views/dialogs/choose-trainer-class-d
 import { ChooseEncounterMusicDialog } from "@/views/dialogs/choose-encounter-music-dialog";
 import { ChooseItemDialog } from "@/views/dialogs/choose-item-dialog";
 import { TrainerClass } from "@/components/trainer-class";
+import { CATCH_IGNORE } from "@/utils";
+import { Item } from "@/components/item";
 
 interface EditTrainerOptions {
   trainerId: string;
@@ -42,7 +44,7 @@ class EditTrainerDialogCmp extends Vue {
     const flags = await DialogManager.openDialog(
       EditFlagsDialog,
       this.trainer.aiFlags
-    ).catch(() => {});
+    ).catch(CATCH_IGNORE);
     if (flags) {
       this.trainer.aiFlags = flags;
     }
@@ -52,7 +54,7 @@ class EditTrainerDialogCmp extends Vue {
     const trainerClass = await DialogManager.openDialog(
       ChooseTrainerClassDialog,
       this.trainer.trainerClass
-    ).catch(() => {});
+    ).catch(CATCH_IGNORE);
     if (trainerClass) {
       this.trainer.trainerClass = trainerClass;
     }
@@ -62,7 +64,7 @@ class EditTrainerDialogCmp extends Vue {
     const encounterMusic = await DialogManager.openDialog(
       ChooseEncounterMusicDialog,
       this.trainer.encounterMusic
-    ).catch(() => {});
+    ).catch(CATCH_IGNORE);
     if (encounterMusic) {
       this.trainer.encounterMusic = encounterMusic;
     }
@@ -72,7 +74,7 @@ class EditTrainerDialogCmp extends Vue {
     const trainerPic = await DialogManager.openDialog(
       ChooseTrainerPicDialog,
       this.trainer.trainerPic
-    ).catch(() => {});
+    ).catch(CATCH_IGNORE);
     if (trainerPic) {
       this.trainer.trainerPic = trainerPic;
     }
@@ -80,7 +82,7 @@ class EditTrainerDialogCmp extends Vue {
 
   async addItem() {
     const item = await DialogManager.openDialog(ChooseItemDialog, "").catch(
-      () => {}
+      CATCH_IGNORE
     );
     if (item) {
       this.trainer.items.push(item);
@@ -162,7 +164,7 @@ class EditTrainerDialogCmp extends Vue {
                 <v-list-item>
                   <v-list-item-content>
                     <v-list-item-title>
-                      {GameModel.model.items[item].name}
+                      <Item itemID={item} />
                     </v-list-item-title>
                   </v-list-item-content>
                   <v-list-item-action>

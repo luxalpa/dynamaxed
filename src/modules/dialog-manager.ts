@@ -36,13 +36,13 @@ export const DialogManager = new (class {
   }
 
   reject() {
-    this.closeTopmostDialog().reject();
+    this.closeTopmostDialog().resolve(undefined);
   }
 
   async openDialog<T, U>(
     dialogOpts: DialogOptions<T, U>,
-    params?: T
-  ): Promise<U> {
+    params: T
+  ): Promise<U | undefined> {
     return new Promise<any>((resolve, reject) => {
       let d: ActiveDialog = {
         dialogOpts,

@@ -1,6 +1,7 @@
 import trainerDefaults from "@/model/defaults/trainers.json";
 import trainerClassDefaults from "@/model/defaults/trainer-classes.json";
 import itemDefaults from "@/model/defaults/items.json";
+import pokemonDefaults from "@/model/defaults/pokemon.json";
 import fs from "fs";
 import path from "path";
 import { compileTrainers } from "@/model/serialize/trainers";
@@ -53,24 +54,6 @@ export const NoTrainerPartyMon: TrainerPartyMon = {
   iv: 0
 };
 
-/*
-*
-    u8 name[ITEM_NAME_LENGTH];
-    u16 itemId;
-    u16 price;
-    u8 holdEffect;
-    u8 holdEffectParam;
-    const u8 *description;
-    u8 importance;
-    u8 unk19;
-    u8 pocket;
-    u8 type;
-    ItemUseFunc fieldUseFunc;
-    u8 battleUsage;
-    ItemUseFunc battleUseFunc;
-    u8 secondaryId;
-* */
-
 export interface Item {
   name: string;
   price: number;
@@ -88,23 +71,31 @@ export interface Item {
   icon?: [string, string];
 }
 
+export interface Pokemon {
+  name: string;
+  moves: [number, string];
+}
+
 export interface Model {
   trainers: Record<string, Trainer>;
   trainerClasses: Record<string, TrainerClass>;
   items: Record<string, Item>;
+  pokemon: Record<string, Pokemon>;
 }
 
 const files = {
   trainers: ["trainers.json", trainerDefaults],
   trainerClasses: ["trainer-classes.json", trainerClassDefaults],
-  items: ["items.json", itemDefaults]
+  items: ["items.json", itemDefaults],
+  pokemon: ["pokemon.json", pokemonDefaults]
 } as const;
 
 export const GameModel = new (class {
   model: Model = {
     trainers: {},
     trainerClasses: {},
-    items: {}
+    items: {},
+    pokemon: {}
   };
 
   createFromDefaults() {
@@ -134,11 +125,11 @@ export const GameModel = new (class {
     for (const [key, [file, defaults]] of Object.entries(files)) {
       const filepath = PathManager.metaPath(file);
       if (fs.existsSync(filepath)) {
-        this.model[key as keyof typeof GameModel.model] = JSON.parse(
+        this.model[key as keyof Model] = JSON.parse(
           fs.readFileSync(filepath).toString()
         );
       } else {
-        this.model[key as keyof typeof GameModel.model] = {
+        this.model[key as keyof Model] = {
           ...defaults
         } as any;
       }

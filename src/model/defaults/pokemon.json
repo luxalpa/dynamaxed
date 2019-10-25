@@ -1,0 +1,5833 @@
+{
+  "NONE": {
+    "name": "??????????",
+    "moves": [
+      [1, "TACKLE"],
+      [4, "GROWL"],
+      [7, "LEECH_SEED"],
+      [10, "VINE_WHIP"],
+      [15, "POISON_POWDER"],
+      [15, "SLEEP_POWDER"],
+      [20, "RAZOR_LEAF"],
+      [25, "SWEET_SCENT"],
+      [32, "GROWTH"],
+      [39, "SYNTHESIS"],
+      [46, "SOLAR_BEAM"]
+    ]
+  },
+  "BULBASAUR": {
+    "name": "BULBASAUR",
+    "moves": [
+      [1, "TACKLE"],
+      [4, "GROWL"],
+      [7, "LEECH_SEED"],
+      [10, "VINE_WHIP"],
+      [15, "POISON_POWDER"],
+      [15, "SLEEP_POWDER"],
+      [20, "RAZOR_LEAF"],
+      [25, "SWEET_SCENT"],
+      [32, "GROWTH"],
+      [39, "SYNTHESIS"],
+      [46, "SOLAR_BEAM"]
+    ]
+  },
+  "IVYSAUR": {
+    "name": "IVYSAUR",
+    "moves": [
+      [1, "TACKLE"],
+      [1, "GROWL"],
+      [1, "LEECH_SEED"],
+      [4, "GROWL"],
+      [7, "LEECH_SEED"],
+      [10, "VINE_WHIP"],
+      [15, "POISON_POWDER"],
+      [15, "SLEEP_POWDER"],
+      [22, "RAZOR_LEAF"],
+      [29, "SWEET_SCENT"],
+      [38, "GROWTH"],
+      [47, "SYNTHESIS"],
+      [56, "SOLAR_BEAM"]
+    ]
+  },
+  "VENUSAUR": {
+    "name": "VENUSAUR",
+    "moves": [
+      [1, "TACKLE"],
+      [1, "GROWL"],
+      [1, "LEECH_SEED"],
+      [1, "VINE_WHIP"],
+      [4, "GROWL"],
+      [7, "LEECH_SEED"],
+      [10, "VINE_WHIP"],
+      [15, "POISON_POWDER"],
+      [15, "SLEEP_POWDER"],
+      [22, "RAZOR_LEAF"],
+      [29, "SWEET_SCENT"],
+      [41, "GROWTH"],
+      [53, "SYNTHESIS"],
+      [65, "SOLAR_BEAM"]
+    ]
+  },
+  "CHARMANDER": {
+    "name": "CHARMANDER",
+    "moves": [
+      [1, "SCRATCH"],
+      [1, "GROWL"],
+      [7, "EMBER"],
+      [13, "SMOKESCREEN"],
+      [19, "RAGE"],
+      [25, "SCARY_FACE"],
+      [31, "FLAMETHROWER"],
+      [37, "SLASH"],
+      [43, "DRAGON_RAGE"],
+      [49, "FIRE_SPIN"]
+    ]
+  },
+  "CHARMELEON": {
+    "name": "CHARMELEON",
+    "moves": [
+      [1, "SCRATCH"],
+      [1, "GROWL"],
+      [1, "EMBER"],
+      [7, "EMBER"],
+      [13, "SMOKESCREEN"],
+      [20, "RAGE"],
+      [27, "SCARY_FACE"],
+      [34, "FLAMETHROWER"],
+      [41, "SLASH"],
+      [48, "DRAGON_RAGE"],
+      [55, "FIRE_SPIN"]
+    ]
+  },
+  "CHARIZARD": {
+    "name": "CHARIZARD",
+    "moves": [
+      [1, "SCRATCH"],
+      [1, "GROWL"],
+      [1, "EMBER"],
+      [1, "SMOKESCREEN"],
+      [7, "EMBER"],
+      [13, "SMOKESCREEN"],
+      [20, "RAGE"],
+      [27, "SCARY_FACE"],
+      [34, "FLAMETHROWER"],
+      [36, "WING_ATTACK"],
+      [44, "SLASH"],
+      [54, "DRAGON_RAGE"],
+      [64, "FIRE_SPIN"]
+    ]
+  },
+  "SQUIRTLE": {
+    "name": "SQUIRTLE",
+    "moves": [
+      [1, "TACKLE"],
+      [4, "TAIL_WHIP"],
+      [7, "BUBBLE"],
+      [10, "WITHDRAW"],
+      [13, "WATER_GUN"],
+      [18, "BITE"],
+      [23, "RAPID_SPIN"],
+      [28, "PROTECT"],
+      [33, "RAIN_DANCE"],
+      [40, "SKULL_BASH"],
+      [47, "HYDRO_PUMP"]
+    ]
+  },
+  "WARTORTLE": {
+    "name": "WARTORTLE",
+    "moves": [
+      [1, "TACKLE"],
+      [1, "TAIL_WHIP"],
+      [1, "BUBBLE"],
+      [4, "TAIL_WHIP"],
+      [7, "BUBBLE"],
+      [10, "WITHDRAW"],
+      [13, "WATER_GUN"],
+      [19, "BITE"],
+      [25, "RAPID_SPIN"],
+      [31, "PROTECT"],
+      [37, "RAIN_DANCE"],
+      [45, "SKULL_BASH"],
+      [53, "HYDRO_PUMP"]
+    ]
+  },
+  "BLASTOISE": {
+    "name": "BLASTOISE",
+    "moves": [
+      [1, "TACKLE"],
+      [1, "TAIL_WHIP"],
+      [1, "BUBBLE"],
+      [1, "WITHDRAW"],
+      [4, "TAIL_WHIP"],
+      [7, "BUBBLE"],
+      [10, "WITHDRAW"],
+      [13, "WATER_GUN"],
+      [19, "BITE"],
+      [25, "RAPID_SPIN"],
+      [31, "PROTECT"],
+      [42, "RAIN_DANCE"],
+      [55, "SKULL_BASH"],
+      [68, "HYDRO_PUMP"]
+    ]
+  },
+  "CATERPIE": {
+    "name": "CATERPIE",
+    "moves": [[1, "TACKLE"], [1, "STRING_SHOT"]]
+  },
+  "METAPOD": { "name": "METAPOD", "moves": [[1, "HARDEN"], [7, "HARDEN"]] },
+  "BUTTERFREE": {
+    "name": "BUTTERFREE",
+    "moves": [
+      [1, "CONFUSION"],
+      [10, "CONFUSION"],
+      [13, "POISON_POWDER"],
+      [14, "STUN_SPORE"],
+      [15, "SLEEP_POWDER"],
+      [18, "SUPERSONIC"],
+      [23, "WHIRLWIND"],
+      [28, "GUST"],
+      [34, "PSYBEAM"],
+      [40, "SAFEGUARD"],
+      [47, "SILVER_WIND"]
+    ]
+  },
+  "WEEDLE": {
+    "name": "WEEDLE",
+    "moves": [[1, "POISON_STING"], [1, "STRING_SHOT"]]
+  },
+  "KAKUNA": { "name": "KAKUNA", "moves": [[1, "HARDEN"], [7, "HARDEN"]] },
+  "BEEDRILL": {
+    "name": "BEEDRILL",
+    "moves": [
+      [1, "FURY_ATTACK"],
+      [10, "FURY_ATTACK"],
+      [15, "FOCUS_ENERGY"],
+      [20, "TWINEEDLE"],
+      [25, "RAGE"],
+      [30, "PURSUIT"],
+      [35, "PIN_MISSILE"],
+      [40, "AGILITY"],
+      [45, "ENDEAVOR"]
+    ]
+  },
+  "PIDGEY": {
+    "name": "PIDGEY",
+    "moves": [
+      [1, "TACKLE"],
+      [5, "SAND_ATTACK"],
+      [9, "GUST"],
+      [13, "QUICK_ATTACK"],
+      [19, "WHIRLWIND"],
+      [25, "WING_ATTACK"],
+      [31, "FEATHER_DANCE"],
+      [39, "AGILITY"],
+      [47, "MIRROR_MOVE"]
+    ]
+  },
+  "PIDGEOTTO": {
+    "name": "PIDGEOTTO",
+    "moves": [
+      [1, "TACKLE"],
+      [1, "SAND_ATTACK"],
+      [1, "GUST"],
+      [5, "SAND_ATTACK"],
+      [9, "GUST"],
+      [13, "QUICK_ATTACK"],
+      [20, "WHIRLWIND"],
+      [27, "WING_ATTACK"],
+      [34, "FEATHER_DANCE"],
+      [43, "AGILITY"],
+      [52, "MIRROR_MOVE"]
+    ]
+  },
+  "PIDGEOT": {
+    "name": "PIDGEOT",
+    "moves": [
+      [1, "TACKLE"],
+      [1, "SAND_ATTACK"],
+      [1, "GUST"],
+      [1, "QUICK_ATTACK"],
+      [5, "SAND_ATTACK"],
+      [9, "GUST"],
+      [13, "QUICK_ATTACK"],
+      [20, "WHIRLWIND"],
+      [27, "WING_ATTACK"],
+      [34, "FEATHER_DANCE"],
+      [48, "AGILITY"],
+      [62, "MIRROR_MOVE"]
+    ]
+  },
+  "RATTATA": {
+    "name": "RATTATA",
+    "moves": [
+      [1, "TACKLE"],
+      [1, "TAIL_WHIP"],
+      [7, "QUICK_ATTACK"],
+      [13, "HYPER_FANG"],
+      [20, "FOCUS_ENERGY"],
+      [27, "PURSUIT"],
+      [34, "SUPER_FANG"],
+      [41, "ENDEAVOR"]
+    ]
+  },
+  "RATICATE": {
+    "name": "RATICATE",
+    "moves": [
+      [1, "TACKLE"],
+      [1, "TAIL_WHIP"],
+      [1, "QUICK_ATTACK"],
+      [7, "QUICK_ATTACK"],
+      [13, "HYPER_FANG"],
+      [20, "SCARY_FACE"],
+      [30, "PURSUIT"],
+      [40, "SUPER_FANG"],
+      [50, "ENDEAVOR"]
+    ]
+  },
+  "SPEAROW": {
+    "name": "SPEAROW",
+    "moves": [
+      [1, "PECK"],
+      [1, "GROWL"],
+      [7, "LEER"],
+      [13, "FURY_ATTACK"],
+      [19, "PURSUIT"],
+      [25, "AERIAL_ACE"],
+      [31, "MIRROR_MOVE"],
+      [37, "DRILL_PECK"],
+      [43, "AGILITY"]
+    ]
+  },
+  "FEAROW": {
+    "name": "FEAROW",
+    "moves": [
+      [1, "PECK"],
+      [1, "GROWL"],
+      [1, "LEER"],
+      [1, "FURY_ATTACK"],
+      [7, "LEER"],
+      [13, "FURY_ATTACK"],
+      [26, "PURSUIT"],
+      [32, "MIRROR_MOVE"],
+      [40, "DRILL_PECK"],
+      [47, "AGILITY"]
+    ]
+  },
+  "EKANS": {
+    "name": "EKANS",
+    "moves": [
+      [1, "WRAP"],
+      [1, "LEER"],
+      [8, "POISON_STING"],
+      [13, "BITE"],
+      [20, "GLARE"],
+      [25, "SCREECH"],
+      [32, "ACID"],
+      [37, "STOCKPILE"],
+      [37, "SWALLOW"],
+      [37, "SPIT_UP"],
+      [44, "HAZE"]
+    ]
+  },
+  "ARBOK": {
+    "name": "ARBOK",
+    "moves": [
+      [1, "WRAP"],
+      [1, "LEER"],
+      [1, "POISON_STING"],
+      [1, "BITE"],
+      [8, "POISON_STING"],
+      [13, "BITE"],
+      [20, "GLARE"],
+      [28, "SCREECH"],
+      [38, "ACID"],
+      [46, "STOCKPILE"],
+      [46, "SWALLOW"],
+      [46, "SPIT_UP"],
+      [56, "HAZE"]
+    ]
+  },
+  "PIKACHU": {
+    "name": "PIKACHU",
+    "moves": [
+      [1, "THUNDER_SHOCK"],
+      [1, "GROWL"],
+      [6, "TAIL_WHIP"],
+      [8, "THUNDER_WAVE"],
+      [11, "QUICK_ATTACK"],
+      [15, "DOUBLE_TEAM"],
+      [20, "SLAM"],
+      [26, "THUNDERBOLT"],
+      [33, "AGILITY"],
+      [41, "THUNDER"],
+      [50, "LIGHT_SCREEN"]
+    ]
+  },
+  "RAICHU": {
+    "name": "RAICHU",
+    "moves": [
+      [1, "THUNDER_SHOCK"],
+      [1, "TAIL_WHIP"],
+      [1, "QUICK_ATTACK"],
+      [1, "THUNDERBOLT"]
+    ]
+  },
+  "SANDSHREW": {
+    "name": "SANDSHREW",
+    "moves": [
+      [1, "SCRATCH"],
+      [6, "DEFENSE_CURL"],
+      [11, "SAND_ATTACK"],
+      [17, "POISON_STING"],
+      [23, "SLASH"],
+      [30, "SWIFT"],
+      [37, "FURY_SWIPES"],
+      [45, "SAND_TOMB"],
+      [53, "SANDSTORM"]
+    ]
+  },
+  "SANDSLASH": {
+    "name": "SANDSLASH",
+    "moves": [
+      [1, "SCRATCH"],
+      [1, "DEFENSE_CURL"],
+      [1, "SAND_ATTACK"],
+      [6, "DEFENSE_CURL"],
+      [11, "SAND_ATTACK"],
+      [17, "POISON_STING"],
+      [24, "SLASH"],
+      [33, "SWIFT"],
+      [42, "FURY_SWIPES"],
+      [52, "SAND_TOMB"],
+      [62, "SANDSTORM"]
+    ]
+  },
+  "NIDORAN_F": {
+    "name": "NIDORAN♀",
+    "moves": [
+      [1, "GROWL"],
+      [1, "SCRATCH"],
+      [8, "TAIL_WHIP"],
+      [12, "DOUBLE_KICK"],
+      [17, "POISON_STING"],
+      [20, "BITE"],
+      [23, "HELPING_HAND"],
+      [30, "FURY_SWIPES"],
+      [38, "FLATTER"],
+      [47, "CRUNCH"]
+    ]
+  },
+  "NIDORINA": {
+    "name": "NIDORINA",
+    "moves": [
+      [1, "GROWL"],
+      [1, "SCRATCH"],
+      [8, "TAIL_WHIP"],
+      [12, "DOUBLE_KICK"],
+      [18, "POISON_STING"],
+      [22, "BITE"],
+      [26, "HELPING_HAND"],
+      [34, "FURY_SWIPES"],
+      [43, "FLATTER"],
+      [53, "CRUNCH"]
+    ]
+  },
+  "NIDOQUEEN": {
+    "name": "NIDOQUEEN",
+    "moves": [
+      [1, "SCRATCH"],
+      [1, "TAIL_WHIP"],
+      [1, "DOUBLE_KICK"],
+      [1, "POISON_STING"],
+      [23, "BODY_SLAM"]
+    ]
+  },
+  "NIDORAN_M": {
+    "name": "NIDORAN♂",
+    "moves": [
+      [1, "LEER"],
+      [1, "PECK"],
+      [8, "FOCUS_ENERGY"],
+      [12, "DOUBLE_KICK"],
+      [17, "POISON_STING"],
+      [20, "HORN_ATTACK"],
+      [23, "HELPING_HAND"],
+      [30, "FURY_ATTACK"],
+      [38, "FLATTER"],
+      [47, "HORN_DRILL"]
+    ]
+  },
+  "NIDORINO": {
+    "name": "NIDORINO",
+    "moves": [
+      [1, "LEER"],
+      [1, "PECK"],
+      [8, "FOCUS_ENERGY"],
+      [12, "DOUBLE_KICK"],
+      [18, "POISON_STING"],
+      [22, "HORN_ATTACK"],
+      [26, "HELPING_HAND"],
+      [34, "FURY_ATTACK"],
+      [43, "FLATTER"],
+      [53, "HORN_DRILL"]
+    ]
+  },
+  "NIDOKING": {
+    "name": "NIDOKING",
+    "moves": [
+      [1, "PECK"],
+      [1, "FOCUS_ENERGY"],
+      [1, "DOUBLE_KICK"],
+      [1, "POISON_STING"],
+      [23, "THRASH"]
+    ]
+  },
+  "CLEFAIRY": {
+    "name": "CLEFAIRY",
+    "moves": [
+      [1, "POUND"],
+      [1, "GROWL"],
+      [5, "ENCORE"],
+      [9, "SING"],
+      [13, "DOUBLE_SLAP"],
+      [17, "FOLLOW_ME"],
+      [21, "MINIMIZE"],
+      [25, "DEFENSE_CURL"],
+      [29, "METRONOME"],
+      [33, "COSMIC_POWER"],
+      [37, "MOONLIGHT"],
+      [41, "LIGHT_SCREEN"],
+      [45, "METEOR_MASH"]
+    ]
+  },
+  "CLEFABLE": {
+    "name": "CLEFABLE",
+    "moves": [
+      [1, "SING"],
+      [1, "DOUBLE_SLAP"],
+      [1, "MINIMIZE"],
+      [1, "METRONOME"]
+    ]
+  },
+  "VULPIX": {
+    "name": "VULPIX",
+    "moves": [
+      [1, "EMBER"],
+      [5, "TAIL_WHIP"],
+      [9, "ROAR"],
+      [13, "QUICK_ATTACK"],
+      [17, "WILL_O_WISP"],
+      [21, "CONFUSE_RAY"],
+      [25, "IMPRISON"],
+      [29, "FLAMETHROWER"],
+      [33, "SAFEGUARD"],
+      [37, "GRUDGE"],
+      [41, "FIRE_SPIN"]
+    ]
+  },
+  "NINETALES": {
+    "name": "NINETALES",
+    "moves": [
+      [1, "EMBER"],
+      [1, "QUICK_ATTACK"],
+      [1, "CONFUSE_RAY"],
+      [1, "SAFEGUARD"],
+      [45, "FIRE_SPIN"]
+    ]
+  },
+  "JIGGLYPUFF": {
+    "name": "JIGGLYPUFF",
+    "moves": [
+      [1, "SING"],
+      [4, "DEFENSE_CURL"],
+      [9, "POUND"],
+      [14, "DISABLE"],
+      [19, "ROLLOUT"],
+      [24, "DOUBLE_SLAP"],
+      [29, "REST"],
+      [34, "BODY_SLAM"],
+      [39, "MIMIC"],
+      [44, "HYPER_VOICE"],
+      [49, "DOUBLE_EDGE"]
+    ]
+  },
+  "WIGGLYTUFF": {
+    "name": "WIGGLYTUFF",
+    "moves": [
+      [1, "SING"],
+      [1, "DISABLE"],
+      [1, "DEFENSE_CURL"],
+      [1, "DOUBLE_SLAP"]
+    ]
+  },
+  "ZUBAT": {
+    "name": "ZUBAT",
+    "moves": [
+      [1, "LEECH_LIFE"],
+      [6, "SUPERSONIC"],
+      [11, "ASTONISH"],
+      [16, "BITE"],
+      [21, "WING_ATTACK"],
+      [26, "CONFUSE_RAY"],
+      [31, "AIR_CUTTER"],
+      [36, "MEAN_LOOK"],
+      [41, "POISON_FANG"],
+      [46, "HAZE"]
+    ]
+  },
+  "GOLBAT": {
+    "name": "GOLBAT",
+    "moves": [
+      [1, "SCREECH"],
+      [1, "LEECH_LIFE"],
+      [1, "SUPERSONIC"],
+      [1, "ASTONISH"],
+      [6, "SUPERSONIC"],
+      [11, "ASTONISH"],
+      [16, "BITE"],
+      [21, "WING_ATTACK"],
+      [28, "CONFUSE_RAY"],
+      [35, "AIR_CUTTER"],
+      [42, "MEAN_LOOK"],
+      [49, "POISON_FANG"],
+      [56, "HAZE"]
+    ]
+  },
+  "ODDISH": {
+    "name": "ODDISH",
+    "moves": [
+      [1, "ABSORB"],
+      [7, "SWEET_SCENT"],
+      [14, "POISON_POWDER"],
+      [16, "STUN_SPORE"],
+      [18, "SLEEP_POWDER"],
+      [23, "ACID"],
+      [32, "MOONLIGHT"],
+      [39, "PETAL_DANCE"]
+    ]
+  },
+  "GLOOM": {
+    "name": "GLOOM",
+    "moves": [
+      [1, "ABSORB"],
+      [1, "SWEET_SCENT"],
+      [1, "POISON_POWDER"],
+      [7, "SWEET_SCENT"],
+      [14, "POISON_POWDER"],
+      [16, "STUN_SPORE"],
+      [18, "SLEEP_POWDER"],
+      [24, "ACID"],
+      [35, "MOONLIGHT"],
+      [44, "PETAL_DANCE"]
+    ]
+  },
+  "VILEPLUME": {
+    "name": "VILEPLUME",
+    "moves": [
+      [1, "ABSORB"],
+      [1, "AROMATHERAPY"],
+      [1, "STUN_SPORE"],
+      [1, "MEGA_DRAIN"],
+      [44, "PETAL_DANCE"]
+    ]
+  },
+  "PARAS": {
+    "name": "PARAS",
+    "moves": [
+      [1, "SCRATCH"],
+      [7, "STUN_SPORE"],
+      [13, "POISON_POWDER"],
+      [19, "LEECH_LIFE"],
+      [25, "SPORE"],
+      [31, "SLASH"],
+      [37, "GROWTH"],
+      [43, "GIGA_DRAIN"],
+      [49, "AROMATHERAPY"]
+    ]
+  },
+  "PARASECT": {
+    "name": "PARASECT",
+    "moves": [
+      [1, "SCRATCH"],
+      [1, "STUN_SPORE"],
+      [1, "POISON_POWDER"],
+      [7, "STUN_SPORE"],
+      [13, "POISON_POWDER"],
+      [19, "LEECH_LIFE"],
+      [27, "SPORE"],
+      [35, "SLASH"],
+      [43, "GROWTH"],
+      [51, "GIGA_DRAIN"],
+      [59, "AROMATHERAPY"]
+    ]
+  },
+  "VENONAT": {
+    "name": "VENONAT",
+    "moves": [
+      [1, "TACKLE"],
+      [1, "DISABLE"],
+      [1, "FORESIGHT"],
+      [9, "SUPERSONIC"],
+      [17, "CONFUSION"],
+      [20, "POISON_POWDER"],
+      [25, "LEECH_LIFE"],
+      [28, "STUN_SPORE"],
+      [33, "PSYBEAM"],
+      [36, "SLEEP_POWDER"],
+      [41, "PSYCHIC"]
+    ]
+  },
+  "VENOMOTH": {
+    "name": "VENOMOTH",
+    "moves": [
+      [1, "SILVER_WIND"],
+      [1, "TACKLE"],
+      [1, "DISABLE"],
+      [1, "FORESIGHT"],
+      [1, "SUPERSONIC"],
+      [9, "SUPERSONIC"],
+      [17, "CONFUSION"],
+      [20, "POISON_POWDER"],
+      [25, "LEECH_LIFE"],
+      [28, "STUN_SPORE"],
+      [31, "GUST"],
+      [36, "PSYBEAM"],
+      [42, "SLEEP_POWDER"],
+      [52, "PSYCHIC"]
+    ]
+  },
+  "DIGLETT": {
+    "name": "DIGLETT",
+    "moves": [
+      [1, "SCRATCH"],
+      [1, "SAND_ATTACK"],
+      [5, "GROWL"],
+      [9, "MAGNITUDE"],
+      [17, "DIG"],
+      [25, "MUD_SLAP"],
+      [33, "SLASH"],
+      [41, "EARTHQUAKE"],
+      [49, "FISSURE"]
+    ]
+  },
+  "DUGTRIO": {
+    "name": "DUGTRIO",
+    "moves": [
+      [1, "TRI_ATTACK"],
+      [1, "SCRATCH"],
+      [1, "SAND_ATTACK"],
+      [1, "GROWL"],
+      [5, "GROWL"],
+      [9, "MAGNITUDE"],
+      [17, "DIG"],
+      [25, "MUD_SLAP"],
+      [26, "SAND_TOMB"],
+      [38, "SLASH"],
+      [51, "EARTHQUAKE"],
+      [64, "FISSURE"]
+    ]
+  },
+  "MEOWTH": {
+    "name": "MEOWTH",
+    "moves": [
+      [1, "SCRATCH"],
+      [1, "GROWL"],
+      [11, "BITE"],
+      [20, "PAY_DAY"],
+      [28, "FAINT_ATTACK"],
+      [35, "SCREECH"],
+      [41, "FURY_SWIPES"],
+      [46, "SLASH"],
+      [50, "FAKE_OUT"]
+    ]
+  },
+  "PERSIAN": {
+    "name": "PERSIAN",
+    "moves": [
+      [1, "SCRATCH"],
+      [1, "GROWL"],
+      [1, "BITE"],
+      [11, "BITE"],
+      [20, "PAY_DAY"],
+      [29, "FAINT_ATTACK"],
+      [38, "SCREECH"],
+      [46, "FURY_SWIPES"],
+      [53, "SLASH"],
+      [59, "FAKE_OUT"]
+    ]
+  },
+  "PSYDUCK": {
+    "name": "PSYDUCK",
+    "moves": [
+      [1, "WATER_SPORT"],
+      [1, "SCRATCH"],
+      [5, "TAIL_WHIP"],
+      [10, "DISABLE"],
+      [16, "CONFUSION"],
+      [23, "SCREECH"],
+      [31, "PSYCH_UP"],
+      [40, "FURY_SWIPES"],
+      [50, "HYDRO_PUMP"]
+    ]
+  },
+  "GOLDUCK": {
+    "name": "GOLDUCK",
+    "moves": [
+      [1, "WATER_SPORT"],
+      [1, "SCRATCH"],
+      [1, "TAIL_WHIP"],
+      [1, "DISABLE"],
+      [5, "TAIL_WHIP"],
+      [10, "DISABLE"],
+      [16, "CONFUSION"],
+      [23, "SCREECH"],
+      [31, "PSYCH_UP"],
+      [44, "FURY_SWIPES"],
+      [58, "HYDRO_PUMP"]
+    ]
+  },
+  "MANKEY": {
+    "name": "MANKEY",
+    "moves": [
+      [1, "SCRATCH"],
+      [1, "LEER"],
+      [9, "LOW_KICK"],
+      [15, "KARATE_CHOP"],
+      [21, "FURY_SWIPES"],
+      [27, "FOCUS_ENERGY"],
+      [33, "SEISMIC_TOSS"],
+      [39, "CROSS_CHOP"],
+      [45, "SCREECH"],
+      [51, "THRASH"]
+    ]
+  },
+  "PRIMEAPE": {
+    "name": "PRIMEAPE",
+    "moves": [
+      [1, "SCRATCH"],
+      [1, "LEER"],
+      [1, "LOW_KICK"],
+      [1, "RAGE"],
+      [9, "LOW_KICK"],
+      [15, "KARATE_CHOP"],
+      [21, "FURY_SWIPES"],
+      [27, "FOCUS_ENERGY"],
+      [28, "RAGE"],
+      [36, "SEISMIC_TOSS"],
+      [45, "CROSS_CHOP"],
+      [54, "SCREECH"],
+      [63, "THRASH"]
+    ]
+  },
+  "GROWLITHE": {
+    "name": "GROWLITHE",
+    "moves": [
+      [1, "BITE"],
+      [1, "ROAR"],
+      [7, "EMBER"],
+      [13, "LEER"],
+      [19, "ODOR_SLEUTH"],
+      [25, "TAKE_DOWN"],
+      [31, "FLAME_WHEEL"],
+      [37, "HELPING_HAND"],
+      [43, "AGILITY"],
+      [49, "FLAMETHROWER"]
+    ]
+  },
+  "ARCANINE": {
+    "name": "ARCANINE",
+    "moves": [
+      [1, "BITE"],
+      [1, "ROAR"],
+      [1, "EMBER"],
+      [1, "ODOR_SLEUTH"],
+      [49, "EXTREME_SPEED"]
+    ]
+  },
+  "POLIWAG": {
+    "name": "POLIWAG",
+    "moves": [
+      [1, "BUBBLE"],
+      [7, "HYPNOSIS"],
+      [13, "WATER_GUN"],
+      [19, "DOUBLE_SLAP"],
+      [25, "RAIN_DANCE"],
+      [31, "BODY_SLAM"],
+      [37, "BELLY_DRUM"],
+      [43, "HYDRO_PUMP"]
+    ]
+  },
+  "POLIWHIRL": {
+    "name": "POLIWHIRL",
+    "moves": [
+      [1, "BUBBLE"],
+      [1, "HYPNOSIS"],
+      [1, "WATER_GUN"],
+      [7, "HYPNOSIS"],
+      [13, "WATER_GUN"],
+      [19, "DOUBLE_SLAP"],
+      [27, "RAIN_DANCE"],
+      [35, "BODY_SLAM"],
+      [43, "BELLY_DRUM"],
+      [51, "HYDRO_PUMP"]
+    ]
+  },
+  "POLIWRATH": {
+    "name": "POLIWRATH",
+    "moves": [
+      [1, "WATER_GUN"],
+      [1, "HYPNOSIS"],
+      [1, "DOUBLE_SLAP"],
+      [1, "SUBMISSION"],
+      [35, "SUBMISSION"],
+      [51, "MIND_READER"]
+    ]
+  },
+  "ABRA": { "name": "ABRA", "moves": [[1, "TELEPORT"]] },
+  "KADABRA": {
+    "name": "KADABRA",
+    "moves": [
+      [1, "TELEPORT"],
+      [1, "KINESIS"],
+      [1, "CONFUSION"],
+      [16, "CONFUSION"],
+      [18, "DISABLE"],
+      [21, "PSYBEAM"],
+      [23, "REFLECT"],
+      [25, "RECOVER"],
+      [30, "FUTURE_SIGHT"],
+      [33, "ROLE_PLAY"],
+      [36, "PSYCHIC"],
+      [43, "TRICK"]
+    ]
+  },
+  "ALAKAZAM": {
+    "name": "ALAKAZAM",
+    "moves": [
+      [1, "TELEPORT"],
+      [1, "KINESIS"],
+      [1, "CONFUSION"],
+      [16, "CONFUSION"],
+      [18, "DISABLE"],
+      [21, "PSYBEAM"],
+      [23, "REFLECT"],
+      [25, "RECOVER"],
+      [30, "FUTURE_SIGHT"],
+      [33, "CALM_MIND"],
+      [36, "PSYCHIC"],
+      [43, "TRICK"]
+    ]
+  },
+  "MACHOP": {
+    "name": "MACHOP",
+    "moves": [
+      [1, "LOW_KICK"],
+      [1, "LEER"],
+      [7, "FOCUS_ENERGY"],
+      [13, "KARATE_CHOP"],
+      [19, "SEISMIC_TOSS"],
+      [22, "FORESIGHT"],
+      [25, "REVENGE"],
+      [31, "VITAL_THROW"],
+      [37, "SUBMISSION"],
+      [40, "CROSS_CHOP"],
+      [43, "SCARY_FACE"],
+      [49, "DYNAMIC_PUNCH"]
+    ]
+  },
+  "MACHOKE": {
+    "name": "MACHOKE",
+    "moves": [
+      [1, "LOW_KICK"],
+      [1, "LEER"],
+      [1, "FOCUS_ENERGY"],
+      [7, "FOCUS_ENERGY"],
+      [13, "KARATE_CHOP"],
+      [19, "SEISMIC_TOSS"],
+      [22, "FORESIGHT"],
+      [25, "REVENGE"],
+      [33, "VITAL_THROW"],
+      [41, "SUBMISSION"],
+      [46, "CROSS_CHOP"],
+      [51, "SCARY_FACE"],
+      [59, "DYNAMIC_PUNCH"]
+    ]
+  },
+  "MACHAMP": {
+    "name": "MACHAMP",
+    "moves": [
+      [1, "LOW_KICK"],
+      [1, "LEER"],
+      [1, "FOCUS_ENERGY"],
+      [7, "FOCUS_ENERGY"],
+      [13, "KARATE_CHOP"],
+      [19, "SEISMIC_TOSS"],
+      [22, "FORESIGHT"],
+      [25, "REVENGE"],
+      [33, "VITAL_THROW"],
+      [41, "SUBMISSION"],
+      [46, "CROSS_CHOP"],
+      [51, "SCARY_FACE"],
+      [59, "DYNAMIC_PUNCH"]
+    ]
+  },
+  "BELLSPROUT": {
+    "name": "BELLSPROUT",
+    "moves": [
+      [1, "VINE_WHIP"],
+      [6, "GROWTH"],
+      [11, "WRAP"],
+      [15, "SLEEP_POWDER"],
+      [17, "POISON_POWDER"],
+      [19, "STUN_SPORE"],
+      [23, "ACID"],
+      [30, "SWEET_SCENT"],
+      [37, "RAZOR_LEAF"],
+      [45, "SLAM"]
+    ]
+  },
+  "WEEPINBELL": {
+    "name": "WEEPINBELL",
+    "moves": [
+      [1, "VINE_WHIP"],
+      [1, "GROWTH"],
+      [1, "WRAP"],
+      [6, "GROWTH"],
+      [11, "WRAP"],
+      [15, "SLEEP_POWDER"],
+      [17, "POISON_POWDER"],
+      [19, "STUN_SPORE"],
+      [24, "ACID"],
+      [33, "SWEET_SCENT"],
+      [42, "RAZOR_LEAF"],
+      [54, "SLAM"]
+    ]
+  },
+  "VICTREEBEL": {
+    "name": "VICTREEBEL",
+    "moves": [
+      [1, "VINE_WHIP"],
+      [1, "SLEEP_POWDER"],
+      [1, "SWEET_SCENT"],
+      [1, "RAZOR_LEAF"]
+    ]
+  },
+  "TENTACOOL": {
+    "name": "TENTACOOL",
+    "moves": [
+      [1, "POISON_STING"],
+      [6, "SUPERSONIC"],
+      [12, "CONSTRICT"],
+      [19, "ACID"],
+      [25, "BUBBLE_BEAM"],
+      [30, "WRAP"],
+      [36, "BARRIER"],
+      [43, "SCREECH"],
+      [49, "HYDRO_PUMP"]
+    ]
+  },
+  "TENTACRUEL": {
+    "name": "TENTACRUEL",
+    "moves": [
+      [1, "POISON_STING"],
+      [1, "SUPERSONIC"],
+      [1, "CONSTRICT"],
+      [6, "SUPERSONIC"],
+      [12, "CONSTRICT"],
+      [19, "ACID"],
+      [25, "BUBBLE_BEAM"],
+      [30, "WRAP"],
+      [38, "BARRIER"],
+      [47, "SCREECH"],
+      [55, "HYDRO_PUMP"]
+    ]
+  },
+  "GEODUDE": {
+    "name": "GEODUDE",
+    "moves": [
+      [1, "TACKLE"],
+      [1, "DEFENSE_CURL"],
+      [6, "MUD_SPORT"],
+      [11, "ROCK_THROW"],
+      [16, "MAGNITUDE"],
+      [21, "SELF_DESTRUCT"],
+      [26, "ROLLOUT"],
+      [31, "ROCK_BLAST"],
+      [36, "EARTHQUAKE"],
+      [41, "EXPLOSION"],
+      [46, "DOUBLE_EDGE"]
+    ]
+  },
+  "GRAVELER": {
+    "name": "GRAVELER",
+    "moves": [
+      [1, "TACKLE"],
+      [1, "DEFENSE_CURL"],
+      [1, "MUD_SPORT"],
+      [1, "ROCK_THROW"],
+      [6, "MUD_SPORT"],
+      [11, "ROCK_THROW"],
+      [16, "MAGNITUDE"],
+      [21, "SELF_DESTRUCT"],
+      [29, "ROLLOUT"],
+      [37, "ROCK_BLAST"],
+      [45, "EARTHQUAKE"],
+      [53, "EXPLOSION"],
+      [62, "DOUBLE_EDGE"]
+    ]
+  },
+  "GOLEM": {
+    "name": "GOLEM",
+    "moves": [
+      [1, "TACKLE"],
+      [1, "DEFENSE_CURL"],
+      [1, "MUD_SPORT"],
+      [1, "ROCK_THROW"],
+      [6, "MUD_SPORT"],
+      [11, "ROCK_THROW"],
+      [16, "MAGNITUDE"],
+      [21, "SELF_DESTRUCT"],
+      [29, "ROLLOUT"],
+      [37, "ROCK_BLAST"],
+      [45, "EARTHQUAKE"],
+      [53, "EXPLOSION"],
+      [62, "DOUBLE_EDGE"]
+    ]
+  },
+  "PONYTA": {
+    "name": "PONYTA",
+    "moves": [
+      [1, "TACKLE"],
+      [5, "GROWL"],
+      [9, "TAIL_WHIP"],
+      [14, "EMBER"],
+      [19, "STOMP"],
+      [25, "FIRE_SPIN"],
+      [31, "TAKE_DOWN"],
+      [38, "AGILITY"],
+      [45, "BOUNCE"],
+      [53, "FIRE_BLAST"]
+    ]
+  },
+  "RAPIDASH": {
+    "name": "RAPIDASH",
+    "moves": [
+      [1, "TACKLE"],
+      [1, "GROWL"],
+      [1, "TAIL_WHIP"],
+      [1, "EMBER"],
+      [5, "GROWL"],
+      [9, "TAIL_WHIP"],
+      [14, "EMBER"],
+      [19, "STOMP"],
+      [25, "FIRE_SPIN"],
+      [31, "TAKE_DOWN"],
+      [38, "AGILITY"],
+      [40, "FURY_ATTACK"],
+      [50, "BOUNCE"],
+      [63, "FIRE_BLAST"]
+    ]
+  },
+  "SLOWPOKE": {
+    "name": "SLOWPOKE",
+    "moves": [
+      [1, "CURSE"],
+      [1, "YAWN"],
+      [1, "TACKLE"],
+      [6, "GROWL"],
+      [15, "WATER_GUN"],
+      [20, "CONFUSION"],
+      [29, "DISABLE"],
+      [34, "HEADBUTT"],
+      [43, "AMNESIA"],
+      [48, "PSYCHIC"]
+    ]
+  },
+  "SLOWBRO": {
+    "name": "SLOWBRO",
+    "moves": [
+      [1, "CURSE"],
+      [1, "YAWN"],
+      [1, "TACKLE"],
+      [1, "GROWL"],
+      [6, "GROWL"],
+      [15, "WATER_GUN"],
+      [20, "CONFUSION"],
+      [29, "DISABLE"],
+      [34, "HEADBUTT"],
+      [37, "WITHDRAW"],
+      [46, "AMNESIA"],
+      [54, "PSYCHIC"]
+    ]
+  },
+  "MAGNEMITE": {
+    "name": "MAGNEMITE",
+    "moves": [
+      [1, "METAL_SOUND"],
+      [1, "TACKLE"],
+      [6, "THUNDER_SHOCK"],
+      [11, "SUPERSONIC"],
+      [16, "SONIC_BOOM"],
+      [21, "THUNDER_WAVE"],
+      [26, "SPARK"],
+      [32, "LOCK_ON"],
+      [38, "SWIFT"],
+      [44, "SCREECH"],
+      [50, "ZAP_CANNON"]
+    ]
+  },
+  "MAGNETON": {
+    "name": "MAGNETON",
+    "moves": [
+      [1, "METAL_SOUND"],
+      [1, "TACKLE"],
+      [1, "THUNDER_SHOCK"],
+      [1, "SUPERSONIC"],
+      [6, "THUNDER_SHOCK"],
+      [11, "SUPERSONIC"],
+      [16, "SONIC_BOOM"],
+      [21, "THUNDER_WAVE"],
+      [26, "SPARK"],
+      [35, "LOCK_ON"],
+      [44, "TRI_ATTACK"],
+      [53, "SCREECH"],
+      [62, "ZAP_CANNON"]
+    ]
+  },
+  "FARFETCHD": {
+    "name": "FARFETCH'D",
+    "moves": [
+      [1, "PECK"],
+      [6, "SAND_ATTACK"],
+      [11, "LEER"],
+      [16, "FURY_ATTACK"],
+      [21, "KNOCK_OFF"],
+      [26, "FURY_CUTTER"],
+      [31, "SWORDS_DANCE"],
+      [36, "AGILITY"],
+      [41, "SLASH"],
+      [46, "FALSE_SWIPE"]
+    ]
+  },
+  "DODUO": {
+    "name": "DODUO",
+    "moves": [
+      [1, "PECK"],
+      [1, "GROWL"],
+      [9, "PURSUIT"],
+      [13, "FURY_ATTACK"],
+      [21, "TRI_ATTACK"],
+      [25, "RAGE"],
+      [33, "UPROAR"],
+      [37, "DRILL_PECK"],
+      [45, "AGILITY"]
+    ]
+  },
+  "DODRIO": {
+    "name": "DODRIO",
+    "moves": [
+      [1, "PECK"],
+      [1, "GROWL"],
+      [1, "PURSUIT"],
+      [1, "FURY_ATTACK"],
+      [9, "PURSUIT"],
+      [13, "FURY_ATTACK"],
+      [21, "TRI_ATTACK"],
+      [25, "RAGE"],
+      [38, "UPROAR"],
+      [47, "DRILL_PECK"],
+      [60, "AGILITY"]
+    ]
+  },
+  "SEEL": {
+    "name": "SEEL",
+    "moves": [
+      [1, "HEADBUTT"],
+      [9, "GROWL"],
+      [17, "ICY_WIND"],
+      [21, "AURORA_BEAM"],
+      [29, "REST"],
+      [37, "TAKE_DOWN"],
+      [41, "ICE_BEAM"],
+      [49, "SAFEGUARD"]
+    ]
+  },
+  "DEWGONG": {
+    "name": "DEWGONG",
+    "moves": [
+      [1, "HEADBUTT"],
+      [1, "GROWL"],
+      [1, "ICY_WIND"],
+      [1, "AURORA_BEAM"],
+      [9, "GROWL"],
+      [17, "ICY_WIND"],
+      [21, "AURORA_BEAM"],
+      [29, "REST"],
+      [34, "SHEER_COLD"],
+      [42, "TAKE_DOWN"],
+      [51, "ICE_BEAM"],
+      [64, "SAFEGUARD"]
+    ]
+  },
+  "GRIMER": {
+    "name": "GRIMER",
+    "moves": [
+      [1, "POISON_GAS"],
+      [1, "POUND"],
+      [4, "HARDEN"],
+      [8, "DISABLE"],
+      [13, "SLUDGE"],
+      [19, "MINIMIZE"],
+      [26, "SCREECH"],
+      [34, "ACID_ARMOR"],
+      [43, "SLUDGE_BOMB"],
+      [53, "MEMENTO"]
+    ]
+  },
+  "MUK": {
+    "name": "MUK",
+    "moves": [
+      [1, "POISON_GAS"],
+      [1, "POUND"],
+      [1, "HARDEN"],
+      [4, "HARDEN"],
+      [8, "DISABLE"],
+      [13, "SLUDGE"],
+      [19, "MINIMIZE"],
+      [26, "SCREECH"],
+      [34, "ACID_ARMOR"],
+      [47, "SLUDGE_BOMB"],
+      [61, "MEMENTO"]
+    ]
+  },
+  "SHELLDER": {
+    "name": "SHELLDER",
+    "moves": [
+      [1, "TACKLE"],
+      [1, "WITHDRAW"],
+      [9, "SUPERSONIC"],
+      [17, "AURORA_BEAM"],
+      [25, "PROTECT"],
+      [33, "LEER"],
+      [41, "CLAMP"],
+      [49, "ICE_BEAM"]
+    ]
+  },
+  "CLOYSTER": {
+    "name": "CLOYSTER",
+    "moves": [
+      [1, "WITHDRAW"],
+      [1, "SUPERSONIC"],
+      [1, "AURORA_BEAM"],
+      [1, "PROTECT"],
+      [33, "SPIKES"],
+      [41, "SPIKE_CANNON"]
+    ]
+  },
+  "GASTLY": {
+    "name": "GASTLY",
+    "moves": [
+      [1, "HYPNOSIS"],
+      [1, "LICK"],
+      [8, "SPITE"],
+      [13, "MEAN_LOOK"],
+      [16, "CURSE"],
+      [21, "NIGHT_SHADE"],
+      [28, "CONFUSE_RAY"],
+      [33, "DREAM_EATER"],
+      [36, "DESTINY_BOND"]
+    ]
+  },
+  "HAUNTER": {
+    "name": "HAUNTER",
+    "moves": [
+      [1, "HYPNOSIS"],
+      [1, "LICK"],
+      [1, "SPITE"],
+      [8, "SPITE"],
+      [13, "MEAN_LOOK"],
+      [16, "CURSE"],
+      [21, "NIGHT_SHADE"],
+      [25, "SHADOW_PUNCH"],
+      [31, "CONFUSE_RAY"],
+      [39, "DREAM_EATER"],
+      [48, "DESTINY_BOND"]
+    ]
+  },
+  "GENGAR": {
+    "name": "GENGAR",
+    "moves": [
+      [1, "HYPNOSIS"],
+      [1, "LICK"],
+      [1, "SPITE"],
+      [8, "SPITE"],
+      [13, "MEAN_LOOK"],
+      [16, "CURSE"],
+      [21, "NIGHT_SHADE"],
+      [25, "SHADOW_PUNCH"],
+      [31, "CONFUSE_RAY"],
+      [39, "DREAM_EATER"],
+      [48, "DESTINY_BOND"]
+    ]
+  },
+  "ONIX": {
+    "name": "ONIX",
+    "moves": [
+      [1, "TACKLE"],
+      [1, "SCREECH"],
+      [9, "BIND"],
+      [13, "ROCK_THROW"],
+      [21, "HARDEN"],
+      [25, "RAGE"],
+      [33, "SANDSTORM"],
+      [37, "SLAM"],
+      [45, "IRON_TAIL"],
+      [49, "SAND_TOMB"],
+      [57, "DOUBLE_EDGE"]
+    ]
+  },
+  "DROWZEE": {
+    "name": "DROWZEE",
+    "moves": [
+      [1, "POUND"],
+      [1, "HYPNOSIS"],
+      [10, "DISABLE"],
+      [18, "CONFUSION"],
+      [25, "HEADBUTT"],
+      [31, "POISON_GAS"],
+      [36, "MEDITATE"],
+      [40, "PSYCHIC"],
+      [43, "PSYCH_UP"],
+      [45, "FUTURE_SIGHT"]
+    ]
+  },
+  "HYPNO": {
+    "name": "HYPNO",
+    "moves": [
+      [1, "POUND"],
+      [1, "HYPNOSIS"],
+      [1, "DISABLE"],
+      [1, "CONFUSION"],
+      [10, "DISABLE"],
+      [18, "CONFUSION"],
+      [25, "HEADBUTT"],
+      [33, "POISON_GAS"],
+      [40, "MEDITATE"],
+      [49, "PSYCHIC"],
+      [55, "PSYCH_UP"],
+      [60, "FUTURE_SIGHT"]
+    ]
+  },
+  "KRABBY": {
+    "name": "KRABBY",
+    "moves": [
+      [1, "BUBBLE"],
+      [5, "LEER"],
+      [12, "VICE_GRIP"],
+      [16, "HARDEN"],
+      [23, "MUD_SHOT"],
+      [27, "STOMP"],
+      [34, "GUILLOTINE"],
+      [41, "PROTECT"],
+      [45, "CRABHAMMER"]
+    ]
+  },
+  "KINGLER": {
+    "name": "KINGLER",
+    "moves": [
+      [1, "BUBBLE"],
+      [1, "LEER"],
+      [1, "VICE_GRIP"],
+      [5, "LEER"],
+      [12, "VICE_GRIP"],
+      [16, "HARDEN"],
+      [23, "MUD_SHOT"],
+      [27, "STOMP"],
+      [38, "GUILLOTINE"],
+      [49, "PROTECT"],
+      [57, "CRABHAMMER"]
+    ]
+  },
+  "VOLTORB": {
+    "name": "VOLTORB",
+    "moves": [
+      [1, "CHARGE"],
+      [1, "TACKLE"],
+      [8, "SCREECH"],
+      [15, "SONIC_BOOM"],
+      [21, "SPARK"],
+      [27, "SELF_DESTRUCT"],
+      [32, "ROLLOUT"],
+      [37, "LIGHT_SCREEN"],
+      [42, "SWIFT"],
+      [46, "EXPLOSION"],
+      [49, "MIRROR_COAT"]
+    ]
+  },
+  "ELECTRODE": {
+    "name": "ELECTRODE",
+    "moves": [
+      [1, "CHARGE"],
+      [1, "TACKLE"],
+      [1, "SCREECH"],
+      [1, "SONIC_BOOM"],
+      [8, "SCREECH"],
+      [15, "SONIC_BOOM"],
+      [21, "SPARK"],
+      [27, "SELF_DESTRUCT"],
+      [34, "ROLLOUT"],
+      [41, "LIGHT_SCREEN"],
+      [48, "SWIFT"],
+      [54, "EXPLOSION"],
+      [59, "MIRROR_COAT"]
+    ]
+  },
+  "EXEGGCUTE": {
+    "name": "EXEGGCUTE",
+    "moves": [
+      [1, "BARRAGE"],
+      [1, "UPROAR"],
+      [1, "HYPNOSIS"],
+      [7, "REFLECT"],
+      [13, "LEECH_SEED"],
+      [19, "CONFUSION"],
+      [25, "STUN_SPORE"],
+      [31, "POISON_POWDER"],
+      [37, "SLEEP_POWDER"],
+      [43, "SOLAR_BEAM"]
+    ]
+  },
+  "EXEGGUTOR": {
+    "name": "EXEGGUTOR",
+    "moves": [
+      [1, "BARRAGE"],
+      [1, "HYPNOSIS"],
+      [1, "CONFUSION"],
+      [19, "STOMP"],
+      [31, "EGG_BOMB"]
+    ]
+  },
+  "CUBONE": {
+    "name": "CUBONE",
+    "moves": [
+      [1, "GROWL"],
+      [5, "TAIL_WHIP"],
+      [9, "BONE_CLUB"],
+      [13, "HEADBUTT"],
+      [17, "LEER"],
+      [21, "FOCUS_ENERGY"],
+      [25, "BONEMERANG"],
+      [29, "RAGE"],
+      [33, "FALSE_SWIPE"],
+      [37, "THRASH"],
+      [41, "BONE_RUSH"],
+      [45, "DOUBLE_EDGE"]
+    ]
+  },
+  "MAROWAK": {
+    "name": "MAROWAK",
+    "moves": [
+      [1, "GROWL"],
+      [1, "TAIL_WHIP"],
+      [1, "BONE_CLUB"],
+      [1, "HEADBUTT"],
+      [5, "TAIL_WHIP"],
+      [9, "BONE_CLUB"],
+      [13, "HEADBUTT"],
+      [17, "LEER"],
+      [21, "FOCUS_ENERGY"],
+      [25, "BONEMERANG"],
+      [32, "RAGE"],
+      [39, "FALSE_SWIPE"],
+      [46, "THRASH"],
+      [53, "BONE_RUSH"],
+      [61, "DOUBLE_EDGE"]
+    ]
+  },
+  "HITMONLEE": {
+    "name": "HITMONLEE",
+    "moves": [
+      [1, "REVENGE"],
+      [1, "DOUBLE_KICK"],
+      [6, "MEDITATE"],
+      [11, "ROLLING_KICK"],
+      [16, "JUMP_KICK"],
+      [20, "BRICK_BREAK"],
+      [21, "FOCUS_ENERGY"],
+      [26, "HI_JUMP_KICK"],
+      [31, "MIND_READER"],
+      [36, "FORESIGHT"],
+      [41, "ENDURE"],
+      [46, "MEGA_KICK"],
+      [51, "REVERSAL"]
+    ]
+  },
+  "HITMONCHAN": {
+    "name": "HITMONCHAN",
+    "moves": [
+      [1, "REVENGE"],
+      [1, "COMET_PUNCH"],
+      [7, "AGILITY"],
+      [13, "PURSUIT"],
+      [20, "MACH_PUNCH"],
+      [26, "THUNDER_PUNCH"],
+      [26, "ICE_PUNCH"],
+      [26, "FIRE_PUNCH"],
+      [32, "SKY_UPPERCUT"],
+      [38, "MEGA_PUNCH"],
+      [44, "DETECT"],
+      [50, "COUNTER"]
+    ]
+  },
+  "LICKITUNG": {
+    "name": "LICKITUNG",
+    "moves": [
+      [1, "LICK"],
+      [7, "SUPERSONIC"],
+      [12, "DEFENSE_CURL"],
+      [18, "KNOCK_OFF"],
+      [23, "STOMP"],
+      [29, "WRAP"],
+      [34, "DISABLE"],
+      [40, "SLAM"],
+      [45, "SCREECH"],
+      [51, "REFRESH"]
+    ]
+  },
+  "KOFFING": {
+    "name": "KOFFING",
+    "moves": [
+      [1, "POISON_GAS"],
+      [1, "TACKLE"],
+      [9, "SMOG"],
+      [17, "SELF_DESTRUCT"],
+      [21, "SLUDGE"],
+      [25, "SMOKESCREEN"],
+      [33, "HAZE"],
+      [41, "EXPLOSION"],
+      [45, "DESTINY_BOND"],
+      [49, "MEMENTO"]
+    ]
+  },
+  "WEEZING": {
+    "name": "WEEZING",
+    "moves": [
+      [1, "POISON_GAS"],
+      [1, "TACKLE"],
+      [1, "SMOG"],
+      [1, "SELF_DESTRUCT"],
+      [9, "SMOG"],
+      [17, "SELF_DESTRUCT"],
+      [21, "SLUDGE"],
+      [25, "SMOKESCREEN"],
+      [33, "HAZE"],
+      [44, "EXPLOSION"],
+      [51, "DESTINY_BOND"],
+      [58, "MEMENTO"]
+    ]
+  },
+  "RHYHORN": {
+    "name": "RHYHORN",
+    "moves": [
+      [1, "HORN_ATTACK"],
+      [1, "TAIL_WHIP"],
+      [10, "STOMP"],
+      [15, "FURY_ATTACK"],
+      [24, "SCARY_FACE"],
+      [29, "ROCK_BLAST"],
+      [38, "HORN_DRILL"],
+      [43, "TAKE_DOWN"],
+      [52, "EARTHQUAKE"],
+      [57, "MEGAHORN"]
+    ]
+  },
+  "RHYDON": {
+    "name": "RHYDON",
+    "moves": [
+      [1, "HORN_ATTACK"],
+      [1, "TAIL_WHIP"],
+      [1, "STOMP"],
+      [1, "FURY_ATTACK"],
+      [10, "STOMP"],
+      [15, "FURY_ATTACK"],
+      [24, "SCARY_FACE"],
+      [29, "ROCK_BLAST"],
+      [38, "HORN_DRILL"],
+      [46, "TAKE_DOWN"],
+      [58, "EARTHQUAKE"],
+      [66, "MEGAHORN"]
+    ]
+  },
+  "CHANSEY": {
+    "name": "CHANSEY",
+    "moves": [
+      [1, "POUND"],
+      [1, "GROWL"],
+      [5, "TAIL_WHIP"],
+      [9, "REFRESH"],
+      [13, "SOFT_BOILED"],
+      [17, "DOUBLE_SLAP"],
+      [23, "MINIMIZE"],
+      [29, "SING"],
+      [35, "EGG_BOMB"],
+      [41, "DEFENSE_CURL"],
+      [49, "LIGHT_SCREEN"],
+      [57, "DOUBLE_EDGE"]
+    ]
+  },
+  "TANGELA": {
+    "name": "TANGELA",
+    "moves": [
+      [1, "INGRAIN"],
+      [1, "CONSTRICT"],
+      [4, "SLEEP_POWDER"],
+      [10, "ABSORB"],
+      [13, "GROWTH"],
+      [19, "POISON_POWDER"],
+      [22, "VINE_WHIP"],
+      [28, "BIND"],
+      [31, "MEGA_DRAIN"],
+      [37, "STUN_SPORE"],
+      [40, "SLAM"],
+      [46, "TICKLE"]
+    ]
+  },
+  "KANGASKHAN": {
+    "name": "KANGASKHAN",
+    "moves": [
+      [1, "COMET_PUNCH"],
+      [1, "LEER"],
+      [7, "BITE"],
+      [13, "TAIL_WHIP"],
+      [19, "FAKE_OUT"],
+      [25, "MEGA_PUNCH"],
+      [31, "RAGE"],
+      [37, "ENDURE"],
+      [43, "DIZZY_PUNCH"],
+      [49, "REVERSAL"]
+    ]
+  },
+  "HORSEA": {
+    "name": "HORSEA",
+    "moves": [
+      [1, "BUBBLE"],
+      [8, "SMOKESCREEN"],
+      [15, "LEER"],
+      [22, "WATER_GUN"],
+      [29, "TWISTER"],
+      [36, "AGILITY"],
+      [43, "HYDRO_PUMP"],
+      [50, "DRAGON_DANCE"]
+    ]
+  },
+  "SEADRA": {
+    "name": "SEADRA",
+    "moves": [
+      [1, "BUBBLE"],
+      [1, "SMOKESCREEN"],
+      [1, "LEER"],
+      [1, "WATER_GUN"],
+      [8, "SMOKESCREEN"],
+      [15, "LEER"],
+      [22, "WATER_GUN"],
+      [29, "TWISTER"],
+      [40, "AGILITY"],
+      [51, "HYDRO_PUMP"],
+      [62, "DRAGON_DANCE"]
+    ]
+  },
+  "GOLDEEN": {
+    "name": "GOLDEEN",
+    "moves": [
+      [1, "PECK"],
+      [1, "TAIL_WHIP"],
+      [1, "WATER_SPORT"],
+      [10, "SUPERSONIC"],
+      [15, "HORN_ATTACK"],
+      [24, "FLAIL"],
+      [29, "FURY_ATTACK"],
+      [38, "WATERFALL"],
+      [43, "HORN_DRILL"],
+      [52, "AGILITY"]
+    ]
+  },
+  "SEAKING": {
+    "name": "SEAKING",
+    "moves": [
+      [1, "PECK"],
+      [1, "TAIL_WHIP"],
+      [1, "WATER_SPORT"],
+      [1, "SUPERSONIC"],
+      [10, "SUPERSONIC"],
+      [15, "HORN_ATTACK"],
+      [24, "FLAIL"],
+      [29, "FURY_ATTACK"],
+      [41, "WATERFALL"],
+      [49, "HORN_DRILL"],
+      [61, "AGILITY"]
+    ]
+  },
+  "STARYU": {
+    "name": "STARYU",
+    "moves": [
+      [1, "TACKLE"],
+      [1, "HARDEN"],
+      [6, "WATER_GUN"],
+      [10, "RAPID_SPIN"],
+      [15, "RECOVER"],
+      [19, "CAMOUFLAGE"],
+      [24, "SWIFT"],
+      [28, "BUBBLE_BEAM"],
+      [33, "MINIMIZE"],
+      [37, "LIGHT_SCREEN"],
+      [42, "COSMIC_POWER"],
+      [46, "HYDRO_PUMP"]
+    ]
+  },
+  "STARMIE": {
+    "name": "STARMIE",
+    "moves": [
+      [1, "WATER_GUN"],
+      [1, "RAPID_SPIN"],
+      [1, "RECOVER"],
+      [1, "SWIFT"],
+      [33, "CONFUSE_RAY"]
+    ]
+  },
+  "MR_MIME": {
+    "name": "MR. MIME",
+    "moves": [
+      [1, "BARRIER"],
+      [5, "CONFUSION"],
+      [9, "SUBSTITUTE"],
+      [13, "MEDITATE"],
+      [17, "DOUBLE_SLAP"],
+      [21, "LIGHT_SCREEN"],
+      [21, "REFLECT"],
+      [25, "ENCORE"],
+      [29, "PSYBEAM"],
+      [33, "RECYCLE"],
+      [37, "TRICK"],
+      [41, "ROLE_PLAY"],
+      [45, "PSYCHIC"],
+      [49, "BATON_PASS"],
+      [53, "SAFEGUARD"]
+    ]
+  },
+  "SCYTHER": {
+    "name": "SCYTHER",
+    "moves": [
+      [1, "QUICK_ATTACK"],
+      [1, "LEER"],
+      [6, "FOCUS_ENERGY"],
+      [11, "PURSUIT"],
+      [16, "FALSE_SWIPE"],
+      [21, "AGILITY"],
+      [26, "WING_ATTACK"],
+      [31, "SLASH"],
+      [36, "SWORDS_DANCE"],
+      [41, "DOUBLE_TEAM"],
+      [46, "FURY_CUTTER"]
+    ]
+  },
+  "JYNX": {
+    "name": "JYNX",
+    "moves": [
+      [1, "POUND"],
+      [1, "LICK"],
+      [1, "LOVELY_KISS"],
+      [1, "POWDER_SNOW"],
+      [9, "LOVELY_KISS"],
+      [13, "POWDER_SNOW"],
+      [21, "DOUBLE_SLAP"],
+      [25, "ICE_PUNCH"],
+      [35, "MEAN_LOOK"],
+      [41, "FAKE_TEARS"],
+      [51, "BODY_SLAM"],
+      [57, "PERISH_SONG"],
+      [67, "BLIZZARD"]
+    ]
+  },
+  "ELECTABUZZ": {
+    "name": "ELECTABUZZ",
+    "moves": [
+      [1, "QUICK_ATTACK"],
+      [1, "LEER"],
+      [1, "THUNDER_PUNCH"],
+      [9, "THUNDER_PUNCH"],
+      [17, "LIGHT_SCREEN"],
+      [25, "SWIFT"],
+      [36, "SCREECH"],
+      [47, "THUNDERBOLT"],
+      [58, "THUNDER"]
+    ]
+  },
+  "MAGMAR": {
+    "name": "MAGMAR",
+    "moves": [
+      [1, "EMBER"],
+      [1, "LEER"],
+      [1, "SMOG"],
+      [1, "FIRE_PUNCH"],
+      [7, "LEER"],
+      [13, "SMOG"],
+      [19, "FIRE_PUNCH"],
+      [25, "SMOKESCREEN"],
+      [33, "SUNNY_DAY"],
+      [41, "FLAMETHROWER"],
+      [49, "CONFUSE_RAY"],
+      [57, "FIRE_BLAST"]
+    ]
+  },
+  "PINSIR": {
+    "name": "PINSIR",
+    "moves": [
+      [1, "VICE_GRIP"],
+      [1, "FOCUS_ENERGY"],
+      [7, "BIND"],
+      [13, "SEISMIC_TOSS"],
+      [19, "HARDEN"],
+      [25, "REVENGE"],
+      [31, "BRICK_BREAK"],
+      [37, "GUILLOTINE"],
+      [43, "SUBMISSION"],
+      [49, "SWORDS_DANCE"]
+    ]
+  },
+  "TAUROS": {
+    "name": "TAUROS",
+    "moves": [
+      [1, "TACKLE"],
+      [4, "TAIL_WHIP"],
+      [8, "RAGE"],
+      [13, "HORN_ATTACK"],
+      [19, "SCARY_FACE"],
+      [26, "PURSUIT"],
+      [34, "REST"],
+      [43, "THRASH"],
+      [53, "TAKE_DOWN"]
+    ]
+  },
+  "MAGIKARP": {
+    "name": "MAGIKARP",
+    "moves": [[1, "SPLASH"], [15, "TACKLE"], [30, "FLAIL"]]
+  },
+  "GYARADOS": {
+    "name": "GYARADOS",
+    "moves": [
+      [1, "THRASH"],
+      [20, "BITE"],
+      [25, "DRAGON_RAGE"],
+      [30, "LEER"],
+      [35, "TWISTER"],
+      [40, "HYDRO_PUMP"],
+      [45, "RAIN_DANCE"],
+      [50, "DRAGON_DANCE"],
+      [55, "HYPER_BEAM"]
+    ]
+  },
+  "LAPRAS": {
+    "name": "LAPRAS",
+    "moves": [
+      [1, "WATER_GUN"],
+      [1, "GROWL"],
+      [1, "SING"],
+      [7, "MIST"],
+      [13, "BODY_SLAM"],
+      [19, "CONFUSE_RAY"],
+      [25, "PERISH_SONG"],
+      [31, "ICE_BEAM"],
+      [37, "RAIN_DANCE"],
+      [43, "SAFEGUARD"],
+      [49, "HYDRO_PUMP"],
+      [55, "SHEER_COLD"]
+    ]
+  },
+  "DITTO": { "name": "DITTO", "moves": [[1, "TRANSFORM"]] },
+  "EEVEE": {
+    "name": "EEVEE",
+    "moves": [
+      [1, "TACKLE"],
+      [1, "TAIL_WHIP"],
+      [1, "HELPING_HAND"],
+      [8, "SAND_ATTACK"],
+      [16, "GROWL"],
+      [23, "QUICK_ATTACK"],
+      [30, "BITE"],
+      [36, "BATON_PASS"],
+      [42, "TAKE_DOWN"]
+    ]
+  },
+  "VAPOREON": {
+    "name": "VAPOREON",
+    "moves": [
+      [1, "TACKLE"],
+      [1, "TAIL_WHIP"],
+      [1, "HELPING_HAND"],
+      [8, "SAND_ATTACK"],
+      [16, "WATER_GUN"],
+      [23, "QUICK_ATTACK"],
+      [30, "BITE"],
+      [36, "AURORA_BEAM"],
+      [42, "HAZE"],
+      [47, "ACID_ARMOR"],
+      [52, "HYDRO_PUMP"]
+    ]
+  },
+  "JOLTEON": {
+    "name": "JOLTEON",
+    "moves": [
+      [1, "TACKLE"],
+      [1, "TAIL_WHIP"],
+      [1, "HELPING_HAND"],
+      [8, "SAND_ATTACK"],
+      [16, "THUNDER_SHOCK"],
+      [23, "QUICK_ATTACK"],
+      [30, "DOUBLE_KICK"],
+      [36, "PIN_MISSILE"],
+      [42, "THUNDER_WAVE"],
+      [47, "AGILITY"],
+      [52, "THUNDER"]
+    ]
+  },
+  "FLAREON": {
+    "name": "FLAREON",
+    "moves": [
+      [1, "TACKLE"],
+      [1, "TAIL_WHIP"],
+      [1, "HELPING_HAND"],
+      [8, "SAND_ATTACK"],
+      [16, "EMBER"],
+      [23, "QUICK_ATTACK"],
+      [30, "BITE"],
+      [36, "FIRE_SPIN"],
+      [42, "SMOG"],
+      [47, "LEER"],
+      [52, "FLAMETHROWER"]
+    ]
+  },
+  "PORYGON": {
+    "name": "PORYGON",
+    "moves": [
+      [1, "CONVERSION_2"],
+      [1, "TACKLE"],
+      [1, "CONVERSION"],
+      [9, "AGILITY"],
+      [12, "PSYBEAM"],
+      [20, "RECOVER"],
+      [24, "SHARPEN"],
+      [32, "LOCK_ON"],
+      [36, "TRI_ATTACK"],
+      [44, "RECYCLE"],
+      [48, "ZAP_CANNON"]
+    ]
+  },
+  "OMANYTE": {
+    "name": "OMANYTE",
+    "moves": [
+      [1, "CONSTRICT"],
+      [1, "WITHDRAW"],
+      [13, "BITE"],
+      [19, "WATER_GUN"],
+      [25, "MUD_SHOT"],
+      [31, "LEER"],
+      [37, "PROTECT"],
+      [43, "TICKLE"],
+      [49, "ANCIENT_POWER"],
+      [55, "HYDRO_PUMP"]
+    ]
+  },
+  "OMASTAR": {
+    "name": "OMASTAR",
+    "moves": [
+      [1, "CONSTRICT"],
+      [1, "WITHDRAW"],
+      [1, "BITE"],
+      [13, "BITE"],
+      [19, "WATER_GUN"],
+      [25, "MUD_SHOT"],
+      [31, "LEER"],
+      [37, "PROTECT"],
+      [40, "SPIKE_CANNON"],
+      [46, "TICKLE"],
+      [55, "ANCIENT_POWER"],
+      [65, "HYDRO_PUMP"]
+    ]
+  },
+  "KABUTO": {
+    "name": "KABUTO",
+    "moves": [
+      [1, "SCRATCH"],
+      [1, "HARDEN"],
+      [13, "ABSORB"],
+      [19, "LEER"],
+      [25, "MUD_SHOT"],
+      [31, "SAND_ATTACK"],
+      [37, "ENDURE"],
+      [43, "METAL_SOUND"],
+      [49, "MEGA_DRAIN"],
+      [55, "ANCIENT_POWER"]
+    ]
+  },
+  "KABUTOPS": {
+    "name": "KABUTOPS",
+    "moves": [
+      [1, "SCRATCH"],
+      [1, "HARDEN"],
+      [1, "ABSORB"],
+      [13, "ABSORB"],
+      [19, "LEER"],
+      [25, "MUD_SHOT"],
+      [31, "SAND_ATTACK"],
+      [37, "ENDURE"],
+      [40, "SLASH"],
+      [46, "METAL_SOUND"],
+      [55, "MEGA_DRAIN"],
+      [65, "ANCIENT_POWER"]
+    ]
+  },
+  "AERODACTYL": {
+    "name": "AERODACTYL",
+    "moves": [
+      [1, "WING_ATTACK"],
+      [8, "AGILITY"],
+      [15, "BITE"],
+      [22, "SUPERSONIC"],
+      [29, "ANCIENT_POWER"],
+      [36, "SCARY_FACE"],
+      [43, "TAKE_DOWN"],
+      [50, "HYPER_BEAM"]
+    ]
+  },
+  "SNORLAX": {
+    "name": "SNORLAX",
+    "moves": [
+      [1, "TACKLE"],
+      [6, "AMNESIA"],
+      [10, "DEFENSE_CURL"],
+      [15, "BELLY_DRUM"],
+      [19, "HEADBUTT"],
+      [24, "YAWN"],
+      [28, "REST"],
+      [28, "SNORE"],
+      [33, "BODY_SLAM"],
+      [37, "BLOCK"],
+      [42, "COVET"],
+      [46, "ROLLOUT"],
+      [51, "HYPER_BEAM"]
+    ]
+  },
+  "ARTICUNO": {
+    "name": "ARTICUNO",
+    "moves": [
+      [1, "GUST"],
+      [1, "POWDER_SNOW"],
+      [13, "MIST"],
+      [25, "AGILITY"],
+      [37, "MIND_READER"],
+      [49, "ICE_BEAM"],
+      [61, "REFLECT"],
+      [73, "BLIZZARD"],
+      [85, "SHEER_COLD"]
+    ]
+  },
+  "ZAPDOS": {
+    "name": "ZAPDOS",
+    "moves": [
+      [1, "PECK"],
+      [1, "THUNDER_SHOCK"],
+      [13, "THUNDER_WAVE"],
+      [25, "AGILITY"],
+      [37, "DETECT"],
+      [49, "DRILL_PECK"],
+      [61, "CHARGE"],
+      [73, "LIGHT_SCREEN"],
+      [85, "THUNDER"]
+    ]
+  },
+  "MOLTRES": {
+    "name": "MOLTRES",
+    "moves": [
+      [1, "WING_ATTACK"],
+      [1, "EMBER"],
+      [13, "FIRE_SPIN"],
+      [25, "AGILITY"],
+      [37, "ENDURE"],
+      [49, "FLAMETHROWER"],
+      [61, "SAFEGUARD"],
+      [73, "HEAT_WAVE"],
+      [85, "SKY_ATTACK"]
+    ]
+  },
+  "DRATINI": {
+    "name": "DRATINI",
+    "moves": [
+      [1, "WRAP"],
+      [1, "LEER"],
+      [8, "THUNDER_WAVE"],
+      [15, "TWISTER"],
+      [22, "DRAGON_RAGE"],
+      [29, "SLAM"],
+      [36, "AGILITY"],
+      [43, "SAFEGUARD"],
+      [50, "OUTRAGE"],
+      [57, "HYPER_BEAM"]
+    ]
+  },
+  "DRAGONAIR": {
+    "name": "DRAGONAIR",
+    "moves": [
+      [1, "WRAP"],
+      [1, "LEER"],
+      [1, "THUNDER_WAVE"],
+      [1, "TWISTER"],
+      [8, "THUNDER_WAVE"],
+      [15, "TWISTER"],
+      [22, "DRAGON_RAGE"],
+      [29, "SLAM"],
+      [38, "AGILITY"],
+      [47, "SAFEGUARD"],
+      [56, "OUTRAGE"],
+      [65, "HYPER_BEAM"]
+    ]
+  },
+  "DRAGONITE": {
+    "name": "DRAGONITE",
+    "moves": [
+      [1, "WRAP"],
+      [1, "LEER"],
+      [1, "THUNDER_WAVE"],
+      [1, "TWISTER"],
+      [8, "THUNDER_WAVE"],
+      [15, "TWISTER"],
+      [22, "DRAGON_RAGE"],
+      [29, "SLAM"],
+      [38, "AGILITY"],
+      [47, "SAFEGUARD"],
+      [55, "WING_ATTACK"],
+      [61, "OUTRAGE"],
+      [75, "HYPER_BEAM"]
+    ]
+  },
+  "MEWTWO": {
+    "name": "MEWTWO",
+    "moves": [
+      [1, "CONFUSION"],
+      [1, "DISABLE"],
+      [11, "BARRIER"],
+      [22, "SWIFT"],
+      [33, "PSYCH_UP"],
+      [44, "FUTURE_SIGHT"],
+      [55, "MIST"],
+      [66, "PSYCHIC"],
+      [77, "AMNESIA"],
+      [88, "RECOVER"],
+      [99, "SAFEGUARD"]
+    ]
+  },
+  "MEW": {
+    "name": "MEW",
+    "moves": [
+      [1, "POUND"],
+      [10, "TRANSFORM"],
+      [20, "MEGA_PUNCH"],
+      [30, "METRONOME"],
+      [40, "PSYCHIC"],
+      [50, "ANCIENT_POWER"]
+    ]
+  },
+  "CHIKORITA": {
+    "name": "CHIKORITA",
+    "moves": [
+      [1, "TACKLE"],
+      [1, "GROWL"],
+      [8, "RAZOR_LEAF"],
+      [12, "REFLECT"],
+      [15, "POISON_POWDER"],
+      [22, "SYNTHESIS"],
+      [29, "BODY_SLAM"],
+      [36, "LIGHT_SCREEN"],
+      [43, "SAFEGUARD"],
+      [50, "SOLAR_BEAM"]
+    ]
+  },
+  "BAYLEEF": {
+    "name": "BAYLEEF",
+    "moves": [
+      [1, "TACKLE"],
+      [1, "GROWL"],
+      [1, "RAZOR_LEAF"],
+      [1, "REFLECT"],
+      [8, "RAZOR_LEAF"],
+      [12, "REFLECT"],
+      [15, "POISON_POWDER"],
+      [23, "SYNTHESIS"],
+      [31, "BODY_SLAM"],
+      [39, "LIGHT_SCREEN"],
+      [47, "SAFEGUARD"],
+      [55, "SOLAR_BEAM"]
+    ]
+  },
+  "MEGANIUM": {
+    "name": "MEGANIUM",
+    "moves": [
+      [1, "TACKLE"],
+      [1, "GROWL"],
+      [1, "RAZOR_LEAF"],
+      [1, "REFLECT"],
+      [8, "RAZOR_LEAF"],
+      [12, "REFLECT"],
+      [15, "POISON_POWDER"],
+      [23, "SYNTHESIS"],
+      [31, "BODY_SLAM"],
+      [41, "LIGHT_SCREEN"],
+      [51, "SAFEGUARD"],
+      [61, "SOLAR_BEAM"]
+    ]
+  },
+  "CYNDAQUIL": {
+    "name": "CYNDAQUIL",
+    "moves": [
+      [1, "TACKLE"],
+      [1, "LEER"],
+      [6, "SMOKESCREEN"],
+      [12, "EMBER"],
+      [19, "QUICK_ATTACK"],
+      [27, "FLAME_WHEEL"],
+      [36, "SWIFT"],
+      [46, "FLAMETHROWER"]
+    ]
+  },
+  "QUILAVA": {
+    "name": "QUILAVA",
+    "moves": [
+      [1, "TACKLE"],
+      [1, "LEER"],
+      [1, "SMOKESCREEN"],
+      [6, "SMOKESCREEN"],
+      [12, "EMBER"],
+      [21, "QUICK_ATTACK"],
+      [31, "FLAME_WHEEL"],
+      [42, "SWIFT"],
+      [54, "FLAMETHROWER"]
+    ]
+  },
+  "TYPHLOSION": {
+    "name": "TYPHLOSION",
+    "moves": [
+      [1, "TACKLE"],
+      [1, "LEER"],
+      [1, "SMOKESCREEN"],
+      [1, "EMBER"],
+      [6, "SMOKESCREEN"],
+      [12, "EMBER"],
+      [21, "QUICK_ATTACK"],
+      [31, "FLAME_WHEEL"],
+      [45, "SWIFT"],
+      [60, "FLAMETHROWER"]
+    ]
+  },
+  "TOTODILE": {
+    "name": "TOTODILE",
+    "moves": [
+      [1, "SCRATCH"],
+      [1, "LEER"],
+      [7, "RAGE"],
+      [13, "WATER_GUN"],
+      [20, "BITE"],
+      [27, "SCARY_FACE"],
+      [35, "SLASH"],
+      [43, "SCREECH"],
+      [52, "HYDRO_PUMP"]
+    ]
+  },
+  "CROCONAW": {
+    "name": "CROCONAW",
+    "moves": [
+      [1, "SCRATCH"],
+      [1, "LEER"],
+      [1, "RAGE"],
+      [7, "RAGE"],
+      [13, "WATER_GUN"],
+      [21, "BITE"],
+      [28, "SCARY_FACE"],
+      [37, "SLASH"],
+      [45, "SCREECH"],
+      [55, "HYDRO_PUMP"]
+    ]
+  },
+  "FERALIGATR": {
+    "name": "FERALIGATR",
+    "moves": [
+      [1, "SCRATCH"],
+      [1, "LEER"],
+      [1, "RAGE"],
+      [1, "WATER_GUN"],
+      [7, "RAGE"],
+      [13, "WATER_GUN"],
+      [21, "BITE"],
+      [28, "SCARY_FACE"],
+      [38, "SLASH"],
+      [47, "SCREECH"],
+      [58, "HYDRO_PUMP"]
+    ]
+  },
+  "SENTRET": {
+    "name": "SENTRET",
+    "moves": [
+      [1, "SCRATCH"],
+      [4, "DEFENSE_CURL"],
+      [7, "QUICK_ATTACK"],
+      [12, "FURY_SWIPES"],
+      [17, "HELPING_HAND"],
+      [24, "SLAM"],
+      [31, "FOLLOW_ME"],
+      [40, "REST"],
+      [49, "AMNESIA"]
+    ]
+  },
+  "FURRET": {
+    "name": "FURRET",
+    "moves": [
+      [1, "SCRATCH"],
+      [1, "DEFENSE_CURL"],
+      [1, "QUICK_ATTACK"],
+      [4, "DEFENSE_CURL"],
+      [7, "QUICK_ATTACK"],
+      [12, "FURY_SWIPES"],
+      [19, "HELPING_HAND"],
+      [28, "SLAM"],
+      [37, "FOLLOW_ME"],
+      [48, "REST"],
+      [59, "AMNESIA"]
+    ]
+  },
+  "HOOTHOOT": {
+    "name": "HOOTHOOT",
+    "moves": [
+      [1, "TACKLE"],
+      [1, "GROWL"],
+      [6, "FORESIGHT"],
+      [11, "PECK"],
+      [16, "HYPNOSIS"],
+      [22, "REFLECT"],
+      [28, "TAKE_DOWN"],
+      [34, "CONFUSION"],
+      [48, "DREAM_EATER"]
+    ]
+  },
+  "NOCTOWL": {
+    "name": "NOCTOWL",
+    "moves": [
+      [1, "TACKLE"],
+      [1, "GROWL"],
+      [1, "FORESIGHT"],
+      [1, "PECK"],
+      [6, "FORESIGHT"],
+      [11, "PECK"],
+      [16, "HYPNOSIS"],
+      [25, "REFLECT"],
+      [33, "TAKE_DOWN"],
+      [41, "CONFUSION"],
+      [57, "DREAM_EATER"]
+    ]
+  },
+  "LEDYBA": {
+    "name": "LEDYBA",
+    "moves": [
+      [1, "TACKLE"],
+      [8, "SUPERSONIC"],
+      [15, "COMET_PUNCH"],
+      [22, "LIGHT_SCREEN"],
+      [22, "REFLECT"],
+      [22, "SAFEGUARD"],
+      [29, "BATON_PASS"],
+      [36, "SWIFT"],
+      [43, "AGILITY"],
+      [50, "DOUBLE_EDGE"]
+    ]
+  },
+  "LEDIAN": {
+    "name": "LEDIAN",
+    "moves": [
+      [1, "TACKLE"],
+      [1, "SUPERSONIC"],
+      [8, "SUPERSONIC"],
+      [15, "COMET_PUNCH"],
+      [24, "LIGHT_SCREEN"],
+      [24, "REFLECT"],
+      [24, "SAFEGUARD"],
+      [33, "BATON_PASS"],
+      [42, "SWIFT"],
+      [51, "AGILITY"],
+      [60, "DOUBLE_EDGE"]
+    ]
+  },
+  "SPINARAK": {
+    "name": "SPINARAK",
+    "moves": [
+      [1, "POISON_STING"],
+      [1, "STRING_SHOT"],
+      [6, "SCARY_FACE"],
+      [11, "CONSTRICT"],
+      [17, "NIGHT_SHADE"],
+      [23, "LEECH_LIFE"],
+      [30, "FURY_SWIPES"],
+      [37, "SPIDER_WEB"],
+      [45, "AGILITY"],
+      [53, "PSYCHIC"]
+    ]
+  },
+  "ARIADOS": {
+    "name": "ARIADOS",
+    "moves": [
+      [1, "POISON_STING"],
+      [1, "STRING_SHOT"],
+      [1, "SCARY_FACE"],
+      [1, "CONSTRICT"],
+      [6, "SCARY_FACE"],
+      [11, "CONSTRICT"],
+      [17, "NIGHT_SHADE"],
+      [25, "LEECH_LIFE"],
+      [34, "FURY_SWIPES"],
+      [43, "SPIDER_WEB"],
+      [53, "AGILITY"],
+      [63, "PSYCHIC"]
+    ]
+  },
+  "CROBAT": {
+    "name": "CROBAT",
+    "moves": [
+      [1, "SCREECH"],
+      [1, "LEECH_LIFE"],
+      [1, "SUPERSONIC"],
+      [1, "ASTONISH"],
+      [6, "SUPERSONIC"],
+      [11, "ASTONISH"],
+      [16, "BITE"],
+      [21, "WING_ATTACK"],
+      [28, "CONFUSE_RAY"],
+      [35, "AIR_CUTTER"],
+      [42, "MEAN_LOOK"],
+      [49, "POISON_FANG"],
+      [56, "HAZE"]
+    ]
+  },
+  "CHINCHOU": {
+    "name": "CHINCHOU",
+    "moves": [
+      [1, "BUBBLE"],
+      [1, "THUNDER_WAVE"],
+      [5, "SUPERSONIC"],
+      [13, "FLAIL"],
+      [17, "WATER_GUN"],
+      [25, "SPARK"],
+      [29, "CONFUSE_RAY"],
+      [37, "TAKE_DOWN"],
+      [41, "HYDRO_PUMP"],
+      [49, "CHARGE"]
+    ]
+  },
+  "LANTURN": {
+    "name": "LANTURN",
+    "moves": [
+      [1, "BUBBLE"],
+      [1, "THUNDER_WAVE"],
+      [1, "SUPERSONIC"],
+      [5, "SUPERSONIC"],
+      [13, "FLAIL"],
+      [17, "WATER_GUN"],
+      [25, "SPARK"],
+      [32, "CONFUSE_RAY"],
+      [43, "TAKE_DOWN"],
+      [50, "HYDRO_PUMP"],
+      [61, "CHARGE"]
+    ]
+  },
+  "PICHU": {
+    "name": "PICHU",
+    "moves": [
+      [1, "THUNDER_SHOCK"],
+      [1, "CHARM"],
+      [6, "TAIL_WHIP"],
+      [8, "THUNDER_WAVE"],
+      [11, "SWEET_KISS"]
+    ]
+  },
+  "CLEFFA": {
+    "name": "CLEFFA",
+    "moves": [
+      [1, "POUND"],
+      [1, "CHARM"],
+      [4, "ENCORE"],
+      [8, "SING"],
+      [13, "SWEET_KISS"]
+    ]
+  },
+  "IGGLYBUFF": {
+    "name": "IGGLYBUFF",
+    "moves": [
+      [1, "SING"],
+      [1, "CHARM"],
+      [4, "DEFENSE_CURL"],
+      [9, "POUND"],
+      [14, "SWEET_KISS"]
+    ]
+  },
+  "TOGEPI": {
+    "name": "TOGEPI",
+    "moves": [
+      [1, "GROWL"],
+      [1, "CHARM"],
+      [6, "METRONOME"],
+      [11, "SWEET_KISS"],
+      [16, "YAWN"],
+      [21, "ENCORE"],
+      [26, "FOLLOW_ME"],
+      [31, "WISH"],
+      [36, "SAFEGUARD"],
+      [41, "DOUBLE_EDGE"]
+    ]
+  },
+  "TOGETIC": {
+    "name": "TOGETIC",
+    "moves": [
+      [1, "GROWL"],
+      [1, "CHARM"],
+      [6, "METRONOME"],
+      [11, "SWEET_KISS"],
+      [16, "YAWN"],
+      [21, "ENCORE"],
+      [26, "FOLLOW_ME"],
+      [31, "WISH"],
+      [36, "SAFEGUARD"],
+      [41, "DOUBLE_EDGE"]
+    ]
+  },
+  "NATU": {
+    "name": "NATU",
+    "moves": [
+      [1, "PECK"],
+      [1, "LEER"],
+      [10, "NIGHT_SHADE"],
+      [20, "TELEPORT"],
+      [30, "WISH"],
+      [30, "FUTURE_SIGHT"],
+      [40, "CONFUSE_RAY"],
+      [50, "PSYCHIC"]
+    ]
+  },
+  "XATU": {
+    "name": "XATU",
+    "moves": [
+      [1, "PECK"],
+      [1, "LEER"],
+      [10, "NIGHT_SHADE"],
+      [20, "TELEPORT"],
+      [35, "WISH"],
+      [35, "FUTURE_SIGHT"],
+      [50, "CONFUSE_RAY"],
+      [65, "PSYCHIC"]
+    ]
+  },
+  "MAREEP": {
+    "name": "MAREEP",
+    "moves": [
+      [1, "TACKLE"],
+      [1, "GROWL"],
+      [9, "THUNDER_SHOCK"],
+      [16, "THUNDER_WAVE"],
+      [23, "COTTON_SPORE"],
+      [30, "LIGHT_SCREEN"],
+      [37, "THUNDER"]
+    ]
+  },
+  "FLAAFFY": {
+    "name": "FLAAFFY",
+    "moves": [
+      [1, "TACKLE"],
+      [1, "GROWL"],
+      [1, "THUNDER_SHOCK"],
+      [9, "THUNDER_SHOCK"],
+      [18, "THUNDER_WAVE"],
+      [27, "COTTON_SPORE"],
+      [36, "LIGHT_SCREEN"],
+      [45, "THUNDER"]
+    ]
+  },
+  "AMPHAROS": {
+    "name": "AMPHAROS",
+    "moves": [
+      [1, "TACKLE"],
+      [1, "GROWL"],
+      [1, "THUNDER_SHOCK"],
+      [1, "THUNDER_WAVE"],
+      [9, "THUNDER_SHOCK"],
+      [18, "THUNDER_WAVE"],
+      [27, "COTTON_SPORE"],
+      [30, "THUNDER_PUNCH"],
+      [42, "LIGHT_SCREEN"],
+      [57, "THUNDER"]
+    ]
+  },
+  "BELLOSSOM": {
+    "name": "BELLOSSOM",
+    "moves": [
+      [1, "ABSORB"],
+      [1, "SWEET_SCENT"],
+      [1, "STUN_SPORE"],
+      [1, "MAGICAL_LEAF"],
+      [44, "PETAL_DANCE"],
+      [55, "SOLAR_BEAM"]
+    ]
+  },
+  "MARILL": {
+    "name": "MARILL",
+    "moves": [
+      [1, "TACKLE"],
+      [3, "DEFENSE_CURL"],
+      [6, "TAIL_WHIP"],
+      [10, "WATER_GUN"],
+      [15, "ROLLOUT"],
+      [21, "BUBBLE_BEAM"],
+      [28, "DOUBLE_EDGE"],
+      [36, "RAIN_DANCE"],
+      [45, "HYDRO_PUMP"]
+    ]
+  },
+  "AZUMARILL": {
+    "name": "AZUMARILL",
+    "moves": [
+      [1, "TACKLE"],
+      [1, "DEFENSE_CURL"],
+      [1, "TAIL_WHIP"],
+      [1, "WATER_GUN"],
+      [3, "DEFENSE_CURL"],
+      [6, "TAIL_WHIP"],
+      [10, "WATER_GUN"],
+      [15, "ROLLOUT"],
+      [24, "BUBBLE_BEAM"],
+      [34, "DOUBLE_EDGE"],
+      [45, "RAIN_DANCE"],
+      [57, "HYDRO_PUMP"]
+    ]
+  },
+  "SUDOWOODO": {
+    "name": "SUDOWOODO",
+    "moves": [
+      [1, "ROCK_THROW"],
+      [1, "MIMIC"],
+      [9, "FLAIL"],
+      [17, "LOW_KICK"],
+      [25, "ROCK_SLIDE"],
+      [33, "BLOCK"],
+      [41, "FAINT_ATTACK"],
+      [49, "SLAM"],
+      [57, "DOUBLE_EDGE"]
+    ]
+  },
+  "POLITOED": {
+    "name": "POLITOED",
+    "moves": [
+      [1, "WATER_GUN"],
+      [1, "HYPNOSIS"],
+      [1, "DOUBLE_SLAP"],
+      [1, "PERISH_SONG"],
+      [35, "PERISH_SONG"],
+      [51, "SWAGGER"]
+    ]
+  },
+  "HOPPIP": {
+    "name": "HOPPIP",
+    "moves": [
+      [1, "SPLASH"],
+      [5, "SYNTHESIS"],
+      [5, "TAIL_WHIP"],
+      [10, "TACKLE"],
+      [13, "POISON_POWDER"],
+      [15, "STUN_SPORE"],
+      [17, "SLEEP_POWDER"],
+      [20, "LEECH_SEED"],
+      [25, "COTTON_SPORE"],
+      [30, "MEGA_DRAIN"]
+    ]
+  },
+  "SKIPLOOM": {
+    "name": "SKIPLOOM",
+    "moves": [
+      [1, "SPLASH"],
+      [1, "SYNTHESIS"],
+      [1, "TAIL_WHIP"],
+      [1, "TACKLE"],
+      [5, "SYNTHESIS"],
+      [5, "TAIL_WHIP"],
+      [10, "TACKLE"],
+      [13, "POISON_POWDER"],
+      [15, "STUN_SPORE"],
+      [17, "SLEEP_POWDER"],
+      [22, "LEECH_SEED"],
+      [29, "COTTON_SPORE"],
+      [36, "MEGA_DRAIN"]
+    ]
+  },
+  "JUMPLUFF": {
+    "name": "JUMPLUFF",
+    "moves": [
+      [1, "SPLASH"],
+      [1, "SYNTHESIS"],
+      [1, "TAIL_WHIP"],
+      [1, "TACKLE"],
+      [5, "SYNTHESIS"],
+      [5, "TAIL_WHIP"],
+      [10, "TACKLE"],
+      [13, "POISON_POWDER"],
+      [15, "STUN_SPORE"],
+      [17, "SLEEP_POWDER"],
+      [22, "LEECH_SEED"],
+      [33, "COTTON_SPORE"],
+      [44, "MEGA_DRAIN"]
+    ]
+  },
+  "AIPOM": {
+    "name": "AIPOM",
+    "moves": [
+      [1, "SCRATCH"],
+      [1, "TAIL_WHIP"],
+      [6, "SAND_ATTACK"],
+      [13, "ASTONISH"],
+      [18, "BATON_PASS"],
+      [25, "TICKLE"],
+      [31, "FURY_SWIPES"],
+      [38, "SWIFT"],
+      [43, "SCREECH"],
+      [50, "AGILITY"]
+    ]
+  },
+  "SUNKERN": {
+    "name": "SUNKERN",
+    "moves": [
+      [1, "ABSORB"],
+      [6, "GROWTH"],
+      [13, "MEGA_DRAIN"],
+      [18, "INGRAIN"],
+      [25, "ENDEAVOR"],
+      [30, "SUNNY_DAY"],
+      [37, "SYNTHESIS"],
+      [42, "GIGA_DRAIN"]
+    ]
+  },
+  "SUNFLORA": {
+    "name": "SUNFLORA",
+    "moves": [
+      [1, "ABSORB"],
+      [1, "POUND"],
+      [6, "GROWTH"],
+      [13, "RAZOR_LEAF"],
+      [18, "INGRAIN"],
+      [25, "BULLET_SEED"],
+      [30, "SUNNY_DAY"],
+      [37, "PETAL_DANCE"],
+      [42, "SOLAR_BEAM"]
+    ]
+  },
+  "YANMA": {
+    "name": "YANMA",
+    "moves": [
+      [1, "TACKLE"],
+      [1, "FORESIGHT"],
+      [7, "QUICK_ATTACK"],
+      [13, "DOUBLE_TEAM"],
+      [19, "SONIC_BOOM"],
+      [25, "DETECT"],
+      [31, "SUPERSONIC"],
+      [37, "UPROAR"],
+      [43, "WING_ATTACK"],
+      [49, "SCREECH"]
+    ]
+  },
+  "WOOPER": {
+    "name": "WOOPER",
+    "moves": [
+      [1, "WATER_GUN"],
+      [1, "TAIL_WHIP"],
+      [11, "SLAM"],
+      [16, "MUD_SHOT"],
+      [21, "AMNESIA"],
+      [31, "YAWN"],
+      [36, "EARTHQUAKE"],
+      [41, "RAIN_DANCE"],
+      [51, "MIST"],
+      [51, "HAZE"]
+    ]
+  },
+  "QUAGSIRE": {
+    "name": "QUAGSIRE",
+    "moves": [
+      [1, "WATER_GUN"],
+      [1, "TAIL_WHIP"],
+      [11, "SLAM"],
+      [16, "MUD_SHOT"],
+      [23, "AMNESIA"],
+      [35, "YAWN"],
+      [42, "EARTHQUAKE"],
+      [49, "RAIN_DANCE"],
+      [61, "MIST"],
+      [61, "HAZE"]
+    ]
+  },
+  "ESPEON": {
+    "name": "ESPEON",
+    "moves": [
+      [1, "TACKLE"],
+      [1, "TAIL_WHIP"],
+      [1, "HELPING_HAND"],
+      [8, "SAND_ATTACK"],
+      [16, "CONFUSION"],
+      [23, "QUICK_ATTACK"],
+      [30, "SWIFT"],
+      [36, "PSYBEAM"],
+      [42, "PSYCH_UP"],
+      [47, "PSYCHIC"],
+      [52, "MORNING_SUN"]
+    ]
+  },
+  "UMBREON": {
+    "name": "UMBREON",
+    "moves": [
+      [1, "TACKLE"],
+      [1, "TAIL_WHIP"],
+      [1, "HELPING_HAND"],
+      [8, "SAND_ATTACK"],
+      [16, "PURSUIT"],
+      [23, "QUICK_ATTACK"],
+      [30, "CONFUSE_RAY"],
+      [36, "FAINT_ATTACK"],
+      [42, "MEAN_LOOK"],
+      [47, "SCREECH"],
+      [52, "MOONLIGHT"]
+    ]
+  },
+  "MURKROW": {
+    "name": "MURKROW",
+    "moves": [
+      [1, "PECK"],
+      [9, "ASTONISH"],
+      [14, "PURSUIT"],
+      [22, "HAZE"],
+      [27, "NIGHT_SHADE"],
+      [35, "FAINT_ATTACK"],
+      [40, "TAUNT"],
+      [48, "MEAN_LOOK"]
+    ]
+  },
+  "SLOWKING": {
+    "name": "SLOWKING",
+    "moves": [
+      [1, "CURSE"],
+      [1, "YAWN"],
+      [1, "TACKLE"],
+      [6, "GROWL"],
+      [15, "WATER_GUN"],
+      [20, "CONFUSION"],
+      [29, "DISABLE"],
+      [34, "HEADBUTT"],
+      [43, "SWAGGER"],
+      [48, "PSYCHIC"]
+    ]
+  },
+  "MISDREAVUS": {
+    "name": "MISDREAVUS",
+    "moves": [
+      [1, "GROWL"],
+      [1, "PSYWAVE"],
+      [6, "SPITE"],
+      [11, "ASTONISH"],
+      [17, "CONFUSE_RAY"],
+      [23, "MEAN_LOOK"],
+      [30, "PSYBEAM"],
+      [37, "PAIN_SPLIT"],
+      [45, "PERISH_SONG"],
+      [53, "GRUDGE"]
+    ]
+  },
+  "UNOWN": { "name": "UNOWN", "moves": [[1, "HIDDEN_POWER"]] },
+  "WOBBUFFET": {
+    "name": "WOBBUFFET",
+    "moves": [
+      [1, "COUNTER"],
+      [1, "MIRROR_COAT"],
+      [1, "SAFEGUARD"],
+      [1, "DESTINY_BOND"]
+    ]
+  },
+  "GIRAFARIG": {
+    "name": "GIRAFARIG",
+    "moves": [
+      [1, "TACKLE"],
+      [1, "GROWL"],
+      [7, "ASTONISH"],
+      [13, "CONFUSION"],
+      [19, "STOMP"],
+      [25, "ODOR_SLEUTH"],
+      [31, "AGILITY"],
+      [37, "BATON_PASS"],
+      [43, "PSYBEAM"],
+      [49, "CRUNCH"]
+    ]
+  },
+  "PINECO": {
+    "name": "PINECO",
+    "moves": [
+      [1, "TACKLE"],
+      [1, "PROTECT"],
+      [8, "SELF_DESTRUCT"],
+      [15, "TAKE_DOWN"],
+      [22, "RAPID_SPIN"],
+      [29, "BIDE"],
+      [36, "EXPLOSION"],
+      [43, "SPIKES"],
+      [50, "DOUBLE_EDGE"]
+    ]
+  },
+  "FORRETRESS": {
+    "name": "FORRETRESS",
+    "moves": [
+      [1, "TACKLE"],
+      [1, "PROTECT"],
+      [1, "SELF_DESTRUCT"],
+      [8, "SELF_DESTRUCT"],
+      [15, "TAKE_DOWN"],
+      [22, "RAPID_SPIN"],
+      [29, "BIDE"],
+      [39, "EXPLOSION"],
+      [49, "SPIKES"],
+      [59, "DOUBLE_EDGE"]
+    ]
+  },
+  "DUNSPARCE": {
+    "name": "DUNSPARCE",
+    "moves": [
+      [1, "RAGE"],
+      [4, "DEFENSE_CURL"],
+      [11, "YAWN"],
+      [14, "GLARE"],
+      [21, "SPITE"],
+      [24, "PURSUIT"],
+      [31, "SCREECH"],
+      [34, "TAKE_DOWN"],
+      [41, "ENDEAVOR"]
+    ]
+  },
+  "GLIGAR": {
+    "name": "GLIGAR",
+    "moves": [
+      [1, "POISON_STING"],
+      [6, "SAND_ATTACK"],
+      [13, "HARDEN"],
+      [20, "QUICK_ATTACK"],
+      [28, "FAINT_ATTACK"],
+      [36, "SLASH"],
+      [44, "SCREECH"],
+      [52, "GUILLOTINE"]
+    ]
+  },
+  "STEELIX": {
+    "name": "STEELIX",
+    "moves": [
+      [1, "TACKLE"],
+      [1, "SCREECH"],
+      [9, "BIND"],
+      [13, "ROCK_THROW"],
+      [21, "HARDEN"],
+      [25, "RAGE"],
+      [33, "SANDSTORM"],
+      [37, "SLAM"],
+      [45, "IRON_TAIL"],
+      [49, "CRUNCH"],
+      [57, "DOUBLE_EDGE"]
+    ]
+  },
+  "SNUBBULL": {
+    "name": "SNUBBULL",
+    "moves": [
+      [1, "TACKLE"],
+      [1, "SCARY_FACE"],
+      [4, "TAIL_WHIP"],
+      [8, "CHARM"],
+      [13, "BITE"],
+      [19, "LICK"],
+      [26, "ROAR"],
+      [34, "RAGE"],
+      [43, "TAKE_DOWN"],
+      [53, "CRUNCH"]
+    ]
+  },
+  "GRANBULL": {
+    "name": "GRANBULL",
+    "moves": [
+      [1, "TACKLE"],
+      [1, "SCARY_FACE"],
+      [4, "TAIL_WHIP"],
+      [8, "CHARM"],
+      [13, "BITE"],
+      [19, "LICK"],
+      [28, "ROAR"],
+      [38, "RAGE"],
+      [49, "TAKE_DOWN"],
+      [61, "CRUNCH"]
+    ]
+  },
+  "QWILFISH": {
+    "name": "QWILFISH",
+    "moves": [
+      [1, "SPIKES"],
+      [1, "TACKLE"],
+      [1, "POISON_STING"],
+      [10, "HARDEN"],
+      [10, "MINIMIZE"],
+      [19, "WATER_GUN"],
+      [28, "PIN_MISSILE"],
+      [37, "TAKE_DOWN"],
+      [46, "HYDRO_PUMP"]
+    ]
+  },
+  "SCIZOR": {
+    "name": "SCIZOR",
+    "moves": [
+      [1, "QUICK_ATTACK"],
+      [1, "LEER"],
+      [6, "FOCUS_ENERGY"],
+      [11, "PURSUIT"],
+      [16, "FALSE_SWIPE"],
+      [21, "AGILITY"],
+      [26, "METAL_CLAW"],
+      [31, "SLASH"],
+      [36, "SWORDS_DANCE"],
+      [41, "DOUBLE_TEAM"],
+      [46, "FURY_CUTTER"]
+    ]
+  },
+  "SHUCKLE": {
+    "name": "SHUCKLE",
+    "moves": [
+      [1, "CONSTRICT"],
+      [1, "WITHDRAW"],
+      [9, "WRAP"],
+      [14, "ENCORE"],
+      [23, "SAFEGUARD"],
+      [28, "BIDE"],
+      [37, "REST"]
+    ]
+  },
+  "HERACROSS": {
+    "name": "HERACROSS",
+    "moves": [
+      [1, "TACKLE"],
+      [1, "LEER"],
+      [6, "HORN_ATTACK"],
+      [11, "ENDURE"],
+      [17, "FURY_ATTACK"],
+      [23, "BRICK_BREAK"],
+      [30, "COUNTER"],
+      [37, "TAKE_DOWN"],
+      [45, "REVERSAL"],
+      [53, "MEGAHORN"]
+    ]
+  },
+  "SNEASEL": {
+    "name": "SNEASEL",
+    "moves": [
+      [1, "SCRATCH"],
+      [1, "LEER"],
+      [1, "TAUNT"],
+      [8, "QUICK_ATTACK"],
+      [15, "SCREECH"],
+      [22, "FAINT_ATTACK"],
+      [29, "FURY_SWIPES"],
+      [36, "AGILITY"],
+      [43, "ICY_WIND"],
+      [50, "SLASH"],
+      [57, "BEAT_UP"],
+      [64, "METAL_CLAW"]
+    ]
+  },
+  "TEDDIURSA": {
+    "name": "TEDDIURSA",
+    "moves": [
+      [1, "SCRATCH"],
+      [1, "LEER"],
+      [7, "LICK"],
+      [13, "FURY_SWIPES"],
+      [19, "FAKE_TEARS"],
+      [25, "FAINT_ATTACK"],
+      [31, "REST"],
+      [37, "SLASH"],
+      [43, "SNORE"],
+      [49, "THRASH"]
+    ]
+  },
+  "URSARING": {
+    "name": "URSARING",
+    "moves": [
+      [1, "SCRATCH"],
+      [1, "LEER"],
+      [1, "LICK"],
+      [1, "FURY_SWIPES"],
+      [7, "LICK"],
+      [13, "FURY_SWIPES"],
+      [19, "FAKE_TEARS"],
+      [25, "FAINT_ATTACK"],
+      [31, "REST"],
+      [37, "SLASH"],
+      [43, "SNORE"],
+      [49, "THRASH"]
+    ]
+  },
+  "SLUGMA": {
+    "name": "SLUGMA",
+    "moves": [
+      [1, "YAWN"],
+      [1, "SMOG"],
+      [8, "EMBER"],
+      [15, "ROCK_THROW"],
+      [22, "HARDEN"],
+      [29, "AMNESIA"],
+      [36, "FLAMETHROWER"],
+      [43, "ROCK_SLIDE"],
+      [50, "BODY_SLAM"]
+    ]
+  },
+  "MAGCARGO": {
+    "name": "MAGCARGO",
+    "moves": [
+      [1, "YAWN"],
+      [1, "SMOG"],
+      [1, "EMBER"],
+      [1, "ROCK_THROW"],
+      [8, "EMBER"],
+      [15, "ROCK_THROW"],
+      [22, "HARDEN"],
+      [29, "AMNESIA"],
+      [36, "FLAMETHROWER"],
+      [48, "ROCK_SLIDE"],
+      [60, "BODY_SLAM"]
+    ]
+  },
+  "SWINUB": {
+    "name": "SWINUB",
+    "moves": [
+      [1, "TACKLE"],
+      [1, "ODOR_SLEUTH"],
+      [10, "POWDER_SNOW"],
+      [19, "ENDURE"],
+      [28, "TAKE_DOWN"],
+      [37, "MIST"],
+      [46, "BLIZZARD"],
+      [55, "AMNESIA"]
+    ]
+  },
+  "PILOSWINE": {
+    "name": "PILOSWINE",
+    "moves": [
+      [1, "HORN_ATTACK"],
+      [1, "ODOR_SLEUTH"],
+      [1, "POWDER_SNOW"],
+      [1, "ENDURE"],
+      [10, "POWDER_SNOW"],
+      [19, "ENDURE"],
+      [28, "TAKE_DOWN"],
+      [33, "FURY_ATTACK"],
+      [42, "MIST"],
+      [56, "BLIZZARD"],
+      [70, "AMNESIA"]
+    ]
+  },
+  "CORSOLA": {
+    "name": "CORSOLA",
+    "moves": [
+      [1, "TACKLE"],
+      [6, "HARDEN"],
+      [12, "BUBBLE"],
+      [17, "RECOVER"],
+      [17, "REFRESH"],
+      [23, "BUBBLE_BEAM"],
+      [28, "SPIKE_CANNON"],
+      [34, "ROCK_BLAST"],
+      [39, "MIRROR_COAT"],
+      [45, "ANCIENT_POWER"]
+    ]
+  },
+  "REMORAID": {
+    "name": "REMORAID",
+    "moves": [
+      [1, "WATER_GUN"],
+      [11, "LOCK_ON"],
+      [22, "PSYBEAM"],
+      [22, "AURORA_BEAM"],
+      [22, "BUBBLE_BEAM"],
+      [33, "FOCUS_ENERGY"],
+      [44, "ICE_BEAM"],
+      [55, "HYPER_BEAM"]
+    ]
+  },
+  "OCTILLERY": {
+    "name": "OCTILLERY",
+    "moves": [
+      [1, "WATER_GUN"],
+      [11, "CONSTRICT"],
+      [22, "PSYBEAM"],
+      [22, "AURORA_BEAM"],
+      [22, "BUBBLE_BEAM"],
+      [25, "OCTAZOOKA"],
+      [38, "FOCUS_ENERGY"],
+      [54, "ICE_BEAM"],
+      [70, "HYPER_BEAM"]
+    ]
+  },
+  "DELIBIRD": { "name": "DELIBIRD", "moves": [[1, "PRESENT"]] },
+  "MANTINE": {
+    "name": "MANTINE",
+    "moves": [
+      [1, "TACKLE"],
+      [1, "BUBBLE"],
+      [8, "SUPERSONIC"],
+      [15, "BUBBLE_BEAM"],
+      [22, "TAKE_DOWN"],
+      [29, "AGILITY"],
+      [36, "WING_ATTACK"],
+      [43, "WATER_PULSE"],
+      [50, "CONFUSE_RAY"]
+    ]
+  },
+  "SKARMORY": {
+    "name": "SKARMORY",
+    "moves": [
+      [1, "LEER"],
+      [1, "PECK"],
+      [10, "SAND_ATTACK"],
+      [13, "SWIFT"],
+      [16, "AGILITY"],
+      [26, "FURY_ATTACK"],
+      [29, "AIR_CUTTER"],
+      [32, "STEEL_WING"],
+      [42, "SPIKES"],
+      [45, "METAL_SOUND"]
+    ]
+  },
+  "HOUNDOUR": {
+    "name": "HOUNDOUR",
+    "moves": [
+      [1, "LEER"],
+      [1, "EMBER"],
+      [7, "HOWL"],
+      [13, "SMOG"],
+      [19, "ROAR"],
+      [25, "BITE"],
+      [31, "ODOR_SLEUTH"],
+      [37, "FAINT_ATTACK"],
+      [43, "FLAMETHROWER"],
+      [49, "CRUNCH"]
+    ]
+  },
+  "HOUNDOOM": {
+    "name": "HOUNDOOM",
+    "moves": [
+      [1, "LEER"],
+      [1, "EMBER"],
+      [1, "HOWL"],
+      [7, "HOWL"],
+      [13, "SMOG"],
+      [19, "ROAR"],
+      [27, "BITE"],
+      [35, "ODOR_SLEUTH"],
+      [43, "FAINT_ATTACK"],
+      [51, "FLAMETHROWER"],
+      [59, "CRUNCH"]
+    ]
+  },
+  "KINGDRA": {
+    "name": "KINGDRA",
+    "moves": [
+      [1, "BUBBLE"],
+      [1, "SMOKESCREEN"],
+      [1, "LEER"],
+      [1, "WATER_GUN"],
+      [8, "SMOKESCREEN"],
+      [15, "LEER"],
+      [22, "WATER_GUN"],
+      [29, "TWISTER"],
+      [40, "AGILITY"],
+      [51, "HYDRO_PUMP"],
+      [62, "DRAGON_DANCE"]
+    ]
+  },
+  "PHANPY": {
+    "name": "PHANPY",
+    "moves": [
+      [1, "ODOR_SLEUTH"],
+      [1, "TACKLE"],
+      [1, "GROWL"],
+      [9, "DEFENSE_CURL"],
+      [17, "FLAIL"],
+      [25, "TAKE_DOWN"],
+      [33, "ROLLOUT"],
+      [41, "ENDURE"],
+      [49, "DOUBLE_EDGE"]
+    ]
+  },
+  "DONPHAN": {
+    "name": "DONPHAN",
+    "moves": [
+      [1, "ODOR_SLEUTH"],
+      [1, "HORN_ATTACK"],
+      [1, "GROWL"],
+      [9, "DEFENSE_CURL"],
+      [17, "FLAIL"],
+      [25, "FURY_ATTACK"],
+      [33, "ROLLOUT"],
+      [41, "RAPID_SPIN"],
+      [49, "EARTHQUAKE"]
+    ]
+  },
+  "PORYGON2": {
+    "name": "PORYGON2",
+    "moves": [
+      [1, "CONVERSION_2"],
+      [1, "TACKLE"],
+      [1, "CONVERSION"],
+      [9, "AGILITY"],
+      [12, "PSYBEAM"],
+      [20, "RECOVER"],
+      [24, "DEFENSE_CURL"],
+      [32, "LOCK_ON"],
+      [36, "TRI_ATTACK"],
+      [44, "RECYCLE"],
+      [48, "ZAP_CANNON"]
+    ]
+  },
+  "STANTLER": {
+    "name": "STANTLER",
+    "moves": [
+      [1, "TACKLE"],
+      [7, "LEER"],
+      [13, "ASTONISH"],
+      [19, "HYPNOSIS"],
+      [25, "STOMP"],
+      [31, "SAND_ATTACK"],
+      [37, "TAKE_DOWN"],
+      [43, "CONFUSE_RAY"],
+      [49, "CALM_MIND"]
+    ]
+  },
+  "SMEARGLE": {
+    "name": "SMEARGLE",
+    "moves": [
+      [1, "SKETCH"],
+      [11, "SKETCH"],
+      [21, "SKETCH"],
+      [31, "SKETCH"],
+      [41, "SKETCH"],
+      [51, "SKETCH"],
+      [61, "SKETCH"],
+      [71, "SKETCH"],
+      [81, "SKETCH"],
+      [91, "SKETCH"]
+    ]
+  },
+  "TYROGUE": { "name": "TYROGUE", "moves": [[1, "TACKLE"]] },
+  "HITMONTOP": {
+    "name": "HITMONTOP",
+    "moves": [
+      [1, "REVENGE"],
+      [1, "ROLLING_KICK"],
+      [7, "FOCUS_ENERGY"],
+      [13, "PURSUIT"],
+      [19, "QUICK_ATTACK"],
+      [20, "TRIPLE_KICK"],
+      [25, "RAPID_SPIN"],
+      [31, "COUNTER"],
+      [37, "AGILITY"],
+      [43, "DETECT"],
+      [49, "ENDEAVOR"]
+    ]
+  },
+  "SMOOCHUM": {
+    "name": "SMOOCHUM",
+    "moves": [
+      [1, "POUND"],
+      [1, "LICK"],
+      [9, "SWEET_KISS"],
+      [13, "POWDER_SNOW"],
+      [21, "CONFUSION"],
+      [25, "SING"],
+      [33, "MEAN_LOOK"],
+      [37, "FAKE_TEARS"],
+      [45, "PSYCHIC"],
+      [49, "PERISH_SONG"],
+      [57, "BLIZZARD"]
+    ]
+  },
+  "ELEKID": {
+    "name": "ELEKID",
+    "moves": [
+      [1, "QUICK_ATTACK"],
+      [1, "LEER"],
+      [9, "THUNDER_PUNCH"],
+      [17, "LIGHT_SCREEN"],
+      [25, "SWIFT"],
+      [33, "SCREECH"],
+      [41, "THUNDERBOLT"],
+      [49, "THUNDER"]
+    ]
+  },
+  "MAGBY": {
+    "name": "MAGBY",
+    "moves": [
+      [1, "EMBER"],
+      [7, "LEER"],
+      [13, "SMOG"],
+      [19, "FIRE_PUNCH"],
+      [25, "SMOKESCREEN"],
+      [31, "SUNNY_DAY"],
+      [37, "FLAMETHROWER"],
+      [43, "CONFUSE_RAY"],
+      [49, "FIRE_BLAST"]
+    ]
+  },
+  "MILTANK": {
+    "name": "MILTANK",
+    "moves": [
+      [1, "TACKLE"],
+      [4, "GROWL"],
+      [8, "DEFENSE_CURL"],
+      [13, "STOMP"],
+      [19, "MILK_DRINK"],
+      [26, "BIDE"],
+      [34, "ROLLOUT"],
+      [43, "BODY_SLAM"],
+      [53, "HEAL_BELL"]
+    ]
+  },
+  "BLISSEY": {
+    "name": "BLISSEY",
+    "moves": [
+      [1, "POUND"],
+      [1, "GROWL"],
+      [4, "TAIL_WHIP"],
+      [7, "REFRESH"],
+      [10, "SOFT_BOILED"],
+      [13, "DOUBLE_SLAP"],
+      [18, "MINIMIZE"],
+      [23, "SING"],
+      [28, "EGG_BOMB"],
+      [33, "DEFENSE_CURL"],
+      [40, "LIGHT_SCREEN"],
+      [47, "DOUBLE_EDGE"]
+    ]
+  },
+  "RAIKOU": {
+    "name": "RAIKOU",
+    "moves": [
+      [1, "BITE"],
+      [1, "LEER"],
+      [11, "THUNDER_SHOCK"],
+      [21, "ROAR"],
+      [31, "QUICK_ATTACK"],
+      [41, "SPARK"],
+      [51, "REFLECT"],
+      [61, "CRUNCH"],
+      [71, "THUNDER"],
+      [81, "CALM_MIND"]
+    ]
+  },
+  "ENTEI": {
+    "name": "ENTEI",
+    "moves": [
+      [1, "BITE"],
+      [1, "LEER"],
+      [11, "EMBER"],
+      [21, "ROAR"],
+      [31, "FIRE_SPIN"],
+      [41, "STOMP"],
+      [51, "FLAMETHROWER"],
+      [61, "SWAGGER"],
+      [71, "FIRE_BLAST"],
+      [81, "CALM_MIND"]
+    ]
+  },
+  "SUICUNE": {
+    "name": "SUICUNE",
+    "moves": [
+      [1, "BITE"],
+      [1, "LEER"],
+      [11, "BUBBLE_BEAM"],
+      [21, "RAIN_DANCE"],
+      [31, "GUST"],
+      [41, "AURORA_BEAM"],
+      [51, "MIST"],
+      [61, "MIRROR_COAT"],
+      [71, "HYDRO_PUMP"],
+      [81, "CALM_MIND"]
+    ]
+  },
+  "LARVITAR": {
+    "name": "LARVITAR",
+    "moves": [
+      [1, "BITE"],
+      [1, "LEER"],
+      [8, "SANDSTORM"],
+      [15, "SCREECH"],
+      [22, "ROCK_SLIDE"],
+      [29, "THRASH"],
+      [36, "SCARY_FACE"],
+      [43, "CRUNCH"],
+      [50, "EARTHQUAKE"],
+      [57, "HYPER_BEAM"]
+    ]
+  },
+  "PUPITAR": {
+    "name": "PUPITAR",
+    "moves": [
+      [1, "BITE"],
+      [1, "LEER"],
+      [1, "SANDSTORM"],
+      [1, "SCREECH"],
+      [8, "SANDSTORM"],
+      [15, "SCREECH"],
+      [22, "ROCK_SLIDE"],
+      [29, "THRASH"],
+      [38, "SCARY_FACE"],
+      [47, "CRUNCH"],
+      [56, "EARTHQUAKE"],
+      [65, "HYPER_BEAM"]
+    ]
+  },
+  "TYRANITAR": {
+    "name": "TYRANITAR",
+    "moves": [
+      [1, "BITE"],
+      [1, "LEER"],
+      [1, "SANDSTORM"],
+      [1, "SCREECH"],
+      [8, "SANDSTORM"],
+      [15, "SCREECH"],
+      [22, "ROCK_SLIDE"],
+      [29, "THRASH"],
+      [38, "SCARY_FACE"],
+      [47, "CRUNCH"],
+      [61, "EARTHQUAKE"],
+      [75, "HYPER_BEAM"]
+    ]
+  },
+  "LUGIA": {
+    "name": "LUGIA",
+    "moves": [
+      [1, "WHIRLWIND"],
+      [11, "SAFEGUARD"],
+      [22, "GUST"],
+      [33, "RECOVER"],
+      [44, "HYDRO_PUMP"],
+      [55, "RAIN_DANCE"],
+      [66, "SWIFT"],
+      [77, "AEROBLAST"],
+      [88, "ANCIENT_POWER"],
+      [99, "FUTURE_SIGHT"]
+    ]
+  },
+  "HO_OH": {
+    "name": "HO-OH",
+    "moves": [
+      [1, "WHIRLWIND"],
+      [11, "SAFEGUARD"],
+      [22, "GUST"],
+      [33, "RECOVER"],
+      [44, "FIRE_BLAST"],
+      [55, "SUNNY_DAY"],
+      [66, "SWIFT"],
+      [77, "SACRED_FIRE"],
+      [88, "ANCIENT_POWER"],
+      [99, "FUTURE_SIGHT"]
+    ]
+  },
+  "CELEBI": {
+    "name": "CELEBI",
+    "moves": [
+      [1, "LEECH_SEED"],
+      [1, "CONFUSION"],
+      [1, "RECOVER"],
+      [1, "HEAL_BELL"],
+      [10, "SAFEGUARD"],
+      [20, "ANCIENT_POWER"],
+      [30, "FUTURE_SIGHT"],
+      [40, "BATON_PASS"],
+      [50, "PERISH_SONG"]
+    ]
+  },
+  "OLD_UNOWN_B": { "name": "?", "moves": [[1, "TACKLE"]] },
+  "OLD_UNOWN_C": { "name": "?", "moves": [[1, "TACKLE"]] },
+  "OLD_UNOWN_D": { "name": "?", "moves": [[1, "TACKLE"]] },
+  "OLD_UNOWN_E": { "name": "?", "moves": [[1, "TACKLE"]] },
+  "OLD_UNOWN_F": { "name": "?", "moves": [[1, "TACKLE"]] },
+  "OLD_UNOWN_G": { "name": "?", "moves": [[1, "TACKLE"]] },
+  "OLD_UNOWN_H": { "name": "?", "moves": [[1, "TACKLE"]] },
+  "OLD_UNOWN_I": { "name": "?", "moves": [[1, "TACKLE"]] },
+  "OLD_UNOWN_J": { "name": "?", "moves": [[1, "TACKLE"]] },
+  "OLD_UNOWN_K": { "name": "?", "moves": [[1, "TACKLE"]] },
+  "OLD_UNOWN_L": { "name": "?", "moves": [[1, "TACKLE"]] },
+  "OLD_UNOWN_M": { "name": "?", "moves": [[1, "TACKLE"]] },
+  "OLD_UNOWN_N": { "name": "?", "moves": [[1, "TACKLE"]] },
+  "OLD_UNOWN_O": { "name": "?", "moves": [[1, "TACKLE"]] },
+  "OLD_UNOWN_P": { "name": "?", "moves": [[1, "TACKLE"]] },
+  "OLD_UNOWN_Q": { "name": "?", "moves": [[1, "TACKLE"]] },
+  "OLD_UNOWN_R": { "name": "?", "moves": [[1, "TACKLE"]] },
+  "OLD_UNOWN_S": { "name": "?", "moves": [[1, "TACKLE"]] },
+  "OLD_UNOWN_T": { "name": "?", "moves": [[1, "TACKLE"]] },
+  "OLD_UNOWN_U": { "name": "?", "moves": [[1, "TACKLE"]] },
+  "OLD_UNOWN_V": { "name": "?", "moves": [[1, "TACKLE"]] },
+  "OLD_UNOWN_W": { "name": "?", "moves": [[1, "TACKLE"]] },
+  "OLD_UNOWN_X": { "name": "?", "moves": [[1, "TACKLE"]] },
+  "OLD_UNOWN_Y": { "name": "?", "moves": [[1, "TACKLE"]] },
+  "OLD_UNOWN_Z": { "name": "?", "moves": [[1, "TACKLE"]] },
+  "TREECKO": {
+    "name": "TREECKO",
+    "moves": [
+      [1, "POUND"],
+      [1, "LEER"],
+      [6, "ABSORB"],
+      [11, "QUICK_ATTACK"],
+      [16, "PURSUIT"],
+      [21, "SCREECH"],
+      [26, "MEGA_DRAIN"],
+      [31, "AGILITY"],
+      [36, "SLAM"],
+      [41, "DETECT"],
+      [46, "GIGA_DRAIN"]
+    ]
+  },
+  "GROVYLE": {
+    "name": "GROVYLE",
+    "moves": [
+      [1, "POUND"],
+      [1, "LEER"],
+      [1, "ABSORB"],
+      [1, "QUICK_ATTACK"],
+      [6, "ABSORB"],
+      [11, "QUICK_ATTACK"],
+      [16, "FURY_CUTTER"],
+      [17, "PURSUIT"],
+      [23, "SCREECH"],
+      [29, "LEAF_BLADE"],
+      [35, "AGILITY"],
+      [41, "SLAM"],
+      [47, "DETECT"],
+      [53, "FALSE_SWIPE"]
+    ]
+  },
+  "SCEPTILE": {
+    "name": "SCEPTILE",
+    "moves": [
+      [1, "POUND"],
+      [1, "LEER"],
+      [1, "ABSORB"],
+      [1, "QUICK_ATTACK"],
+      [6, "ABSORB"],
+      [11, "QUICK_ATTACK"],
+      [16, "FURY_CUTTER"],
+      [17, "PURSUIT"],
+      [23, "SCREECH"],
+      [29, "LEAF_BLADE"],
+      [35, "AGILITY"],
+      [43, "SLAM"],
+      [51, "DETECT"],
+      [59, "FALSE_SWIPE"]
+    ]
+  },
+  "TORCHIC": {
+    "name": "TORCHIC",
+    "moves": [
+      [1, "SCRATCH"],
+      [1, "GROWL"],
+      [7, "FOCUS_ENERGY"],
+      [10, "EMBER"],
+      [16, "PECK"],
+      [19, "SAND_ATTACK"],
+      [25, "FIRE_SPIN"],
+      [28, "QUICK_ATTACK"],
+      [34, "SLASH"],
+      [37, "MIRROR_MOVE"],
+      [43, "FLAMETHROWER"]
+    ]
+  },
+  "COMBUSKEN": {
+    "name": "COMBUSKEN",
+    "moves": [
+      [1, "SCRATCH"],
+      [1, "GROWL"],
+      [1, "FOCUS_ENERGY"],
+      [1, "EMBER"],
+      [7, "FOCUS_ENERGY"],
+      [13, "EMBER"],
+      [16, "DOUBLE_KICK"],
+      [17, "PECK"],
+      [21, "SAND_ATTACK"],
+      [28, "BULK_UP"],
+      [32, "QUICK_ATTACK"],
+      [39, "SLASH"],
+      [43, "MIRROR_MOVE"],
+      [50, "SKY_UPPERCUT"]
+    ]
+  },
+  "BLAZIKEN": {
+    "name": "BLAZIKEN",
+    "moves": [
+      [1, "FIRE_PUNCH"],
+      [1, "SCRATCH"],
+      [1, "GROWL"],
+      [1, "FOCUS_ENERGY"],
+      [1, "EMBER"],
+      [7, "FOCUS_ENERGY"],
+      [13, "EMBER"],
+      [16, "DOUBLE_KICK"],
+      [17, "PECK"],
+      [21, "SAND_ATTACK"],
+      [28, "BULK_UP"],
+      [32, "QUICK_ATTACK"],
+      [36, "BLAZE_KICK"],
+      [42, "SLASH"],
+      [49, "MIRROR_MOVE"],
+      [59, "SKY_UPPERCUT"]
+    ]
+  },
+  "MUDKIP": {
+    "name": "MUDKIP",
+    "moves": [
+      [1, "TACKLE"],
+      [1, "GROWL"],
+      [6, "MUD_SLAP"],
+      [10, "WATER_GUN"],
+      [15, "BIDE"],
+      [19, "FORESIGHT"],
+      [24, "MUD_SPORT"],
+      [28, "TAKE_DOWN"],
+      [33, "WHIRLPOOL"],
+      [37, "PROTECT"],
+      [42, "HYDRO_PUMP"],
+      [46, "ENDEAVOR"]
+    ]
+  },
+  "MARSHTOMP": {
+    "name": "MARSHTOMP",
+    "moves": [
+      [1, "TACKLE"],
+      [1, "GROWL"],
+      [1, "MUD_SLAP"],
+      [1, "WATER_GUN"],
+      [6, "MUD_SLAP"],
+      [10, "WATER_GUN"],
+      [15, "BIDE"],
+      [16, "MUD_SHOT"],
+      [20, "FORESIGHT"],
+      [25, "MUD_SPORT"],
+      [31, "TAKE_DOWN"],
+      [37, "MUDDY_WATER"],
+      [42, "PROTECT"],
+      [46, "EARTHQUAKE"],
+      [53, "ENDEAVOR"]
+    ]
+  },
+  "SWAMPERT": {
+    "name": "SWAMPERT",
+    "moves": [
+      [1, "TACKLE"],
+      [1, "GROWL"],
+      [1, "MUD_SLAP"],
+      [1, "WATER_GUN"],
+      [6, "MUD_SLAP"],
+      [10, "WATER_GUN"],
+      [15, "BIDE"],
+      [16, "MUD_SHOT"],
+      [20, "FORESIGHT"],
+      [25, "MUD_SPORT"],
+      [31, "TAKE_DOWN"],
+      [39, "MUDDY_WATER"],
+      [46, "PROTECT"],
+      [52, "EARTHQUAKE"],
+      [61, "ENDEAVOR"]
+    ]
+  },
+  "POOCHYENA": {
+    "name": "POOCHYENA",
+    "moves": [
+      [1, "TACKLE"],
+      [5, "HOWL"],
+      [9, "SAND_ATTACK"],
+      [13, "BITE"],
+      [17, "ODOR_SLEUTH"],
+      [21, "ROAR"],
+      [25, "SWAGGER"],
+      [29, "SCARY_FACE"],
+      [33, "TAKE_DOWN"],
+      [37, "TAUNT"],
+      [41, "CRUNCH"],
+      [45, "THIEF"]
+    ]
+  },
+  "MIGHTYENA": {
+    "name": "MIGHTYENA",
+    "moves": [
+      [1, "TACKLE"],
+      [1, "HOWL"],
+      [1, "SAND_ATTACK"],
+      [1, "BITE"],
+      [5, "HOWL"],
+      [9, "SAND_ATTACK"],
+      [13, "BITE"],
+      [17, "ODOR_SLEUTH"],
+      [22, "ROAR"],
+      [27, "SWAGGER"],
+      [32, "SCARY_FACE"],
+      [37, "TAKE_DOWN"],
+      [42, "TAUNT"],
+      [47, "CRUNCH"],
+      [52, "THIEF"]
+    ]
+  },
+  "ZIGZAGOON": {
+    "name": "ZIGZAGOON",
+    "moves": [
+      [1, "TACKLE"],
+      [1, "GROWL"],
+      [5, "TAIL_WHIP"],
+      [9, "HEADBUTT"],
+      [13, "SAND_ATTACK"],
+      [17, "ODOR_SLEUTH"],
+      [21, "MUD_SPORT"],
+      [25, "PIN_MISSILE"],
+      [29, "COVET"],
+      [33, "FLAIL"],
+      [37, "REST"],
+      [41, "BELLY_DRUM"]
+    ]
+  },
+  "LINOONE": {
+    "name": "LINOONE",
+    "moves": [
+      [1, "TACKLE"],
+      [1, "GROWL"],
+      [1, "TAIL_WHIP"],
+      [1, "HEADBUTT"],
+      [5, "TAIL_WHIP"],
+      [9, "HEADBUTT"],
+      [13, "SAND_ATTACK"],
+      [17, "ODOR_SLEUTH"],
+      [23, "MUD_SPORT"],
+      [29, "FURY_SWIPES"],
+      [35, "COVET"],
+      [41, "SLASH"],
+      [47, "REST"],
+      [53, "BELLY_DRUM"]
+    ]
+  },
+  "WURMPLE": {
+    "name": "WURMPLE",
+    "moves": [[1, "TACKLE"], [1, "STRING_SHOT"], [5, "POISON_STING"]]
+  },
+  "SILCOON": { "name": "SILCOON", "moves": [[1, "HARDEN"], [7, "HARDEN"]] },
+  "BEAUTIFLY": {
+    "name": "BEAUTIFLY",
+    "moves": [
+      [1, "ABSORB"],
+      [10, "ABSORB"],
+      [13, "GUST"],
+      [17, "STUN_SPORE"],
+      [20, "MORNING_SUN"],
+      [24, "MEGA_DRAIN"],
+      [27, "WHIRLWIND"],
+      [31, "ATTRACT"],
+      [34, "SILVER_WIND"],
+      [38, "GIGA_DRAIN"]
+    ]
+  },
+  "CASCOON": { "name": "CASCOON", "moves": [[1, "HARDEN"], [7, "HARDEN"]] },
+  "DUSTOX": {
+    "name": "DUSTOX",
+    "moves": [
+      [1, "CONFUSION"],
+      [10, "CONFUSION"],
+      [13, "GUST"],
+      [17, "PROTECT"],
+      [20, "MOONLIGHT"],
+      [24, "PSYBEAM"],
+      [27, "WHIRLWIND"],
+      [31, "LIGHT_SCREEN"],
+      [34, "SILVER_WIND"],
+      [38, "TOXIC"]
+    ]
+  },
+  "LOTAD": {
+    "name": "LOTAD",
+    "moves": [
+      [1, "ASTONISH"],
+      [3, "GROWL"],
+      [7, "ABSORB"],
+      [13, "NATURE_POWER"],
+      [21, "MIST"],
+      [31, "RAIN_DANCE"],
+      [43, "MEGA_DRAIN"]
+    ]
+  },
+  "LOMBRE": {
+    "name": "LOMBRE",
+    "moves": [
+      [1, "ASTONISH"],
+      [3, "GROWL"],
+      [7, "ABSORB"],
+      [13, "NATURE_POWER"],
+      [19, "FAKE_OUT"],
+      [25, "FURY_SWIPES"],
+      [31, "WATER_SPORT"],
+      [37, "THIEF"],
+      [43, "UPROAR"],
+      [49, "HYDRO_PUMP"]
+    ]
+  },
+  "LUDICOLO": {
+    "name": "LUDICOLO",
+    "moves": [[1, "ASTONISH"], [1, "GROWL"], [1, "ABSORB"], [1, "NATURE_POWER"]]
+  },
+  "SEEDOT": {
+    "name": "SEEDOT",
+    "moves": [
+      [1, "BIDE"],
+      [3, "HARDEN"],
+      [7, "GROWTH"],
+      [13, "NATURE_POWER"],
+      [21, "SYNTHESIS"],
+      [31, "SUNNY_DAY"],
+      [43, "EXPLOSION"]
+    ]
+  },
+  "NUZLEAF": {
+    "name": "NUZLEAF",
+    "moves": [
+      [1, "POUND"],
+      [3, "HARDEN"],
+      [7, "GROWTH"],
+      [13, "NATURE_POWER"],
+      [19, "FAKE_OUT"],
+      [25, "TORMENT"],
+      [31, "FAINT_ATTACK"],
+      [37, "RAZOR_WIND"],
+      [43, "SWAGGER"],
+      [49, "EXTRASENSORY"]
+    ]
+  },
+  "SHIFTRY": {
+    "name": "SHIFTRY",
+    "moves": [[1, "POUND"], [1, "HARDEN"], [1, "GROWTH"], [1, "NATURE_POWER"]]
+  },
+  "NINCADA": {
+    "name": "NINCADA",
+    "moves": [
+      [1, "SCRATCH"],
+      [1, "HARDEN"],
+      [5, "LEECH_LIFE"],
+      [9, "SAND_ATTACK"],
+      [14, "FURY_SWIPES"],
+      [19, "MIND_READER"],
+      [25, "FALSE_SWIPE"],
+      [31, "MUD_SLAP"],
+      [38, "METAL_CLAW"],
+      [45, "DIG"]
+    ]
+  },
+  "NINJASK": {
+    "name": "NINJASK",
+    "moves": [
+      [1, "SCRATCH"],
+      [1, "HARDEN"],
+      [1, "LEECH_LIFE"],
+      [1, "SAND_ATTACK"],
+      [5, "LEECH_LIFE"],
+      [9, "SAND_ATTACK"],
+      [14, "FURY_SWIPES"],
+      [19, "MIND_READER"],
+      [20, "DOUBLE_TEAM"],
+      [20, "FURY_CUTTER"],
+      [20, "SCREECH"],
+      [25, "SWORDS_DANCE"],
+      [31, "SLASH"],
+      [38, "AGILITY"],
+      [45, "BATON_PASS"]
+    ]
+  },
+  "SHEDINJA": {
+    "name": "SHEDINJA",
+    "moves": [
+      [1, "SCRATCH"],
+      [1, "HARDEN"],
+      [5, "LEECH_LIFE"],
+      [9, "SAND_ATTACK"],
+      [14, "FURY_SWIPES"],
+      [19, "MIND_READER"],
+      [25, "SPITE"],
+      [31, "CONFUSE_RAY"],
+      [38, "SHADOW_BALL"],
+      [45, "GRUDGE"]
+    ]
+  },
+  "TAILLOW": {
+    "name": "TAILLOW",
+    "moves": [
+      [1, "PECK"],
+      [1, "GROWL"],
+      [4, "FOCUS_ENERGY"],
+      [8, "QUICK_ATTACK"],
+      [13, "WING_ATTACK"],
+      [19, "DOUBLE_TEAM"],
+      [26, "ENDEAVOR"],
+      [34, "AERIAL_ACE"],
+      [43, "AGILITY"]
+    ]
+  },
+  "SWELLOW": {
+    "name": "SWELLOW",
+    "moves": [
+      [1, "PECK"],
+      [1, "GROWL"],
+      [1, "FOCUS_ENERGY"],
+      [1, "QUICK_ATTACK"],
+      [4, "FOCUS_ENERGY"],
+      [8, "QUICK_ATTACK"],
+      [13, "WING_ATTACK"],
+      [19, "DOUBLE_TEAM"],
+      [28, "ENDEAVOR"],
+      [38, "AERIAL_ACE"],
+      [49, "AGILITY"]
+    ]
+  },
+  "SHROOMISH": {
+    "name": "SHROOMISH",
+    "moves": [
+      [1, "ABSORB"],
+      [4, "TACKLE"],
+      [7, "STUN_SPORE"],
+      [10, "LEECH_SEED"],
+      [16, "MEGA_DRAIN"],
+      [22, "HEADBUTT"],
+      [28, "POISON_POWDER"],
+      [36, "GROWTH"],
+      [45, "GIGA_DRAIN"],
+      [54, "SPORE"]
+    ]
+  },
+  "BRELOOM": {
+    "name": "BRELOOM",
+    "moves": [
+      [1, "ABSORB"],
+      [1, "TACKLE"],
+      [1, "STUN_SPORE"],
+      [1, "LEECH_SEED"],
+      [4, "TACKLE"],
+      [7, "STUN_SPORE"],
+      [10, "LEECH_SEED"],
+      [16, "MEGA_DRAIN"],
+      [22, "HEADBUTT"],
+      [23, "MACH_PUNCH"],
+      [28, "COUNTER"],
+      [36, "SKY_UPPERCUT"],
+      [45, "MIND_READER"],
+      [54, "DYNAMIC_PUNCH"]
+    ]
+  },
+  "SPINDA": {
+    "name": "SPINDA",
+    "moves": [
+      [1, "TACKLE"],
+      [5, "UPROAR"],
+      [12, "FAINT_ATTACK"],
+      [16, "PSYBEAM"],
+      [23, "HYPNOSIS"],
+      [27, "DIZZY_PUNCH"],
+      [34, "TEETER_DANCE"],
+      [38, "PSYCH_UP"],
+      [45, "DOUBLE_EDGE"],
+      [49, "FLAIL"],
+      [56, "THRASH"]
+    ]
+  },
+  "WINGULL": {
+    "name": "WINGULL",
+    "moves": [
+      [1, "GROWL"],
+      [1, "WATER_GUN"],
+      [7, "SUPERSONIC"],
+      [13, "WING_ATTACK"],
+      [21, "MIST"],
+      [31, "QUICK_ATTACK"],
+      [43, "PURSUIT"],
+      [55, "AGILITY"]
+    ]
+  },
+  "PELIPPER": {
+    "name": "PELIPPER",
+    "moves": [
+      [1, "GROWL"],
+      [1, "WATER_GUN"],
+      [1, "WATER_SPORT"],
+      [1, "WING_ATTACK"],
+      [3, "WATER_GUN"],
+      [7, "SUPERSONIC"],
+      [13, "WING_ATTACK"],
+      [21, "MIST"],
+      [25, "PROTECT"],
+      [33, "STOCKPILE"],
+      [33, "SWALLOW"],
+      [47, "SPIT_UP"],
+      [61, "HYDRO_PUMP"]
+    ]
+  },
+  "SURSKIT": {
+    "name": "SURSKIT",
+    "moves": [
+      [1, "BUBBLE"],
+      [7, "QUICK_ATTACK"],
+      [13, "SWEET_SCENT"],
+      [19, "WATER_SPORT"],
+      [25, "BUBBLE_BEAM"],
+      [31, "AGILITY"],
+      [37, "MIST"],
+      [37, "HAZE"]
+    ]
+  },
+  "MASQUERAIN": {
+    "name": "MASQUERAIN",
+    "moves": [
+      [1, "BUBBLE"],
+      [1, "QUICK_ATTACK"],
+      [1, "SWEET_SCENT"],
+      [1, "WATER_SPORT"],
+      [7, "QUICK_ATTACK"],
+      [13, "SWEET_SCENT"],
+      [19, "WATER_SPORT"],
+      [26, "GUST"],
+      [33, "SCARY_FACE"],
+      [40, "STUN_SPORE"],
+      [47, "SILVER_WIND"],
+      [53, "WHIRLWIND"]
+    ]
+  },
+  "WAILMER": {
+    "name": "WAILMER",
+    "moves": [
+      [1, "SPLASH"],
+      [5, "GROWL"],
+      [10, "WATER_GUN"],
+      [14, "ROLLOUT"],
+      [19, "WHIRLPOOL"],
+      [23, "ASTONISH"],
+      [28, "WATER_PULSE"],
+      [32, "MIST"],
+      [37, "REST"],
+      [41, "WATER_SPOUT"],
+      [46, "AMNESIA"],
+      [50, "HYDRO_PUMP"]
+    ]
+  },
+  "WAILORD": {
+    "name": "WAILORD",
+    "moves": [
+      [1, "SPLASH"],
+      [1, "GROWL"],
+      [1, "WATER_GUN"],
+      [1, "ROLLOUT"],
+      [5, "GROWL"],
+      [10, "WATER_GUN"],
+      [14, "ROLLOUT"],
+      [19, "WHIRLPOOL"],
+      [23, "ASTONISH"],
+      [28, "WATER_PULSE"],
+      [32, "MIST"],
+      [37, "REST"],
+      [44, "WATER_SPOUT"],
+      [52, "AMNESIA"],
+      [59, "HYDRO_PUMP"]
+    ]
+  },
+  "SKITTY": {
+    "name": "SKITTY",
+    "moves": [
+      [1, "GROWL"],
+      [1, "TACKLE"],
+      [3, "TAIL_WHIP"],
+      [7, "ATTRACT"],
+      [13, "SING"],
+      [15, "DOUBLE_SLAP"],
+      [19, "ASSIST"],
+      [25, "CHARM"],
+      [27, "FAINT_ATTACK"],
+      [31, "COVET"],
+      [37, "HEAL_BELL"],
+      [39, "DOUBLE_EDGE"]
+    ]
+  },
+  "DELCATTY": {
+    "name": "DELCATTY",
+    "moves": [[1, "GROWL"], [1, "ATTRACT"], [1, "SING"], [1, "DOUBLE_SLAP"]]
+  },
+  "KECLEON": {
+    "name": "KECLEON",
+    "moves": [
+      [1, "THIEF"],
+      [1, "TAIL_WHIP"],
+      [1, "ASTONISH"],
+      [1, "LICK"],
+      [1, "SCRATCH"],
+      [4, "BIND"],
+      [7, "FAINT_ATTACK"],
+      [12, "FURY_SWIPES"],
+      [17, "PSYBEAM"],
+      [24, "SCREECH"],
+      [31, "SLASH"],
+      [40, "SUBSTITUTE"],
+      [49, "ANCIENT_POWER"]
+    ]
+  },
+  "BALTOY": {
+    "name": "BALTOY",
+    "moves": [
+      [1, "CONFUSION"],
+      [3, "HARDEN"],
+      [5, "RAPID_SPIN"],
+      [7, "MUD_SLAP"],
+      [11, "PSYBEAM"],
+      [15, "ROCK_TOMB"],
+      [19, "SELF_DESTRUCT"],
+      [25, "ANCIENT_POWER"],
+      [31, "SANDSTORM"],
+      [37, "COSMIC_POWER"],
+      [45, "EXPLOSION"]
+    ]
+  },
+  "CLAYDOL": {
+    "name": "CLAYDOL",
+    "moves": [
+      [1, "TELEPORT"],
+      [1, "CONFUSION"],
+      [1, "HARDEN"],
+      [1, "RAPID_SPIN"],
+      [3, "HARDEN"],
+      [5, "RAPID_SPIN"],
+      [7, "MUD_SLAP"],
+      [11, "PSYBEAM"],
+      [15, "ROCK_TOMB"],
+      [19, "SELF_DESTRUCT"],
+      [25, "ANCIENT_POWER"],
+      [31, "SANDSTORM"],
+      [36, "HYPER_BEAM"],
+      [42, "COSMIC_POWER"],
+      [55, "EXPLOSION"]
+    ]
+  },
+  "NOSEPASS": {
+    "name": "NOSEPASS",
+    "moves": [
+      [1, "TACKLE"],
+      [7, "HARDEN"],
+      [13, "ROCK_THROW"],
+      [16, "BLOCK"],
+      [22, "THUNDER_WAVE"],
+      [28, "ROCK_SLIDE"],
+      [31, "SANDSTORM"],
+      [37, "REST"],
+      [43, "ZAP_CANNON"],
+      [46, "LOCK_ON"]
+    ]
+  },
+  "TORKOAL": {
+    "name": "TORKOAL",
+    "moves": [
+      [1, "EMBER"],
+      [4, "SMOG"],
+      [7, "CURSE"],
+      [14, "SMOKESCREEN"],
+      [17, "FIRE_SPIN"],
+      [20, "BODY_SLAM"],
+      [27, "PROTECT"],
+      [30, "FLAMETHROWER"],
+      [33, "IRON_DEFENSE"],
+      [40, "AMNESIA"],
+      [43, "FLAIL"],
+      [46, "HEAT_WAVE"]
+    ]
+  },
+  "SABLEYE": {
+    "name": "SABLEYE",
+    "moves": [
+      [1, "LEER"],
+      [1, "SCRATCH"],
+      [5, "FORESIGHT"],
+      [9, "NIGHT_SHADE"],
+      [13, "ASTONISH"],
+      [17, "FURY_SWIPES"],
+      [21, "FAKE_OUT"],
+      [25, "DETECT"],
+      [29, "FAINT_ATTACK"],
+      [33, "KNOCK_OFF"],
+      [37, "CONFUSE_RAY"],
+      [41, "SHADOW_BALL"],
+      [45, "MEAN_LOOK"]
+    ]
+  },
+  "BARBOACH": {
+    "name": "BARBOACH",
+    "moves": [
+      [1, "MUD_SLAP"],
+      [6, "MUD_SPORT"],
+      [6, "WATER_SPORT"],
+      [11, "WATER_GUN"],
+      [16, "MAGNITUDE"],
+      [21, "AMNESIA"],
+      [26, "REST"],
+      [26, "SNORE"],
+      [31, "EARTHQUAKE"],
+      [36, "FUTURE_SIGHT"],
+      [41, "FISSURE"]
+    ]
+  },
+  "WHISCASH": {
+    "name": "WHISCASH",
+    "moves": [
+      [1, "TICKLE"],
+      [1, "MUD_SLAP"],
+      [1, "MUD_SPORT"],
+      [1, "WATER_SPORT"],
+      [6, "MUD_SPORT"],
+      [6, "WATER_SPORT"],
+      [11, "WATER_GUN"],
+      [16, "MAGNITUDE"],
+      [21, "AMNESIA"],
+      [26, "REST"],
+      [26, "SNORE"],
+      [36, "EARTHQUAKE"],
+      [46, "FUTURE_SIGHT"],
+      [56, "FISSURE"]
+    ]
+  },
+  "LUVDISC": {
+    "name": "LUVDISC",
+    "moves": [
+      [1, "TACKLE"],
+      [4, "CHARM"],
+      [12, "WATER_GUN"],
+      [16, "AGILITY"],
+      [24, "TAKE_DOWN"],
+      [28, "ATTRACT"],
+      [36, "SWEET_KISS"],
+      [40, "FLAIL"],
+      [48, "SAFEGUARD"]
+    ]
+  },
+  "CORPHISH": {
+    "name": "CORPHISH",
+    "moves": [
+      [1, "BUBBLE"],
+      [7, "HARDEN"],
+      [10, "VICE_GRIP"],
+      [13, "LEER"],
+      [20, "BUBBLE_BEAM"],
+      [23, "PROTECT"],
+      [26, "KNOCK_OFF"],
+      [32, "TAUNT"],
+      [35, "CRABHAMMER"],
+      [38, "SWORDS_DANCE"],
+      [44, "GUILLOTINE"]
+    ]
+  },
+  "CRAWDAUNT": {
+    "name": "CRAWDAUNT",
+    "moves": [
+      [1, "BUBBLE"],
+      [1, "HARDEN"],
+      [1, "VICE_GRIP"],
+      [1, "LEER"],
+      [7, "HARDEN"],
+      [10, "VICE_GRIP"],
+      [13, "LEER"],
+      [20, "BUBBLE_BEAM"],
+      [23, "PROTECT"],
+      [26, "KNOCK_OFF"],
+      [34, "TAUNT"],
+      [39, "CRABHAMMER"],
+      [44, "SWORDS_DANCE"],
+      [52, "GUILLOTINE"]
+    ]
+  },
+  "FEEBAS": {
+    "name": "FEEBAS",
+    "moves": [[1, "SPLASH"], [15, "TACKLE"], [30, "FLAIL"]]
+  },
+  "MILOTIC": {
+    "name": "MILOTIC",
+    "moves": [
+      [1, "WATER_GUN"],
+      [5, "WRAP"],
+      [10, "WATER_SPORT"],
+      [15, "REFRESH"],
+      [20, "WATER_PULSE"],
+      [25, "TWISTER"],
+      [30, "RECOVER"],
+      [35, "RAIN_DANCE"],
+      [40, "HYDRO_PUMP"],
+      [45, "ATTRACT"],
+      [50, "SAFEGUARD"]
+    ]
+  },
+  "CARVANHA": {
+    "name": "CARVANHA",
+    "moves": [
+      [1, "LEER"],
+      [1, "BITE"],
+      [7, "RAGE"],
+      [13, "FOCUS_ENERGY"],
+      [16, "SCARY_FACE"],
+      [22, "CRUNCH"],
+      [28, "SCREECH"],
+      [31, "TAKE_DOWN"],
+      [37, "SWAGGER"],
+      [43, "AGILITY"]
+    ]
+  },
+  "SHARPEDO": {
+    "name": "SHARPEDO",
+    "moves": [
+      [1, "LEER"],
+      [1, "BITE"],
+      [1, "RAGE"],
+      [1, "FOCUS_ENERGY"],
+      [7, "RAGE"],
+      [13, "FOCUS_ENERGY"],
+      [16, "SCARY_FACE"],
+      [22, "CRUNCH"],
+      [28, "SCREECH"],
+      [33, "SLASH"],
+      [38, "TAUNT"],
+      [43, "SWAGGER"],
+      [48, "SKULL_BASH"],
+      [53, "AGILITY"]
+    ]
+  },
+  "TRAPINCH": {
+    "name": "TRAPINCH",
+    "moves": [
+      [1, "BITE"],
+      [9, "SAND_ATTACK"],
+      [17, "FAINT_ATTACK"],
+      [25, "SAND_TOMB"],
+      [33, "CRUNCH"],
+      [41, "DIG"],
+      [49, "SANDSTORM"],
+      [57, "HYPER_BEAM"]
+    ]
+  },
+  "VIBRAVA": {
+    "name": "VIBRAVA",
+    "moves": [
+      [1, "BITE"],
+      [1, "SAND_ATTACK"],
+      [1, "FAINT_ATTACK"],
+      [1, "SAND_TOMB"],
+      [9, "SAND_ATTACK"],
+      [17, "FAINT_ATTACK"],
+      [25, "SAND_TOMB"],
+      [33, "CRUNCH"],
+      [35, "DRAGON_BREATH"],
+      [41, "SCREECH"],
+      [49, "SANDSTORM"],
+      [57, "HYPER_BEAM"]
+    ]
+  },
+  "FLYGON": {
+    "name": "FLYGON",
+    "moves": [
+      [1, "BITE"],
+      [1, "SAND_ATTACK"],
+      [1, "FAINT_ATTACK"],
+      [1, "SAND_TOMB"],
+      [9, "SAND_ATTACK"],
+      [17, "FAINT_ATTACK"],
+      [25, "SAND_TOMB"],
+      [33, "CRUNCH"],
+      [35, "DRAGON_BREATH"],
+      [41, "SCREECH"],
+      [53, "SANDSTORM"],
+      [65, "HYPER_BEAM"]
+    ]
+  },
+  "MAKUHITA": {
+    "name": "MAKUHITA",
+    "moves": [
+      [1, "TACKLE"],
+      [1, "FOCUS_ENERGY"],
+      [4, "SAND_ATTACK"],
+      [10, "ARM_THRUST"],
+      [13, "VITAL_THROW"],
+      [19, "FAKE_OUT"],
+      [22, "WHIRLWIND"],
+      [28, "KNOCK_OFF"],
+      [31, "SMELLING_SALT"],
+      [37, "BELLY_DRUM"],
+      [40, "ENDURE"],
+      [46, "SEISMIC_TOSS"],
+      [49, "REVERSAL"]
+    ]
+  },
+  "HARIYAMA": {
+    "name": "HARIYAMA",
+    "moves": [
+      [1, "TACKLE"],
+      [1, "FOCUS_ENERGY"],
+      [1, "SAND_ATTACK"],
+      [1, "ARM_THRUST"],
+      [4, "SAND_ATTACK"],
+      [10, "ARM_THRUST"],
+      [13, "VITAL_THROW"],
+      [19, "FAKE_OUT"],
+      [22, "WHIRLWIND"],
+      [29, "KNOCK_OFF"],
+      [33, "SMELLING_SALT"],
+      [40, "BELLY_DRUM"],
+      [44, "ENDURE"],
+      [51, "SEISMIC_TOSS"],
+      [55, "REVERSAL"]
+    ]
+  },
+  "ELECTRIKE": {
+    "name": "ELECTRIKE",
+    "moves": [
+      [1, "TACKLE"],
+      [4, "THUNDER_WAVE"],
+      [9, "LEER"],
+      [12, "HOWL"],
+      [17, "QUICK_ATTACK"],
+      [20, "SPARK"],
+      [25, "ODOR_SLEUTH"],
+      [28, "ROAR"],
+      [33, "BITE"],
+      [36, "THUNDER"],
+      [41, "CHARGE"]
+    ]
+  },
+  "MANECTRIC": {
+    "name": "MANECTRIC",
+    "moves": [
+      [1, "TACKLE"],
+      [1, "THUNDER_WAVE"],
+      [1, "LEER"],
+      [1, "HOWL"],
+      [4, "THUNDER_WAVE"],
+      [9, "LEER"],
+      [12, "HOWL"],
+      [17, "QUICK_ATTACK"],
+      [20, "SPARK"],
+      [25, "ODOR_SLEUTH"],
+      [31, "ROAR"],
+      [39, "BITE"],
+      [45, "THUNDER"],
+      [53, "CHARGE"]
+    ]
+  },
+  "NUMEL": {
+    "name": "NUMEL",
+    "moves": [
+      [1, "GROWL"],
+      [1, "TACKLE"],
+      [11, "EMBER"],
+      [19, "MAGNITUDE"],
+      [25, "FOCUS_ENERGY"],
+      [29, "TAKE_DOWN"],
+      [31, "AMNESIA"],
+      [35, "EARTHQUAKE"],
+      [41, "FLAMETHROWER"],
+      [49, "DOUBLE_EDGE"]
+    ]
+  },
+  "CAMERUPT": {
+    "name": "CAMERUPT",
+    "moves": [
+      [1, "GROWL"],
+      [1, "TACKLE"],
+      [1, "EMBER"],
+      [1, "MAGNITUDE"],
+      [11, "EMBER"],
+      [19, "MAGNITUDE"],
+      [25, "FOCUS_ENERGY"],
+      [29, "TAKE_DOWN"],
+      [31, "AMNESIA"],
+      [33, "ROCK_SLIDE"],
+      [37, "EARTHQUAKE"],
+      [45, "ERUPTION"],
+      [55, "FISSURE"]
+    ]
+  },
+  "SPHEAL": {
+    "name": "SPHEAL",
+    "moves": [
+      [1, "POWDER_SNOW"],
+      [1, "GROWL"],
+      [1, "WATER_GUN"],
+      [7, "ENCORE"],
+      [13, "ICE_BALL"],
+      [19, "BODY_SLAM"],
+      [25, "AURORA_BEAM"],
+      [31, "HAIL"],
+      [37, "REST"],
+      [37, "SNORE"],
+      [43, "BLIZZARD"],
+      [49, "SHEER_COLD"]
+    ]
+  },
+  "SEALEO": {
+    "name": "SEALEO",
+    "moves": [
+      [1, "POWDER_SNOW"],
+      [1, "GROWL"],
+      [1, "WATER_GUN"],
+      [1, "ENCORE"],
+      [7, "ENCORE"],
+      [13, "ICE_BALL"],
+      [19, "BODY_SLAM"],
+      [25, "AURORA_BEAM"],
+      [31, "HAIL"],
+      [39, "REST"],
+      [39, "SNORE"],
+      [47, "BLIZZARD"],
+      [55, "SHEER_COLD"]
+    ]
+  },
+  "WALREIN": {
+    "name": "WALREIN",
+    "moves": [
+      [1, "POWDER_SNOW"],
+      [1, "GROWL"],
+      [1, "WATER_GUN"],
+      [1, "ENCORE"],
+      [7, "ENCORE"],
+      [13, "ICE_BALL"],
+      [19, "BODY_SLAM"],
+      [25, "AURORA_BEAM"],
+      [31, "HAIL"],
+      [39, "REST"],
+      [39, "SNORE"],
+      [50, "BLIZZARD"],
+      [61, "SHEER_COLD"]
+    ]
+  },
+  "CACNEA": {
+    "name": "CACNEA",
+    "moves": [
+      [1, "POISON_STING"],
+      [1, "LEER"],
+      [5, "ABSORB"],
+      [9, "GROWTH"],
+      [13, "LEECH_SEED"],
+      [17, "SAND_ATTACK"],
+      [21, "PIN_MISSILE"],
+      [25, "INGRAIN"],
+      [29, "FAINT_ATTACK"],
+      [33, "SPIKES"],
+      [37, "NEEDLE_ARM"],
+      [41, "COTTON_SPORE"],
+      [45, "SANDSTORM"]
+    ]
+  },
+  "CACTURNE": {
+    "name": "CACTURNE",
+    "moves": [
+      [1, "POISON_STING"],
+      [1, "LEER"],
+      [1, "ABSORB"],
+      [1, "GROWTH"],
+      [5, "ABSORB"],
+      [9, "GROWTH"],
+      [13, "LEECH_SEED"],
+      [17, "SAND_ATTACK"],
+      [21, "PIN_MISSILE"],
+      [25, "INGRAIN"],
+      [29, "FAINT_ATTACK"],
+      [35, "SPIKES"],
+      [41, "NEEDLE_ARM"],
+      [47, "COTTON_SPORE"],
+      [53, "SANDSTORM"]
+    ]
+  },
+  "SNORUNT": {
+    "name": "SNORUNT",
+    "moves": [
+      [1, "POWDER_SNOW"],
+      [1, "LEER"],
+      [7, "DOUBLE_TEAM"],
+      [10, "BITE"],
+      [16, "ICY_WIND"],
+      [19, "HEADBUTT"],
+      [25, "PROTECT"],
+      [28, "CRUNCH"],
+      [34, "ICE_BEAM"],
+      [37, "HAIL"],
+      [43, "BLIZZARD"]
+    ]
+  },
+  "GLALIE": {
+    "name": "GLALIE",
+    "moves": [
+      [1, "POWDER_SNOW"],
+      [1, "LEER"],
+      [1, "DOUBLE_TEAM"],
+      [1, "BITE"],
+      [7, "DOUBLE_TEAM"],
+      [10, "BITE"],
+      [16, "ICY_WIND"],
+      [19, "HEADBUTT"],
+      [25, "PROTECT"],
+      [28, "CRUNCH"],
+      [34, "ICE_BEAM"],
+      [42, "HAIL"],
+      [53, "BLIZZARD"],
+      [61, "SHEER_COLD"]
+    ]
+  },
+  "LUNATONE": {
+    "name": "LUNATONE",
+    "moves": [
+      [1, "TACKLE"],
+      [1, "HARDEN"],
+      [7, "CONFUSION"],
+      [13, "ROCK_THROW"],
+      [19, "HYPNOSIS"],
+      [25, "PSYWAVE"],
+      [31, "COSMIC_POWER"],
+      [37, "PSYCHIC"],
+      [43, "FUTURE_SIGHT"],
+      [49, "EXPLOSION"]
+    ]
+  },
+  "SOLROCK": {
+    "name": "SOLROCK",
+    "moves": [
+      [1, "TACKLE"],
+      [1, "HARDEN"],
+      [7, "CONFUSION"],
+      [13, "ROCK_THROW"],
+      [19, "FIRE_SPIN"],
+      [25, "PSYWAVE"],
+      [31, "COSMIC_POWER"],
+      [37, "ROCK_SLIDE"],
+      [43, "SOLAR_BEAM"],
+      [49, "EXPLOSION"]
+    ]
+  },
+  "AZURILL": {
+    "name": "AZURILL",
+    "moves": [
+      [1, "SPLASH"],
+      [3, "CHARM"],
+      [6, "TAIL_WHIP"],
+      [10, "BUBBLE"],
+      [15, "SLAM"],
+      [21, "WATER_GUN"]
+    ]
+  },
+  "SPOINK": {
+    "name": "SPOINK",
+    "moves": [
+      [1, "SPLASH"],
+      [7, "PSYWAVE"],
+      [10, "ODOR_SLEUTH"],
+      [16, "PSYBEAM"],
+      [19, "PSYCH_UP"],
+      [25, "CONFUSE_RAY"],
+      [28, "MAGIC_COAT"],
+      [34, "PSYCHIC"],
+      [37, "REST"],
+      [37, "SNORE"],
+      [43, "BOUNCE"]
+    ]
+  },
+  "GRUMPIG": {
+    "name": "GRUMPIG",
+    "moves": [
+      [1, "SPLASH"],
+      [1, "PSYWAVE"],
+      [1, "ODOR_SLEUTH"],
+      [1, "PSYBEAM"],
+      [7, "PSYWAVE"],
+      [10, "ODOR_SLEUTH"],
+      [16, "PSYBEAM"],
+      [19, "PSYCH_UP"],
+      [25, "CONFUSE_RAY"],
+      [28, "MAGIC_COAT"],
+      [37, "PSYCHIC"],
+      [43, "REST"],
+      [43, "SNORE"],
+      [55, "BOUNCE"]
+    ]
+  },
+  "PLUSLE": {
+    "name": "PLUSLE",
+    "moves": [
+      [1, "GROWL"],
+      [4, "THUNDER_WAVE"],
+      [10, "QUICK_ATTACK"],
+      [13, "HELPING_HAND"],
+      [19, "SPARK"],
+      [22, "ENCORE"],
+      [28, "FAKE_TEARS"],
+      [31, "CHARGE"],
+      [37, "THUNDER"],
+      [40, "BATON_PASS"],
+      [47, "AGILITY"]
+    ]
+  },
+  "MINUN": {
+    "name": "MINUN",
+    "moves": [
+      [1, "GROWL"],
+      [4, "THUNDER_WAVE"],
+      [10, "QUICK_ATTACK"],
+      [13, "HELPING_HAND"],
+      [19, "SPARK"],
+      [22, "ENCORE"],
+      [28, "CHARM"],
+      [31, "CHARGE"],
+      [37, "THUNDER"],
+      [40, "BATON_PASS"],
+      [47, "AGILITY"]
+    ]
+  },
+  "MAWILE": {
+    "name": "MAWILE",
+    "moves": [
+      [1, "ASTONISH"],
+      [6, "FAKE_TEARS"],
+      [11, "BITE"],
+      [16, "SWEET_SCENT"],
+      [21, "VICE_GRIP"],
+      [26, "FAINT_ATTACK"],
+      [31, "BATON_PASS"],
+      [36, "CRUNCH"],
+      [41, "IRON_DEFENSE"],
+      [46, "STOCKPILE"],
+      [46, "SWALLOW"],
+      [46, "SPIT_UP"]
+    ]
+  },
+  "MEDITITE": {
+    "name": "MEDITITE",
+    "moves": [
+      [1, "BIDE"],
+      [4, "MEDITATE"],
+      [9, "CONFUSION"],
+      [12, "DETECT"],
+      [18, "HIDDEN_POWER"],
+      [22, "MIND_READER"],
+      [28, "CALM_MIND"],
+      [32, "HI_JUMP_KICK"],
+      [38, "PSYCH_UP"],
+      [42, "REVERSAL"],
+      [48, "RECOVER"]
+    ]
+  },
+  "MEDICHAM": {
+    "name": "MEDICHAM",
+    "moves": [
+      [1, "FIRE_PUNCH"],
+      [1, "THUNDER_PUNCH"],
+      [1, "ICE_PUNCH"],
+      [1, "BIDE"],
+      [1, "MEDITATE"],
+      [1, "CONFUSION"],
+      [1, "DETECT"],
+      [4, "MEDITATE"],
+      [9, "CONFUSION"],
+      [12, "DETECT"],
+      [18, "HIDDEN_POWER"],
+      [22, "MIND_READER"],
+      [28, "CALM_MIND"],
+      [32, "HI_JUMP_KICK"],
+      [40, "PSYCH_UP"],
+      [46, "REVERSAL"],
+      [54, "RECOVER"]
+    ]
+  },
+  "SWABLU": {
+    "name": "SWABLU",
+    "moves": [
+      [1, "PECK"],
+      [1, "GROWL"],
+      [8, "ASTONISH"],
+      [11, "SING"],
+      [18, "FURY_ATTACK"],
+      [21, "SAFEGUARD"],
+      [28, "MIST"],
+      [31, "TAKE_DOWN"],
+      [38, "MIRROR_MOVE"],
+      [41, "REFRESH"],
+      [48, "PERISH_SONG"]
+    ]
+  },
+  "ALTARIA": {
+    "name": "ALTARIA",
+    "moves": [
+      [1, "PECK"],
+      [1, "GROWL"],
+      [1, "ASTONISH"],
+      [1, "SING"],
+      [8, "ASTONISH"],
+      [11, "SING"],
+      [18, "FURY_ATTACK"],
+      [21, "SAFEGUARD"],
+      [28, "MIST"],
+      [31, "TAKE_DOWN"],
+      [35, "DRAGON_BREATH"],
+      [40, "DRAGON_DANCE"],
+      [45, "REFRESH"],
+      [54, "PERISH_SONG"],
+      [59, "SKY_ATTACK"]
+    ]
+  },
+  "WYNAUT": {
+    "name": "WYNAUT",
+    "moves": [
+      [1, "SPLASH"],
+      [1, "CHARM"],
+      [1, "ENCORE"],
+      [15, "COUNTER"],
+      [15, "MIRROR_COAT"],
+      [15, "SAFEGUARD"],
+      [15, "DESTINY_BOND"]
+    ]
+  },
+  "DUSKULL": {
+    "name": "DUSKULL",
+    "moves": [
+      [1, "LEER"],
+      [1, "NIGHT_SHADE"],
+      [5, "DISABLE"],
+      [12, "FORESIGHT"],
+      [16, "ASTONISH"],
+      [23, "CONFUSE_RAY"],
+      [27, "PURSUIT"],
+      [34, "CURSE"],
+      [38, "WILL_O_WISP"],
+      [45, "MEAN_LOOK"],
+      [49, "FUTURE_SIGHT"]
+    ]
+  },
+  "DUSCLOPS": {
+    "name": "DUSCLOPS",
+    "moves": [
+      [1, "BIND"],
+      [1, "LEER"],
+      [1, "NIGHT_SHADE"],
+      [1, "DISABLE"],
+      [5, "DISABLE"],
+      [12, "FORESIGHT"],
+      [16, "ASTONISH"],
+      [23, "CONFUSE_RAY"],
+      [27, "PURSUIT"],
+      [34, "CURSE"],
+      [37, "SHADOW_PUNCH"],
+      [41, "WILL_O_WISP"],
+      [51, "MEAN_LOOK"],
+      [58, "FUTURE_SIGHT"]
+    ]
+  },
+  "ROSELIA": {
+    "name": "ROSELIA",
+    "moves": [
+      [1, "ABSORB"],
+      [5, "GROWTH"],
+      [9, "POISON_STING"],
+      [13, "STUN_SPORE"],
+      [17, "MEGA_DRAIN"],
+      [21, "LEECH_SEED"],
+      [25, "MAGICAL_LEAF"],
+      [29, "GRASS_WHISTLE"],
+      [33, "GIGA_DRAIN"],
+      [37, "SWEET_SCENT"],
+      [41, "INGRAIN"],
+      [45, "TOXIC"],
+      [49, "PETAL_DANCE"],
+      [53, "AROMATHERAPY"],
+      [57, "SYNTHESIS"]
+    ]
+  },
+  "SLAKOTH": {
+    "name": "SLAKOTH",
+    "moves": [
+      [1, "SCRATCH"],
+      [1, "YAWN"],
+      [7, "ENCORE"],
+      [13, "SLACK_OFF"],
+      [19, "FAINT_ATTACK"],
+      [25, "AMNESIA"],
+      [31, "COVET"],
+      [37, "COUNTER"],
+      [43, "FLAIL"]
+    ]
+  },
+  "VIGOROTH": {
+    "name": "VIGOROTH",
+    "moves": [
+      [1, "SCRATCH"],
+      [1, "FOCUS_ENERGY"],
+      [1, "ENCORE"],
+      [1, "UPROAR"],
+      [7, "ENCORE"],
+      [13, "UPROAR"],
+      [19, "FURY_SWIPES"],
+      [25, "ENDURE"],
+      [31, "SLASH"],
+      [37, "COUNTER"],
+      [43, "FOCUS_PUNCH"],
+      [49, "REVERSAL"]
+    ]
+  },
+  "SLAKING": {
+    "name": "SLAKING",
+    "moves": [
+      [1, "SCRATCH"],
+      [1, "YAWN"],
+      [1, "ENCORE"],
+      [1, "SLACK_OFF"],
+      [7, "ENCORE"],
+      [13, "SLACK_OFF"],
+      [19, "FAINT_ATTACK"],
+      [25, "AMNESIA"],
+      [31, "COVET"],
+      [36, "SWAGGER"],
+      [37, "COUNTER"],
+      [43, "FLAIL"]
+    ]
+  },
+  "GULPIN": {
+    "name": "GULPIN",
+    "moves": [
+      [1, "POUND"],
+      [6, "YAWN"],
+      [9, "POISON_GAS"],
+      [14, "SLUDGE"],
+      [17, "AMNESIA"],
+      [23, "ENCORE"],
+      [28, "TOXIC"],
+      [34, "STOCKPILE"],
+      [34, "SPIT_UP"],
+      [34, "SWALLOW"],
+      [39, "SLUDGE_BOMB"]
+    ]
+  },
+  "SWALOT": {
+    "name": "SWALOT",
+    "moves": [
+      [1, "POUND"],
+      [1, "YAWN"],
+      [1, "POISON_GAS"],
+      [1, "SLUDGE"],
+      [6, "YAWN"],
+      [9, "POISON_GAS"],
+      [14, "SLUDGE"],
+      [17, "AMNESIA"],
+      [23, "ENCORE"],
+      [26, "BODY_SLAM"],
+      [31, "TOXIC"],
+      [40, "STOCKPILE"],
+      [40, "SPIT_UP"],
+      [40, "SWALLOW"],
+      [48, "SLUDGE_BOMB"]
+    ]
+  },
+  "TROPIUS": {
+    "name": "TROPIUS",
+    "moves": [
+      [1, "LEER"],
+      [1, "GUST"],
+      [7, "GROWTH"],
+      [11, "RAZOR_LEAF"],
+      [17, "STOMP"],
+      [21, "SWEET_SCENT"],
+      [27, "WHIRLWIND"],
+      [31, "MAGICAL_LEAF"],
+      [37, "BODY_SLAM"],
+      [41, "SOLAR_BEAM"],
+      [47, "SYNTHESIS"]
+    ]
+  },
+  "WHISMUR": {
+    "name": "WHISMUR",
+    "moves": [
+      [1, "POUND"],
+      [5, "UPROAR"],
+      [11, "ASTONISH"],
+      [15, "HOWL"],
+      [21, "SUPERSONIC"],
+      [25, "STOMP"],
+      [31, "SCREECH"],
+      [35, "ROAR"],
+      [41, "REST"],
+      [41, "SLEEP_TALK"],
+      [45, "HYPER_VOICE"]
+    ]
+  },
+  "LOUDRED": {
+    "name": "LOUDRED",
+    "moves": [
+      [1, "POUND"],
+      [1, "UPROAR"],
+      [1, "ASTONISH"],
+      [1, "HOWL"],
+      [5, "UPROAR"],
+      [11, "ASTONISH"],
+      [15, "HOWL"],
+      [23, "SUPERSONIC"],
+      [29, "STOMP"],
+      [37, "SCREECH"],
+      [43, "ROAR"],
+      [51, "REST"],
+      [51, "SLEEP_TALK"],
+      [57, "HYPER_VOICE"]
+    ]
+  },
+  "EXPLOUD": {
+    "name": "EXPLOUD",
+    "moves": [
+      [1, "POUND"],
+      [1, "UPROAR"],
+      [1, "ASTONISH"],
+      [1, "HOWL"],
+      [5, "UPROAR"],
+      [11, "ASTONISH"],
+      [15, "HOWL"],
+      [23, "SUPERSONIC"],
+      [29, "STOMP"],
+      [37, "SCREECH"],
+      [40, "HYPER_BEAM"],
+      [45, "ROAR"],
+      [55, "REST"],
+      [55, "SLEEP_TALK"],
+      [63, "HYPER_VOICE"]
+    ]
+  },
+  "CLAMPERL": {
+    "name": "CLAMPERL",
+    "moves": [
+      [1, "CLAMP"],
+      [1, "WATER_GUN"],
+      [1, "WHIRLPOOL"],
+      [1, "IRON_DEFENSE"]
+    ]
+  },
+  "HUNTAIL": {
+    "name": "HUNTAIL",
+    "moves": [
+      [1, "WHIRLPOOL"],
+      [8, "BITE"],
+      [15, "SCREECH"],
+      [22, "WATER_PULSE"],
+      [29, "SCARY_FACE"],
+      [36, "CRUNCH"],
+      [43, "BATON_PASS"],
+      [50, "HYDRO_PUMP"]
+    ]
+  },
+  "GOREBYSS": {
+    "name": "GOREBYSS",
+    "moves": [
+      [1, "WHIRLPOOL"],
+      [8, "CONFUSION"],
+      [15, "AGILITY"],
+      [22, "WATER_PULSE"],
+      [29, "AMNESIA"],
+      [36, "PSYCHIC"],
+      [43, "BATON_PASS"],
+      [50, "HYDRO_PUMP"]
+    ]
+  },
+  "ABSOL": {
+    "name": "ABSOL",
+    "moves": [
+      [1, "SCRATCH"],
+      [5, "LEER"],
+      [9, "TAUNT"],
+      [13, "QUICK_ATTACK"],
+      [17, "RAZOR_WIND"],
+      [21, "BITE"],
+      [26, "SWORDS_DANCE"],
+      [31, "DOUBLE_TEAM"],
+      [36, "SLASH"],
+      [41, "FUTURE_SIGHT"],
+      [46, "PERISH_SONG"]
+    ]
+  },
+  "SHUPPET": {
+    "name": "SHUPPET",
+    "moves": [
+      [1, "KNOCK_OFF"],
+      [8, "SCREECH"],
+      [13, "NIGHT_SHADE"],
+      [20, "CURSE"],
+      [25, "SPITE"],
+      [32, "WILL_O_WISP"],
+      [37, "FAINT_ATTACK"],
+      [44, "SHADOW_BALL"],
+      [49, "SNATCH"],
+      [56, "GRUDGE"]
+    ]
+  },
+  "BANETTE": {
+    "name": "BANETTE",
+    "moves": [
+      [1, "KNOCK_OFF"],
+      [1, "SCREECH"],
+      [1, "NIGHT_SHADE"],
+      [1, "CURSE"],
+      [8, "SCREECH"],
+      [13, "NIGHT_SHADE"],
+      [20, "CURSE"],
+      [25, "SPITE"],
+      [32, "WILL_O_WISP"],
+      [39, "FAINT_ATTACK"],
+      [48, "SHADOW_BALL"],
+      [55, "SNATCH"],
+      [64, "GRUDGE"]
+    ]
+  },
+  "SEVIPER": {
+    "name": "SEVIPER",
+    "moves": [
+      [1, "WRAP"],
+      [7, "LICK"],
+      [10, "BITE"],
+      [16, "POISON_TAIL"],
+      [19, "SCREECH"],
+      [25, "GLARE"],
+      [28, "CRUNCH"],
+      [34, "POISON_FANG"],
+      [37, "SWAGGER"],
+      [43, "HAZE"]
+    ]
+  },
+  "ZANGOOSE": {
+    "name": "ZANGOOSE",
+    "moves": [
+      [1, "SCRATCH"],
+      [4, "LEER"],
+      [7, "QUICK_ATTACK"],
+      [10, "SWORDS_DANCE"],
+      [13, "FURY_CUTTER"],
+      [19, "SLASH"],
+      [25, "PURSUIT"],
+      [31, "CRUSH_CLAW"],
+      [37, "TAUNT"],
+      [46, "DETECT"],
+      [55, "FALSE_SWIPE"]
+    ]
+  },
+  "RELICANTH": {
+    "name": "RELICANTH",
+    "moves": [
+      [1, "TACKLE"],
+      [1, "HARDEN"],
+      [8, "WATER_GUN"],
+      [15, "ROCK_TOMB"],
+      [22, "YAWN"],
+      [29, "TAKE_DOWN"],
+      [36, "MUD_SPORT"],
+      [43, "ANCIENT_POWER"],
+      [50, "REST"],
+      [57, "DOUBLE_EDGE"],
+      [64, "HYDRO_PUMP"]
+    ]
+  },
+  "ARON": {
+    "name": "ARON",
+    "moves": [
+      [1, "TACKLE"],
+      [4, "HARDEN"],
+      [7, "MUD_SLAP"],
+      [10, "HEADBUTT"],
+      [13, "METAL_CLAW"],
+      [17, "IRON_DEFENSE"],
+      [21, "ROAR"],
+      [25, "TAKE_DOWN"],
+      [29, "IRON_TAIL"],
+      [34, "PROTECT"],
+      [39, "METAL_SOUND"],
+      [44, "DOUBLE_EDGE"]
+    ]
+  },
+  "LAIRON": {
+    "name": "LAIRON",
+    "moves": [
+      [1, "TACKLE"],
+      [1, "HARDEN"],
+      [1, "MUD_SLAP"],
+      [1, "HEADBUTT"],
+      [4, "HARDEN"],
+      [7, "MUD_SLAP"],
+      [10, "HEADBUTT"],
+      [13, "METAL_CLAW"],
+      [17, "IRON_DEFENSE"],
+      [21, "ROAR"],
+      [25, "TAKE_DOWN"],
+      [29, "IRON_TAIL"],
+      [37, "PROTECT"],
+      [45, "METAL_SOUND"],
+      [53, "DOUBLE_EDGE"]
+    ]
+  },
+  "AGGRON": {
+    "name": "AGGRON",
+    "moves": [
+      [1, "TACKLE"],
+      [1, "HARDEN"],
+      [1, "MUD_SLAP"],
+      [1, "HEADBUTT"],
+      [4, "HARDEN"],
+      [7, "MUD_SLAP"],
+      [10, "HEADBUTT"],
+      [13, "METAL_CLAW"],
+      [17, "IRON_DEFENSE"],
+      [21, "ROAR"],
+      [25, "TAKE_DOWN"],
+      [29, "IRON_TAIL"],
+      [37, "PROTECT"],
+      [50, "METAL_SOUND"],
+      [63, "DOUBLE_EDGE"]
+    ]
+  },
+  "CASTFORM": {
+    "name": "CASTFORM",
+    "moves": [
+      [1, "TACKLE"],
+      [10, "WATER_GUN"],
+      [10, "EMBER"],
+      [10, "POWDER_SNOW"],
+      [20, "RAIN_DANCE"],
+      [20, "SUNNY_DAY"],
+      [20, "HAIL"],
+      [30, "WEATHER_BALL"]
+    ]
+  },
+  "VOLBEAT": {
+    "name": "VOLBEAT",
+    "moves": [
+      [1, "TACKLE"],
+      [5, "CONFUSE_RAY"],
+      [9, "DOUBLE_TEAM"],
+      [13, "MOONLIGHT"],
+      [17, "QUICK_ATTACK"],
+      [21, "TAIL_GLOW"],
+      [25, "SIGNAL_BEAM"],
+      [29, "PROTECT"],
+      [33, "HELPING_HAND"],
+      [37, "DOUBLE_EDGE"]
+    ]
+  },
+  "ILLUMISE": {
+    "name": "ILLUMISE",
+    "moves": [
+      [1, "TACKLE"],
+      [5, "SWEET_SCENT"],
+      [9, "CHARM"],
+      [13, "MOONLIGHT"],
+      [17, "QUICK_ATTACK"],
+      [21, "WISH"],
+      [25, "ENCORE"],
+      [29, "FLATTER"],
+      [33, "HELPING_HAND"],
+      [37, "COVET"]
+    ]
+  },
+  "LILEEP": {
+    "name": "LILEEP",
+    "moves": [
+      [1, "ASTONISH"],
+      [8, "CONSTRICT"],
+      [15, "ACID"],
+      [22, "INGRAIN"],
+      [29, "CONFUSE_RAY"],
+      [36, "AMNESIA"],
+      [43, "ANCIENT_POWER"],
+      [50, "STOCKPILE"],
+      [50, "SPIT_UP"],
+      [50, "SWALLOW"]
+    ]
+  },
+  "CRADILY": {
+    "name": "CRADILY",
+    "moves": [
+      [1, "ASTONISH"],
+      [1, "CONSTRICT"],
+      [1, "ACID"],
+      [1, "INGRAIN"],
+      [8, "CONSTRICT"],
+      [15, "ACID"],
+      [22, "INGRAIN"],
+      [29, "CONFUSE_RAY"],
+      [36, "AMNESIA"],
+      [48, "ANCIENT_POWER"],
+      [60, "STOCKPILE"],
+      [60, "SPIT_UP"],
+      [60, "SWALLOW"]
+    ]
+  },
+  "ANORITH": {
+    "name": "ANORITH",
+    "moves": [
+      [1, "SCRATCH"],
+      [7, "HARDEN"],
+      [13, "MUD_SPORT"],
+      [19, "WATER_GUN"],
+      [25, "METAL_CLAW"],
+      [31, "PROTECT"],
+      [37, "ANCIENT_POWER"],
+      [43, "FURY_CUTTER"],
+      [49, "SLASH"],
+      [55, "ROCK_BLAST"]
+    ]
+  },
+  "ARMALDO": {
+    "name": "ARMALDO",
+    "moves": [
+      [1, "SCRATCH"],
+      [1, "HARDEN"],
+      [1, "MUD_SPORT"],
+      [1, "WATER_GUN"],
+      [7, "HARDEN"],
+      [13, "MUD_SPORT"],
+      [19, "WATER_GUN"],
+      [25, "METAL_CLAW"],
+      [31, "PROTECT"],
+      [37, "ANCIENT_POWER"],
+      [46, "FURY_CUTTER"],
+      [55, "SLASH"],
+      [64, "ROCK_BLAST"]
+    ]
+  },
+  "RALTS": {
+    "name": "RALTS",
+    "moves": [
+      [1, "GROWL"],
+      [6, "CONFUSION"],
+      [11, "DOUBLE_TEAM"],
+      [16, "TELEPORT"],
+      [21, "CALM_MIND"],
+      [26, "PSYCHIC"],
+      [31, "IMPRISON"],
+      [36, "FUTURE_SIGHT"],
+      [41, "HYPNOSIS"],
+      [46, "DREAM_EATER"]
+    ]
+  },
+  "KIRLIA": {
+    "name": "KIRLIA",
+    "moves": [
+      [1, "GROWL"],
+      [1, "CONFUSION"],
+      [1, "DOUBLE_TEAM"],
+      [1, "TELEPORT"],
+      [6, "CONFUSION"],
+      [11, "DOUBLE_TEAM"],
+      [16, "TELEPORT"],
+      [21, "CALM_MIND"],
+      [26, "PSYCHIC"],
+      [33, "IMPRISON"],
+      [40, "FUTURE_SIGHT"],
+      [47, "HYPNOSIS"],
+      [54, "DREAM_EATER"]
+    ]
+  },
+  "GARDEVOIR": {
+    "name": "GARDEVOIR",
+    "moves": [
+      [1, "GROWL"],
+      [1, "CONFUSION"],
+      [1, "DOUBLE_TEAM"],
+      [1, "TELEPORT"],
+      [6, "CONFUSION"],
+      [11, "DOUBLE_TEAM"],
+      [16, "TELEPORT"],
+      [21, "CALM_MIND"],
+      [26, "PSYCHIC"],
+      [33, "IMPRISON"],
+      [42, "FUTURE_SIGHT"],
+      [51, "HYPNOSIS"],
+      [60, "DREAM_EATER"]
+    ]
+  },
+  "BAGON": {
+    "name": "BAGON",
+    "moves": [
+      [1, "RAGE"],
+      [5, "BITE"],
+      [9, "LEER"],
+      [17, "HEADBUTT"],
+      [21, "FOCUS_ENERGY"],
+      [25, "EMBER"],
+      [33, "DRAGON_BREATH"],
+      [37, "SCARY_FACE"],
+      [41, "CRUNCH"],
+      [49, "DRAGON_CLAW"],
+      [53, "DOUBLE_EDGE"]
+    ]
+  },
+  "SHELGON": {
+    "name": "SHELGON",
+    "moves": [
+      [1, "RAGE"],
+      [1, "BITE"],
+      [1, "LEER"],
+      [1, "HEADBUTT"],
+      [5, "BITE"],
+      [9, "LEER"],
+      [17, "HEADBUTT"],
+      [21, "FOCUS_ENERGY"],
+      [25, "EMBER"],
+      [30, "PROTECT"],
+      [38, "DRAGON_BREATH"],
+      [47, "SCARY_FACE"],
+      [56, "CRUNCH"],
+      [69, "DRAGON_CLAW"],
+      [78, "DOUBLE_EDGE"]
+    ]
+  },
+  "SALAMENCE": {
+    "name": "SALAMENCE",
+    "moves": [
+      [1, "RAGE"],
+      [1, "BITE"],
+      [1, "LEER"],
+      [1, "HEADBUTT"],
+      [5, "BITE"],
+      [9, "LEER"],
+      [17, "HEADBUTT"],
+      [21, "FOCUS_ENERGY"],
+      [25, "EMBER"],
+      [30, "PROTECT"],
+      [38, "DRAGON_BREATH"],
+      [47, "SCARY_FACE"],
+      [50, "FLY"],
+      [61, "CRUNCH"],
+      [79, "DRAGON_CLAW"],
+      [93, "DOUBLE_EDGE"]
+    ]
+  },
+  "BELDUM": { "name": "BELDUM", "moves": [[1, "TAKE_DOWN"]] },
+  "METANG": {
+    "name": "METANG",
+    "moves": [
+      [1, "TAKE_DOWN"],
+      [20, "CONFUSION"],
+      [20, "METAL_CLAW"],
+      [26, "SCARY_FACE"],
+      [32, "PURSUIT"],
+      [38, "PSYCHIC"],
+      [44, "IRON_DEFENSE"],
+      [50, "METEOR_MASH"],
+      [56, "AGILITY"],
+      [62, "HYPER_BEAM"]
+    ]
+  },
+  "METAGROSS": {
+    "name": "METAGROSS",
+    "moves": [
+      [1, "TAKE_DOWN"],
+      [1, "CONFUSION"],
+      [1, "METAL_CLAW"],
+      [1, "SCARY_FACE"],
+      [20, "CONFUSION"],
+      [20, "METAL_CLAW"],
+      [26, "SCARY_FACE"],
+      [32, "PURSUIT"],
+      [38, "PSYCHIC"],
+      [44, "IRON_DEFENSE"],
+      [55, "METEOR_MASH"],
+      [66, "AGILITY"],
+      [77, "HYPER_BEAM"]
+    ]
+  },
+  "REGIROCK": {
+    "name": "REGIROCK",
+    "moves": [
+      [1, "EXPLOSION"],
+      [9, "ROCK_THROW"],
+      [17, "CURSE"],
+      [25, "SUPERPOWER"],
+      [33, "ANCIENT_POWER"],
+      [41, "IRON_DEFENSE"],
+      [49, "ZAP_CANNON"],
+      [57, "LOCK_ON"],
+      [65, "HYPER_BEAM"]
+    ]
+  },
+  "REGICE": {
+    "name": "REGICE",
+    "moves": [
+      [1, "EXPLOSION"],
+      [9, "ICY_WIND"],
+      [17, "CURSE"],
+      [25, "SUPERPOWER"],
+      [33, "ANCIENT_POWER"],
+      [41, "AMNESIA"],
+      [49, "ZAP_CANNON"],
+      [57, "LOCK_ON"],
+      [65, "HYPER_BEAM"]
+    ]
+  },
+  "REGISTEEL": {
+    "name": "REGISTEEL",
+    "moves": [
+      [1, "EXPLOSION"],
+      [9, "METAL_CLAW"],
+      [17, "CURSE"],
+      [25, "SUPERPOWER"],
+      [33, "ANCIENT_POWER"],
+      [41, "IRON_DEFENSE"],
+      [41, "AMNESIA"],
+      [49, "ZAP_CANNON"],
+      [57, "LOCK_ON"],
+      [65, "HYPER_BEAM"]
+    ]
+  },
+  "KYOGRE": {
+    "name": "KYOGRE",
+    "moves": [
+      [1, "WATER_PULSE"],
+      [5, "SCARY_FACE"],
+      [15, "ANCIENT_POWER"],
+      [20, "BODY_SLAM"],
+      [30, "CALM_MIND"],
+      [35, "ICE_BEAM"],
+      [45, "HYDRO_PUMP"],
+      [50, "REST"],
+      [60, "SHEER_COLD"],
+      [65, "DOUBLE_EDGE"],
+      [75, "WATER_SPOUT"]
+    ]
+  },
+  "GROUDON": {
+    "name": "GROUDON",
+    "moves": [
+      [1, "MUD_SHOT"],
+      [5, "SCARY_FACE"],
+      [15, "ANCIENT_POWER"],
+      [20, "SLASH"],
+      [30, "BULK_UP"],
+      [35, "EARTHQUAKE"],
+      [45, "FIRE_BLAST"],
+      [50, "REST"],
+      [60, "FISSURE"],
+      [65, "SOLAR_BEAM"],
+      [75, "ERUPTION"]
+    ]
+  },
+  "RAYQUAZA": {
+    "name": "RAYQUAZA",
+    "moves": [
+      [1, "TWISTER"],
+      [5, "SCARY_FACE"],
+      [15, "ANCIENT_POWER"],
+      [20, "DRAGON_CLAW"],
+      [30, "DRAGON_DANCE"],
+      [35, "CRUNCH"],
+      [45, "FLY"],
+      [50, "REST"],
+      [60, "EXTREME_SPEED"],
+      [65, "OUTRAGE"],
+      [75, "HYPER_BEAM"]
+    ]
+  },
+  "LATIAS": {
+    "name": "LATIAS",
+    "moves": [
+      [1, "PSYWAVE"],
+      [5, "WISH"],
+      [10, "HELPING_HAND"],
+      [15, "SAFEGUARD"],
+      [20, "DRAGON_BREATH"],
+      [25, "WATER_SPORT"],
+      [30, "REFRESH"],
+      [35, "MIST_BALL"],
+      [40, "PSYCHIC"],
+      [45, "RECOVER"],
+      [50, "CHARM"]
+    ]
+  },
+  "LATIOS": {
+    "name": "LATIOS",
+    "moves": [
+      [1, "PSYWAVE"],
+      [5, "MEMENTO"],
+      [10, "HELPING_HAND"],
+      [15, "SAFEGUARD"],
+      [20, "DRAGON_BREATH"],
+      [25, "PROTECT"],
+      [30, "REFRESH"],
+      [35, "LUSTER_PURGE"],
+      [40, "PSYCHIC"],
+      [45, "RECOVER"],
+      [50, "DRAGON_DANCE"]
+    ]
+  },
+  "JIRACHI": {
+    "name": "JIRACHI",
+    "moves": [
+      [1, "WISH"],
+      [1, "CONFUSION"],
+      [5, "REST"],
+      [10, "SWIFT"],
+      [15, "HELPING_HAND"],
+      [20, "PSYCHIC"],
+      [25, "REFRESH"],
+      [30, "REST"],
+      [35, "DOUBLE_EDGE"],
+      [40, "FUTURE_SIGHT"],
+      [45, "COSMIC_POWER"],
+      [50, "DOOM_DESIRE"]
+    ]
+  },
+  "DEOXYS": {
+    "name": "DEOXYS",
+    "moves": [
+      [1, "LEER"],
+      [1, "WRAP"],
+      [5, "NIGHT_SHADE"],
+      [10, "DOUBLE_TEAM"],
+      [15, "KNOCK_OFF"],
+      [20, "PURSUIT"],
+      [25, "PSYCHIC"],
+      [30, "SWIFT"],
+      [35, "AGILITY"],
+      [40, "RECOVER"],
+      [45, "PSYCHO_BOOST"],
+      [50, "EXTREME_SPEED"]
+    ]
+  },
+  "CHIMECHO": {
+    "name": "CHIMECHO",
+    "moves": [
+      [1, "WRAP"],
+      [6, "GROWL"],
+      [9, "ASTONISH"],
+      [14, "CONFUSION"],
+      [17, "TAKE_DOWN"],
+      [22, "UPROAR"],
+      [25, "YAWN"],
+      [30, "PSYWAVE"],
+      [33, "DOUBLE_EDGE"],
+      [38, "HEAL_BELL"],
+      [41, "SAFEGUARD"],
+      [46, "PSYCHIC"]
+    ]
+  }
+}

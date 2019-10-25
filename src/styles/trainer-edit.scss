@@ -1,5 +1,5 @@
 .trainer-grid {
-  @include grid(540px);
+  @include grid(580px);
 }
 
 .trainer-class-grid {
@@ -8,6 +8,22 @@
 
 .item-grid {
   @include grid(140px);
+}
+
+@mixin hover-effect($margin-top, $margin-left) {
+  cursor: pointer;
+  &:hover {
+    &:before {
+      content: "";
+      display: block;
+      border: 30px solid #cfcfcf;
+      border-radius: 100px;
+      position: absolute;
+      z-index: -1;
+      margin-left: $margin-left;
+      margin-top: $margin-top;
+    }
+  }
 }
 
 .trainer-id {
@@ -39,6 +55,8 @@
   max-width: $width;
   text-align: center;
   border-radius: 0;
+  @include hover-effect(6px, 15px);
+  z-index: 2;
 }
 
 .trainer-pic,
@@ -49,20 +67,19 @@
 }
 
 .trainer-card {
-  height: 150px;
+  height: 130px;
 }
 
 .party-pic {
   overflow: hidden;
 }
 
-.trainer-party {
-  margin-top: 20px;
-}
-
 .trainer-party-mon {
-  margin: 0 5px;
+  padding: 20px 5px 0;
+  width: 80px;
   text-align: center;
+  @include hover-effect(0, 5px);
+  z-index: 2;
 }
 
 .party-name {

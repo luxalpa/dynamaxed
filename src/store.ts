@@ -3,6 +3,8 @@ import { ProjectManager } from "@/modules/project-manager";
 import { DialogManager } from "@/modules/dialog-manager";
 import { EditTrainerDialog } from "@/views/dialogs/edit-trainer-dialog";
 import { EditFlagsDialog } from "@/views/dialogs/edit-flags-dialog";
+import { EditTrainerMonDialog } from "@/views/dialogs/edit-trainer-mon-dialog";
+import { GameModel } from "@/model/model";
 
 export const store: any = {
   ViewManager,
@@ -33,9 +35,10 @@ if (process.env.NODE_ENV !== "development") {
     "C:\\Users\\Smaug\\Desktop\\Pokemon\\pokeemerald\\"
   );
   ViewManager.setActiveView("Trainers");
-  DialogManager.openDialog(EditTrainerDialog, {
-    trainerId: "RANDALL"
-  }).catch(() => {});
+  DialogManager.openDialog(
+    EditTrainerMonDialog,
+    GameModel.model.trainers["SAWYER_1"].party[0]
+  );
 }
 
 export function persistStore() {
