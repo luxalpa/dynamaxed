@@ -22,7 +22,7 @@ export class TrainersView extends Vue {
     if (trainer.party.length <= partyIndex) {
       trainer.party.push(mon);
     } else {
-      trainer.party[partyIndex] = mon;
+      Vue.set(trainer.party, partyIndex, mon);
     }
   }
 

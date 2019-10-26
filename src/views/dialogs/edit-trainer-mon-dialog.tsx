@@ -4,10 +4,12 @@ import { NoTrainerPartyMon, TrainerPartyMon } from "@/model/model";
 import cloneDeep from "lodash.clonedeep";
 import { DialogEntry } from "@/components/dialog-entry";
 import { PathManager } from "@/modules/path-manager";
-import { VNode } from "vue";
 import { modifiers } from "vue-tsx-support";
 import { ChooseItemDialog } from "@/views/dialogs/choose-item-dialog";
 import { Item } from "@/components/item";
+
+const maxLevel = 100;
+const maxIV = 255;
 
 @Component
 class EditTrainerMonDialogCmp extends Vue {
@@ -31,6 +33,34 @@ class EditTrainerMonDialogCmp extends Vue {
     if (item !== undefined) {
       Vue.set(this.mon, "heldItem", item);
     }
+  }
+
+  get level() {
+    return this.mon.lvl.toString();
+  }
+
+  set level(lvlStr: string) {
+    this.mon.lvl = +lvlStr;
+  }
+
+  get iv() {
+    return this.mon.iv.toString();
+  }
+
+  set iv(iv: string) {
+    this.mon.iv = +iv;
+  }
+
+  get allowSubmit() {
+    return this.levelRule && this.ivRule;
+  }
+
+  get levelRule() {
+    return this.mon.lvl >= 0 && this.mon.lvl <= maxLevel;
+  }
+
+  get ivRule() {
+    return this.mon.iv >= 0 && this.mon.lvl <= maxIV;
   }
 
   get heldItemEntry() {
@@ -80,7 +110,11 @@ class EditTrainerMonDialogCmp extends Vue {
               dense
               hide-details
               type="number"
-              vModel={this.mon.lvl}
+              style={{ width: "96px" }}
+              min={0}
+              max={maxLevel}
+              vModel={this.level}
+              background-color={!this.levelRule ? "error lighten-2" : undefined}
             />
           </DialogEntry>
           <DialogEntry label="IV">
@@ -89,7 +123,11 @@ class EditTrainerMonDialogCmp extends Vue {
               dense
               hide-details
               type="number"
-              vModel={this.mon.iv}
+              style={{ width: "96px" }}
+              min={0}
+              max={maxIV}
+              vModel={this.iv}
+              background-color={!this.ivRule ? "error lighten-2" : undefined}
             />
           </DialogEntry>
           <DialogEntry label="Held Item">{this.heldItemEntry}</DialogEntry>
@@ -99,7 +137,12 @@ class EditTrainerMonDialogCmp extends Vue {
             Cancel
           </v-btn>
           <v-spacer />
-          <v-btn text large onclick={() => this.accept()}>
+          <v-btn
+            text
+            large
+            onclick={() => this.accept()}
+            disabled={!this.allowSubmit}
+          >
             OK
           </v-btn>
         </v-card-actions>
