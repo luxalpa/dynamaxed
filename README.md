@@ -7,23 +7,18 @@ yarn install
 
 ### Compiles and hot-reloads for development
 ```
-yarn run serve
+yarn electron:serve
 ```
 
 ### Compiles and minifies for production
 ```
-yarn run build
+yarn electron:build
 ```
 
-### Run your tests
-```
-yarn run test
-```
+### TODO:
 
-### Lints and fixes files
-```
-yarn run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- Auto ID system
+- ID collision detection
+- Change number fields with scroll wheel
+- Filter options
+- Auto Filtering for Held Items and Trainer usable items 
