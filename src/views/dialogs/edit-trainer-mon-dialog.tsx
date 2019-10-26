@@ -69,7 +69,9 @@ class EditTrainerMonDialogCmp extends Vue {
         <v-container>
           <DialogEntry label="Pokemon">
             <v-btn height={80}>
-              <img src={PathManager.pokePic(this.mon.species)} />
+              <div class="party-pic">
+                <img src={PathManager.pokePic(this.mon.species)} />
+              </div>
             </v-btn>
           </DialogEntry>
           <DialogEntry label="Level">

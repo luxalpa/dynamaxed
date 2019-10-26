@@ -5,6 +5,7 @@ import { EditTrainerDialog } from "@/views/dialogs/edit-trainer-dialog";
 import { PathManager } from "@/modules/path-manager";
 import { CATCH_IGNORE } from "@/utils";
 import { EditTrainerMonDialog } from "@/views/dialogs/edit-trainer-mon-dialog";
+import { TrainerMon } from "@/components/trainer-mon";
 
 @Component({
   name: "TrainersView"
@@ -54,11 +55,12 @@ export class TrainersView extends Vue {
                   <img src={pic} alt={"ERROR"} />
                 </div>
                 <div class="trainer-name">{trainer.trainerName}</div>
-                <div class="trainer-class">{trainer.trainerClass}</div>
+                <div class="trainer-class">
+                  {GameModel.model.trainerClasses[trainer.trainerClass].name}
+                </div>
               </div>
               <div class="trainer-party d-flex flex-row">
                 {party.map((mon, idx) => {
-                  const pokepic = PathManager.pokePic(mon.species);
                   if (mon === NoTrainerPartyMon) {
                     return (
                       <div
@@ -74,10 +76,7 @@ export class TrainersView extends Vue {
                       class="trainer-party-mon"
                       onclick={() => this.editPartyMon(trainer, idx)}
                     >
-                      <div class="party-pic">
-                        <img src={pokepic} />
-                      </div>
-                      <div class="party-name">{mon.species}</div>
+                      <TrainerMon species={mon.species} />
                       <div class="party-lvl">Lv. {mon.lvl}</div>
                     </div>
                   );
