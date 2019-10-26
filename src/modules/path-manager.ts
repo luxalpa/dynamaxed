@@ -25,6 +25,15 @@ export namespace PathManager {
     );
   }
 
+  export function pokeIcon(id: string) {
+    return path.join(
+      ProjectManager.currentProjectPath,
+      "graphics/pokemon",
+      id.toLowerCase(),
+      "icon.png"
+    );
+  }
+
   export function pokePic(id: string) {
     let imgName = "front.png";
     if (id.toLowerCase() == "castform") {

@@ -14,6 +14,7 @@ import { ChooseItemDialog } from "@/views/dialogs/choose-item-dialog";
 import { TrainerClass } from "@/components/trainer-class";
 import { CATCH_IGNORE } from "@/utils";
 import { Item } from "@/components/item";
+import { PokeIcon } from "@/components/poke-icon";
 
 interface EditTrainerOptions {
   trainerId: string;
@@ -110,6 +111,23 @@ class EditTrainerDialogCmp extends Vue {
 
     return (
       <v-card class="dialog">
+        <v-toolbar dense tile flat>
+          <v-tabs>
+            <v-tab>Trainer</v-tab>
+            {this.trainer.party.map((mon, idx) => (
+              <v-tab>
+                <PokeIcon species={mon.species} />
+                {GameModel.model.pokemon[mon.species].name}
+              </v-tab>
+            ))}
+          </v-tabs>
+          <v-btn icon>
+            <v-icon small disabled={this.trainer.party.length === 6}>
+              fas fa-plus
+            </v-icon>
+          </v-btn>
+          <v-spacer />
+        </v-toolbar>
         <v-container>
           <DialogEntry label="ID">
             <v-text-field solo dense hide-details vModel={this.trainerID} />
@@ -209,6 +227,6 @@ export const EditTrainerDialog: DialogOptions<
   EditTrainerResult
 > = {
   component: EditTrainerDialogCmp,
-  maxWidth: 500,
+  maxWidth: 1000,
   modal: true
 };
