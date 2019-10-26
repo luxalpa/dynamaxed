@@ -49,7 +49,7 @@ export const NoTrainerClass: TrainerClass = {
 };
 
 export const NoTrainerPartyMon: TrainerPartyMon = {
-  species: "None",
+  species: "NONE",
   lvl: 0,
   iv: 0
 };

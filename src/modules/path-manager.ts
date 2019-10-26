@@ -38,6 +38,14 @@ export namespace PathManager {
     let imgName = "front.png";
     if (id.toLowerCase() == "castform") {
       imgName = "front_normal_form.png";
+    } else if (id.toLowerCase() == "farfetchd") {
+      imgName = "../farfetch_d/front.png";
+    } else if (id.toLowerCase() == "unown") {
+      imgName = "front_a.png";
+    } else if (id.toLowerCase() == "none") {
+      imgName = "../circled_question_mark/front.png";
+    } else if (id.toLowerCase().startsWith("old_unown")) {
+      imgName = "../double_question_mark/front.png";
     }
 
     return path.join(

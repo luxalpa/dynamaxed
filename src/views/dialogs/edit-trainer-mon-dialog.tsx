@@ -7,6 +7,8 @@ import { PathManager } from "@/modules/path-manager";
 import { modifiers } from "vue-tsx-support";
 import { ChooseItemDialog } from "@/views/dialogs/choose-item-dialog";
 import { Item } from "@/components/item";
+import { ChoosePokemonDialog } from "@/views/dialogs/choose-pokemon-dialog";
+import { TrainerMon } from "@/components/trainer-mon";
 
 const maxLevel = 100;
 const maxIV = 255;
@@ -32,6 +34,16 @@ class EditTrainerMonDialogCmp extends Vue {
     const item = await DialogManager.openDialog(ChooseItemDialog, "");
     if (item !== undefined) {
       Vue.set(this.mon, "heldItem", item);
+    }
+  }
+
+  async changePokemon() {
+    const mon = await DialogManager.openDialog(
+      ChoosePokemonDialog,
+      this.mon.species
+    );
+    if (mon !== undefined) {
+      this.mon.species = mon;
     }
   }
 
@@ -93,10 +105,11 @@ class EditTrainerMonDialogCmp extends Vue {
       <v-card class="dialog">
         <v-container>
           <DialogEntry label="Pokemon">
-            <v-btn height={80}>
-              <div class="party-pic">
-                <img src={PathManager.pokePic(this.mon.species)} />
-              </div>
+            <v-btn height={90} width={90} onclick={() => this.changePokemon()}>
+              <TrainerMon species={this.mon.species} />
+              {/*<div class="party-pic">*/}
+              {/*  <img src={PathManager.pokePic(this.mon.species)} />*/}
+              {/*</div>*/}
             </v-btn>
           </DialogEntry>
           <DialogEntry label="Level">

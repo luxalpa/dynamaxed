@@ -111,23 +111,6 @@ class EditTrainerDialogCmp extends Vue {
 
     return (
       <v-card class="dialog">
-        <v-toolbar dense tile flat>
-          <v-tabs>
-            <v-tab>Trainer</v-tab>
-            {this.trainer.party.map((mon, idx) => (
-              <v-tab>
-                <PokeIcon species={mon.species} />
-                {GameModel.model.pokemon[mon.species].name}
-              </v-tab>
-            ))}
-          </v-tabs>
-          <v-btn icon>
-            <v-icon small disabled={this.trainer.party.length === 6}>
-              fas fa-plus
-            </v-icon>
-          </v-btn>
-          <v-spacer />
-        </v-toolbar>
         <v-container>
           <DialogEntry label="ID">
             <v-text-field solo dense hide-details vModel={this.trainerID} />

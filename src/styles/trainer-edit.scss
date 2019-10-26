@@ -10,6 +10,10 @@
   @include grid(140px);
 }
 
+.pokemon-grid {
+  @include grid(100px);
+}
+
 @mixin hover-effect($margin-top, $margin-left) {
   cursor: pointer;
   &:hover {
