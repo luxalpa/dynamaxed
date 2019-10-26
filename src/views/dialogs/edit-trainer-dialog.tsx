@@ -81,11 +81,16 @@ class EditTrainerDialogCmp extends Vue {
   }
 
   async addItem() {
-    const item = await DialogManager.openDialog(ChooseItemDialog, "").catch(
-      CATCH_IGNORE
-    );
+    const item = await DialogManager.openDialog(ChooseItemDialog, "");
     if (item) {
       this.trainer.items.push(item);
+    }
+  }
+
+  async changeItem(index: number) {
+    const item = await DialogManager.openDialog(ChooseItemDialog, "");
+    if (item) {
+      Vue.set(this.trainer.items, index, item);
     }
   }
 
@@ -159,35 +164,27 @@ class EditTrainerDialogCmp extends Vue {
             </v-col>
           </v-row>
           <DialogEntry label="Items">
-            <v-list elevation={2} dense class="mb-5">
-              {this.trainer.items.map((item, index) => (
-                <v-list-item>
-                  <v-list-item-content>
-                    <v-list-item-title>
-                      <Item itemID={item} />
-                    </v-list-item-title>
-                  </v-list-item-content>
-                  <v-list-item-action>
-                    <v-btn
-                      icon
-                      small
-                      onclick={modifiers.stop(() => {
-                        this.removeItem(index);
-                      })}
-                    >
-                      <v-icon small>fas fa-times</v-icon>
-                    </v-btn>
-                  </v-list-item-action>
-                </v-list-item>
-              ))}
-              {this.trainer.items.length < 4 && (
-                <v-list-item>
-                  <v-list-item-content>
-                    <v-btn onclick={() => this.addItem()}>Add Item</v-btn>
-                  </v-list-item-content>
-                </v-list-item>
-              )}
-            </v-list>
+            <v-card class="mb-5">
+              {this.trainer.items.map((item, index) => [
+                <v-chip
+                  close
+                  label
+                  onclick={() => this.changeItem(index)}
+                  {...{ on: { "click:close": () => this.removeItem(index) } }}
+                  class="mt-2 ml-2"
+                >
+                  <Item itemID={item} />
+                </v-chip>,
+                <br />
+              ])}
+              <v-btn
+                onclick={() => this.addItem()}
+                class="ma-2"
+                disabled={this.trainer.items.length >= 4}
+              >
+                Add Item
+              </v-btn>
+            </v-card>
           </DialogEntry>
           <DialogEntry label="AI Flags">
             <v-btn onclick={() => this.editFlags()}>Edit Flags</v-btn>

@@ -65,30 +65,25 @@ class EditTrainerMonDialogCmp extends Vue {
 
   get heldItemEntry() {
     if (this.mon.heldItem === undefined) {
-      return <v-btn onclick={() => this.chooseItem()}>Add</v-btn>;
+      return (
+        <v-btn onclick={() => this.chooseItem()}>
+          <v-icon small left>
+            fas fa-plus
+          </v-icon>
+          Add
+        </v-btn>
+      );
     } else {
       return (
-        <v-list dense>
-          <v-list-item onclick={() => this.chooseItem()}>
-            <v-list-item-content>
-              <v-list-item-title>
-                <Item itemID={this.mon.heldItem} />
-              </v-list-item-title>
-            </v-list-item-content>
-
-            <v-list-item-action>
-              <v-btn
-                icon
-                small
-                onclick={modifiers.stop(() => {
-                  this.removeHeldItem();
-                })}
-              >
-                <v-icon small>fas fa-times</v-icon>
-              </v-btn>
-            </v-list-item-action>
-          </v-list-item>
-        </v-list>
+        <v-chip
+          close
+          label
+          onclick={() => this.chooseItem()}
+          {...{ on: { "click:close": () => this.removeHeldItem() } }}
+          class="mt-1"
+        >
+          <Item itemID={this.mon.heldItem} />
+        </v-chip>
       );
     }
   }
