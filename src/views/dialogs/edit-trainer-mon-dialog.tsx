@@ -72,7 +72,7 @@ class EditTrainerMonDialogCmp extends Vue {
   }
 
   get ivRule() {
-    return this.mon.iv >= 0 && this.mon.lvl <= maxIV;
+    return this.mon.iv >= 0 && this.mon.iv <= maxIV;
   }
 
   get heldItemEntry() {
@@ -107,9 +107,6 @@ class EditTrainerMonDialogCmp extends Vue {
           <DialogEntry label="Pokemon">
             <v-btn height={90} width={90} onclick={() => this.changePokemon()}>
               <TrainerMon species={this.mon.species} />
-              {/*<div class="party-pic">*/}
-              {/*  <img src={PathManager.pokePic(this.mon.species)} />*/}
-              {/*</div>*/}
             </v-btn>
           </DialogEntry>
           <DialogEntry label="Level">
@@ -118,7 +115,7 @@ class EditTrainerMonDialogCmp extends Vue {
               dense
               hide-details
               type="number"
-              style={{ width: "96px" }}
+              style={{ width: "90px" }}
               min={0}
               max={maxLevel}
               vModel={this.level}
@@ -131,7 +128,7 @@ class EditTrainerMonDialogCmp extends Vue {
               dense
               hide-details
               type="number"
-              style={{ width: "96px" }}
+              style={{ width: "90px" }}
               min={0}
               max={maxIV}
               vModel={this.iv}
@@ -139,6 +136,9 @@ class EditTrainerMonDialogCmp extends Vue {
             />
           </DialogEntry>
           <DialogEntry label="Held Item">{this.heldItemEntry}</DialogEntry>
+          <DialogEntry label="">
+            <v-btn>Delete this Pokemon</v-btn>
+          </DialogEntry>
         </v-container>
         <v-card-actions>
           <v-btn text large onclick={() => DialogManager.reject()}>
@@ -164,6 +164,6 @@ export const EditTrainerMonDialog: DialogOptions<
   TrainerPartyMon
 > = {
   component: EditTrainerMonDialogCmp,
-  modal: true,
+  modal: false,
   maxWidth: 500
 };

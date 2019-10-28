@@ -7,7 +7,12 @@ export class TrainerMon extends Vue {
   @Prop() readonly species!: string;
 
   get mon() {
-    return GameModel.model.pokemon[this.species];
+    const mon = GameModel.model.pokemon[this.species];
+    if (mon) {
+      return mon;
+    } else {
+      return GameModel.model.pokemon["NONE"];
+    }
   }
 
   render() {

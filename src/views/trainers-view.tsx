@@ -12,6 +12,7 @@ import { TrainerMon } from "@/components/trainer-mon";
 })
 export class TrainersView extends Vue {
   async editPartyMon(trainer: Trainer, partyIndex: number) {
+    console.log(trainer.party[partyIndex] || NoTrainerPartyMon);
     let mon = await DialogManager.openDialog(
       EditTrainerMonDialog,
       trainer.party[partyIndex] || NoTrainerPartyMon

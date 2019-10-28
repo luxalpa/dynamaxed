@@ -1461,7 +1461,6 @@
         "iv": 255,
         "lvl": 26,
         "species": "SWELLOW",
-        "heldItem": "NONE",
         "moves": ["QUICK_ATTACK", "AGILITY", "WING_ATTACK"]
       }
     ],
@@ -1480,7 +1479,6 @@
         "iv": 255,
         "lvl": 26,
         "species": "SPINDA",
-        "heldItem": "NONE",
         "moves": ["TEETER_DANCE", "DIZZY_PUNCH", "FOCUS_PUNCH"]
       }
     ],
@@ -1518,7 +1516,6 @@
         "iv": 255,
         "lvl": 26,
         "species": "VIGOROTH",
-        "heldItem": "NONE",
         "moves": ["FOCUS_ENERGY", "SLASH"]
       }
     ],
@@ -1915,7 +1912,6 @@
         "iv": 255,
         "lvl": 26,
         "species": "DELCATTY",
-        "heldItem": "NONE",
         "moves": ["FAINT_ATTACK", "SHOCK_WAVE"]
       }
     ],
@@ -1934,7 +1930,6 @@
         "iv": 255,
         "lvl": 26,
         "species": "WIGGLYTUFF",
-        "heldItem": "NONE",
         "moves": ["DEFENSE_CURL", "DOUBLE_EDGE", "SHADOW_BALL"]
       }
     ],
@@ -1953,7 +1948,6 @@
         "iv": 255,
         "lvl": 26,
         "species": "ZANGOOSE",
-        "heldItem": "NONE",
         "moves": ["SWORDS_DANCE", "SLASH"]
       }
     ],
@@ -5571,28 +5565,24 @@
         "iv": 250,
         "lvl": 46,
         "species": "MIGHTYENA",
-        "heldItem": "NONE",
         "moves": ["ROAR", "DOUBLE_EDGE", "SAND_ATTACK", "CRUNCH"]
       },
       {
         "iv": 250,
         "lvl": 48,
         "species": "SHIFTRY",
-        "heldItem": "NONE",
         "moves": ["TORMENT", "DOUBLE_TEAM", "SWAGGER", "EXTRASENSORY"]
       },
       {
         "iv": 250,
         "lvl": 46,
         "species": "CACTURNE",
-        "heldItem": "NONE",
         "moves": ["LEECH_SEED", "FAINT_ATTACK", "NEEDLE_ARM", "COTTON_SPORE"]
       },
       {
         "iv": 250,
         "lvl": 48,
         "species": "CRAWDAUNT",
-        "heldItem": "NONE",
         "moves": ["SURF", "SWORDS_DANCE", "STRENGTH", "FACADE"]
       },
       {
@@ -5618,28 +5608,24 @@
         "iv": 250,
         "lvl": 48,
         "species": "DUSCLOPS",
-        "heldItem": "NONE",
         "moves": ["SHADOW_PUNCH", "CONFUSE_RAY", "CURSE", "PROTECT"]
       },
       {
         "iv": 250,
         "lvl": 49,
         "species": "BANETTE",
-        "heldItem": "NONE",
         "moves": ["SHADOW_BALL", "GRUDGE", "WILL_O_WISP", "FAINT_ATTACK"]
       },
       {
         "iv": 250,
         "lvl": 50,
         "species": "SABLEYE",
-        "heldItem": "NONE",
         "moves": ["SHADOW_BALL", "DOUBLE_TEAM", "NIGHT_SHADE", "FAINT_ATTACK"]
       },
       {
         "iv": 250,
         "lvl": 49,
         "species": "BANETTE",
-        "heldItem": "NONE",
         "moves": ["SHADOW_BALL", "PSYCHIC", "THUNDERBOLT", "FACADE"]
       },
       {
@@ -5665,28 +5651,24 @@
         "iv": 250,
         "lvl": 50,
         "species": "SEALEO",
-        "heldItem": "NONE",
         "moves": ["ENCORE", "BODY_SLAM", "HAIL", "ICE_BALL"]
       },
       {
         "iv": 250,
         "lvl": 50,
         "species": "GLALIE",
-        "heldItem": "NONE",
         "moves": ["LIGHT_SCREEN", "CRUNCH", "ICY_WIND", "ICE_BEAM"]
       },
       {
         "iv": 250,
         "lvl": 52,
         "species": "SEALEO",
-        "heldItem": "NONE",
         "moves": ["ATTRACT", "DOUBLE_EDGE", "HAIL", "BLIZZARD"]
       },
       {
         "iv": 250,
         "lvl": 52,
         "species": "GLALIE",
-        "heldItem": "NONE",
         "moves": ["SHADOW_BALL", "EXPLOSION", "HAIL", "ICE_BEAM"]
       },
       {
@@ -5712,28 +5694,24 @@
         "iv": 250,
         "lvl": 52,
         "species": "SHELGON",
-        "heldItem": "NONE",
         "moves": ["ROCK_TOMB", "DRAGON_CLAW", "PROTECT", "DOUBLE_EDGE"]
       },
       {
         "iv": 250,
         "lvl": 54,
         "species": "ALTARIA",
-        "heldItem": "NONE",
         "moves": ["DOUBLE_EDGE", "DRAGON_BREATH", "DRAGON_DANCE", "AERIAL_ACE"]
       },
       {
         "iv": 250,
         "lvl": 53,
         "species": "KINGDRA",
-        "heldItem": "NONE",
         "moves": ["SMOKESCREEN", "DRAGON_DANCE", "SURF", "BODY_SLAM"]
       },
       {
         "iv": 250,
         "lvl": 53,
         "species": "FLYGON",
-        "heldItem": "NONE",
         "moves": ["FLAMETHROWER", "CRUNCH", "DRAGON_BREATH", "EARTHQUAKE"]
       },
       {
@@ -5759,14 +5737,12 @@
         "iv": 100,
         "lvl": 12,
         "species": "GEODUDE",
-        "heldItem": "NONE",
         "moves": ["TACKLE", "DEFENSE_CURL", "ROCK_THROW", "ROCK_TOMB"]
       },
       {
         "iv": 100,
         "lvl": 12,
         "species": "GEODUDE",
-        "heldItem": "NONE",
         "moves": ["TACKLE", "DEFENSE_CURL", "ROCK_THROW", "ROCK_TOMB"]
       },
       {
@@ -5792,14 +5768,12 @@
         "iv": 100,
         "lvl": 16,
         "species": "MACHOP",
-        "heldItem": "NONE",
         "moves": ["KARATE_CHOP", "LOW_KICK", "SEISMIC_TOSS", "BULK_UP"]
       },
       {
         "iv": 100,
         "lvl": 16,
         "species": "MEDITITE",
-        "heldItem": "NONE",
         "moves": ["FOCUS_PUNCH", "LIGHT_SCREEN", "REFLECT", "BULK_UP"]
       },
       {
@@ -5825,21 +5799,18 @@
         "iv": 200,
         "lvl": 20,
         "species": "VOLTORB",
-        "heldItem": "NONE",
         "moves": ["ROLLOUT", "SPARK", "SELF_DESTRUCT", "SHOCK_WAVE"]
       },
       {
         "iv": 200,
         "lvl": 20,
         "species": "ELECTRIKE",
-        "heldItem": "NONE",
         "moves": ["SHOCK_WAVE", "LEER", "QUICK_ATTACK", "HOWL"]
       },
       {
         "iv": 220,
         "lvl": 22,
         "species": "MAGNETON",
-        "heldItem": "NONE",
         "moves": ["SUPERSONIC", "SHOCK_WAVE", "THUNDER_WAVE", "SONIC_BOOM"]
       },
       {
@@ -5865,21 +5836,18 @@
         "iv": 200,
         "lvl": 24,
         "species": "NUMEL",
-        "heldItem": "NONE",
         "moves": ["OVERHEAT", "TAKE_DOWN", "MAGNITUDE", "SUNNY_DAY"]
       },
       {
         "iv": 200,
         "lvl": 24,
         "species": "SLUGMA",
-        "heldItem": "NONE",
         "moves": ["OVERHEAT", "SMOG", "LIGHT_SCREEN", "SUNNY_DAY"]
       },
       {
         "iv": 250,
         "lvl": 26,
         "species": "CAMERUPT",
-        "heldItem": "NONE",
         "moves": ["OVERHEAT", "TACKLE", "SUNNY_DAY", "ATTRACT"]
       },
       {
@@ -5905,21 +5873,18 @@
         "iv": 200,
         "lvl": 27,
         "species": "SPINDA",
-        "heldItem": "NONE",
         "moves": ["TEETER_DANCE", "PSYBEAM", "FACADE", "ENCORE"]
       },
       {
         "iv": 200,
         "lvl": 27,
         "species": "VIGOROTH",
-        "heldItem": "NONE",
         "moves": ["SLASH", "FACADE", "ENCORE", "FAINT_ATTACK"]
       },
       {
         "iv": 200,
         "lvl": 29,
         "species": "LINOONE",
-        "heldItem": "NONE",
         "moves": ["SLASH", "BELLY_DRUM", "FACADE", "HEADBUTT"]
       },
       {
@@ -5945,28 +5910,24 @@
         "iv": 210,
         "lvl": 29,
         "species": "SWABLU",
-        "heldItem": "NONE",
         "moves": ["PERISH_SONG", "MIRROR_MOVE", "SAFEGUARD", "AERIAL_ACE"]
       },
       {
         "iv": 210,
         "lvl": 29,
         "species": "TROPIUS",
-        "heldItem": "NONE",
         "moves": ["SUNNY_DAY", "AERIAL_ACE", "SOLAR_BEAM", "SYNTHESIS"]
       },
       {
         "iv": 210,
         "lvl": 30,
         "species": "PELIPPER",
-        "heldItem": "NONE",
         "moves": ["WATER_GUN", "SUPERSONIC", "PROTECT", "AERIAL_ACE"]
       },
       {
         "iv": 220,
         "lvl": 31,
         "species": "SKARMORY",
-        "heldItem": "NONE",
         "moves": ["SAND_ATTACK", "FURY_ATTACK", "STEEL_WING", "AERIAL_ACE"]
       },
       {
@@ -5992,14 +5953,12 @@
         "iv": 250,
         "lvl": 41,
         "species": "CLAYDOL",
-        "heldItem": "NONE",
         "moves": ["EARTHQUAKE", "ANCIENT_POWER", "PSYCHIC", "LIGHT_SCREEN"]
       },
       {
         "iv": 250,
         "lvl": 41,
         "species": "XATU",
-        "heldItem": "NONE",
         "moves": ["PSYCHIC", "SUNNY_DAY", "CONFUSE_RAY", "CALM_MIND"]
       },
       {
@@ -6032,28 +5991,24 @@
         "iv": 200,
         "lvl": 41,
         "species": "LUVDISC",
-        "heldItem": "NONE",
         "moves": ["WATER_PULSE", "ATTRACT", "SWEET_KISS", "FLAIL"]
       },
       {
         "iv": 200,
         "lvl": 41,
         "species": "WHISCASH",
-        "heldItem": "NONE",
         "moves": ["RAIN_DANCE", "WATER_PULSE", "AMNESIA", "EARTHQUAKE"]
       },
       {
         "iv": 200,
         "lvl": 43,
         "species": "SEALEO",
-        "heldItem": "NONE",
         "moves": ["ENCORE", "BODY_SLAM", "AURORA_BEAM", "WATER_PULSE"]
       },
       {
         "iv": 200,
         "lvl": 43,
         "species": "CRAWDAUNT",
-        "heldItem": "NONE",
         "moves": ["WATER_PULSE", "CRABHAMMER", "TAUNT", "LEER"]
       },
       {
@@ -7436,35 +7391,30 @@
         "iv": 255,
         "lvl": 57,
         "species": "WAILORD",
-        "heldItem": "NONE",
         "moves": ["RAIN_DANCE", "WATER_SPOUT", "DOUBLE_EDGE", "BLIZZARD"]
       },
       {
         "iv": 255,
         "lvl": 55,
         "species": "TENTACRUEL",
-        "heldItem": "NONE",
         "moves": ["TOXIC", "HYDRO_PUMP", "SLUDGE_BOMB", "ICE_BEAM"]
       },
       {
         "iv": 255,
         "lvl": 56,
         "species": "LUDICOLO",
-        "heldItem": "NONE",
         "moves": ["GIGA_DRAIN", "SURF", "LEECH_SEED", "DOUBLE_TEAM"]
       },
       {
         "iv": 255,
         "lvl": 56,
         "species": "WHISCASH",
-        "heldItem": "NONE",
         "moves": ["EARTHQUAKE", "SURF", "AMNESIA", "HYPER_BEAM"]
       },
       {
         "iv": 255,
         "lvl": 56,
         "species": "GYARADOS",
-        "heldItem": "NONE",
         "moves": ["DRAGON_DANCE", "EARTHQUAKE", "HYPER_BEAM", "SURF"]
       },
       {
@@ -9181,14 +9131,12 @@
         "iv": 0,
         "lvl": 43,
         "species": "CLAYDOL",
-        "heldItem": "NONE",
         "moves": ["SKILL_SWAP", "EARTHQUAKE"]
       },
       {
         "iv": 0,
         "lvl": 43,
         "species": "LANTURN",
-        "heldItem": "NONE",
         "moves": ["THUNDERBOLT", "EARTHQUAKE"]
       }
     ],
@@ -9384,21 +9332,18 @@
         "iv": 40,
         "lvl": 33,
         "species": "KOFFING",
-        "heldItem": "NONE",
         "moves": ["POISON_GAS", "TACKLE", "SLUDGE"]
       },
       {
         "iv": 40,
         "lvl": 33,
         "species": "KOFFING",
-        "heldItem": "NONE",
         "moves": ["POISON_GAS", "TACKLE", "SLUDGE", "SELF_DESTRUCT"]
       },
       {
         "iv": 40,
         "lvl": 33,
         "species": "KOFFING",
-        "heldItem": "NONE",
         "moves": ["POISON_GAS", "TACKLE", "SLUDGE", "SELF_DESTRUCT"]
       },
       {
@@ -11190,7 +11135,6 @@
         "iv": 255,
         "lvl": 34,
         "species": "MANECTRIC",
-        "heldItem": "NONE",
         "moves": ["BITE", "ROAR", "THUNDER_WAVE", "THUNDERBOLT"]
       }
     ],
@@ -12902,14 +12846,12 @@
         "iv": 100,
         "lvl": 32,
         "species": "MANECTRIC",
-        "heldItem": "NONE",
         "moves": ["THUNDER", "THUNDER_WAVE", "QUICK_ATTACK"]
       },
       {
         "iv": 100,
         "lvl": 32,
         "species": "LINOONE",
-        "heldItem": "NONE",
         "moves": ["SURF", "THIEF"]
       }
     ],
@@ -17238,7 +17180,6 @@
         "iv": 255,
         "lvl": 32,
         "species": "GOLEM",
-        "heldItem": "NONE",
         "moves": ["PROTECT", "ROLLOUT", "MAGNITUDE", "EXPLOSION"]
       },
       {
@@ -17252,7 +17193,6 @@
         "iv": 255,
         "lvl": 35,
         "species": "ONIX",
-        "heldItem": "NONE",
         "moves": ["IRON_TAIL", "EXPLOSION", "ROAR", "ROCK_SLIDE"]
       },
       {
@@ -17278,14 +17218,12 @@
         "iv": 255,
         "lvl": 37,
         "species": "OMANYTE",
-        "heldItem": "NONE",
         "moves": ["PROTECT", "ICE_BEAM", "ROCK_SLIDE", "SURF"]
       },
       {
         "iv": 255,
         "lvl": 37,
         "species": "GOLEM",
-        "heldItem": "NONE",
         "moves": ["PROTECT", "ROLLOUT", "MAGNITUDE", "EXPLOSION"]
       },
       {
@@ -17299,7 +17237,6 @@
         "iv": 255,
         "lvl": 40,
         "species": "ONIX",
-        "heldItem": "NONE",
         "moves": ["IRON_TAIL", "EXPLOSION", "ROAR", "ROCK_SLIDE"]
       },
       {
@@ -17325,14 +17262,12 @@
         "iv": 255,
         "lvl": 42,
         "species": "OMASTAR",
-        "heldItem": "NONE",
         "moves": ["PROTECT", "ICE_BEAM", "ROCK_SLIDE", "SURF"]
       },
       {
         "iv": 255,
         "lvl": 42,
         "species": "GOLEM",
-        "heldItem": "NONE",
         "moves": ["PROTECT", "ROLLOUT", "EARTHQUAKE", "EXPLOSION"]
       },
       {
@@ -17346,7 +17281,6 @@
         "iv": 255,
         "lvl": 45,
         "species": "ONIX",
-        "heldItem": "NONE",
         "moves": ["IRON_TAIL", "EXPLOSION", "ROAR", "ROCK_SLIDE"]
       },
       {
@@ -17372,21 +17306,18 @@
         "iv": 255,
         "lvl": 47,
         "species": "AERODACTYL",
-        "heldItem": "NONE",
         "moves": ["ROCK_SLIDE", "HYPER_BEAM", "SUPERSONIC", "PROTECT"]
       },
       {
         "iv": 255,
         "lvl": 47,
         "species": "GOLEM",
-        "heldItem": "NONE",
         "moves": ["FOCUS_PUNCH", "ROLLOUT", "EARTHQUAKE", "EXPLOSION"]
       },
       {
         "iv": 255,
         "lvl": 47,
         "species": "OMASTAR",
-        "heldItem": "NONE",
         "moves": ["PROTECT", "ICE_BEAM", "ROCK_SLIDE", "SURF"]
       },
       {
@@ -17400,7 +17331,6 @@
         "iv": 255,
         "lvl": 50,
         "species": "STEELIX",
-        "heldItem": "NONE",
         "moves": ["IRON_TAIL", "EXPLOSION", "ROAR", "ROCK_SLIDE"]
       },
       {
@@ -17433,14 +17363,12 @@
         "iv": 255,
         "lvl": 33,
         "species": "MEDITITE",
-        "heldItem": "NONE",
         "moves": ["PSYCHIC", "LIGHT_SCREEN", "REFLECT", "FOCUS_PUNCH"]
       },
       {
         "iv": 255,
         "lvl": 35,
         "species": "HITMONTOP",
-        "heldItem": "NONE",
         "moves": ["PURSUIT", "COUNTER", "PROTECT", "TRIPLE_KICK"]
       },
       {
@@ -17473,14 +17401,12 @@
         "iv": 255,
         "lvl": 38,
         "species": "MEDICHAM",
-        "heldItem": "NONE",
         "moves": ["PSYCHIC", "LIGHT_SCREEN", "REFLECT", "FOCUS_PUNCH"]
       },
       {
         "iv": 255,
         "lvl": 40,
         "species": "HITMONTOP",
-        "heldItem": "NONE",
         "moves": ["PURSUIT", "COUNTER", "PROTECT", "TRIPLE_KICK"]
       },
       {
@@ -17506,7 +17432,6 @@
         "iv": 255,
         "lvl": 40,
         "species": "HITMONCHAN",
-        "heldItem": "NONE",
         "moves": ["SKY_UPPERCUT", "PROTECT", "FIRE_PUNCH", "ICE_PUNCH"]
       },
       {
@@ -17520,14 +17445,12 @@
         "iv": 255,
         "lvl": 43,
         "species": "MEDICHAM",
-        "heldItem": "NONE",
         "moves": ["FOCUS_PUNCH", "LIGHT_SCREEN", "REFLECT", "PSYCHIC"]
       },
       {
         "iv": 255,
         "lvl": 45,
         "species": "HITMONTOP",
-        "heldItem": "NONE",
         "moves": ["PURSUIT", "COUNTER", "PROTECT", "TRIPLE_KICK"]
       },
       {
@@ -17553,14 +17476,12 @@
         "iv": 255,
         "lvl": 46,
         "species": "HITMONLEE",
-        "heldItem": "NONE",
         "moves": ["MEGA_KICK", "FOCUS_PUNCH", "EARTHQUAKE", "BULK_UP"]
       },
       {
         "iv": 255,
         "lvl": 46,
         "species": "HITMONCHAN",
-        "heldItem": "NONE",
         "moves": ["SKY_UPPERCUT", "PROTECT", "FIRE_PUNCH", "ICE_PUNCH"]
       },
       {
@@ -17574,14 +17495,12 @@
         "iv": 255,
         "lvl": 48,
         "species": "MEDICHAM",
-        "heldItem": "NONE",
         "moves": ["FOCUS_PUNCH", "LIGHT_SCREEN", "REFLECT", "PSYCHIC"]
       },
       {
         "iv": 255,
         "lvl": 50,
         "species": "HITMONTOP",
-        "heldItem": "NONE",
         "moves": ["PURSUIT", "COUNTER", "PROTECT", "TRIPLE_KICK"]
       },
       {
@@ -17607,14 +17526,12 @@
         "iv": 255,
         "lvl": 36,
         "species": "MAREEP",
-        "heldItem": "NONE",
         "moves": ["THUNDER", "PROTECT", "THUNDER_WAVE", "LIGHT_SCREEN"]
       },
       {
         "iv": 255,
         "lvl": 36,
         "species": "ELECTRODE",
-        "heldItem": "NONE",
         "moves": ["ROLLOUT", "THUNDER", "EXPLOSION", "RAIN_DANCE"]
       },
       {
@@ -17647,21 +17564,18 @@
         "iv": 255,
         "lvl": 39,
         "species": "PIKACHU",
-        "heldItem": "NONE",
         "moves": ["THUNDER", "SLAM", "RAIN_DANCE", "SHOCK_WAVE"]
       },
       {
         "iv": 255,
         "lvl": 41,
         "species": "FLAAFFY",
-        "heldItem": "NONE",
         "moves": ["THUNDER", "PROTECT", "THUNDER_WAVE", "LIGHT_SCREEN"]
       },
       {
         "iv": 255,
         "lvl": 41,
         "species": "ELECTRODE",
-        "heldItem": "NONE",
         "moves": ["ROLLOUT", "THUNDER", "EXPLOSION", "RAIN_DANCE"]
       },
       {
@@ -17694,21 +17608,18 @@
         "iv": 255,
         "lvl": 44,
         "species": "RAICHU",
-        "heldItem": "NONE",
         "moves": ["THUNDER", "SLAM", "RAIN_DANCE", "PROTECT"]
       },
       {
         "iv": 255,
         "lvl": 46,
         "species": "AMPHAROS",
-        "heldItem": "NONE",
         "moves": ["THUNDER", "PROTECT", "THUNDER_WAVE", "LIGHT_SCREEN"]
       },
       {
         "iv": 255,
         "lvl": 46,
         "species": "ELECTRODE",
-        "heldItem": "NONE",
         "moves": ["ROLLOUT", "THUNDER", "EXPLOSION", "RAIN_DANCE"]
       },
       {
@@ -17741,28 +17652,24 @@
         "iv": 255,
         "lvl": 50,
         "species": "ELECTABUZZ",
-        "heldItem": "NONE",
         "moves": ["SWIFT", "FOCUS_PUNCH", "THUNDER_PUNCH", "LIGHT_SCREEN"]
       },
       {
         "iv": 255,
         "lvl": 51,
         "species": "RAICHU",
-        "heldItem": "NONE",
         "moves": ["THUNDER", "SLAM", "RAIN_DANCE", "PROTECT"]
       },
       {
         "iv": 255,
         "lvl": 51,
         "species": "AMPHAROS",
-        "heldItem": "NONE",
         "moves": ["THUNDER", "PROTECT", "THUNDER_WAVE", "LIGHT_SCREEN"]
       },
       {
         "iv": 255,
         "lvl": 53,
         "species": "ELECTRODE",
-        "heldItem": "NONE",
         "moves": ["ROLLOUT", "THUNDER", "EXPLOSION", "RAIN_DANCE"]
       },
       {
@@ -17802,7 +17709,6 @@
         "iv": 255,
         "lvl": 36,
         "species": "PONYTA",
-        "heldItem": "NONE",
         "moves": ["FLAMETHROWER", "ATTRACT", "SOLAR_BEAM", "BOUNCE"]
       },
       {
@@ -17835,7 +17741,6 @@
         "iv": 255,
         "lvl": 41,
         "species": "GROWLITHE",
-        "heldItem": "NONE",
         "moves": ["HELPING_HAND", "FLAMETHROWER", "ROAR", "SUNNY_DAY"]
       },
       {
@@ -17849,7 +17754,6 @@
         "iv": 255,
         "lvl": 41,
         "species": "PONYTA",
-        "heldItem": "NONE",
         "moves": ["FLAMETHROWER", "ATTRACT", "SOLAR_BEAM", "BOUNCE"]
       },
       {
@@ -17882,14 +17786,12 @@
         "iv": 255,
         "lvl": 46,
         "species": "HOUNDOUR",
-        "heldItem": "NONE",
         "moves": ["ROAR", "SOLAR_BEAM", "TAUNT", "SUNNY_DAY"]
       },
       {
         "iv": 255,
         "lvl": 46,
         "species": "GROWLITHE",
-        "heldItem": "NONE",
         "moves": ["HELPING_HAND", "FLAMETHROWER", "SUNNY_DAY", "ROAR"]
       },
       {
@@ -17903,7 +17805,6 @@
         "iv": 255,
         "lvl": 46,
         "species": "RAPIDASH",
-        "heldItem": "NONE",
         "moves": ["FLAMETHROWER", "ATTRACT", "SOLAR_BEAM", "BOUNCE"]
       },
       {
@@ -17936,7 +17837,6 @@
         "iv": 255,
         "lvl": 51,
         "species": "ARCANINE",
-        "heldItem": "NONE",
         "moves": ["HELPING_HAND", "FLAMETHROWER", "SUNNY_DAY", "ROAR"]
       },
       {
@@ -17950,14 +17850,12 @@
         "iv": 255,
         "lvl": 51,
         "species": "HOUNDOOM",
-        "heldItem": "NONE",
         "moves": ["ROAR", "SOLAR_BEAM", "TAUNT", "SUNNY_DAY"]
       },
       {
         "iv": 255,
         "lvl": 51,
         "species": "RAPIDASH",
-        "heldItem": "NONE",
         "moves": ["FLAMETHROWER", "ATTRACT", "SOLAR_BEAM", "BOUNCE"]
       },
       {
@@ -17990,7 +17888,6 @@
         "iv": 255,
         "lvl": 42,
         "species": "CHANSEY",
-        "heldItem": "NONE",
         "moves": ["LIGHT_SCREEN", "SING", "SKILL_SWAP", "FOCUS_PUNCH"]
       },
       {
@@ -18004,7 +17901,6 @@
         "iv": 255,
         "lvl": 43,
         "species": "SPINDA",
-        "heldItem": "NONE",
         "moves": ["TEETER_DANCE", "SKILL_SWAP", "FACADE", "HYPNOSIS"]
       },
       {
@@ -18037,21 +17933,18 @@
         "iv": 255,
         "lvl": 47,
         "species": "CHANSEY",
-        "heldItem": "NONE",
         "moves": ["LIGHT_SCREEN", "SING", "SKILL_SWAP", "FOCUS_PUNCH"]
       },
       {
         "iv": 255,
         "lvl": 45,
         "species": "KANGASKHAN",
-        "heldItem": "NONE",
         "moves": ["FAKE_OUT", "DIZZY_PUNCH", "ENDURE", "REVERSAL"]
       },
       {
         "iv": 255,
         "lvl": 48,
         "species": "SPINDA",
-        "heldItem": "NONE",
         "moves": ["TEETER_DANCE", "SKILL_SWAP", "FACADE", "HYPNOSIS"]
       },
       {
@@ -18084,21 +17977,18 @@
         "iv": 255,
         "lvl": 52,
         "species": "BLISSEY",
-        "heldItem": "NONE",
         "moves": ["LIGHT_SCREEN", "SING", "SKILL_SWAP", "FOCUS_PUNCH"]
       },
       {
         "iv": 255,
         "lvl": 50,
         "species": "KANGASKHAN",
-        "heldItem": "NONE",
         "moves": ["FAKE_OUT", "DIZZY_PUNCH", "ENDURE", "REVERSAL"]
       },
       {
         "iv": 255,
         "lvl": 53,
         "species": "SPINDA",
-        "heldItem": "NONE",
         "moves": ["TEETER_DANCE", "SKILL_SWAP", "FACADE", "HYPNOSIS"]
       },
       {
@@ -18131,28 +18021,24 @@
         "iv": 255,
         "lvl": 57,
         "species": "BLISSEY",
-        "heldItem": "NONE",
         "moves": ["PROTECT", "SING", "SKILL_SWAP", "FOCUS_PUNCH"]
       },
       {
         "iv": 255,
         "lvl": 55,
         "species": "KANGASKHAN",
-        "heldItem": "NONE",
         "moves": ["FAKE_OUT", "DIZZY_PUNCH", "ENDURE", "REVERSAL"]
       },
       {
         "iv": 255,
         "lvl": 57,
         "species": "TAUROS",
-        "heldItem": "NONE",
         "moves": ["TAKE_DOWN", "PROTECT", "FIRE_BLAST", "EARTHQUAKE"]
       },
       {
         "iv": 255,
         "lvl": 58,
         "species": "SPINDA",
-        "heldItem": "NONE",
         "moves": ["TEETER_DANCE", "SKILL_SWAP", "FACADE", "HYPNOSIS"]
       },
       {
@@ -18185,21 +18071,18 @@
         "iv": 255,
         "lvl": 38,
         "species": "TROPIUS",
-        "heldItem": "NONE",
         "moves": ["SUNNY_DAY", "AERIAL_ACE", "SOLAR_BEAM", "EARTHQUAKE"]
       },
       {
         "iv": 255,
         "lvl": 41,
         "species": "PELIPPER",
-        "heldItem": "NONE",
         "moves": ["SURF", "SUPERSONIC", "PROTECT", "AERIAL_ACE"]
       },
       {
         "iv": 255,
         "lvl": 43,
         "species": "SKARMORY",
-        "heldItem": "NONE",
         "moves": ["WHIRLWIND", "SPIKES", "STEEL_WING", "AERIAL_ACE"]
       },
       {
@@ -18225,14 +18108,12 @@
         "iv": 255,
         "lvl": 43,
         "species": "HOOTHOOT",
-        "heldItem": "NONE",
         "moves": ["HYPNOSIS", "PSYCHIC", "REFLECT", "DREAM_EATER"]
       },
       {
         "iv": 255,
         "lvl": 43,
         "species": "TROPIUS",
-        "heldItem": "NONE",
         "moves": ["SUNNY_DAY", "AERIAL_ACE", "SOLAR_BEAM", "EARTHQUAKE"]
       },
       {
@@ -18246,14 +18127,12 @@
         "iv": 255,
         "lvl": 46,
         "species": "PELIPPER",
-        "heldItem": "NONE",
         "moves": ["SURF", "SUPERSONIC", "PROTECT", "AERIAL_ACE"]
       },
       {
         "iv": 255,
         "lvl": 48,
         "species": "SKARMORY",
-        "heldItem": "NONE",
         "moves": ["WHIRLWIND", "SPIKES", "STEEL_WING", "AERIAL_ACE"]
       },
       {
@@ -18279,14 +18158,12 @@
         "iv": 255,
         "lvl": 48,
         "species": "NOCTOWL",
-        "heldItem": "NONE",
         "moves": ["HYPNOSIS", "PSYCHIC", "REFLECT", "DREAM_EATER"]
       },
       {
         "iv": 255,
         "lvl": 49,
         "species": "TROPIUS",
-        "heldItem": "NONE",
         "moves": ["SUNNY_DAY", "AERIAL_ACE", "SOLAR_BEAM", "EARTHQUAKE"]
       },
       {
@@ -18300,14 +18177,12 @@
         "iv": 255,
         "lvl": 51,
         "species": "PELIPPER",
-        "heldItem": "NONE",
         "moves": ["SURF", "SUPERSONIC", "PROTECT", "AERIAL_ACE"]
       },
       {
         "iv": 255,
         "lvl": 53,
         "species": "SKARMORY",
-        "heldItem": "NONE",
         "moves": ["WHIRLWIND", "SPIKES", "STEEL_WING", "AERIAL_ACE"]
       },
       {
@@ -18333,21 +18208,18 @@
         "iv": 255,
         "lvl": 53,
         "species": "NOCTOWL",
-        "heldItem": "NONE",
         "moves": ["HYPNOSIS", "PSYCHIC", "REFLECT", "DREAM_EATER"]
       },
       {
         "iv": 255,
         "lvl": 54,
         "species": "TROPIUS",
-        "heldItem": "NONE",
         "moves": ["SUNNY_DAY", "AERIAL_ACE", "SOLAR_BEAM", "EARTHQUAKE"]
       },
       {
         "iv": 255,
         "lvl": 55,
         "species": "PELIPPER",
-        "heldItem": "NONE",
         "moves": ["SURF", "SUPERSONIC", "PROTECT", "AERIAL_ACE"]
       },
       {
@@ -18361,7 +18233,6 @@
         "iv": 255,
         "lvl": 58,
         "species": "SKARMORY",
-        "heldItem": "NONE",
         "moves": ["WHIRLWIND", "SPIKES", "STEEL_WING", "AERIAL_ACE"]
       },
       {
@@ -18387,14 +18258,12 @@
         "iv": 255,
         "lvl": 48,
         "species": "SLOWPOKE",
-        "heldItem": "NONE",
         "moves": ["YAWN", "PSYCHIC", "CALM_MIND", "PROTECT"]
       },
       {
         "iv": 255,
         "lvl": 49,
         "species": "CLAYDOL",
-        "heldItem": "NONE",
         "moves": ["EARTHQUAKE", "ANCIENT_POWER", "PSYCHIC", "LIGHT_SCREEN"]
       },
       {
@@ -18434,21 +18303,18 @@
         "iv": 255,
         "lvl": 53,
         "species": "DROWZEE",
-        "heldItem": "NONE",
         "moves": ["HYPNOSIS", "DREAM_EATER", "HEADBUTT", "PROTECT"]
       },
       {
         "iv": 255,
         "lvl": 53,
         "species": "SLOWPOKE",
-        "heldItem": "NONE",
         "moves": ["YAWN", "PSYCHIC", "CALM_MIND", "PROTECT"]
       },
       {
         "iv": 255,
         "lvl": 54,
         "species": "CLAYDOL",
-        "heldItem": "NONE",
         "moves": ["EARTHQUAKE", "EXPLOSION", "PSYCHIC", "LIGHT_SCREEN"]
       },
       {
@@ -18488,21 +18354,18 @@
         "iv": 255,
         "lvl": 58,
         "species": "HYPNO",
-        "heldItem": "NONE",
         "moves": ["HYPNOSIS", "DREAM_EATER", "HEADBUTT", "PROTECT"]
       },
       {
         "iv": 255,
         "lvl": 59,
         "species": "CLAYDOL",
-        "heldItem": "NONE",
         "moves": ["EARTHQUAKE", "EXPLOSION", "PSYCHIC", "LIGHT_SCREEN"]
       },
       {
         "iv": 255,
         "lvl": 58,
         "species": "SLOWPOKE",
-        "heldItem": "NONE",
         "moves": ["YAWN", "PSYCHIC", "CALM_MIND", "PROTECT"]
       },
       {
@@ -18542,21 +18405,18 @@
         "iv": 255,
         "lvl": 63,
         "species": "HYPNO",
-        "heldItem": "NONE",
         "moves": ["HYPNOSIS", "DREAM_EATER", "HEADBUTT", "PROTECT"]
       },
       {
         "iv": 255,
         "lvl": 64,
         "species": "CLAYDOL",
-        "heldItem": "NONE",
         "moves": ["EARTHQUAKE", "EXPLOSION", "PSYCHIC", "LIGHT_SCREEN"]
       },
       {
         "iv": 255,
         "lvl": 63,
         "species": "SLOWKING",
-        "heldItem": "NONE",
         "moves": ["YAWN", "PSYCHIC", "CALM_MIND", "PROTECT"]
       },
       {
@@ -18596,21 +18456,18 @@
         "iv": 255,
         "lvl": 46,
         "species": "POLIWAG",
-        "heldItem": "NONE",
         "moves": ["HYPNOSIS", "RAIN_DANCE", "PROTECT", "HYDRO_PUMP"]
       },
       {
         "iv": 255,
         "lvl": 46,
         "species": "WHISCASH",
-        "heldItem": "NONE",
         "moves": ["RAIN_DANCE", "WATER_PULSE", "DOUBLE_TEAM", "FISSURE"]
       },
       {
         "iv": 255,
         "lvl": 48,
         "species": "WALREIN",
-        "heldItem": "NONE",
         "moves": ["WATER_PULSE", "BODY_SLAM", "PROTECT", "ICE_BEAM"]
       },
       {
@@ -18643,21 +18500,18 @@
         "iv": 255,
         "lvl": 50,
         "species": "POLIWHIRL",
-        "heldItem": "NONE",
         "moves": ["HYPNOSIS", "RAIN_DANCE", "PROTECT", "HYDRO_PUMP"]
       },
       {
         "iv": 255,
         "lvl": 51,
         "species": "WHISCASH",
-        "heldItem": "NONE",
         "moves": ["RAIN_DANCE", "WATER_PULSE", "DOUBLE_TEAM", "FISSURE"]
       },
       {
         "iv": 255,
         "lvl": 53,
         "species": "WALREIN",
-        "heldItem": "NONE",
         "moves": ["WATER_PULSE", "BODY_SLAM", "PROTECT", "ICE_BEAM"]
       },
       {
@@ -18690,28 +18544,24 @@
         "iv": 255,
         "lvl": 56,
         "species": "LAPRAS",
-        "heldItem": "NONE",
         "moves": ["HYDRO_PUMP", "PERISH_SONG", "ICE_BEAM", "CONFUSE_RAY"]
       },
       {
         "iv": 255,
         "lvl": 58,
         "species": "WHISCASH",
-        "heldItem": "NONE",
         "moves": ["RAIN_DANCE", "WATER_PULSE", "DOUBLE_TEAM", "FISSURE"]
       },
       {
         "iv": 255,
         "lvl": 56,
         "species": "POLIWHIRL",
-        "heldItem": "NONE",
         "moves": ["HYPNOSIS", "RAIN_DANCE", "PROTECT", "HYDRO_PUMP"]
       },
       {
         "iv": 255,
         "lvl": 58,
         "species": "WALREIN",
-        "heldItem": "NONE",
         "moves": ["WATER_PULSE", "BODY_SLAM", "PROTECT", "ICE_BEAM"]
       },
       {
@@ -18744,28 +18594,24 @@
         "iv": 255,
         "lvl": 61,
         "species": "LAPRAS",
-        "heldItem": "NONE",
         "moves": ["HYDRO_PUMP", "PERISH_SONG", "ICE_BEAM", "CONFUSE_RAY"]
       },
       {
         "iv": 255,
         "lvl": 63,
         "species": "WHISCASH",
-        "heldItem": "NONE",
         "moves": ["RAIN_DANCE", "WATER_PULSE", "DOUBLE_TEAM", "FISSURE"]
       },
       {
         "iv": 255,
         "lvl": 61,
         "species": "POLITOED",
-        "heldItem": "NONE",
         "moves": ["HYPNOSIS", "RAIN_DANCE", "HYDRO_PUMP", "PERISH_SONG"]
       },
       {
         "iv": 255,
         "lvl": 63,
         "species": "WALREIN",
-        "heldItem": "NONE",
         "moves": ["WATER_PULSE", "BODY_SLAM", "PROTECT", "SHEER_COLD"]
       },
       {
@@ -18798,14 +18644,12 @@
         "iv": 100,
         "lvl": 17,
         "species": "ILLUMISE",
-        "heldItem": "NONE",
         "moves": ["SHOCK_WAVE", "QUICK_ATTACK", "CHARM"]
       },
       {
         "iv": 100,
         "lvl": 17,
         "species": "VOLBEAT",
-        "heldItem": "NONE",
         "moves": ["SHOCK_WAVE", "QUICK_ATTACK", "CONFUSE_RAY"]
       }
     ],
@@ -18841,35 +18685,30 @@
         "iv": 255,
         "lvl": 77,
         "species": "SKARMORY",
-        "heldItem": "NONE",
         "moves": ["TOXIC", "AERIAL_ACE", "SPIKES", "STEEL_WING"]
       },
       {
         "iv": 255,
         "lvl": 75,
         "species": "CLAYDOL",
-        "heldItem": "NONE",
         "moves": ["REFLECT", "LIGHT_SCREEN", "ANCIENT_POWER", "EARTHQUAKE"]
       },
       {
         "iv": 255,
         "lvl": 76,
         "species": "AGGRON",
-        "heldItem": "NONE",
         "moves": ["THUNDER", "EARTHQUAKE", "SOLAR_BEAM", "DRAGON_CLAW"]
       },
       {
         "iv": 255,
         "lvl": 76,
         "species": "CRADILY",
-        "heldItem": "NONE",
         "moves": ["GIGA_DRAIN", "ANCIENT_POWER", "INGRAIN", "CONFUSE_RAY"]
       },
       {
         "iv": 255,
         "lvl": 76,
         "species": "ARMALDO",
-        "heldItem": "NONE",
         "moves": ["WATER_PULSE", "ANCIENT_POWER", "AERIAL_ACE", "SLASH"]
       },
       {

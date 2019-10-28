@@ -17,7 +17,8 @@ export const DialogEntry = component<any, any>({
     return (
       <v-row>
         <v-col cols={4} class="dialog-label py-1">
-          {context.props.label}:
+          {context.props.label}
+          {context.props.label && ":"}
         </v-col>
         <v-col cols={8} class="py-1">
           {context.children}

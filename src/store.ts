@@ -35,10 +35,10 @@ if (process.env.NODE_ENV !== "development") {
     "C:\\Users\\Smaug\\Desktop\\Pokemon\\pokeemerald\\"
   );
   ViewManager.setActiveView("Trainers");
-  DialogManager.openDialog(
-    EditTrainerMonDialog,
-    GameModel.model.trainers["SAWYER_1"].party[0]
-  );
+  // DialogManager.openDialog(
+  //   EditTrainerMonDialog,
+  //   GameModel.model.trainers["SAWYER_1"].party[0]
+  // );
 }
 
 export function persistStore() {
