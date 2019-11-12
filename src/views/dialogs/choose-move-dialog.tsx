@@ -1,4 +1,4 @@
-import Button from "@/components/button";
+import { Button } from "@/components/button";
 import { DialogManager, DialogOptions } from "@/modules/dialog-manager";
 import { componentFactory } from "vue-tsx-support";
 

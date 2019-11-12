@@ -6898,6 +6898,13 @@ split@^1.0.0:
   dependencies:
     through "2"
 
+splitpanes@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/splitpanes/-/splitpanes-2.0.0.tgz#0c1df7500cbdfbe34c13cb5727de3ac79c21bf35"
+  integrity sha512-KAWDcrN7q3lYCc8eMasTqOYGBDu8u2Abew7i2WSrKVdNgQquY0gUeHVxUG9MWAISDzqviLd6fS0ONhWeEfB8kA==
+  dependencies:
+    vue-router "^3.1.3"
+
 sprintf-js@~1.0.2:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/sprintf-js/-/sprintf-js-1.0.3.tgz#04e6926f662895354f3dd015203633b857297e2c"
@@ -7757,6 +7764,11 @@ vue-property-decorator@^8.1.0:
   resolved "https://registry.yarnpkg.com/vue-property-decorator/-/vue-property-decorator-8.2.2.tgz#ac895e9508ee1bf86e3a28568d94d842c2c8e42f"
   dependencies:
     vue-class-component "^7.0.1"
+
+vue-router@^3.1.3:
+  version "3.1.3"
+  resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-3.1.3.tgz#e6b14fabc0c0ee9fda0e2cbbda74b350e28e412b"
+  integrity sha512-8iSa4mGNXBjyuSZFCCO4fiKfvzqk+mhL0lnKuGcQtO1eoj8nq3CmbEG8FwK5QqoqwDgsjsf1GDuisDX4cdb/aQ==
 
 vue-style-loader@^4.1.0:
   version "4.1.2"

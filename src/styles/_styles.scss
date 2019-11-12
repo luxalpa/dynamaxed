@@ -3,12 +3,24 @@
 @import "./dialog";
 @import "./button";
 @import "./navbar";
+@import "./toolbar";
 @import "./trainer-edit";
+@import "./inputs";
+@import "./splitter";
 
 #app {
   font-family: "Fira Sans", "Roboto", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  --background-color: #ddd;
+  --border-color: #9f9f9f;
+  font-size: 14px;
+  background-color: var(--background-color);
+  height: 100%;
+}
+
+html, body {
+  height: 100%;
 }
 
 #recentProjects {

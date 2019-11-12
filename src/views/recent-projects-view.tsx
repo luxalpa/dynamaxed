@@ -1,6 +1,6 @@
 import { Component, Vue } from "vue-property-decorator";
 import { ProjectManager } from "@/modules/project-manager";
-import Button from "@/components/button";
+import { Button } from "@/components/button";
 
 @Component({
   name: "RecentProjectsView"

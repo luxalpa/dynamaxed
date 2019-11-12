@@ -1,5 +1,3 @@
-// import ImportDialog from "@/views/import-dialog";
-
 import ProjectSettingsView from "@/views/project-settings-view";
 import { TrainersView } from "@/views/trainers-view";
 

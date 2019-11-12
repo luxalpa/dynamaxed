@@ -6,6 +6,8 @@ import RecentProjectsView from "@/views/recent-projects-view";
 import { MainView } from "@/views/main-view";
 import { GameModel } from "@/model/model";
 import { DialogManager } from "@/modules/dialog-manager";
+import { LayoutManager } from "@/modules/layout-manager";
+import layoutState = LayoutManager.layoutState;
 
 @Component({
   name: "App"
@@ -33,7 +35,7 @@ export default class App extends Vue {
     }
 
     return (
-      <v-app id="app">
+      <div id="app">
         {DialogManager.dialogs.map((d, index) => {
           const Dialog: any = d.dialogOpts.component;
           return (
@@ -49,7 +51,7 @@ export default class App extends Vue {
           );
         })}
         <CurView />
-      </v-app>
+      </div>
     );
   }
 }

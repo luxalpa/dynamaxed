@@ -4,6 +4,43 @@ import Navbar from "@/components/navbar";
 import { ViewManager } from "@/modules/view-manager";
 import * as tsx from "vue-tsx-support";
 import { CreateElement, RenderContext, VNode } from "vue";
+import { Button } from "@/components/button";
+import { TextInput } from "@/components/text-input";
+import { LayoutManager } from "@/modules/layout-manager";
+import LayoutState = LayoutManager.LayoutState;
+// @ts-ignore
+import { Splitpanes, Pane } from "splitpanes";
+import "splitpanes/dist/splitpanes.css";
+import { Panel } from "@/components/panel";
+
+function buildLayout(h: CreateElement, obj: LayoutState | string) {
+  if (typeof obj == "string") {
+    let Comp = LayoutManager.panels[obj];
+    if (!Comp) {
+      throw new Error(`Component '${obj}' not registered`);
+    }
+    return (
+      <Panel>
+        <Comp />
+      </Panel>
+    );
+  }
+
+  let onResize = function(e: Array<any>) {
+    obj.weight = e[0].size;
+  };
+
+  return (
+    <Splitpanes
+      class="default-theme"
+      onresize={onResize}
+      horizontal={obj.kind === "h"}
+    >
+      <Pane size={obj.weight}>{buildLayout(h, obj.left)}</Pane>
+      <Pane size={100 - obj.weight}>{buildLayout(h, obj.right)}</Pane>
+    </Splitpanes>
+  );
+}
 
 export const MainView = tsx.componentFactory.create({
   functional: true,
@@ -14,12 +51,26 @@ export const MainView = tsx.componentFactory.create({
     const Content = ViewManager.activeView;
 
     return [
-      <Navbar />,
+      <Toolbar />,
+      <div class="masterpanel">
+        {buildLayout(createElement, LayoutManager.layoutState)}
+      </div>
+
+      /*<div>
+        <Button>Click me outside!</Button>
+        <TextInput />
+        <Splitter>
+          <Button>In Splitter</Button>
+          <TextInput />
+        </Splitter>
+      </div>*/
+
+      /*,
 
       <Toolbar />,
       <v-content>
         <Content />
-      </v-content>
+      </v-content>*/
     ];
   }
 });

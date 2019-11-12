@@ -17,3 +17,7 @@ export function extendArray<T>(arr: Array<T>, len: number, value: T): Array<T> {
 
 // ignores the result in a Promise.catch()
 export const CATCH_IGNORE = () => {};
+
+export function clearSelection() {
+  (window as any).getSelection().removeAllRanges();
+}
