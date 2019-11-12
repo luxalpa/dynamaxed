@@ -8,21 +8,21 @@ export namespace LayoutManager {
 
   export interface LayoutState {
     kind: "v" | "h";
-    weight: number;
-    left: string | LayoutState;
-    right: string | LayoutState;
+    weights: number[];
+    children: (string | LayoutState)[];
   }
 
   export let layoutState: LayoutState | string = {
     kind: "h",
-    weight: 50,
-    left: "test1",
-    right: {
-      kind: "v",
-      weight: 50,
-      left: "test2",
-      right: "test1"
-    }
+    weights: [50, 50],
+    children: [
+      "test1",
+      {
+        kind: "v",
+        weights: [50, 50],
+        children: ["test2", "test1"]
+      }
+    ]
   };
 }
 

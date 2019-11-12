@@ -27,7 +27,7 @@ function buildLayout(h: CreateElement, obj: LayoutState | string) {
   }
 
   let onResize = function(e: Array<any>) {
-    obj.weight = e[0].size;
+    obj.weights = e.map(e => e.size);
   };
 
   return (
@@ -36,8 +36,9 @@ function buildLayout(h: CreateElement, obj: LayoutState | string) {
       onresize={onResize}
       horizontal={obj.kind === "h"}
     >
-      <Pane size={obj.weight}>{buildLayout(h, obj.left)}</Pane>
-      <Pane size={100 - obj.weight}>{buildLayout(h, obj.right)}</Pane>
+      {obj.children.map((v: string | LayoutState, i: number) => (
+        <Pane size={obj.weights[i]}>{buildLayout(h, v)}</Pane>
+      ))}
     </Splitpanes>
   );
 }
