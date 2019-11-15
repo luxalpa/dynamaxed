@@ -1,8 +1,8 @@
 @mixin grid($width) {
   display: grid;
   grid-template-columns: repeat(auto-fill, $width);
-  grid-auto-columns: 100px;
+  //grid-auto-columns: 100px;
   grid-gap: 6px;
   justify-content: center;
-  margin: 20px auto;
+  margin: 0 auto;
 }

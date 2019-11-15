@@ -6,11 +6,13 @@ import { EditFlagsDialog } from "@/views/dialogs/edit-flags-dialog";
 import { EditTrainerMonDialog } from "@/views/dialogs/edit-trainer-mon-dialog";
 import { GameModel } from "@/model/model";
 import { LayoutManager } from "@/modules/layout-manager";
+import { AssetManagerState } from "@/modules/panels/asset-manager-state";
 
 export const store: any = {
   ViewManager,
   ProjectManager,
-  layoutState: LayoutManager.layoutState
+  layoutState: LayoutManager.layoutState,
+  AssetManagerState
 };
 
 if (process.env.NODE_ENV !== "development") {
