@@ -4,6 +4,7 @@ import { AssetManagerState } from "@/modules/panels/asset-manager-state";
 import { GameModel } from "@/model/model";
 import { PathManager } from "@/modules/path-manager";
 import trainerPic = PathManager.trainerPic;
+import { SelectionManager, SelectionType } from "@/modules/selection-manager";
 
 interface ExplorerEntry {
   id: string;
@@ -12,9 +13,9 @@ interface ExplorerEntry {
 }
 
 @Component
-export class AssetManager extends Vue {
-  selectEntry(name: string) {
-    AssetManagerState.currentEntry = name;
+export class AssetManagerPanel extends Vue {
+  selectType(type: SelectionType) {
+    AssetManagerState.currentEntry = type;
   }
 
   trainerEntries(): ExplorerEntry[] {
@@ -28,32 +29,32 @@ export class AssetManager extends Vue {
   }
 
   entries(): ExplorerEntry[] {
-    if (AssetManagerState.currentEntry == "trainers") {
+    if (AssetManagerState.currentEntry == "trainer") {
       return this.trainerEntries();
     }
     return [];
   }
 
   selectObject(id: string) {
-    AssetManagerState.selectedObject = id;
+    SelectionManager.setSelection(AssetManagerState.currentEntry, id);
   }
 
   render() {
-    const entries = {
-      trainers: "Trainers",
-      trainerClasses: "Trainer Classes",
-      pokemon: "Pokemon",
-      moves: "Moves"
-    };
+    const entries = [
+      [SelectionType.Trainer, "Trainers"],
+      [SelectionType.TrainerClass, "Trainer Classes"],
+      [SelectionType.Pokemon, "Pokemon"],
+      [SelectionType.Move, "Move"]
+    ] as const;
 
     return (
       <div class="asset-manager">
         <div class="am--outliner">
-          {Object.entries(entries).map(([name, text]) => {
+          {entries.map(([name, text]) => {
             return [
               <ListBtn
                 selected={AssetManagerState.currentEntry == name}
-                onclick={() => this.selectEntry(name)}
+                onclick={() => this.selectType(name)}
               >
                 {text}
               </ListBtn>,
@@ -64,7 +65,12 @@ export class AssetManager extends Vue {
         <div class="am--explorer">
           {this.entries().map(entry => {
             let classes = ["am--bigentry"];
-            if (entry.id == AssetManagerState.selectedObject) {
+            if (
+              SelectionManager.isSelected(
+                AssetManagerState.currentEntry,
+                entry.id
+              )
+            ) {
               classes.push("ame--selected");
             }
             return (

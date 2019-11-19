@@ -1,4 +1,5 @@
+import { SelectionType } from "@/modules/selection-manager";
+
 export const AssetManagerState = new (class {
-  currentEntry: string = "trainers";
-  selectedObject: string = "";
+  currentEntry: SelectionType = SelectionType.Trainer;
 })();

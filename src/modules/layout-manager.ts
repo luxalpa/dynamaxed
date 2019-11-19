@@ -1,5 +1,6 @@
 import { Test1, Test2 } from "@/panels/test";
-import { AssetManager } from "@/panels/asset-manager";
+import { AssetManagerPanel } from "@/panels/asset-manager-panel";
+import { InspectorPanel } from "@/panels/inspector";
 
 export namespace LayoutManager {
   export let panels: Record<string, any> = {};
@@ -14,19 +15,13 @@ export namespace LayoutManager {
   }
 
   export let layoutState: LayoutState | string = {
-    kind: "h",
-    weights: [50, 50],
-    children: [
-      "asset-manager",
-      {
-        kind: "v",
-        weights: [50, 50],
-        children: ["test2", "test1"]
-      }
-    ]
+    kind: "v",
+    weights: [70, 30],
+    children: ["asset-manager", "inspector"]
   };
 }
 
 LayoutManager.registerPanel("test1", Test1);
 LayoutManager.registerPanel("test2", Test2);
-LayoutManager.registerPanel("asset-manager", AssetManager);
+LayoutManager.registerPanel("asset-manager", AssetManagerPanel);
+LayoutManager.registerPanel("inspector", InspectorPanel);
