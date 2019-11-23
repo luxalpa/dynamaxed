@@ -1,4 +1,3 @@
-import { Test1, Test2 } from "@/panels/test";
 import { AssetManagerPanel } from "@/panels/asset-manager-panel";
 import { InspectorPanel } from "@/panels/inspector";
 
@@ -21,7 +20,5 @@ export namespace LayoutManager {
   };
 }
 
-LayoutManager.registerPanel("test1", Test1);
-LayoutManager.registerPanel("test2", Test2);
 LayoutManager.registerPanel("asset-manager", AssetManagerPanel);
 LayoutManager.registerPanel("inspector", InspectorPanel);
