@@ -6,8 +6,6 @@ import RecentProjectsView from "@/views/recent-projects-view";
 import { MainView } from "@/views/main-view";
 import { GameModel } from "@/model/model";
 import { DialogManager } from "@/modules/dialog-manager";
-import { LayoutManager } from "@/modules/layout-manager";
-import layoutState = LayoutManager.layoutState;
 
 @Component({
   name: "App"

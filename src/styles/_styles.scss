@@ -1,3 +1,4 @@
+@import "~normalize.css";
 @import "./utils";
 @import "./theme";
 @import "./dialog";
@@ -6,23 +7,34 @@
 @import "./toolbar";
 @import "./trainer-edit";
 @import "./inputs";
-@import "./splitter";
-@import "./asset-manager";
-@import "./inspector";
+@import "./menubar";
 
 #app {
   font-family: "Fira Sans", "Roboto", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  --background-color: #ddd;
-  --border-color: #9f9f9f;
   font-size: 14px;
-  background-color: var(--background-color);
+  background-color: var(--background-bg-color);
   height: 100%;
+  --foreground-bg-color: #3b3b3b;
+  --foreground-h-bg-color: #4e4e4e;
+  --middleground-bg-color: #343434;
+  --middleground-h-bg-color: #000;
+  --background-bg-color: #222222;
+  --background-h-bg-color: #000;
+  --text-color: #bdbdbd;
+  --text-h-color: #fff;
+  --accent-color: #a75900;
+  --accent-h-color: #ffb42e;
+  color: var(--text-color);
 }
 
 html, body {
   height: 100%;
+}
+
+body {
+  overflow-y: hidden;
 }
 
 #recentProjects {

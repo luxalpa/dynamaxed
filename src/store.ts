@@ -5,15 +5,11 @@ import { EditTrainerDialog } from "@/views/dialogs/edit-trainer-dialog";
 import { EditFlagsDialog } from "@/views/dialogs/edit-flags-dialog";
 import { EditTrainerMonDialog } from "@/views/dialogs/edit-trainer-mon-dialog";
 import { GameModel } from "@/model/model";
-import { LayoutManager } from "@/modules/layout-manager";
-import { AssetManagerState } from "@/modules/panels/asset-manager-state";
 import { SelectionManager } from "@/modules/selection-manager";
 
 export const store: any = {
   ViewManager,
   ProjectManager,
-  layoutState: LayoutManager.layoutState,
-  AssetManagerState,
   SelectionManager
 };
 

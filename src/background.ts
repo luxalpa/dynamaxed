@@ -24,6 +24,7 @@ function createWindow() {
     height: 700,
     frame: true,
     icon: "public/icon.ico",
+    backgroundColor: "#FFF",
     autoHideMenuBar: true,
     webPreferences: {
       nodeIntegration: true,
