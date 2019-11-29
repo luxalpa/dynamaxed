@@ -1,31 +1,43 @@
 import { Component, Vue } from "vue-property-decorator";
 import { ViewManager, Views } from "@/modules/view-manager";
 
+interface NavElement {
+  isSubElement?: boolean;
+  text: string;
+  switchToView: string;
+}
+
+const navElements: NavElement[] = [
+  {
+    isSubElement: false,
+    switchToView: "trainers",
+    text: "Trainers"
+  },
+  {
+    isSubElement: true,
+    switchToView: "trainer-classes",
+    text: "Trainer Classes"
+  }
+];
+
 @Component({
   name: "Navbar"
 })
-export default class Navbar extends Vue {
+export class Navbar extends Vue {
+  jumpToEntry(entry: NavElement) {}
+
   render() {
     return (
-      <v-navigation-drawer permanent clipped={true} app stateless width={200}>
-        <v-list dense>
-          {Object.keys(Views).map(view => {
-            if (ViewManager._activeView === view) {
-            }
-            return (
-              <v-list-item
-                key={view}
-                input-value={ViewManager._activeView === view}
-                onclick={() => ViewManager.setActiveView(view as any)}
-              >
-                <v-list-item-content>
-                  <v-list-item-title>{view}</v-list-item-title>
-                </v-list-item-content>
-              </v-list-item>
-            );
-          })}
-        </v-list>
-      </v-navigation-drawer>
+      <div class="navbar">
+        {navElements.map(e => (
+          <div
+            class={"navbar-entry" + (e.isSubElement ? " subnav" : "")}
+            onmousedown={() => this.jumpToEntry(e)}
+          >
+            {e.text}
+          </div>
+        ))}
+      </div>
     );
   }
 }

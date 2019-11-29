@@ -1,9 +1,8 @@
 import { ViewManager } from "@/modules/view-manager";
 import * as tsx from "vue-tsx-support";
 import { CreateElement, RenderContext, VNode } from "vue";
-// @ts-ignore
-import "splitpanes/dist/splitpanes.css";
 import { Menubar } from "@/components/menubar";
+import { Navbar } from "@/components/navbar";
 
 export const MainView = tsx.componentFactory.create({
   functional: true,
@@ -14,7 +13,8 @@ export const MainView = tsx.componentFactory.create({
     const Content = ViewManager.activeView;
 
     return [
-      <Menubar />
+      <Menubar />,
+      <Navbar />
 
       /*<div>
         <Button>Click me outside!</Button>
