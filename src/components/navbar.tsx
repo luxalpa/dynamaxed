@@ -21,22 +21,6 @@ const navElements: NavElement[] = [
   }
 ];
 
-const styles = stylesheet({
-  navbar: {
-    width: "200px",
-    backgroundColor: Theme.middlegroundBgColor
-  },
-  entry: {
-    padding: "4px",
-    marginLeft: "25px",
-    cursor: "pointer",
-    fontSize: "13px"
-  },
-  subnav: {
-    marginLeft: "45px"
-  }
-});
-
 @Component({
   name: "Navbar"
 })
@@ -58,3 +42,25 @@ export class Navbar extends Vue {
     );
   }
 }
+
+const styles = stylesheet({
+  navbar: {
+    width: "180px",
+    height: "100%",
+    paddingTop: "15px",
+    backgroundColor: Theme.middlegroundBgColor
+  },
+  entry: {
+    padding: "4px 4px 4px 25px",
+    cursor: "pointer",
+    fontSize: "13px",
+    $nest: {
+      "&:hover": {
+        backgroundColor: Theme.middlegroundHBgColor
+      }
+    }
+  },
+  subnav: {
+    paddingLeft: "45px"
+  }
+});

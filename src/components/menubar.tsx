@@ -49,13 +49,25 @@ const menu: Menu[] = [
 
 const NoMenu: Menu = { text: "", entries: [] };
 
+function* allParents(child: Element | null): IterableIterator<Element> {
+  if (!child) {
+    return;
+  }
+  yield child;
+  yield* allParents(child.parentElement);
+}
+
 @Component
 export class Menubar extends Vue {
   activeEntry: Menu = NoMenu;
   handleOutsideClick = (e: Event) => {
-    if (!(e.target as Element)?.classList.contains("popup-entry")) {
-      this.closeMenu();
+    for (const element of allParents(e.target as Element)) {
+      if (element.classList.contains(styles.popupEntry)) {
+        return;
+      }
     }
+
+    this.closeMenu();
   };
 
   closeMenu() {
@@ -95,7 +107,8 @@ export class Menubar extends Vue {
                 {m.entries.map(e => (
                   <div
                     class={styles.popupEntry}
-                    onmousedown={() => this.selectMenuEntry(e)}
+                    onmousedown={() => {}}
+                    onmouseup={() => this.selectMenuEntry(e)}
                   >
                     <div class={styles.label}>{e.text}</div>
                     <div class={styles.shortcut}>{e.shortcut}</div>

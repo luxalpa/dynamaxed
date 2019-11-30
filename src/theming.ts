@@ -4,7 +4,7 @@ const rawtheme = {
   foregroundBgColor: "#3b3b3b",
   foregroundHBgColor: "#4e4e4e",
   middlegroundBgColor: "#343434",
-  middlegroundHBgColor: "#000",
+  middlegroundHBgColor: "#414141",
   backgroundBgColor: "#222222",
   backgroundHBgColor: "#000",
   textColor: "#bdbdbd",
