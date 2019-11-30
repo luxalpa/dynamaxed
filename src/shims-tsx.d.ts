@@ -15,3 +15,10 @@ declare global {
     }
   }
 }
+
+declare module "typestyle/lib/types" {
+  interface CSSProperties {
+    "-webkit-font-smoothing"?: string;
+    "-moz-osx-font-smoothing"?: string;
+  }
+}

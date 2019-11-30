@@ -1,6 +1,7 @@
 import { Component, Vue } from "vue-property-decorator";
-import { HTMLElementEvent } from "@/utils";
 import { modifiers } from "vue-tsx-support";
+import { classes, stylesheet } from "typestyle";
+import { Theme } from "@/theming";
 
 interface Menu {
   text: string;
@@ -80,21 +81,24 @@ export class Menubar extends Vue {
 
   render() {
     return (
-      <div class="menubar">
+      <div class={styles.menubar}>
         {menu.map(m => (
           <div
-            class={"menu" + (m === this.activeEntry ? " menu-active" : "")}
+            class={classes(
+              styles.menu,
+              m === this.activeEntry && styles.menuActive
+            )}
             onmousedown={modifiers.self((e: Event) => this.activateEntry(e, m))}
           >
             {this.activeEntry === m && (
-              <div class="popupmenu">
+              <div class={styles.popupmenu}>
                 {m.entries.map(e => (
                   <div
-                    class="popup-entry"
+                    class={styles.popupEntry}
                     onmousedown={() => this.selectMenuEntry(e)}
                   >
-                    <div class="me-label">{e.text}</div>
-                    <div class="me-shortcut">{e.shortcut}</div>
+                    <div class={styles.label}>{e.text}</div>
+                    <div class={styles.shortcut}>{e.shortcut}</div>
                   </div>
                 ))}
               </div>
@@ -106,3 +110,67 @@ export class Menubar extends Vue {
     );
   }
 }
+
+const menuHoverCss = {
+  backgroundColor: Theme.foregroundHBgColor,
+  color: Theme.textHColor
+};
+
+const styles = stylesheet({
+  menubar: {
+    backgroundColor: Theme.foregroundBgColor,
+    height: "32px",
+    display: "flex",
+    "-webkit-user-select": "none",
+    fontSize: "13px"
+  },
+  menu: {
+    padding: "9px",
+    cursor: "pointer",
+    position: "relative",
+    $nest: {
+      "&:hover": {
+        ...menuHoverCss
+      }
+    }
+  },
+  menuActive: {
+    ...menuHoverCss
+  },
+  popupmenu: {
+    position: "absolute",
+    top: "32px",
+    left: 0,
+    display: "block",
+    width: "auto",
+    whiteSpace: "nowrap",
+    backgroundColor: Theme.middlegroundBgColor,
+    boxShadow: "0 2px 4px black",
+    zIndex: 1,
+    paddingTop: "5px",
+    paddingBottom: "5px",
+    cursor: "default"
+  },
+  popupEntry: {
+    padding: "5px 25px",
+    color: Theme.textColor,
+    marginBottom: "1px",
+    cursor: "pointer",
+    display: "flex",
+    $nest: {
+      "&:hover": {
+        backgroundColor: Theme.accentColor,
+        color: Theme.textHColor
+      }
+    }
+  },
+  label: {
+    display: "inline",
+    marginRight: "2em",
+    flex: "1 1 auto"
+  },
+  shortcut: {
+    marginLeft: "2em",
+    display: "inline"
+  }
+});

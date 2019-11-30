@@ -1,5 +1,6 @@
 import { Component, Vue } from "vue-property-decorator";
-import { ViewManager, Views } from "@/modules/view-manager";
+import { classes, stylesheet } from "typestyle";
+import { Theme } from "@/theming";
 
 interface NavElement {
   isSubElement?: boolean;
@@ -20,6 +21,22 @@ const navElements: NavElement[] = [
   }
 ];
 
+const styles = stylesheet({
+  navbar: {
+    width: "200px",
+    backgroundColor: Theme.middlegroundBgColor
+  },
+  entry: {
+    padding: "4px",
+    marginLeft: "25px",
+    cursor: "pointer",
+    fontSize: "13px"
+  },
+  subnav: {
+    marginLeft: "45px"
+  }
+});
+
 @Component({
   name: "Navbar"
 })
@@ -28,10 +45,10 @@ export class Navbar extends Vue {
 
   render() {
     return (
-      <div class="navbar">
+      <div class={styles.navbar}>
         {navElements.map(e => (
           <div
-            class={"navbar-entry" + (e.isSubElement ? " subnav" : "")}
+            class={classes(styles.entry, e.isSubElement && styles.subnav)}
             onmousedown={() => this.jumpToEntry(e)}
           >
             {e.text}
