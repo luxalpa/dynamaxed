@@ -1,7 +1,10 @@
 import { Component, Vue } from "vue-property-decorator";
 import { modifiers } from "vue-tsx-support";
-import { classes, stylesheet } from "typestyle";
+import { classes, style, stylesheet } from "typestyle";
 import { Theme } from "@/theming";
+import { navbarWidth } from "@/components/navbar";
+import { px } from "csx";
+import { ViewManager } from "@/modules/view-manager";
 
 interface Menu {
   text: string;
@@ -60,6 +63,8 @@ function* allParents(child: Element | null): IterableIterator<Element> {
 @Component
 export class Menubar extends Vue {
   activeEntry: Menu = NoMenu;
+  titlePos = 0;
+
   handleOutsideClick = (e: Event) => {
     for (const element of allParents(e.target as Element)) {
       if (element.classList.contains(styles.popupEntry)) {
@@ -69,6 +74,22 @@ export class Menubar extends Vue {
 
     this.closeMenu();
   };
+
+  mounted() {
+    window.addEventListener("resize", () => this.updateTitlePosition());
+    setTimeout(() => this.updateTitlePosition());
+  }
+
+  updateTitlePosition() {
+    const el = this.$refs.title as HTMLElement;
+    const { width } = el.getBoundingClientRect();
+    const borderRef = this.$refs.border as HTMLElement;
+    const offsetLeft = borderRef.offsetLeft;
+    const leftMargin = Math.max(navbarWidth, offsetLeft);
+    const { width: totalWidth } = (this.$refs
+      .menubar as HTMLElement).getBoundingClientRect();
+    this.titlePos = leftMargin + (totalWidth - leftMargin - width) / 2;
+  }
 
   closeMenu() {
     document.removeEventListener("mousedown", this.handleOutsideClick);
@@ -93,7 +114,7 @@ export class Menubar extends Vue {
 
   render() {
     return (
-      <div class={styles.menubar}>
+      <div class={styles.menubar} ref="menubar">
         {menu.map(m => (
           <div
             class={classes(
@@ -119,6 +140,26 @@ export class Menubar extends Vue {
             {m.text}
           </div>
         ))}
+        <div ref="border" />
+        <div
+          class={classes(styles.title, titleHover)}
+          ref="title"
+          style={{ left: px(this.titlePos) }}
+        >
+          <font-awesome-icon
+            icon={["fas", "arrow-left"]}
+            size="lg"
+            pull="left"
+            class={styles.arrowLeft}
+          />
+          {ViewManager.activeViewTitle}
+          <font-awesome-icon
+            icon={["fas", "arrow-right"]}
+            size="lg"
+            pull="right"
+            class={styles.arrowRight}
+          />
+        </div>
       </div>
     );
   }
@@ -134,8 +175,7 @@ const styles = stylesheet({
     backgroundColor: Theme.foregroundBgColor,
     height: "32px",
     display: "flex",
-    "-webkit-user-select": "none",
-    fontSize: "13px"
+    "-webkit-user-select": "none"
   },
   menu: {
     padding: "9px",
@@ -185,5 +225,34 @@ const styles = stylesheet({
   shortcut: {
     marginLeft: "2em",
     display: "inline"
+  },
+  title: {
+    position: "absolute",
+    padding: "9px",
+    fontWeight: 500
+  },
+  arrowLeft: {
+    marginTop: "-2px",
+    paddingRight: "10px",
+    opacity: 0,
+    transition: "opacity 150ms"
+  },
+  arrowRight: {
+    marginTop: "-2px",
+    paddingLeft: "10px",
+    opacity: 0,
+    transition: "opacity 150ms"
+  }
+});
+
+const titleHover = style({
+  $nest: {
+    [`&:hover .${styles.arrowLeft}`]: {
+      opacity: 1
+    },
+
+    [`&:hover .${styles.arrowRight}`]: {
+      opacity: 1
+    }
   }
 });

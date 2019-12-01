@@ -1,5 +1,4 @@
 import { Component, Vue, Watch } from "vue-property-decorator";
-import { ViewManager } from "@/modules/view-manager";
 import { ProjectManager } from "@/modules/project-manager";
 import { persistStore, store } from "@/store";
 import RecentProjectsView from "@/views/recent-projects-view";
@@ -17,12 +16,32 @@ cssRule("body", {
   overflowY: "hidden"
 });
 
+cssRule("::-webkit-scrollbar", {
+  backgroundColor: "transparent",
+  width: "9px",
+  opacity: 0,
+  $nest: {
+    "&:hover": {
+      opacity: 0
+    }
+  }
+});
+
+cssRule("::-webkit-scrollbar-thumb", {
+  backgroundColor: Theme.foregroundBgColor,
+  $nest: {
+    "&:hover": {
+      backgroundColor: Theme.foregroundHBgColor
+    }
+  }
+});
+
 const styles = stylesheet({
   app: {
     fontFamily: ["sans-serif", "Arial", "Helvetica", "Roboto", "Fira Sans"],
     "-webkit-font-smoothing": "antialiased",
     "-moz-osx-font-smoothing": "grayscale",
-    fontSize: "14px",
+    fontSize: "13px",
     backgroundColor: Theme.backgroundBgColor,
     height: "100%",
     color: Theme.textColor,

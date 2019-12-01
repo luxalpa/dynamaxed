@@ -1,22 +1,24 @@
 import { Component, Vue } from "vue-property-decorator";
 import { classes, stylesheet } from "typestyle";
 import { Theme } from "@/theming";
+import { ViewManager, View } from "@/modules/view-manager";
+import { px } from "csx";
 
 interface NavElement {
   isSubElement?: boolean;
   text: string;
-  switchToView: string;
+  switchToView: View;
 }
 
 const navElements: NavElement[] = [
   {
     isSubElement: false,
-    switchToView: "trainers",
+    switchToView: View.trainers,
     text: "Trainers"
   },
   {
     isSubElement: true,
-    switchToView: "trainer-classes",
+    switchToView: View.trainerClasses,
     text: "Trainer Classes"
   }
 ];
@@ -25,7 +27,9 @@ const navElements: NavElement[] = [
   name: "Navbar"
 })
 export class Navbar extends Vue {
-  jumpToEntry(entry: NavElement) {}
+  jumpToEntry(entry: NavElement) {
+    ViewManager.setActiveView(entry.switchToView);
+  }
 
   render() {
     return (
@@ -43,9 +47,11 @@ export class Navbar extends Vue {
   }
 }
 
+export const navbarWidth = 180;
+
 const styles = stylesheet({
   navbar: {
-    width: "180px",
+    width: px(navbarWidth),
     height: "100%",
     paddingTop: "15px",
     backgroundColor: Theme.middlegroundBgColor
@@ -53,7 +59,6 @@ const styles = stylesheet({
   entry: {
     padding: "4px 4px 4px 25px",
     cursor: "pointer",
-    fontSize: "13px",
     $nest: {
       "&:hover": {
         backgroundColor: Theme.middlegroundHBgColor

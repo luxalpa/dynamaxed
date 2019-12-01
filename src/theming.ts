@@ -1,12 +1,12 @@
 import { cssRaw } from "typestyle";
 
 const rawtheme = {
-  foregroundBgColor: "#3b3b3b",
+  foregroundBgColor: "#434343",
   foregroundHBgColor: "#4e4e4e",
   middlegroundBgColor: "#343434",
   middlegroundHBgColor: "#414141",
   backgroundBgColor: "#222222",
-  backgroundHBgColor: "#000",
+  backgroundHBgColor: "#2e2e2e",
   textColor: "#bdbdbd",
   textHColor: "#fff",
   accentColor: "#a75900",

@@ -1,92 +1,174 @@
 import { Component, Vue } from "vue-property-decorator";
-import { GameModel, NoTrainerPartyMon, Trainer } from "@/model/model";
-import { DialogManager } from "@/modules/dialog-manager";
-import { EditTrainerDialog } from "@/views/dialogs/edit-trainer-dialog";
+import { GameModel, Trainer } from "@/model/model";
+import { stylesheet } from "typestyle";
+import { CreateElement } from "vue";
 import { PathManager } from "@/modules/path-manager";
-import { CATCH_IGNORE } from "@/utils";
-import { EditTrainerMonDialog } from "@/views/dialogs/edit-trainer-mon-dialog";
-import { TrainerMon } from "@/components/trainer-mon";
+import { Theme } from "@/theming";
+import { url } from "csx";
+
+interface Column<T> {
+  text: string;
+  align?: string;
+  render(h: CreateElement, e: T): any;
+}
+
+type TrainerWithID = [string, Trainer];
 
 @Component({
   name: "TrainersView"
 })
 export class TrainersView extends Vue {
-  async editPartyMon(trainer: Trainer, partyIndex: number) {
-    console.log(trainer.party[partyIndex] || NoTrainerPartyMon);
-    let mon = await DialogManager.openDialog(
-      EditTrainerMonDialog,
-      trainer.party[partyIndex] || NoTrainerPartyMon
-    );
-    if (!mon) {
-      return;
-    }
-    if (trainer.party.length <= partyIndex) {
-      trainer.party.push(mon);
-    } else {
-      Vue.set(trainer.party, partyIndex, mon);
-    }
+  get layout(): Column<TrainerWithID>[] {
+    return [
+      {
+        text: "Picture",
+        render(h: CreateElement, e: TrainerWithID): any {
+          return (
+            <img
+              alt=""
+              class={styles.trainerPic}
+              src={PathManager.trainerPic(e[1].trainerPic)}
+            />
+          );
+        }
+      },
+      {
+        text: "ID",
+        render(h: CreateElement, e: TrainerWithID): any {
+          return "#" + e[0];
+        }
+      },
+      {
+        text: "Name",
+        render(h: CreateElement, e: TrainerWithID): any {
+          return e[1].trainerName;
+        }
+      },
+      {
+        text: "Party",
+        render(h: CreateElement, e: TrainerWithID): any {
+          const p = e[1].party;
+          return (
+            <div class={styles.party}>
+              {p.map(mon => (
+                <div class={styles.partyEntry}>
+                  <div
+                    class={styles.pokeIcon}
+                    style={{
+                      backgroundImage: url(
+                        PathManager.pokeIcon(mon.species).replace(/\\/g, "\\\\")
+                      )
+                    }}
+                  />
+                </div>
+              ))}
+            </div>
+          );
+        }
+      },
+      {
+        text: "Prize",
+        align: "right",
+        render(h: CreateElement, [id, t]: TrainerWithID): any {
+          const money =
+            GameModel.model.trainerClasses[t.trainerClass].money ?? 5;
+          const lastLevel = t.party[t.party.length - 1].lvl;
+          let v = 4 * money * lastLevel;
+          if (t.doubleBattle) {
+            v *= 2;
+          }
+          return (
+            <div class={styles.money}>
+              <span class={styles.moneyValue}>{v}</span>$
+            </div>
+          );
+        }
+      }
+    ];
   }
 
   render() {
-    const trainerList: [string, Trainer][] = Object.keys(
+    const trainerList: TrainerWithID[] = Object.entries(
       GameModel.model.trainers
-    ).map(t => [t, GameModel.model.trainers[t]]);
+    );
     return (
-      <div class="trainer-grid">
-        {trainerList.map(([name, trainer]) => {
-          let party = [...trainer.party];
-          for (let i = trainer.party.length; i < 6; i++) {
-            party.push(NoTrainerPartyMon);
-          }
-
-          const pic = PathManager.trainerPic(trainer.trainerPic);
-
-          return (
-            <v-card key={name} class="flex-row d-flex trainer-card">
-              <div
-                class="trainer-main"
-                onclick={() => {
-                  DialogManager.openDialog(EditTrainerDialog, {
-                    trainerId: name
-                  }).catch(CATCH_IGNORE);
-                }}
-              >
-                <div class="trainer-id">{name}</div>
-                <div class="trainer-pic">
-                  <img src={pic} alt={"ERROR"} />
-                </div>
-                <div class="trainer-name">{trainer.trainerName}</div>
-                <div class="trainer-class">
-                  {GameModel.model.trainerClasses[trainer.trainerClass].name}
-                </div>
-              </div>
-              <div class="trainer-party d-flex flex-row">
-                {party.map((mon, idx) => {
-                  if (mon === NoTrainerPartyMon) {
-                    return (
-                      <div
-                        class="trainer-party-mon"
-                        onclick={() => this.editPartyMon(trainer, idx)}
-                      >
-                        <div class="party-pic" />
-                      </div>
-                    );
-                  }
-                  return (
-                    <div
-                      class="trainer-party-mon"
-                      onclick={() => this.editPartyMon(trainer, idx)}
-                    >
-                      <TrainerMon species={mon.species} />
-                      <div class="party-lvl">Lv. {mon.lvl}</div>
-                    </div>
-                  );
-                })}
-              </div>
-            </v-card>
-          );
-        })}
+      <div class={styles.trainerView}>
+        <table class={styles.trainerTable}>
+          <tr>
+            {this.layout.map(c => (
+              <th class={styles.tableHeader} style={{ textAlign: c.align }}>
+                {c.text}
+              </th>
+            ))}
+          </tr>
+          {trainerList.map(tid => (
+            <tr>
+              {this.layout.map(c => (
+                <td>{c.render(this.$createElement, tid)}</td>
+              ))}
+            </tr>
+          ))}
+        </table>
       </div>
     );
   }
 }
+
+const styles = stylesheet({
+  trainerView: {
+    margin: "15px auto 0",
+    height: "calc(100% - 15px)",
+    overflow: "auto"
+  },
+  trainerTable: {
+    borderCollapse: "collapse",
+    $nest: {
+      "& tr": {
+        cursor: "pointer",
+        $nest: {
+          "&:hover": {
+            backgroundColor: Theme.backgroundHBgColor
+          }
+        }
+      },
+      "& td": {
+        padding: "5px 10px"
+      }
+    }
+  },
+  tableHeader: {
+    position: "sticky",
+    top: 0,
+    padding: "10px 10px 8px",
+    backgroundColor: Theme.backgroundBgColor,
+    textAlign: "left",
+    fontWeight: 500,
+    cursor: "default",
+    $nest: {
+      "&:hover": {
+        backgroundColor: Theme.backgroundHBgColor
+      }
+    }
+  },
+  trainerPic: {
+    display: "block",
+    width: "24px"
+  },
+  pokeIcon: {
+    width: "32px",
+    height: "32px",
+    margin: "-8px 0 0 0"
+  },
+  party: {
+    display: "flex"
+  },
+  partyEntry: {
+    display: "flex"
+  },
+  moneyValue: {
+    fontFamily: "Consolas"
+  },
+  money: {
+    textAlign: "right"
+  }
+});

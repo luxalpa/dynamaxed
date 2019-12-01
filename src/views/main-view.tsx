@@ -3,6 +3,7 @@ import * as tsx from "vue-tsx-support";
 import { CreateElement, RenderContext, VNode } from "vue";
 import { Menubar } from "@/components/menubar";
 import { Navbar } from "@/components/navbar";
+import { stylesheet } from "typestyle";
 
 export const MainView = tsx.componentFactory.create({
   functional: true,
@@ -13,8 +14,13 @@ export const MainView = tsx.componentFactory.create({
     const Content = ViewManager.activeView;
 
     return [
-      <Menubar />,
-      <Navbar />
+      <div class={styles.menusplit}>
+        <Menubar />
+        <div class={styles.navsplit}>
+          <Navbar />
+          <Content />
+        </div>
+      </div>
 
       /*<div>
         <Button>Click me outside!</Button>
@@ -32,6 +38,18 @@ export const MainView = tsx.componentFactory.create({
         <Content />
       </v-content>*/
     ];
+  }
+});
+
+const styles = stylesheet({
+  navsplit: {
+    display: "flex",
+    height: "100%"
+  },
+  menusplit: {
+    display: "flex",
+    height: "100%",
+    flexDirection: "column"
   }
 });
 

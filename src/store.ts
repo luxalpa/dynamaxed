@@ -1,4 +1,4 @@
-import { ViewManager } from "@/modules/view-manager";
+import { View, ViewManager } from "@/modules/view-manager";
 import { ProjectManager } from "@/modules/project-manager";
 import { DialogManager } from "@/modules/dialog-manager";
 import { EditTrainerDialog } from "@/views/dialogs/edit-trainer-dialog";
@@ -36,7 +36,7 @@ if (process.env.NODE_ENV !== "development") {
   ProjectManager.openProject(
     "C:\\Users\\Smaug\\Desktop\\Pokemon\\pokeemerald\\"
   );
-  // ViewManager.setActiveView("Trainers");
+  ViewManager.setActiveView(View.trainers);
   // DialogManager.openDialog(
   //   EditTrainerMonDialog,
   //   GameModel.model.trainers["SAWYER_1"].party[0]
