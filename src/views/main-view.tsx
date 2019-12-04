@@ -11,7 +11,7 @@ export const MainView = tsx.componentFactory.create({
     createElement: CreateElement,
     context: RenderContext<any>
   ): VNode | VNode[] {
-    const Content = ViewManager.activeView;
+    const Content = ViewManager.activeView.component;
 
     return [
       <div class={styles.menusplit}>

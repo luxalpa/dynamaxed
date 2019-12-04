@@ -5,6 +5,8 @@ import { CreateElement } from "vue";
 import { PathManager } from "@/modules/path-manager";
 import { Theme } from "@/theming";
 import { url } from "csx";
+import { ViewManager, ViewProps } from "@/modules/view-manager";
+import { EditTrainerView } from "@/views/edit-trainer-view";
 
 interface Column<T> {
   text: string;
@@ -17,7 +19,7 @@ type TrainerWithID = [string, Trainer];
 @Component({
   name: "TrainersView"
 })
-export class TrainersView extends Vue {
+class TrainersViewCmp extends Vue {
   get layout(): Column<TrainerWithID>[] {
     return [
       {
@@ -102,7 +104,7 @@ export class TrainersView extends Vue {
             ))}
           </tr>
           {trainerList.map(tid => (
-            <tr>
+            <tr onclick={() => ViewManager.push(EditTrainerView, tid[0])}>
               {this.layout.map(c => (
                 <td>{c.render(this.$createElement, tid)}</td>
               ))}
@@ -113,6 +115,13 @@ export class TrainersView extends Vue {
     );
   }
 }
+
+export const TrainersView: ViewProps<void> = {
+  component: TrainersViewCmp,
+  title: () => "All Trainers"
+};
+
+ViewManager.registerView(TrainersView, "trainers");
 
 const styles = stylesheet({
   trainerView: {

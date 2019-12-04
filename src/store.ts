@@ -1,16 +1,12 @@
-import { View, ViewManager } from "@/modules/view-manager";
+import { ViewManager } from "@/modules/view-manager";
 import { ProjectManager } from "@/modules/project-manager";
-import { DialogManager } from "@/modules/dialog-manager";
-import { EditTrainerDialog } from "@/views/dialogs/edit-trainer-dialog";
-import { EditFlagsDialog } from "@/views/dialogs/edit-flags-dialog";
-import { EditTrainerMonDialog } from "@/views/dialogs/edit-trainer-mon-dialog";
-import { GameModel } from "@/model/model";
 import { SelectionManager } from "@/modules/selection-manager";
+import { TrainersView } from "@/views/trainers-view";
+import { EditTrainerView } from "@/views/edit-trainer-view";
 
 export const store: any = {
   ViewManager,
-  ProjectManager,
-  SelectionManager
+  ProjectManager
 };
 
 if (process.env.NODE_ENV !== "development") {
@@ -36,7 +32,7 @@ if (process.env.NODE_ENV !== "development") {
   ProjectManager.openProject(
     "C:\\Users\\Smaug\\Desktop\\Pokemon\\pokeemerald\\"
   );
-  ViewManager.setActiveView(View.trainers);
+  ViewManager.push(EditTrainerView, "GABRIELLE_1");
   // DialogManager.openDialog(
   //   EditTrainerMonDialog,
   //   GameModel.model.trainers["SAWYER_1"].party[0]

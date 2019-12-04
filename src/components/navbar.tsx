@@ -1,24 +1,25 @@
 import { Component, Vue } from "vue-property-decorator";
 import { classes, stylesheet } from "typestyle";
 import { Theme } from "@/theming";
-import { ViewManager, View } from "@/modules/view-manager";
+import { ViewManager, ViewProps } from "@/modules/view-manager";
 import { px } from "csx";
+import { TrainersView } from "@/views/trainers-view";
 
 interface NavElement {
   isSubElement?: boolean;
   text: string;
-  switchToView: View;
+  switchToView: ViewProps<void>;
 }
 
 const navElements: NavElement[] = [
   {
     isSubElement: false,
-    switchToView: View.trainers,
+    switchToView: TrainersView,
     text: "Trainers"
   },
   {
     isSubElement: true,
-    switchToView: View.trainerClasses,
+    switchToView: TrainersView,
     text: "Trainer Classes"
   }
 ];
@@ -28,7 +29,7 @@ const navElements: NavElement[] = [
 })
 export class Navbar extends Vue {
   jumpToEntry(entry: NavElement) {
-    ViewManager.setActiveView(entry.switchToView);
+    ViewManager.push(entry.switchToView);
   }
 
   render() {

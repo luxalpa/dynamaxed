@@ -150,9 +150,13 @@ export class Menubar extends Vue {
             icon={["fas", "arrow-left"]}
             size="lg"
             pull="left"
-            class={styles.arrowLeft}
+            class={classes(
+              styles.arrowLeft,
+              !ViewManager.hasUndo && styles.arrowDisabled
+            )}
+            onclick={() => ViewManager.pop()}
           />
-          {ViewManager.activeViewTitle}
+          {ViewManager.activeTitle}
           <font-awesome-icon
             icon={["fas", "arrow-right"]}
             size="lg"
@@ -235,13 +239,18 @@ const styles = stylesheet({
     marginTop: "-2px",
     paddingRight: "10px",
     opacity: 0,
-    transition: "opacity 150ms"
+    transition: "opacity 150ms",
+    cursor: "pointer"
   },
   arrowRight: {
     marginTop: "-2px",
     paddingLeft: "10px",
     opacity: 0,
     transition: "opacity 150ms"
+  },
+  arrowDisabled: {
+    color: Theme.middlegroundBgColor,
+    cursor: "default"
   }
 });
 
