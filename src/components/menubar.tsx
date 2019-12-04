@@ -1,4 +1,4 @@
-import { Component, Vue } from "vue-property-decorator";
+import { Component, Vue, Watch } from "vue-property-decorator";
 import { modifiers } from "vue-tsx-support";
 import { classes, style, stylesheet } from "typestyle";
 import { Theme } from "@/theming";
@@ -78,6 +78,10 @@ export class Menubar extends Vue {
   mounted() {
     window.addEventListener("resize", () => this.updateTitlePosition());
     setTimeout(() => this.updateTitlePosition());
+    this.$watch(
+      () => ViewManager.activeView,
+      () => this.updateTitlePosition()
+    );
   }
 
   updateTitlePosition() {

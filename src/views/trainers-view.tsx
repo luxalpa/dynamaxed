@@ -94,24 +94,22 @@ class TrainersViewCmp extends Vue {
       GameModel.model.trainers
     );
     return (
-      <div class={styles.trainerView}>
-        <table class={styles.trainerTable}>
-          <tr>
+      <table class={styles.trainerTable}>
+        <tr>
+          {this.layout.map(c => (
+            <th class={styles.tableHeader} style={{ textAlign: c.align }}>
+              {c.text}
+            </th>
+          ))}
+        </tr>
+        {trainerList.map(tid => (
+          <tr onclick={() => ViewManager.push(EditTrainerView, tid[0])}>
             {this.layout.map(c => (
-              <th class={styles.tableHeader} style={{ textAlign: c.align }}>
-                {c.text}
-              </th>
+              <td>{c.render(this.$createElement, tid)}</td>
             ))}
           </tr>
-          {trainerList.map(tid => (
-            <tr onclick={() => ViewManager.push(EditTrainerView, tid[0])}>
-              {this.layout.map(c => (
-                <td>{c.render(this.$createElement, tid)}</td>
-              ))}
-            </tr>
-          ))}
-        </table>
-      </div>
+        ))}
+      </table>
     );
   }
 }
@@ -124,11 +122,6 @@ export const TrainersView: ViewProps<void> = {
 ViewManager.registerView(TrainersView, "trainers");
 
 const styles = stylesheet({
-  trainerView: {
-    margin: "15px auto 0",
-    height: "calc(100% - 15px)",
-    overflow: "auto"
-  },
   trainerTable: {
     borderCollapse: "collapse",
     $nest: {

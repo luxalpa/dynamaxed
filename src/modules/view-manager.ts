@@ -74,7 +74,6 @@ export const ViewManager = new (class {
   }
 
   get activeTitle(): string {
-    console.log(this.currentView.params);
     return this.activeView.title(this.currentView.params);
   }
 

@@ -18,7 +18,9 @@ export const MainView = tsx.componentFactory.create({
         <Menubar />
         <div class={styles.navsplit}>
           <Navbar />
-          <Content />
+          <div class={styles.content}>
+            <Content />
+          </div>
         </div>
       </div>
 
@@ -50,6 +52,11 @@ const styles = stylesheet({
     display: "flex",
     height: "100%",
     flexDirection: "column"
+  },
+  content: {
+    margin: "15px auto 0",
+    height: "calc(100% - 15px)",
+    overflow: "auto"
   }
 });
 
