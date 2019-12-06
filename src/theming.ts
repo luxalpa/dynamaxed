@@ -9,6 +9,7 @@ const rawtheme = {
   backgroundHBgColor: "#2e2e2e",
   textColor: "#bdbdbd",
   textHColor: "#fff",
+  textDisabledColor: "#666666",
   accentColor: "#a75900",
   accentHColor: "#ffb42e"
 };

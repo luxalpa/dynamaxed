@@ -165,7 +165,7 @@ export class Menubar extends Vue {
             icon={["fas", "arrow-right"]}
             size="lg"
             pull="right"
-            class={styles.arrowRight}
+            class={classes(styles.arrowRight, styles.arrowDisabled)}
           />
         </div>
       </div>
@@ -253,7 +253,7 @@ const styles = stylesheet({
     transition: "opacity 150ms"
   },
   arrowDisabled: {
-    color: Theme.middlegroundBgColor,
+    color: Theme.textDisabledColor,
     cursor: "default"
   }
 });

@@ -57,12 +57,16 @@ export const ViewManager = new (class {
     this.viewStack.push(currentView);
   }
 
-  get currentView() {
+  private get currentView() {
     if (this.viewStack.length == 0) {
       return NoView;
     }
 
     return this.viewStack[this.viewStack.length - 1];
+  }
+
+  get activeParams(): any {
+    return this.currentView.params;
   }
 
   get activeView() {
