@@ -8,7 +8,7 @@ const rawtheme = {
   backgroundBgColor: "#222222",
   backgroundHBgColor: "#2e2e2e",
   textColor: "#bdbdbd",
-  textHColor: "#fff",
+  textHColor: "#e1e1e1",
   textDisabledColor: "#666666",
   accentColor: "#a75900",
   accentHColor: "#ffb42e"

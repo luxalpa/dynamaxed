@@ -11,6 +11,7 @@ import {
   faArrowLeft,
   faArrowRight,
   faCaretLeft,
+  faCheck,
   faTimes
 } from "@fortawesome/free-solid-svg-icons";
 import vuetify from "./plugins/vuetify";
@@ -29,7 +30,8 @@ library.add(
   faArrowAltCircleLeft,
   faCaretLeft,
   faArrowLeft,
-  faArrowRight
+  faArrowRight,
+  faCheck
 );
 
 enableTheme();

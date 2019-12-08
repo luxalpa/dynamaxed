@@ -15,6 +15,10 @@ export class TextInput extends Vue {
     default: 4
   })
   width!: number;
+  @Prop({
+    default: false
+  })
+  right!: boolean;
 
   get _value() {
     return this.value;
@@ -25,11 +29,17 @@ export class TextInput extends Vue {
   }
 
   render() {
+    const style = {
+      margin: this.margin,
+      width: Constants.grid(this.width),
+      textAlign: this.right ? "right" : "left"
+    };
+
     return (
       <div>
         <input
           type="text"
-          style={{ margin: this.margin, width: Constants.grid(this.width) }}
+          style={style}
           class={styles.textInput}
           vModel={this._value}
           disabled={this.disabled}
@@ -41,15 +51,28 @@ export class TextInput extends Vue {
 
 const styles = stylesheet({
   textInput: {
-    padding: "5px",
     height: Constants.grid(1),
-    backgroundColor: Theme.middlegroundBgColor,
+    backgroundColor: "transparent",
     color: Theme.textColor,
     border: "0",
     $nest: {
       "&[disabled]": {
         color: Theme.textDisabledColor
+      },
+      "&[disabled]:hover": {
+        color: Theme.textDisabledColor
+        // backgroundColor: Theme.middlegroundBgColor
+      },
+      "&:hover": {
+        color: Theme.textHColor
+        // backgroundColor: Theme.middlegroundBgColor
+      },
+      "&:focus": {
+        outline: "none"
       }
-    }
+    },
+    padding: "0 6px",
+    boxSizing: "border-box",
+    overflow: "hidden"
   }
 });

@@ -1,5 +1,6 @@
 import { Component, Prop, Vue } from "vue-property-decorator";
 import { GameModel } from "@/model/model";
+import { stylesheet } from "typestyle";
 
 @Component
 export class TrainerClass extends Vue {
@@ -17,8 +18,15 @@ export class TrainerClass extends Vue {
 
     return (
       <div>
-        {trainerClass.name} (${money * 4})
+        <div>{trainerClass.name}</div>
+        <div class={styles.money}>${money * 4}</div>
       </div>
     );
   }
 }
+
+const styles = stylesheet({
+  money: {
+    textAlign: "center"
+  }
+});

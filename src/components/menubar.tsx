@@ -186,7 +186,7 @@ const styles = stylesheet({
     "-webkit-user-select": "none"
   },
   menu: {
-    padding: "9px",
+    padding: "6px 9px",
     cursor: "pointer",
     position: "relative",
     $nest: {
@@ -236,18 +236,18 @@ const styles = stylesheet({
   },
   title: {
     position: "absolute",
-    padding: "9px",
+    padding: "6px 9px",
     fontWeight: 500
   },
   arrowLeft: {
-    marginTop: "-2px",
+    marginTop: "1px",
     paddingRight: "10px",
     opacity: 0,
     transition: "opacity 150ms",
     cursor: "pointer"
   },
   arrowRight: {
-    marginTop: "-2px",
+    marginTop: "1px",
     paddingLeft: "10px",
     opacity: 0,
     transition: "opacity 150ms"

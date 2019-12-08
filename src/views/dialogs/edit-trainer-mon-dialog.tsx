@@ -2,7 +2,7 @@ import { Component, Prop, Vue } from "vue-property-decorator";
 import { DialogManager, DialogOptions } from "@/modules/dialog-manager";
 import { NoTrainerPartyMon, TrainerPartyMon } from "@/model/model";
 import cloneDeep from "lodash.clonedeep";
-import { DialogEntry } from "@/components/dialog-entry";
+import { EditorProperty } from "@/components/editor-property";
 import { PathManager } from "@/modules/path-manager";
 import { modifiers } from "vue-tsx-support";
 import { ChooseItemDialog } from "@/views/dialogs/choose-item-dialog";
@@ -104,12 +104,12 @@ class EditTrainerMonDialogCmp extends Vue {
     return (
       <v-card class="dialog">
         <v-container>
-          <DialogEntry label="Pokemon">
+          <EditorProperty label="Pokemon">
             <v-btn height={90} width={90} onclick={() => this.changePokemon()}>
               <TrainerMon species={this.mon.species} />
             </v-btn>
-          </DialogEntry>
-          <DialogEntry label="Level">
+          </EditorProperty>
+          <EditorProperty label="Level">
             <v-text-field
               solo
               dense
@@ -121,8 +121,8 @@ class EditTrainerMonDialogCmp extends Vue {
               vModel={this.level}
               background-color={!this.levelRule ? "error lighten-2" : undefined}
             />
-          </DialogEntry>
-          <DialogEntry label="IV">
+          </EditorProperty>
+          <EditorProperty label="IV">
             <v-text-field
               solo
               dense
@@ -134,11 +134,13 @@ class EditTrainerMonDialogCmp extends Vue {
               vModel={this.iv}
               background-color={!this.ivRule ? "error lighten-2" : undefined}
             />
-          </DialogEntry>
-          <DialogEntry label="Held Item">{this.heldItemEntry}</DialogEntry>
-          <DialogEntry label="">
+          </EditorProperty>
+          <EditorProperty label="Held Item">
+            {this.heldItemEntry}
+          </EditorProperty>
+          <EditorProperty label="">
             <v-btn>Delete this Pokemon</v-btn>
-          </DialogEntry>
+          </EditorProperty>
         </v-container>
         <v-card-actions>
           <v-btn text large onclick={() => DialogManager.reject()}>

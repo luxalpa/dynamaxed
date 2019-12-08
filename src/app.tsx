@@ -42,6 +42,7 @@ const styles = stylesheet({
     "-webkit-font-smoothing": "antialiased",
     "-moz-osx-font-smoothing": "grayscale",
     fontSize: "13px",
+    lineHeight: "1.6",
     backgroundColor: Theme.backgroundBgColor,
     height: "100%",
     color: Theme.textColor,

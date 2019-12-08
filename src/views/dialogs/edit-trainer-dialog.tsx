@@ -3,7 +3,7 @@ import { DialogManager, DialogOptions } from "@/modules/dialog-manager";
 import cloneDeep from "lodash.clonedeep";
 import { modifiers } from "vue-tsx-support";
 import { PathManager } from "@/modules/path-manager";
-import { DialogEntry } from "@/components/dialog-entry";
+import { EditorProperty } from "@/components/editor-property";
 import Component from "vue-class-component";
 import { Vue } from "vue-property-decorator";
 import { EditFlagsDialog } from "@/views/dialogs/edit-flags-dialog";
@@ -112,10 +112,10 @@ class EditTrainerDialogCmp extends Vue {
     return (
       <v-card class="dialog">
         <v-container>
-          <DialogEntry label="ID">
+          <EditorProperty label="ID">
             <v-text-field solo dense hide-details vModel={this.trainerID} />
-          </DialogEntry>
-          <DialogEntry label="Picture">
+          </EditorProperty>
+          <EditorProperty label="Picture">
             <v-btn
               height={80}
               onclick={() => {
@@ -124,25 +124,25 @@ class EditTrainerDialogCmp extends Vue {
             >
               <v-img src={trainerImgPath} />
             </v-btn>
-          </DialogEntry>
-          <DialogEntry label="Name">
+          </EditorProperty>
+          <EditorProperty label="Name">
             <v-text-field
               solo
               dense
               hide-details
               vModel={this.trainer.trainerName}
             />
-          </DialogEntry>
-          <DialogEntry label="Trainer Class">
+          </EditorProperty>
+          <EditorProperty label="Trainer Class">
             <v-btn onclick={() => this.editTrainerClass()}>
               <TrainerClass classId={this.trainer.trainerClass} />
             </v-btn>
-          </DialogEntry>
-          <DialogEntry label="Encounter Music">
+          </EditorProperty>
+          <EditorProperty label="Encounter Music">
             <v-btn onclick={() => this.editEncounterMusic()}>
               {this.trainer.encounterMusic}
             </v-btn>
-          </DialogEntry>
+          </EditorProperty>
           <v-row>
             <v-col cols={4} class="dialog-label py-1" />
             <v-col cols={4} class="py-1">
@@ -164,7 +164,7 @@ class EditTrainerDialogCmp extends Vue {
               />
             </v-col>
           </v-row>
-          <DialogEntry label="Items">
+          <EditorProperty label="Items">
             <v-card class="mb-5">
               {this.trainer.items.map((item, index) => [
                 <v-chip
@@ -186,10 +186,10 @@ class EditTrainerDialogCmp extends Vue {
                 Add Item
               </v-btn>
             </v-card>
-          </DialogEntry>
-          <DialogEntry label="AI Flags">
+          </EditorProperty>
+          <EditorProperty label="AI Flags">
             <v-btn onclick={() => this.editFlags()}>Edit Flags</v-btn>
-          </DialogEntry>
+          </EditorProperty>
         </v-container>
         <v-card-actions>
           <v-btn text large onclick={() => DialogManager.reject()}>
