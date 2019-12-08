@@ -17,6 +17,8 @@ import { CreateElement, RenderContext, VNode } from "vue";
 import { AIFlags } from "@/model/constants";
 import { Constants } from "@/constants";
 import { Sprite } from "@/components/sprite";
+import { DialogManager } from "@/modules/dialog-manager";
+import { ChooseTrainerPicDialog } from "@/views/dialogs/choose-trainer-pic-dialog";
 
 const FlexRow = component({
   functional: true,
@@ -58,17 +60,31 @@ class EditTrainerViewCmp extends Vue {
     return ViewManager.activeParams as string;
   }
 
+  async changeTrainerIcon() {
+    const pic = await DialogManager.openDialog(
+      ChooseTrainerPicDialog,
+      this.trainer.trainerPic
+    );
+    if (pic) {
+      this.trainer.trainerPic = pic;
+    }
+  }
+
   render() {
     return (
       <div class={styles.windowlayout}>
         <div class={styles.window}>
           <FlexRow>
-            <ChooseButton width={3} height={3}>
+            <Button
+              width={3}
+              height={3}
+              onclick={() => this.changeTrainerIcon()}
+            >
               <img
                 class={styles.trainerPic}
                 src={PathManager.trainerPic(this.trainer.trainerPic)}
               />
-            </ChooseButton>
+            </Button>
           </FlexRow>
           <FlexRow>
             <Label width={3}>Name</Label>

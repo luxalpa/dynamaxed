@@ -15,5 +15,16 @@ export const Constants = {
       width: Constants.grid(x),
       height: Constants.grid(y)
     };
+  },
+
+  gridWrap(cells: number) {
+    return px(cells * gridSize + cells * (margin * 2));
+  },
+
+  gridWrapRect(x: number, y: number) {
+    return {
+      width: Constants.gridWrap(x),
+      height: Constants.gridWrap(y)
+    };
   }
 };

@@ -1,36 +1,50 @@
-import { Component, Vue } from "vue-property-decorator";
-import { DialogManager, DialogOptions } from "@/modules/dialog-manager";
+import { Component } from "vue-property-decorator";
+import { Dialog } from "@/modules/dialog-manager";
 import { TrainerPics } from "@/model/constants";
 import { PathManager } from "@/modules/path-manager";
+import { Button } from "@/components/button";
+import { Sprite } from "@/components/sprite";
+import { stylesheet } from "typestyle";
+import { Theme } from "@/theming";
+import { Constants } from "@/constants";
 
 @Component
-class ChooseTrainerPicDialogCmp extends Vue {
-  accept(id: string) {
-    DialogManager.accept(id);
-  }
-
+export class ChooseTrainerPicDialog extends Dialog<string, string> {
   render() {
     return (
-      <v-card>
-        <v-container>
-          <v-row>
+      <div class={styles.dialog}>
+        <div class={styles.scrollArea}>
+          <div class={styles.elements}>
             {TrainerPics.map(id => (
-              <v-btn
-                width={64}
-                height={64}
-                class="ma-1"
-                onclick={() => this.accept(id)}
-              >
-                <v-img src={PathManager.trainerPic(id)} />
-              </v-btn>
+              <Button width={3} height={3} onclick={() => this.accept(id)}>
+                <Sprite src={PathManager.trainerPic(id)} />
+              </Button>
             ))}
-          </v-row>
-        </v-container>
-      </v-card>
+          </div>
+        </div>
+      </div>
     );
   }
 }
 
-export const ChooseTrainerPicDialog: DialogOptions<string, string> = {
-  component: ChooseTrainerPicDialogCmp
-};
+const styles = stylesheet({
+  dialog: {
+    backgroundColor: Theme.middlegroundBgColor,
+    padding: "29px",
+    display: "flex"
+  },
+  scrollArea: {
+    overflow: "auto",
+    padding: "0 4px",
+    margin: "4px 0"
+  },
+  elements: {
+    margin: "-2px",
+    display: "flex",
+    flexWrap: "wrap",
+    width: Constants.gridWrap(3 * 6),
+    boxSizing: "border-box",
+    height: Constants.gridWrap(3 * 8)
+    // ...Constants.gridWrapRect(3 * 6, 3 * 8)
+  }
+});

@@ -7,6 +7,8 @@ import { GameModel } from "@/model/model";
 import { DialogManager } from "@/modules/dialog-manager";
 import { cssRule, stylesheet } from "typestyle";
 import { Theme } from "@/theming";
+import { rgba } from "csx";
+import { modifiers } from "vue-tsx-support";
 
 cssRule("html, body", {
   height: "100%"
@@ -51,6 +53,16 @@ const styles = stylesheet({
         height: "100%"
       }
     }
+  },
+  dialogWrapper: {
+    width: "100%",
+    height: "100%",
+    backgroundColor: rgba(0, 0, 0, 0.5).toString(),
+    position: "absolute",
+    zIndex: 1,
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center"
   }
 });
 
@@ -82,17 +94,15 @@ export default class App extends Vue {
     return (
       <div id="app" class={styles.app}>
         {DialogManager.dialogs.map((d, index) => {
-          const Dialog: any = d.dialogOpts.component;
+          const Dialog: any = d.component;
           return (
-            <v-dialog
-              persistent={d.dialogOpts.modal}
-              value={d.vmodel}
+            <div
               key={d.id}
-              oninput={() => DialogManager.reject()}
-              max-width={d.dialogOpts.maxWidth}
+              onclick={modifiers.self(() => DialogManager.reject(d.id))}
+              class={styles.dialogWrapper}
             >
-              <Dialog params={d.params} />
-            </v-dialog>
+              <Dialog args={d.params} dialogID={d.id} />
+            </div>
           );
         })}
         <CurView />

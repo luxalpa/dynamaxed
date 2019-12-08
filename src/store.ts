@@ -3,6 +3,8 @@ import { ProjectManager } from "@/modules/project-manager";
 import { SelectionManager } from "@/modules/selection-manager";
 import { TrainersView } from "@/views/trainers-view";
 import { EditTrainerView } from "@/views/edit-trainer-view";
+import { DialogManager } from "@/modules/dialog-manager";
+import { ChooseTrainerPicDialog } from "@/views/dialogs/choose-trainer-pic-dialog";
 
 export const store: any = {
   ViewManager,
@@ -33,6 +35,7 @@ if (process.env.NODE_ENV !== "development") {
     "C:\\Users\\Smaug\\Desktop\\Pokemon\\pokeemerald\\"
   );
   ViewManager.push(EditTrainerView, "JUAN_5");
+
   // DialogManager.openDialog(
   //   EditTrainerMonDialog,
   //   GameModel.model.trainers["SAWYER_1"].party[0]

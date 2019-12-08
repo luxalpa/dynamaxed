@@ -1,61 +1,75 @@
+import { Prop, Vue } from "vue-property-decorator";
+
+export class Dialog<T, U> extends Vue {
+  @Prop() args!: T;
+  @Prop() dialogID!: number;
+
+  accept(this: Dialog<T, void>): void;
+  accept(this: Dialog<T, U>, returnValue: U): void;
+  accept(returnValue?: U): void {
+    DialogManager.accept(this.dialogID, returnValue);
+  }
+
+  reject() {
+    DialogManager.reject(this.dialogID);
+  }
+}
+
 interface ActiveDialog {
   resolve(params?: any): void;
   reject(result?: any): void;
-  dialogOpts: DialogOptions<any, any>;
   params: any;
-  vmodel: boolean;
   id: number;
-}
-
-export interface DialogOptions<Params, ReturnType> {
-  maxWidth?: number;
-  component: any;
-  modal?: boolean;
+  component: new () => Dialog<any, any>;
 }
 
 export const DialogManager = new (class {
   private _autoIncDialogID = 0;
-  dialogs: ActiveDialog[] = [];
+  private dialogs: ActiveDialog[] = [];
 
-  accept<T>(params?: T) {
-    this.closeTopmostDialog().resolve(params);
+  accept<T>(id: number, params?: T) {
+    this.closeDialog(id).resolve(params);
   }
 
-  private closeTopmostDialog(): ActiveDialog {
+  closeDialog(id: number): ActiveDialog {
+    const idx = this.dialogs.findIndex(d => d.id === id);
+    if (idx == -1) {
+      throw new Error("Dialog not found");
+    }
+    return this.dialogs.splice(idx, 1)[0];
+  }
+
+  closeTopmostDialog(): ActiveDialog {
     if (this.dialogs.length === 0) {
       throw new Error("No Dialogs to close!");
     }
 
-    const d = this.dialogs[this.dialogs.length - 1];
-    d.vmodel = false;
-    setTimeout(() => {
-      let idx = this.dialogs.indexOf(d);
-      this.dialogs.splice(idx, 1);
-    }, 500);
-    return d;
+    return this.closeDialog(this.dialogs[this.dialogs.length - 1].id);
   }
 
-  reject() {
-    this.closeTopmostDialog().resolve(undefined);
+  reject(id: number) {
+    this.closeDialog(id).resolve(undefined);
   }
 
   async openDialog<T, U>(
-    dialogOpts: DialogOptions<T, U>,
+    dialog: new () => Dialog<void, U>
+  ): Promise<U | undefined>;
+  async openDialog<T, U>(
+    dialog: new () => Dialog<T, U>,
     params: T
+  ): Promise<U | undefined>;
+  async openDialog<T, U>(
+    dialog: new () => Dialog<T, U>,
+    params?: T
   ): Promise<U | undefined> {
     return new Promise<any>((resolve, reject) => {
       let d: ActiveDialog = {
-        dialogOpts,
         params,
         reject,
         resolve,
-        vmodel: false,
+        component: dialog,
         id: this._autoIncDialogID++
       };
-
-      setTimeout(() => {
-        d.vmodel = true;
-      }, 1);
 
       this.dialogs.push(d);
     });
