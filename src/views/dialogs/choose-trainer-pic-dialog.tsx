@@ -12,7 +12,7 @@ import { Constants } from "@/constants";
 export class ChooseTrainerPicDialog extends Dialog<string, string> {
   render() {
     return (
-      <div class={styles.dialog}>
+      <div>
         <div class={styles.scrollArea}>
           <div class={styles.elements}>
             {TrainerPics.map(id => (
@@ -28,11 +28,6 @@ export class ChooseTrainerPicDialog extends Dialog<string, string> {
 }
 
 const styles = stylesheet({
-  dialog: {
-    backgroundColor: Theme.middlegroundBgColor,
-    padding: "29px",
-    display: "flex"
-  },
   scrollArea: {
     overflow: "auto",
     padding: "0 4px",

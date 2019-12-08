@@ -19,26 +19,8 @@ import { Constants } from "@/constants";
 import { Sprite } from "@/components/sprite";
 import { DialogManager } from "@/modules/dialog-manager";
 import { ChooseTrainerPicDialog } from "@/views/dialogs/choose-trainer-pic-dialog";
-
-const FlexRow = component({
-  functional: true,
-  render(
-    createElement: CreateElement,
-    context: RenderContext<any>
-  ): VNode | VNode[] {
-    return <div class={styles.row}>{context.children}</div>;
-  }
-});
-
-const FlexColumn = component({
-  functional: true,
-  render(
-    createElement: CreateElement,
-    context: RenderContext<any>
-  ): VNode | VNode[] {
-    return <div class={styles.column}>{context.children}</div>;
-  }
-});
+import { InputTextDialog } from "@/views/dialogs/input-text-dialog";
+import { FlexColumn, FlexRow } from "@/components/layout";
 
 function* monMoves(mon: TrainerPartyMon) {
   for (let i = 0; i < 4; i++) {
@@ -70,6 +52,16 @@ class EditTrainerViewCmp extends Vue {
     }
   }
 
+  async changeTrainerName() {
+    const text = await DialogManager.openDialog(
+      InputTextDialog,
+      this.trainer.trainerName
+    );
+    if (text != undefined) {
+      this.trainer.trainerName = text;
+    }
+  }
+
   render() {
     return (
       <div class={styles.windowlayout}>
@@ -88,7 +80,9 @@ class EditTrainerViewCmp extends Vue {
           </FlexRow>
           <FlexRow>
             <Label width={3}>Name</Label>
-            <Button>{this.trainer.trainerName}</Button>
+            <Button onclick={() => this.changeTrainerName()}>
+              {this.trainer.trainerName}
+            </Button>
           </FlexRow>
           <FlexRow>
             <Label width={3}>ID</Label>
@@ -199,14 +193,6 @@ const styles = stylesheet({
     display: "flex",
     alignItems: "flex-start",
     height: "100%"
-  },
-  row: {
-    display: "flex",
-    minHeight: "29px"
-  },
-  column: {
-    display: "flex",
-    flexDirection: "column"
   },
   window: {
     backgroundColor: Theme.middlegroundBgColor,

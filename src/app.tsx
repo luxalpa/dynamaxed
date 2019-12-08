@@ -38,6 +38,12 @@ cssRule("::-webkit-scrollbar-thumb", {
   }
 });
 
+cssRule("::selection", {
+  backgroundColor: Theme.accentHColor,
+  color: "black",
+  outline: "solid"
+});
+
 const styles = stylesheet({
   app: {
     fontFamily: ["sans-serif", "Arial", "Helvetica", "Roboto", "Fira Sans"],
@@ -63,6 +69,11 @@ const styles = stylesheet({
     display: "flex",
     alignItems: "center",
     justifyContent: "center"
+  },
+  dialog: {
+    backgroundColor: Theme.middlegroundBgColor,
+    padding: "29px",
+    display: "flex"
   }
 });
 
@@ -101,7 +112,7 @@ export default class App extends Vue {
               onclick={modifiers.self(() => DialogManager.reject(d.id))}
               class={styles.dialogWrapper}
             >
-              <Dialog args={d.params} dialogID={d.id} />
+              <Dialog args={d.params} dialogID={d.id} class={styles.dialog} />
             </div>
           );
         })}

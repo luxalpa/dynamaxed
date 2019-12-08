@@ -1,4 +1,4 @@
-import { Component, Prop, Vue } from "vue-property-decorator";
+import { Component, Prop, Ref, Vue } from "vue-property-decorator";
 import { stylesheet } from "typestyle";
 import { Theme } from "@/theming";
 import { Constants } from "@/constants";
@@ -8,17 +8,13 @@ export class TextInput extends Vue {
   @Prop() value!: string;
   @Prop() disabled!: boolean;
   @Prop({
-    default: Constants.margin
-  })
-  margin!: string;
-  @Prop({
     default: 4
   })
   width!: number;
   @Prop({
-    default: false
+    default: 1
   })
-  right!: boolean;
+  height!: number;
 
   get _value() {
     return this.value;
@@ -28,11 +24,16 @@ export class TextInput extends Vue {
     this.$emit("input", v);
   }
 
+  @Ref("input") refInput!: HTMLInputElement;
+
+  focus() {
+    this.refInput.select();
+    this.refInput.focus();
+  }
+
   render() {
     const style = {
-      margin: this.margin,
-      width: Constants.grid(this.width),
-      textAlign: this.right ? "right" : "left"
+      ...Constants.gridRect(this.width, this.height)
     };
 
     return (
@@ -43,6 +44,7 @@ export class TextInput extends Vue {
           class={styles.textInput}
           vModel={this._value}
           disabled={this.disabled}
+          ref="input"
         />
       </div>
     );
@@ -52,8 +54,9 @@ export class TextInput extends Vue {
 const styles = stylesheet({
   textInput: {
     height: Constants.grid(1),
-    backgroundColor: "transparent",
+    backgroundColor: Theme.foregroundBgColor,
     color: Theme.textColor,
+    margin: Constants.margin,
     border: "0",
     $nest: {
       "&[disabled]": {

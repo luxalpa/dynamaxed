@@ -25,7 +25,7 @@ interface ActiveDialog {
 
 export const DialogManager = new (class {
   private _autoIncDialogID = 0;
-  private dialogs: ActiveDialog[] = [];
+  dialogs: ActiveDialog[] = [];
 
   accept<T>(id: number, params?: T) {
     this.closeDialog(id).resolve(params);
