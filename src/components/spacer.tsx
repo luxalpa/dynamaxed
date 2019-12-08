@@ -24,5 +24,7 @@ export class Spacer extends Vue {
 }
 
 const styles = stylesheet({
-  spacer: {}
+  spacer: {
+    margin: Constants.margin
+  }
 });

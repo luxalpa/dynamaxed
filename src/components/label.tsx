@@ -4,7 +4,10 @@ import { Constants } from "@/constants";
 
 @Component
 export class Label extends Vue {
-  @Prop() width!: number;
+  @Prop({
+    default: 4
+  })
+  width!: number;
 
   render() {
     return (
@@ -21,6 +24,8 @@ const styles = stylesheet({
     height: Constants.grid(1),
     display: "flex",
     alignItems: "center",
-    cursor: "default"
+    cursor: "default",
+    paddingLeft: "5px",
+    boxSizing: "border-box"
   }
 });

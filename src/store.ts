@@ -32,7 +32,7 @@ if (process.env.NODE_ENV !== "development") {
   ProjectManager.openProject(
     "C:\\Users\\Smaug\\Desktop\\Pokemon\\pokeemerald\\"
   );
-  ViewManager.push(EditTrainerView, "GABRIELLE_1");
+  ViewManager.push(EditTrainerView, "JUAN_5");
   // DialogManager.openDialog(
   //   EditTrainerMonDialog,
   //   GameModel.model.trainers["SAWYER_1"].party[0]

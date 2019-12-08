@@ -23,22 +23,6 @@ export const MainView = tsx.componentFactory.create({
           </div>
         </div>
       </div>
-
-      /*<div>
-        <Button>Click me outside!</Button>
-        <TextInput />
-        <Splitter>
-          <Button>In Splitter</Button>
-          <TextInput />
-        </Splitter>
-      </div>*/
-
-      /*,
-
-      <Toolbar />,
-      <v-content>
-        <Content />
-      </v-content>*/
     ];
   }
 });
@@ -54,8 +38,8 @@ const styles = stylesheet({
     flexDirection: "column"
   },
   content: {
-    margin: "15px auto 0",
-    height: "calc(100% - 15px)",
+    margin: "29px auto",
+    height: "calc(100% - 58px)",
     overflow: "auto"
   }
 });

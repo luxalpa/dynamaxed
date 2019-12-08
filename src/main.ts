@@ -12,7 +12,9 @@ import {
   faArrowRight,
   faCaretLeft,
   faCheck,
-  faTimes
+  faTimes,
+  faTrash,
+  faTrashAlt
 } from "@fortawesome/free-solid-svg-icons";
 import vuetify from "./plugins/vuetify";
 // import "roboto-fontface/css/roboto/roboto-fontface.css";
@@ -31,7 +33,8 @@ library.add(
   faCaretLeft,
   faArrowLeft,
   faArrowRight,
-  faCheck
+  faCheck,
+  faTrashAlt
 );
 
 enableTheme();
