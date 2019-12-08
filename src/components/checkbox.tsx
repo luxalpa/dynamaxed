@@ -44,7 +44,7 @@ export class Checkbox extends Vue {
   }
 }
 
-const checkSize = 20;
+const checkSize = Constants.gridSize;
 
 const styles = stylesheet({
   item: {
@@ -52,14 +52,14 @@ const styles = stylesheet({
     display: "flex",
     alignItems: "center",
     position: "relative",
-    justifyContent: "center",
     "-webkit-user-select": "none"
   },
 
   contentWrapper: {
     cursor: "pointer",
     position: "relative",
-    display: "flex"
+    display: "flex",
+    alignItems: "center"
   },
 
   box: {
@@ -71,8 +71,8 @@ const styles = stylesheet({
 
   checkIcon: {
     position: "absolute",
-    marginLeft: px(4),
-    marginTop: px(3)
+    marginLeft: px(6),
+    marginTop: px(0)
   }
 });
 

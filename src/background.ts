@@ -32,6 +32,12 @@ function createWindow() {
     }
   });
 
+  // win.on("app-command", (e, cmd) => {
+  //   if (cmd === "browser-backward") {
+  //     win!.webContents.send("app-command", cmd);
+  //   }
+  // });
+
   if (process.env.WEBPACK_DEV_SERVER_URL) {
     // Load the url of the dev server if in development mode
     win.loadURL(process.env.WEBPACK_DEV_SERVER_URL as string);

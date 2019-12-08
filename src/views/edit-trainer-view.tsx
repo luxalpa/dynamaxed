@@ -11,6 +11,7 @@ import { Label } from "@/components/label";
 import { Button } from "@/components/button";
 import { TrainerClass } from "@/components/trainer-class";
 import { Checkbox } from "@/components/checkbox";
+import { Spacer } from "@/components/spacer";
 
 @Component
 class EditTrainerViewCmp extends Vue {
@@ -49,8 +50,13 @@ class EditTrainerViewCmp extends Vue {
           <Label width={4}>Encounter Music:</Label>
           <Button width={4}>{this.trainer.encounterMusic}</Button>
         </div>
-        <div class={styles.centered}>
+        <div class={styles.flex}>
+          <Spacer width={2} />
           <Checkbox vModel={this.trainer.doubleBattle}>Double Battle</Checkbox>
+        </div>
+        <div class={styles.flex}>
+          <Spacer width={2} />
+          <Checkbox vModel={this.trainer.isFemaleEncounter}>Is Female</Checkbox>
         </div>
       </div>
     );
@@ -74,6 +80,7 @@ const styles = stylesheet({
   },
   centered: {
     display: "flex",
-    justifyContent: "center"
+    flexDirection: "column",
+    alignItems: "center"
   }
 });

@@ -42,12 +42,12 @@ const styles = stylesheet({
     margin: Constants.margin,
     display: "flex",
     alignItems: "center",
-    backgroundColor: Theme.middlegroundBgColor,
+    backgroundColor: Theme.foregroundBgColor,
     justifyContent: "center",
     cursor: "pointer",
     $nest: {
       "&:hover": {
-        backgroundColor: Theme.middlegroundHBgColor
+        backgroundColor: Theme.foregroundHBgColor
       }
     }
   },

@@ -1,3 +1,5 @@
+import { ipcRenderer } from "electron";
+
 export interface ViewProps<Params> {
   component: any;
   title: (p: Params) => string;
@@ -15,6 +17,19 @@ const NoView: ViewInstance = {
 
 let registeredViews = new Map<string, ViewProps<any>>();
 let view2name = new Map<ViewProps<any>, string>();
+
+// Currently broken (https://github.com/electron/electron/issues/17134)
+ipcRenderer.on("app-command", (e, cmd: string) => {
+  console.log("Backwards!");
+});
+
+window.addEventListener("mousedown", event => {
+  switch (event.button) {
+    case 3:
+      ViewManager.pop();
+    // case 4: history.forward(); break;
+  }
+});
 
 export const ViewManager = new (class {
   viewStack: ViewInstance[] = [];
