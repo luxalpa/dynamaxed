@@ -1,6 +1,8 @@
 import { ViewManager } from "@/modules/view-manager";
 import { ProjectManager } from "@/modules/project-manager";
 import { EditTrainerView } from "@/views/edit-trainer-view";
+import { DialogManager } from "@/modules/dialog-manager";
+import { ChooseTrainerClassDialog } from "@/views/dialogs/choose-trainer-class-dialog";
 
 export const store: any = {
   ViewManager,
@@ -31,6 +33,7 @@ if (process.env.NODE_ENV !== "development") {
     "C:\\Users\\Smaug\\Desktop\\Pokemon\\pokeemerald\\"
   );
   ViewManager.push(EditTrainerView, "JUAN_5");
+  DialogManager.openDialog(ChooseTrainerClassDialog, "");
 
   // DialogManager.openDialog(
   //   EditTrainerMonDialog,
