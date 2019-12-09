@@ -1,19 +1,14 @@
 import { Component, Vue } from "vue-property-decorator";
 import { ViewManager, ViewProps } from "@/modules/view-manager";
-import { GameModel, Pokemon, TrainerPartyMon } from "@/model/model";
+import { GameModel, TrainerPartyMon } from "@/model/model";
 import { stylesheet } from "typestyle";
 import { PathManager } from "@/modules/path-manager";
 import { Theme } from "@/theming";
-import { TextInput } from "@/components/text-input";
-import { ChooseButton } from "@/components/choose-button";
-import { EditorProperty } from "@/components/editor-property";
 import { Label } from "@/components/label";
 import { Button } from "@/components/button";
 import { TrainerClass } from "@/components/trainer-class";
 import { Checkbox } from "@/components/checkbox";
 import { Spacer } from "@/components/spacer";
-import { component } from "vue-tsx-support";
-import { CreateElement, RenderContext, VNode } from "vue";
 import { AIFlags } from "@/model/constants";
 import { Constants } from "@/constants";
 import { Sprite } from "@/components/sprite";
@@ -21,6 +16,8 @@ import { DialogManager } from "@/modules/dialog-manager";
 import { ChooseTrainerPicDialog } from "@/views/dialogs/choose-trainer-pic-dialog";
 import { InputTextDialog } from "@/views/dialogs/input-text-dialog";
 import { FlexColumn, FlexRow } from "@/components/layout";
+import { IDManager } from "@/modules/id-manager";
+import { ChooseTrainerClassDialog } from "@/views/dialogs/choose-trainer-class-dialog";
 
 function* monMoves(mon: TrainerPartyMon) {
   for (let i = 0; i < 4; i++) {
@@ -38,7 +35,7 @@ class EditTrainerViewCmp extends Vue {
     return GameModel.model.trainers[this.trainerID];
   }
 
-  get trainerID() {
+  get trainerID(): string {
     return ViewManager.activeParams as string;
   }
 
@@ -59,6 +56,26 @@ class EditTrainerViewCmp extends Vue {
     );
     if (text != undefined) {
       this.trainer.trainerName = text;
+    }
+  }
+
+  async changeTrainerID() {
+    const text = await DialogManager.openDialog(
+      InputTextDialog,
+      this.trainerID
+    );
+    if (text != undefined) {
+      IDManager.changeTrainerID(this.trainerID, text);
+    }
+  }
+
+  async changeTrainerClass() {
+    const trainerClass = await DialogManager.openDialog(
+      ChooseTrainerClassDialog,
+      this.trainer.trainerClass
+    );
+    if (trainerClass != undefined) {
+      this.trainer.trainerClass = trainerClass;
     }
   }
 
@@ -86,11 +103,13 @@ class EditTrainerViewCmp extends Vue {
           </FlexRow>
           <FlexRow>
             <Label width={3}>ID</Label>
-            <Button>#{this.trainerID}</Button>
+            <Button onclick={() => this.changeTrainerID()}>
+              #{this.trainerID}
+            </Button>
           </FlexRow>
           <FlexRow>
             <Label width={3}>Trainer Class</Label>
-            <Button height={2}>
+            <Button height={2} onclick={() => this.changeTrainerClass()}>
               <TrainerClass classId={this.trainer.trainerClass} />
             </Button>
           </FlexRow>
