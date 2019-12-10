@@ -13,11 +13,11 @@ import { AIFlags } from "@/model/constants";
 import { Constants } from "@/constants";
 import { Sprite } from "@/components/sprite";
 import { DialogManager } from "@/modules/dialog-manager";
-import { ChooseTrainerPicDialog } from "@/views/dialogs/choose-trainer-pic-dialog";
-import { InputTextDialog } from "@/views/dialogs/input-text-dialog";
+import { ChooseTrainerPicDialog } from "@/components/dialogs/choose-trainer-pic-dialog";
+import { InputTextDialog } from "@/components/dialogs/input-text-dialog";
 import { FlexColumn, FlexRow } from "@/components/layout";
 import { IDManager } from "@/modules/id-manager";
-import { ChooseTrainerClassDialog } from "@/views/dialogs/choose-trainer-class-dialog";
+import { ChooseTrainerClassDialog } from "@/components/dialogs/choose-trainer-class-dialog";
 
 function* monMoves(mon: TrainerPartyMon) {
   for (let i = 0; i < 4; i++) {
