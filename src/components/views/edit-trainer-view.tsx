@@ -6,7 +6,7 @@ import { PathManager } from "@/modules/path-manager";
 import { Theme } from "@/theming";
 import { Label } from "@/components/label";
 import { Button } from "@/components/button";
-import { TrainerClass } from "@/components/trainer-class";
+import { TrainerClass } from "@/components/model/trainer-class";
 import { Checkbox } from "@/components/checkbox";
 import { Spacer } from "@/components/spacer";
 import { AIFlags } from "@/model/constants";
@@ -17,8 +17,12 @@ import { ChooseTrainerPicDialog } from "@/components/dialogs/choose-trainer-pic-
 import { InputTextDialog } from "@/components/dialogs/input-text-dialog";
 import { FlexColumn, FlexRow } from "@/components/layout";
 import { IDManager } from "@/modules/id-manager";
-import { ChooseTrainerClassDialog } from "@/components/dialogs/choose-trainer-class-dialog";
-import { ChooseEncounterMusicDialog } from "@/components/dialogs/choose-encounter-music-dialog";
+import {
+  ChooseItemDialog,
+  ChooseTrainerClassDialog
+} from "@/components/dialogs/choose-from-list-dialog";
+import { ChooseEncounterMusicDialog } from "@/components/dialogs/choose-from-list-dialog";
+import { ItemDisplay } from "@/components/model/item-display";
 
 function* monMoves(mon: TrainerPartyMon) {
   for (let i = 0; i < 4; i++) {
@@ -55,7 +59,7 @@ class EditTrainerViewCmp extends Vue {
       InputTextDialog,
       this.trainer.trainerName
     );
-    if (text != undefined) {
+    if (text !== undefined) {
       this.trainer.trainerName = text;
     }
   }
@@ -65,7 +69,7 @@ class EditTrainerViewCmp extends Vue {
       InputTextDialog,
       this.trainerID
     );
-    if (text != undefined) {
+    if (text !== undefined) {
       IDManager.changeTrainerID(this.trainerID, text);
     }
   }
@@ -75,7 +79,7 @@ class EditTrainerViewCmp extends Vue {
       ChooseTrainerClassDialog,
       this.trainer.trainerClass
     );
-    if (trainerClass != undefined) {
+    if (trainerClass !== undefined) {
       this.trainer.trainerClass = trainerClass;
     }
   }
@@ -85,8 +89,29 @@ class EditTrainerViewCmp extends Vue {
       ChooseEncounterMusicDialog,
       this.trainer.encounterMusic
     );
-    if (encounterMusic != undefined) {
+    if (encounterMusic !== undefined) {
       this.trainer.encounterMusic = encounterMusic;
+    }
+  }
+
+  async changeItem(pos: number) {
+    const item = await DialogManager.openDialog(
+      ChooseItemDialog,
+      this.trainer.items[pos]
+    );
+    if (item !== undefined) {
+      Vue.set(this.trainer.items, pos, item);
+    }
+  }
+
+  removeItem(pos: number) {
+    this.trainer.items.splice(pos, 1);
+  }
+
+  async addItem() {
+    const item = await DialogManager.openDialog(ChooseItemDialog, "");
+    if (item !== undefined) {
+      this.trainer.items.push(item);
     }
   }
 
@@ -145,18 +170,22 @@ class EditTrainerViewCmp extends Vue {
           </FlexRow>
           <FlexRow />
           <Label width={4}>Items</Label>
-          {this.trainer.items.map(item => (
+          {this.trainer.items.map((item, i) => (
             <FlexRow>
               <Spacer width={1} />
-              <Button width={5}>{item}</Button>
-              <Button width={1}>
+              <Button width={5} onclick={() => this.changeItem(i)}>
+                <ItemDisplay item={item} />
+              </Button>
+              <Button width={1} onclick={() => this.removeItem(i)}>
                 <font-awesome-icon icon={["fas", "times"]} />
               </Button>
             </FlexRow>
           ))}
           <FlexRow>
             <Spacer width={1} />
-            <Button width={6}>Add</Button>
+            <Button width={6} onclick={() => this.addItem()}>
+              Add
+            </Button>
           </FlexRow>
           <FlexRow />
           <Label>AI Flags</Label>
