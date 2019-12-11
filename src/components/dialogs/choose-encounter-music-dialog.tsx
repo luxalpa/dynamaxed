@@ -1,14 +1,14 @@
 import { Component } from "vue-property-decorator";
 import { Dialog } from "@/modules/dialog-manager";
+import { EncounterMusicList } from "@/components/lists/encounter-music-list";
 import { stylesheet } from "typestyle";
-import { TrainerClassList } from "@/components/lists/trainer-class-list";
 
 @Component
-export class ChooseTrainerClassDialog extends Dialog<string, string> {
+export class ChooseEncounterMusicDialog extends Dialog<string, string> {
   render() {
     return (
       <div class={styles.dialog}>
-        <TrainerClassList
+        <EncounterMusicList
           onentryclick={(e: string) => this.accept(e)}
           class={styles.tableWrapper}
         />

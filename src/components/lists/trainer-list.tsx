@@ -12,6 +12,10 @@ type TrainerWithID = [string, Trainer];
 
 @Component
 export class TrainerList extends Vue {
+  onEntryClick(entry: TrainerWithID) {
+    this.$emit("entryclick", entry[0]);
+  }
+
   get layout(): Column<TrainerWithID>[] {
     return [
       {
@@ -89,9 +93,7 @@ export class TrainerList extends Vue {
       <Table
         layout={this.layout}
         entries={trainerList}
-        onentryclick={(row: TrainerWithID) =>
-          ViewManager.push(EditTrainerView, row[0])
-        }
+        onentryclick={(row: TrainerWithID) => this.onEntryClick(row)}
       />
     );
   }

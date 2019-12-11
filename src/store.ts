@@ -35,7 +35,7 @@ if (process.env.NODE_ENV !== "development") {
   );
   // ViewManager.push(TrainersView);
   ViewManager.push(EditTrainerView, "JUAN_5");
-  DialogManager.openDialog(ChooseTrainerClassDialog, "");
+  // DialogManager.openDialog(ChooseTrainerClassDialog, "");
 
   // DialogManager.openDialog(
   //   EditTrainerMonDialog,

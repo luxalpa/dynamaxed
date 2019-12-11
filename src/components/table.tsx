@@ -22,22 +22,24 @@ export class Table extends Vue {
 
   render() {
     return (
-      <table class={styles.table}>
-        <tr>
-          {this.layout.map(c => (
-            <th class={styles.tableHeader} style={{ textAlign: c.align }}>
-              {c.text}
-            </th>
-          ))}
-        </tr>
-        {this.entries.map(row => (
-          <tr onclick={() => this.onRowClick(row)}>
+      <div>
+        <table class={styles.table}>
+          <tr>
             {this.layout.map(c => (
-              <td>{c.render(this.$createElement, row)}</td>
+              <th class={styles.tableHeader} style={{ textAlign: c.align }}>
+                {c.text}
+              </th>
             ))}
           </tr>
-        ))}
-      </table>
+          {this.entries.map(row => (
+            <tr onclick={() => this.onRowClick(row)}>
+              {this.layout.map(c => (
+                <td>{c.render(this.$createElement, row)}</td>
+              ))}
+            </tr>
+          ))}
+        </table>
+      </div>
     );
   }
 }

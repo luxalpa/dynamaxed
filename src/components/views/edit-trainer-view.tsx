@@ -18,6 +18,7 @@ import { InputTextDialog } from "@/components/dialogs/input-text-dialog";
 import { FlexColumn, FlexRow } from "@/components/layout";
 import { IDManager } from "@/modules/id-manager";
 import { ChooseTrainerClassDialog } from "@/components/dialogs/choose-trainer-class-dialog";
+import { ChooseEncounterMusicDialog } from "@/components/dialogs/choose-encounter-music-dialog";
 
 function* monMoves(mon: TrainerPartyMon) {
   for (let i = 0; i < 4; i++) {
@@ -79,6 +80,16 @@ class EditTrainerViewCmp extends Vue {
     }
   }
 
+  async changeEncounterMusic() {
+    const encounterMusic = await DialogManager.openDialog(
+      ChooseEncounterMusicDialog,
+      this.trainer.encounterMusic
+    );
+    if (encounterMusic != undefined) {
+      this.trainer.encounterMusic = encounterMusic;
+    }
+  }
+
   render() {
     return (
       <div class={styles.windowlayout}>
@@ -115,7 +126,9 @@ class EditTrainerViewCmp extends Vue {
           </FlexRow>
           <FlexRow>
             <Label width={4}>Encounter Music</Label>
-            <Button width={4}>{this.trainer.encounterMusic}</Button>
+            <Button width={4} onclick={() => this.changeEncounterMusic()}>
+              {this.trainer.encounterMusic}
+            </Button>
           </FlexRow>
           <FlexRow />
           <FlexRow>
