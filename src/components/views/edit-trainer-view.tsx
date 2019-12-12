@@ -115,6 +115,19 @@ class EditTrainerViewCmp extends Vue {
     }
   }
 
+  getAIFlag(flag: string) {
+    return this.trainer.aiFlags.some(v => v === flag);
+  }
+
+  setAIFlag(flag: string, value: boolean) {
+    if (value) {
+      this.trainer.aiFlags.push(flag);
+    } else {
+      const i = this.trainer.aiFlags.indexOf(flag);
+      this.trainer.aiFlags.splice(i, 1);
+    }
+  }
+
   render() {
     return (
       <div class={styles.windowlayout}>
@@ -192,7 +205,12 @@ class EditTrainerViewCmp extends Vue {
           {AIFlags.map(flag => (
             <FlexRow>
               <Spacer width={1} />
-              <Checkbox value={false}>{flag}</Checkbox>
+              <Checkbox
+                value={this.getAIFlag(flag)}
+                oninput={(v: boolean) => this.setAIFlag(flag, v)}
+              >
+                {flag}
+              </Checkbox>
             </FlexRow>
           ))}
           <FlexRow />
