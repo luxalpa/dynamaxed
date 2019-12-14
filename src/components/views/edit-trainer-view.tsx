@@ -19,6 +19,7 @@ import { FlexColumn, FlexRow } from "@/components/layout";
 import { IDManager } from "@/modules/id-manager";
 import {
   ChooseItemDialog,
+  ChoosePokemonDialog,
   ChooseTrainerClassDialog
 } from "@/components/dialogs/choose-from-list-dialog";
 import { ChooseEncounterMusicDialog } from "@/components/dialogs/choose-from-list-dialog";
@@ -128,6 +129,26 @@ class EditTrainerViewCmp extends Vue {
     }
   }
 
+  async changePokemon(pos: number) {
+    const species = await DialogManager.openDialog(
+      ChoosePokemonDialog,
+      this.trainer.party[pos].species
+    );
+    if (species !== undefined) {
+      this.trainer.party[pos].species = species;
+    }
+  }
+
+  async changeHeldItem(pos: number) {
+    const item = await DialogManager.openDialog(
+      ChooseItemDialog,
+      this.trainer.party[pos].heldItem || ""
+    );
+    if (item !== undefined) {
+      this.trainer.party[pos].heldItem = item;
+    }
+  }
+
   render() {
     return (
       <div class={styles.windowlayout}>
@@ -196,7 +217,11 @@ class EditTrainerViewCmp extends Vue {
           ))}
           <FlexRow>
             <Spacer width={1} />
-            <Button width={6} onclick={() => this.addItem()}>
+            <Button
+              width={6}
+              onclick={() => this.addItem()}
+              disabled={this.trainer.items.length >= 4}
+            >
               Add
             </Button>
           </FlexRow>
@@ -225,13 +250,26 @@ class EditTrainerViewCmp extends Vue {
           </FlexRow>
         </div>
         <div class={styles.window}>
-          {this.trainer.party.map(mon => [
+          {this.trainer.party.map((mon, i) => [
             <FlexRow>
-              <Button height={3} width={3}>
+              <Spacer width={4} />
+              <Button width={1}>X</Button>
+              <Button width={1}>X</Button>
+              <Button width={1}>X</Button>
+              <Button width={1}>X</Button>
+            </FlexRow>,
+            <FlexRow>
+              <Button
+                height={3}
+                width={3}
+                onclick={() => this.changePokemon(i)}
+              >
                 <Sprite src={PathManager.pokePic(mon.species)} />
               </Button>
               <FlexColumn>
-                <Button>{mon.heldItem || "NONE"}</Button>
+                <Button onclick={() => this.changeHeldItem(i)}>
+                  <ItemDisplay item={mon.heldItem} />
+                </Button>
                 <FlexRow>
                   <Label width={1}>Lv.</Label>
                   <Button width={4}>{mon.lvl}</Button>
@@ -244,7 +282,6 @@ class EditTrainerViewCmp extends Vue {
             </FlexRow>,
             [...monMoves(mon)].map(move => (
               <FlexRow>
-                {/*<Spacer width={3} />*/}
                 <Button width={8}>{move}</Button>
               </FlexRow>
             )),

@@ -17,15 +17,26 @@ export class Button extends Vue {
   })
   height!: number;
 
+  @Prop({
+    default: false
+  })
+  disabled!: boolean;
+
   emitBtnClick() {
-    this.$emit("click");
+    if (!this.disabled) {
+      this.$emit("click");
+    }
   }
 
   render() {
     return (
       <div
         style={Constants.gridRect(this.width, this.height)}
-        class={classes(styles.button, this.isActive && styles.active)}
+        class={classes(
+          styles.button,
+          this.isActive && styles.active,
+          this.disabled && styles.disabled
+        )}
         onclick={this.emitBtnClick}
         onmousedown={() => (this.isActive = true)}
         onmouseup={() => (this.isActive = false)}
@@ -45,11 +56,24 @@ const styles = stylesheet({
     backgroundColor: Theme.foregroundBgColor,
     justifyContent: "center",
     cursor: "pointer",
+    boxSizing: "border-box",
     $nest: {
       "&:hover": {
         backgroundColor: Theme.foregroundHBgColor
       }
     }
   },
+  disabled: {
+    backgroundColor: Theme.middlegroundBgColor,
+    color: Theme.textDisabledColor,
+    border: "1px solid " + Theme.textDisabledColor,
+    cursor: "default",
+    $nest: {
+      "&:hover": {
+        backgroundColor: "unset"
+      }
+    }
+  },
+
   active: {}
 });

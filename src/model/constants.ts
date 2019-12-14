@@ -4,6 +4,7 @@ export const AIFlags = [
   "CHECK_VIABILITY",
   "SETUP_FIRST_TURN",
   "RISKY"
+  // These are disabled because they appear to be unused by the game.
   // "PREFER_STRONGEST_MOVE",
   // "PREFER_BATON_PASS",
   // "DOUBLE_BATTLE",

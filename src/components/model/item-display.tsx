@@ -5,7 +5,14 @@ import { GameModel } from "@/model/model";
 export class ItemDisplay extends Vue {
   @Prop() item!: string;
 
+  get itemName(): string {
+    if (this.item == undefined) {
+      return "NONE";
+    }
+    return GameModel.model.items[this.item].name;
+  }
+
   render() {
-    return <span>{GameModel.model.items[this.item].name}</span>;
+    return <span>{this.itemName}</span>;
   }
 }
