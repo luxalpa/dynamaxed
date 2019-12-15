@@ -1,6 +1,6 @@
 import { Component } from "vue-property-decorator";
 import { View } from "@/modules/view-manager";
-import { Window, WindowLayout } from "@/components/layout";
+import { FlexRow, Window, WindowLayout } from "@/components/layout";
 import { Spacer } from "@/components/spacer";
 import { Label } from "@/components/label";
 import { Button } from "@/components/button";
@@ -24,10 +24,15 @@ export class EditTrainerClassView extends View<string> {
     return (
       <WindowLayout>
         <Window>
-          <Label width={3}>Title</Label>
-          <Button>{this.trainerClass.name}</Button>
-          <Label width={3}>Money</Label>
-          <Button>{this.trainerClass.money}</Button>
+          <FlexRow>
+            <Label width={3}>Title</Label>
+            <Button>{this.trainerClass.name}</Button>
+          </FlexRow>
+
+          <FlexRow>
+            <Label width={3}>Money</Label>
+            <Button>{this.trainerClass.money}</Button>
+          </FlexRow>
         </Window>
       </WindowLayout>
     );
