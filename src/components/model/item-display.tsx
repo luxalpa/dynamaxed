@@ -6,13 +6,13 @@ export class ItemDisplay extends Vue {
   @Prop() item!: string;
 
   get itemName(): string {
-    if (this.item == undefined) {
-      return "NONE";
-    }
     return GameModel.model.items[this.item].name;
   }
 
   render() {
+    if (this.item == "NONE") {
+      return <span>-</span>;
+    }
     return <span>{this.itemName}</span>;
   }
 }

@@ -1,4 +1,6 @@
 // Events for native event handlers
+import { Move } from "@/model/model";
+
 export type HTMLElementEvent<T extends HTMLElement> = Event & {
   target: T;
   currentTarget: T;
@@ -17,4 +19,11 @@ export function extendArray<T>(arr: Array<T>, len: number, value: T): Array<T> {
 
 export function clearSelection() {
   (window as any).getSelection().removeAllRanges();
+}
+
+export function getDefaultAttacksForMon(
+  species: string,
+  lvl: number
+): string[] {
+  return ["NONE", "NONE", "NONE", "NONE"];
 }

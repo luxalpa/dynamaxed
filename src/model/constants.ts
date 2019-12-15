@@ -3,13 +3,10 @@ export const AIFlags = [
   "TRY_TO_FAINT",
   "CHECK_VIABILITY",
   "SETUP_FIRST_TURN",
-  "RISKY"
-  // These are disabled because they appear to be unused by the game.
-  // "PREFER_STRONGEST_MOVE",
-  // "PREFER_BATON_PASS",
-  // "DOUBLE_BATTLE",
-  // "HP_AWARE",
-  // "UNKNOWN"
+  "RISKY",
+  "PREFER_STRONGEST_MOVE",
+  "PREFER_BATON_PASS",
+  "HP_AWARE"
 ];
 
 export const TrainerPics = [

@@ -26,7 +26,7 @@ import {
 import { ChooseEncounterMusicDialog } from "@/components/dialogs/choose-from-list-dialog";
 import { ItemDisplay } from "@/components/model/item-display";
 import { MoveDisplay } from "@/components/model/move-display";
-import { extendArray } from "@/utils";
+import { extendArray, getDefaultAttacksForMon } from "@/utils";
 
 function* monMoves(mon: TrainerPartyMon) {
   for (let i = 0; i < 4; i++) {
@@ -148,7 +148,9 @@ class EditTrainerViewCmp extends Vue {
       this.trainer.party.push({
         lvl: -1,
         species,
-        iv: 0
+        iv: 0,
+        heldItem: "NONE",
+        moves: getDefaultAttacksForMon(species, 1)
       });
     }
   }
@@ -157,13 +159,10 @@ class EditTrainerViewCmp extends Vue {
     this.trainer.party.splice(pos, 1);
   }
 
-  async changeHeldItem(pos: number) {
-    const item = await DialogManager.openDialog(
-      ChooseItemDialog,
-      this.trainer.party[pos].heldItem || ""
-    );
+  async changeHeldItem(mon: TrainerPartyMon) {
+    const item = await DialogManager.openDialog(ChooseItemDialog, mon.heldItem);
     if (item !== undefined) {
-      Vue.set(this.trainer.party[pos], "heldItem", item);
+      mon.heldItem = item;
     }
   }
 
@@ -203,6 +202,26 @@ class EditTrainerViewCmp extends Vue {
       extendArray(mon.moves!, pos + 1, "NONE");
     }
     Vue.set(mon.moves!, pos, move);
+  }
+
+  async changeLevel(mon: TrainerPartyMon) {
+    const lvl = await DialogManager.openDialog(
+      InputTextDialog,
+      mon.lvl.toString()
+    );
+    if (lvl !== undefined) {
+      mon.lvl = parseInt(lvl);
+    }
+  }
+
+  async changeIV(mon: TrainerPartyMon) {
+    const lvl = await DialogManager.openDialog(
+      InputTextDialog,
+      mon.iv.toString()
+    );
+    if (lvl !== undefined) {
+      mon.iv = parseInt(lvl);
+    }
   }
 
   render() {
@@ -302,6 +321,11 @@ class EditTrainerViewCmp extends Vue {
               Custom Moves
             </Checkbox>
           </FlexRow>
+          <FlexRow />
+          <FlexRow>
+            <Spacer width={2} />
+            <Button width={4}>Delete Trainer</Button>
+          </FlexRow>
         </div>
         <div class={styles.window}>
           {this.trainer.party.map((mon, i) => [
@@ -334,16 +358,20 @@ class EditTrainerViewCmp extends Vue {
                 <Sprite src={PathManager.pokePic(mon.species)} />
               </Button>
               <FlexColumn>
-                <Button onclick={() => this.changeHeldItem(i)}>
+                <Button onclick={() => this.changeHeldItem(mon)}>
                   <ItemDisplay item={mon.heldItem} />
                 </Button>
                 <FlexRow>
                   <Label width={1}>Lv.</Label>
-                  <Button width={4}>{mon.lvl}</Button>
+                  <Button width={4} onclick={() => this.changeLevel(mon)}>
+                    {mon.lvl}
+                  </Button>
                 </FlexRow>
                 <FlexRow>
                   <Label width={1}>IV</Label>
-                  <Button width={4}>{mon.iv}</Button>
+                  <Button width={4} onclick={() => this.changeIV(mon)}>
+                    {mon.iv}
+                  </Button>
                 </FlexRow>
               </FlexColumn>
             </FlexRow>,

@@ -1,4 +1,15 @@
 {
+  "NONE": {
+    "name": "????????",
+    "price": 0,
+    "description": "?????",
+    "pocket": "ITEMS",
+    "type": 4,
+    "battleUsage": 2,
+    "battleUseFunc": "ItemUseOutOfBattle_CannotUse",
+    "secondaryId": 0,
+    "icon": ["QuestionMark", "QuestionMark"]
+  },
   "MASTER_BALL": {
     "name": "MASTER BALL",
     "price": 0,

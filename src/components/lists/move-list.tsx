@@ -15,8 +15,8 @@ export class MoveList extends Vue {
     return [
       {
         text: "ID",
-        render(h: CreateElement, e: MoveWithID): any {
-          return e[0];
+        render(h: CreateElement, [id, move]: MoveWithID): any {
+          return `#${id}`;
         }
       },
       {

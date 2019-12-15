@@ -88,11 +88,6 @@ export default class App extends Vue {
   model = GameModel;
   dm = DialogManager;
 
-  @Watch("store", { deep: true })
-  onStoreChanged() {
-    persistStore();
-  }
-
   render(h: any) {
     let CurView: any;
 

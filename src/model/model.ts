@@ -12,8 +12,8 @@ export interface TrainerPartyMon {
   iv: number;
   lvl: number;
   species: string;
-  moves?: string[];
-  heldItem?: string;
+  moves: string[];
+  heldItem: string;
 }
 
 export interface Trainer {
@@ -54,7 +54,9 @@ export const NoTrainerClass: TrainerClass = {
 export const NoTrainerPartyMon: TrainerPartyMon = {
   species: "NONE",
   lvl: 0,
-  iv: 0
+  iv: 0,
+  moves: ["NONE", "NONE", "NONE", "NONE"],
+  heldItem: "NONE"
 };
 
 export interface Item {
