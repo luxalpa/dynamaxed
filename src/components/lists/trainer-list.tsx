@@ -70,6 +70,9 @@ export class TrainerList extends Vue {
         render(h: CreateElement, [id, t]: TrainerWithID): any {
           const money =
             GameModel.model.trainerClasses[t.trainerClass].money ?? 5;
+          if (t.party.length == 0) {
+            return <div class={styles.money}>INVALID</div>;
+          }
           const lastLevel = t.party[t.party.length - 1].lvl;
           let v = 4 * money * lastLevel;
           if (t.doubleBattle) {

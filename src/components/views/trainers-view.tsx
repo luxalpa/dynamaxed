@@ -1,12 +1,16 @@
-import { Component, Vue } from "vue-property-decorator";
-import { ViewManager, ViewProps } from "@/modules/view-manager";
+import { Component } from "vue-property-decorator";
+import { View, ViewManager } from "@/modules/view-manager";
 import { TrainerList } from "@/components/lists/trainer-list";
 import { EditTrainerView } from "@/components/views/edit-trainer-view";
 
 @Component({
   name: "TrainersView"
 })
-class TrainersViewCmp extends Vue {
+export class TrainersView extends View<void> {
+  get title(): string {
+    return "All Trainers";
+  }
+
   render() {
     return (
       <TrainerList
@@ -15,10 +19,3 @@ class TrainersViewCmp extends Vue {
     );
   }
 }
-
-export const TrainersView: ViewProps<void> = {
-  component: TrainersViewCmp,
-  title: () => "All Trainers"
-};
-
-ViewManager.registerView(TrainersView, "trainers");

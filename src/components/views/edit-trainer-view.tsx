@@ -1,5 +1,5 @@
 import { Component, Vue } from "vue-property-decorator";
-import { ViewManager, ViewProps } from "@/modules/view-manager";
+import { View } from "@/modules/view-manager";
 import { GameModel, TrainerPartyMon } from "@/model/model";
 import { stylesheet } from "typestyle";
 import { PathManager } from "@/modules/path-manager";
@@ -18,12 +18,12 @@ import { InputTextDialog } from "@/components/dialogs/input-text-dialog";
 import { FlexColumn, FlexRow } from "@/components/layout";
 import { IDManager } from "@/modules/id-manager";
 import {
+  ChooseEncounterMusicDialog,
   ChooseItemDialog,
   ChooseMoveDialog,
   ChoosePokemonDialog,
   ChooseTrainerClassDialog
 } from "@/components/dialogs/choose-from-list-dialog";
-import { ChooseEncounterMusicDialog } from "@/components/dialogs/choose-from-list-dialog";
 import { ItemDisplay } from "@/components/model/item-display";
 import { MoveDisplay } from "@/components/model/move-display";
 import { extendArray, getDefaultAttacksForMon } from "@/utils";
@@ -39,13 +39,17 @@ function* monMoves(mon: TrainerPartyMon) {
 }
 
 @Component
-class EditTrainerViewCmp extends Vue {
+export class EditTrainerView extends View<string> {
+  get title() {
+    return `Trainer #${this.trainerID}`;
+  }
+
   get trainer() {
     return GameModel.model.trainers[this.trainerID];
   }
 
   get trainerID(): string {
-    return ViewManager.activeParams as string;
+    return this.args;
   }
 
   async changeTrainerIcon() {
@@ -402,13 +406,6 @@ class EditTrainerViewCmp extends Vue {
     );
   }
 }
-
-export const EditTrainerView: ViewProps<string> = {
-  component: EditTrainerViewCmp,
-  title: trainerId => `Trainer #${trainerId}`
-};
-
-ViewManager.registerView(EditTrainerView, "edit-trainer");
 
 const styles = stylesheet({
   trainerPic: {

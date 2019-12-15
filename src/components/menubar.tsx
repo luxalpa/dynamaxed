@@ -1,4 +1,4 @@
-import { Component, Vue, Watch } from "vue-property-decorator";
+import { Component, Prop, Vue, Watch } from "vue-property-decorator";
 import { modifiers } from "vue-tsx-support";
 import { classes, style, stylesheet } from "typestyle";
 import { Theme } from "@/theming";
@@ -64,6 +64,8 @@ function* allParents(child: Element | null): IterableIterator<Element> {
 export class Menubar extends Vue {
   activeEntry: Menu = NoMenu;
   titlePos = 0;
+
+  @Prop() title!: string;
 
   handleOutsideClick = (e: Event) => {
     for (const element of allParents(e.target as Element)) {
@@ -160,7 +162,7 @@ export class Menubar extends Vue {
             )}
             onclick={() => ViewManager.pop()}
           />
-          {ViewManager.activeTitle}
+          {this.title}
           <font-awesome-icon
             icon={["fas", "arrow-right"]}
             size="lg"

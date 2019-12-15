@@ -1,8 +1,13 @@
 import { ipcRenderer } from "electron";
+import { Prop, Vue } from "vue-property-decorator";
 
-export interface ViewProps<Params> {
-  component: any;
-  title: (p: Params) => string;
+export abstract class View<T> extends Vue {
+  @Prop() args!: T;
+  mounted() {
+    this.$emit("title", this.title);
+  }
+
+  abstract get title(): string;
 }
 
 interface ViewInstance {
@@ -15,8 +20,8 @@ const NoView: ViewInstance = {
   params: ""
 };
 
-let registeredViews = new Map<string, ViewProps<any>>();
-let view2name = new Map<ViewProps<any>, string>();
+let registeredViews = new Map<string, new () => View<any>>();
+let view2name = new Map<new () => View<any>, string>();
 
 // Currently broken (https://github.com/electron/electron/issues/17134)
 ipcRenderer.on("app-command", (e, cmd: string) => {
@@ -34,7 +39,7 @@ window.addEventListener("mousedown", event => {
 export const ViewManager = new (class {
   viewStack: ViewInstance[] = [];
 
-  registerView(view: ViewProps<any>, name: string) {
+  registerView(view: new () => View<any>, name: string) {
     registeredViews.set(name, view);
     view2name.set(view, name);
   }
@@ -56,9 +61,9 @@ export const ViewManager = new (class {
     }
   }
 
-  push<T>(view: ViewProps<void>): void;
-  push<T>(view: ViewProps<T>, params: T): void;
-  push<T>(view: ViewProps<T>, params?: T): void {
+  push<T>(view: new () => View<void>): void;
+  push<T>(view: new () => View<T>, params: T): void;
+  push<T>(view: new () => View<T>, params?: T): void {
     const name = view2name.get(view);
     if (!name) {
       throw new Error("View not registered!");
@@ -72,16 +77,12 @@ export const ViewManager = new (class {
     this.viewStack.push(currentView);
   }
 
-  private get currentView() {
+  get currentView() {
     if (this.viewStack.length == 0) {
       return NoView;
     }
 
     return this.viewStack[this.viewStack.length - 1];
-  }
-
-  get activeParams(): any {
-    return this.currentView.params;
   }
 
   get activeView() {
@@ -90,10 +91,6 @@ export const ViewManager = new (class {
       throw new Error("Couldn't find view");
     }
     return view;
-  }
-
-  get activeTitle(): string {
-    return this.activeView.title(this.currentView.params);
   }
 
   get hasUndo(): boolean {

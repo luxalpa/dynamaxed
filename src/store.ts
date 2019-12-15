@@ -1,6 +1,5 @@
 import { ViewManager } from "@/modules/view-manager";
 import { ProjectManager } from "@/modules/project-manager";
-import { EditTrainerView } from "@/components/views/edit-trainer-view";
 
 export const store: any = {
   ViewManager,
@@ -30,14 +29,6 @@ if (process.env.NODE_ENV !== "development") {
   ProjectManager.openProject(
     "C:\\Users\\Smaug\\Desktop\\Pokemon\\pokeemerald\\"
   );
-  // ViewManager.push(TrainersView);
-  ViewManager.push(EditTrainerView, "JUAN_5");
-  // DialogManager.openDialog(ChooseTrainerClassDialog, "");
-
-  // DialogManager.openDialog(
-  //   EditTrainerMonDialog,
-  //   GameModel.model.trainers["SAWYER_1"].party[0]
-  // );
 }
 
 export function persistStore() {

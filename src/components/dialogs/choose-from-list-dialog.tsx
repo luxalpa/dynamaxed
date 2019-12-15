@@ -2,7 +2,7 @@ import { Dialog } from "@/modules/dialog-manager";
 import { stylesheet } from "typestyle";
 import { EncounterMusicList } from "@/components/lists/encounter-music-list";
 import { TrainerClassList } from "@/components/lists/trainer-class-list";
-import { Component } from "vue-property-decorator";
+import { Component, Vue } from "vue-property-decorator";
 import { ItemList } from "@/components/lists/item-list";
 import { PokemonList } from "@/components/lists/pokemon-list";
 import { MoveList } from "@/components/lists/move-list";

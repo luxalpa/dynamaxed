@@ -1,14 +1,14 @@
 import { Component, Vue } from "vue-property-decorator";
 import { classes, stylesheet } from "typestyle";
 import { Theme } from "@/theming";
-import { ViewManager, ViewProps } from "@/modules/view-manager";
+import { View, ViewManager } from "@/modules/view-manager";
 import { px } from "csx";
 import { TrainersView } from "@/components/views/trainers-view";
 
 interface NavElement {
   isSubElement?: boolean;
   text: string;
-  switchToView: ViewProps<void>;
+  switchToView: new () => View<void>;
 }
 
 const navElements: NavElement[] = [
