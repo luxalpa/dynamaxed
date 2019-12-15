@@ -1,15 +1,17 @@
 import Vue from "vue";
 import App from "@/app";
 
-import "./styles/_styles.scss";
+import "normalize.css";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   faArrowAltCircleLeft,
   faSave
 } from "@fortawesome/free-regular-svg-icons";
 import {
+  faArrowDown,
   faArrowLeft,
   faArrowRight,
+  faArrowUp,
   faCaretLeft,
   faCheck,
   faTimes,
@@ -29,6 +31,8 @@ library.add(
   faArrowAltCircleLeft,
   faCaretLeft,
   faArrowLeft,
+  faArrowUp,
+  faArrowDown,
   faArrowRight,
   faCheck,
   faTrashAlt

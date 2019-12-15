@@ -5,6 +5,7 @@ import { TrainerClassList } from "@/components/lists/trainer-class-list";
 import { Component } from "vue-property-decorator";
 import { ItemList } from "@/components/lists/item-list";
 import { PokemonList } from "@/components/lists/pokemon-list";
+import { MoveList } from "@/components/lists/move-list";
 
 export function ChooseFromListDialog(
   List: any
@@ -31,6 +32,7 @@ export const ChooseEncounterMusicDialog = ChooseFromListDialog(
 export const ChooseTrainerClassDialog = ChooseFromListDialog(TrainerClassList);
 export const ChooseItemDialog = ChooseFromListDialog(ItemList);
 export const ChoosePokemonDialog = ChooseFromListDialog(PokemonList);
+export const ChooseMoveDialog = ChooseFromListDialog(MoveList);
 
 const styles = stylesheet({
   tableWrapper: {

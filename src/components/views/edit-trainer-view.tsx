@@ -19,11 +19,14 @@ import { FlexColumn, FlexRow } from "@/components/layout";
 import { IDManager } from "@/modules/id-manager";
 import {
   ChooseItemDialog,
+  ChooseMoveDialog,
   ChoosePokemonDialog,
   ChooseTrainerClassDialog
 } from "@/components/dialogs/choose-from-list-dialog";
 import { ChooseEncounterMusicDialog } from "@/components/dialogs/choose-from-list-dialog";
 import { ItemDisplay } from "@/components/model/item-display";
+import { MoveDisplay } from "@/components/model/move-display";
+import { extendArray } from "@/utils";
 
 function* monMoves(mon: TrainerPartyMon) {
   for (let i = 0; i < 4; i++) {
@@ -139,14 +142,67 @@ class EditTrainerViewCmp extends Vue {
     }
   }
 
+  async addMon() {
+    const species = await DialogManager.openDialog(ChoosePokemonDialog, "");
+    if (species !== undefined) {
+      this.trainer.party.push({
+        lvl: -1,
+        species,
+        iv: 0
+      });
+    }
+  }
+
+  removeMon(pos: number) {
+    this.trainer.party.splice(pos, 1);
+  }
+
   async changeHeldItem(pos: number) {
     const item = await DialogManager.openDialog(
       ChooseItemDialog,
       this.trainer.party[pos].heldItem || ""
     );
     if (item !== undefined) {
-      this.trainer.party[pos].heldItem = item;
+      Vue.set(this.trainer.party[pos], "heldItem", item);
     }
+  }
+
+  swapMons(posA: number, posB: number) {
+    const before = this.trainer.party[posA];
+    Vue.set(this.trainer.party, posA, this.trainer.party[posB]);
+    Vue.set(this.trainer.party, posB, before);
+  }
+
+  moveMonUp(pos: number) {
+    if (pos == 0) {
+      return;
+    }
+    this.swapMons(pos - 1, pos);
+  }
+
+  moveMonDown(pos: number) {
+    if (pos == this.trainer.party.length - 1) {
+      return;
+    }
+    this.swapMons(pos, pos + 1);
+  }
+
+  async changeMove(mon: TrainerPartyMon, pos: number) {
+    const move = await DialogManager.openDialog(
+      ChooseMoveDialog,
+      mon.moves?.[pos] || ""
+    );
+    if (move === undefined) {
+      return;
+    }
+
+    if (!mon.moves) {
+      Vue.set(mon, "moves", []);
+    }
+    if (pos >= mon.moves!.length) {
+      extendArray(mon.moves!, pos + 1, "NONE");
+    }
+    Vue.set(mon.moves!, pos, move);
   }
 
   render() {
@@ -242,21 +298,32 @@ class EditTrainerViewCmp extends Vue {
           <Label>Pokemon</Label>
           <FlexRow>
             <Spacer width={1} />
-            <Checkbox width={6}>Custom Held Items</Checkbox>
-          </FlexRow>
-          <FlexRow>
-            <Spacer width={1} />
-            <Checkbox width={6}>Custom Moves</Checkbox>
+            <Checkbox width={6} vModel={this.trainer.customMoves}>
+              Custom Moves
+            </Checkbox>
           </FlexRow>
         </div>
         <div class={styles.window}>
           {this.trainer.party.map((mon, i) => [
             <FlexRow>
-              <Spacer width={4} />
-              <Button width={1}>X</Button>
-              <Button width={1}>X</Button>
-              <Button width={1}>X</Button>
-              <Button width={1}>X</Button>
+              <Spacer width={5} />
+              <Button
+                width={1}
+                disabled={i == 0}
+                onclick={() => this.moveMonUp(i)}
+              >
+                <font-awesome-icon icon={["fas", "arrow-up"]} />
+              </Button>
+              <Button
+                width={1}
+                disabled={i == this.trainer.party.length - 1}
+                onclick={() => this.moveMonDown(i)}
+              >
+                <font-awesome-icon icon={["fas", "arrow-down"]} />
+              </Button>
+              <Button width={1} onclick={() => this.removeMon(i)}>
+                <font-awesome-icon icon={["fas", "times"]} />
+              </Button>
             </FlexRow>,
             <FlexRow>
               <Button
@@ -280,13 +347,28 @@ class EditTrainerViewCmp extends Vue {
                 </FlexRow>
               </FlexColumn>
             </FlexRow>,
-            [...monMoves(mon)].map(move => (
+            [...monMoves(mon)].map((move, moveNum) => (
               <FlexRow>
-                <Button width={8}>{move}</Button>
+                <Button
+                  width={8}
+                  disabled={!this.trainer.customMoves}
+                  onclick={() => this.changeMove(mon, moveNum)}
+                >
+                  <MoveDisplay move={move} />
+                </Button>
               </FlexRow>
             )),
             <FlexRow />
           ])}
+          <FlexRow>
+            <Button
+              width={8}
+              disabled={this.trainer.party.length >= 6}
+              onclick={() => this.addMon()}
+            >
+              Add
+            </Button>
+          </FlexRow>
         </div>
       </div>
     );

@@ -2,6 +2,7 @@ import trainerDefaults from "@/model/defaults/trainers.json";
 import trainerClassDefaults from "@/model/defaults/trainer-classes.json";
 import itemDefaults from "@/model/defaults/items.json";
 import pokemonDefaults from "@/model/defaults/pokemon.json";
+import moveDefaults from "@/model/defaults/moves.json";
 import fs from "fs";
 import path from "path";
 import { compileTrainers } from "@/model/serialize/trainers";
@@ -25,6 +26,7 @@ export interface Trainer {
   aiFlags: string[];
   party: TrainerPartyMon[];
   isFemaleEncounter: boolean;
+  customMoves: boolean;
 }
 
 export const NoTrainer: Trainer = {
@@ -36,7 +38,8 @@ export const NoTrainer: Trainer = {
   trainerName: "",
   encounterMusic: "",
   isFemaleEncounter: false,
-  trainerPic: ""
+  trainerPic: "",
+  customMoves: false
 };
 
 export interface TrainerClass {
@@ -76,18 +79,33 @@ export interface Pokemon {
   moves: [number, string];
 }
 
+export interface Move {
+  name: string;
+  effect: string;
+  power: number;
+  type: string;
+  accuracy: number;
+  pp: number;
+  secondaryEffectChance: number;
+  target: string;
+  priority: number;
+  flags: string[];
+}
+
 export interface Model {
   trainers: Record<string, Trainer>;
   trainerClasses: Record<string, TrainerClass>;
   items: Record<string, Item>;
   pokemon: Record<string, Pokemon>;
+  moves: Record<string, Move>;
 }
 
 const files = {
   trainers: ["trainers.json", trainerDefaults],
   trainerClasses: ["trainer-classes.json", trainerClassDefaults],
   items: ["items.json", itemDefaults],
-  pokemon: ["pokemon.json", pokemonDefaults]
+  pokemon: ["pokemon.json", pokemonDefaults],
+  moves: ["moves.json", moveDefaults]
 } as const;
 
 export const GameModel = new (class {
@@ -95,7 +113,8 @@ export const GameModel = new (class {
     trainers: {},
     trainerClasses: {},
     items: {},
-    pokemon: {}
+    pokemon: {},
+    moves: {}
   };
 
   createFromDefaults() {
@@ -107,17 +126,6 @@ export const GameModel = new (class {
   async Save() {
     this.Compile();
     await this.Serialize();
-
-    // const trainers: any = this.model.trainers;
-    // for (let id of Object.keys(trainers)) {
-    //   let t = trainers[id];
-    //   let { party } = t;
-    //   t.party = (parties as any)[party];
-    // }
-    // fs.writeFileSync(
-    //   "C:\\Users\\Smaug\\Desktop\\testfile.txt",
-    //   JSON.stringify(trainers)
-    // );
     console.log("Saved!");
   }
 

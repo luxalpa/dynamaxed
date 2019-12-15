@@ -66,7 +66,7 @@ const styles = stylesheet({
   disabled: {
     backgroundColor: Theme.middlegroundBgColor,
     color: Theme.textDisabledColor,
-    border: "1px solid " + Theme.textDisabledColor,
+    border: "1px solid " + Theme.middlegroundHBgColor,
     cursor: "default",
     $nest: {
       "&:hover": {
