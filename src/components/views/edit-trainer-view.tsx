@@ -26,17 +26,7 @@ import {
 } from "@/components/dialogs/choose-from-list-dialog";
 import { ItemDisplay } from "@/components/model/item-display";
 import { MoveDisplay } from "@/components/model/move-display";
-import { extendArray, getDefaultAttacksForMon } from "@/utils";
-
-function* monMoves(mon: TrainerPartyMon) {
-  for (let i = 0; i < 4; i++) {
-    if (!mon.moves || mon.moves.length <= i) {
-      yield "NONE";
-    } else {
-      yield mon.moves[i];
-    }
-  }
-}
+import { extendArray, getDefaultMovesForMon } from "@/utils";
 
 @Component
 export class EditTrainerView extends View<string> {
@@ -50,6 +40,14 @@ export class EditTrainerView extends View<string> {
 
   get trainerID(): string {
     return this.args;
+  }
+
+  monMoves(mon: TrainerPartyMon): string[] {
+    if (this.trainer.customMoves) {
+      return mon.moves;
+    } else {
+      return getDefaultMovesForMon(mon.species, mon.lvl);
+    }
   }
 
   async changeTrainerIcon() {
@@ -154,7 +152,7 @@ export class EditTrainerView extends View<string> {
         species,
         iv: 0,
         heldItem: "NONE",
-        moves: getDefaultAttacksForMon(species, 1)
+        moves: getDefaultMovesForMon(species, 1)
       });
     }
   }
@@ -379,7 +377,7 @@ export class EditTrainerView extends View<string> {
                 </FlexRow>
               </FlexColumn>
             </FlexRow>,
-            [...monMoves(mon)].map((move, moveNum) => (
+            [...this.monMoves(mon)].map((move, moveNum) => (
               <FlexRow>
                 <Button
                   width={8}

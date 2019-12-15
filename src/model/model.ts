@@ -78,7 +78,7 @@ export interface Item {
 
 export interface Pokemon {
   name: string;
-  moves: [number, string];
+  moves: [number, string][];
 }
 
 export interface Move {

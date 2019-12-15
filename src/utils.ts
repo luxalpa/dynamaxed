@@ -1,5 +1,5 @@
 // Events for native event handlers
-import { Move } from "@/model/model";
+import { GameModel, Move } from "@/model/model";
 
 export type HTMLElementEvent<T extends HTMLElement> = Event & {
   target: T;
@@ -21,9 +21,21 @@ export function clearSelection() {
   (window as any).getSelection().removeAllRanges();
 }
 
-export function getDefaultAttacksForMon(
-  species: string,
-  lvl: number
-): string[] {
-  return ["NONE", "NONE", "NONE", "NONE"];
+export function getDefaultMovesForMon(species: string, lvl: number): string[] {
+  const mon = GameModel.model.pokemon[species];
+
+  // This assumes that the mon.moves array is sorted by level
+
+  let moves: string[] = [];
+
+  for (const [movLvl, id] of mon.moves) {
+    if (movLvl > lvl) {
+      break;
+    }
+    moves.push(id);
+  }
+  if (moves.length < 4) {
+    return extendArray(moves, 4, "NONE");
+  }
+  return moves.slice(-4);
 }
