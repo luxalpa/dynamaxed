@@ -1,5 +1,5 @@
 import { ipcRenderer } from "electron";
-import { Prop, Vue } from "vue-property-decorator";
+import { Component, Prop, Vue } from "vue-property-decorator";
 
 export abstract class View<T> extends Vue {
   @Prop() args!: T;
@@ -42,6 +42,12 @@ export const ViewManager = new (class {
   registerView(view: new () => View<any>, name: string) {
     registeredViews.set(name, view);
     view2name.set(view, name);
+  }
+
+  registerViews(views: Record<string, new () => View<any>>) {
+    for (const [name, cmp] of Object.entries(views)) {
+      this.registerView(cmp, name);
+    }
   }
 
   cleanupStack() {

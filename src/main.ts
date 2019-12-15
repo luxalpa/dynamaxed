@@ -24,6 +24,8 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { ViewManager } from "@/modules/view-manager";
 import { EditTrainerView } from "@/components/views/edit-trainer-view";
 import { TrainersView } from "@/components/views/trainers-view";
+import { TrainerClassesView } from "@/components/views/trainer-classes-view";
+import { EditTrainerClassView } from "@/components/views/edit-trainer-class-view";
 
 Vue.config.productionTip = false;
 //Vue.config.devtools = true;
@@ -45,8 +47,12 @@ enableTheme();
 
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 
-ViewManager.registerView(EditTrainerView, "edit-trainer");
-ViewManager.registerView(TrainersView, "trainers");
+ViewManager.registerViews({
+  "edit-trainer": EditTrainerView,
+  trainers: TrainersView,
+  "trainer-classes": TrainerClassesView,
+  "edit-trainer-class": EditTrainerClassView
+});
 
 ViewManager.push(TrainersView);
 

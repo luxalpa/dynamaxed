@@ -4,6 +4,7 @@ import { Theme } from "@/theming";
 import { View, ViewManager } from "@/modules/view-manager";
 import { px } from "csx";
 import { TrainersView } from "@/components/views/trainers-view";
+import { TrainerClassesView } from "@/components/views/trainer-classes-view";
 
 interface NavElement {
   isSubElement?: boolean;
@@ -19,7 +20,7 @@ const navElements: NavElement[] = [
   },
   {
     isSubElement: true,
-    switchToView: TrainersView,
+    switchToView: TrainerClassesView,
     text: "Trainer Classes"
   }
 ];

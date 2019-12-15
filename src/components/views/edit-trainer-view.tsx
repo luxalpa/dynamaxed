@@ -15,7 +15,7 @@ import { Sprite } from "@/components/sprite";
 import { DialogManager } from "@/modules/dialog-manager";
 import { ChooseTrainerPicDialog } from "@/components/dialogs/choose-trainer-pic-dialog";
 import { InputTextDialog } from "@/components/dialogs/input-text-dialog";
-import { FlexColumn, FlexRow } from "@/components/layout";
+import { FlexColumn, FlexRow, Window, WindowLayout } from "@/components/layout";
 import { IDManager } from "@/modules/id-manager";
 import {
   ChooseEncounterMusicDialog,
@@ -228,8 +228,8 @@ export class EditTrainerView extends View<string> {
 
   render() {
     return (
-      <div class={styles.windowlayout}>
-        <div class={styles.window}>
+      <WindowLayout>
+        <Window>
           <FlexRow>
             <Button
               width={3}
@@ -328,8 +328,8 @@ export class EditTrainerView extends View<string> {
             <Spacer width={2} />
             <Button width={4}>Delete Trainer</Button>
           </FlexRow>
-        </div>
-        <div class={styles.window}>
+        </Window>
+        <Window>
           {this.trainer.party.map((mon, i) => [
             <FlexRow>
               <Spacer width={5} />
@@ -399,8 +399,8 @@ export class EditTrainerView extends View<string> {
               Add
             </Button>
           </FlexRow>
-        </div>
-      </div>
+        </Window>
+      </WindowLayout>
     );
   }
 }
@@ -409,18 +409,5 @@ const styles = stylesheet({
   trainerPic: {
     width: "64px",
     height: "64px"
-  },
-  windowlayout: {
-    display: "flex",
-    alignItems: "flex-start",
-    height: "100%"
-  },
-  window: {
-    backgroundColor: Theme.middlegroundBgColor,
-    padding: "25px",
-    margin: Constants.margin,
-    maxHeight: "calc(100% - 4px)",
-    boxSizing: "border-box",
-    overflow: "auto"
   }
 });
