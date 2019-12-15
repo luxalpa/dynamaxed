@@ -27,6 +27,7 @@ import {
 import { ItemDisplay } from "@/components/model/item-display";
 import { MoveDisplay } from "@/components/model/move-display";
 import { extendArray, getDefaultMovesForMon } from "@/utils";
+import { mixins } from "vue-class-component";
 
 @Component
 export class EditTrainerView extends View<string> {

@@ -1,12 +1,27 @@
-import { ViewManager } from "@/modules/view-manager";
+import { View, ViewManager } from "@/modules/view-manager";
 import { Menubar } from "@/components/menubar";
 import { Navbar } from "@/components/navbar";
 import { stylesheet } from "typestyle";
-import { Component, Vue } from "vue-property-decorator";
+import { Component, Ref, Vue, Watch } from "vue-property-decorator";
 
 @Component
 export class MainView extends Vue {
   title: string = "";
+  @Ref() content!: View<any>;
+
+  mounted() {
+    this.updateTitle();
+    this.$watch(
+      () => ViewManager.currentView,
+      () => {
+        this.updateTitle();
+      }
+    );
+  }
+
+  updateTitle() {
+    this.title = this.content.title;
+  }
 
   render() {
     const Content = ViewManager.activeView;
@@ -18,6 +33,7 @@ export class MainView extends Vue {
           <Navbar />
           <div class={styles.content}>
             <Content
+              ref="content"
               ontitle={(v: string) => (this.title = v)}
               args={ViewManager.currentView.params}
             />

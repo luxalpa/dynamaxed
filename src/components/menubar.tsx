@@ -81,7 +81,7 @@ export class Menubar extends Vue {
     window.addEventListener("resize", () => this.updateTitlePosition());
     setTimeout(() => this.updateTitlePosition());
     this.$watch(
-      () => ViewManager.activeView,
+      () => this.title,
       () => this.updateTitlePosition()
     );
   }
