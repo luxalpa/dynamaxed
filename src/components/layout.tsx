@@ -10,7 +10,11 @@ export const FlexRow = component({
     createElement: CreateElement,
     context: RenderContext<any>
   ): VNode | VNode[] {
-    return <div class={styles.row}>{context.children}</div>;
+    return (
+      <div class={styles.row} {...context.data}>
+        {context.children}
+      </div>
+    );
   }
 });
 

@@ -23,8 +23,7 @@ import { enableTheme } from "@/theming";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { ViewManager } from "@/modules/view-manager";
 import { EditTrainerView } from "@/components/views/edit-trainer-view";
-import { TrainersView } from "@/components/views/trainers-view";
-import { TrainerClassesView } from "@/components/views/trainer-classes-view";
+import { TrainerClassesView, TrainersView } from "@/components/views/list-view";
 import { EditTrainerClassView } from "@/components/views/edit-trainer-class-view";
 import { ViewID } from "@/constants";
 
@@ -58,7 +57,7 @@ ViewManager.registerViews({
 ViewManager.push(TrainersView);
 
 if (process.env.NODE_ENV === "development") {
-  ViewManager.push(EditTrainerView, "JUAN_4");
+  ViewManager.push(TrainerClassesView);
 }
 
 new Vue({

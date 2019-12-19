@@ -43,13 +43,11 @@ export class TrainerClassList extends Vue {
 
   render() {
     return (
-      <div>
-        <Table
-          entries={this.entries}
-          layout={this.layout}
-          onentryclick={(entry: TrainerClassWithID) => this.onEntryClick(entry)}
-        />
-      </div>
+      <Table
+        entries={this.entries}
+        layout={this.layout}
+        onentryclick={(entry: TrainerClassWithID) => this.onEntryClick(entry)}
+      />
     );
   }
 }

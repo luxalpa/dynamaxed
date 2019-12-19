@@ -4,6 +4,7 @@ import { ViewManager } from "@/modules/view-manager";
 import { EditTrainerView } from "@/components/views/edit-trainer-view";
 import { stylesheet } from "typestyle";
 import { Theme } from "@/theming";
+import { Constants } from "@/constants";
 
 export interface Column<T> {
   text: string;
@@ -57,18 +58,24 @@ const styles = stylesheet({
         }
       },
       "& td": {
-        padding: "5px 10px"
+        padding: "0px 10px",
+        boxSizing: "border-box",
+        height: Constants.grid(1),
+        margin: Constants.margin
       }
     }
   },
   tableHeader: {
     position: "sticky",
     top: 0,
-    padding: "10px 10px 8px",
+    padding: "0 8px",
     backgroundColor: Theme.backgroundBgColor,
+    height: Constants.grid(1),
+    margin: Constants.margin,
     textAlign: "left",
     fontWeight: 500,
     cursor: "default",
+    boxSizing: "border-box",
     $nest: {
       "&:hover": {
         backgroundColor: Theme.backgroundHBgColor
