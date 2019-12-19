@@ -26,6 +26,7 @@ import { EditTrainerView } from "@/components/views/edit-trainer-view";
 import { TrainersView } from "@/components/views/trainers-view";
 import { TrainerClassesView } from "@/components/views/trainer-classes-view";
 import { EditTrainerClassView } from "@/components/views/edit-trainer-class-view";
+import { ViewID } from "@/constants";
 
 Vue.config.productionTip = false;
 //Vue.config.devtools = true;
@@ -48,10 +49,10 @@ enableTheme();
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 
 ViewManager.registerViews({
-  "edit-trainer": EditTrainerView,
+  [ViewID.EditTrainer]: EditTrainerView,
   trainers: TrainersView,
   "trainer-classes": TrainerClassesView,
-  "edit-trainer-class": EditTrainerClassView
+  [ViewID.EditTrainerClass]: EditTrainerClassView
 });
 
 ViewManager.push(TrainersView);

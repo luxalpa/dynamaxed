@@ -32,11 +32,7 @@ export class MainView extends Vue {
         <div class={styles.navsplit}>
           <Navbar />
           <div class={styles.content}>
-            <Content
-              ref="content"
-              ontitle={(v: string) => (this.title = v)}
-              args={ViewManager.currentView.params}
-            />
+            <Content ref="content" args={ViewManager.currentView.params} />
           </div>
         </div>
       </div>

@@ -3,6 +3,8 @@ import { Column, Table } from "@/components/table";
 import { GameModel, TrainerClass } from "@/model/model";
 import { CreateElement } from "vue";
 import { stylesheet } from "typestyle";
+import { FlexRow } from "@/components/layout";
+import { Button } from "@/components/button";
 
 type TrainerClassWithID = [string, TrainerClass];
 
@@ -41,11 +43,13 @@ export class TrainerClassList extends Vue {
 
   render() {
     return (
-      <Table
-        entries={this.entries}
-        layout={this.layout}
-        onentryclick={(entry: TrainerClassWithID) => this.onEntryClick(entry)}
-      />
+      <div>
+        <Table
+          entries={this.entries}
+          layout={this.layout}
+          onentryclick={(entry: TrainerClassWithID) => this.onEntryClick(entry)}
+        />
+      </div>
     );
   }
 }
