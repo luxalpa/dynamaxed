@@ -1,36 +1,24 @@
-import { Component, Vue } from "vue-property-decorator";
-import { Column, Table } from "@/components/table";
-import { CreateElement } from "vue";
 import { EncounterMusic } from "@/model/constants";
+import { createList } from "@/components/lists/list";
+import { ChooseFromListDialog } from "@/components/dialogs/choose-from-list-dialog";
 
-@Component
-export class EncounterMusicList extends Vue {
-  onEntryClick(e: string) {
-    this.$emit("entryclick", e);
-  }
+const EncounterMusicList = createList(
+  () =>
+    EncounterMusic.reduce<Record<string, void>>(
+      (previousValue, currentValue) => {
+        previousValue[currentValue] = void 0;
+        return previousValue;
+      },
+      {}
+    ),
+  [
+    {
+      text: "ID",
+      render: (h, e) => e
+    }
+  ]
+);
 
-  get layout(): Column<string>[] {
-    return [
-      {
-        render(h: CreateElement, e: string): any {
-          return e;
-        },
-        text: "ID"
-      }
-    ];
-  }
-
-  get entries() {
-    return EncounterMusic;
-  }
-
-  render() {
-    return (
-      <Table
-        entries={this.entries}
-        layout={this.layout}
-        onentryclick={(e: string) => this.onEntryClick(e)}
-      />
-    );
-  }
-}
+export const ChooseEncounterMusicDialog = ChooseFromListDialog(
+  EncounterMusicList
+);

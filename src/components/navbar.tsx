@@ -3,7 +3,8 @@ import { classes, stylesheet } from "typestyle";
 import { Theme } from "@/theming";
 import { View, ViewManager } from "@/modules/view-manager";
 import { px } from "csx";
-import { TrainerClassesView, TrainersView } from "@/components/views/list-view";
+import { TrainersView } from "@/components/lists/trainer-list";
+import { TrainerClassesView } from "@/components/lists/trainer-class-list";
 
 interface NavElement {
   isSubElement?: boolean;

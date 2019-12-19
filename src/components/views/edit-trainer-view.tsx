@@ -3,31 +3,26 @@ import { View } from "@/modules/view-manager";
 import { GameModel, TrainerPartyMon } from "@/model/model";
 import { stylesheet } from "typestyle";
 import { PathManager } from "@/modules/path-manager";
-import { Theme } from "@/theming";
 import { Label } from "@/components/label";
 import { Button } from "@/components/button";
 import { TrainerClass } from "@/components/model/trainer-class";
 import { Checkbox } from "@/components/checkbox";
 import { Spacer } from "@/components/spacer";
 import { AIFlags } from "@/model/constants";
-import { Constants } from "@/constants";
 import { Sprite } from "@/components/sprite";
 import { DialogManager } from "@/modules/dialog-manager";
 import { ChooseTrainerPicDialog } from "@/components/dialogs/choose-trainer-pic-dialog";
 import { InputTextDialog } from "@/components/dialogs/input-text-dialog";
 import { FlexColumn, FlexRow, Window, WindowLayout } from "@/components/layout";
 import { IDManager } from "@/modules/id-manager";
-import {
-  ChooseEncounterMusicDialog,
-  ChooseItemDialog,
-  ChooseMoveDialog,
-  ChoosePokemonDialog,
-  ChooseTrainerClassDialog
-} from "@/components/dialogs/choose-from-list-dialog";
 import { ItemDisplay } from "@/components/model/item-display";
 import { MoveDisplay } from "@/components/model/move-display";
 import { extendArray, getDefaultMovesForMon } from "@/utils";
-import { mixins } from "vue-class-component";
+import { ChooseTrainerClassDialog } from "@/components/lists/trainer-class-list";
+import { ChooseItemDialog } from "@/components/lists/item-list";
+import { ChoosePokemonDialog } from "@/components/lists/pokemon-list";
+import { ChooseEncounterMusicDialog } from "@/components/lists/encounter-music-list";
+import { ChooseMoveDialog } from "@/components/lists/move-list";
 
 @Component
 export class EditTrainerView extends View<string> {

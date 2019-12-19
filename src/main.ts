@@ -23,9 +23,10 @@ import { enableTheme } from "@/theming";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { ViewManager } from "@/modules/view-manager";
 import { EditTrainerView } from "@/components/views/edit-trainer-view";
-import { TrainerClassesView, TrainersView } from "@/components/views/list-view";
 import { EditTrainerClassView } from "@/components/views/edit-trainer-class-view";
 import { ViewID } from "@/constants";
+import { TrainersView } from "@/components/lists/trainer-list";
+import { TrainerClassesView } from "@/components/lists/trainer-class-list";
 
 Vue.config.productionTip = false;
 //Vue.config.devtools = true;

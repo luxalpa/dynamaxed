@@ -1,68 +1,32 @@
-import { Component, Vue } from "vue-property-decorator";
-import { Column, Table } from "@/components/table";
-import { CreateElement } from "vue";
 import { GameModel, Move } from "@/model/model";
+import { createList } from "@/components/lists/list";
+import { ChooseFromListDialog } from "@/components/dialogs/choose-from-list-dialog";
 
-type MoveWithID = [string, Move];
-
-@Component
-export class MoveList extends Vue {
-  onEntryClick(e: string) {
-    this.$emit("entryclick", e);
+const MoveList = createList<Move>(() => GameModel.model.moves, [
+  {
+    text: "ID",
+    render: (h, [id, move]) => `#${id}`
+  },
+  {
+    text: "Name",
+    render: (h, [id, move]) => move.name
+  },
+  {
+    text: "Type",
+    render: (h, [id, move]) => move.type
+  },
+  {
+    text: "Power",
+    render: (h, [id, move]) => move.power
+  },
+  {
+    text: "Accuracy",
+    render: (h, [id, move]) => move.accuracy
+  },
+  {
+    text: "PP",
+    render: (h, [id, move]) => move.pp
   }
+]);
 
-  get layout(): Column<MoveWithID>[] {
-    return [
-      {
-        text: "ID",
-        render(h: CreateElement, [id, move]: MoveWithID): any {
-          return `#${id}`;
-        }
-      },
-      {
-        text: "Name",
-        render(h: CreateElement, [id, move]: MoveWithID): any {
-          return move.name;
-        }
-      },
-      {
-        text: "Type",
-        render(h: CreateElement, [id, move]: MoveWithID): any {
-          return move.type;
-        }
-      },
-      {
-        text: "Power",
-        render(h: CreateElement, [id, move]: MoveWithID): any {
-          return move.power;
-        }
-      },
-      {
-        text: "Accuracy",
-        render(h: CreateElement, [id, move]: MoveWithID): any {
-          return move.accuracy;
-        }
-      },
-      {
-        text: "PP",
-        render(h: CreateElement, [id, move]: MoveWithID): any {
-          return move.pp;
-        }
-      }
-    ];
-  }
-
-  get entries() {
-    return Object.entries(GameModel.model.moves);
-  }
-
-  render() {
-    return (
-      <Table
-        entries={this.entries}
-        layout={this.layout}
-        onentryclick={([e]: MoveWithID) => this.onEntryClick(e)}
-      />
-    );
-  }
-}
+export const ChooseMoveDialog = ChooseFromListDialog(MoveList);
