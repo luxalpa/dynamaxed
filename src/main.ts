@@ -57,7 +57,7 @@ ViewManager.registerViews({
 ViewManager.push(TrainersView);
 
 if (process.env.NODE_ENV === "development") {
-  ViewManager.push(TrainerClassesView);
+  ViewManager.push(EditTrainerView, "JUAN_5");
 }
 
 new Vue({

@@ -9,6 +9,7 @@ import { Constants } from "@/constants";
 import { EditTrainerView } from "@/components/views/edit-trainer-view";
 import { TrainerList } from "@/components/lists/trainer-list";
 import { GameModel } from "@/model/model";
+import { createModelObj } from "@/utils";
 
 interface CreateListViewOpts<T> {
   targetView: new () => View<string>;
@@ -21,42 +22,32 @@ interface CreateListViewOpts<T> {
 function createListView<T>(opts: CreateListViewOpts<T>): new () => View<void> {
   const ListView = opts.list;
 
-  return Component({
-    name: "listview"
-  })(
-    class extends View<void> {
-      createNew() {
-        const newObj = opts.defaultObj
-          ? opts.defaultObj()
-          : { ...opts.model["NONE"] };
-
-        let newID = "CUSTOM_1";
-
-        Vue.set(opts.model, newID, newObj);
-        ViewManager.push(opts.targetView, newID);
-      }
-
-      get title(): string {
-        return opts.title;
-      }
-
-      render() {
-        return (
-          <div class={styles.view}>
-            <ListView
-              onentryclick={(id: string) =>
-                ViewManager.push(opts.targetView, id)
-              }
-              class={styles.list}
-            />
-            <FlexRow class={styles.btn}>
-              <Button onclick={() => this.createNew()}>Create new</Button>
-            </FlexRow>
-          </div>
-        );
-      }
+  const c = class extends View<void> {
+    createNew() {
+      const id = createModelObj(opts.model, opts.defaultObj);
+      ViewManager.push(opts.targetView, id);
     }
-  );
+
+    get title(): string {
+      return opts.title;
+    }
+
+    render() {
+      return (
+        <div class={styles.view}>
+          <ListView
+            onentryclick={(id: string) => ViewManager.push(opts.targetView, id)}
+            class={styles.list}
+          />
+          <FlexRow class={styles.btn}>
+            <Button onclick={() => this.createNew()}>Create new</Button>
+          </FlexRow>
+        </div>
+      );
+    }
+  };
+
+  return Component(c);
 }
 
 const styles = stylesheet({

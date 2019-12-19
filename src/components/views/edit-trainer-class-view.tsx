@@ -16,7 +16,6 @@ export class EditTrainerClassView extends View<string> {
   }
 
   get classID(): string {
-    console.log(this.args);
     return this.args;
   }
 

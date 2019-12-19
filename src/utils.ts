@@ -1,5 +1,6 @@
 // Events for native event handlers
 import { GameModel, Move } from "@/model/model";
+import { Vue } from "vue-property-decorator";
 
 export type HTMLElementEvent<T extends HTMLElement> = Event & {
   target: T;
@@ -38,4 +39,16 @@ export function getDefaultMovesForMon(species: string, lvl: number): string[] {
     return extendArray(moves, 4, "NONE");
   }
   return moves.slice(-4);
+}
+
+export function createModelObj<T>(
+  model: Record<string, T>,
+  defaultObj?: () => T
+): string {
+  const newObj = defaultObj ? defaultObj() : { ...model["NONE"] };
+
+  let newID = "CUSTOM_1";
+
+  Vue.set(model, newID, newObj);
+  return newID;
 }
