@@ -5,6 +5,7 @@ import { Theme } from "@/theming";
 import { navbarWidth } from "@/components/navbar";
 import { px } from "csx";
 import { ViewManager } from "@/modules/view-manager";
+import { PortalTarget } from "portal-vue";
 
 interface Menu {
   text: string;
@@ -65,8 +66,6 @@ export class Menubar extends Vue {
   activeEntry: Menu = NoMenu;
   titlePos = 0;
 
-  @Prop() title!: string;
-
   handleOutsideClick = (e: Event) => {
     for (const element of allParents(e.target as Element)) {
       if (element.classList.contains(styles.popupEntry)) {
@@ -80,10 +79,6 @@ export class Menubar extends Vue {
   mounted() {
     window.addEventListener("resize", () => this.updateTitlePosition());
     setTimeout(() => this.updateTitlePosition());
-    this.$watch(
-      () => this.title,
-      () => this.updateTitlePosition()
-    );
   }
 
   updateTitlePosition() {
@@ -162,7 +157,11 @@ export class Menubar extends Vue {
             )}
             onclick={() => ViewManager.pop()}
           />
-          {this.title}
+          <PortalTarget
+            name="title"
+            tag="span"
+            onchange={() => this.$nextTick(() => this.updateTitlePosition())}
+          />
           <font-awesome-icon
             icon={["fas", "arrow-right"]}
             size="lg"

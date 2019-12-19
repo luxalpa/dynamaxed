@@ -27,6 +27,9 @@ import { EditTrainerClassView } from "@/components/views/edit-trainer-class-view
 import { ViewID } from "@/constants";
 import { TrainersView } from "@/components/lists/trainer-list";
 import { TrainerClassesView } from "@/components/lists/trainer-class-list";
+import PortalVue from "portal-vue";
+
+Vue.use(PortalVue);
 
 Vue.config.productionTip = false;
 //Vue.config.devtools = true;

@@ -6,33 +6,16 @@ import { Component, Ref, Vue, Watch } from "vue-property-decorator";
 
 @Component
 export class MainView extends Vue {
-  title: string = "";
-  @Ref() content!: View<any>;
-
-  mounted() {
-    this.updateTitle();
-    this.$watch(
-      () => ViewManager.currentView,
-      () => {
-        this.updateTitle();
-      }
-    );
-  }
-
-  updateTitle() {
-    this.title = this.content.title;
-  }
-
   render() {
     const Content = ViewManager.activeView;
 
     return [
       <div class={styles.menusplit}>
-        <Menubar title={this.title} />
+        <Menubar />
         <div class={styles.navsplit}>
           <Navbar />
           <div class={styles.content}>
-            <Content ref="content" args={ViewManager.currentView.params} />
+            <Content args={ViewManager.currentView.params} />
           </div>
         </div>
       </div>

@@ -3,11 +3,6 @@ import { Component, Prop, Vue } from "vue-property-decorator";
 
 export abstract class View<T> extends Vue {
   @Prop() args!: T;
-  mounted() {
-    this.$emit("title", this.title);
-  }
-
-  abstract get title(): string;
 }
 
 interface ViewInstance {

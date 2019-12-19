@@ -8,6 +8,7 @@ import { GameModel, TrainerClass } from "@/model/model";
 import { Dialog, DialogManager } from "@/modules/dialog-manager";
 import { InputTextDialog } from "@/components/dialogs/input-text-dialog";
 import { IDManager } from "@/modules/id-manager";
+import { Portal } from "portal-vue";
 
 @Component
 export class EditTrainerClassView extends View<string> {
@@ -57,6 +58,7 @@ export class EditTrainerClassView extends View<string> {
   render() {
     return (
       <WindowLayout>
+        <Portal to="title">{this.title}</Portal>
         <Window>
           <FlexRow>
             <Label width={3}>ID</Label>

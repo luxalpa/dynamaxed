@@ -23,6 +23,7 @@ import { ChooseItemDialog } from "@/components/lists/item-list";
 import { ChoosePokemonDialog } from "@/components/lists/pokemon-list";
 import { ChooseEncounterMusicDialog } from "@/components/lists/encounter-music-list";
 import { ChooseMoveDialog } from "@/components/lists/move-list";
+import { Portal } from "portal-vue";
 
 @Component
 export class EditTrainerView extends View<string> {
@@ -225,6 +226,7 @@ export class EditTrainerView extends View<string> {
   render() {
     return (
       <WindowLayout>
+        <Portal to="title">{this.title}</Portal>
         <Window>
           <FlexRow>
             <Button

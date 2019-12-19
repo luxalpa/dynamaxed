@@ -5,6 +5,7 @@ import { Button } from "@/components/button";
 import { stylesheet } from "typestyle";
 import { Constants } from "@/constants";
 import { createModelObj } from "@/utils";
+import { Portal } from "portal-vue";
 
 interface CreateListViewOpts<T> {
   model: () => Record<string, T>;
@@ -32,6 +33,7 @@ export function createListView<T>(
     render() {
       return (
         <div class={styles.view}>
+          <Portal to="title">{this.title}</Portal>
           <ListView
             onentryclick={(id: string) => ViewManager.push(opts.targetView, id)}
             class={styles.list}
