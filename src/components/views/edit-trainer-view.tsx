@@ -223,6 +223,10 @@ export class EditTrainerView extends View<string> {
     }
   }
 
+  removeTrainer() {
+    IDManager.removeTrainer(this.trainerID);
+  }
+
   render() {
     return (
       <WindowLayout>
@@ -324,7 +328,9 @@ export class EditTrainerView extends View<string> {
           <FlexRow />
           <FlexRow>
             <Spacer width={2} />
-            <Button width={4}>Delete Trainer</Button>
+            <Button width={4} onclick={() => this.removeTrainer()}>
+              Delete Trainer
+            </Button>
           </FlexRow>
         </Window>
         <Window>

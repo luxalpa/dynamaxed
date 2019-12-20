@@ -9,6 +9,7 @@ import { Dialog, DialogManager } from "@/modules/dialog-manager";
 import { InputTextDialog } from "@/components/dialogs/input-text-dialog";
 import { IDManager } from "@/modules/id-manager";
 import { Portal } from "portal-vue";
+import { ChooseTrainerClassDialog } from "@/components/lists/trainer-class-list";
 
 @Component
 export class EditTrainerClassView extends View<string> {
@@ -55,6 +56,13 @@ export class EditTrainerClassView extends View<string> {
     }
   }
 
+  async deleteTrainerClass() {
+    const id = await DialogManager.openDialog(ChooseTrainerClassDialog, "");
+    if (id && id !== this.classID) {
+      IDManager.removeTrainerClass(this.classID, id);
+    }
+  }
+
   render() {
     return (
       <WindowLayout>
@@ -76,6 +84,13 @@ export class EditTrainerClassView extends View<string> {
             <Label width={3}>Money</Label>
             <Button onclick={() => this.changeMoney()}>
               {this.trainerClass.money}
+            </Button>
+          </FlexRow>
+          <FlexRow />
+          <FlexRow>
+            <Spacer width={2} />
+            <Button width={4} onclick={() => this.deleteTrainerClass()}>
+              Delete
             </Button>
           </FlexRow>
         </Window>

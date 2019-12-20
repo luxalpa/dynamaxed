@@ -4,6 +4,7 @@ import { View } from "@/modules/view-manager";
 import { Dialog } from "@/modules/dialog-manager";
 import { ChooseFromListDialog } from "@/components/dialogs/choose-from-list-dialog";
 import { createListView } from "@/components/views/list-view";
+import { Button } from "@/components/button";
 
 export function createList<T>(
   model: () => Record<string, T>,
@@ -43,6 +44,15 @@ export interface CreateOpts<T> {
 export function generateListComponents<T>(
   opts: CreateOpts<T>
 ): { view: new () => View<void>; dialog: new () => Dialog<string, string> } {
+  // TODO: Find out what we want to do with duplication
+  // const DuplicateCol: Column<[string, T]> = {
+  //   text: "",
+  //   render: (h, [id]) => (
+  //     <Button width={1}>
+  //       <font-awesome-icon icon={["far", "clone"]} size="sm" />
+  //     </Button>
+  //   )
+  // };
   const ListComponent = createList(opts.model, opts.layout);
 
   return {

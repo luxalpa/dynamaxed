@@ -9,7 +9,7 @@ export namespace IDManager {
       return;
     }
     const trainer = GameModel.model.trainers[oldID];
-    delete GameModel.model.trainers[oldID];
+    Vue.delete(GameModel.model.trainers, oldID);
     Vue.set(GameModel.model.trainers, newID, trainer);
 
     for (let viewInstance of ViewManager.viewStack) {
@@ -27,7 +27,7 @@ export namespace IDManager {
       return;
     }
     const trainerClass = GameModel.model.trainerClasses[oldID];
-    delete GameModel.model.trainerClasses[oldID];
+    Vue.delete(GameModel.model.trainerClasses, oldID);
     Vue.set(GameModel.model.trainerClasses, newID, trainerClass);
 
     for (let trainer of Object.values(GameModel.model.trainers)) {
@@ -42,6 +42,32 @@ export namespace IDManager {
         viewInstance.params === oldID
       ) {
         viewInstance.params = newID;
+      }
+    }
+  }
+
+  export function removeTrainerClass(id: string, replacement: string) {
+    Vue.delete(GameModel.model.trainerClasses, id);
+    for (let i = 0; i < ViewManager.viewStack.length; i++) {
+      const view = ViewManager.viewStack[i];
+      if (view.name === ViewID.EditTrainerClass && view.params === id) {
+        Vue.delete(ViewManager.viewStack, i);
+      }
+    }
+
+    for (let trainer of Object.values(GameModel.model.trainers)) {
+      if (trainer.trainerClass === id) {
+        trainer.trainerClass = replacement;
+      }
+    }
+  }
+
+  export function removeTrainer(id: string, replacement: string = "NONE") {
+    Vue.delete(GameModel.model.trainers, id);
+    for (let i = 0; i < ViewManager.viewStack.length; i++) {
+      const view = ViewManager.viewStack[i];
+      if (view.name === ViewID.EditTrainer && view.params === id) {
+        Vue.delete(ViewManager.viewStack, i);
       }
     }
   }

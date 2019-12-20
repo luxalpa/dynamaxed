@@ -5,6 +5,7 @@ import "normalize.css";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   faArrowAltCircleLeft,
+  faClone,
   faSave
 } from "@fortawesome/free-regular-svg-icons";
 import {
@@ -44,7 +45,8 @@ library.add(
   faArrowDown,
   faArrowRight,
   faCheck,
-  faTrashAlt
+  faTrashAlt,
+  faClone
 );
 
 enableTheme();
@@ -61,7 +63,7 @@ ViewManager.registerViews({
 ViewManager.push(TrainersView);
 
 if (process.env.NODE_ENV === "development") {
-  ViewManager.push(EditTrainerView, "JUAN_5");
+  ViewManager.push(EditTrainerClassView, "HIKER");
 }
 
 new Vue({

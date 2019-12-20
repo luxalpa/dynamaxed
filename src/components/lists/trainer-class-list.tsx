@@ -1,6 +1,7 @@
 import { GameModel, TrainerClass } from "@/model/model";
 import { EditTrainerClassView } from "@/components/views/edit-trainer-class-view";
 import { generateListComponents } from "@/components/lists/list";
+import { style } from "typestyle";
 
 export const {
   view: TrainerClassesView,
@@ -23,7 +24,14 @@ export const {
     },
     {
       text: "Money",
-      render: (h, [id, trainerClass]) => trainerClass.money || "-"
+      render: (h, [id, trainerClass]) => (
+        <div class={styleMoney}>{trainerClass.money || "-"}</div>
+      ),
+      align: "right"
     }
   ]
+});
+
+const styleMoney = style({
+  textAlign: "right"
 });
