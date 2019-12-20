@@ -1,7 +1,8 @@
 import { GameModel } from "@/model/model";
 import { ViewManager } from "@/modules/view-manager";
 import { Vue } from "vue-property-decorator";
-import { ViewID } from "@/constants";
+import { EditTrainerClassView } from "@/components/views/edit-trainer-class-view";
+import { EditTrainerView } from "@/components/views/edit-trainer-view";
 
 export namespace IDManager {
   export function changeTrainerID(oldID: string, newID: string) {
@@ -14,7 +15,7 @@ export namespace IDManager {
 
     for (let viewInstance of ViewManager.viewStack) {
       if (
-        viewInstance.name === ViewID.EditTrainer &&
+        ViewManager.isView(EditTrainerView, viewInstance) &&
         viewInstance.params === oldID
       ) {
         viewInstance.params = newID;
@@ -38,7 +39,7 @@ export namespace IDManager {
 
     for (let viewInstance of ViewManager.viewStack) {
       if (
-        viewInstance.name === ViewID.EditTrainerClass &&
+        ViewManager.isView(EditTrainerClassView, viewInstance) &&
         viewInstance.params === oldID
       ) {
         viewInstance.params = newID;
@@ -50,7 +51,10 @@ export namespace IDManager {
     Vue.delete(GameModel.model.trainerClasses, id);
     for (let i = 0; i < ViewManager.viewStack.length; i++) {
       const view = ViewManager.viewStack[i];
-      if (view.name === ViewID.EditTrainerClass && view.params === id) {
+      if (
+        ViewManager.isView(EditTrainerClassView, view) &&
+        view.params === id
+      ) {
         Vue.delete(ViewManager.viewStack, i);
       }
     }
@@ -66,7 +70,7 @@ export namespace IDManager {
     Vue.delete(GameModel.model.trainers, id);
     for (let i = 0; i < ViewManager.viewStack.length; i++) {
       const view = ViewManager.viewStack[i];
-      if (view.name === ViewID.EditTrainer && view.params === id) {
+      if (ViewManager.isView(EditTrainerView, view) && view.params === id) {
         Vue.delete(ViewManager.viewStack, i);
       }
     }

@@ -5,14 +5,14 @@ export abstract class View<T> extends Vue {
   @Prop() args!: T;
 }
 
-interface ViewInstance {
+interface ViewInstance<T> {
   name: string;
-  params: any;
+  params: T;
 }
 
-const NoView: ViewInstance = {
+const NoView: ViewInstance<void> = {
   name: "",
-  params: ""
+  params: void 0
 };
 
 let registeredViews = new Map<string, new () => View<any>>();
@@ -32,7 +32,14 @@ window.addEventListener("mousedown", event => {
 });
 
 export const ViewManager = new (class {
-  viewStack: ViewInstance[] = [];
+  viewStack: ViewInstance<unknown>[] = [];
+
+  isView<T>(
+    view: new () => View<T>,
+    instance: ViewInstance<any>
+  ): instance is ViewInstance<T> {
+    return instance.name === view2name.get(view);
+  }
 
   registerView(view: new () => View<any>, name: string) {
     registeredViews.set(name, view);

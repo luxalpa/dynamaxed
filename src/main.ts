@@ -25,7 +25,6 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { ViewManager } from "@/modules/view-manager";
 import { EditTrainerView } from "@/components/views/edit-trainer-view";
 import { EditTrainerClassView } from "@/components/views/edit-trainer-class-view";
-import { ViewID } from "@/constants";
 import { TrainersView } from "@/components/lists/trainer-list";
 import { TrainerClassesView } from "@/components/lists/trainer-class-list";
 import PortalVue from "portal-vue";
@@ -54,10 +53,10 @@ enableTheme();
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 
 ViewManager.registerViews({
-  [ViewID.EditTrainer]: EditTrainerView,
+  "edit-trainer": EditTrainerView,
   trainers: TrainersView,
   "trainer-classes": TrainerClassesView,
-  [ViewID.EditTrainerClass]: EditTrainerClassView
+  "edit-trainer-class": EditTrainerClassView
 });
 
 ViewManager.push(TrainersView);

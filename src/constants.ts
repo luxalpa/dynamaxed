@@ -28,8 +28,3 @@ export const Constants = {
     };
   }
 };
-
-export enum ViewID {
-  EditTrainer = "edit-trainer",
-  EditTrainerClass = "edit-trainer-class"
-}
