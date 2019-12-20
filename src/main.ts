@@ -68,17 +68,17 @@ if (process.env.NODE_ENV === "development") {
   ProjectManager.openProject(
     "C:\\Users\\Smaug\\Desktop\\Pokemon\\pokeemerald\\"
   );
-  ViewManager.push(EditTrainerClassView, "HIKER");
+  // ViewManager.push(EditTrainerClassView, "HIKER");
 } else {
+  window.onbeforeunload = (e: Event) => {
+    window.onbeforeunload = null;
+    e.returnValue = false;
+
+    ProjectManager.Save().finally(() => ipcRenderer.send("app_quit"));
+  };
+
   initStore();
 }
-
-window.onbeforeunload = (e: Event) => {
-  window.onbeforeunload = null;
-  e.returnValue = false;
-
-  ProjectManager.Save().finally(() => ipcRenderer.send("app_quit"));
-};
 
 new Vue({
   render: h => h(App)

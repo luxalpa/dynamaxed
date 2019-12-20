@@ -1,7 +1,6 @@
 import { Component, Prop, Vue } from "vue-property-decorator";
 import { classes, stylesheet } from "typestyle";
 import { Constants } from "@/constants";
-import { NestedCSSProperties } from "typestyle/lib/types";
 import { Theme } from "@/theming";
 
 @Component

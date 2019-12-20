@@ -4,7 +4,6 @@ import { View } from "@/modules/view-manager";
 import { Dialog } from "@/modules/dialog-manager";
 import { ChooseFromListDialog } from "@/components/dialogs/choose-from-list-dialog";
 import { createListView } from "@/components/views/list-view";
-import { Button } from "@/components/button";
 
 export function createList<T>(
   model: () => Record<string, T>,

@@ -80,3 +80,5 @@ export const DialogManager = new (class {
     });
   }
 })();
+
+Vue.observable(DialogManager);

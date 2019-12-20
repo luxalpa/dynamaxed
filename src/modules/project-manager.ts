@@ -2,7 +2,8 @@ import { remote } from "electron";
 import { GameModel } from "@/model/model";
 import fs from "fs";
 import path from "path";
-import { persistStore } from "@/store";
+import { addToStore, persistStore } from "@/store";
+import { Vue } from "vue-property-decorator";
 
 export interface IRecentProject {
   name: string;
@@ -62,3 +63,6 @@ export const ProjectManager = new (class {
     await GameModel.Save();
   }
 })();
+
+addToStore("project-manager", ProjectManager);
+Vue.observable(ProjectManager);

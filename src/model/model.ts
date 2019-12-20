@@ -7,6 +7,7 @@ import fs from "fs";
 import path from "path";
 import { compileTrainers } from "@/model/serialize/trainers";
 import { PathManager } from "@/modules/path-manager";
+import { Vue } from "vue-property-decorator";
 
 export interface TrainerPartyMon {
   iv: number;
@@ -128,7 +129,6 @@ export const GameModel = new (class {
     pokemon: {},
     moves: {}
   };
-
   createFromDefaults() {
     this.model = (Object.fromEntries(
       Object.entries(files).map(([key, [filename, obj]]) => [key, { ...obj }])
@@ -175,3 +175,5 @@ export const GameModel = new (class {
     compileTrainers(this.model.trainers);
   }
 })();
+
+Vue.observable(GameModel);

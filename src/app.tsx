@@ -1,9 +1,7 @@
 import { Component, Vue } from "vue-property-decorator";
 import { ProjectManager } from "@/modules/project-manager";
-import { store } from "@/store";
 import RecentProjectsView from "@/components/views/recent-projects-view";
 import { MainView } from "@/components/views/main-view";
-import { GameModel } from "@/model/model";
 import { DialogManager } from "@/modules/dialog-manager";
 import { cssRule, stylesheet } from "typestyle";
 import { Theme } from "@/theming";
@@ -88,13 +86,6 @@ const styles = stylesheet({
   name: "App"
 })
 export default class App extends Vue {
-  // Everything in the store is automatically persisted
-  store = store;
-
-  // These are not automatically persisted!
-  model = GameModel;
-  dm = DialogManager;
-
   render(h: any) {
     let CurView: any;
 

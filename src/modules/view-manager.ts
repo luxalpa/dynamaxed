@@ -1,5 +1,6 @@
 import { ipcRenderer } from "electron";
-import { Component, Prop, Vue } from "vue-property-decorator";
+import { Prop, Vue } from "vue-property-decorator";
+import { addToStore } from "@/store";
 
 export abstract class View<T> extends Vue {
   @Prop() args!: T;
@@ -105,3 +106,6 @@ export const ViewManager = new (class {
     return this.viewStack.length > 1;
   }
 })();
+
+addToStore("view-manager", ViewManager);
+Vue.observable(ViewManager);
