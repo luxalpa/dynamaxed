@@ -27,6 +27,7 @@ export class EditTrainerClassView extends View<string> {
 
   async changeTitle() {
     const title = await DialogManager.openDialog(
+      `Enter new title`,
       InputTextDialog,
       this.trainerClass.name
     );
@@ -37,6 +38,7 @@ export class EditTrainerClassView extends View<string> {
 
   async changeMoney() {
     const money = await DialogManager.openDialog(
+      `Enter new value for money`,
       InputTextDialog,
       this.trainerClass.money ? this.trainerClass.money.toString() : ""
     );
@@ -50,15 +52,34 @@ export class EditTrainerClassView extends View<string> {
   }
 
   async changeID() {
-    const id = await DialogManager.openDialog(InputTextDialog, this.classID);
+    const id = await DialogManager.openDialog(
+      `Enter new ID`,
+      InputTextDialog,
+      this.classID
+    );
     if (id !== undefined) {
       IDManager.changeTrainerClassID(this.classID, id);
     }
   }
 
   async deleteTrainerClass() {
-    const id = await DialogManager.openDialog(ChooseTrainerClassDialog, "");
-    if (id && id !== this.classID) {
+    let id = "";
+    if (
+      Object.values(GameModel.model.trainers).some(
+        t => t.trainerClass === this.classID
+      )
+    ) {
+      const replaceID = await DialogManager.openDialog(
+        `Select another TrainerClass to replace all usages of this one`,
+        ChooseTrainerClassDialog,
+        ""
+      );
+      if (!replaceID) {
+        return;
+      }
+      id = replaceID;
+    }
+    if (id !== this.classID) {
       IDManager.removeTrainerClass(this.classID, id);
     }
   }

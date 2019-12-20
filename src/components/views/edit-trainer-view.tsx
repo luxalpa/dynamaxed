@@ -49,6 +49,7 @@ export class EditTrainerView extends View<string> {
 
   async changeTrainerIcon() {
     const pic = await DialogManager.openDialog(
+      `Select Picture for ${this.trainerID}`,
       ChooseTrainerPicDialog,
       this.trainer.trainerPic
     );
@@ -59,6 +60,7 @@ export class EditTrainerView extends View<string> {
 
   async changeTrainerName() {
     const text = await DialogManager.openDialog(
+      `Enter new name for ${this.trainerID}`,
       InputTextDialog,
       this.trainer.trainerName
     );
@@ -69,6 +71,7 @@ export class EditTrainerView extends View<string> {
 
   async changeTrainerID() {
     const text = await DialogManager.openDialog(
+      `Enter new ID for ${this.trainerID}`,
       InputTextDialog,
       this.trainerID
     );
@@ -79,6 +82,7 @@ export class EditTrainerView extends View<string> {
 
   async changeTrainerClass() {
     const trainerClass = await DialogManager.openDialog(
+      `Select trainer class for ${this.trainerID}`,
       ChooseTrainerClassDialog,
       this.trainer.trainerClass
     );
@@ -89,6 +93,7 @@ export class EditTrainerView extends View<string> {
 
   async changeEncounterMusic() {
     const encounterMusic = await DialogManager.openDialog(
+      `Select encounter music for ${this.trainerID}`,
       ChooseEncounterMusicDialog,
       this.trainer.encounterMusic
     );
@@ -99,6 +104,7 @@ export class EditTrainerView extends View<string> {
 
   async changeItem(pos: number) {
     const item = await DialogManager.openDialog(
+      `Select battle use item for ${this.trainerID}`,
       ChooseItemDialog,
       this.trainer.items[pos]
     );
@@ -112,7 +118,11 @@ export class EditTrainerView extends View<string> {
   }
 
   async addItem() {
-    const item = await DialogManager.openDialog(ChooseItemDialog, "");
+    const item = await DialogManager.openDialog(
+      `Select battle use item for ${this.trainerID}`,
+      ChooseItemDialog,
+      ""
+    );
     if (item !== undefined) {
       this.trainer.items.push(item);
     }
@@ -133,6 +143,7 @@ export class EditTrainerView extends View<string> {
 
   async changePokemon(pos: number) {
     const species = await DialogManager.openDialog(
+      `Select Pokemon for Slot ${pos + 1} on ${this.trainerID}`,
       ChoosePokemonDialog,
       this.trainer.party[pos].species
     );
@@ -142,7 +153,11 @@ export class EditTrainerView extends View<string> {
   }
 
   async addMon() {
-    const species = await DialogManager.openDialog(ChoosePokemonDialog, "");
+    const species = await DialogManager.openDialog(
+      `Select Pokemon for Slot ${this.trainer.party.length} on ${this.trainerID}`,
+      ChoosePokemonDialog,
+      ""
+    );
     if (species !== undefined) {
       this.trainer.party.push({
         lvl: -1,
@@ -159,7 +174,11 @@ export class EditTrainerView extends View<string> {
   }
 
   async changeHeldItem(mon: TrainerPartyMon) {
-    const item = await DialogManager.openDialog(ChooseItemDialog, mon.heldItem);
+    const item = await DialogManager.openDialog(
+      `Select held Item`,
+      ChooseItemDialog,
+      mon.heldItem
+    );
     if (item !== undefined) {
       mon.heldItem = item;
     }
@@ -187,6 +206,7 @@ export class EditTrainerView extends View<string> {
 
   async changeMove(mon: TrainerPartyMon, pos: number) {
     const move = await DialogManager.openDialog(
+      `Select a move`,
       ChooseMoveDialog,
       mon.moves?.[pos] || ""
     );
@@ -205,6 +225,7 @@ export class EditTrainerView extends View<string> {
 
   async changeLevel(mon: TrainerPartyMon) {
     const lvl = await DialogManager.openDialog(
+      `Enter new level`,
       InputTextDialog,
       mon.lvl.toString()
     );
@@ -215,6 +236,7 @@ export class EditTrainerView extends View<string> {
 
   async changeIV(mon: TrainerPartyMon) {
     const lvl = await DialogManager.openDialog(
+      `Enter IV`,
       InputTextDialog,
       mon.iv.toString()
     );

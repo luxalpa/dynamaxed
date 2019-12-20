@@ -21,6 +21,7 @@ interface ActiveDialog {
   params: any;
   id: number;
   component: new () => Dialog<any, any>;
+  label?: string;
 }
 
 export const DialogManager = new (class {
@@ -52,13 +53,16 @@ export const DialogManager = new (class {
   }
 
   async openDialog<T, U>(
+    label: string,
     dialog: new () => Dialog<void, U>
   ): Promise<U | undefined>;
   async openDialog<T, U>(
+    label: string,
     dialog: new () => Dialog<T, U>,
     params: T
   ): Promise<U | undefined>;
   async openDialog<T, U>(
+    label: string,
     dialog: new () => Dialog<T, U>,
     params?: T
   ): Promise<U | undefined> {
@@ -68,7 +72,8 @@ export const DialogManager = new (class {
         reject,
         resolve,
         component: dialog,
-        id: this._autoIncDialogID++
+        id: this._autoIncDialogID++,
+        label
       };
 
       this.dialogs.push(d);

@@ -12,7 +12,7 @@ import { Constants } from "@/constants";
 export class ChooseTrainerPicDialog extends Dialog<string, string> {
   render() {
     return (
-      <div class={styles.dialog}>
+      <div>
         <div class={styles.scrollArea}>
           <div class={styles.elements}>
             {TrainerPics.map(id => (
@@ -40,9 +40,5 @@ const styles = stylesheet({
     width: Constants.gridWrap(3 * 6),
     boxSizing: "border-box"
     // ...Constants.gridWrapRect(3 * 6, 3 * 8)
-  },
-  dialog: {
-    maxHeight: "calc(100% - 62px)",
-    boxSizing: "border-box"
   }
 });

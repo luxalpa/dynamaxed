@@ -26,7 +26,7 @@ export function ChooseFromListDialog<T>(
 
     render() {
       return (
-        <div class={styles.dialog}>
+        <div>
           <List
             onentryclick={(e: string) => this.accept(e)}
             class={styles.tableWrapper}
@@ -49,11 +49,6 @@ const styles = stylesheet({
     overflow: "auto",
     maxHeight: "100%",
     margin: Constants.margin
-  },
-  dialog: {
-    maxHeight: "calc(100% - 62px)",
-    boxSizing: "border-box",
-    flexDirection: "column"
   },
   btn: {
     justifyContent: "center"

@@ -9,6 +9,7 @@ import { cssRule, stylesheet } from "typestyle";
 import { Theme } from "@/theming";
 import { rgba } from "csx";
 import { modifiers } from "vue-tsx-support";
+import { FlexRow } from "@/components/layout";
 
 cssRule("html, body", {
   height: "100%"
@@ -73,7 +74,13 @@ const styles = stylesheet({
   dialog: {
     backgroundColor: Theme.middlegroundBgColor,
     padding: "29px",
-    display: "flex"
+    display: "flex",
+    maxHeight: "calc(100% - 62px)",
+    boxSizing: "border-box",
+    flexDirection: "column"
+  },
+  dialogContent: {
+    display: "contents"
   }
 });
 
@@ -107,7 +114,14 @@ export default class App extends Vue {
               onclick={modifiers.self(() => DialogManager.reject(d.id))}
               class={styles.dialogWrapper}
             >
-              <Dialog args={d.params} dialogID={d.id} class={styles.dialog} />
+              <div class={styles.dialog}>
+                <FlexRow>{d.label}:</FlexRow>
+                <Dialog
+                  args={d.params}
+                  dialogID={d.id}
+                  class={styles.dialogContent}
+                />
+              </div>
             </div>
           );
         })}
