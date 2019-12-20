@@ -1,11 +1,8 @@
 "use strict";
 
-import { app, protocol, BrowserWindow } from "electron";
-import path from "path";
-import {
-  createProtocol,
-  installVueDevtools
-} from "vue-cli-plugin-electron-builder/lib";
+import { app, BrowserWindow, protocol, ipcMain } from "electron";
+import { createProtocol } from "vue-cli-plugin-electron-builder/lib";
+
 const isDevelopment = process.env.NODE_ENV !== "production";
 
 // Keep a global reference of the window object, if you don't, the window will
@@ -89,6 +86,10 @@ app.on("ready", async () => {
   }
 
   createWindow();
+});
+
+ipcMain.on("app_quit", (event, info) => {
+  app.quit();
 });
 
 // Exit cleanly on request from parent process in development mode.

@@ -73,12 +73,18 @@ export interface Item {
   battleUsage?: number;
   battleUseFunc?: string;
   secondaryId: number;
-  icon?: [string, string];
+  icon?: {
+    image: string;
+    palette: string;
+  };
 }
 
 export interface Pokemon {
   name: string;
-  moves: [number, string][];
+  moves: {
+    level: number;
+    move: string;
+  }[];
 }
 
 export interface Move {
@@ -102,13 +108,17 @@ export interface Model {
   moves: Record<string, Move>;
 }
 
-const files = {
+type Files = {
+  [P in keyof Model]: [string, Model[P]];
+};
+
+const files: Files = {
   trainers: ["trainers.json", trainerDefaults],
   trainerClasses: ["trainer-classes.json", trainerClassDefaults],
   items: ["items.json", itemDefaults],
   pokemon: ["pokemon.json", pokemonDefaults],
   moves: ["moves.json", moveDefaults]
-} as const;
+};
 
 export const GameModel = new (class {
   model: Model = {
@@ -121,14 +131,12 @@ export const GameModel = new (class {
 
   createFromDefaults() {
     this.model = (Object.fromEntries(
-      Object.entries(files).map(([key, value]) => [key, { ...value[1] }])
+      Object.entries(files).map(([key, [filename, obj]]) => [key, { ...obj }])
     ) as unknown) as Model;
   }
 
   async Save() {
-    this.Compile();
     await this.Serialize();
-    console.log("Saved!");
   }
 
   Deserialize() {

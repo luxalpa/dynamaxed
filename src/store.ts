@@ -6,7 +6,7 @@ export const store: any = {
   ProjectManager
 };
 
-if (process.env.NODE_ENV !== "development") {
+export function initStore() {
   const s = window.localStorage.getItem("state");
   if (s) {
     const tree = JSON.parse(s);
@@ -24,11 +24,6 @@ if (process.env.NODE_ENV !== "development") {
       ProjectManager.loadProject();
     }
   }
-} else {
-  // Dev stuff
-  ProjectManager.openProject(
-    "C:\\Users\\Smaug\\Desktop\\Pokemon\\pokeemerald\\"
-  );
 }
 
 export function persistStore() {

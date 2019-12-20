@@ -2,6 +2,7 @@ import { remote } from "electron";
 import { GameModel } from "@/model/model";
 import fs from "fs";
 import path from "path";
+import { persistStore } from "@/store";
 
 export interface IRecentProject {
   name: string;
@@ -54,5 +55,10 @@ export const ProjectManager = new (class {
     }
 
     this.openProject(filePaths[0]);
+  }
+
+  async Save() {
+    persistStore();
+    await GameModel.Save();
   }
 })();

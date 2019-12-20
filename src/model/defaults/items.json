@@ -8,7 +8,7 @@
     "battleUsage": 2,
     "battleUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["QuestionMark", "QuestionMark"]
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
   },
   "MASTER_BALL": {
     "name": "MASTER BALL",
@@ -19,7 +19,7 @@
     "battleUsage": 2,
     "battleUseFunc": "ItemUseInBattle_PokeBall",
     "secondaryId": 0,
-    "icon": ["MasterBall", "MasterBall"]
+    "icon": { "image": "MasterBall", "palette": "MasterBall" }
   },
   "ULTRA_BALL": {
     "name": "ULTRA BALL",
@@ -30,7 +30,7 @@
     "battleUsage": 2,
     "battleUseFunc": "ItemUseInBattle_PokeBall",
     "secondaryId": 1,
-    "icon": ["UltraBall", "UltraBall"]
+    "icon": { "image": "UltraBall", "palette": "UltraBall" }
   },
   "GREAT_BALL": {
     "name": "GREAT BALL",
@@ -41,7 +41,7 @@
     "battleUsage": 2,
     "battleUseFunc": "ItemUseInBattle_PokeBall",
     "secondaryId": 2,
-    "icon": ["GreatBall", "GreatBall"]
+    "icon": { "image": "GreatBall", "palette": "GreatBall" }
   },
   "POKE_BALL": {
     "name": "POKé BALL",
@@ -52,7 +52,7 @@
     "battleUsage": 2,
     "battleUseFunc": "ItemUseInBattle_PokeBall",
     "secondaryId": 3,
-    "icon": ["PokeBall", "PokeBall"]
+    "icon": { "image": "PokeBall", "palette": "PokeBall" }
   },
   "SAFARI_BALL": {
     "name": "SAFARI BALL",
@@ -63,7 +63,7 @@
     "battleUsage": 2,
     "battleUseFunc": "ItemUseInBattle_PokeBall",
     "secondaryId": 4,
-    "icon": ["SafariBall", "SafariBall"]
+    "icon": { "image": "SafariBall", "palette": "SafariBall" }
   },
   "NET_BALL": {
     "name": "NET BALL",
@@ -74,7 +74,7 @@
     "battleUsage": 2,
     "battleUseFunc": "ItemUseInBattle_PokeBall",
     "secondaryId": 5,
-    "icon": ["NetBall", "NetBall"]
+    "icon": { "image": "NetBall", "palette": "NetBall" }
   },
   "DIVE_BALL": {
     "name": "DIVE BALL",
@@ -85,7 +85,7 @@
     "battleUsage": 2,
     "battleUseFunc": "ItemUseInBattle_PokeBall",
     "secondaryId": 6,
-    "icon": ["DiveBall", "DiveBall"]
+    "icon": { "image": "DiveBall", "palette": "DiveBall" }
   },
   "NEST_BALL": {
     "name": "NEST BALL",
@@ -96,7 +96,7 @@
     "battleUsage": 2,
     "battleUseFunc": "ItemUseInBattle_PokeBall",
     "secondaryId": 7,
-    "icon": ["NestBall", "NestBall"]
+    "icon": { "image": "NestBall", "palette": "NestBall" }
   },
   "REPEAT_BALL": {
     "name": "REPEAT BALL",
@@ -107,7 +107,7 @@
     "battleUsage": 2,
     "battleUseFunc": "ItemUseInBattle_PokeBall",
     "secondaryId": 8,
-    "icon": ["RepeatBall", "RepeatBall"]
+    "icon": { "image": "RepeatBall", "palette": "RepeatBall" }
   },
   "TIMER_BALL": {
     "name": "TIMER BALL",
@@ -118,7 +118,7 @@
     "battleUsage": 2,
     "battleUseFunc": "ItemUseInBattle_PokeBall",
     "secondaryId": 9,
-    "icon": ["TimerBall", "RepeatBall"]
+    "icon": { "image": "TimerBall", "palette": "RepeatBall" }
   },
   "LUXURY_BALL": {
     "name": "LUXURY BALL",
@@ -129,7 +129,7 @@
     "battleUsage": 2,
     "battleUseFunc": "ItemUseInBattle_PokeBall",
     "secondaryId": 10,
-    "icon": ["LuxuryBall", "LuxuryBall"]
+    "icon": { "image": "LuxuryBall", "palette": "LuxuryBall" }
   },
   "PREMIER_BALL": {
     "name": "PREMIER BALL",
@@ -140,7 +140,7 @@
     "battleUsage": 2,
     "battleUseFunc": "ItemUseInBattle_PokeBall",
     "secondaryId": 11,
-    "icon": ["PremierBall", "LuxuryBall"]
+    "icon": { "image": "PremierBall", "palette": "LuxuryBall" }
   },
   "POTION": {
     "name": "POTION",
@@ -153,7 +153,7 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_Medicine",
     "secondaryId": 0,
-    "icon": ["Potion", "Potion"]
+    "icon": { "image": "Potion", "palette": "Potion" }
   },
   "ANTIDOTE": {
     "name": "ANTIDOTE",
@@ -165,7 +165,7 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_Medicine",
     "secondaryId": 0,
-    "icon": ["Antidote", "Antidote"]
+    "icon": { "image": "Antidote", "palette": "Antidote" }
   },
   "BURN_HEAL": {
     "name": "BURN HEAL",
@@ -177,7 +177,7 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_Medicine",
     "secondaryId": 0,
-    "icon": ["StatusHeal", "BurnHeal"]
+    "icon": { "image": "StatusHeal", "palette": "BurnHeal" }
   },
   "ICE_HEAL": {
     "name": "ICE HEAL",
@@ -189,7 +189,7 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_Medicine",
     "secondaryId": 0,
-    "icon": ["StatusHeal", "IceHeal"]
+    "icon": { "image": "StatusHeal", "palette": "IceHeal" }
   },
   "AWAKENING": {
     "name": "AWAKENING",
@@ -201,7 +201,7 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_Medicine",
     "secondaryId": 0,
-    "icon": ["StatusHeal", "Awakening"]
+    "icon": { "image": "StatusHeal", "palette": "Awakening" }
   },
   "PARALYZE_HEAL": {
     "name": "PARLYZ HEAL",
@@ -213,7 +213,7 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_Medicine",
     "secondaryId": 0,
-    "icon": ["StatusHeal", "ParalyzeHeal"]
+    "icon": { "image": "StatusHeal", "palette": "ParalyzeHeal" }
   },
   "FULL_RESTORE": {
     "name": "FULL RESTORE",
@@ -226,7 +226,7 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_Medicine",
     "secondaryId": 0,
-    "icon": ["LargePotion", "FullRestore"]
+    "icon": { "image": "LargePotion", "palette": "FullRestore" }
   },
   "MAX_POTION": {
     "name": "MAX POTION",
@@ -239,7 +239,7 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_Medicine",
     "secondaryId": 0,
-    "icon": ["LargePotion", "MaxPotion"]
+    "icon": { "image": "LargePotion", "palette": "MaxPotion" }
   },
   "HYPER_POTION": {
     "name": "HYPER POTION",
@@ -252,7 +252,7 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_Medicine",
     "secondaryId": 0,
-    "icon": ["Potion", "HyperPotion"]
+    "icon": { "image": "Potion", "palette": "HyperPotion" }
   },
   "SUPER_POTION": {
     "name": "SUPER POTION",
@@ -265,7 +265,7 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_Medicine",
     "secondaryId": 0,
-    "icon": ["Potion", "SuperPotion"]
+    "icon": { "image": "Potion", "palette": "SuperPotion" }
   },
   "FULL_HEAL": {
     "name": "FULL HEAL",
@@ -277,7 +277,7 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_Medicine",
     "secondaryId": 0,
-    "icon": ["FullHeal", "FullHeal"]
+    "icon": { "image": "FullHeal", "palette": "FullHeal" }
   },
   "REVIVE": {
     "name": "REVIVE",
@@ -289,7 +289,7 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_Medicine",
     "secondaryId": 0,
-    "icon": ["Revive", "Revive"]
+    "icon": { "image": "Revive", "palette": "Revive" }
   },
   "MAX_REVIVE": {
     "name": "MAX REVIVE",
@@ -301,7 +301,7 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_Medicine",
     "secondaryId": 0,
-    "icon": ["MaxRevive", "Revive"]
+    "icon": { "image": "MaxRevive", "palette": "Revive" }
   },
   "FRESH_WATER": {
     "name": "FRESH WATER",
@@ -314,7 +314,7 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_Medicine",
     "secondaryId": 0,
-    "icon": ["FreshWater", "FreshWater"]
+    "icon": { "image": "FreshWater", "palette": "FreshWater" }
   },
   "SODA_POP": {
     "name": "SODA POP",
@@ -327,7 +327,7 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_Medicine",
     "secondaryId": 0,
-    "icon": ["SodaPop", "SodaPop"]
+    "icon": { "image": "SodaPop", "palette": "SodaPop" }
   },
   "LEMONADE": {
     "name": "LEMONADE",
@@ -340,7 +340,7 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_Medicine",
     "secondaryId": 0,
-    "icon": ["Lemonade", "Lemonade"]
+    "icon": { "image": "Lemonade", "palette": "Lemonade" }
   },
   "MOOMOO_MILK": {
     "name": "MOOMOO MILK",
@@ -353,7 +353,7 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_Medicine",
     "secondaryId": 0,
-    "icon": ["MoomooMilk", "MoomooMilk"]
+    "icon": { "image": "MoomooMilk", "palette": "MoomooMilk" }
   },
   "ENERGY_POWDER": {
     "name": "ENERGYPOWDER",
@@ -365,7 +365,7 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_Medicine",
     "secondaryId": 0,
-    "icon": ["Powder", "EnergyPowder"]
+    "icon": { "image": "Powder", "palette": "EnergyPowder" }
   },
   "ENERGY_ROOT": {
     "name": "ENERGY ROOT",
@@ -377,7 +377,7 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_Medicine",
     "secondaryId": 0,
-    "icon": ["EnergyRoot", "EnergyRoot"]
+    "icon": { "image": "EnergyRoot", "palette": "EnergyRoot" }
   },
   "HEAL_POWDER": {
     "name": "HEAL POWDER",
@@ -389,7 +389,7 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_Medicine",
     "secondaryId": 0,
-    "icon": ["Powder", "HealPowder"]
+    "icon": { "image": "Powder", "palette": "HealPowder" }
   },
   "REVIVAL_HERB": {
     "name": "REVIVAL HERB",
@@ -401,7 +401,7 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_Medicine",
     "secondaryId": 0,
-    "icon": ["RevivalHerb", "RevivalHerb"]
+    "icon": { "image": "RevivalHerb", "palette": "RevivalHerb" }
   },
   "ETHER": {
     "name": "ETHER",
@@ -414,7 +414,7 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_PPRecovery",
     "secondaryId": 0,
-    "icon": ["Ether", "Ether"]
+    "icon": { "image": "Ether", "palette": "Ether" }
   },
   "MAX_ETHER": {
     "name": "MAX ETHER",
@@ -427,7 +427,7 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_PPRecovery",
     "secondaryId": 0,
-    "icon": ["Ether", "MaxEther"]
+    "icon": { "image": "Ether", "palette": "MaxEther" }
   },
   "ELIXIR": {
     "name": "ELIXIR",
@@ -440,7 +440,7 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_PPRecovery",
     "secondaryId": 0,
-    "icon": ["Ether", "Elixir"]
+    "icon": { "image": "Ether", "palette": "Elixir" }
   },
   "MAX_ELIXIR": {
     "name": "MAX ELIXIR",
@@ -453,7 +453,7 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_PPRecovery",
     "secondaryId": 0,
-    "icon": ["Ether", "MaxElixir"]
+    "icon": { "image": "Ether", "palette": "MaxElixir" }
   },
   "LAVA_COOKIE": {
     "name": "LAVA COOKIE",
@@ -465,7 +465,7 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_Medicine",
     "secondaryId": 0,
-    "icon": ["LavaCookie", "LavaCookieAndLetter"]
+    "icon": { "image": "LavaCookie", "palette": "LavaCookieAndLetter" }
   },
   "BLUE_FLUTE": {
     "name": "BLUE FLUTE",
@@ -477,7 +477,7 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_Medicine",
     "secondaryId": 0,
-    "icon": ["Flute", "BlueFlute"]
+    "icon": { "image": "Flute", "palette": "BlueFlute" }
   },
   "YELLOW_FLUTE": {
     "name": "YELLOW FLUTE",
@@ -489,7 +489,7 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_Medicine",
     "secondaryId": 0,
-    "icon": ["Flute", "YellowFlute"]
+    "icon": { "image": "Flute", "palette": "YellowFlute" }
   },
   "RED_FLUTE": {
     "name": "RED FLUTE",
@@ -501,7 +501,7 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_Medicine",
     "secondaryId": 0,
-    "icon": ["Flute", "RedFlute"]
+    "icon": { "image": "Flute", "palette": "RedFlute" }
   },
   "BLACK_FLUTE": {
     "name": "BLACK FLUTE",
@@ -512,7 +512,7 @@
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_BlackWhiteFlute",
     "secondaryId": 0,
-    "icon": ["Flute", "BlackFlute"]
+    "icon": { "image": "Flute", "palette": "BlackFlute" }
   },
   "WHITE_FLUTE": {
     "name": "WHITE FLUTE",
@@ -523,7 +523,7 @@
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_BlackWhiteFlute",
     "secondaryId": 0,
-    "icon": ["Flute", "WhiteFlute"]
+    "icon": { "image": "Flute", "palette": "WhiteFlute" }
   },
   "BERRY_JUICE": {
     "name": "BERRY JUICE",
@@ -537,7 +537,7 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_Medicine",
     "secondaryId": 0,
-    "icon": ["BerryJuice", "BerryJuice"]
+    "icon": { "image": "BerryJuice", "palette": "BerryJuice" }
   },
   "SACRED_ASH": {
     "name": "SACRED ASH",
@@ -547,7 +547,7 @@
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_SacredAsh",
     "secondaryId": 0,
-    "icon": ["SacredAsh", "SacredAsh"]
+    "icon": { "image": "SacredAsh", "palette": "SacredAsh" }
   },
   "SHOAL_SALT": {
     "name": "SHOAL SALT",
@@ -557,7 +557,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["Powder", "ShoalSalt"]
+    "icon": { "image": "Powder", "palette": "ShoalSalt" }
   },
   "SHOAL_SHELL": {
     "name": "SHOAL SHELL",
@@ -567,7 +567,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["ShoalShell", "Shell"]
+    "icon": { "image": "ShoalShell", "palette": "Shell" }
   },
   "RED_SHARD": {
     "name": "RED SHARD",
@@ -577,7 +577,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["Shard", "RedShard"]
+    "icon": { "image": "Shard", "palette": "RedShard" }
   },
   "BLUE_SHARD": {
     "name": "BLUE SHARD",
@@ -587,7 +587,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["Shard", "BlueShard"]
+    "icon": { "image": "Shard", "palette": "BlueShard" }
   },
   "YELLOW_SHARD": {
     "name": "YELLOW SHARD",
@@ -597,7 +597,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["Shard", "YellowShard"]
+    "icon": { "image": "Shard", "palette": "YellowShard" }
   },
   "GREEN_SHARD": {
     "name": "GREEN SHARD",
@@ -607,7 +607,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["Shard", "GreenShard"]
+    "icon": { "image": "Shard", "palette": "GreenShard" }
   },
   "034": {
     "name": "????????",
@@ -616,7 +616,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["QuestionMark", "QuestionMark"]
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
   },
   "035": {
     "name": "????????",
@@ -625,7 +625,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["QuestionMark", "QuestionMark"]
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
   },
   "036": {
     "name": "????????",
@@ -634,7 +634,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["QuestionMark", "QuestionMark"]
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
   },
   "037": {
     "name": "????????",
@@ -643,7 +643,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["QuestionMark", "QuestionMark"]
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
   },
   "038": {
     "name": "????????",
@@ -652,7 +652,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["QuestionMark", "QuestionMark"]
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
   },
   "039": {
     "name": "????????",
@@ -661,7 +661,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["QuestionMark", "QuestionMark"]
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
   },
   "03A": {
     "name": "????????",
@@ -670,7 +670,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["QuestionMark", "QuestionMark"]
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
   },
   "03B": {
     "name": "????????",
@@ -679,7 +679,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["QuestionMark", "QuestionMark"]
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
   },
   "03C": {
     "name": "????????",
@@ -688,7 +688,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["QuestionMark", "QuestionMark"]
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
   },
   "03D": {
     "name": "????????",
@@ -697,7 +697,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["QuestionMark", "QuestionMark"]
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
   },
   "03E": {
     "name": "????????",
@@ -706,7 +706,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["QuestionMark", "QuestionMark"]
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
   },
   "HP_UP": {
     "name": "HP UP",
@@ -716,7 +716,7 @@
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_Medicine",
     "secondaryId": 0,
-    "icon": ["HPUp", "HPUp"]
+    "icon": { "image": "HPUp", "palette": "HPUp" }
   },
   "PROTEIN": {
     "name": "PROTEIN",
@@ -726,7 +726,7 @@
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_Medicine",
     "secondaryId": 0,
-    "icon": ["Vitamin", "Protein"]
+    "icon": { "image": "Vitamin", "palette": "Protein" }
   },
   "IRON": {
     "name": "IRON",
@@ -736,7 +736,7 @@
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_Medicine",
     "secondaryId": 0,
-    "icon": ["Vitamin", "Iron"]
+    "icon": { "image": "Vitamin", "palette": "Iron" }
   },
   "CARBOS": {
     "name": "CARBOS",
@@ -746,7 +746,7 @@
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_Medicine",
     "secondaryId": 0,
-    "icon": ["Vitamin", "Carbos"]
+    "icon": { "image": "Vitamin", "palette": "Carbos" }
   },
   "CALCIUM": {
     "name": "CALCIUM",
@@ -756,7 +756,7 @@
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_Medicine",
     "secondaryId": 0,
-    "icon": ["Vitamin", "Calcium"]
+    "icon": { "image": "Vitamin", "palette": "Calcium" }
   },
   "RARE_CANDY": {
     "name": "RARE CANDY",
@@ -766,7 +766,7 @@
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_RareCandy",
     "secondaryId": 0,
-    "icon": ["RareCandy", "RareCandy"]
+    "icon": { "image": "RareCandy", "palette": "RareCandy" }
   },
   "PP_UP": {
     "name": "PP UP",
@@ -776,7 +776,7 @@
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_PPUp",
     "secondaryId": 0,
-    "icon": ["PPUp", "PPUp"]
+    "icon": { "image": "PPUp", "palette": "PPUp" }
   },
   "ZINC": {
     "name": "ZINC",
@@ -786,7 +786,7 @@
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_Medicine",
     "secondaryId": 0,
-    "icon": ["Vitamin", "Zinc"]
+    "icon": { "image": "Vitamin", "palette": "Zinc" }
   },
   "PP_MAX": {
     "name": "PP MAX",
@@ -796,7 +796,7 @@
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_PPUp",
     "secondaryId": 0,
-    "icon": ["PPMax", "PPMax"]
+    "icon": { "image": "PPMax", "palette": "PPMax" }
   },
   "048": {
     "name": "????????",
@@ -805,7 +805,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["QuestionMark", "QuestionMark"]
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
   },
   "GUARD_SPEC": {
     "name": "GUARD SPEC.",
@@ -817,7 +817,7 @@
     "battleUsage": 2,
     "battleUseFunc": "ItemUseInBattle_StatIncrease",
     "secondaryId": 0,
-    "icon": ["BattleStatItem", "GuardSpec"]
+    "icon": { "image": "BattleStatItem", "palette": "GuardSpec" }
   },
   "DIRE_HIT": {
     "name": "DIRE HIT",
@@ -829,7 +829,7 @@
     "battleUsage": 2,
     "battleUseFunc": "ItemUseInBattle_StatIncrease",
     "secondaryId": 0,
-    "icon": ["BattleStatItem", "DireHit"]
+    "icon": { "image": "BattleStatItem", "palette": "DireHit" }
   },
   "X_ATTACK": {
     "name": "X ATTACK",
@@ -841,7 +841,7 @@
     "battleUsage": 2,
     "battleUseFunc": "ItemUseInBattle_StatIncrease",
     "secondaryId": 0,
-    "icon": ["BattleStatItem", "XAttack"]
+    "icon": { "image": "BattleStatItem", "palette": "XAttack" }
   },
   "X_DEFEND": {
     "name": "X DEFEND",
@@ -853,7 +853,7 @@
     "battleUsage": 2,
     "battleUseFunc": "ItemUseInBattle_StatIncrease",
     "secondaryId": 0,
-    "icon": ["BattleStatItem", "XDefend"]
+    "icon": { "image": "BattleStatItem", "palette": "XDefend" }
   },
   "X_SPEED": {
     "name": "X SPEED",
@@ -865,7 +865,7 @@
     "battleUsage": 2,
     "battleUseFunc": "ItemUseInBattle_StatIncrease",
     "secondaryId": 0,
-    "icon": ["BattleStatItem", "XSpeed"]
+    "icon": { "image": "BattleStatItem", "palette": "XSpeed" }
   },
   "X_ACCURACY": {
     "name": "X ACCURACY",
@@ -877,7 +877,7 @@
     "battleUsage": 2,
     "battleUseFunc": "ItemUseInBattle_StatIncrease",
     "secondaryId": 0,
-    "icon": ["BattleStatItem", "XAccuracy"]
+    "icon": { "image": "BattleStatItem", "palette": "XAccuracy" }
   },
   "X_SPECIAL": {
     "name": "X SPECIAL",
@@ -889,7 +889,7 @@
     "battleUsage": 2,
     "battleUseFunc": "ItemUseInBattle_StatIncrease",
     "secondaryId": 0,
-    "icon": ["BattleStatItem", "XSpecial"]
+    "icon": { "image": "BattleStatItem", "palette": "XSpecial" }
   },
   "POKE_DOLL": {
     "name": "POKé DOLL",
@@ -901,7 +901,7 @@
     "battleUsage": 2,
     "battleUseFunc": "ItemUseInBattle_Escape",
     "secondaryId": 0,
-    "icon": ["PokeDoll", "PokeDoll"]
+    "icon": { "image": "PokeDoll", "palette": "PokeDoll" }
   },
   "FLUFFY_TAIL": {
     "name": "FLUFFY TAIL",
@@ -913,7 +913,7 @@
     "battleUsage": 2,
     "battleUseFunc": "ItemUseInBattle_Escape",
     "secondaryId": 0,
-    "icon": ["FluffyTail", "FluffyTail"]
+    "icon": { "image": "FluffyTail", "palette": "FluffyTail" }
   },
   "052": {
     "name": "????????",
@@ -922,7 +922,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["QuestionMark", "QuestionMark"]
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
   },
   "SUPER_REPEL": {
     "name": "SUPER REPEL",
@@ -933,7 +933,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_Repel",
     "secondaryId": 0,
-    "icon": ["Repel", "SuperRepel"]
+    "icon": { "image": "Repel", "palette": "SuperRepel" }
   },
   "MAX_REPEL": {
     "name": "MAX REPEL",
@@ -944,7 +944,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_Repel",
     "secondaryId": 0,
-    "icon": ["Repel", "MaxRepel"]
+    "icon": { "image": "Repel", "palette": "MaxRepel" }
   },
   "ESCAPE_ROPE": {
     "name": "ESCAPE ROPE",
@@ -954,7 +954,7 @@
     "type": 2,
     "fieldUseFunc": "ItemUseOutOfBattle_EscapeRope",
     "secondaryId": 0,
-    "icon": ["EscapeRope", "EscapeRope"]
+    "icon": { "image": "EscapeRope", "palette": "EscapeRope" }
   },
   "REPEL": {
     "name": "REPEL",
@@ -965,7 +965,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_Repel",
     "secondaryId": 0,
-    "icon": ["Repel", "Repel"]
+    "icon": { "image": "Repel", "palette": "Repel" }
   },
   "057": {
     "name": "????????",
@@ -974,7 +974,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["QuestionMark", "QuestionMark"]
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
   },
   "058": {
     "name": "????????",
@@ -983,7 +983,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["QuestionMark", "QuestionMark"]
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
   },
   "059": {
     "name": "????????",
@@ -992,7 +992,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["QuestionMark", "QuestionMark"]
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
   },
   "05A": {
     "name": "????????",
@@ -1001,7 +1001,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["QuestionMark", "QuestionMark"]
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
   },
   "05B": {
     "name": "????????",
@@ -1010,7 +1010,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["QuestionMark", "QuestionMark"]
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
   },
   "05C": {
     "name": "????????",
@@ -1019,7 +1019,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["QuestionMark", "QuestionMark"]
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
   },
   "SUN_STONE": {
     "name": "SUN STONE",
@@ -1029,7 +1029,7 @@
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_EvolutionStone",
     "secondaryId": 0,
-    "icon": ["SunStone", "SunStone"]
+    "icon": { "image": "SunStone", "palette": "SunStone" }
   },
   "MOON_STONE": {
     "name": "MOON STONE",
@@ -1039,7 +1039,7 @@
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_EvolutionStone",
     "secondaryId": 0,
-    "icon": ["MoonStone", "MoonStone"]
+    "icon": { "image": "MoonStone", "palette": "MoonStone" }
   },
   "FIRE_STONE": {
     "name": "FIRE STONE",
@@ -1049,7 +1049,7 @@
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_EvolutionStone",
     "secondaryId": 0,
-    "icon": ["FireStone", "FireStone"]
+    "icon": { "image": "FireStone", "palette": "FireStone" }
   },
   "THUNDER_STONE": {
     "name": "THUNDERSTONE",
@@ -1059,7 +1059,7 @@
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_EvolutionStone",
     "secondaryId": 0,
-    "icon": ["ThunderStone", "ThunderStone"]
+    "icon": { "image": "ThunderStone", "palette": "ThunderStone" }
   },
   "WATER_STONE": {
     "name": "WATER STONE",
@@ -1069,7 +1069,7 @@
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_EvolutionStone",
     "secondaryId": 0,
-    "icon": ["WaterStone", "WaterStone"]
+    "icon": { "image": "WaterStone", "palette": "WaterStone" }
   },
   "LEAF_STONE": {
     "name": "LEAF STONE",
@@ -1079,7 +1079,7 @@
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_EvolutionStone",
     "secondaryId": 0,
-    "icon": ["LeafStone", "LeafStone"]
+    "icon": { "image": "LeafStone", "palette": "LeafStone" }
   },
   "063": {
     "name": "????????",
@@ -1088,7 +1088,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["QuestionMark", "QuestionMark"]
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
   },
   "064": {
     "name": "????????",
@@ -1097,7 +1097,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["QuestionMark", "QuestionMark"]
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
   },
   "065": {
     "name": "????????",
@@ -1106,7 +1106,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["QuestionMark", "QuestionMark"]
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
   },
   "066": {
     "name": "????????",
@@ -1115,7 +1115,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["QuestionMark", "QuestionMark"]
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
   },
   "TINY_MUSHROOM": {
     "name": "TINYMUSHROOM",
@@ -1125,7 +1125,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["TinyMushroom", "Mushroom"]
+    "icon": { "image": "TinyMushroom", "palette": "Mushroom" }
   },
   "BIG_MUSHROOM": {
     "name": "BIG MUSHROOM",
@@ -1135,7 +1135,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["BigMushroom", "Mushroom"]
+    "icon": { "image": "BigMushroom", "palette": "Mushroom" }
   },
   "069": {
     "name": "????????",
@@ -1144,7 +1144,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["QuestionMark", "QuestionMark"]
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
   },
   "PEARL": {
     "name": "PEARL",
@@ -1154,7 +1154,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["Pearl", "Pearl"]
+    "icon": { "image": "Pearl", "palette": "Pearl" }
   },
   "BIG_PEARL": {
     "name": "BIG PEARL",
@@ -1164,7 +1164,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["BigPearl", "Pearl"]
+    "icon": { "image": "BigPearl", "palette": "Pearl" }
   },
   "STARDUST": {
     "name": "STARDUST",
@@ -1174,7 +1174,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["Stardust", "Star"]
+    "icon": { "image": "Stardust", "palette": "Star" }
   },
   "STAR_PIECE": {
     "name": "STAR PIECE",
@@ -1184,7 +1184,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["StarPiece", "Star"]
+    "icon": { "image": "StarPiece", "palette": "Star" }
   },
   "NUGGET": {
     "name": "NUGGET",
@@ -1194,7 +1194,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["Nugget", "Nugget"]
+    "icon": { "image": "Nugget", "palette": "Nugget" }
   },
   "HEART_SCALE": {
     "name": "HEART SCALE",
@@ -1204,7 +1204,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["HeartScale", "HeartScale"]
+    "icon": { "image": "HeartScale", "palette": "HeartScale" }
   },
   "070": {
     "name": "????????",
@@ -1213,7 +1213,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["QuestionMark", "QuestionMark"]
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
   },
   "071": {
     "name": "????????",
@@ -1222,7 +1222,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["QuestionMark", "QuestionMark"]
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
   },
   "072": {
     "name": "????????",
@@ -1231,7 +1231,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["QuestionMark", "QuestionMark"]
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
   },
   "073": {
     "name": "????????",
@@ -1240,7 +1240,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["QuestionMark", "QuestionMark"]
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
   },
   "074": {
     "name": "????????",
@@ -1249,7 +1249,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["QuestionMark", "QuestionMark"]
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
   },
   "075": {
     "name": "????????",
@@ -1258,7 +1258,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["QuestionMark", "QuestionMark"]
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
   },
   "076": {
     "name": "????????",
@@ -1267,7 +1267,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["QuestionMark", "QuestionMark"]
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
   },
   "077": {
     "name": "????????",
@@ -1276,7 +1276,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["QuestionMark", "QuestionMark"]
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
   },
   "078": {
     "name": "????????",
@@ -1285,7 +1285,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["QuestionMark", "QuestionMark"]
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
   },
   "ORANGE_MAIL": {
     "name": "ORANGE MAIL",
@@ -1295,7 +1295,7 @@
     "type": 0,
     "fieldUseFunc": "ItemUseOutOfBattle_Mail",
     "secondaryId": 0,
-    "icon": ["OrangeMail", "OrangeMail"]
+    "icon": { "image": "OrangeMail", "palette": "OrangeMail" }
   },
   "HARBOR_MAIL": {
     "name": "HARBOR MAIL",
@@ -1305,7 +1305,7 @@
     "type": 0,
     "fieldUseFunc": "ItemUseOutOfBattle_Mail",
     "secondaryId": 1,
-    "icon": ["HarborMail", "HarborMail"]
+    "icon": { "image": "HarborMail", "palette": "HarborMail" }
   },
   "GLITTER_MAIL": {
     "name": "GLITTER MAIL",
@@ -1315,7 +1315,7 @@
     "type": 0,
     "fieldUseFunc": "ItemUseOutOfBattle_Mail",
     "secondaryId": 2,
-    "icon": ["GlitterMail", "GlitterMail"]
+    "icon": { "image": "GlitterMail", "palette": "GlitterMail" }
   },
   "MECH_MAIL": {
     "name": "MECH MAIL",
@@ -1325,7 +1325,7 @@
     "type": 0,
     "fieldUseFunc": "ItemUseOutOfBattle_Mail",
     "secondaryId": 3,
-    "icon": ["MechMail", "MechMail"]
+    "icon": { "image": "MechMail", "palette": "MechMail" }
   },
   "WOOD_MAIL": {
     "name": "WOOD MAIL",
@@ -1335,7 +1335,7 @@
     "type": 0,
     "fieldUseFunc": "ItemUseOutOfBattle_Mail",
     "secondaryId": 4,
-    "icon": ["WoodMail", "WoodMail"]
+    "icon": { "image": "WoodMail", "palette": "WoodMail" }
   },
   "WAVE_MAIL": {
     "name": "WAVE MAIL",
@@ -1345,7 +1345,7 @@
     "type": 0,
     "fieldUseFunc": "ItemUseOutOfBattle_Mail",
     "secondaryId": 5,
-    "icon": ["WaveMail", "WaveMail"]
+    "icon": { "image": "WaveMail", "palette": "WaveMail" }
   },
   "BEAD_MAIL": {
     "name": "BEAD MAIL",
@@ -1355,7 +1355,7 @@
     "type": 0,
     "fieldUseFunc": "ItemUseOutOfBattle_Mail",
     "secondaryId": 6,
-    "icon": ["BeadMail", "BeadMail"]
+    "icon": { "image": "BeadMail", "palette": "BeadMail" }
   },
   "SHADOW_MAIL": {
     "name": "SHADOW MAIL",
@@ -1365,7 +1365,7 @@
     "type": 0,
     "fieldUseFunc": "ItemUseOutOfBattle_Mail",
     "secondaryId": 7,
-    "icon": ["ShadowMail", "ShadowMail"]
+    "icon": { "image": "ShadowMail", "palette": "ShadowMail" }
   },
   "TROPIC_MAIL": {
     "name": "TROPIC MAIL",
@@ -1375,7 +1375,7 @@
     "type": 0,
     "fieldUseFunc": "ItemUseOutOfBattle_Mail",
     "secondaryId": 8,
-    "icon": ["TropicMail", "TropicMail"]
+    "icon": { "image": "TropicMail", "palette": "TropicMail" }
   },
   "DREAM_MAIL": {
     "name": "DREAM MAIL",
@@ -1385,7 +1385,7 @@
     "type": 0,
     "fieldUseFunc": "ItemUseOutOfBattle_Mail",
     "secondaryId": 9,
-    "icon": ["DreamMail", "DreamMail"]
+    "icon": { "image": "DreamMail", "palette": "DreamMail" }
   },
   "FAB_MAIL": {
     "name": "FAB MAIL",
@@ -1395,7 +1395,7 @@
     "type": 0,
     "fieldUseFunc": "ItemUseOutOfBattle_Mail",
     "secondaryId": 10,
-    "icon": ["FabMail", "FabMail"]
+    "icon": { "image": "FabMail", "palette": "FabMail" }
   },
   "RETRO_MAIL": {
     "name": "RETRO MAIL",
@@ -1405,7 +1405,7 @@
     "type": 0,
     "fieldUseFunc": "ItemUseOutOfBattle_Mail",
     "secondaryId": 11,
-    "icon": ["RetroMail", "RetroMail"]
+    "icon": { "image": "RetroMail", "palette": "RetroMail" }
   },
   "CHERI_BERRY": {
     "name": "CHERI BERRY",
@@ -1418,7 +1418,7 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_Medicine",
     "secondaryId": 0,
-    "icon": ["CheriBerry", "CheriBerry"]
+    "icon": { "image": "CheriBerry", "palette": "CheriBerry" }
   },
   "CHESTO_BERRY": {
     "name": "CHESTO BERRY",
@@ -1431,7 +1431,7 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_Medicine",
     "secondaryId": 0,
-    "icon": ["ChestoBerry", "ChestoBerry"]
+    "icon": { "image": "ChestoBerry", "palette": "ChestoBerry" }
   },
   "PECHA_BERRY": {
     "name": "PECHA BERRY",
@@ -1444,7 +1444,7 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_Medicine",
     "secondaryId": 0,
-    "icon": ["PechaBerry", "PechaBerry"]
+    "icon": { "image": "PechaBerry", "palette": "PechaBerry" }
   },
   "RAWST_BERRY": {
     "name": "RAWST BERRY",
@@ -1457,7 +1457,7 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_Medicine",
     "secondaryId": 0,
-    "icon": ["RawstBerry", "RawstBerry"]
+    "icon": { "image": "RawstBerry", "palette": "RawstBerry" }
   },
   "ASPEAR_BERRY": {
     "name": "ASPEAR BERRY",
@@ -1470,7 +1470,7 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_Medicine",
     "secondaryId": 0,
-    "icon": ["AspearBerry", "AspearBerry"]
+    "icon": { "image": "AspearBerry", "palette": "AspearBerry" }
   },
   "LEPPA_BERRY": {
     "name": "LEPPA BERRY",
@@ -1484,7 +1484,7 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_PPRecovery",
     "secondaryId": 0,
-    "icon": ["LeppaBerry", "LeppaBerry"]
+    "icon": { "image": "LeppaBerry", "palette": "LeppaBerry" }
   },
   "ORAN_BERRY": {
     "name": "ORAN BERRY",
@@ -1498,7 +1498,7 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_Medicine",
     "secondaryId": 0,
-    "icon": ["OranBerry", "OranBerry"]
+    "icon": { "image": "OranBerry", "palette": "OranBerry" }
   },
   "PERSIM_BERRY": {
     "name": "PERSIM BERRY",
@@ -1511,7 +1511,7 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_Medicine",
     "secondaryId": 0,
-    "icon": ["PersimBerry", "PersimBerry"]
+    "icon": { "image": "PersimBerry", "palette": "PersimBerry" }
   },
   "LUM_BERRY": {
     "name": "LUM BERRY",
@@ -1524,7 +1524,7 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_Medicine",
     "secondaryId": 0,
-    "icon": ["LumBerry", "LumBerry"]
+    "icon": { "image": "LumBerry", "palette": "LumBerry" }
   },
   "SITRUS_BERRY": {
     "name": "SITRUS BERRY",
@@ -1538,7 +1538,7 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_Medicine",
     "secondaryId": 0,
-    "icon": ["SitrusBerry", "SitrusBerry"]
+    "icon": { "image": "SitrusBerry", "palette": "SitrusBerry" }
   },
   "FIGY_BERRY": {
     "name": "FIGY BERRY",
@@ -1550,7 +1550,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["FigyBerry", "FigyBerry"]
+    "icon": { "image": "FigyBerry", "palette": "FigyBerry" }
   },
   "WIKI_BERRY": {
     "name": "WIKI BERRY",
@@ -1562,7 +1562,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["WikiBerry", "WikiBerry"]
+    "icon": { "image": "WikiBerry", "palette": "WikiBerry" }
   },
   "MAGO_BERRY": {
     "name": "MAGO BERRY",
@@ -1574,7 +1574,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["MagoBerry", "MagoBerry"]
+    "icon": { "image": "MagoBerry", "palette": "MagoBerry" }
   },
   "AGUAV_BERRY": {
     "name": "AGUAV BERRY",
@@ -1586,7 +1586,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["AguavBerry", "AguavBerry"]
+    "icon": { "image": "AguavBerry", "palette": "AguavBerry" }
   },
   "IAPAPA_BERRY": {
     "name": "IAPAPA BERRY",
@@ -1598,7 +1598,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["IapapaBerry", "IapapaBerry"]
+    "icon": { "image": "IapapaBerry", "palette": "IapapaBerry" }
   },
   "RAZZ_BERRY": {
     "name": "RAZZ BERRY",
@@ -1608,7 +1608,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["RazzBerry", "RazzBerry"]
+    "icon": { "image": "RazzBerry", "palette": "RazzBerry" }
   },
   "BLUK_BERRY": {
     "name": "BLUK BERRY",
@@ -1618,7 +1618,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["BlukBerry", "BlukBerry"]
+    "icon": { "image": "BlukBerry", "palette": "BlukBerry" }
   },
   "NANAB_BERRY": {
     "name": "NANAB BERRY",
@@ -1628,7 +1628,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["NanabBerry", "NanabBerry"]
+    "icon": { "image": "NanabBerry", "palette": "NanabBerry" }
   },
   "WEPEAR_BERRY": {
     "name": "WEPEAR BERRY",
@@ -1638,7 +1638,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["WepearBerry", "WepearBerry"]
+    "icon": { "image": "WepearBerry", "palette": "WepearBerry" }
   },
   "PINAP_BERRY": {
     "name": "PINAP BERRY",
@@ -1648,7 +1648,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["PinapBerry", "PinapBerry"]
+    "icon": { "image": "PinapBerry", "palette": "PinapBerry" }
   },
   "POMEG_BERRY": {
     "name": "POMEG BERRY",
@@ -1658,7 +1658,7 @@
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_ReduceEV",
     "secondaryId": 0,
-    "icon": ["PomegBerry", "PomegBerry"]
+    "icon": { "image": "PomegBerry", "palette": "PomegBerry" }
   },
   "KELPSY_BERRY": {
     "name": "KELPSY BERRY",
@@ -1668,7 +1668,7 @@
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_ReduceEV",
     "secondaryId": 0,
-    "icon": ["KelpsyBerry", "KelpsyBerry"]
+    "icon": { "image": "KelpsyBerry", "palette": "KelpsyBerry" }
   },
   "QUALOT_BERRY": {
     "name": "QUALOT BERRY",
@@ -1678,7 +1678,7 @@
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_ReduceEV",
     "secondaryId": 0,
-    "icon": ["QualotBerry", "QualotBerry"]
+    "icon": { "image": "QualotBerry", "palette": "QualotBerry" }
   },
   "HONDEW_BERRY": {
     "name": "HONDEW BERRY",
@@ -1688,7 +1688,7 @@
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_ReduceEV",
     "secondaryId": 0,
-    "icon": ["HondewBerry", "HondewBerry"]
+    "icon": { "image": "HondewBerry", "palette": "HondewBerry" }
   },
   "GREPA_BERRY": {
     "name": "GREPA BERRY",
@@ -1698,7 +1698,7 @@
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_ReduceEV",
     "secondaryId": 0,
-    "icon": ["GrepaBerry", "GrepaBerry"]
+    "icon": { "image": "GrepaBerry", "palette": "GrepaBerry" }
   },
   "TAMATO_BERRY": {
     "name": "TAMATO BERRY",
@@ -1708,7 +1708,7 @@
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_ReduceEV",
     "secondaryId": 0,
-    "icon": ["TamatoBerry", "TamatoBerry"]
+    "icon": { "image": "TamatoBerry", "palette": "TamatoBerry" }
   },
   "CORNN_BERRY": {
     "name": "CORNN BERRY",
@@ -1718,7 +1718,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["CornnBerry", "CornnBerry"]
+    "icon": { "image": "CornnBerry", "palette": "CornnBerry" }
   },
   "MAGOST_BERRY": {
     "name": "MAGOST BERRY",
@@ -1728,7 +1728,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["MagostBerry", "MagostBerry"]
+    "icon": { "image": "MagostBerry", "palette": "MagostBerry" }
   },
   "RABUTA_BERRY": {
     "name": "RABUTA BERRY",
@@ -1738,7 +1738,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["RabutaBerry", "RabutaBerry"]
+    "icon": { "image": "RabutaBerry", "palette": "RabutaBerry" }
   },
   "NOMEL_BERRY": {
     "name": "NOMEL BERRY",
@@ -1748,7 +1748,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["NomelBerry", "NomelBerry"]
+    "icon": { "image": "NomelBerry", "palette": "NomelBerry" }
   },
   "SPELON_BERRY": {
     "name": "SPELON BERRY",
@@ -1758,7 +1758,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["SpelonBerry", "SpelonBerry"]
+    "icon": { "image": "SpelonBerry", "palette": "SpelonBerry" }
   },
   "PAMTRE_BERRY": {
     "name": "PAMTRE BERRY",
@@ -1768,7 +1768,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["PamtreBerry", "PamtreBerry"]
+    "icon": { "image": "PamtreBerry", "palette": "PamtreBerry" }
   },
   "WATMEL_BERRY": {
     "name": "WATMEL BERRY",
@@ -1778,7 +1778,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["WatmelBerry", "WatmelBerry"]
+    "icon": { "image": "WatmelBerry", "palette": "WatmelBerry" }
   },
   "DURIN_BERRY": {
     "name": "DURIN BERRY",
@@ -1788,7 +1788,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["DurinBerry", "DurinBerry"]
+    "icon": { "image": "DurinBerry", "palette": "DurinBerry" }
   },
   "BELUE_BERRY": {
     "name": "BELUE BERRY",
@@ -1798,7 +1798,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["BelueBerry", "BelueBerry"]
+    "icon": { "image": "BelueBerry", "palette": "BelueBerry" }
   },
   "LIECHI_BERRY": {
     "name": "LIECHI BERRY",
@@ -1810,7 +1810,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["LiechiBerry", "LiechiBerry"]
+    "icon": { "image": "LiechiBerry", "palette": "LiechiBerry" }
   },
   "GANLON_BERRY": {
     "name": "GANLON BERRY",
@@ -1822,7 +1822,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["GanlonBerry", "GanlonBerry"]
+    "icon": { "image": "GanlonBerry", "palette": "GanlonBerry" }
   },
   "SALAC_BERRY": {
     "name": "SALAC BERRY",
@@ -1834,7 +1834,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["SalacBerry", "SalacBerry"]
+    "icon": { "image": "SalacBerry", "palette": "SalacBerry" }
   },
   "PETAYA_BERRY": {
     "name": "PETAYA BERRY",
@@ -1846,7 +1846,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["PetayaBerry", "PetayaBerry"]
+    "icon": { "image": "PetayaBerry", "palette": "PetayaBerry" }
   },
   "APICOT_BERRY": {
     "name": "APICOT BERRY",
@@ -1858,7 +1858,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["ApicotBerry", "ApicotBerry"]
+    "icon": { "image": "ApicotBerry", "palette": "ApicotBerry" }
   },
   "LANSAT_BERRY": {
     "name": "LANSAT BERRY",
@@ -1870,7 +1870,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["LansatBerry", "LansatBerry"]
+    "icon": { "image": "LansatBerry", "palette": "LansatBerry" }
   },
   "STARF_BERRY": {
     "name": "STARF BERRY",
@@ -1882,7 +1882,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["StarfBerry", "StarfBerry"]
+    "icon": { "image": "StarfBerry", "palette": "StarfBerry" }
   },
   "ENIGMA_BERRY": {
     "name": "ENIGMA BERRY",
@@ -1894,7 +1894,7 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_EnigmaBerry",
     "secondaryId": 0,
-    "icon": ["EnigmaBerry", "EnigmaBerry"]
+    "icon": { "image": "EnigmaBerry", "palette": "EnigmaBerry" }
   },
   "0B0": {
     "name": "????????",
@@ -1903,7 +1903,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["QuestionMark", "QuestionMark"]
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
   },
   "0B1": {
     "name": "????????",
@@ -1912,7 +1912,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["QuestionMark", "QuestionMark"]
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
   },
   "0B2": {
     "name": "????????",
@@ -1921,7 +1921,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["QuestionMark", "QuestionMark"]
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
   },
   "BRIGHT_POWDER": {
     "name": "BRIGHTPOWDER",
@@ -1933,7 +1933,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["BrightPowder", "BrightPowder"]
+    "icon": { "image": "BrightPowder", "palette": "BrightPowder" }
   },
   "WHITE_HERB": {
     "name": "WHITE HERB",
@@ -1944,7 +1944,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["InBattleHerb", "WhiteHerb"]
+    "icon": { "image": "InBattleHerb", "palette": "WhiteHerb" }
   },
   "MACHO_BRACE": {
     "name": "MACHO BRACE",
@@ -1955,7 +1955,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["MachoBrace", "MachoBrace"]
+    "icon": { "image": "MachoBrace", "palette": "MachoBrace" }
   },
   "EXP_SHARE": {
     "name": "EXP. SHARE",
@@ -1966,7 +1966,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["ExpShare", "ExpShare"]
+    "icon": { "image": "ExpShare", "palette": "ExpShare" }
   },
   "QUICK_CLAW": {
     "name": "QUICK CLAW",
@@ -1978,7 +1978,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["QuickClaw", "QuickClaw"]
+    "icon": { "image": "QuickClaw", "palette": "QuickClaw" }
   },
   "SOOTHE_BELL": {
     "name": "SOOTHE BELL",
@@ -1989,7 +1989,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["SootheBell", "SootheBell"]
+    "icon": { "image": "SootheBell", "palette": "SootheBell" }
   },
   "MENTAL_HERB": {
     "name": "MENTAL HERB",
@@ -2000,7 +2000,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["InBattleHerb", "MentalHerb"]
+    "icon": { "image": "InBattleHerb", "palette": "MentalHerb" }
   },
   "CHOICE_BAND": {
     "name": "CHOICE BAND",
@@ -2011,7 +2011,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["ChoiceBand", "ChoiceBand"]
+    "icon": { "image": "ChoiceBand", "palette": "ChoiceBand" }
   },
   "KINGS_ROCK": {
     "name": "KING'S ROCK",
@@ -2023,7 +2023,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["KingsRock", "KingsRock"]
+    "icon": { "image": "KingsRock", "palette": "KingsRock" }
   },
   "SILVER_POWDER": {
     "name": "SILVERPOWDER",
@@ -2035,7 +2035,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["SilverPowder", "SilverPowder"]
+    "icon": { "image": "SilverPowder", "palette": "SilverPowder" }
   },
   "AMULET_COIN": {
     "name": "AMULET COIN",
@@ -2047,7 +2047,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["AmuletCoin", "AmuletCoin"]
+    "icon": { "image": "AmuletCoin", "palette": "AmuletCoin" }
   },
   "CLEANSE_TAG": {
     "name": "CLEANSE TAG",
@@ -2058,7 +2058,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["CleanseTag", "CleanseTag"]
+    "icon": { "image": "CleanseTag", "palette": "CleanseTag" }
   },
   "SOUL_DEW": {
     "name": "SOUL DEW",
@@ -2069,7 +2069,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["SoulDew", "SoulDew"]
+    "icon": { "image": "SoulDew", "palette": "SoulDew" }
   },
   "DEEP_SEA_TOOTH": {
     "name": "DEEPSEATOOTH",
@@ -2080,7 +2080,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["DeepSeaTooth", "DeepSeaTooth"]
+    "icon": { "image": "DeepSeaTooth", "palette": "DeepSeaTooth" }
   },
   "DEEP_SEA_SCALE": {
     "name": "DEEPSEASCALE",
@@ -2091,7 +2091,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["DeepSeaScale", "DeepSeaScale"]
+    "icon": { "image": "DeepSeaScale", "palette": "DeepSeaScale" }
   },
   "SMOKE_BALL": {
     "name": "SMOKE BALL",
@@ -2102,7 +2102,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["SmokeBall", "SmokeBall"]
+    "icon": { "image": "SmokeBall", "palette": "SmokeBall" }
   },
   "EVERSTONE": {
     "name": "EVERSTONE",
@@ -2113,7 +2113,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["Everstone", "Everstone"]
+    "icon": { "image": "Everstone", "palette": "Everstone" }
   },
   "FOCUS_BAND": {
     "name": "FOCUS BAND",
@@ -2125,7 +2125,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["FocusBand", "FocusBand"]
+    "icon": { "image": "FocusBand", "palette": "FocusBand" }
   },
   "LUCKY_EGG": {
     "name": "LUCKY EGG",
@@ -2136,7 +2136,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["LuckyEgg", "LuckyEgg"]
+    "icon": { "image": "LuckyEgg", "palette": "LuckyEgg" }
   },
   "SCOPE_LENS": {
     "name": "SCOPE LENS",
@@ -2147,7 +2147,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["ScopeLens", "ScopeLens"]
+    "icon": { "image": "ScopeLens", "palette": "ScopeLens" }
   },
   "METAL_COAT": {
     "name": "METAL COAT",
@@ -2159,7 +2159,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["MetalCoat", "MetalCoat"]
+    "icon": { "image": "MetalCoat", "palette": "MetalCoat" }
   },
   "LEFTOVERS": {
     "name": "LEFTOVERS",
@@ -2171,7 +2171,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["Leftovers", "Leftovers"]
+    "icon": { "image": "Leftovers", "palette": "Leftovers" }
   },
   "DRAGON_SCALE": {
     "name": "DRAGON SCALE",
@@ -2183,7 +2183,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["DragonScale", "DragonScale"]
+    "icon": { "image": "DragonScale", "palette": "DragonScale" }
   },
   "LIGHT_BALL": {
     "name": "LIGHT BALL",
@@ -2194,7 +2194,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["LightBall", "LightBall"]
+    "icon": { "image": "LightBall", "palette": "LightBall" }
   },
   "SOFT_SAND": {
     "name": "SOFT SAND",
@@ -2206,7 +2206,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["SoftSand", "SoftSand"]
+    "icon": { "image": "SoftSand", "palette": "SoftSand" }
   },
   "HARD_STONE": {
     "name": "HARD STONE",
@@ -2218,7 +2218,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["HardStone", "HardStone"]
+    "icon": { "image": "HardStone", "palette": "HardStone" }
   },
   "MIRACLE_SEED": {
     "name": "MIRACLE SEED",
@@ -2230,7 +2230,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["MiracleSeed", "MiracleSeed"]
+    "icon": { "image": "MiracleSeed", "palette": "MiracleSeed" }
   },
   "BLACK_GLASSES": {
     "name": "BLACKGLASSES",
@@ -2242,10 +2242,10 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": [
-      "BlackGlasses",
-      "BlackTypeEnhancingItem"
-    ]
+    "icon": {
+      "image": "BlackGlasses",
+      "palette": "BlackTypeEnhancingItem"
+    }
   },
   "BLACK_BELT": {
     "name": "BLACK BELT",
@@ -2257,7 +2257,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["BlackBelt", "BlackTypeEnhancingItem"]
+    "icon": { "image": "BlackBelt", "palette": "BlackTypeEnhancingItem" }
   },
   "MAGNET": {
     "name": "MAGNET",
@@ -2269,7 +2269,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["Magnet", "Magnet"]
+    "icon": { "image": "Magnet", "palette": "Magnet" }
   },
   "MYSTIC_WATER": {
     "name": "MYSTIC WATER",
@@ -2281,7 +2281,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["MysticWater", "MysticWater"]
+    "icon": { "image": "MysticWater", "palette": "MysticWater" }
   },
   "SHARP_BEAK": {
     "name": "SHARP BEAK",
@@ -2293,7 +2293,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["SharpBeak", "SharpBeak"]
+    "icon": { "image": "SharpBeak", "palette": "SharpBeak" }
   },
   "POISON_BARB": {
     "name": "POISON BARB",
@@ -2305,7 +2305,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["PoisonBarb", "PoisonBarb"]
+    "icon": { "image": "PoisonBarb", "palette": "PoisonBarb" }
   },
   "NEVER_MELT_ICE": {
     "name": "NEVERMELTICE",
@@ -2317,7 +2317,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["NeverMeltIce", "NeverMeltIce"]
+    "icon": { "image": "NeverMeltIce", "palette": "NeverMeltIce" }
   },
   "SPELL_TAG": {
     "name": "SPELL TAG",
@@ -2329,7 +2329,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["SpellTag", "SpellTag"]
+    "icon": { "image": "SpellTag", "palette": "SpellTag" }
   },
   "TWISTED_SPOON": {
     "name": "TWISTEDSPOON",
@@ -2341,7 +2341,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["TwistedSpoon", "TwistedSpoon"]
+    "icon": { "image": "TwistedSpoon", "palette": "TwistedSpoon" }
   },
   "CHARCOAL": {
     "name": "CHARCOAL",
@@ -2353,7 +2353,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["Charcoal", "Charcoal"]
+    "icon": { "image": "Charcoal", "palette": "Charcoal" }
   },
   "DRAGON_FANG": {
     "name": "DRAGON FANG",
@@ -2365,7 +2365,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["DragonFang", "DragonFang"]
+    "icon": { "image": "DragonFang", "palette": "DragonFang" }
   },
   "SILK_SCARF": {
     "name": "SILK SCARF",
@@ -2377,7 +2377,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["SilkScarf", "SilkScarf"]
+    "icon": { "image": "SilkScarf", "palette": "SilkScarf" }
   },
   "UP_GRADE": {
     "name": "UP-GRADE",
@@ -2388,7 +2388,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["UpGrade", "UpGrade"]
+    "icon": { "image": "UpGrade", "palette": "UpGrade" }
   },
   "SHELL_BELL": {
     "name": "SHELL BELL",
@@ -2400,7 +2400,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["ShellBell", "Shell"]
+    "icon": { "image": "ShellBell", "palette": "Shell" }
   },
   "SEA_INCENSE": {
     "name": "SEA INCENSE",
@@ -2412,7 +2412,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["SeaIncense", "SeaIncense"]
+    "icon": { "image": "SeaIncense", "palette": "SeaIncense" }
   },
   "LAX_INCENSE": {
     "name": "LAX INCENSE",
@@ -2424,7 +2424,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["LaxIncense", "LaxIncense"]
+    "icon": { "image": "LaxIncense", "palette": "LaxIncense" }
   },
   "LUCKY_PUNCH": {
     "name": "LUCKY PUNCH",
@@ -2435,7 +2435,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["LuckyPunch", "LuckyPunch"]
+    "icon": { "image": "LuckyPunch", "palette": "LuckyPunch" }
   },
   "METAL_POWDER": {
     "name": "METAL POWDER",
@@ -2446,7 +2446,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["MetalPowder", "MetalPowder"]
+    "icon": { "image": "MetalPowder", "palette": "MetalPowder" }
   },
   "THICK_CLUB": {
     "name": "THICK CLUB",
@@ -2457,7 +2457,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["ThickClub", "ThickClub"]
+    "icon": { "image": "ThickClub", "palette": "ThickClub" }
   },
   "STICK": {
     "name": "STICK",
@@ -2468,7 +2468,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["Stick", "Stick"]
+    "icon": { "image": "Stick", "palette": "Stick" }
   },
   "0E2": {
     "name": "????????",
@@ -2477,7 +2477,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["QuestionMark", "QuestionMark"]
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
   },
   "0E3": {
     "name": "????????",
@@ -2486,7 +2486,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["QuestionMark", "QuestionMark"]
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
   },
   "0E4": {
     "name": "????????",
@@ -2495,7 +2495,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["QuestionMark", "QuestionMark"]
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
   },
   "0E5": {
     "name": "????????",
@@ -2504,7 +2504,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["QuestionMark", "QuestionMark"]
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
   },
   "0E6": {
     "name": "????????",
@@ -2513,7 +2513,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["QuestionMark", "QuestionMark"]
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
   },
   "0E7": {
     "name": "????????",
@@ -2522,7 +2522,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["QuestionMark", "QuestionMark"]
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
   },
   "0E8": {
     "name": "????????",
@@ -2531,7 +2531,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["QuestionMark", "QuestionMark"]
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
   },
   "0E9": {
     "name": "????????",
@@ -2540,7 +2540,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["QuestionMark", "QuestionMark"]
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
   },
   "0EA": {
     "name": "????????",
@@ -2549,7 +2549,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["QuestionMark", "QuestionMark"]
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
   },
   "0EB": {
     "name": "????????",
@@ -2558,7 +2558,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["QuestionMark", "QuestionMark"]
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
   },
   "0EC": {
     "name": "????????",
@@ -2567,7 +2567,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["QuestionMark", "QuestionMark"]
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
   },
   "0ED": {
     "name": "????????",
@@ -2576,7 +2576,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["QuestionMark", "QuestionMark"]
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
   },
   "0EE": {
     "name": "????????",
@@ -2585,7 +2585,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["QuestionMark", "QuestionMark"]
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
   },
   "0EF": {
     "name": "????????",
@@ -2594,7 +2594,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["QuestionMark", "QuestionMark"]
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
   },
   "0F0": {
     "name": "????????",
@@ -2603,7 +2603,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["QuestionMark", "QuestionMark"]
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
   },
   "0F1": {
     "name": "????????",
@@ -2612,7 +2612,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["QuestionMark", "QuestionMark"]
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
   },
   "0F2": {
     "name": "????????",
@@ -2621,7 +2621,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["QuestionMark", "QuestionMark"]
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
   },
   "0F3": {
     "name": "????????",
@@ -2630,7 +2630,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["QuestionMark", "QuestionMark"]
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
   },
   "0F4": {
     "name": "????????",
@@ -2639,7 +2639,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["QuestionMark", "QuestionMark"]
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
   },
   "0F5": {
     "name": "????????",
@@ -2648,7 +2648,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["QuestionMark", "QuestionMark"]
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
   },
   "0F6": {
     "name": "????????",
@@ -2657,7 +2657,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["QuestionMark", "QuestionMark"]
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
   },
   "0F7": {
     "name": "????????",
@@ -2666,7 +2666,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["QuestionMark", "QuestionMark"]
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
   },
   "0F8": {
     "name": "????????",
@@ -2675,7 +2675,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["QuestionMark", "QuestionMark"]
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
   },
   "0F9": {
     "name": "????????",
@@ -2684,7 +2684,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["QuestionMark", "QuestionMark"]
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
   },
   "0FA": {
     "name": "????????",
@@ -2693,7 +2693,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["QuestionMark", "QuestionMark"]
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
   },
   "0FB": {
     "name": "????????",
@@ -2702,7 +2702,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["QuestionMark", "QuestionMark"]
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
   },
   "0FC": {
     "name": "????????",
@@ -2711,7 +2711,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["QuestionMark", "QuestionMark"]
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
   },
   "0FD": {
     "name": "????????",
@@ -2720,7 +2720,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["QuestionMark", "QuestionMark"]
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
   },
   "RED_SCARF": {
     "name": "RED SCARF",
@@ -2730,7 +2730,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["Scarf", "RedScarf"]
+    "icon": { "image": "Scarf", "palette": "RedScarf" }
   },
   "BLUE_SCARF": {
     "name": "BLUE SCARF",
@@ -2740,7 +2740,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["Scarf", "BlueScarf"]
+    "icon": { "image": "Scarf", "palette": "BlueScarf" }
   },
   "PINK_SCARF": {
     "name": "PINK SCARF",
@@ -2750,7 +2750,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["Scarf", "PinkScarf"]
+    "icon": { "image": "Scarf", "palette": "PinkScarf" }
   },
   "GREEN_SCARF": {
     "name": "GREEN SCARF",
@@ -2760,7 +2760,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["Scarf", "GreenScarf"]
+    "icon": { "image": "Scarf", "palette": "GreenScarf" }
   },
   "YELLOW_SCARF": {
     "name": "YELLOW SCARF",
@@ -2770,7 +2770,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["Scarf", "YellowScarf"]
+    "icon": { "image": "Scarf", "palette": "YellowScarf" }
   },
   "MACH_BIKE": {
     "name": "MACH BIKE",
@@ -2782,7 +2782,7 @@
     "type": 2,
     "fieldUseFunc": "ItemUseOutOfBattle_Bike",
     "secondaryId": 0,
-    "icon": ["MachBike", "MachBike"]
+    "icon": { "image": "MachBike", "palette": "MachBike" }
   },
   "COIN_CASE": {
     "name": "COIN CASE",
@@ -2793,7 +2793,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CoinCase",
     "secondaryId": 0,
-    "icon": ["CoinCase", "CoinCase"]
+    "icon": { "image": "CoinCase", "palette": "CoinCase" }
   },
   "ITEMFINDER": {
     "name": "ITEMFINDER",
@@ -2805,7 +2805,7 @@
     "type": 2,
     "fieldUseFunc": "ItemUseOutOfBattle_Itemfinder",
     "secondaryId": 0,
-    "icon": ["Itemfinder", "Itemfinder"]
+    "icon": { "image": "Itemfinder", "palette": "Itemfinder" }
   },
   "OLD_ROD": {
     "name": "OLD ROD",
@@ -2817,7 +2817,7 @@
     "type": 2,
     "fieldUseFunc": "ItemUseOutOfBattle_Rod",
     "secondaryId": 0,
-    "icon": ["OldRod", "OldRod"]
+    "icon": { "image": "OldRod", "palette": "OldRod" }
   },
   "GOOD_ROD": {
     "name": "GOOD ROD",
@@ -2829,7 +2829,7 @@
     "type": 2,
     "fieldUseFunc": "ItemUseOutOfBattle_Rod",
     "secondaryId": 1,
-    "icon": ["GoodRod", "GoodRod"]
+    "icon": { "image": "GoodRod", "palette": "GoodRod" }
   },
   "SUPER_ROD": {
     "name": "SUPER ROD",
@@ -2841,7 +2841,7 @@
     "type": 2,
     "fieldUseFunc": "ItemUseOutOfBattle_Rod",
     "secondaryId": 2,
-    "icon": ["SuperRod", "SuperRod"]
+    "icon": { "image": "SuperRod", "palette": "SuperRod" }
   },
   "SS_TICKET": {
     "name": "S.S. TICKET",
@@ -2852,7 +2852,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["SSTicket", "SSTicket"]
+    "icon": { "image": "SSTicket", "palette": "SSTicket" }
   },
   "CONTEST_PASS": {
     "name": "CONTEST PASS",
@@ -2863,7 +2863,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["ContestPass", "ContestPass"]
+    "icon": { "image": "ContestPass", "palette": "ContestPass" }
   },
   "10B": {
     "name": "????????",
@@ -2872,7 +2872,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["QuestionMark", "QuestionMark"]
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
   },
   "WAILMER_PAIL": {
     "name": "WAILMER PAIL",
@@ -2883,7 +2883,7 @@
     "type": 2,
     "fieldUseFunc": "ItemUseOutOfBattle_WailmerPail",
     "secondaryId": 0,
-    "icon": ["WailmerPail", "WailmerPail"]
+    "icon": { "image": "WailmerPail", "palette": "WailmerPail" }
   },
   "DEVON_GOODS": {
     "name": "DEVON GOODS",
@@ -2894,7 +2894,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["DevonGoods", "DevonGoods"]
+    "icon": { "image": "DevonGoods", "palette": "DevonGoods" }
   },
   "SOOT_SACK": {
     "name": "SOOT SACK",
@@ -2905,7 +2905,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["SootSack", "SootSack"]
+    "icon": { "image": "SootSack", "palette": "SootSack" }
   },
   "BASEMENT_KEY": {
     "name": "BASEMENT KEY",
@@ -2916,7 +2916,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["BasementKey", "OldKey"]
+    "icon": { "image": "BasementKey", "palette": "OldKey" }
   },
   "ACRO_BIKE": {
     "name": "ACRO BIKE",
@@ -2928,7 +2928,7 @@
     "type": 2,
     "fieldUseFunc": "ItemUseOutOfBattle_Bike",
     "secondaryId": 1,
-    "icon": ["AcroBike", "AcroBike"]
+    "icon": { "image": "AcroBike", "palette": "AcroBike" }
   },
   "POKEBLOCK_CASE": {
     "name": "{POKEBLOCK} CASE",
@@ -2940,7 +2940,7 @@
     "type": 3,
     "fieldUseFunc": "ItemUseOutOfBattle_PokeblockCase",
     "secondaryId": 0,
-    "icon": ["PokeblockCase", "PokeblockCase"]
+    "icon": { "image": "PokeblockCase", "palette": "PokeblockCase" }
   },
   "LETTER": {
     "name": "LETTER",
@@ -2951,7 +2951,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["Letter", "LavaCookieAndLetter"]
+    "icon": { "image": "Letter", "palette": "LavaCookieAndLetter" }
   },
   "EON_TICKET": {
     "name": "EON TICKET",
@@ -2962,7 +2962,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 1,
-    "icon": ["EonTicket", "EonTicket"]
+    "icon": { "image": "EonTicket", "palette": "EonTicket" }
   },
   "RED_ORB": {
     "name": "RED ORB",
@@ -2973,7 +2973,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["Orb", "RedOrb"]
+    "icon": { "image": "Orb", "palette": "RedOrb" }
   },
   "BLUE_ORB": {
     "name": "BLUE ORB",
@@ -2984,7 +2984,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["Orb", "BlueOrb"]
+    "icon": { "image": "Orb", "palette": "BlueOrb" }
   },
   "SCANNER": {
     "name": "SCANNER",
@@ -2995,7 +2995,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["Scanner", "Scanner"]
+    "icon": { "image": "Scanner", "palette": "Scanner" }
   },
   "GO_GOGGLES": {
     "name": "GO-GOGGLES",
@@ -3006,7 +3006,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["GoGoggles", "GoGoggles"]
+    "icon": { "image": "GoGoggles", "palette": "GoGoggles" }
   },
   "METEORITE": {
     "name": "METEORITE",
@@ -3017,7 +3017,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["Meteorite", "Meteorite"]
+    "icon": { "image": "Meteorite", "palette": "Meteorite" }
   },
   "ROOM_1_KEY": {
     "name": "RM. 1 KEY",
@@ -3028,7 +3028,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["Room1Key", "Key"]
+    "icon": { "image": "Room1Key", "palette": "Key" }
   },
   "ROOM_2_KEY": {
     "name": "RM. 2 KEY",
@@ -3039,7 +3039,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["Room2Key", "Key"]
+    "icon": { "image": "Room2Key", "palette": "Key" }
   },
   "ROOM_4_KEY": {
     "name": "RM. 4 KEY",
@@ -3050,7 +3050,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["Room4Key", "Key"]
+    "icon": { "image": "Room4Key", "palette": "Key" }
   },
   "ROOM_6_KEY": {
     "name": "RM. 6 KEY",
@@ -3061,7 +3061,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["Room6Key", "Key"]
+    "icon": { "image": "Room6Key", "palette": "Key" }
   },
   "STORAGE_KEY": {
     "name": "STORAGE KEY",
@@ -3072,7 +3072,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["StorageKey", "OldKey"]
+    "icon": { "image": "StorageKey", "palette": "OldKey" }
   },
   "ROOT_FOSSIL": {
     "name": "ROOT FOSSIL",
@@ -3083,7 +3083,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["RootFossil", "HoennFossil"]
+    "icon": { "image": "RootFossil", "palette": "HoennFossil" }
   },
   "CLAW_FOSSIL": {
     "name": "CLAW FOSSIL",
@@ -3094,7 +3094,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["ClawFossil", "HoennFossil"]
+    "icon": { "image": "ClawFossil", "palette": "HoennFossil" }
   },
   "DEVON_SCOPE": {
     "name": "DEVON SCOPE",
@@ -3105,7 +3105,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["DevonScope", "DevonScope"]
+    "icon": { "image": "DevonScope", "palette": "DevonScope" }
   },
   "TM01_FOCUS_PUNCH": {
     "name": "TM01",
@@ -3644,7 +3644,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["QuestionMark", "QuestionMark"]
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
   },
   "15C": {
     "name": "????????",
@@ -3653,7 +3653,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["QuestionMark", "QuestionMark"]
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
   },
   "OAKS_PARCEL": {
     "name": "OAK'S PARCEL",
@@ -3664,7 +3664,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["OaksParcel", "OaksParcel"]
+    "icon": { "image": "OaksParcel", "palette": "OaksParcel" }
   },
   "POKE_FLUTE": {
     "name": "POKé FLUTE",
@@ -3675,7 +3675,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["PokeFlute", "PokeFlute"]
+    "icon": { "image": "PokeFlute", "palette": "PokeFlute" }
   },
   "SECRET_KEY": {
     "name": "SECRET KEY",
@@ -3686,7 +3686,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["SecretKey", "SecretKey"]
+    "icon": { "image": "SecretKey", "palette": "SecretKey" }
   },
   "BIKE_VOUCHER": {
     "name": "BIKE VOUCHER",
@@ -3697,7 +3697,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["BikeVoucher", "BikeVoucher"]
+    "icon": { "image": "BikeVoucher", "palette": "BikeVoucher" }
   },
   "GOLD_TEETH": {
     "name": "GOLD TEETH",
@@ -3708,7 +3708,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["GoldTeeth", "GoldTeeth"]
+    "icon": { "image": "GoldTeeth", "palette": "GoldTeeth" }
   },
   "OLD_AMBER": {
     "name": "OLD AMBER",
@@ -3719,7 +3719,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["OldAmber", "OldAmber"]
+    "icon": { "image": "OldAmber", "palette": "OldAmber" }
   },
   "CARD_KEY": {
     "name": "CARD KEY",
@@ -3730,7 +3730,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["CardKey", "CardKey"]
+    "icon": { "image": "CardKey", "palette": "CardKey" }
   },
   "LIFT_KEY": {
     "name": "LIFT KEY",
@@ -3741,7 +3741,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["LiftKey", "Key"]
+    "icon": { "image": "LiftKey", "palette": "Key" }
   },
   "HELIX_FOSSIL": {
     "name": "HELIX FOSSIL",
@@ -3752,7 +3752,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["HelixFossil", "KantoFossil"]
+    "icon": { "image": "HelixFossil", "palette": "KantoFossil" }
   },
   "DOME_FOSSIL": {
     "name": "DOME FOSSIL",
@@ -3763,7 +3763,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["DomeFossil", "KantoFossil"]
+    "icon": { "image": "DomeFossil", "palette": "KantoFossil" }
   },
   "SILPH_SCOPE": {
     "name": "SILPH SCOPE",
@@ -3774,7 +3774,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["SilphScope", "SilphScope"]
+    "icon": { "image": "SilphScope", "palette": "SilphScope" }
   },
   "BICYCLE": {
     "name": "BICYCLE",
@@ -3786,7 +3786,7 @@
     "type": 2,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["Bicycle", "Bicycle"]
+    "icon": { "image": "Bicycle", "palette": "Bicycle" }
   },
   "TOWN_MAP": {
     "name": "TOWN MAP",
@@ -3798,7 +3798,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["TownMap", "TownMap"]
+    "icon": { "image": "TownMap", "palette": "TownMap" }
   },
   "VS_SEEKER": {
     "name": "VS SEEKER",
@@ -3810,7 +3810,7 @@
     "type": 2,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["VSSeeker", "VSSeeker"]
+    "icon": { "image": "VSSeeker", "palette": "VSSeeker" }
   },
   "FAME_CHECKER": {
     "name": "FAME CHECKER",
@@ -3822,7 +3822,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["FameChecker", "FameChecker"]
+    "icon": { "image": "FameChecker", "palette": "FameChecker" }
   },
   "TM_CASE": {
     "name": "TM CASE",
@@ -3834,7 +3834,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["TMCase", "TMCase"]
+    "icon": { "image": "TMCase", "palette": "TMCase" }
   },
   "BERRY_POUCH": {
     "name": "BERRY POUCH",
@@ -3846,7 +3846,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["BerryPouch", "BerryPouch"]
+    "icon": { "image": "BerryPouch", "palette": "BerryPouch" }
   },
   "TEACHY_TV": {
     "name": "TEACHY TV",
@@ -3858,7 +3858,7 @@
     "type": 2,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["TeachyTV", "TeachyTV"]
+    "icon": { "image": "TeachyTV", "palette": "TeachyTV" }
   },
   "TRI_PASS": {
     "name": "TRI-PASS",
@@ -3870,7 +3870,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["TriPass", "TriPass"]
+    "icon": { "image": "TriPass", "palette": "TriPass" }
   },
   "RAINBOW_PASS": {
     "name": "RAINBOW PASS",
@@ -3882,7 +3882,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["RainbowPass", "RainbowPass"]
+    "icon": { "image": "RainbowPass", "palette": "RainbowPass" }
   },
   "TEA": {
     "name": "TEA",
@@ -3894,7 +3894,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["Tea", "Tea"]
+    "icon": { "image": "Tea", "palette": "Tea" }
   },
   "MYSTIC_TICKET": {
     "name": "MYSTICTICKET",
@@ -3906,7 +3906,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["MysticTicket", "MysticTicket"]
+    "icon": { "image": "MysticTicket", "palette": "MysticTicket" }
   },
   "AURORA_TICKET": {
     "name": "AURORATICKET",
@@ -3918,7 +3918,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["AuroraTicket", "AuroraTicket"]
+    "icon": { "image": "AuroraTicket", "palette": "AuroraTicket" }
   },
   "POWDER_JAR": {
     "name": "POWDER JAR",
@@ -3930,7 +3930,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_PowderJar",
     "secondaryId": 0,
-    "icon": ["PowderJar", "PowderJar"]
+    "icon": { "image": "PowderJar", "palette": "PowderJar" }
   },
   "RUBY": {
     "name": "RUBY",
@@ -3942,7 +3942,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["Gem", "Ruby"]
+    "icon": { "image": "Gem", "palette": "Ruby" }
   },
   "SAPPHIRE": {
     "name": "SAPPHIRE",
@@ -3954,7 +3954,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["Gem", "Sapphire"]
+    "icon": { "image": "Gem", "palette": "Sapphire" }
   },
   "MAGMA_EMBLEM": {
     "name": "MAGMA EMBLEM",
@@ -3966,7 +3966,7 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["MagmaEmblem", "MagmaEmblem"]
+    "icon": { "image": "MagmaEmblem", "palette": "MagmaEmblem" }
   },
   "OLD_SEA_MAP": {
     "name": "OLD SEA MAP",
@@ -3978,6 +3978,6 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": ["OldSeaMap", "OldSeaMap"]
+    "icon": { "image": "OldSeaMap", "palette": "OldSeaMap" }
   }
 }

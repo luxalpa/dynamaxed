@@ -1,5 +1,5 @@
 // Events for native event handlers
-import { GameModel, Move } from "@/model/model";
+import { GameModel } from "@/model/model";
 import { Vue } from "vue-property-decorator";
 
 export type HTMLElementEvent<T extends HTMLElement> = Event & {
@@ -29,11 +29,11 @@ export function getDefaultMovesForMon(species: string, lvl: number): string[] {
 
   let moves: string[] = [];
 
-  for (const [movLvl, id] of mon.moves) {
-    if (movLvl > lvl) {
+  for (const m of mon.moves) {
+    if (m.level > lvl) {
       break;
     }
-    moves.push(id);
+    moves.push(m.move);
   }
   if (moves.length < 4) {
     return extendArray(moves, 4, "NONE");

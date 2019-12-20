@@ -1,4 +1,4 @@
-import { Component, Prop, Vue, Watch } from "vue-property-decorator";
+import { Component, Vue } from "vue-property-decorator";
 import { modifiers } from "vue-tsx-support";
 import { classes, style, stylesheet } from "typestyle";
 import { Theme } from "@/theming";
@@ -6,6 +6,7 @@ import { navbarWidth } from "@/components/navbar";
 import { px } from "csx";
 import { ViewManager } from "@/modules/view-manager";
 import { PortalTarget } from "portal-vue";
+import { ProjectManager } from "@/modules/project-manager";
 
 interface Menu {
   text: string;
@@ -25,8 +26,9 @@ const menu: Menu[] = [
       {
         text: "Save",
         shortcut: "Ctrl+S",
-        fn(): void {
-          console.log("Saving!");
+        async fn() {
+          await ProjectManager.Save();
+          console.log("Saved");
         }
       },
       {

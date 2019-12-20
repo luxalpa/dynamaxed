@@ -1,6 +1,6 @@
-import { Component, Vue, Watch } from "vue-property-decorator";
+import { Component, Vue } from "vue-property-decorator";
 import { ProjectManager } from "@/modules/project-manager";
-import { persistStore, store } from "@/store";
+import { store } from "@/store";
 import RecentProjectsView from "@/components/views/recent-projects-view";
 import { MainView } from "@/components/views/main-view";
 import { GameModel } from "@/model/model";
