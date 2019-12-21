@@ -5,33 +5,67 @@ import { FlexRow } from "@/components/layout";
 import { Spacer } from "@/components/spacer";
 import { Button } from "@/components/button";
 import { modifiers } from "vue-tsx-support";
+import { Label } from "@/components/label";
+import { stylesheet } from "typestyle";
+
+interface InputTextDialogProps {
+  value: string;
+  check?: (v: string) => string | false;
+}
 
 @Component
-export class InputTextDialog extends Dialog<string, string> {
-  text!: string;
+export class InputTextDialog extends Dialog<InputTextDialogProps, string> {
+  text: string = "";
   @Ref("input") input!: TextInput;
 
   created() {
-    this.text = this.args;
+    this.text = this.args.value;
   }
 
   mounted() {
     this.input.focus();
   }
 
+  get currentError() {
+    if (!this.args.check) {
+      return false;
+    }
+
+    return this.args.check(this.text);
+  }
+
+  get isValidInput() {
+    return this.currentError === false;
+  }
+
+  tryAccept() {
+    if (this.isValidInput) this.accept(this.text);
+  }
+
   render() {
     return (
-      <div onkeyup={modifiers.enter(() => this.accept(this.text))}>
+      <div onkeyup={modifiers.enter(() => this.tryAccept())}>
         <div>
           <FlexRow>
             <TextInput vModel={this.text} width={8} ref="input" />
+          </FlexRow>
+          <FlexRow>
+            {this.currentError && (
+              <Label width={8} class={styles.error}>
+                {this.currentError}
+              </Label>
+            )}
           </FlexRow>
           <FlexRow>
             <Spacer width={2} />
             <Button width={3} onclick={() => this.reject()}>
               Cancel
             </Button>
-            <Button width={3} onclick={() => this.accept(this.text)}>
+            <Button
+              disabled={!this.isValidInput}
+              width={3}
+              onclick={() => this.tryAccept()}
+            >
               OK
             </Button>
           </FlexRow>
@@ -40,3 +74,9 @@ export class InputTextDialog extends Dialog<string, string> {
     );
   }
 }
+
+const styles = stylesheet({
+  error: {
+    color: "#f00000"
+  }
+});

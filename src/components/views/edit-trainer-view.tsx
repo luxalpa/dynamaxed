@@ -62,7 +62,7 @@ export class EditTrainerView extends View<string> {
     const text = await DialogManager.openDialog(
       `Enter new name for ${this.trainerID}`,
       InputTextDialog,
-      this.trainer.trainerName
+      { value: this.trainer.trainerName }
     );
     if (text !== undefined) {
       this.trainer.trainerName = text;
@@ -73,7 +73,18 @@ export class EditTrainerView extends View<string> {
     const text = await DialogManager.openDialog(
       `Enter new ID for ${this.trainerID}`,
       InputTextDialog,
-      this.trainerID
+      {
+        value: this.trainerID,
+        check: v => {
+          if (v === this.trainerID) {
+            return false;
+          }
+          if (Object.keys(GameModel.model.trainers).some(k => k === v)) {
+            return "Trainer already exists!";
+          }
+          return false;
+        }
+      }
     );
     if (text !== undefined) {
       IDManager.changeTrainerID(this.trainerID, text);
@@ -227,7 +238,7 @@ export class EditTrainerView extends View<string> {
     const lvl = await DialogManager.openDialog(
       `Enter new level`,
       InputTextDialog,
-      mon.lvl.toString()
+      { value: mon.lvl.toString() }
     );
     if (lvl !== undefined) {
       mon.lvl = parseInt(lvl);
@@ -235,11 +246,9 @@ export class EditTrainerView extends View<string> {
   }
 
   async changeIV(mon: TrainerPartyMon) {
-    const lvl = await DialogManager.openDialog(
-      `Enter IV`,
-      InputTextDialog,
-      mon.iv.toString()
-    );
+    const lvl = await DialogManager.openDialog(`Enter IV`, InputTextDialog, {
+      value: mon.iv.toString()
+    });
     if (lvl !== undefined) {
       mon.iv = parseInt(lvl);
     }
