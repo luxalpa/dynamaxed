@@ -29,10 +29,6 @@ import { IDDisplay } from "@/components/displays/id-display";
 
 @Component
 export class EditTrainerView extends View<string> {
-  get title() {
-    return `Trainer #${this.trainerID}`;
-  }
-
   get trainer() {
     return GameModel.model.trainers[this.trainerID];
   }
@@ -51,7 +47,6 @@ export class EditTrainerView extends View<string> {
 
   async changeTrainerIcon() {
     const pic = await DialogManager.openDialog(
-      `Select Picture for ${this.trainerID}`,
       ChooseTrainerPicDialog,
       this.trainer.trainerPic
     );
@@ -61,33 +56,27 @@ export class EditTrainerView extends View<string> {
   }
 
   async changeTrainerName() {
-    const text = await DialogManager.openDialog(
-      `Enter new name for ${this.trainerID}`,
-      InputTextDialog,
-      { value: this.trainer.trainerName }
-    );
+    const text = await DialogManager.openDialog(InputTextDialog, {
+      value: this.trainer.trainerName
+    });
     if (text !== undefined) {
       this.trainer.trainerName = text;
     }
   }
 
   async changeTrainerID() {
-    const text = await DialogManager.openDialog(
-      `Enter new ID for ${this.trainerID}`,
-      InputTextDialog,
-      {
-        value: this.trainerID,
-        check: v => {
-          if (v === this.trainerID) {
-            return false;
-          }
-          if (Object.keys(GameModel.model.trainers).some(k => k === v)) {
-            return "Trainer already exists!";
-          }
+    const text = await DialogManager.openDialog(InputTextDialog, {
+      value: this.trainerID,
+      check: v => {
+        if (v === this.trainerID) {
           return false;
         }
+        if (Object.keys(GameModel.model.trainers).some(k => k === v)) {
+          return "Trainer already exists!";
+        }
+        return false;
       }
-    );
+    });
     if (text !== undefined) {
       IDManager.changeTrainerID(this.trainerID, text);
     }
@@ -95,7 +84,6 @@ export class EditTrainerView extends View<string> {
 
   async changeTrainerClass() {
     const trainerClass = await DialogManager.openDialog(
-      `Select trainer class for ${this.trainerID}`,
       ChooseTrainerClassDialog,
       this.trainer.trainerClass
     );
@@ -106,7 +94,6 @@ export class EditTrainerView extends View<string> {
 
   async changeEncounterMusic() {
     const encounterMusic = await DialogManager.openDialog(
-      `Select encounter music for ${this.trainerID}`,
       ChooseEncounterMusicDialog,
       this.trainer.encounterMusic
     );
@@ -117,7 +104,6 @@ export class EditTrainerView extends View<string> {
 
   async changeItem(pos: number) {
     const item = await DialogManager.openDialog(
-      `Select battle use item for ${this.trainerID}`,
       ChooseItemDialog,
       this.trainer.items[pos]
     );
@@ -131,11 +117,7 @@ export class EditTrainerView extends View<string> {
   }
 
   async addItem() {
-    const item = await DialogManager.openDialog(
-      `Select battle use item for ${this.trainerID}`,
-      ChooseItemDialog,
-      ""
-    );
+    const item = await DialogManager.openDialog(ChooseItemDialog, "");
     if (item !== undefined) {
       this.trainer.items.push(item);
     }
@@ -156,7 +138,6 @@ export class EditTrainerView extends View<string> {
 
   async changePokemon(pos: number) {
     const species = await DialogManager.openDialog(
-      `Select Pokemon for Slot ${pos + 1} on ${this.trainerID}`,
       ChoosePokemonDialog,
       this.trainer.party[pos].species
     );
@@ -166,11 +147,7 @@ export class EditTrainerView extends View<string> {
   }
 
   async addMon() {
-    const species = await DialogManager.openDialog(
-      `Select Pokemon for Slot ${this.trainer.party.length} on ${this.trainerID}`,
-      ChoosePokemonDialog,
-      ""
-    );
+    const species = await DialogManager.openDialog(ChoosePokemonDialog, "");
     if (species !== undefined) {
       this.trainer.party.push({
         lvl: -1,
@@ -187,11 +164,7 @@ export class EditTrainerView extends View<string> {
   }
 
   async changeHeldItem(mon: TrainerPartyMon) {
-    const item = await DialogManager.openDialog(
-      `Select held Item`,
-      ChooseItemDialog,
-      mon.heldItem
-    );
+    const item = await DialogManager.openDialog(ChooseItemDialog, mon.heldItem);
     if (item !== undefined) {
       mon.heldItem = item;
     }
@@ -219,7 +192,6 @@ export class EditTrainerView extends View<string> {
 
   async changeMove(mon: TrainerPartyMon, pos: number) {
     const move = await DialogManager.openDialog(
-      `Select a move`,
       ChooseMoveDialog,
       mon.moves?.[pos] || ""
     );
@@ -237,18 +209,16 @@ export class EditTrainerView extends View<string> {
   }
 
   async changeLevel(mon: TrainerPartyMon) {
-    const lvl = await DialogManager.openDialog(
-      `Enter new level`,
-      InputTextDialog,
-      { value: mon.lvl.toString() }
-    );
+    const lvl = await DialogManager.openDialog(InputTextDialog, {
+      value: mon.lvl.toString()
+    });
     if (lvl !== undefined) {
       mon.lvl = parseInt(lvl);
     }
   }
 
   async changeIV(mon: TrainerPartyMon) {
-    const lvl = await DialogManager.openDialog(`Enter IV`, InputTextDialog, {
+    const lvl = await DialogManager.openDialog(InputTextDialog, {
       value: mon.iv.toString()
     });
     if (lvl !== undefined) {
@@ -263,7 +233,9 @@ export class EditTrainerView extends View<string> {
   render() {
     return (
       <WindowLayout>
-        <Portal to="title">{this.title}</Portal>
+        <Portal to="title">
+          Trainer <IDDisplay value={this.trainerID} />
+        </Portal>
         <Window>
           <FlexRow>
             <Button

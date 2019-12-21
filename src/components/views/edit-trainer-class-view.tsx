@@ -13,10 +13,6 @@ import { IDDisplay } from "@/components/displays/id-display";
 
 @Component
 export class EditTrainerClassView extends View<string> {
-  get title(): string {
-    return `Trainer Class ${this.classID}`;
-  }
-
   get classID(): string {
     return this.args;
   }
@@ -26,24 +22,18 @@ export class EditTrainerClassView extends View<string> {
   }
 
   async changeTitle() {
-    const title = await DialogManager.openDialog(
-      `Enter new title`,
-      InputTextDialog,
-      { value: this.trainerClass.name }
-    );
+    const title = await DialogManager.openDialog(InputTextDialog, {
+      value: this.trainerClass.name
+    });
     if (title !== undefined) {
       this.trainerClass.name = title;
     }
   }
 
   async changeMoney() {
-    const money = await DialogManager.openDialog(
-      `Enter new value for money`,
-      InputTextDialog,
-      {
-        value: this.trainerClass.money ? this.trainerClass.money.toString() : ""
-      }
-    );
+    const money = await DialogManager.openDialog(InputTextDialog, {
+      value: this.trainerClass.money ? this.trainerClass.money.toString() : ""
+    });
     if (money !== undefined) {
       if (money == "") {
         Vue.delete(this.trainerClass, "money");
@@ -54,7 +44,7 @@ export class EditTrainerClassView extends View<string> {
   }
 
   async changeID() {
-    const id = await DialogManager.openDialog(`Enter new ID`, InputTextDialog, {
+    const id = await DialogManager.openDialog(InputTextDialog, {
       value: this.classID,
       check: v => {
         if (v === this.classID) {
@@ -83,7 +73,7 @@ export class EditTrainerClassView extends View<string> {
         "@/components/lists/trainer-class-list"
       );
 
-      const replaceID = await DialogManager.openDialog(
+      const replaceID = await DialogManager.openDialogWithLabel(
         `Select another TrainerClass to replace all usages of this one`,
         ChooseTrainerClassDialog,
         ""
@@ -101,7 +91,9 @@ export class EditTrainerClassView extends View<string> {
   render() {
     return (
       <WindowLayout>
-        <Portal to="title">{this.title}</Portal>
+        <Portal to="title">
+          Trainer Class <IDDisplay value={this.classID} />
+        </Portal>
         <Window>
           <FlexRow>
             <Label width={3}>ID</Label>
