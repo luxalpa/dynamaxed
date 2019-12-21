@@ -2,6 +2,7 @@ import { GameModel, TrainerClass } from "@/model/model";
 import { EditTrainerClassView } from "@/components/views/edit-trainer-class-view";
 import { generateListComponents } from "@/components/lists/list";
 import { style } from "typestyle";
+import { IDDisplay } from "@/components/displays/id-display";
 
 export const {
   view: TrainerClassesView,
@@ -16,7 +17,7 @@ export const {
   layout: [
     {
       text: "ID",
-      render: (h, [id, trainerClass]) => `#${id}`
+      render: (h, [id, trainerClass]) => <IDDisplay value={id} />
     },
     {
       text: "Text",

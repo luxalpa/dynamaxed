@@ -7,6 +7,7 @@ import { PathManager } from "@/modules/path-manager";
 import { stylesheet } from "typestyle";
 import { createList } from "@/components/lists/list";
 import { ChooseFromListDialog } from "@/components/dialogs/choose-from-list-dialog";
+import { IDDisplay } from "@/components/displays/id-display";
 
 const PokemonList = createList<Pokemon>(() => GameModel.model.pokemon, [
   {
@@ -21,7 +22,7 @@ const PokemonList = createList<Pokemon>(() => GameModel.model.pokemon, [
   },
   {
     text: "ID",
-    render: (h, [id, pokemon]) => "#" + id
+    render: (h, [id, pokemon]) => <IDDisplay value={id} />
   },
   {
     text: "Name",

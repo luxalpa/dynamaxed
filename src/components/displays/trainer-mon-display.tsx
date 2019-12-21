@@ -3,7 +3,7 @@ import { GameModel } from "@/model/model";
 import { PathManager } from "@/modules/path-manager";
 
 @Component
-export class TrainerMon extends Vue {
+export class TrainerMonDisplay extends Vue {
   @Prop() readonly species!: string;
 
   get mon() {

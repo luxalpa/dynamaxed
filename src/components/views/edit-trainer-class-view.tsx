@@ -9,6 +9,7 @@ import { DialogManager } from "@/modules/dialog-manager";
 import { InputTextDialog } from "@/components/dialogs/input-text-dialog";
 import { IDManager } from "@/modules/id-manager";
 import { Portal } from "portal-vue";
+import { IDDisplay } from "@/components/displays/id-display";
 
 @Component
 export class EditTrainerClassView extends View<string> {
@@ -104,7 +105,9 @@ export class EditTrainerClassView extends View<string> {
         <Window>
           <FlexRow>
             <Label width={3}>ID</Label>
-            <Button onclick={() => this.changeID()}>#{this.classID}</Button>
+            <Button onclick={() => this.changeID()}>
+              <IDDisplay value={this.classID} />
+            </Button>
           </FlexRow>
 
           <FlexRow>

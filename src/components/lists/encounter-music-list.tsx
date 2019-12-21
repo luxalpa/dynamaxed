@@ -1,6 +1,7 @@
 import { EncounterMusic } from "@/model/constants";
 import { createList } from "@/components/lists/list";
 import { ChooseFromListDialog } from "@/components/dialogs/choose-from-list-dialog";
+import { IDDisplay } from "@/components/displays/id-display";
 
 const EncounterMusicList = createList(
   () =>
@@ -14,7 +15,7 @@ const EncounterMusicList = createList(
   [
     {
       text: "ID",
-      render: (h, e) => e
+      render: (h, e) => <IDDisplay value={e} />
     }
   ]
 );

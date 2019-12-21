@@ -3,7 +3,7 @@ import { GameModel } from "@/model/model";
 import { stylesheet } from "typestyle";
 
 @Component
-export class TrainerClass extends Vue {
+export class TrainerClassDisplay extends Vue {
   @Prop({
     required: true
   })

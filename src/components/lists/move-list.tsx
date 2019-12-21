@@ -1,11 +1,12 @@
 import { GameModel, Move } from "@/model/model";
 import { createList } from "@/components/lists/list";
 import { ChooseFromListDialog } from "@/components/dialogs/choose-from-list-dialog";
+import { IDDisplay } from "@/components/displays/id-display";
 
 const MoveList = createList<Move>(() => GameModel.model.moves, [
   {
     text: "ID",
-    render: (h, [id, move]) => `#${id}`
+    render: (h, [id, move]) => <IDDisplay value={id} />
   },
   {
     text: "Name",

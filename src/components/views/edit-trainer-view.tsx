@@ -5,7 +5,7 @@ import { stylesheet } from "typestyle";
 import { PathManager } from "@/modules/path-manager";
 import { Label } from "@/components/label";
 import { Button } from "@/components/button";
-import { TrainerClass } from "@/components/model/trainer-class";
+import { TrainerClassDisplay } from "@/components/displays/trainer-class-display";
 import { Checkbox } from "@/components/checkbox";
 import { Spacer } from "@/components/spacer";
 import { AIFlags } from "@/model/constants";
@@ -15,8 +15,8 @@ import { ChooseTrainerPicDialog } from "@/components/dialogs/choose-trainer-pic-
 import { InputTextDialog } from "@/components/dialogs/input-text-dialog";
 import { FlexColumn, FlexRow, Window, WindowLayout } from "@/components/layout";
 import { IDManager } from "@/modules/id-manager";
-import { ItemDisplay } from "@/components/model/item-display";
-import { MoveDisplay } from "@/components/model/move-display";
+import { ItemDisplay } from "@/components/displays/item-display";
+import { MoveDisplay } from "@/components/displays/move-display";
 import { extendArray, getDefaultMovesForMon } from "@/utils";
 import { ChooseTrainerClassDialog } from "@/components/lists/trainer-class-list";
 import { ChooseItemDialog } from "@/components/lists/item-list";
@@ -25,6 +25,7 @@ import { ChooseEncounterMusicDialog } from "@/components/lists/encounter-music-l
 import { ChooseMoveDialog } from "@/components/lists/move-list";
 import { Portal } from "portal-vue";
 import { EditTrainerClassView } from "@/components/views/edit-trainer-class-view";
+import { IDDisplay } from "@/components/displays/id-display";
 
 @Component
 export class EditTrainerView extends View<string> {
@@ -285,7 +286,7 @@ export class EditTrainerView extends View<string> {
           <FlexRow>
             <Label width={3}>ID</Label>
             <Button onclick={() => this.changeTrainerID()}>
-              #{this.trainerID}
+              <IDDisplay value={this.trainerID} />
             </Button>
           </FlexRow>
           <FlexRow>
@@ -300,7 +301,7 @@ export class EditTrainerView extends View<string> {
                 )
               }
             >
-              <TrainerClass classId={this.trainer.trainerClass} />
+              <TrainerClassDisplay classId={this.trainer.trainerClass} />
             </Button>
           </FlexRow>
           <FlexRow>
