@@ -41,13 +41,47 @@ export function getDefaultMovesForMon(species: string, lvl: number): string[] {
   return moves.slice(-4);
 }
 
+export function generateUniqueID(
+  base: string,
+  model: Record<string, unknown>
+): string {
+  let idPrefix = base + "_";
+
+  let usedNums: number[] = [];
+
+  for (let key of Object.keys(model)) {
+    if (key.startsWith(idPrefix)) {
+      const res = key.substr(idPrefix.length).match(/^\d+$/);
+      if (!res || res.length == 0) {
+        continue;
+      }
+      const num = parseInt(res[0][0]);
+      usedNums.push(num);
+    }
+  }
+
+  usedNums.sort((a, b) => a - b);
+
+  let curNum = 1;
+
+  while (true) {
+    if (usedNums[curNum - 1] === curNum) {
+      curNum++;
+      continue;
+    }
+    break;
+  }
+
+  return `${base}_${curNum}`;
+}
+
 export function createModelObj<T>(
   model: Record<string, T>,
   defaultObj?: () => T
 ): string {
   const newObj = defaultObj ? defaultObj() : { ...model["NONE"] };
 
-  let newID = "CUSTOM_1";
+  let newID = generateUniqueID("CUSTOM", model);
 
   Vue.set(model, newID, newObj);
   return newID;
