@@ -2,10 +2,10 @@ import { Component, Prop, Vue } from "vue-property-decorator";
 import { classes, stylesheet } from "typestyle";
 import { Constants } from "@/constants";
 import { Theme } from "@/theming";
+import { modifiers } from "vue-tsx-support";
 
 @Component
 export class Button extends Vue {
-  isActive = false;
   @Prop({
     default: 5
   })
@@ -27,18 +27,23 @@ export class Button extends Vue {
     }
   }
 
+  middleClick(e: Event) {
+    this.$emit("navigate");
+    e.preventDefault();
+  }
+
+  middleDown(e: Event) {
+    e.preventDefault();
+  }
+
   render() {
     return (
       <div
         style={Constants.gridRect(this.width, this.height)}
-        class={classes(
-          styles.button,
-          this.isActive && styles.active,
-          this.disabled && styles.disabled
-        )}
-        onclick={this.emitBtnClick}
-        onmousedown={() => (this.isActive = true)}
-        onmouseup={() => (this.isActive = false)}
+        class={classes(styles.button, this.disabled && styles.disabled)}
+        onclick={() => this.emitBtnClick()}
+        onmouseup={modifiers.middle((e: Event) => this.middleClick(e))}
+        onmousedown={modifiers.middle((e: Event) => this.middleDown(e))}
       >
         {this.$slots.default}
       </div>

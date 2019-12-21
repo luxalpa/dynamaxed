@@ -1,5 +1,5 @@
 import { Component, Vue } from "vue-property-decorator";
-import { View } from "@/modules/view-manager";
+import { View, ViewManager } from "@/modules/view-manager";
 import { GameModel, TrainerPartyMon } from "@/model/model";
 import { stylesheet } from "typestyle";
 import { PathManager } from "@/modules/path-manager";
@@ -24,6 +24,7 @@ import { ChoosePokemonDialog } from "@/components/lists/pokemon-list";
 import { ChooseEncounterMusicDialog } from "@/components/lists/encounter-music-list";
 import { ChooseMoveDialog } from "@/components/lists/move-list";
 import { Portal } from "portal-vue";
+import { EditTrainerClassView } from "@/components/views/edit-trainer-class-view";
 
 @Component
 export class EditTrainerView extends View<string> {
@@ -289,7 +290,16 @@ export class EditTrainerView extends View<string> {
           </FlexRow>
           <FlexRow>
             <Label width={3}>Trainer Class</Label>
-            <Button height={2} onclick={() => this.changeTrainerClass()}>
+            <Button
+              height={2}
+              onclick={() => this.changeTrainerClass()}
+              onnavigate={() =>
+                ViewManager.push(
+                  EditTrainerClassView,
+                  this.trainer.trainerClass
+                )
+              }
+            >
               <TrainerClass classId={this.trainer.trainerClass} />
             </Button>
           </FlexRow>
