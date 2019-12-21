@@ -59,6 +59,9 @@ export const ProjectManager = new (class {
   }
 
   async Save() {
+    if (this.currentProjectPath === "") {
+      return;
+    }
     persistStore();
     await GameModel.Save();
   }
