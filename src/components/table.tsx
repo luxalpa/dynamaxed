@@ -1,7 +1,5 @@
 import { Component, Prop, Vue } from "vue-property-decorator";
 import { CreateElement } from "vue";
-import { ViewManager } from "@/modules/view-manager";
-import { EditTrainerView } from "@/components/views/edit-trainer-view";
 import { stylesheet } from "typestyle";
 import { Theme } from "@/theming";
 import { Constants } from "@/constants";

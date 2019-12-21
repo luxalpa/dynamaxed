@@ -3,7 +3,6 @@ import { style, stylesheet } from "typestyle";
 import { Constants } from "@/constants";
 import { Theme } from "@/theming";
 import { px } from "csx";
-import { NestedCSSProperties } from "typestyle/lib/types";
 
 @Component
 export class Checkbox extends Vue {

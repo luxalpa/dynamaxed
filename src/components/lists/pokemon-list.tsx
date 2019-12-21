@@ -1,6 +1,3 @@
-import { Component, Vue } from "vue-property-decorator";
-import { Column, Table } from "@/components/table";
-import { CreateElement } from "vue";
 import { GameModel, Pokemon } from "@/model/model";
 import { Sprite } from "@/components/sprite";
 import { PathManager } from "@/modules/path-manager";

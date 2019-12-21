@@ -1,5 +1,5 @@
 import { Component, Prop, Vue } from "vue-property-decorator";
-import { GameModel, Move } from "@/model/model";
+import { GameModel } from "@/model/model";
 
 @Component
 export class MoveDisplay extends Vue {

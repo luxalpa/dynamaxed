@@ -5,7 +5,6 @@ import { PathManager } from "@/modules/path-manager";
 import { Button } from "@/components/button";
 import { Sprite } from "@/components/sprite";
 import { stylesheet } from "typestyle";
-import { Theme } from "@/theming";
 import { Constants } from "@/constants";
 
 @Component

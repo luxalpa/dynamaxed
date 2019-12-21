@@ -1,8 +1,8 @@
-import { View, ViewManager } from "@/modules/view-manager";
+import { ViewManager } from "@/modules/view-manager";
 import { Menubar } from "@/components/menubar";
 import { Navbar } from "@/components/navbar";
 import { stylesheet } from "typestyle";
-import { Component, Ref, Vue, Watch } from "vue-property-decorator";
+import { Component, Vue } from "vue-property-decorator";
 
 @Component
 export class MainView extends Vue {

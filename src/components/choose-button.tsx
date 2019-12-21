@@ -1,7 +1,4 @@
 import { Component, Prop, Vue } from "vue-property-decorator";
-import { stylesheet } from "typestyle";
-import { Theme } from "@/theming";
-import { Constants } from "@/constants";
 import { Button } from "@/components/button";
 
 @Component
