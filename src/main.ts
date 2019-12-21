@@ -65,10 +65,12 @@ ViewManager.registerViews({
 ViewManager.push(TrainersView);
 
 if (process.env.NODE_ENV === "development") {
-  ProjectManager.openProject(
-    "C:\\Users\\Smaug\\Desktop\\Pokemon\\pokeemerald\\"
-  );
-  // ViewManager.push(EditTrainerClassView, "HIKER");
+  const req = require.context("@/", false, /^\.\/dev\.ts$/);
+  try {
+    req("./dev.ts");
+  } catch {
+    console.log("You can run your own startup code by creating /src/dev.ts");
+  }
 } else {
   window.onbeforeunload = (e: Event) => {
     window.onbeforeunload = null;
