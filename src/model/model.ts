@@ -135,8 +135,8 @@ export const GameModel = new (class {
     ) as unknown) as Model;
   }
 
-  async Save() {
-    await this.Serialize();
+  Save() {
+    this.Serialize();
   }
 
   Deserialize() {
@@ -155,11 +155,11 @@ export const GameModel = new (class {
   }
 
   // Creates the .json files in our own project folder.
-  async Serialize() {
+  Serialize() {
     const projectPath = PathManager.metaPath();
 
     if (!fs.existsSync(projectPath)) {
-      await fs.promises.mkdir(path.join(projectPath));
+      fs.mkdirSync(path.join(projectPath));
     }
 
     for (const [key, [filename]] of Object.entries(files)) {

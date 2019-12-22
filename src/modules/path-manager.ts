@@ -1,4 +1,4 @@
-import { ProjectManager } from "@/modules/project-manager";
+import { META_DIR, ProjectManager } from "@/modules/project-manager";
 import path from "path";
 
 function correctTrainerImagePath(id: string): string {
@@ -57,10 +57,6 @@ export namespace PathManager {
   }
 
   export function metaPath(...subpath: string[]): string {
-    return path.join(
-      ProjectManager.currentProjectPath,
-      ".project-mewtwo",
-      ...subpath
-    );
+    return path.join(ProjectManager.currentProjectPath, META_DIR, ...subpath);
   }
 }

@@ -2,7 +2,7 @@ import { ProjectManager } from "@/modules/project-manager";
 
 let store: any = {};
 
-export function initStore() {
+export function restoreState() {
   const s = window.localStorage.getItem("state");
   if (s) {
     const tree = JSON.parse(s);
@@ -22,10 +22,10 @@ export function initStore() {
   }
 }
 
-export function persistStore() {
+export function persistState() {
   window.localStorage.setItem("state", JSON.stringify(store));
 }
 
-export function addToStore(name: string, obj: any) {
+export function makePersistent(name: string, obj: any) {
   store[name] = obj;
 }

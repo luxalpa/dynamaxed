@@ -1,6 +1,6 @@
 import { ipcRenderer } from "electron";
 import { Prop, Vue } from "vue-property-decorator";
-import { addToStore } from "@/store";
+import { makePersistent } from "@/store";
 
 export abstract class View<T> extends Vue {
   @Prop() args!: T;
@@ -107,5 +107,5 @@ export const ViewManager = new (class {
   }
 })();
 
-addToStore("view-manager", ViewManager);
+makePersistent("view-manager", ViewManager);
 Vue.observable(ViewManager);

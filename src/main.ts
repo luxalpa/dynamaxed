@@ -29,7 +29,7 @@ import { TrainersView } from "@/components/lists/trainer-list";
 import { TrainerClassesView } from "@/components/lists/trainer-class-list";
 import PortalVue from "portal-vue";
 import { ProjectManager } from "@/modules/project-manager";
-import { initStore } from "@/store";
+import { restoreState } from "@/store";
 import { ipcRenderer } from "electron";
 
 Vue.use(PortalVue);
@@ -64,6 +64,10 @@ ViewManager.registerViews({
 
 ViewManager.push(TrainersView);
 
+window.onbeforeunload = (e: Event) => {
+  ProjectManager.Save();
+};
+
 if (process.env.NODE_ENV === "development") {
   const req = require.context("@/", false, /^\.\/dev\.ts$/);
   try {
@@ -72,14 +76,7 @@ if (process.env.NODE_ENV === "development") {
     console.log("You can run your own startup code by creating /src/dev.ts");
   }
 } else {
-  window.onbeforeunload = (e: Event) => {
-    window.onbeforeunload = null;
-    e.returnValue = false;
-
-    ProjectManager.Save().finally(() => ipcRenderer.send("app_quit"));
-  };
-
-  initStore();
+  restoreState();
 }
 
 new Vue({

@@ -2,7 +2,7 @@ import { remote } from "electron";
 import { GameModel } from "@/model/model";
 import fs from "fs";
 import path from "path";
-import { addToStore, persistStore } from "@/store";
+import { makePersistent, persistState } from "@/store";
 import { Vue } from "vue-property-decorator";
 
 export interface IRecentProject {
@@ -10,7 +10,7 @@ export interface IRecentProject {
   path: string;
 }
 
-export const META_DIR = ".project-mewtwo";
+export const META_DIR = ".dynamaxed";
 
 export const ProjectManager = new (class {
   currentProjectPath: string = "";
@@ -62,10 +62,10 @@ export const ProjectManager = new (class {
     if (this.currentProjectPath === "") {
       return;
     }
-    persistStore();
+    persistState();
     await GameModel.Save();
   }
 })();
 
-addToStore("project-manager", ProjectManager);
+makePersistent("project-manager", ProjectManager);
 Vue.observable(ProjectManager);
