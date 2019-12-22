@@ -35,7 +35,7 @@ const menu: Menu[] = [
         text: "Close",
         shortcut: "Ctrl+Shift+Q",
         fn(): void {
-          console.log("Closing!");
+          ProjectManager.closeProject();
         }
       }
     ]
