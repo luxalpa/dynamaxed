@@ -6,7 +6,7 @@ module.exports = {
       builderOptions: {
         win: {
           target: "portable",
-          icon: "public/Shadow_Mewtwo.png"
+          icon: "public/mewtwo-icon2.png"
         }
       }
     }
