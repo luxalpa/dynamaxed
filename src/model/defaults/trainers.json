@@ -31,7 +31,7 @@
     "isFemaleEncounter": false,
     "customMoves": false
   },
-  "GRUNT_1": {
+  "GRUNT_AQUA_HIDEOUT_1": {
     "trainerClass": "TEAM_AQUA",
     "encounterMusic": "AQUA",
     "trainerPic": "AQUA_GRUNT_M",
@@ -51,7 +51,7 @@
     "isFemaleEncounter": false,
     "customMoves": false
   },
-  "GRUNT_2": {
+  "GRUNT_AQUA_HIDEOUT_2": {
     "trainerClass": "TEAM_AQUA",
     "encounterMusic": "AQUA",
     "trainerPic": "AQUA_GRUNT_M",
@@ -78,7 +78,7 @@
     "isFemaleEncounter": false,
     "customMoves": false
   },
-  "GRUNT_3": {
+  "GRUNT_AQUA_HIDEOUT_3": {
     "trainerClass": "TEAM_AQUA",
     "encounterMusic": "AQUA",
     "trainerPic": "AQUA_GRUNT_M",
@@ -98,7 +98,7 @@
     "isFemaleEncounter": false,
     "customMoves": false
   },
-  "GRUNT_4": {
+  "GRUNT_AQUA_HIDEOUT_4": {
     "trainerClass": "TEAM_AQUA",
     "encounterMusic": "AQUA",
     "trainerPic": "AQUA_GRUNT_M",
@@ -118,7 +118,7 @@
     "isFemaleEncounter": false,
     "customMoves": false
   },
-  "GRUNT_5": {
+  "GRUNT_SEAFLOOR_CAVERN_1": {
     "trainerClass": "TEAM_AQUA",
     "encounterMusic": "AQUA",
     "trainerPic": "AQUA_GRUNT_M",
@@ -138,7 +138,7 @@
     "isFemaleEncounter": false,
     "customMoves": false
   },
-  "GRUNT_6": {
+  "GRUNT_SEAFLOOR_CAVERN_2": {
     "trainerClass": "TEAM_AQUA",
     "encounterMusic": "AQUA",
     "trainerPic": "AQUA_GRUNT_M",
@@ -158,7 +158,7 @@
     "isFemaleEncounter": false,
     "customMoves": false
   },
-  "GRUNT_7": {
+  "GRUNT_SEAFLOOR_CAVERN_3": {
     "trainerClass": "TEAM_AQUA",
     "encounterMusic": "AQUA",
     "trainerPic": "AQUA_GRUNT_M",
@@ -233,7 +233,7 @@
     "isFemaleEncounter": true,
     "customMoves": false
   },
-  "GRUNT_8": {
+  "GRUNT_PETALBURG_WOODS": {
     "trainerClass": "TEAM_AQUA",
     "encounterMusic": "AQUA",
     "trainerPic": "AQUA_GRUNT_M",
@@ -334,7 +334,7 @@
     "isFemaleEncounter": false,
     "customMoves": false
   },
-  "GRUNT_9": {
+  "GRUNT_SEAFLOOR_CAVERN_4": {
     "trainerClass": "TEAM_AQUA",
     "encounterMusic": "AQUA",
     "trainerPic": "AQUA_GRUNT_F",
@@ -374,7 +374,7 @@
     "isFemaleEncounter": false,
     "customMoves": false
   },
-  "GRUNT_10": {
+  "GRUNT_RUSTURF_TUNNEL": {
     "trainerClass": "TEAM_AQUA",
     "encounterMusic": "AQUA",
     "trainerPic": "AQUA_GRUNT_M",
@@ -394,7 +394,7 @@
     "isFemaleEncounter": false,
     "customMoves": false
   },
-  "GRUNT_11": {
+  "GRUNT_WEATHER_INST_1": {
     "trainerClass": "TEAM_AQUA",
     "encounterMusic": "AQUA",
     "trainerPic": "AQUA_GRUNT_M",
@@ -421,7 +421,7 @@
     "isFemaleEncounter": false,
     "customMoves": false
   },
-  "GRUNT_12": {
+  "GRUNT_WEATHER_INST_2": {
     "trainerClass": "TEAM_AQUA",
     "encounterMusic": "AQUA",
     "trainerPic": "AQUA_GRUNT_M",
@@ -448,7 +448,7 @@
     "isFemaleEncounter": false,
     "customMoves": false
   },
-  "GRUNT_13": {
+  "GRUNT_WEATHER_INST_3": {
     "trainerClass": "TEAM_AQUA",
     "encounterMusic": "AQUA",
     "trainerPic": "AQUA_GRUNT_M",
@@ -482,7 +482,7 @@
     "isFemaleEncounter": false,
     "customMoves": false
   },
-  "GRUNT_14": {
+  "GRUNT_MUSEUM_1": {
     "trainerClass": "TEAM_AQUA",
     "encounterMusic": "AQUA",
     "trainerPic": "AQUA_GRUNT_M",
@@ -502,7 +502,7 @@
     "isFemaleEncounter": false,
     "customMoves": false
   },
-  "GRUNT_15": {
+  "GRUNT_MUSEUM_2": {
     "trainerClass": "TEAM_AQUA",
     "encounterMusic": "AQUA",
     "trainerPic": "AQUA_GRUNT_M",
@@ -529,7 +529,7 @@
     "isFemaleEncounter": false,
     "customMoves": false
   },
-  "GRUNT_16": {
+  "GRUNT_SPACE_CENTER_1": {
     "trainerClass": "TEAM_MAGMA",
     "encounterMusic": "MAGMA",
     "trainerPic": "MAGMA_GRUNT_M",
@@ -549,7 +549,7 @@
     "isFemaleEncounter": false,
     "customMoves": false
   },
-  "GRUNT_17": {
+  "GRUNT_MT_PYRE_1": {
     "trainerClass": "TEAM_AQUA",
     "encounterMusic": "AQUA",
     "trainerPic": "AQUA_GRUNT_M",
@@ -569,7 +569,7 @@
     "isFemaleEncounter": false,
     "customMoves": false
   },
-  "GRUNT_18": {
+  "GRUNT_MT_PYRE_2": {
     "trainerClass": "TEAM_AQUA",
     "encounterMusic": "AQUA",
     "trainerPic": "AQUA_GRUNT_M",
@@ -589,7 +589,7 @@
     "isFemaleEncounter": false,
     "customMoves": false
   },
-  "GRUNT_19": {
+  "GRUNT_MT_PYRE_3": {
     "trainerClass": "TEAM_AQUA",
     "encounterMusic": "AQUA",
     "trainerPic": "AQUA_GRUNT_M",
@@ -616,7 +616,7 @@
     "isFemaleEncounter": false,
     "customMoves": false
   },
-  "GRUNT_20": {
+  "GRUNT_WEATHER_INST_4": {
     "trainerClass": "TEAM_AQUA",
     "encounterMusic": "AQUA",
     "trainerPic": "AQUA_GRUNT_F",
@@ -636,7 +636,7 @@
     "isFemaleEncounter": true,
     "customMoves": false
   },
-  "GRUNT_21": {
+  "GRUNT_AQUA_HIDEOUT_5": {
     "trainerClass": "TEAM_AQUA",
     "encounterMusic": "AQUA",
     "trainerPic": "AQUA_GRUNT_F",
@@ -656,7 +656,7 @@
     "isFemaleEncounter": true,
     "customMoves": false
   },
-  "GRUNT_22": {
+  "GRUNT_AQUA_HIDEOUT_6": {
     "trainerClass": "TEAM_AQUA",
     "encounterMusic": "AQUA",
     "trainerPic": "AQUA_GRUNT_F",
@@ -3025,7 +3025,7 @@
     "isFemaleEncounter": true,
     "customMoves": true
   },
-  "GRUNT_23": {
+  "GRUNT_SPACE_CENTER_2": {
     "trainerClass": "TEAM_MAGMA",
     "encounterMusic": "MAGMA",
     "trainerPic": "MAGMA_GRUNT_M",
@@ -3709,7 +3709,7 @@
     "isFemaleEncounter": false,
     "customMoves": false
   },
-  "GRUNT_24": {
+  "GRUNT_MT_CHIMNEY_1": {
     "trainerClass": "TEAM_MAGMA",
     "encounterMusic": "MAGMA",
     "trainerPic": "MAGMA_GRUNT_F",
@@ -4818,7 +4818,7 @@
     "isFemaleEncounter": false,
     "customMoves": true
   },
-  "GRUNT_25": {
+  "GRUNT_AQUA_HIDEOUT_7": {
     "trainerClass": "TEAM_AQUA",
     "encounterMusic": "AQUA",
     "trainerPic": "AQUA_GRUNT_F",
@@ -4845,7 +4845,7 @@
     "isFemaleEncounter": true,
     "customMoves": false
   },
-  "GRUNT_26": {
+  "GRUNT_AQUA_HIDEOUT_8": {
     "trainerClass": "TEAM_AQUA",
     "encounterMusic": "AQUA",
     "trainerPic": "AQUA_GRUNT_M",
@@ -15158,7 +15158,7 @@
     "isFemaleEncounter": false,
     "customMoves": false
   },
-  "GRUNT_27": {
+  "GRUNT_SEAFLOOR_CAVERN_5": {
     "trainerClass": "TEAM_AQUA",
     "encounterMusic": "AQUA",
     "trainerPic": "AQUA_GRUNT_M",
@@ -15185,7 +15185,7 @@
     "isFemaleEncounter": false,
     "customMoves": false
   },
-  "GRUNT_28": {
+  "GRUNT_UNUSED": {
     "trainerClass": "TEAM_MAGMA",
     "encounterMusic": "AQUA",
     "trainerPic": "AQUA_GRUNT_F",
@@ -15212,7 +15212,7 @@
     "isFemaleEncounter": true,
     "customMoves": false
   },
-  "GRUNT_29": {
+  "GRUNT_MT_PYRE_4": {
     "trainerClass": "TEAM_AQUA",
     "encounterMusic": "AQUA",
     "trainerPic": "AQUA_GRUNT_F",
@@ -15239,7 +15239,7 @@
     "isFemaleEncounter": true,
     "customMoves": false
   },
-  "GRUNT_30": {
+  "GRUNT_JAGGED_PASS": {
     "trainerClass": "TEAM_MAGMA",
     "encounterMusic": "MAGMA",
     "trainerPic": "MAGMA_GRUNT_M",
@@ -15440,7 +15440,7 @@
     "isFemaleEncounter": false,
     "customMoves": false
   },
-  "GRUNT_31": {
+  "GRUNT_MT_CHIMNEY_2": {
     "trainerClass": "TEAM_MAGMA",
     "encounterMusic": "MAGMA",
     "trainerPic": "MAGMA_GRUNT_M",
@@ -15580,7 +15580,7 @@
     "isFemaleEncounter": false,
     "customMoves": false
   },
-  "GRUNT_32": {
+  "GRUNT_SPACE_CENTER_3": {
     "trainerClass": "TEAM_MAGMA",
     "encounterMusic": "MAGMA",
     "trainerPic": "MAGMA_GRUNT_F",
@@ -15607,7 +15607,7 @@
     "isFemaleEncounter": true,
     "customMoves": false
   },
-  "GRUNT_33": {
+  "GRUNT_SPACE_CENTER_4": {
     "trainerClass": "TEAM_MAGMA",
     "encounterMusic": "MAGMA",
     "trainerPic": "MAGMA_GRUNT_M",
@@ -15627,7 +15627,7 @@
     "isFemaleEncounter": false,
     "customMoves": false
   },
-  "GRUNT_34": {
+  "GRUNT_SPACE_CENTER_5": {
     "trainerClass": "TEAM_MAGMA",
     "encounterMusic": "MAGMA",
     "trainerPic": "MAGMA_GRUNT_M",
@@ -15647,7 +15647,7 @@
     "isFemaleEncounter": false,
     "customMoves": false
   },
-  "GRUNT_35": {
+  "GRUNT_SPACE_CENTER_6": {
     "trainerClass": "TEAM_MAGMA",
     "encounterMusic": "MAGMA",
     "trainerPic": "MAGMA_GRUNT_M",
@@ -15667,7 +15667,7 @@
     "isFemaleEncounter": false,
     "customMoves": false
   },
-  "GRUNT_36": {
+  "GRUNT_SPACE_CENTER_7": {
     "trainerClass": "TEAM_MAGMA",
     "encounterMusic": "MAGMA",
     "trainerPic": "MAGMA_GRUNT_M",
@@ -15808,7 +15808,7 @@
     "isFemaleEncounter": true,
     "customMoves": false
   },
-  "GRUNT_37": {
+  "GRUNT_WEATHER_INST_5": {
     "trainerClass": "TEAM_AQUA",
     "encounterMusic": "AQUA",
     "trainerPic": "AQUA_GRUNT_F",
@@ -19258,7 +19258,7 @@
     "isFemaleEncounter": false,
     "customMoves": false
   },
-  "GRUNT_38": {
+  "GRUNT_MAGMA_HIDEOUT_1": {
     "trainerClass": "TEAM_MAGMA",
     "encounterMusic": "MAGMA",
     "trainerPic": "MAGMA_GRUNT_M",
@@ -19278,7 +19278,7 @@
     "isFemaleEncounter": false,
     "customMoves": false
   },
-  "GRUNT_39": {
+  "GRUNT_MAGMA_HIDEOUT_2": {
     "trainerClass": "TEAM_MAGMA",
     "encounterMusic": "MAGMA",
     "trainerPic": "MAGMA_GRUNT_M",
@@ -19298,7 +19298,7 @@
     "isFemaleEncounter": false,
     "customMoves": false
   },
-  "GRUNT_40": {
+  "GRUNT_MAGMA_HIDEOUT_3": {
     "trainerClass": "TEAM_MAGMA",
     "encounterMusic": "MAGMA",
     "trainerPic": "MAGMA_GRUNT_M",
@@ -19318,7 +19318,7 @@
     "isFemaleEncounter": false,
     "customMoves": false
   },
-  "GRUNT_41": {
+  "GRUNT_MAGMA_HIDEOUT_4": {
     "trainerClass": "TEAM_MAGMA",
     "encounterMusic": "MAGMA",
     "trainerPic": "MAGMA_GRUNT_M",
@@ -19345,7 +19345,7 @@
     "isFemaleEncounter": false,
     "customMoves": false
   },
-  "GRUNT_42": {
+  "GRUNT_MAGMA_HIDEOUT_5": {
     "trainerClass": "TEAM_MAGMA",
     "encounterMusic": "MAGMA",
     "trainerPic": "MAGMA_GRUNT_M",
@@ -19372,7 +19372,7 @@
     "isFemaleEncounter": false,
     "customMoves": false
   },
-  "GRUNT_43": {
+  "GRUNT_MAGMA_HIDEOUT_6": {
     "trainerClass": "TEAM_MAGMA",
     "encounterMusic": "MAGMA",
     "trainerPic": "MAGMA_GRUNT_M",
@@ -19392,7 +19392,7 @@
     "isFemaleEncounter": false,
     "customMoves": false
   },
-  "GRUNT_44": {
+  "GRUNT_MAGMA_HIDEOUT_7": {
     "trainerClass": "TEAM_MAGMA",
     "encounterMusic": "MAGMA",
     "trainerPic": "MAGMA_GRUNT_M",
@@ -19412,7 +19412,7 @@
     "isFemaleEncounter": false,
     "customMoves": false
   },
-  "GRUNT_45": {
+  "GRUNT_MAGMA_HIDEOUT_8": {
     "trainerClass": "TEAM_MAGMA",
     "encounterMusic": "MAGMA",
     "trainerPic": "MAGMA_GRUNT_M",
@@ -19432,7 +19432,7 @@
     "isFemaleEncounter": false,
     "customMoves": false
   },
-  "GRUNT_46": {
+  "GRUNT_MAGMA_HIDEOUT_9": {
     "trainerClass": "TEAM_MAGMA",
     "encounterMusic": "MAGMA",
     "trainerPic": "MAGMA_GRUNT_M",
@@ -19452,7 +19452,7 @@
     "isFemaleEncounter": false,
     "customMoves": false
   },
-  "GRUNT_47": {
+  "GRUNT_MAGMA_HIDEOUT_10": {
     "trainerClass": "TEAM_MAGMA",
     "encounterMusic": "MAGMA",
     "trainerPic": "MAGMA_GRUNT_M",
@@ -19472,7 +19472,7 @@
     "isFemaleEncounter": false,
     "customMoves": false
   },
-  "GRUNT_48": {
+  "GRUNT_MAGMA_HIDEOUT_11": {
     "trainerClass": "TEAM_MAGMA",
     "encounterMusic": "MAGMA",
     "trainerPic": "MAGMA_GRUNT_M",
@@ -19492,7 +19492,7 @@
     "isFemaleEncounter": false,
     "customMoves": false
   },
-  "GRUNT_49": {
+  "GRUNT_MAGMA_HIDEOUT_12": {
     "trainerClass": "TEAM_MAGMA",
     "encounterMusic": "MAGMA",
     "trainerPic": "MAGMA_GRUNT_M",
@@ -19512,7 +19512,7 @@
     "isFemaleEncounter": false,
     "customMoves": false
   },
-  "GRUNT_50": {
+  "GRUNT_MAGMA_HIDEOUT_13": {
     "trainerClass": "TEAM_MAGMA",
     "encounterMusic": "MAGMA",
     "trainerPic": "MAGMA_GRUNT_M",
@@ -19532,7 +19532,7 @@
     "isFemaleEncounter": false,
     "customMoves": false
   },
-  "GRUNT_51": {
+  "GRUNT_MAGMA_HIDEOUT_14": {
     "trainerClass": "TEAM_MAGMA",
     "encounterMusic": "MAGMA",
     "trainerPic": "MAGMA_GRUNT_F",
@@ -19552,7 +19552,7 @@
     "isFemaleEncounter": true,
     "customMoves": false
   },
-  "GRUNT_52": {
+  "GRUNT_MAGMA_HIDEOUT_15": {
     "trainerClass": "TEAM_MAGMA",
     "encounterMusic": "MAGMA",
     "trainerPic": "MAGMA_GRUNT_F",
@@ -19572,7 +19572,7 @@
     "isFemaleEncounter": true,
     "customMoves": false
   },
-  "GRUNT_53": {
+  "GRUNT_MAGMA_HIDEOUT_16": {
     "trainerClass": "TEAM_MAGMA",
     "encounterMusic": "MAGMA",
     "trainerPic": "MAGMA_GRUNT_F",

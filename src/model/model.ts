@@ -8,6 +8,8 @@ import path from "path";
 import { compileTrainers } from "@/model/serialize/trainers";
 import { PathManager } from "@/modules/path-manager";
 import { Vue } from "vue-property-decorator";
+import { compileTrainerClasses } from "@/model/serialize/trainer-classes";
+import { compileMoves } from "@/model/serialize/moves";
 
 export interface TrainerPartyMon {
   iv: number;
@@ -99,6 +101,8 @@ export interface Move {
   target: string;
   priority: number;
   flags: string[];
+  apprenticeUsable: boolean; // For Battle Frontier Apprentice
+  battleArenaRating: number;
 }
 
 export interface Model {
@@ -172,7 +176,9 @@ export const GameModel = new (class {
 
   // Creates the .h and .inc files etc.
   Compile() {
-    compileTrainers(this.model.trainers);
+    compileTrainers();
+    compileTrainerClasses();
+    compileMoves();
   }
 })();
 

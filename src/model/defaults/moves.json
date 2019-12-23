@@ -9,7 +9,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": [],
-    "name": "-"
+    "name": "-",
+    "apprenticeUsable": false,
+    "battleArenaRating": 0
   },
   "POUND": {
     "effect": "HIT",
@@ -26,7 +28,9 @@
       "MIRROR_AFFECTED",
       "KINGSROCK_AFFECTED"
     ],
-    "name": "POUND"
+    "name": "POUND",
+    "apprenticeUsable": false,
+    "battleArenaRating": 1
   },
   "KARATE_CHOP": {
     "effect": "HIGH_CRITICAL",
@@ -43,7 +47,9 @@
       "MIRROR_AFFECTED",
       "KINGSROCK_AFFECTED"
     ],
-    "name": "KARATE CHOP"
+    "name": "KARATE CHOP",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "DOUBLE_SLAP": {
     "effect": "MULTI_HIT",
@@ -60,7 +66,9 @@
       "MIRROR_AFFECTED",
       "KINGSROCK_AFFECTED"
     ],
-    "name": "DOUBLESLAP"
+    "name": "DOUBLESLAP",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "COMET_PUNCH": {
     "effect": "MULTI_HIT",
@@ -77,7 +85,9 @@
       "MIRROR_AFFECTED",
       "KINGSROCK_AFFECTED"
     ],
-    "name": "COMET PUNCH"
+    "name": "COMET PUNCH",
+    "apprenticeUsable": false,
+    "battleArenaRating": 1
   },
   "MEGA_PUNCH": {
     "effect": "HIT",
@@ -94,7 +104,9 @@
       "MIRROR_AFFECTED",
       "KINGSROCK_AFFECTED"
     ],
-    "name": "MEGA PUNCH"
+    "name": "MEGA PUNCH",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "PAY_DAY": {
     "effect": "PAY_DAY",
@@ -106,7 +118,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
-    "name": "PAY DAY"
+    "name": "PAY DAY",
+    "apprenticeUsable": false,
+    "battleArenaRating": 1
   },
   "FIRE_PUNCH": {
     "effect": "BURN_HIT",
@@ -118,7 +132,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["MAKES_CONTACT", "PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "FIRE PUNCH"
+    "name": "FIRE PUNCH",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "ICE_PUNCH": {
     "effect": "FREEZE_HIT",
@@ -130,7 +146,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["MAKES_CONTACT", "PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "ICE PUNCH"
+    "name": "ICE PUNCH",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "THUNDER_PUNCH": {
     "effect": "PARALYZE_HIT",
@@ -142,7 +160,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["MAKES_CONTACT", "PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "THUNDERPUNCH"
+    "name": "THUNDERPUNCH",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "SCRATCH": {
     "effect": "HIT",
@@ -159,7 +179,9 @@
       "MIRROR_AFFECTED",
       "KINGSROCK_AFFECTED"
     ],
-    "name": "SCRATCH"
+    "name": "SCRATCH",
+    "apprenticeUsable": false,
+    "battleArenaRating": 1
   },
   "VICE_GRIP": {
     "effect": "HIT",
@@ -176,7 +198,9 @@
       "MIRROR_AFFECTED",
       "KINGSROCK_AFFECTED"
     ],
-    "name": "VICEGRIP"
+    "name": "VICEGRIP",
+    "apprenticeUsable": false,
+    "battleArenaRating": 1
   },
   "GUILLOTINE": {
     "effect": "OHKO",
@@ -188,7 +212,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["MAKES_CONTACT", "PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "GUILLOTINE"
+    "name": "GUILLOTINE",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "RAZOR_WIND": {
     "effect": "RAZOR_WIND",
@@ -200,7 +226,9 @@
     "target": "BOTH",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
-    "name": "RAZOR WIND"
+    "name": "RAZOR WIND",
+    "apprenticeUsable": false,
+    "battleArenaRating": 1
   },
   "SWORDS_DANCE": {
     "effect": "ATTACK_UP_2",
@@ -212,7 +240,9 @@
     "target": "USER",
     "priority": 0,
     "flags": ["SNATCH_AFFECTED"],
-    "name": "SWORDS DANCE"
+    "name": "SWORDS DANCE",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "CUT": {
     "effect": "HIT",
@@ -229,7 +259,9 @@
       "MIRROR_AFFECTED",
       "KINGSROCK_AFFECTED"
     ],
-    "name": "CUT"
+    "name": "CUT",
+    "apprenticeUsable": false,
+    "battleArenaRating": 1
   },
   "GUST": {
     "effect": "GUST",
@@ -241,7 +273,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
-    "name": "GUST"
+    "name": "GUST",
+    "apprenticeUsable": false,
+    "battleArenaRating": 1
   },
   "WING_ATTACK": {
     "effect": "HIT",
@@ -258,7 +292,9 @@
       "MIRROR_AFFECTED",
       "KINGSROCK_AFFECTED"
     ],
-    "name": "WING ATTACK"
+    "name": "WING ATTACK",
+    "apprenticeUsable": false,
+    "battleArenaRating": 1
   },
   "WHIRLWIND": {
     "effect": "ROAR",
@@ -270,7 +306,9 @@
     "target": "SELECTED",
     "priority": -6,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "WHIRLWIND"
+    "name": "WHIRLWIND",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "FLY": {
     "effect": "SEMI_INVULNERABLE",
@@ -287,7 +325,9 @@
       "MIRROR_AFFECTED",
       "KINGSROCK_AFFECTED"
     ],
-    "name": "FLY"
+    "name": "FLY",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "BIND": {
     "effect": "TRAP",
@@ -304,7 +344,9 @@
       "MIRROR_AFFECTED",
       "KINGSROCK_AFFECTED"
     ],
-    "name": "BIND"
+    "name": "BIND",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "SLAM": {
     "effect": "HIT",
@@ -321,7 +363,9 @@
       "MIRROR_AFFECTED",
       "KINGSROCK_AFFECTED"
     ],
-    "name": "SLAM"
+    "name": "SLAM",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "VINE_WHIP": {
     "effect": "HIT",
@@ -338,7 +382,9 @@
       "MIRROR_AFFECTED",
       "KINGSROCK_AFFECTED"
     ],
-    "name": "VINE WHIP"
+    "name": "VINE WHIP",
+    "apprenticeUsable": false,
+    "battleArenaRating": 1
   },
   "STOMP": {
     "effect": "FLINCH_MINIMIZE_HIT",
@@ -350,7 +396,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["MAKES_CONTACT", "PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "STOMP"
+    "name": "STOMP",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "DOUBLE_KICK": {
     "effect": "DOUBLE_HIT",
@@ -367,7 +415,9 @@
       "MIRROR_AFFECTED",
       "KINGSROCK_AFFECTED"
     ],
-    "name": "DOUBLE KICK"
+    "name": "DOUBLE KICK",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "MEGA_KICK": {
     "effect": "HIT",
@@ -384,7 +434,9 @@
       "MIRROR_AFFECTED",
       "KINGSROCK_AFFECTED"
     ],
-    "name": "MEGA KICK"
+    "name": "MEGA KICK",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "JUMP_KICK": {
     "effect": "RECOIL_IF_MISS",
@@ -401,7 +453,9 @@
       "MIRROR_AFFECTED",
       "KINGSROCK_AFFECTED"
     ],
-    "name": "JUMP KICK"
+    "name": "JUMP KICK",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "ROLLING_KICK": {
     "effect": "FLINCH_HIT",
@@ -418,7 +472,9 @@
       "MIRROR_AFFECTED",
       "KINGSROCK_AFFECTED"
     ],
-    "name": "ROLLING KICK"
+    "name": "ROLLING KICK",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "SAND_ATTACK": {
     "effect": "ACCURACY_DOWN",
@@ -430,7 +486,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MAGICCOAT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "SAND-ATTACK"
+    "name": "SAND-ATTACK",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "HEADBUTT": {
     "effect": "FLINCH_HIT",
@@ -442,7 +500,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["MAKES_CONTACT", "PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "HEADBUTT"
+    "name": "HEADBUTT",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "HORN_ATTACK": {
     "effect": "HIT",
@@ -459,7 +519,9 @@
       "MIRROR_AFFECTED",
       "KINGSROCK_AFFECTED"
     ],
-    "name": "HORN ATTACK"
+    "name": "HORN ATTACK",
+    "apprenticeUsable": false,
+    "battleArenaRating": 1
   },
   "FURY_ATTACK": {
     "effect": "MULTI_HIT",
@@ -476,7 +538,9 @@
       "MIRROR_AFFECTED",
       "KINGSROCK_AFFECTED"
     ],
-    "name": "FURY ATTACK"
+    "name": "FURY ATTACK",
+    "apprenticeUsable": false,
+    "battleArenaRating": 1
   },
   "HORN_DRILL": {
     "effect": "OHKO",
@@ -488,7 +552,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["MAKES_CONTACT", "PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "HORN DRILL"
+    "name": "HORN DRILL",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "TACKLE": {
     "effect": "HIT",
@@ -505,7 +571,9 @@
       "MIRROR_AFFECTED",
       "KINGSROCK_AFFECTED"
     ],
-    "name": "TACKLE"
+    "name": "TACKLE",
+    "apprenticeUsable": false,
+    "battleArenaRating": 1
   },
   "BODY_SLAM": {
     "effect": "PARALYZE_HIT",
@@ -517,7 +585,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["MAKES_CONTACT", "PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "BODY SLAM"
+    "name": "BODY SLAM",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "WRAP": {
     "effect": "TRAP",
@@ -534,7 +604,9 @@
       "MIRROR_AFFECTED",
       "KINGSROCK_AFFECTED"
     ],
-    "name": "WRAP"
+    "name": "WRAP",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "TAKE_DOWN": {
     "effect": "RECOIL",
@@ -551,7 +623,9 @@
       "MIRROR_AFFECTED",
       "KINGSROCK_AFFECTED"
     ],
-    "name": "TAKE DOWN"
+    "name": "TAKE DOWN",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "THRASH": {
     "effect": "RAMPAGE",
@@ -568,7 +642,9 @@
       "MIRROR_AFFECTED",
       "KINGSROCK_AFFECTED"
     ],
-    "name": "THRASH"
+    "name": "THRASH",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "DOUBLE_EDGE": {
     "effect": "DOUBLE_EDGE",
@@ -585,7 +661,9 @@
       "MIRROR_AFFECTED",
       "KINGSROCK_AFFECTED"
     ],
-    "name": "DOUBLE-EDGE"
+    "name": "DOUBLE-EDGE",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "TAIL_WHIP": {
     "effect": "DEFENSE_DOWN",
@@ -597,7 +675,9 @@
     "target": "BOTH",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MAGICCOAT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "TAIL WHIP"
+    "name": "TAIL WHIP",
+    "apprenticeUsable": false,
+    "battleArenaRating": 0
   },
   "POISON_STING": {
     "effect": "POISON_HIT",
@@ -609,7 +689,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "POISON STING"
+    "name": "POISON STING",
+    "apprenticeUsable": false,
+    "battleArenaRating": 1
   },
   "TWINEEDLE": {
     "effect": "TWINEEDLE",
@@ -621,7 +703,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "TWINEEDLE"
+    "name": "TWINEEDLE",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "PIN_MISSILE": {
     "effect": "MULTI_HIT",
@@ -633,7 +717,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
-    "name": "PIN MISSILE"
+    "name": "PIN MISSILE",
+    "apprenticeUsable": false,
+    "battleArenaRating": 1
   },
   "LEER": {
     "effect": "DEFENSE_DOWN",
@@ -645,7 +731,9 @@
     "target": "BOTH",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MAGICCOAT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "LEER"
+    "name": "LEER",
+    "apprenticeUsable": false,
+    "battleArenaRating": 0
   },
   "BITE": {
     "effect": "FLINCH_HIT",
@@ -657,7 +745,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["MAKES_CONTACT", "PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "BITE"
+    "name": "BITE",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "GROWL": {
     "effect": "ATTACK_DOWN",
@@ -669,7 +759,9 @@
     "target": "BOTH",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MAGICCOAT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "GROWL"
+    "name": "GROWL",
+    "apprenticeUsable": false,
+    "battleArenaRating": 0
   },
   "ROAR": {
     "effect": "ROAR",
@@ -681,7 +773,9 @@
     "target": "SELECTED",
     "priority": -6,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "ROAR"
+    "name": "ROAR",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "SING": {
     "effect": "SLEEP",
@@ -693,7 +787,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MAGICCOAT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "SING"
+    "name": "SING",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "SUPERSONIC": {
     "effect": "CONFUSE",
@@ -705,7 +801,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MAGICCOAT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "SUPERSONIC"
+    "name": "SUPERSONIC",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "SONIC_BOOM": {
     "effect": "SONICBOOM",
@@ -717,7 +815,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
-    "name": "SONICBOOM"
+    "name": "SONICBOOM",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "DISABLE": {
     "effect": "DISABLE",
@@ -729,7 +829,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "DISABLE"
+    "name": "DISABLE",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "ACID": {
     "effect": "DEFENSE_DOWN_HIT",
@@ -741,7 +843,9 @@
     "target": "BOTH",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "ACID"
+    "name": "ACID",
+    "apprenticeUsable": false,
+    "battleArenaRating": 1
   },
   "EMBER": {
     "effect": "BURN_HIT",
@@ -753,7 +857,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "EMBER"
+    "name": "EMBER",
+    "apprenticeUsable": false,
+    "battleArenaRating": 1
   },
   "FLAMETHROWER": {
     "effect": "BURN_HIT",
@@ -765,7 +871,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "FLAMETHROWER"
+    "name": "FLAMETHROWER",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "MIST": {
     "effect": "MIST",
@@ -777,7 +885,9 @@
     "target": "USER",
     "priority": 0,
     "flags": ["SNATCH_AFFECTED"],
-    "name": "MIST"
+    "name": "MIST",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "WATER_GUN": {
     "effect": "HIT",
@@ -789,7 +899,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
-    "name": "WATER GUN"
+    "name": "WATER GUN",
+    "apprenticeUsable": false,
+    "battleArenaRating": 1
   },
   "HYDRO_PUMP": {
     "effect": "HIT",
@@ -801,7 +913,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
-    "name": "HYDRO PUMP"
+    "name": "HYDRO PUMP",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "SURF": {
     "effect": "HIT",
@@ -813,7 +927,9 @@
     "target": "BOTH",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
-    "name": "SURF"
+    "name": "SURF",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "ICE_BEAM": {
     "effect": "FREEZE_HIT",
@@ -825,7 +941,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "ICE BEAM"
+    "name": "ICE BEAM",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "BLIZZARD": {
     "effect": "FREEZE_HIT",
@@ -837,7 +955,9 @@
     "target": "BOTH",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "BLIZZARD"
+    "name": "BLIZZARD",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "PSYBEAM": {
     "effect": "CONFUSE_HIT",
@@ -849,7 +969,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "PSYBEAM"
+    "name": "PSYBEAM",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "BUBBLE_BEAM": {
     "effect": "SPEED_DOWN_HIT",
@@ -861,7 +983,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "BUBBLEBEAM"
+    "name": "BUBBLEBEAM",
+    "apprenticeUsable": false,
+    "battleArenaRating": 1
   },
   "AURORA_BEAM": {
     "effect": "ATTACK_DOWN_HIT",
@@ -873,7 +997,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "AURORA BEAM"
+    "name": "AURORA BEAM",
+    "apprenticeUsable": false,
+    "battleArenaRating": 1
   },
   "HYPER_BEAM": {
     "effect": "RECHARGE",
@@ -885,7 +1011,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
-    "name": "HYPER BEAM"
+    "name": "HYPER BEAM",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "PECK": {
     "effect": "HIT",
@@ -902,7 +1030,9 @@
       "MIRROR_AFFECTED",
       "KINGSROCK_AFFECTED"
     ],
-    "name": "PECK"
+    "name": "PECK",
+    "apprenticeUsable": false,
+    "battleArenaRating": 1
   },
   "DRILL_PECK": {
     "effect": "HIT",
@@ -919,7 +1049,9 @@
       "MIRROR_AFFECTED",
       "KINGSROCK_AFFECTED"
     ],
-    "name": "DRILL PECK"
+    "name": "DRILL PECK",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "SUBMISSION": {
     "effect": "RECOIL",
@@ -936,7 +1068,9 @@
       "MIRROR_AFFECTED",
       "KINGSROCK_AFFECTED"
     ],
-    "name": "SUBMISSION"
+    "name": "SUBMISSION",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "LOW_KICK": {
     "effect": "LOW_KICK",
@@ -953,7 +1087,9 @@
       "MIRROR_AFFECTED",
       "KINGSROCK_AFFECTED"
     ],
-    "name": "LOW KICK"
+    "name": "LOW KICK",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "COUNTER": {
     "effect": "COUNTER",
@@ -965,7 +1101,9 @@
     "target": "DEPENDS",
     "priority": -5,
     "flags": ["MAKES_CONTACT", "MIRROR_AFFECTED"],
-    "name": "COUNTER"
+    "name": "COUNTER",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "SEISMIC_TOSS": {
     "effect": "LEVEL_DAMAGE",
@@ -982,7 +1120,9 @@
       "MIRROR_AFFECTED",
       "KINGSROCK_AFFECTED"
     ],
-    "name": "SEISMIC TOSS"
+    "name": "SEISMIC TOSS",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "STRENGTH": {
     "effect": "HIT",
@@ -999,7 +1139,9 @@
       "MIRROR_AFFECTED",
       "KINGSROCK_AFFECTED"
     ],
-    "name": "STRENGTH"
+    "name": "STRENGTH",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "ABSORB": {
     "effect": "ABSORB",
@@ -1011,7 +1153,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "ABSORB"
+    "name": "ABSORB",
+    "apprenticeUsable": false,
+    "battleArenaRating": 1
   },
   "MEGA_DRAIN": {
     "effect": "ABSORB",
@@ -1023,7 +1167,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "MEGA DRAIN"
+    "name": "MEGA DRAIN",
+    "apprenticeUsable": false,
+    "battleArenaRating": 1
   },
   "LEECH_SEED": {
     "effect": "LEECH_SEED",
@@ -1035,7 +1181,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MAGICCOAT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "LEECH SEED"
+    "name": "LEECH SEED",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "GROWTH": {
     "effect": "SPECIAL_ATTACK_UP",
@@ -1047,7 +1195,9 @@
     "target": "USER",
     "priority": 0,
     "flags": ["SNATCH_AFFECTED"],
-    "name": "GROWTH"
+    "name": "GROWTH",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "RAZOR_LEAF": {
     "effect": "HIGH_CRITICAL",
@@ -1059,7 +1209,9 @@
     "target": "BOTH",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
-    "name": "RAZOR LEAF"
+    "name": "RAZOR LEAF",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "SOLAR_BEAM": {
     "effect": "SOLARBEAM",
@@ -1071,7 +1223,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
-    "name": "SOLARBEAM"
+    "name": "SOLARBEAM",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "POISON_POWDER": {
     "effect": "POISON",
@@ -1083,7 +1237,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MAGICCOAT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "POISONPOWDER"
+    "name": "POISONPOWDER",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "STUN_SPORE": {
     "effect": "PARALYZE",
@@ -1095,7 +1251,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MAGICCOAT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "STUN SPORE"
+    "name": "STUN SPORE",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "SLEEP_POWDER": {
     "effect": "SLEEP",
@@ -1107,7 +1265,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MAGICCOAT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "SLEEP POWDER"
+    "name": "SLEEP POWDER",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "PETAL_DANCE": {
     "effect": "RAMPAGE",
@@ -1124,7 +1284,9 @@
       "MIRROR_AFFECTED",
       "KINGSROCK_AFFECTED"
     ],
-    "name": "PETAL DANCE"
+    "name": "PETAL DANCE",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "STRING_SHOT": {
     "effect": "SPEED_DOWN",
@@ -1136,7 +1298,9 @@
     "target": "BOTH",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MAGICCOAT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "STRING SHOT"
+    "name": "STRING SHOT",
+    "apprenticeUsable": false,
+    "battleArenaRating": 0
   },
   "DRAGON_RAGE": {
     "effect": "DRAGON_RAGE",
@@ -1148,7 +1312,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
-    "name": "DRAGON RAGE"
+    "name": "DRAGON RAGE",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "FIRE_SPIN": {
     "effect": "TRAP",
@@ -1160,7 +1326,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
-    "name": "FIRE SPIN"
+    "name": "FIRE SPIN",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "THUNDER_SHOCK": {
     "effect": "PARALYZE_HIT",
@@ -1172,7 +1340,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "THUNDERSHOCK"
+    "name": "THUNDERSHOCK",
+    "apprenticeUsable": false,
+    "battleArenaRating": 1
   },
   "THUNDERBOLT": {
     "effect": "PARALYZE_HIT",
@@ -1184,7 +1354,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "THUNDERBOLT"
+    "name": "THUNDERBOLT",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "THUNDER_WAVE": {
     "effect": "PARALYZE",
@@ -1196,7 +1368,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MAGICCOAT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "THUNDER WAVE"
+    "name": "THUNDER WAVE",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "THUNDER": {
     "effect": "THUNDER",
@@ -1208,7 +1382,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "THUNDER"
+    "name": "THUNDER",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "ROCK_THROW": {
     "effect": "HIT",
@@ -1220,7 +1396,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
-    "name": "ROCK THROW"
+    "name": "ROCK THROW",
+    "apprenticeUsable": false,
+    "battleArenaRating": 1
   },
   "EARTHQUAKE": {
     "effect": "EARTHQUAKE",
@@ -1232,7 +1410,9 @@
     "target": "FOES_AND_ALLY",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
-    "name": "EARTHQUAKE"
+    "name": "EARTHQUAKE",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "FISSURE": {
     "effect": "OHKO",
@@ -1244,7 +1424,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "FISSURE"
+    "name": "FISSURE",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "DIG": {
     "effect": "SEMI_INVULNERABLE",
@@ -1261,7 +1443,9 @@
       "MIRROR_AFFECTED",
       "KINGSROCK_AFFECTED"
     ],
-    "name": "DIG"
+    "name": "DIG",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "TOXIC": {
     "effect": "TOXIC",
@@ -1273,7 +1457,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MAGICCOAT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "TOXIC"
+    "name": "TOXIC",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "CONFUSION": {
     "effect": "CONFUSE_HIT",
@@ -1285,7 +1471,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "CONFUSION"
+    "name": "CONFUSION",
+    "apprenticeUsable": false,
+    "battleArenaRating": 1
   },
   "PSYCHIC": {
     "effect": "SPECIAL_DEFENSE_DOWN_HIT",
@@ -1297,7 +1485,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "PSYCHIC"
+    "name": "PSYCHIC",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "HYPNOSIS": {
     "effect": "SLEEP",
@@ -1309,7 +1499,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MAGICCOAT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "HYPNOSIS"
+    "name": "HYPNOSIS",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "MEDITATE": {
     "effect": "ATTACK_UP",
@@ -1321,7 +1513,9 @@
     "target": "USER",
     "priority": 0,
     "flags": ["SNATCH_AFFECTED"],
-    "name": "MEDITATE"
+    "name": "MEDITATE",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "AGILITY": {
     "effect": "SPEED_UP_2",
@@ -1333,7 +1527,9 @@
     "target": "USER",
     "priority": 0,
     "flags": ["SNATCH_AFFECTED"],
-    "name": "AGILITY"
+    "name": "AGILITY",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "QUICK_ATTACK": {
     "effect": "QUICK_ATTACK",
@@ -1350,7 +1546,9 @@
       "MIRROR_AFFECTED",
       "KINGSROCK_AFFECTED"
     ],
-    "name": "QUICK ATTACK"
+    "name": "QUICK ATTACK",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "RAGE": {
     "effect": "RAGE",
@@ -1367,7 +1565,9 @@
       "MIRROR_AFFECTED",
       "KINGSROCK_AFFECTED"
     ],
-    "name": "RAGE"
+    "name": "RAGE",
+    "apprenticeUsable": false,
+    "battleArenaRating": 1
   },
   "TELEPORT": {
     "effect": "TELEPORT",
@@ -1379,7 +1579,9 @@
     "target": "USER",
     "priority": 0,
     "flags": [],
-    "name": "TELEPORT"
+    "name": "TELEPORT",
+    "apprenticeUsable": false,
+    "battleArenaRating": 0
   },
   "NIGHT_SHADE": {
     "effect": "LEVEL_DAMAGE",
@@ -1391,7 +1593,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
-    "name": "NIGHT SHADE"
+    "name": "NIGHT SHADE",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "MIMIC": {
     "effect": "MIMIC",
@@ -1403,7 +1607,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED"],
-    "name": "MIMIC"
+    "name": "MIMIC",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "SCREECH": {
     "effect": "DEFENSE_DOWN_2",
@@ -1415,7 +1621,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MAGICCOAT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "SCREECH"
+    "name": "SCREECH",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "DOUBLE_TEAM": {
     "effect": "EVASION_UP",
@@ -1427,7 +1635,9 @@
     "target": "USER",
     "priority": 0,
     "flags": ["SNATCH_AFFECTED"],
-    "name": "DOUBLE TEAM"
+    "name": "DOUBLE TEAM",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "RECOVER": {
     "effect": "RESTORE_HP",
@@ -1439,7 +1649,9 @@
     "target": "USER",
     "priority": 0,
     "flags": ["SNATCH_AFFECTED"],
-    "name": "RECOVER"
+    "name": "RECOVER",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "HARDEN": {
     "effect": "DEFENSE_UP",
@@ -1451,7 +1663,9 @@
     "target": "USER",
     "priority": 0,
     "flags": ["SNATCH_AFFECTED"],
-    "name": "HARDEN"
+    "name": "HARDEN",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "MINIMIZE": {
     "effect": "MINIMIZE",
@@ -1463,7 +1677,9 @@
     "target": "USER",
     "priority": 0,
     "flags": ["SNATCH_AFFECTED"],
-    "name": "MINIMIZE"
+    "name": "MINIMIZE",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "SMOKESCREEN": {
     "effect": "ACCURACY_DOWN",
@@ -1475,7 +1691,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MAGICCOAT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "SMOKESCREEN"
+    "name": "SMOKESCREEN",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "CONFUSE_RAY": {
     "effect": "CONFUSE",
@@ -1487,7 +1705,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MAGICCOAT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "CONFUSE RAY"
+    "name": "CONFUSE RAY",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "WITHDRAW": {
     "effect": "DEFENSE_UP",
@@ -1499,7 +1719,9 @@
     "target": "USER",
     "priority": 0,
     "flags": ["SNATCH_AFFECTED"],
-    "name": "WITHDRAW"
+    "name": "WITHDRAW",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "DEFENSE_CURL": {
     "effect": "DEFENSE_CURL",
@@ -1511,7 +1733,9 @@
     "target": "USER",
     "priority": 0,
     "flags": ["SNATCH_AFFECTED"],
-    "name": "DEFENSE CURL"
+    "name": "DEFENSE CURL",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "BARRIER": {
     "effect": "DEFENSE_UP_2",
@@ -1523,7 +1747,9 @@
     "target": "USER",
     "priority": 0,
     "flags": ["SNATCH_AFFECTED"],
-    "name": "BARRIER"
+    "name": "BARRIER",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "LIGHT_SCREEN": {
     "effect": "LIGHT_SCREEN",
@@ -1535,7 +1761,9 @@
     "target": "USER",
     "priority": 0,
     "flags": ["SNATCH_AFFECTED"],
-    "name": "LIGHT SCREEN"
+    "name": "LIGHT SCREEN",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "HAZE": {
     "effect": "HAZE",
@@ -1547,7 +1775,9 @@
     "target": "USER",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED"],
-    "name": "HAZE"
+    "name": "HAZE",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "REFLECT": {
     "effect": "REFLECT",
@@ -1559,7 +1789,9 @@
     "target": "USER",
     "priority": 0,
     "flags": ["SNATCH_AFFECTED"],
-    "name": "REFLECT"
+    "name": "REFLECT",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "FOCUS_ENERGY": {
     "effect": "FOCUS_ENERGY",
@@ -1571,7 +1803,9 @@
     "target": "USER",
     "priority": 0,
     "flags": ["SNATCH_AFFECTED"],
-    "name": "FOCUS ENERGY"
+    "name": "FOCUS ENERGY",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "BIDE": {
     "effect": "BIDE",
@@ -1583,7 +1817,9 @@
     "target": "USER",
     "priority": 0,
     "flags": ["MAKES_CONTACT", "PROTECT_AFFECTED", "KINGSROCK_AFFECTED"],
-    "name": "BIDE"
+    "name": "BIDE",
+    "apprenticeUsable": false,
+    "battleArenaRating": 0
   },
   "METRONOME": {
     "effect": "METRONOME",
@@ -1595,7 +1831,9 @@
     "target": "DEPENDS",
     "priority": 0,
     "flags": [],
-    "name": "METRONOME"
+    "name": "METRONOME",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "MIRROR_MOVE": {
     "effect": "MIRROR_MOVE",
@@ -1607,7 +1845,9 @@
     "target": "DEPENDS",
     "priority": 0,
     "flags": [],
-    "name": "MIRROR MOVE"
+    "name": "MIRROR MOVE",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "SELF_DESTRUCT": {
     "effect": "EXPLOSION",
@@ -1619,7 +1859,9 @@
     "target": "FOES_AND_ALLY",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
-    "name": "SELFDESTRUCT"
+    "name": "SELFDESTRUCT",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "EGG_BOMB": {
     "effect": "HIT",
@@ -1631,7 +1873,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
-    "name": "EGG BOMB"
+    "name": "EGG BOMB",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "LICK": {
     "effect": "PARALYZE_HIT",
@@ -1643,7 +1887,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["MAKES_CONTACT", "PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "LICK"
+    "name": "LICK",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "SMOG": {
     "effect": "POISON_HIT",
@@ -1655,7 +1901,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "SMOG"
+    "name": "SMOG",
+    "apprenticeUsable": false,
+    "battleArenaRating": 1
   },
   "SLUDGE": {
     "effect": "POISON_HIT",
@@ -1667,7 +1915,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "SLUDGE"
+    "name": "SLUDGE",
+    "apprenticeUsable": false,
+    "battleArenaRating": 1
   },
   "BONE_CLUB": {
     "effect": "FLINCH_HIT",
@@ -1679,7 +1929,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "BONE CLUB"
+    "name": "BONE CLUB",
+    "apprenticeUsable": false,
+    "battleArenaRating": 1
   },
   "FIRE_BLAST": {
     "effect": "BURN_HIT",
@@ -1691,7 +1943,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "FIRE BLAST"
+    "name": "FIRE BLAST",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "WATERFALL": {
     "effect": "HIT",
@@ -1708,7 +1962,9 @@
       "MIRROR_AFFECTED",
       "KINGSROCK_AFFECTED"
     ],
-    "name": "WATERFALL"
+    "name": "WATERFALL",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "CLAMP": {
     "effect": "TRAP",
@@ -1725,7 +1981,9 @@
       "MIRROR_AFFECTED",
       "KINGSROCK_AFFECTED"
     ],
-    "name": "CLAMP"
+    "name": "CLAMP",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "SWIFT": {
     "effect": "ALWAYS_HIT",
@@ -1737,7 +1995,9 @@
     "target": "BOTH",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
-    "name": "SWIFT"
+    "name": "SWIFT",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "SKULL_BASH": {
     "effect": "SKULL_BASH",
@@ -1754,7 +2014,9 @@
       "MIRROR_AFFECTED",
       "KINGSROCK_AFFECTED"
     ],
-    "name": "SKULL BASH"
+    "name": "SKULL BASH",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "SPIKE_CANNON": {
     "effect": "MULTI_HIT",
@@ -1766,7 +2028,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
-    "name": "SPIKE CANNON"
+    "name": "SPIKE CANNON",
+    "apprenticeUsable": false,
+    "battleArenaRating": 1
   },
   "CONSTRICT": {
     "effect": "SPEED_DOWN_HIT",
@@ -1778,7 +2042,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["MAKES_CONTACT", "PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "CONSTRICT"
+    "name": "CONSTRICT",
+    "apprenticeUsable": false,
+    "battleArenaRating": 1
   },
   "AMNESIA": {
     "effect": "SPECIAL_DEFENSE_UP_2",
@@ -1790,7 +2056,9 @@
     "target": "USER",
     "priority": 0,
     "flags": ["SNATCH_AFFECTED"],
-    "name": "AMNESIA"
+    "name": "AMNESIA",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "KINESIS": {
     "effect": "ACCURACY_DOWN",
@@ -1802,7 +2070,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "KINESIS"
+    "name": "KINESIS",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "SOFT_BOILED": {
     "effect": "SOFTBOILED",
@@ -1814,7 +2084,9 @@
     "target": "USER",
     "priority": 0,
     "flags": ["SNATCH_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "SOFTBOILED"
+    "name": "SOFTBOILED",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "HI_JUMP_KICK": {
     "effect": "RECOIL_IF_MISS",
@@ -1831,7 +2103,9 @@
       "MIRROR_AFFECTED",
       "KINGSROCK_AFFECTED"
     ],
-    "name": "HI JUMP KICK"
+    "name": "HI JUMP KICK",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "GLARE": {
     "effect": "PARALYZE",
@@ -1843,7 +2117,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MAGICCOAT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "GLARE"
+    "name": "GLARE",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "DREAM_EATER": {
     "effect": "DREAM_EATER",
@@ -1855,7 +2131,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "DREAM EATER"
+    "name": "DREAM EATER",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "POISON_GAS": {
     "effect": "POISON",
@@ -1867,7 +2145,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MAGICCOAT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "POISON GAS"
+    "name": "POISON GAS",
+    "apprenticeUsable": false,
+    "battleArenaRating": 0
   },
   "BARRAGE": {
     "effect": "MULTI_HIT",
@@ -1879,7 +2159,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
-    "name": "BARRAGE"
+    "name": "BARRAGE",
+    "apprenticeUsable": false,
+    "battleArenaRating": 1
   },
   "LEECH_LIFE": {
     "effect": "ABSORB",
@@ -1891,7 +2173,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["MAKES_CONTACT", "PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "LEECH LIFE"
+    "name": "LEECH LIFE",
+    "apprenticeUsable": false,
+    "battleArenaRating": 1
   },
   "LOVELY_KISS": {
     "effect": "SLEEP",
@@ -1903,7 +2187,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MAGICCOAT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "LOVELY KISS"
+    "name": "LOVELY KISS",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "SKY_ATTACK": {
     "effect": "SKY_ATTACK",
@@ -1915,7 +2201,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
-    "name": "SKY ATTACK"
+    "name": "SKY ATTACK",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "TRANSFORM": {
     "effect": "TRANSFORM",
@@ -1927,7 +2215,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": [],
-    "name": "TRANSFORM"
+    "name": "TRANSFORM",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "BUBBLE": {
     "effect": "SPEED_DOWN_HIT",
@@ -1939,7 +2229,9 @@
     "target": "BOTH",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "BUBBLE"
+    "name": "BUBBLE",
+    "apprenticeUsable": false,
+    "battleArenaRating": 1
   },
   "DIZZY_PUNCH": {
     "effect": "CONFUSE_HIT",
@@ -1951,7 +2243,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["MAKES_CONTACT", "PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "DIZZY PUNCH"
+    "name": "DIZZY PUNCH",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "SPORE": {
     "effect": "SLEEP",
@@ -1963,7 +2257,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MAGICCOAT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "SPORE"
+    "name": "SPORE",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "FLASH": {
     "effect": "ACCURACY_DOWN",
@@ -1975,7 +2271,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MAGICCOAT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "FLASH"
+    "name": "FLASH",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "PSYWAVE": {
     "effect": "PSYWAVE",
@@ -1987,7 +2285,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
-    "name": "PSYWAVE"
+    "name": "PSYWAVE",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "SPLASH": {
     "effect": "SPLASH",
@@ -1999,7 +2299,9 @@
     "target": "USER",
     "priority": 0,
     "flags": [],
-    "name": "SPLASH"
+    "name": "SPLASH",
+    "apprenticeUsable": false,
+    "battleArenaRating": 0
   },
   "ACID_ARMOR": {
     "effect": "DEFENSE_UP_2",
@@ -2011,7 +2313,9 @@
     "target": "USER",
     "priority": 0,
     "flags": ["SNATCH_AFFECTED"],
-    "name": "ACID ARMOR"
+    "name": "ACID ARMOR",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "CRABHAMMER": {
     "effect": "HIGH_CRITICAL",
@@ -2028,7 +2332,9 @@
       "MIRROR_AFFECTED",
       "KINGSROCK_AFFECTED"
     ],
-    "name": "CRABHAMMER"
+    "name": "CRABHAMMER",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "EXPLOSION": {
     "effect": "EXPLOSION",
@@ -2040,7 +2346,9 @@
     "target": "FOES_AND_ALLY",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
-    "name": "EXPLOSION"
+    "name": "EXPLOSION",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "FURY_SWIPES": {
     "effect": "MULTI_HIT",
@@ -2057,7 +2365,9 @@
       "MIRROR_AFFECTED",
       "KINGSROCK_AFFECTED"
     ],
-    "name": "FURY SWIPES"
+    "name": "FURY SWIPES",
+    "apprenticeUsable": false,
+    "battleArenaRating": 1
   },
   "BONEMERANG": {
     "effect": "DOUBLE_HIT",
@@ -2069,7 +2379,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
-    "name": "BONEMERANG"
+    "name": "BONEMERANG",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "REST": {
     "effect": "REST",
@@ -2081,7 +2393,9 @@
     "target": "USER",
     "priority": 0,
     "flags": ["SNATCH_AFFECTED"],
-    "name": "REST"
+    "name": "REST",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "ROCK_SLIDE": {
     "effect": "FLINCH_HIT",
@@ -2093,7 +2407,9 @@
     "target": "BOTH",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "ROCK SLIDE"
+    "name": "ROCK SLIDE",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "HYPER_FANG": {
     "effect": "FLINCH_HIT",
@@ -2105,7 +2421,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["MAKES_CONTACT", "PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "HYPER FANG"
+    "name": "HYPER FANG",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "SHARPEN": {
     "effect": "ATTACK_UP",
@@ -2117,7 +2435,9 @@
     "target": "USER",
     "priority": 0,
     "flags": ["SNATCH_AFFECTED"],
-    "name": "SHARPEN"
+    "name": "SHARPEN",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "CONVERSION": {
     "effect": "CONVERSION",
@@ -2129,7 +2449,9 @@
     "target": "USER",
     "priority": 0,
     "flags": [],
-    "name": "CONVERSION"
+    "name": "CONVERSION",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "TRI_ATTACK": {
     "effect": "TRI_ATTACK",
@@ -2141,7 +2463,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "TRI ATTACK"
+    "name": "TRI ATTACK",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "SUPER_FANG": {
     "effect": "SUPER_FANG",
@@ -2153,7 +2477,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["MAKES_CONTACT", "PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "SUPER FANG"
+    "name": "SUPER FANG",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "SLASH": {
     "effect": "HIGH_CRITICAL",
@@ -2170,7 +2496,9 @@
       "MIRROR_AFFECTED",
       "KINGSROCK_AFFECTED"
     ],
-    "name": "SLASH"
+    "name": "SLASH",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "SUBSTITUTE": {
     "effect": "SUBSTITUTE",
@@ -2182,7 +2510,9 @@
     "target": "USER",
     "priority": 0,
     "flags": ["SNATCH_AFFECTED"],
-    "name": "SUBSTITUTE"
+    "name": "SUBSTITUTE",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "STRUGGLE": {
     "effect": "RECOIL",
@@ -2199,7 +2529,9 @@
       "MIRROR_AFFECTED",
       "KINGSROCK_AFFECTED"
     ],
-    "name": "STRUGGLE"
+    "name": "STRUGGLE",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "SKETCH": {
     "effect": "SKETCH",
@@ -2211,7 +2543,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": [],
-    "name": "SKETCH"
+    "name": "SKETCH",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "TRIPLE_KICK": {
     "effect": "TRIPLE_KICK",
@@ -2228,7 +2562,9 @@
       "MIRROR_AFFECTED",
       "KINGSROCK_AFFECTED"
     ],
-    "name": "TRIPLE KICK"
+    "name": "TRIPLE KICK",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "THIEF": {
     "effect": "THIEF",
@@ -2240,7 +2576,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["MAKES_CONTACT", "PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "THIEF"
+    "name": "THIEF",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "SPIDER_WEB": {
     "effect": "MEAN_LOOK",
@@ -2252,7 +2590,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MAGICCOAT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "SPIDER WEB"
+    "name": "SPIDER WEB",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "MIND_READER": {
     "effect": "LOCK_ON",
@@ -2264,7 +2604,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "MIND READER"
+    "name": "MIND READER",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "NIGHTMARE": {
     "effect": "NIGHTMARE",
@@ -2276,7 +2618,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "NIGHTMARE"
+    "name": "NIGHTMARE",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "FLAME_WHEEL": {
     "effect": "THAW_HIT",
@@ -2288,7 +2632,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["MAKES_CONTACT", "PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "FLAME WHEEL"
+    "name": "FLAME WHEEL",
+    "apprenticeUsable": false,
+    "battleArenaRating": 1
   },
   "SNORE": {
     "effect": "SNORE",
@@ -2300,7 +2646,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
-    "name": "SNORE"
+    "name": "SNORE",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "CURSE": {
     "effect": "CURSE",
@@ -2312,7 +2660,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": [],
-    "name": "CURSE"
+    "name": "CURSE",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "FLAIL": {
     "effect": "FLAIL",
@@ -2329,7 +2679,9 @@
       "MIRROR_AFFECTED",
       "KINGSROCK_AFFECTED"
     ],
-    "name": "FLAIL"
+    "name": "FLAIL",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "CONVERSION_2": {
     "effect": "CONVERSION_2",
@@ -2341,7 +2693,9 @@
     "target": "USER",
     "priority": 0,
     "flags": [],
-    "name": "CONVERSION 2"
+    "name": "CONVERSION 2",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "AEROBLAST": {
     "effect": "HIGH_CRITICAL",
@@ -2353,7 +2707,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
-    "name": "AEROBLAST"
+    "name": "AEROBLAST",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "COTTON_SPORE": {
     "effect": "SPEED_DOWN_2",
@@ -2365,7 +2721,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MAGICCOAT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "COTTON SPORE"
+    "name": "COTTON SPORE",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "REVERSAL": {
     "effect": "FLAIL",
@@ -2382,7 +2740,9 @@
       "MIRROR_AFFECTED",
       "KINGSROCK_AFFECTED"
     ],
-    "name": "REVERSAL"
+    "name": "REVERSAL",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "SPITE": {
     "effect": "SPITE",
@@ -2394,7 +2754,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "SPITE"
+    "name": "SPITE",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "POWDER_SNOW": {
     "effect": "FREEZE_HIT",
@@ -2406,7 +2768,9 @@
     "target": "BOTH",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "POWDER SNOW"
+    "name": "POWDER SNOW",
+    "apprenticeUsable": false,
+    "battleArenaRating": 1
   },
   "PROTECT": {
     "effect": "PROTECT",
@@ -2418,7 +2782,9 @@
     "target": "USER",
     "priority": 3,
     "flags": [],
-    "name": "PROTECT"
+    "name": "PROTECT",
+    "apprenticeUsable": true,
+    "battleArenaRating": -1
   },
   "MACH_PUNCH": {
     "effect": "QUICK_ATTACK",
@@ -2435,7 +2801,9 @@
       "MIRROR_AFFECTED",
       "KINGSROCK_AFFECTED"
     ],
-    "name": "MACH PUNCH"
+    "name": "MACH PUNCH",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "SCARY_FACE": {
     "effect": "SPEED_DOWN_2",
@@ -2447,7 +2815,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MAGICCOAT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "SCARY FACE"
+    "name": "SCARY FACE",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "FAINT_ATTACK": {
     "effect": "ALWAYS_HIT",
@@ -2459,7 +2829,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
-    "name": "FAINT ATTACK"
+    "name": "FAINT ATTACK",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "SWEET_KISS": {
     "effect": "CONFUSE",
@@ -2471,7 +2843,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MAGICCOAT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "SWEET KISS"
+    "name": "SWEET KISS",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "BELLY_DRUM": {
     "effect": "BELLY_DRUM",
@@ -2483,7 +2857,9 @@
     "target": "USER",
     "priority": 0,
     "flags": ["SNATCH_AFFECTED"],
-    "name": "BELLY DRUM"
+    "name": "BELLY DRUM",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "SLUDGE_BOMB": {
     "effect": "POISON_HIT",
@@ -2495,7 +2871,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "SLUDGE BOMB"
+    "name": "SLUDGE BOMB",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "MUD_SLAP": {
     "effect": "ACCURACY_DOWN_HIT",
@@ -2507,7 +2885,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "MUD-SLAP"
+    "name": "MUD-SLAP",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "OCTAZOOKA": {
     "effect": "ACCURACY_DOWN_HIT",
@@ -2519,7 +2899,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "OCTAZOOKA"
+    "name": "OCTAZOOKA",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "SPIKES": {
     "effect": "SPIKES",
@@ -2531,7 +2913,9 @@
     "target": "OPPONENTS_FIELD",
     "priority": 0,
     "flags": [],
-    "name": "SPIKES"
+    "name": "SPIKES",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "ZAP_CANNON": {
     "effect": "PARALYZE_HIT",
@@ -2543,7 +2927,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "ZAP CANNON"
+    "name": "ZAP CANNON",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "FORESIGHT": {
     "effect": "FORESIGHT",
@@ -2555,7 +2941,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "FORESIGHT"
+    "name": "FORESIGHT",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "DESTINY_BOND": {
     "effect": "DESTINY_BOND",
@@ -2567,7 +2955,9 @@
     "target": "USER",
     "priority": 0,
     "flags": [],
-    "name": "DESTINY BOND"
+    "name": "DESTINY BOND",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "PERISH_SONG": {
     "effect": "PERISH_SONG",
@@ -2579,7 +2969,9 @@
     "target": "USER",
     "priority": 0,
     "flags": [],
-    "name": "PERISH SONG"
+    "name": "PERISH SONG",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "ICY_WIND": {
     "effect": "SPEED_DOWN_HIT",
@@ -2591,7 +2983,9 @@
     "target": "BOTH",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "ICY WIND"
+    "name": "ICY WIND",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "DETECT": {
     "effect": "PROTECT",
@@ -2603,7 +2997,9 @@
     "target": "USER",
     "priority": 3,
     "flags": [],
-    "name": "DETECT"
+    "name": "DETECT",
+    "apprenticeUsable": true,
+    "battleArenaRating": -1
   },
   "BONE_RUSH": {
     "effect": "MULTI_HIT",
@@ -2615,7 +3011,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
-    "name": "BONE RUSH"
+    "name": "BONE RUSH",
+    "apprenticeUsable": false,
+    "battleArenaRating": 1
   },
   "LOCK_ON": {
     "effect": "LOCK_ON",
@@ -2627,7 +3025,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "LOCK-ON"
+    "name": "LOCK-ON",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "OUTRAGE": {
     "effect": "RAMPAGE",
@@ -2644,7 +3044,9 @@
       "MIRROR_AFFECTED",
       "KINGSROCK_AFFECTED"
     ],
-    "name": "OUTRAGE"
+    "name": "OUTRAGE",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "SANDSTORM": {
     "effect": "SANDSTORM",
@@ -2656,7 +3058,9 @@
     "target": "USER",
     "priority": 0,
     "flags": [],
-    "name": "SANDSTORM"
+    "name": "SANDSTORM",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "GIGA_DRAIN": {
     "effect": "ABSORB",
@@ -2668,7 +3072,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "GIGA DRAIN"
+    "name": "GIGA DRAIN",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "ENDURE": {
     "effect": "ENDURE",
@@ -2680,7 +3086,9 @@
     "target": "USER",
     "priority": 3,
     "flags": [],
-    "name": "ENDURE"
+    "name": "ENDURE",
+    "apprenticeUsable": true,
+    "battleArenaRating": -1
   },
   "CHARM": {
     "effect": "ATTACK_DOWN_2",
@@ -2692,7 +3100,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MAGICCOAT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "CHARM"
+    "name": "CHARM",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "ROLLOUT": {
     "effect": "ROLLOUT",
@@ -2709,7 +3119,9 @@
       "MIRROR_AFFECTED",
       "KINGSROCK_AFFECTED"
     ],
-    "name": "ROLLOUT"
+    "name": "ROLLOUT",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "FALSE_SWIPE": {
     "effect": "FALSE_SWIPE",
@@ -2726,7 +3138,9 @@
       "MIRROR_AFFECTED",
       "KINGSROCK_AFFECTED"
     ],
-    "name": "FALSE SWIPE"
+    "name": "FALSE SWIPE",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "SWAGGER": {
     "effect": "SWAGGER",
@@ -2738,7 +3152,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MAGICCOAT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "SWAGGER"
+    "name": "SWAGGER",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "MILK_DRINK": {
     "effect": "SOFTBOILED",
@@ -2750,7 +3166,9 @@
     "target": "USER",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "SNATCH_AFFECTED"],
-    "name": "MILK DRINK"
+    "name": "MILK DRINK",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "SPARK": {
     "effect": "PARALYZE_HIT",
@@ -2762,7 +3180,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["MAKES_CONTACT", "PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "SPARK"
+    "name": "SPARK",
+    "apprenticeUsable": false,
+    "battleArenaRating": 1
   },
   "FURY_CUTTER": {
     "effect": "FURY_CUTTER",
@@ -2779,7 +3199,9 @@
       "MIRROR_AFFECTED",
       "KINGSROCK_AFFECTED"
     ],
-    "name": "FURY CUTTER"
+    "name": "FURY CUTTER",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "STEEL_WING": {
     "effect": "DEFENSE_UP_HIT",
@@ -2796,7 +3218,9 @@
       "MIRROR_AFFECTED",
       "KINGSROCK_AFFECTED"
     ],
-    "name": "STEEL WING"
+    "name": "STEEL WING",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "MEAN_LOOK": {
     "effect": "MEAN_LOOK",
@@ -2808,7 +3232,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MAGICCOAT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "MEAN LOOK"
+    "name": "MEAN LOOK",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "ATTRACT": {
     "effect": "ATTRACT",
@@ -2820,7 +3246,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MAGICCOAT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "ATTRACT"
+    "name": "ATTRACT",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "SLEEP_TALK": {
     "effect": "SLEEP_TALK",
@@ -2832,7 +3260,9 @@
     "target": "DEPENDS",
     "priority": 0,
     "flags": [],
-    "name": "SLEEP TALK"
+    "name": "SLEEP TALK",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "HEAL_BELL": {
     "effect": "HEAL_BELL",
@@ -2844,7 +3274,9 @@
     "target": "USER",
     "priority": 0,
     "flags": ["SNATCH_AFFECTED"],
-    "name": "HEAL BELL"
+    "name": "HEAL BELL",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "RETURN": {
     "effect": "RETURN",
@@ -2861,7 +3293,9 @@
       "MIRROR_AFFECTED",
       "KINGSROCK_AFFECTED"
     ],
-    "name": "RETURN"
+    "name": "RETURN",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "PRESENT": {
     "effect": "PRESENT",
@@ -2873,7 +3307,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "PRESENT"
+    "name": "PRESENT",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "FRUSTRATION": {
     "effect": "FRUSTRATION",
@@ -2890,7 +3326,9 @@
       "MIRROR_AFFECTED",
       "KINGSROCK_AFFECTED"
     ],
-    "name": "FRUSTRATION"
+    "name": "FRUSTRATION",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "SAFEGUARD": {
     "effect": "SAFEGUARD",
@@ -2902,7 +3340,9 @@
     "target": "USER",
     "priority": 0,
     "flags": ["SNATCH_AFFECTED"],
-    "name": "SAFEGUARD"
+    "name": "SAFEGUARD",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "PAIN_SPLIT": {
     "effect": "PAIN_SPLIT",
@@ -2914,7 +3354,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "PAIN SPLIT"
+    "name": "PAIN SPLIT",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "SACRED_FIRE": {
     "effect": "THAW_HIT",
@@ -2926,7 +3368,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "SACRED FIRE"
+    "name": "SACRED FIRE",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "MAGNITUDE": {
     "effect": "MAGNITUDE",
@@ -2938,7 +3382,9 @@
     "target": "FOES_AND_ALLY",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
-    "name": "MAGNITUDE"
+    "name": "MAGNITUDE",
+    "apprenticeUsable": false,
+    "battleArenaRating": 1
   },
   "DYNAMIC_PUNCH": {
     "effect": "CONFUSE_HIT",
@@ -2950,7 +3396,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["MAKES_CONTACT", "PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "DYNAMICPUNCH"
+    "name": "DYNAMICPUNCH",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "MEGAHORN": {
     "effect": "HIT",
@@ -2967,7 +3415,9 @@
       "MIRROR_AFFECTED",
       "KINGSROCK_AFFECTED"
     ],
-    "name": "MEGAHORN"
+    "name": "MEGAHORN",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "DRAGON_BREATH": {
     "effect": "PARALYZE_HIT",
@@ -2979,7 +3429,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
-    "name": "DRAGONBREATH"
+    "name": "DRAGONBREATH",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "BATON_PASS": {
     "effect": "BATON_PASS",
@@ -2991,7 +3443,9 @@
     "target": "USER",
     "priority": 0,
     "flags": [],
-    "name": "BATON PASS"
+    "name": "BATON PASS",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "ENCORE": {
     "effect": "ENCORE",
@@ -3003,7 +3457,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "ENCORE"
+    "name": "ENCORE",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "PURSUIT": {
     "effect": "PURSUIT",
@@ -3015,7 +3471,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["MAKES_CONTACT", "PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "PURSUIT"
+    "name": "PURSUIT",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "RAPID_SPIN": {
     "effect": "RAPID_SPIN",
@@ -3032,7 +3490,9 @@
       "MIRROR_AFFECTED",
       "KINGSROCK_AFFECTED"
     ],
-    "name": "RAPID SPIN"
+    "name": "RAPID SPIN",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "SWEET_SCENT": {
     "effect": "EVASION_DOWN",
@@ -3044,7 +3504,9 @@
     "target": "BOTH",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MAGICCOAT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "SWEET SCENT"
+    "name": "SWEET SCENT",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "IRON_TAIL": {
     "effect": "DEFENSE_DOWN_HIT",
@@ -3056,7 +3518,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["MAKES_CONTACT", "PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "IRON TAIL"
+    "name": "IRON TAIL",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "METAL_CLAW": {
     "effect": "ATTACK_UP_HIT",
@@ -3068,7 +3532,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["MAKES_CONTACT", "PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "METAL CLAW"
+    "name": "METAL CLAW",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "VITAL_THROW": {
     "effect": "VITAL_THROW",
@@ -3085,7 +3551,9 @@
       "MIRROR_AFFECTED",
       "KINGSROCK_AFFECTED"
     ],
-    "name": "VITAL THROW"
+    "name": "VITAL THROW",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "MORNING_SUN": {
     "effect": "MORNING_SUN",
@@ -3097,7 +3565,9 @@
     "target": "USER",
     "priority": 0,
     "flags": ["SNATCH_AFFECTED"],
-    "name": "MORNING SUN"
+    "name": "MORNING SUN",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "SYNTHESIS": {
     "effect": "SYNTHESIS",
@@ -3109,7 +3579,9 @@
     "target": "USER",
     "priority": 0,
     "flags": ["SNATCH_AFFECTED"],
-    "name": "SYNTHESIS"
+    "name": "SYNTHESIS",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "MOONLIGHT": {
     "effect": "MOONLIGHT",
@@ -3121,7 +3593,9 @@
     "target": "USER",
     "priority": 0,
     "flags": ["SNATCH_AFFECTED"],
-    "name": "MOONLIGHT"
+    "name": "MOONLIGHT",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "HIDDEN_POWER": {
     "effect": "HIDDEN_POWER",
@@ -3133,7 +3607,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
-    "name": "HIDDEN POWER"
+    "name": "HIDDEN POWER",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "CROSS_CHOP": {
     "effect": "HIGH_CRITICAL",
@@ -3150,7 +3626,9 @@
       "MIRROR_AFFECTED",
       "KINGSROCK_AFFECTED"
     ],
-    "name": "CROSS CHOP"
+    "name": "CROSS CHOP",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "TWISTER": {
     "effect": "TWISTER",
@@ -3162,7 +3640,9 @@
     "target": "BOTH",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
-    "name": "TWISTER"
+    "name": "TWISTER",
+    "apprenticeUsable": false,
+    "battleArenaRating": 1
   },
   "RAIN_DANCE": {
     "effect": "RAIN_DANCE",
@@ -3174,7 +3654,9 @@
     "target": "USER",
     "priority": 0,
     "flags": [],
-    "name": "RAIN DANCE"
+    "name": "RAIN DANCE",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "SUNNY_DAY": {
     "effect": "SUNNY_DAY",
@@ -3186,7 +3668,9 @@
     "target": "USER",
     "priority": 0,
     "flags": [],
-    "name": "SUNNY DAY"
+    "name": "SUNNY DAY",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "CRUNCH": {
     "effect": "SPECIAL_DEFENSE_DOWN_HIT",
@@ -3198,7 +3682,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["MAKES_CONTACT", "PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "CRUNCH"
+    "name": "CRUNCH",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "MIRROR_COAT": {
     "effect": "MIRROR_COAT",
@@ -3210,7 +3696,9 @@
     "target": "DEPENDS",
     "priority": -5,
     "flags": ["MIRROR_AFFECTED"],
-    "name": "MIRROR COAT"
+    "name": "MIRROR COAT",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "PSYCH_UP": {
     "effect": "PSYCH_UP",
@@ -3222,7 +3710,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["SNATCH_AFFECTED"],
-    "name": "PSYCH UP"
+    "name": "PSYCH UP",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "EXTREME_SPEED": {
     "effect": "QUICK_ATTACK",
@@ -3239,7 +3729,9 @@
       "MIRROR_AFFECTED",
       "KINGSROCK_AFFECTED"
     ],
-    "name": "EXTREMESPEED"
+    "name": "EXTREMESPEED",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "ANCIENT_POWER": {
     "effect": "ALL_STATS_UP_HIT",
@@ -3251,7 +3743,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["MAKES_CONTACT", "PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "ANCIENTPOWER"
+    "name": "ANCIENTPOWER",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "SHADOW_BALL": {
     "effect": "SPECIAL_DEFENSE_DOWN_HIT",
@@ -3263,7 +3757,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "SHADOW BALL"
+    "name": "SHADOW BALL",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "FUTURE_SIGHT": {
     "effect": "FUTURE_SIGHT",
@@ -3275,7 +3771,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": [],
-    "name": "FUTURE SIGHT"
+    "name": "FUTURE SIGHT",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "ROCK_SMASH": {
     "effect": "DEFENSE_DOWN_HIT",
@@ -3287,7 +3785,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["MAKES_CONTACT", "PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "ROCK SMASH"
+    "name": "ROCK SMASH",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "WHIRLPOOL": {
     "effect": "TRAP",
@@ -3299,7 +3799,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
-    "name": "WHIRLPOOL"
+    "name": "WHIRLPOOL",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "BEAT_UP": {
     "effect": "BEAT_UP",
@@ -3311,7 +3813,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
-    "name": "BEAT UP"
+    "name": "BEAT UP",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "FAKE_OUT": {
     "effect": "FAKE_OUT",
@@ -3323,7 +3827,9 @@
     "target": "SELECTED",
     "priority": 1,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "FAKE OUT"
+    "name": "FAKE OUT",
+    "apprenticeUsable": true,
+    "battleArenaRating": -1
   },
   "UPROAR": {
     "effect": "UPROAR",
@@ -3335,7 +3841,9 @@
     "target": "RANDOM",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
-    "name": "UPROAR"
+    "name": "UPROAR",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "STOCKPILE": {
     "effect": "STOCKPILE",
@@ -3347,7 +3855,9 @@
     "target": "USER",
     "priority": 0,
     "flags": ["SNATCH_AFFECTED"],
-    "name": "STOCKPILE"
+    "name": "STOCKPILE",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "SPIT_UP": {
     "effect": "SPIT_UP",
@@ -3359,7 +3869,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "KINGSROCK_AFFECTED"],
-    "name": "SPIT UP"
+    "name": "SPIT UP",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "SWALLOW": {
     "effect": "SWALLOW",
@@ -3371,7 +3883,9 @@
     "target": "USER",
     "priority": 0,
     "flags": ["SNATCH_AFFECTED"],
-    "name": "SWALLOW"
+    "name": "SWALLOW",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "HEAT_WAVE": {
     "effect": "BURN_HIT",
@@ -3383,7 +3897,9 @@
     "target": "BOTH",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "HEAT WAVE"
+    "name": "HEAT WAVE",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "HAIL": {
     "effect": "HAIL",
@@ -3395,7 +3911,9 @@
     "target": "USER",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED"],
-    "name": "HAIL"
+    "name": "HAIL",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "TORMENT": {
     "effect": "TORMENT",
@@ -3407,7 +3925,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "TORMENT"
+    "name": "TORMENT",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "FLATTER": {
     "effect": "FLATTER",
@@ -3419,7 +3939,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MAGICCOAT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "FLATTER"
+    "name": "FLATTER",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "WILL_O_WISP": {
     "effect": "WILL_O_WISP",
@@ -3431,7 +3953,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MAGICCOAT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "WILL-O-WISP"
+    "name": "WILL-O-WISP",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "MEMENTO": {
     "effect": "MEMENTO",
@@ -3443,7 +3967,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "MEMENTO"
+    "name": "MEMENTO",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "FACADE": {
     "effect": "FACADE",
@@ -3455,7 +3981,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["MAKES_CONTACT", "PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "FACADE"
+    "name": "FACADE",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "FOCUS_PUNCH": {
     "effect": "FOCUS_PUNCH",
@@ -3467,7 +3995,9 @@
     "target": "SELECTED",
     "priority": -3,
     "flags": ["MAKES_CONTACT", "PROTECT_AFFECTED"],
-    "name": "FOCUS PUNCH"
+    "name": "FOCUS PUNCH",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "SMELLING_SALT": {
     "effect": "SMELLINGSALT",
@@ -3479,7 +4009,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["MAKES_CONTACT", "PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "SMELLINGSALT"
+    "name": "SMELLINGSALT",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "FOLLOW_ME": {
     "effect": "FOLLOW_ME",
@@ -3491,7 +4023,9 @@
     "target": "USER",
     "priority": 3,
     "flags": [],
-    "name": "FOLLOW ME"
+    "name": "FOLLOW ME",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "NATURE_POWER": {
     "effect": "NATURE_POWER",
@@ -3503,7 +4037,9 @@
     "target": "DEPENDS",
     "priority": 0,
     "flags": [],
-    "name": "NATURE POWER"
+    "name": "NATURE POWER",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "CHARGE": {
     "effect": "CHARGE",
@@ -3515,7 +4051,9 @@
     "target": "USER",
     "priority": 0,
     "flags": ["SNATCH_AFFECTED"],
-    "name": "CHARGE"
+    "name": "CHARGE",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "TAUNT": {
     "effect": "TAUNT",
@@ -3527,7 +4065,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED"],
-    "name": "TAUNT"
+    "name": "TAUNT",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "HELPING_HAND": {
     "effect": "HELPING_HAND",
@@ -3539,7 +4079,9 @@
     "target": "USER",
     "priority": 5,
     "flags": [],
-    "name": "HELPING HAND"
+    "name": "HELPING HAND",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "TRICK": {
     "effect": "TRICK",
@@ -3551,7 +4093,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "TRICK"
+    "name": "TRICK",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "ROLE_PLAY": {
     "effect": "ROLE_PLAY",
@@ -3563,7 +4107,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": [],
-    "name": "ROLE PLAY"
+    "name": "ROLE PLAY",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "WISH": {
     "effect": "WISH",
@@ -3575,7 +4121,9 @@
     "target": "USER",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED"],
-    "name": "WISH"
+    "name": "WISH",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "ASSIST": {
     "effect": "ASSIST",
@@ -3587,7 +4135,9 @@
     "target": "DEPENDS",
     "priority": 0,
     "flags": [],
-    "name": "ASSIST"
+    "name": "ASSIST",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "INGRAIN": {
     "effect": "INGRAIN",
@@ -3599,7 +4149,9 @@
     "target": "USER",
     "priority": 0,
     "flags": ["SNATCH_AFFECTED"],
-    "name": "INGRAIN"
+    "name": "INGRAIN",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "SUPERPOWER": {
     "effect": "SUPERPOWER",
@@ -3611,7 +4163,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["MAKES_CONTACT", "PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "SUPERPOWER"
+    "name": "SUPERPOWER",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "MAGIC_COAT": {
     "effect": "MAGIC_COAT",
@@ -3623,7 +4177,9 @@
     "target": "DEPENDS",
     "priority": 4,
     "flags": [],
-    "name": "MAGIC COAT"
+    "name": "MAGIC COAT",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "RECYCLE": {
     "effect": "RECYCLE",
@@ -3635,7 +4191,9 @@
     "target": "USER",
     "priority": 0,
     "flags": [],
-    "name": "RECYCLE"
+    "name": "RECYCLE",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "REVENGE": {
     "effect": "REVENGE",
@@ -3652,7 +4210,9 @@
       "MIRROR_AFFECTED",
       "KINGSROCK_AFFECTED"
     ],
-    "name": "REVENGE"
+    "name": "REVENGE",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "BRICK_BREAK": {
     "effect": "BRICK_BREAK",
@@ -3669,7 +4229,9 @@
       "MIRROR_AFFECTED",
       "KINGSROCK_AFFECTED"
     ],
-    "name": "BRICK BREAK"
+    "name": "BRICK BREAK",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "YAWN": {
     "effect": "YAWN",
@@ -3681,7 +4243,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MAGICCOAT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "YAWN"
+    "name": "YAWN",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "KNOCK_OFF": {
     "effect": "KNOCK_OFF",
@@ -3693,7 +4257,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["MAKES_CONTACT", "PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "KNOCK OFF"
+    "name": "KNOCK OFF",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "ENDEAVOR": {
     "effect": "ENDEAVOR",
@@ -3710,7 +4276,9 @@
       "MIRROR_AFFECTED",
       "KINGSROCK_AFFECTED"
     ],
-    "name": "ENDEAVOR"
+    "name": "ENDEAVOR",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "ERUPTION": {
     "effect": "ERUPTION",
@@ -3722,7 +4290,9 @@
     "target": "BOTH",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
-    "name": "ERUPTION"
+    "name": "ERUPTION",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "SKILL_SWAP": {
     "effect": "SKILL_SWAP",
@@ -3734,7 +4304,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "SKILL SWAP"
+    "name": "SKILL SWAP",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "IMPRISON": {
     "effect": "IMPRISON",
@@ -3746,7 +4318,9 @@
     "target": "USER",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED"],
-    "name": "IMPRISON"
+    "name": "IMPRISON",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "REFRESH": {
     "effect": "REFRESH",
@@ -3758,7 +4332,9 @@
     "target": "USER",
     "priority": 0,
     "flags": ["SNATCH_AFFECTED"],
-    "name": "REFRESH"
+    "name": "REFRESH",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "GRUDGE": {
     "effect": "GRUDGE",
@@ -3770,7 +4346,9 @@
     "target": "USER",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "GRUDGE"
+    "name": "GRUDGE",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "SNATCH": {
     "effect": "SNATCH",
@@ -3782,7 +4360,9 @@
     "target": "DEPENDS",
     "priority": 4,
     "flags": ["MIRROR_AFFECTED"],
-    "name": "SNATCH"
+    "name": "SNATCH",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "SECRET_POWER": {
     "effect": "SECRET_POWER",
@@ -3794,7 +4374,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "SECRET POWER"
+    "name": "SECRET POWER",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "DIVE": {
     "effect": "SEMI_INVULNERABLE",
@@ -3811,7 +4393,9 @@
       "MIRROR_AFFECTED",
       "KINGSROCK_AFFECTED"
     ],
-    "name": "DIVE"
+    "name": "DIVE",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "ARM_THRUST": {
     "effect": "MULTI_HIT",
@@ -3828,7 +4412,9 @@
       "MIRROR_AFFECTED",
       "KINGSROCK_AFFECTED"
     ],
-    "name": "ARM THRUST"
+    "name": "ARM THRUST",
+    "apprenticeUsable": false,
+    "battleArenaRating": 1
   },
   "CAMOUFLAGE": {
     "effect": "CAMOUFLAGE",
@@ -3840,7 +4426,9 @@
     "target": "USER",
     "priority": 0,
     "flags": ["SNATCH_AFFECTED"],
-    "name": "CAMOUFLAGE"
+    "name": "CAMOUFLAGE",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "TAIL_GLOW": {
     "effect": "SPECIAL_ATTACK_UP_2",
@@ -3852,7 +4440,9 @@
     "target": "USER",
     "priority": 0,
     "flags": ["SNATCH_AFFECTED"],
-    "name": "TAIL GLOW"
+    "name": "TAIL GLOW",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "LUSTER_PURGE": {
     "effect": "SPECIAL_DEFENSE_DOWN_HIT",
@@ -3864,7 +4454,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "LUSTER PURGE"
+    "name": "LUSTER PURGE",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "MIST_BALL": {
     "effect": "SPECIAL_ATTACK_DOWN_HIT",
@@ -3876,7 +4468,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "MIST BALL"
+    "name": "MIST BALL",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "FEATHER_DANCE": {
     "effect": "ATTACK_DOWN_2",
@@ -3888,7 +4482,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MAGICCOAT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "FEATHERDANCE"
+    "name": "FEATHERDANCE",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "TEETER_DANCE": {
     "effect": "TEETER_DANCE",
@@ -3900,7 +4496,9 @@
     "target": "FOES_AND_ALLY",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED"],
-    "name": "TEETER DANCE"
+    "name": "TEETER DANCE",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "BLAZE_KICK": {
     "effect": "BLAZE_KICK",
@@ -3912,7 +4510,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["MAKES_CONTACT", "PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "BLAZE KICK"
+    "name": "BLAZE KICK",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "MUD_SPORT": {
     "effect": "MUD_SPORT",
@@ -3924,7 +4524,9 @@
     "target": "USER",
     "priority": 0,
     "flags": [],
-    "name": "MUD SPORT"
+    "name": "MUD SPORT",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "ICE_BALL": {
     "effect": "ROLLOUT",
@@ -3941,7 +4543,9 @@
       "MIRROR_AFFECTED",
       "KINGSROCK_AFFECTED"
     ],
-    "name": "ICE BALL"
+    "name": "ICE BALL",
+    "apprenticeUsable": false,
+    "battleArenaRating": 1
   },
   "NEEDLE_ARM": {
     "effect": "FLINCH_MINIMIZE_HIT",
@@ -3953,7 +4557,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["MAKES_CONTACT", "PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "NEEDLE ARM"
+    "name": "NEEDLE ARM",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "SLACK_OFF": {
     "effect": "RESTORE_HP",
@@ -3965,7 +4571,9 @@
     "target": "USER",
     "priority": 0,
     "flags": ["SNATCH_AFFECTED"],
-    "name": "SLACK OFF"
+    "name": "SLACK OFF",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "HYPER_VOICE": {
     "effect": "HIT",
@@ -3977,7 +4585,9 @@
     "target": "BOTH",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "HYPER VOICE"
+    "name": "HYPER VOICE",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "POISON_FANG": {
     "effect": "POISON_FANG",
@@ -3989,7 +4599,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["MAKES_CONTACT", "PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "POISON FANG"
+    "name": "POISON FANG",
+    "apprenticeUsable": false,
+    "battleArenaRating": 1
   },
   "CRUSH_CLAW": {
     "effect": "DEFENSE_DOWN_HIT",
@@ -4001,7 +4613,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["MAKES_CONTACT", "PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "CRUSH CLAW"
+    "name": "CRUSH CLAW",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "BLAST_BURN": {
     "effect": "RECHARGE",
@@ -4013,7 +4627,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
-    "name": "BLAST BURN"
+    "name": "BLAST BURN",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "HYDRO_CANNON": {
     "effect": "RECHARGE",
@@ -4025,7 +4641,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
-    "name": "HYDRO CANNON"
+    "name": "HYDRO CANNON",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "METEOR_MASH": {
     "effect": "ATTACK_UP_HIT",
@@ -4042,7 +4660,9 @@
       "MIRROR_AFFECTED",
       "KINGSROCK_AFFECTED"
     ],
-    "name": "METEOR MASH"
+    "name": "METEOR MASH",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "ASTONISH": {
     "effect": "FLINCH_MINIMIZE_HIT",
@@ -4054,7 +4674,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["MAKES_CONTACT", "PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "ASTONISH"
+    "name": "ASTONISH",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "WEATHER_BALL": {
     "effect": "WEATHER_BALL",
@@ -4066,7 +4688,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
-    "name": "WEATHER BALL"
+    "name": "WEATHER BALL",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "AROMATHERAPY": {
     "effect": "HEAL_BELL",
@@ -4078,7 +4702,9 @@
     "target": "USER",
     "priority": 0,
     "flags": ["SNATCH_AFFECTED"],
-    "name": "AROMATHERAPY"
+    "name": "AROMATHERAPY",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "FAKE_TEARS": {
     "effect": "SPECIAL_DEFENSE_DOWN_2",
@@ -4090,7 +4716,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MAGICCOAT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "FAKE TEARS"
+    "name": "FAKE TEARS",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "AIR_CUTTER": {
     "effect": "HIGH_CRITICAL",
@@ -4102,7 +4730,9 @@
     "target": "BOTH",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
-    "name": "AIR CUTTER"
+    "name": "AIR CUTTER",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "OVERHEAT": {
     "effect": "OVERHEAT",
@@ -4119,7 +4749,9 @@
       "MIRROR_AFFECTED",
       "KINGSROCK_AFFECTED"
     ],
-    "name": "OVERHEAT"
+    "name": "OVERHEAT",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "ODOR_SLEUTH": {
     "effect": "FORESIGHT",
@@ -4131,7 +4763,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "ODOR SLEUTH"
+    "name": "ODOR SLEUTH",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "ROCK_TOMB": {
     "effect": "SPEED_DOWN_HIT",
@@ -4143,7 +4777,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "ROCK TOMB"
+    "name": "ROCK TOMB",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "SILVER_WIND": {
     "effect": "ALL_STATS_UP_HIT",
@@ -4155,7 +4791,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
-    "name": "SILVER WIND"
+    "name": "SILVER WIND",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "METAL_SOUND": {
     "effect": "SPECIAL_DEFENSE_DOWN_2",
@@ -4167,7 +4805,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MAGICCOAT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "METAL SOUND"
+    "name": "METAL SOUND",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "GRASS_WHISTLE": {
     "effect": "SLEEP",
@@ -4179,7 +4819,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MAGICCOAT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "GRASSWHISTLE"
+    "name": "GRASSWHISTLE",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "TICKLE": {
     "effect": "TICKLE",
@@ -4196,7 +4838,9 @@
       "MIRROR_AFFECTED",
       "KINGSROCK_AFFECTED"
     ],
-    "name": "TICKLE"
+    "name": "TICKLE",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "COSMIC_POWER": {
     "effect": "COSMIC_POWER",
@@ -4208,7 +4852,9 @@
     "target": "USER",
     "priority": 0,
     "flags": ["SNATCH_AFFECTED"],
-    "name": "COSMIC POWER"
+    "name": "COSMIC POWER",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "WATER_SPOUT": {
     "effect": "ERUPTION",
@@ -4220,7 +4866,9 @@
     "target": "BOTH",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "WATER SPOUT"
+    "name": "WATER SPOUT",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "SIGNAL_BEAM": {
     "effect": "CONFUSE_HIT",
@@ -4232,7 +4880,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
-    "name": "SIGNAL BEAM"
+    "name": "SIGNAL BEAM",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "SHADOW_PUNCH": {
     "effect": "ALWAYS_HIT",
@@ -4249,7 +4899,9 @@
       "MIRROR_AFFECTED",
       "KINGSROCK_AFFECTED"
     ],
-    "name": "SHADOW PUNCH"
+    "name": "SHADOW PUNCH",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "EXTRASENSORY": {
     "effect": "FLINCH_MINIMIZE_HIT",
@@ -4261,7 +4913,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "EXTRASENSORY"
+    "name": "EXTRASENSORY",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "SKY_UPPERCUT": {
     "effect": "SKY_UPPERCUT",
@@ -4278,7 +4932,9 @@
       "MIRROR_AFFECTED",
       "KINGSROCK_AFFECTED"
     ],
-    "name": "SKY UPPERCUT"
+    "name": "SKY UPPERCUT",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "SAND_TOMB": {
     "effect": "TRAP",
@@ -4290,7 +4946,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
-    "name": "SAND TOMB"
+    "name": "SAND TOMB",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "SHEER_COLD": {
     "effect": "OHKO",
@@ -4302,7 +4960,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "SHEER COLD"
+    "name": "SHEER COLD",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "MUDDY_WATER": {
     "effect": "ACCURACY_DOWN_HIT",
@@ -4314,7 +4974,9 @@
     "target": "BOTH",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
-    "name": "MUDDY WATER"
+    "name": "MUDDY WATER",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "BULLET_SEED": {
     "effect": "MULTI_HIT",
@@ -4326,7 +4988,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
-    "name": "BULLET SEED"
+    "name": "BULLET SEED",
+    "apprenticeUsable": false,
+    "battleArenaRating": 1
   },
   "AERIAL_ACE": {
     "effect": "ALWAYS_HIT",
@@ -4343,7 +5007,9 @@
       "MIRROR_AFFECTED",
       "KINGSROCK_AFFECTED"
     ],
-    "name": "AERIAL ACE"
+    "name": "AERIAL ACE",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "ICICLE_SPEAR": {
     "effect": "MULTI_HIT",
@@ -4355,7 +5021,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
-    "name": "ICICLE SPEAR"
+    "name": "ICICLE SPEAR",
+    "apprenticeUsable": false,
+    "battleArenaRating": 1
   },
   "IRON_DEFENSE": {
     "effect": "DEFENSE_UP_2",
@@ -4367,7 +5035,9 @@
     "target": "USER",
     "priority": 0,
     "flags": ["SNATCH_AFFECTED"],
-    "name": "IRON DEFENSE"
+    "name": "IRON DEFENSE",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "BLOCK": {
     "effect": "MEAN_LOOK",
@@ -4379,7 +5049,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MAGICCOAT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "BLOCK"
+    "name": "BLOCK",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "HOWL": {
     "effect": "ATTACK_UP",
@@ -4391,7 +5063,9 @@
     "target": "USER",
     "priority": 0,
     "flags": ["SNATCH_AFFECTED"],
-    "name": "HOWL"
+    "name": "HOWL",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "DRAGON_CLAW": {
     "effect": "HIT",
@@ -4408,7 +5082,9 @@
       "MIRROR_AFFECTED",
       "KINGSROCK_AFFECTED"
     ],
-    "name": "DRAGON CLAW"
+    "name": "DRAGON CLAW",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "FRENZY_PLANT": {
     "effect": "RECHARGE",
@@ -4420,7 +5096,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
-    "name": "FRENZY PLANT"
+    "name": "FRENZY PLANT",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "BULK_UP": {
     "effect": "BULK_UP",
@@ -4432,7 +5110,9 @@
     "target": "USER",
     "priority": 0,
     "flags": ["SNATCH_AFFECTED"],
-    "name": "BULK UP"
+    "name": "BULK UP",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "BOUNCE": {
     "effect": "SEMI_INVULNERABLE",
@@ -4449,7 +5129,9 @@
       "MIRROR_AFFECTED",
       "KINGSROCK_AFFECTED"
     ],
-    "name": "BOUNCE"
+    "name": "BOUNCE",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "MUD_SHOT": {
     "effect": "SPEED_DOWN_HIT",
@@ -4461,7 +5143,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
-    "name": "MUD SHOT"
+    "name": "MUD SHOT",
+    "apprenticeUsable": false,
+    "battleArenaRating": 1
   },
   "POISON_TAIL": {
     "effect": "POISON_TAIL",
@@ -4478,7 +5162,9 @@
       "MIRROR_AFFECTED",
       "KINGSROCK_AFFECTED"
     ],
-    "name": "POISON TAIL"
+    "name": "POISON TAIL",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "COVET": {
     "effect": "THIEF",
@@ -4490,7 +5176,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
-    "name": "COVET"
+    "name": "COVET",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "VOLT_TACKLE": {
     "effect": "DOUBLE_EDGE",
@@ -4507,7 +5195,9 @@
       "MIRROR_AFFECTED",
       "KINGSROCK_AFFECTED"
     ],
-    "name": "VOLT TACKLE"
+    "name": "VOLT TACKLE",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "MAGICAL_LEAF": {
     "effect": "ALWAYS_HIT",
@@ -4519,7 +5209,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
-    "name": "MAGICAL LEAF"
+    "name": "MAGICAL LEAF",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "WATER_SPORT": {
     "effect": "WATER_SPORT",
@@ -4531,7 +5223,9 @@
     "target": "USER",
     "priority": 0,
     "flags": [],
-    "name": "WATER SPORT"
+    "name": "WATER SPORT",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "CALM_MIND": {
     "effect": "CALM_MIND",
@@ -4543,7 +5237,9 @@
     "target": "USER",
     "priority": 0,
     "flags": ["SNATCH_AFFECTED"],
-    "name": "CALM MIND"
+    "name": "CALM MIND",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "LEAF_BLADE": {
     "effect": "HIGH_CRITICAL",
@@ -4560,7 +5256,9 @@
       "MIRROR_AFFECTED",
       "KINGSROCK_AFFECTED"
     ],
-    "name": "LEAF BLADE"
+    "name": "LEAF BLADE",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "DRAGON_DANCE": {
     "effect": "DRAGON_DANCE",
@@ -4572,7 +5270,9 @@
     "target": "USER",
     "priority": 0,
     "flags": ["SNATCH_AFFECTED"],
-    "name": "DRAGON DANCE"
+    "name": "DRAGON DANCE",
+    "apprenticeUsable": true,
+    "battleArenaRating": 0
   },
   "ROCK_BLAST": {
     "effect": "MULTI_HIT",
@@ -4584,7 +5284,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
-    "name": "ROCK BLAST"
+    "name": "ROCK BLAST",
+    "apprenticeUsable": false,
+    "battleArenaRating": 1
   },
   "SHOCK_WAVE": {
     "effect": "ALWAYS_HIT",
@@ -4596,7 +5298,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
-    "name": "SHOCK WAVE"
+    "name": "SHOCK WAVE",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "WATER_PULSE": {
     "effect": "CONFUSE_HIT",
@@ -4608,7 +5312,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
-    "name": "WATER PULSE"
+    "name": "WATER PULSE",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "DOOM_DESIRE": {
     "effect": "FUTURE_SIGHT",
@@ -4620,7 +5326,9 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": [],
-    "name": "DOOM DESIRE"
+    "name": "DOOM DESIRE",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   },
   "PSYCHO_BOOST": {
     "effect": "OVERHEAT",
@@ -4632,6 +5340,8 @@
     "target": "SELECTED",
     "priority": 0,
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
-    "name": "PSYCHO BOOST"
+    "name": "PSYCHO BOOST",
+    "apprenticeUsable": true,
+    "battleArenaRating": 1
   }
 }

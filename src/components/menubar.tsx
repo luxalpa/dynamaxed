@@ -7,6 +7,7 @@ import { px } from "csx";
 import { ViewManager } from "@/modules/view-manager";
 import { PortalTarget } from "portal-vue";
 import { ProjectManager } from "@/modules/project-manager";
+import { GameModel } from "@/model/model";
 
 interface Menu {
   text: string;
@@ -27,8 +28,16 @@ const menu: Menu[] = [
         text: "Save",
         shortcut: "Ctrl+S",
         async fn() {
-          await ProjectManager.Save();
+          ProjectManager.Save();
           console.log("Saved");
+        }
+      },
+      {
+        text: "Compile",
+        shortcut: "F7",
+        async fn() {
+          GameModel.Compile();
+          console.log("Compiled");
         }
       },
       {

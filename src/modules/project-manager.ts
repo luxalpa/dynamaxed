@@ -58,12 +58,12 @@ export const ProjectManager = new (class {
     this.openProject(filePaths[0]);
   }
 
-  async Save() {
+  Save() {
     if (this.currentProjectPath === "") {
       return;
     }
     persistState();
-    await GameModel.Save();
+    GameModel.Save();
   }
 })();
 

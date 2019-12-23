@@ -1,8 +1,81 @@
-import fs from "fs";
-import path from "path";
-import { ProjectManager } from "@/modules/project-manager";
-import { Trainer } from "@/model/model";
+import { GameModel, Trainer } from "@/model/model";
+import {
+  CValue,
+  DictionaryValue,
+  headerGuard,
+  ListValue,
+  makeBool,
+  makeDefineList,
+  declareConst,
+  makeText,
+  StructValue,
+  TypeCast,
+  writeToDataFile,
+  writeToFile,
+  writeToIncludeFile
+} from "@/model/serialize/common";
 import { extendArray } from "@/utils";
+
+export function compileTrainers() {
+  buildTrainerIDs();
+  buildTrainers();
+}
+
+function buildTrainerIDs() {
+  const keys = Object.keys(GameModel.model.trainers);
+
+  let list = keys.map((id, i) => ({
+    key: `TRAINER_${id}`,
+    value: i.toString()
+  }));
+  list.push({
+    key: "TRAINERS_COUNT",
+    value: keys.length.toString()
+  });
+  writeToIncludeFile(
+    "trainer_ids.h",
+    headerGuard("GENERATED_TRAINER_IDS_H", makeDefineList(list))
+  );
+}
+
+function getPartyFlags(trainer: Trainer): string {
+  let flags = [];
+  if (trainer.customMoves) {
+    flags.push("F_TRAINER_PARTY_CUSTOM_MOVESET");
+  }
+  if (trainer.party.some(mon => mon.heldItem !== "NONE")) {
+    flags.push("F_TRAINER_PARTY_HELD_ITEM");
+  }
+  if (flags.length === 0) {
+    return "0";
+  }
+  return flags.join(" | ");
+}
+
+function encounterMusic(trainer: Trainer) {
+  let music = `TRAINER_ENCOUNTER_MUSIC_${trainer.encounterMusic}`;
+  if (trainer.isFemaleEncounter) {
+    music = "F_TRAINER_FEMALE | " + music;
+  }
+  return music;
+}
+
+function trainerItems(trainer: Trainer) {
+  if (trainer.items.length == 0) {
+    return "{}";
+  }
+  const items = extendArray(trainer.items, 4, "NONE")
+    .map(item => `ITEM_${item}`)
+    .join(", ");
+  return `{${items}}`;
+}
+
+function trainerAIFlags(trainer: Trainer): string {
+  if (trainer.aiFlags.length == 0) {
+    return "0";
+  }
+  return trainer.aiFlags.map(f => `AI_SCRIPT_${f}`).join(" | ");
+}
 
 enum TrainerPartyType {
   NoItemDefaultMoves,
@@ -11,177 +84,82 @@ enum TrainerPartyType {
   ItemCustomMoves
 }
 
-function hasMoves(t: Trainer) {
-  return t.party[0].moves !== undefined && t.party[0].moves.length == 4;
-}
-function hasItems(t: Trainer) {
-  return t.party[0].heldItem !== undefined && t.party[0].heldItem !== "";
-}
-
 function getTrainerPartyType(t: Trainer) {
+  const hasItems = t.party.some(mon => mon.heldItem !== "NONE");
   const p = t.party;
-  if (hasMoves(t)) {
-    if (hasItems(t)) {
+  if (t.customMoves) {
+    if (hasItems) {
       return TrainerPartyType.ItemCustomMoves;
     } else {
       return TrainerPartyType.NoItemCustomMoves;
     }
-  } else if (hasItems(t)) {
+  } else if (hasItems) {
     return TrainerPartyType.ItemDefaultMoves;
   } else {
     return TrainerPartyType.NoItemDefaultMoves;
   }
 }
 
-function getPartyFlags(t: Trainer): string[] {
-  const p = t.party;
+function makeParty(trainer: Trainer): CValue {
+  const partyType = getTrainerPartyType(trainer);
 
-  let flags: string[] = [];
-  if (hasMoves(t)) {
-    flags.push("F_TRAINER_PARTY_CUSTOM_MOVESET");
-  }
-  if (hasItems(t)) {
-    flags.push("F_TRAINER_PARTY_HELD_ITEM");
+  if (trainer.party.length === 0) {
+    return new StructValue({
+      [TrainerPartyType[partyType]]: "NULL"
+    });
   }
 
-  return flags;
-}
+  const customItems = trainer.party.some(mon => mon.heldItem !== "NONE");
 
-function compileParty(t: Trainer): string {
-  const useMoves = hasMoves(t);
-  const useItems = hasItems(t);
+  const partyObj = new ListValue(
+    trainer.party.map(mon => {
+      let struct: Record<string, CValue> = {
+        iv: mon.iv,
+        lvl: mon.lvl,
+        species: `SPECIES_${mon.species}`
+      };
 
-  const partyType = getTrainerPartyType(t);
-
-  const party = t.party
-    .map(mon => {
-      let moves = "";
-
-      let rows = [
-        `                .iv = ${mon.iv}`,
-        `                .lvl = ${mon.lvl}`,
-        `                .species = SPECIES_${mon.species}`
-      ];
-
-      if (useItems) {
-        rows.push("                .heldItem = ITEM_" + mon.heldItem!);
+      if (customItems) {
+        struct["heldItem"] = `ITEM_${mon.heldItem}`;
       }
 
-      if (useMoves) {
-        rows.push(
-          "                .moves = " +
-            extendArray(mon.moves!, 4, "NONE")
-              .map(name => "MOVE_" + name)
-              .join(", ")
-        );
+      if (trainer.customMoves) {
+        struct["moves"] = mon.moves.map(m => `MOVE_${m}`).join(", ");
       }
 
-      return `\n            {\n` + rows.join(",\n") + `\n            }`;
+      return new StructValue(struct);
     })
-    .join(",\n");
-
-  return (
-    "{." +
-    TrainerPartyType[partyType] +
-    " = (struct TrainerMon" +
-    TrainerPartyType[partyType] +
-    "[]) {" +
-    party +
-    "\n        }}"
   );
+
+  return new StructValue({
+    [TrainerPartyType[partyType]]: new TypeCast(
+      `struct TrainerMon${TrainerPartyType[partyType]}[]`,
+      partyObj
+    )
+  });
 }
 
-function createOpponentsFile(trainers: Record<string, Trainer>) {
-  let opponentsFile = `#ifndef GUARD_CONSTANTS_OPPONENTS_H\n#define GUARD_CONSTANTS_OPPONENTS_H\n\n#define TRAINER_NONE\t\t0\n`;
-  let num = 1;
-  for (const id of Object.keys(trainers)) {
-    opponentsFile += `#define TRAINER_${id}\t${num}\n`;
-    num++;
-  }
-  opponentsFile += `\n#define TRAINERS_COUNT\t\t${num}\n\n#endif  // GUARD_CONSTANTS_OPPONENTS_H\n`;
-  fs.writeFileSync(
-    path.join(
-      ProjectManager.currentProjectPath,
-      "include/constants/opponents.h"
-    ),
-    opponentsFile
-  );
-}
-
-function createTrainersFile(trainers: Record<string, Trainer>) {
-  let trainersFile =
-    "const struct Trainer gTrainers[] = {\n" +
-    "    [TRAINER_NONE] =\n" +
-    "    {\n" +
-    "        .partyFlags = 0,\n" +
-    "        .trainerClass = TRAINER_CLASS_PKMN_TRAINER_1,\n" +
-    "        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,\n" +
-    "        .trainerPic = TRAINER_PIC_HIKER,\n" +
-    '        .trainerName = _(""),\n' +
-    "        .items = {},\n" +
-    "        .doubleBattle = FALSE,\n" +
-    "        .aiFlags = 0,\n" +
-    "        .partySize = 0,\n" +
-    "        .party = {.NoItemDefaultMoves = NULL},\n" +
-    "    },\n\n";
-  for (const id of Object.keys(trainers)) {
-    const trainer = trainers[id];
-
-    // Party Flags
-    const partyFlagsV = getPartyFlags(trainer);
-    const partyFlags = partyFlagsV.length == 0 ? "0" : partyFlagsV.join(" | ");
-
-    // Encounter Music
-    let encounterMusic = "TRAINER_ENCOUNTER_MUSIC_" + trainer.encounterMusic;
-    if (trainer.isFemaleEncounter) {
-      encounterMusic += " | F_TRAINER_FEMALE";
-    }
-
-    let items =
-      trainer.items.length != 0
-        ? extendArray(trainer.items, 4, "NONE")
-            .map(name => "ITEM_" + name)
-            .join(", ")
-        : "";
-
-    let doubleBattle = trainer.doubleBattle ? "TRUE" : "FALSE";
-
-    let aiFlags =
-      trainer.aiFlags.length == 0
-        ? "0"
-        : trainer.aiFlags.map(flag => "AI_SCRIPT_" + flag).join(" | ");
-
-    trainersFile +=
-      `    [TRAINER_${id}] =\n` +
-      `    {\n` +
-      `        .partyFlags = ${partyFlags},\n` +
-      `        .trainerClass = TRAINER_CLASS_${trainer.trainerClass},\n` +
-      `        .encounterMusic_gender = ${encounterMusic},\n` +
-      `        .trainerPic = TRAINER_PIC_${trainer.trainerPic},\n` +
-      `        .trainerName = _("${trainer.trainerName}"),\n` +
-      `        .items = {${items}},\n` +
-      `        .doubleBattle = ${doubleBattle},\n` +
-      `        .aiFlags = ${aiFlags},\n` +
-      `        .partySize = ${trainer.party.length},\n` +
-      `        .party = ${compileParty(trainer)},\n` +
-      `    },\n\n`;
-  }
-
-  trainersFile += "};";
-
-  fs.writeFileSync(
-    path.join(ProjectManager.currentProjectPath, "src/data/trainers.h"),
-    trainersFile
+function buildTrainers() {
+  const entries = Object.entries(GameModel.model.trainers).map(
+    ([id, trainer]) => ({
+      key: `TRAINER_${id}`,
+      value: new StructValue({
+        partyFlags: getPartyFlags(trainer),
+        trainerClass: `TRAINER_CLASS_${trainer.trainerClass}`,
+        encounterMusic_gender: encounterMusic(trainer),
+        trainerPic: `TRAINER_PIC_${trainer.trainerPic}`,
+        trainerName: makeText(trainer.trainerName),
+        items: trainerItems(trainer),
+        doubleBattle: makeBool(trainer.doubleBattle),
+        aiFlags: trainerAIFlags(trainer),
+        partySize: trainer.party.length.toString(),
+        party: makeParty(trainer)
+      })
+    })
   );
 
-  // We can't delete this file easily because it's still required by something else (src/data.c)
-  fs.writeFileSync(
-    path.join(ProjectManager.currentProjectPath, "src/data/trainer_parties.h"),
-    "\n"
+  writeToDataFile(
+    "trainers.h",
+    declareConst("struct Trainer gTrainers[]", new DictionaryValue(entries))
   );
-}
-
-export function compileTrainers(trainers: Record<string, Trainer>) {
-  createTrainersFile(trainers);
-  createOpponentsFile(trainers);
 }
