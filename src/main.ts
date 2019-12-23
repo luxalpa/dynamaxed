@@ -1,5 +1,5 @@
 import Vue from "vue";
-import App from "@/app";
+import { App } from "@/app";
 
 import "normalize.css";
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -34,7 +34,7 @@ import { restoreState } from "@/store";
 
 Vue.use(PortalVue);
 
-Vue.config.productionTip = true;
+Vue.config.productionTip = false;
 //Vue.config.devtools = true;
 
 library.add(

@@ -11,7 +11,9 @@
     "flags": [],
     "name": "-",
     "apprenticeUsable": false,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": ""
   },
   "POUND": {
     "effect": "HIT",
@@ -30,7 +32,9 @@
     ],
     "name": "POUND",
     "apprenticeUsable": false,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "Pounds the foe with\nforelegs or tail."
   },
   "KARATE_CHOP": {
     "effect": "HIGH_CRITICAL",
@@ -49,7 +53,9 @@
     ],
     "name": "KARATE CHOP",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "A chopping attack with a\nhigh critical-hit ratio."
   },
   "DOUBLE_SLAP": {
     "effect": "MULTI_HIT",
@@ -68,7 +74,9 @@
     ],
     "name": "DOUBLESLAP",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "Repeatedly slaps the foe\n2 to 5 times."
   },
   "COMET_PUNCH": {
     "effect": "MULTI_HIT",
@@ -87,7 +95,9 @@
     ],
     "name": "COMET PUNCH",
     "apprenticeUsable": false,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "Repeatedly punches the foe\n2 to 5 times."
   },
   "MEGA_PUNCH": {
     "effect": "HIT",
@@ -106,7 +116,9 @@
     ],
     "name": "MEGA PUNCH",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "A strong punch thrown with\nincredible power."
   },
   "PAY_DAY": {
     "effect": "PAY_DAY",
@@ -120,7 +132,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
     "name": "PAY DAY",
     "apprenticeUsable": false,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1],
+    "description": "Throws coins at the foe.\nMoney is recovered after."
   },
   "FIRE_PUNCH": {
     "effect": "BURN_HIT",
@@ -134,7 +148,9 @@
     "flags": ["MAKES_CONTACT", "PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "FIRE PUNCH",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1],
+    "description": "A fiery punch that may burn\nthe foe."
   },
   "ICE_PUNCH": {
     "effect": "FREEZE_HIT",
@@ -148,7 +164,9 @@
     "flags": ["MAKES_CONTACT", "PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "ICE PUNCH",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1],
+    "description": "An icy punch that may\nfreeze the foe."
   },
   "THUNDER_PUNCH": {
     "effect": "PARALYZE_HIT",
@@ -162,7 +180,9 @@
     "flags": ["MAKES_CONTACT", "PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "THUNDERPUNCH",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1],
+    "description": "An electrified punch that\nmay paralyze the foe."
   },
   "SCRATCH": {
     "effect": "HIT",
@@ -181,7 +201,9 @@
     ],
     "name": "SCRATCH",
     "apprenticeUsable": false,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "Scratches the foe with\nsharp claws."
   },
   "VICE_GRIP": {
     "effect": "HIT",
@@ -200,7 +222,9 @@
     ],
     "name": "VICEGRIP",
     "apprenticeUsable": false,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "Grips the foe with large and\npowerful pincers."
   },
   "GUILLOTINE": {
     "effect": "OHKO",
@@ -214,7 +238,9 @@
     "flags": ["MAKES_CONTACT", "PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "GUILLOTINE",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0],
+    "description": "A powerful pincer attack\nthat may cause fainting."
   },
   "RAZOR_WIND": {
     "effect": "RAZOR_WIND",
@@ -228,7 +254,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
     "name": "RAZOR WIND",
     "apprenticeUsable": false,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "A 2-turn move that strikes\nthe foe on the 2nd turn."
   },
   "SWORDS_DANCE": {
     "effect": "ATTACK_UP_2",
@@ -242,7 +270,9 @@
     "flags": ["SNATCH_AFFECTED"],
     "name": "SWORDS DANCE",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0],
+    "description": "A fighting dance that\nsharply raises ATTACK."
   },
   "CUT": {
     "effect": "HIT",
@@ -261,7 +291,9 @@
     ],
     "name": "CUT",
     "apprenticeUsable": false,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "Cuts the foe with sharp\nscythes, claws, etc."
   },
   "GUST": {
     "effect": "GUST",
@@ -275,7 +307,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
     "name": "GUST",
     "apprenticeUsable": false,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "Strikes the foe with a gust\nof wind whipped up by wings."
   },
   "WING_ATTACK": {
     "effect": "HIT",
@@ -294,7 +328,9 @@
     ],
     "name": "WING ATTACK",
     "apprenticeUsable": false,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "Strikes the foe with wings\nspread wide."
   },
   "WHIRLWIND": {
     "effect": "ROAR",
@@ -308,7 +344,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "WHIRLWIND",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "Blows away the foe with\nwind and ends the battle."
   },
   "FLY": {
     "effect": "SEMI_INVULNERABLE",
@@ -327,7 +365,9 @@
     ],
     "name": "FLY",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "Flies up on the first turn,\nthen strikes the next turn."
   },
   "BIND": {
     "effect": "TRAP",
@@ -346,7 +386,9 @@
     ],
     "name": "BIND",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1],
+    "description": "Binds and squeezes the foe\nfor 2 to 5 turns."
   },
   "SLAM": {
     "effect": "HIT",
@@ -365,7 +407,9 @@
     ],
     "name": "SLAM",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "Slams the foe with a long\ntail, vine, etc."
   },
   "VINE_WHIP": {
     "effect": "HIT",
@@ -384,7 +428,9 @@
     ],
     "name": "VINE WHIP",
     "apprenticeUsable": false,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "Strikes the foe with\nslender, whiplike vines."
   },
   "STOMP": {
     "effect": "FLINCH_MINIMIZE_HIT",
@@ -398,7 +444,9 @@
     "flags": ["MAKES_CONTACT", "PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "STOMP",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1],
+    "description": "Stomps the enemy with a big\nfoot. May cause flinching."
   },
   "DOUBLE_KICK": {
     "effect": "DOUBLE_HIT",
@@ -417,7 +465,9 @@
     ],
     "name": "DOUBLE KICK",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "A double-kicking attack\nthat strikes the foe twice."
   },
   "MEGA_KICK": {
     "effect": "HIT",
@@ -436,7 +486,9 @@
     ],
     "name": "MEGA KICK",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0],
+    "description": "An extremely powerful kick\nwith intense force."
   },
   "JUMP_KICK": {
     "effect": "RECOIL_IF_MISS",
@@ -455,7 +507,9 @@
     ],
     "name": "JUMP KICK",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "A strong jumping kick. May\nmiss and hurt the kicker."
   },
   "ROLLING_KICK": {
     "effect": "FLINCH_HIT",
@@ -474,7 +528,9 @@
     ],
     "name": "ROLLING KICK",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1],
+    "description": "A fast kick delivered from\na rapid spin."
   },
   "SAND_ATTACK": {
     "effect": "ACCURACY_DOWN",
@@ -488,7 +544,9 @@
     "flags": ["PROTECT_AFFECTED", "MAGICCOAT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "SAND-ATTACK",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "Reduces the foe's accuracy\nby hurling sand in its face."
   },
   "HEADBUTT": {
     "effect": "FLINCH_HIT",
@@ -502,7 +560,9 @@
     "flags": ["MAKES_CONTACT", "PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "HEADBUTT",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1],
+    "description": "A ramming attack that may\ncause flinching."
   },
   "HORN_ATTACK": {
     "effect": "HIT",
@@ -521,7 +581,9 @@
     ],
     "name": "HORN ATTACK",
     "apprenticeUsable": false,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "Jabs the foe with sharp\nhorns."
   },
   "FURY_ATTACK": {
     "effect": "MULTI_HIT",
@@ -540,7 +602,9 @@
     ],
     "name": "FURY ATTACK",
     "apprenticeUsable": false,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "Jabs the foe 2 to 5 times\nwith sharp horns, etc."
   },
   "HORN_DRILL": {
     "effect": "OHKO",
@@ -554,7 +618,9 @@
     "flags": ["MAKES_CONTACT", "PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "HORN DRILL",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0],
+    "description": "A one-hit KO attack that\nuses a horn like a drill."
   },
   "TACKLE": {
     "effect": "HIT",
@@ -573,7 +639,9 @@
     ],
     "name": "TACKLE",
     "apprenticeUsable": false,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "Charges the foe with a full-\nbody tackle."
   },
   "BODY_SLAM": {
     "effect": "PARALYZE_HIT",
@@ -587,7 +655,9 @@
     "flags": ["MAKES_CONTACT", "PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "BODY SLAM",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1],
+    "description": "A full-body slam that may\ncause paralysis."
   },
   "WRAP": {
     "effect": "TRAP",
@@ -606,7 +676,9 @@
     ],
     "name": "WRAP",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1],
+    "description": "Wraps and squeezes the foe\n2 to 5 times with vines, etc."
   },
   "TAKE_DOWN": {
     "effect": "RECOIL",
@@ -625,7 +697,9 @@
     ],
     "name": "TAKE DOWN",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "A reckless charge attack\nthat also hurts the user."
   },
   "THRASH": {
     "effect": "RAMPAGE",
@@ -644,7 +718,9 @@
     ],
     "name": "THRASH",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1],
+    "description": "A rampage of 2 to 3 turns\nthat confuses the user."
   },
   "DOUBLE_EDGE": {
     "effect": "DOUBLE_EDGE",
@@ -663,7 +739,9 @@
     ],
     "name": "DOUBLE-EDGE",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "A life-risking tackle that\nalso hurts the user."
   },
   "TAIL_WHIP": {
     "effect": "DEFENSE_DOWN",
@@ -677,7 +755,9 @@
     "flags": ["PROTECT_AFFECTED", "MAGICCOAT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "TAIL WHIP",
     "apprenticeUsable": false,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "Wags the tail to lower the\nfoe's DEFENSE."
   },
   "POISON_STING": {
     "effect": "POISON_HIT",
@@ -691,7 +771,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "POISON STING",
     "apprenticeUsable": false,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1],
+    "description": "A toxic attack with barbs,\netc., that may poison."
   },
   "TWINEEDLE": {
     "effect": "TWINEEDLE",
@@ -705,7 +787,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "TWINEEDLE",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1],
+    "description": "Stingers on the forelegs\njab the foe twice."
   },
   "PIN_MISSILE": {
     "effect": "MULTI_HIT",
@@ -719,7 +803,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
     "name": "PIN MISSILE",
     "apprenticeUsable": false,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "Sharp pins are fired to\nstrike 2 to 5 times."
   },
   "LEER": {
     "effect": "DEFENSE_DOWN",
@@ -733,7 +819,9 @@
     "flags": ["PROTECT_AFFECTED", "MAGICCOAT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "LEER",
     "apprenticeUsable": false,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "Frightens the foe with a\nleer to lower DEFENSE."
   },
   "BITE": {
     "effect": "FLINCH_HIT",
@@ -747,7 +835,9 @@
     "flags": ["MAKES_CONTACT", "PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "BITE",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1],
+    "description": "Bites with vicious fangs.\nMay cause flinching."
   },
   "GROWL": {
     "effect": "ATTACK_DOWN",
@@ -761,7 +851,9 @@
     "flags": ["PROTECT_AFFECTED", "MAGICCOAT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "GROWL",
     "apprenticeUsable": false,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "Growls cutely to reduce the\nfoe's ATTACK."
   },
   "ROAR": {
     "effect": "ROAR",
@@ -775,7 +867,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "ROAR",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "Makes the foe flee to end\nthe battle."
   },
   "SING": {
     "effect": "SLEEP",
@@ -789,7 +883,9 @@
     "flags": ["PROTECT_AFFECTED", "MAGICCOAT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "SING",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "A soothing song lulls the\nfoe into a deep slumber."
   },
   "SUPERSONIC": {
     "effect": "CONFUSE",
@@ -803,7 +899,9 @@
     "flags": ["PROTECT_AFFECTED", "MAGICCOAT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "SUPERSONIC",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "Emits bizarre sound waves\nthat may confuse the foe."
   },
   "SONIC_BOOM": {
     "effect": "SONICBOOM",
@@ -817,7 +915,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
     "name": "SONICBOOM",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "Launches shock waves that\nalways inflict 20 HP damage."
   },
   "DISABLE": {
     "effect": "DISABLE",
@@ -831,7 +931,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "DISABLE",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "Psychically disables one of\nthe foe's moves."
   },
   "ACID": {
     "effect": "DEFENSE_DOWN_HIT",
@@ -845,7 +947,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "ACID",
     "apprenticeUsable": false,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1],
+    "description": "Sprays a hide-melting acid.\nMay lower DEFENSE."
   },
   "EMBER": {
     "effect": "BURN_HIT",
@@ -859,7 +963,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "EMBER",
     "apprenticeUsable": false,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1],
+    "description": "A weak fire attack that may\ninflict a burn."
   },
   "FLAMETHROWER": {
     "effect": "BURN_HIT",
@@ -873,7 +979,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "FLAMETHROWER",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1],
+    "description": "A powerful fire attack that\nmay inflict a burn."
   },
   "MIST": {
     "effect": "MIST",
@@ -887,7 +995,9 @@
     "flags": ["SNATCH_AFFECTED"],
     "name": "MIST",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "Creates a mist that stops\nreduction of abilities."
   },
   "WATER_GUN": {
     "effect": "HIT",
@@ -901,7 +1011,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
     "name": "WATER GUN",
     "apprenticeUsable": false,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "Squirts water to attack\nthe foe."
   },
   "HYDRO_PUMP": {
     "effect": "HIT",
@@ -915,7 +1027,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
     "name": "HYDRO PUMP",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0],
+    "description": "Blasts water at high power\nto strike the foe."
   },
   "SURF": {
     "effect": "HIT",
@@ -929,7 +1043,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
     "name": "SURF",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0],
+    "description": "Creates a huge wave, then\ncrashes it down on the foe."
   },
   "ICE_BEAM": {
     "effect": "FREEZE_HIT",
@@ -943,7 +1059,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "ICE BEAM",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1],
+    "description": "Blasts the foe with an icy\nbeam that may freeze it."
   },
   "BLIZZARD": {
     "effect": "FREEZE_HIT",
@@ -957,7 +1075,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "BLIZZARD",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1],
+    "description": "Hits the foe with an icy\nstorm that may freeze it."
   },
   "PSYBEAM": {
     "effect": "CONFUSE_HIT",
@@ -971,7 +1091,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "PSYBEAM",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1],
+    "description": "Fires a peculiar ray that\nmay confuse the foe."
   },
   "BUBBLE_BEAM": {
     "effect": "SPEED_DOWN_HIT",
@@ -985,7 +1107,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "BUBBLEBEAM",
     "apprenticeUsable": false,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1],
+    "description": "Forcefully sprays bubbles\nthat may lower SPEED."
   },
   "AURORA_BEAM": {
     "effect": "ATTACK_DOWN_HIT",
@@ -999,7 +1123,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "AURORA BEAM",
     "apprenticeUsable": false,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1],
+    "description": "Fires a rainbow-colored\nbeam that may lower ATTACK."
   },
   "HYPER_BEAM": {
     "effect": "RECHARGE",
@@ -1013,7 +1139,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
     "name": "HYPER BEAM",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 0],
+    "description": "Powerful, but leaves the\nuser immobile the next turn."
   },
   "PECK": {
     "effect": "HIT",
@@ -1032,7 +1160,9 @@
     ],
     "name": "PECK",
     "apprenticeUsable": false,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "Attacks the foe with a\njabbing beak, etc."
   },
   "DRILL_PECK": {
     "effect": "HIT",
@@ -1051,7 +1181,9 @@
     ],
     "name": "DRILL PECK",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "A corkscrewing attack with\nthe beak acting as a drill."
   },
   "SUBMISSION": {
     "effect": "RECOIL",
@@ -1070,7 +1202,9 @@
     ],
     "name": "SUBMISSION",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "A reckless body slam that\nalso hurts the user."
   },
   "LOW_KICK": {
     "effect": "LOW_KICK",
@@ -1089,7 +1223,9 @@
     ],
     "name": "LOW KICK",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "A kick that inflicts more\ndamage on heavier foes."
   },
   "COUNTER": {
     "effect": "COUNTER",
@@ -1103,7 +1239,9 @@
     "flags": ["MAKES_CONTACT", "MIRROR_AFFECTED"],
     "name": "COUNTER",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0],
+    "description": "Retaliates any physical hit\nwith double the power."
   },
   "SEISMIC_TOSS": {
     "effect": "LEVEL_DAMAGE",
@@ -1122,7 +1260,9 @@
     ],
     "name": "SEISMIC TOSS",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "Inflicts damage identical\nto the user's level."
   },
   "STRENGTH": {
     "effect": "HIT",
@@ -1141,7 +1281,9 @@
     ],
     "name": "STRENGTH",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "Builds enormous power,\nthen slams the foe."
   },
   "ABSORB": {
     "effect": "ABSORB",
@@ -1155,7 +1297,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "ABSORB",
     "apprenticeUsable": false,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "An attack that absorbs\nhalf the damage inflicted."
   },
   "MEGA_DRAIN": {
     "effect": "ABSORB",
@@ -1169,7 +1313,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "MEGA DRAIN",
     "apprenticeUsable": false,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "An attack that absorbs\nhalf the damage inflicted."
   },
   "LEECH_SEED": {
     "effect": "LEECH_SEED",
@@ -1183,7 +1329,9 @@
     "flags": ["PROTECT_AFFECTED", "MAGICCOAT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "LEECH SEED",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "Plants a seed on the foe to\nsteal HP on every turn."
   },
   "GROWTH": {
     "effect": "SPECIAL_ATTACK_UP",
@@ -1197,7 +1345,9 @@
     "flags": ["SNATCH_AFFECTED"],
     "name": "GROWTH",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "Forces the body to grow\nand heightens SP. ATK."
   },
   "RAZOR_LEAF": {
     "effect": "HIGH_CRITICAL",
@@ -1211,7 +1361,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
     "name": "RAZOR LEAF",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "Cuts the enemy with leaves.\nHigh critical-hit ratio."
   },
   "SOLAR_BEAM": {
     "effect": "SOLARBEAM",
@@ -1225,7 +1377,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
     "name": "SOLARBEAM",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 0, 0],
+    "description": "Absorbs light in one turn,\nthen attacks next turn."
   },
   "POISON_POWDER": {
     "effect": "POISON",
@@ -1239,7 +1393,9 @@
     "flags": ["PROTECT_AFFECTED", "MAGICCOAT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "POISONPOWDER",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "Scatters a toxic powder\nthat may poison the foe."
   },
   "STUN_SPORE": {
     "effect": "PARALYZE",
@@ -1253,7 +1409,9 @@
     "flags": ["PROTECT_AFFECTED", "MAGICCOAT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "STUN SPORE",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "Scatters a powder that may\nparalyze the foe."
   },
   "SLEEP_POWDER": {
     "effect": "SLEEP",
@@ -1267,7 +1425,9 @@
     "flags": ["PROTECT_AFFECTED", "MAGICCOAT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "SLEEP POWDER",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "Scatters a powder that may\ncause the foe to sleep."
   },
   "PETAL_DANCE": {
     "effect": "RAMPAGE",
@@ -1286,7 +1446,9 @@
     ],
     "name": "PETAL DANCE",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1],
+    "description": "A rampage of 2 to 3 turns\nthat confuses the user."
   },
   "STRING_SHOT": {
     "effect": "SPEED_DOWN",
@@ -1300,7 +1462,9 @@
     "flags": ["PROTECT_AFFECTED", "MAGICCOAT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "STRING SHOT",
     "apprenticeUsable": false,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "Binds the foe with string\nto reduce its SPEED."
   },
   "DRAGON_RAGE": {
     "effect": "DRAGON_RAGE",
@@ -1314,7 +1478,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
     "name": "DRAGON RAGE",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "Launches shock waves that\nalways inflict 40 HP damage."
   },
   "FIRE_SPIN": {
     "effect": "TRAP",
@@ -1328,7 +1494,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
     "name": "FIRE SPIN",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1],
+    "description": "Traps the foe in a ring of\nfire for 2 to 5 turns."
   },
   "THUNDER_SHOCK": {
     "effect": "PARALYZE_HIT",
@@ -1342,7 +1510,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "THUNDERSHOCK",
     "apprenticeUsable": false,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1],
+    "description": "An electrical attack that\nmay paralyze the foe."
   },
   "THUNDERBOLT": {
     "effect": "PARALYZE_HIT",
@@ -1356,7 +1526,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "THUNDERBOLT",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1],
+    "description": "A strong electrical attack\nthat may paralyze the foe."
   },
   "THUNDER_WAVE": {
     "effect": "PARALYZE",
@@ -1370,7 +1542,9 @@
     "flags": ["PROTECT_AFFECTED", "MAGICCOAT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "THUNDER WAVE",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "A weak jolt of electricity\nthat paralyzes the foe."
   },
   "THUNDER": {
     "effect": "THUNDER",
@@ -1384,7 +1558,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "THUNDER",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1],
+    "description": "A lightning attack that may\ncause paralysis."
   },
   "ROCK_THROW": {
     "effect": "HIT",
@@ -1398,7 +1574,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
     "name": "ROCK THROW",
     "apprenticeUsable": false,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "Throws small rocks to\nstrike the foe."
   },
   "EARTHQUAKE": {
     "effect": "EARTHQUAKE",
@@ -1412,7 +1590,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
     "name": "EARTHQUAKE",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 0, 0],
+    "description": "A powerful quake, but has\nno effect on flying foes."
   },
   "FISSURE": {
     "effect": "OHKO",
@@ -1426,7 +1606,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "FISSURE",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0],
+    "description": "A one-hit KO move that\ndrops the foe in a fissure."
   },
   "DIG": {
     "effect": "SEMI_INVULNERABLE",
@@ -1445,7 +1627,9 @@
     ],
     "name": "DIG",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "Digs underground the first\nturn and strikes next turn."
   },
   "TOXIC": {
     "effect": "TOXIC",
@@ -1459,7 +1643,9 @@
     "flags": ["PROTECT_AFFECTED", "MAGICCOAT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "TOXIC",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+    "description": "Poisons the foe with an\nintensifying toxin."
   },
   "CONFUSION": {
     "effect": "CONFUSE_HIT",
@@ -1473,7 +1659,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "CONFUSION",
     "apprenticeUsable": false,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1],
+    "description": "A psychic attack that may\ncause confusion."
   },
   "PSYCHIC": {
     "effect": "SPECIAL_DEFENSE_DOWN_HIT",
@@ -1487,7 +1675,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "PSYCHIC",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1],
+    "description": "A powerful psychic attack\nthat may lower SP. DEF."
   },
   "HYPNOSIS": {
     "effect": "SLEEP",
@@ -1501,7 +1691,9 @@
     "flags": ["PROTECT_AFFECTED", "MAGICCOAT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "HYPNOSIS",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "A hypnotizing move that\nmay induce sleep."
   },
   "MEDITATE": {
     "effect": "ATTACK_UP",
@@ -1515,7 +1707,9 @@
     "flags": ["SNATCH_AFFECTED"],
     "name": "MEDITATE",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "Meditates in a peaceful\nfashion to raise ATTACK."
   },
   "AGILITY": {
     "effect": "SPEED_UP_2",
@@ -1529,7 +1723,9 @@
     "flags": ["SNATCH_AFFECTED"],
     "name": "AGILITY",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "Relaxes the body to sharply\nboost SPEED."
   },
   "QUICK_ATTACK": {
     "effect": "QUICK_ATTACK",
@@ -1548,7 +1744,9 @@
     ],
     "name": "QUICK ATTACK",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "An extremely fast attack\nthat always strikes first."
   },
   "RAGE": {
     "effect": "RAGE",
@@ -1567,7 +1765,9 @@
     ],
     "name": "RAGE",
     "apprenticeUsable": false,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "Raises the user's ATTACK\nevery time it is hit."
   },
   "TELEPORT": {
     "effect": "TELEPORT",
@@ -1581,7 +1781,9 @@
     "flags": [],
     "name": "TELEPORT",
     "apprenticeUsable": false,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "A psychic move for fleeing\nfrom battle instantly."
   },
   "NIGHT_SHADE": {
     "effect": "LEVEL_DAMAGE",
@@ -1595,7 +1797,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
     "name": "NIGHT SHADE",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "Inflicts damage identical\nto the user's level."
   },
   "MIMIC": {
     "effect": "MIMIC",
@@ -1609,7 +1813,9 @@
     "flags": ["PROTECT_AFFECTED"],
     "name": "MIMIC",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "Copies a move used by the\nfoe during one battle."
   },
   "SCREECH": {
     "effect": "DEFENSE_DOWN_2",
@@ -1623,7 +1829,9 @@
     "flags": ["PROTECT_AFFECTED", "MAGICCOAT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "SCREECH",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "Emits a screech to sharply\nreduce the foe's DEFENSE."
   },
   "DOUBLE_TEAM": {
     "effect": "EVASION_UP",
@@ -1637,7 +1845,9 @@
     "flags": ["SNATCH_AFFECTED"],
     "name": "DOUBLE TEAM",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0],
+    "description": "Creates illusory copies to\nraise evasiveness."
   },
   "RECOVER": {
     "effect": "RESTORE_HP",
@@ -1651,7 +1861,9 @@
     "flags": ["SNATCH_AFFECTED"],
     "name": "RECOVER",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "Recovers up to half the\nuser's maximum HP."
   },
   "HARDEN": {
     "effect": "DEFENSE_UP",
@@ -1665,7 +1877,9 @@
     "flags": ["SNATCH_AFFECTED"],
     "name": "HARDEN",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0],
+    "description": "Stiffens the body's \nmuscles to raise DEFENSE."
   },
   "MINIMIZE": {
     "effect": "MINIMIZE",
@@ -1679,7 +1893,9 @@
     "flags": ["SNATCH_AFFECTED"],
     "name": "MINIMIZE",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0],
+    "description": "Minimizes the user's size\nto raise evasiveness."
   },
   "SMOKESCREEN": {
     "effect": "ACCURACY_DOWN",
@@ -1693,7 +1909,9 @@
     "flags": ["PROTECT_AFFECTED", "MAGICCOAT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "SMOKESCREEN",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0],
+    "description": "Lowers the foe's accuracy\nusing smoke, ink, etc."
   },
   "CONFUSE_RAY": {
     "effect": "CONFUSE",
@@ -1707,7 +1925,9 @@
     "flags": ["PROTECT_AFFECTED", "MAGICCOAT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "CONFUSE RAY",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "A sinister ray that\nconfuses the foe."
   },
   "WITHDRAW": {
     "effect": "DEFENSE_UP",
@@ -1721,7 +1941,9 @@
     "flags": ["SNATCH_AFFECTED"],
     "name": "WITHDRAW",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0],
+    "description": "Withdraws the body into its\nhard shell to raise DEFENSE."
   },
   "DEFENSE_CURL": {
     "effect": "DEFENSE_CURL",
@@ -1735,7 +1957,9 @@
     "flags": ["SNATCH_AFFECTED"],
     "name": "DEFENSE CURL",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0],
+    "description": "Curls up to conceal weak\nspots and raise DEFENSE."
   },
   "BARRIER": {
     "effect": "DEFENSE_UP_2",
@@ -1749,7 +1973,9 @@
     "flags": ["SNATCH_AFFECTED"],
     "name": "BARRIER",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0],
+    "description": "Creates a barrier that\nsharply raises DEFENSE."
   },
   "LIGHT_SCREEN": {
     "effect": "LIGHT_SCREEN",
@@ -1763,7 +1989,9 @@
     "flags": ["SNATCH_AFFECTED"],
     "name": "LIGHT SCREEN",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0],
+    "description": "Creates a wall of light that\nlowers SP. ATK damage."
   },
   "HAZE": {
     "effect": "HAZE",
@@ -1777,7 +2005,9 @@
     "flags": ["PROTECT_AFFECTED"],
     "name": "HAZE",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "Creates a black haze that\neliminates all stat changes."
   },
   "REFLECT": {
     "effect": "REFLECT",
@@ -1791,7 +2021,9 @@
     "flags": ["SNATCH_AFFECTED"],
     "name": "REFLECT",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0],
+    "description": "Creates a wall of light that\nweakens physical attacks."
   },
   "FOCUS_ENERGY": {
     "effect": "FOCUS_ENERGY",
@@ -1805,7 +2037,9 @@
     "flags": ["SNATCH_AFFECTED"],
     "name": "FOCUS ENERGY",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "Focuses power to raise the\ncritical-hit ratio."
   },
   "BIDE": {
     "effect": "BIDE",
@@ -1819,7 +2053,9 @@
     "flags": ["MAKES_CONTACT", "PROTECT_AFFECTED", "KINGSROCK_AFFECTED"],
     "name": "BIDE",
     "apprenticeUsable": false,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "Endures attack for 2\nturns to retaliate double."
   },
   "METRONOME": {
     "effect": "METRONOME",
@@ -1833,7 +2069,9 @@
     "flags": [],
     "name": "METRONOME",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0],
+    "description": "Waggles a finger to use any\nPOKéMON move at random."
   },
   "MIRROR_MOVE": {
     "effect": "MIRROR_MOVE",
@@ -1847,7 +2085,9 @@
     "flags": [],
     "name": "MIRROR MOVE",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0],
+    "description": "Counters the foe's attack\nwith the same move."
   },
   "SELF_DESTRUCT": {
     "effect": "EXPLOSION",
@@ -1861,7 +2101,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
     "name": "SELFDESTRUCT",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 1, 1, 0],
+    "description": "Inflicts severe damage but\nmakes the user faint."
   },
   "EGG_BOMB": {
     "effect": "HIT",
@@ -1875,7 +2117,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
     "name": "EGG BOMB",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0],
+    "description": "An egg is forcibly hurled at\nthe foe."
   },
   "LICK": {
     "effect": "PARALYZE_HIT",
@@ -1889,7 +2133,9 @@
     "flags": ["MAKES_CONTACT", "PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "LICK",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1],
+    "description": "Licks with a long tongue to\ninjure. May also paralyze."
   },
   "SMOG": {
     "effect": "POISON_HIT",
@@ -1903,7 +2149,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "SMOG",
     "apprenticeUsable": false,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1],
+    "description": "An exhaust-gas attack\nthat may also poison."
   },
   "SLUDGE": {
     "effect": "POISON_HIT",
@@ -1917,7 +2165,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "SLUDGE",
     "apprenticeUsable": false,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1],
+    "description": "Sludge is hurled to inflict\ndamage. May also poison."
   },
   "BONE_CLUB": {
     "effect": "FLINCH_HIT",
@@ -1931,7 +2181,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "BONE CLUB",
     "apprenticeUsable": false,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1],
+    "description": "Clubs the foe with a bone.\nMay cause flinching."
   },
   "FIRE_BLAST": {
     "effect": "BURN_HIT",
@@ -1945,7 +2197,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "FIRE BLAST",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1],
+    "description": "Incinerates everything it\nstrikes. May cause a burn."
   },
   "WATERFALL": {
     "effect": "HIT",
@@ -1964,7 +2218,9 @@
     ],
     "name": "WATERFALL",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "Charges the foe with speed\nto climb waterfalls."
   },
   "CLAMP": {
     "effect": "TRAP",
@@ -1983,7 +2239,9 @@
     ],
     "name": "CLAMP",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1],
+    "description": "Traps and squeezes the\nfoe for 2 to 5 turns."
   },
   "SWIFT": {
     "effect": "ALWAYS_HIT",
@@ -1997,7 +2255,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
     "name": "SWIFT",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "Sprays star-shaped rays\nthat never miss."
   },
   "SKULL_BASH": {
     "effect": "SKULL_BASH",
@@ -2016,7 +2276,9 @@
     ],
     "name": "SKULL BASH",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0],
+    "description": "Tucks in the head, then\nattacks on the next turn."
   },
   "SPIKE_CANNON": {
     "effect": "MULTI_HIT",
@@ -2030,7 +2292,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
     "name": "SPIKE CANNON",
     "apprenticeUsable": false,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "Launches sharp spikes that\nstrike 2 to 5 times."
   },
   "CONSTRICT": {
     "effect": "SPEED_DOWN_HIT",
@@ -2044,7 +2308,9 @@
     "flags": ["MAKES_CONTACT", "PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "CONSTRICT",
     "apprenticeUsable": false,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 1],
+    "description": "Constricts to inflict pain.\nMay lower SPEED."
   },
   "AMNESIA": {
     "effect": "SPECIAL_DEFENSE_UP_2",
@@ -2058,7 +2324,9 @@
     "flags": ["SNATCH_AFFECTED"],
     "name": "AMNESIA",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0],
+    "description": "Forgets about something\nand sharply raises SP. DEF."
   },
   "KINESIS": {
     "effect": "ACCURACY_DOWN",
@@ -2072,7 +2340,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "KINESIS",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "Distracts the foe.\nMay lower accuracy."
   },
   "SOFT_BOILED": {
     "effect": "SOFTBOILED",
@@ -2086,7 +2356,9 @@
     "flags": ["SNATCH_AFFECTED", "MIRROR_AFFECTED"],
     "name": "SOFTBOILED",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "Recovers up to half the\nuser's maximum HP."
   },
   "HI_JUMP_KICK": {
     "effect": "RECOIL_IF_MISS",
@@ -2105,7 +2377,9 @@
     ],
     "name": "HI JUMP KICK",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "A jumping knee kick. If it\nmisses, the user is hurt."
   },
   "GLARE": {
     "effect": "PARALYZE",
@@ -2119,7 +2393,9 @@
     "flags": ["PROTECT_AFFECTED", "MAGICCOAT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "GLARE",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "Intimidates and frightens\nthe foe into paralysis."
   },
   "DREAM_EATER": {
     "effect": "DREAM_EATER",
@@ -2133,7 +2409,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "DREAM EATER",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0],
+    "description": "Takes one half the damage\ninflicted on a sleeping foe."
   },
   "POISON_GAS": {
     "effect": "POISON",
@@ -2147,7 +2425,9 @@
     "flags": ["PROTECT_AFFECTED", "MAGICCOAT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "POISON GAS",
     "apprenticeUsable": false,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "Envelops the foe in a toxic\ngas that may poison."
   },
   "BARRAGE": {
     "effect": "MULTI_HIT",
@@ -2161,7 +2441,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
     "name": "BARRAGE",
     "apprenticeUsable": false,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "Hurls round objects at the\nfoe 2 to 5 times."
   },
   "LEECH_LIFE": {
     "effect": "ABSORB",
@@ -2175,7 +2457,9 @@
     "flags": ["MAKES_CONTACT", "PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "LEECH LIFE",
     "apprenticeUsable": false,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "An attack that steals half\nthe damage inflicted."
   },
   "LOVELY_KISS": {
     "effect": "SLEEP",
@@ -2189,7 +2473,9 @@
     "flags": ["PROTECT_AFFECTED", "MAGICCOAT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "LOVELY KISS",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "Demands a kiss with a scary\nface that induces sleep."
   },
   "SKY_ATTACK": {
     "effect": "SKY_ATTACK",
@@ -2203,7 +2489,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
     "name": "SKY ATTACK",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1],
+    "description": "Searches out weak spots,\nthen strikes the next turn."
   },
   "TRANSFORM": {
     "effect": "TRANSFORM",
@@ -2217,7 +2505,9 @@
     "flags": [],
     "name": "TRANSFORM",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "Alters the user's cells to\nbecome a copy of the foe."
   },
   "BUBBLE": {
     "effect": "SPEED_DOWN_HIT",
@@ -2231,7 +2521,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "BUBBLE",
     "apprenticeUsable": false,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1],
+    "description": "An attack using bubbles.\nMay lower the foe's SPEED."
   },
   "DIZZY_PUNCH": {
     "effect": "CONFUSE_HIT",
@@ -2245,7 +2537,9 @@
     "flags": ["MAKES_CONTACT", "PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "DIZZY PUNCH",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1],
+    "description": "A rhythmic punch that may\nconfuse the foe."
   },
   "SPORE": {
     "effect": "SLEEP",
@@ -2259,7 +2553,9 @@
     "flags": ["PROTECT_AFFECTED", "MAGICCOAT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "SPORE",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "Scatters a cloud of spores\nthat always induce sleep."
   },
   "FLASH": {
     "effect": "ACCURACY_DOWN",
@@ -2273,7 +2569,9 @@
     "flags": ["PROTECT_AFFECTED", "MAGICCOAT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "FLASH",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "Looses a powerful blast of\nlight that cuts accuracy."
   },
   "PSYWAVE": {
     "effect": "PSYWAVE",
@@ -2287,7 +2585,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
     "name": "PSYWAVE",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "Attacks with a psychic\nwave of varying intensity."
   },
   "SPLASH": {
     "effect": "SPLASH",
@@ -2301,7 +2601,9 @@
     "flags": [],
     "name": "SPLASH",
     "apprenticeUsable": false,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "It's just a splash...\nHas no effect whatsoever."
   },
   "ACID_ARMOR": {
     "effect": "DEFENSE_UP_2",
@@ -2315,7 +2617,9 @@
     "flags": ["SNATCH_AFFECTED"],
     "name": "ACID ARMOR",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0],
+    "description": "Liquifies the user's body\nto sharply raise DEFENSE."
   },
   "CRABHAMMER": {
     "effect": "HIGH_CRITICAL",
@@ -2334,7 +2638,9 @@
     ],
     "name": "CRABHAMMER",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0],
+    "description": "Hammers with a pincer. Has a\nhigh critical-hit ratio."
   },
   "EXPLOSION": {
     "effect": "EXPLOSION",
@@ -2348,7 +2654,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
     "name": "EXPLOSION",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 0],
+    "description": "Inflicts severe damage but\nmakes the user faint."
   },
   "FURY_SWIPES": {
     "effect": "MULTI_HIT",
@@ -2367,7 +2675,9 @@
     ],
     "name": "FURY SWIPES",
     "apprenticeUsable": false,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "Rakes the foe with sharp\nclaws, etc., 2 to 5 times."
   },
   "BONEMERANG": {
     "effect": "DOUBLE_HIT",
@@ -2381,7 +2691,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
     "name": "BONEMERANG",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "Throws a bone boomerang\nthat strikes twice."
   },
   "REST": {
     "effect": "REST",
@@ -2395,7 +2707,9 @@
     "flags": ["SNATCH_AFFECTED"],
     "name": "REST",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "The user sleeps for 2 turns,\nrestoring HP and status."
   },
   "ROCK_SLIDE": {
     "effect": "FLINCH_HIT",
@@ -2409,7 +2723,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "ROCK SLIDE",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1],
+    "description": "Large boulders are hurled.\nMay cause flinching."
   },
   "HYPER_FANG": {
     "effect": "FLINCH_HIT",
@@ -2423,7 +2739,9 @@
     "flags": ["MAKES_CONTACT", "PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "HYPER FANG",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1],
+    "description": "Attacks with sharp fangs.\nMay cause flinching."
   },
   "SHARPEN": {
     "effect": "ATTACK_UP",
@@ -2437,7 +2755,9 @@
     "flags": ["SNATCH_AFFECTED"],
     "name": "SHARPEN",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0],
+    "description": "Reduces the polygon count\nand raises ATTACK."
   },
   "CONVERSION": {
     "effect": "CONVERSION",
@@ -2451,7 +2771,9 @@
     "flags": [],
     "name": "CONVERSION",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0],
+    "description": "Changes the user's type\ninto a known move's type."
   },
   "TRI_ATTACK": {
     "effect": "TRI_ATTACK",
@@ -2465,7 +2787,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "TRI ATTACK",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1],
+    "description": "Fires three types of beams\nat the same time."
   },
   "SUPER_FANG": {
     "effect": "SUPER_FANG",
@@ -2479,7 +2803,9 @@
     "flags": ["MAKES_CONTACT", "PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "SUPER FANG",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "Attacks with sharp fangs\nand cuts half the foe's HP."
   },
   "SLASH": {
     "effect": "HIGH_CRITICAL",
@@ -2498,7 +2824,9 @@
     ],
     "name": "SLASH",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "Slashes with claws, etc. Has\na high critical-hit ratio."
   },
   "SUBSTITUTE": {
     "effect": "SUBSTITUTE",
@@ -2512,7 +2840,9 @@
     "flags": ["SNATCH_AFFECTED"],
     "name": "SUBSTITUTE",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0],
+    "description": "Creates a decoy using 1/4\nof the user's maximum HP."
   },
   "STRUGGLE": {
     "effect": "RECOIL",
@@ -2531,7 +2861,9 @@
     ],
     "name": "STRUGGLE",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0],
+    "description": "Used only if all PP are gone.\nAlso hurts the user a little."
   },
   "SKETCH": {
     "effect": "SKETCH",
@@ -2545,7 +2877,9 @@
     "flags": [],
     "name": "SKETCH",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0],
+    "description": "Copies the foe's last move\npermanently."
   },
   "TRIPLE_KICK": {
     "effect": "TRIPLE_KICK",
@@ -2564,7 +2898,9 @@
     ],
     "name": "TRIPLE KICK",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "Kicks the foe 3 times in a\nrow with rising intensity."
   },
   "THIEF": {
     "effect": "THIEF",
@@ -2578,7 +2914,9 @@
     "flags": ["MAKES_CONTACT", "PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "THIEF",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1],
+    "description": "While attacking, it may\nsteal the foe's held item."
   },
   "SPIDER_WEB": {
     "effect": "MEAN_LOOK",
@@ -2592,7 +2930,9 @@
     "flags": ["PROTECT_AFFECTED", "MAGICCOAT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "SPIDER WEB",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "Ensnares the foe to stop it\nfrom fleeing or switching."
   },
   "MIND_READER": {
     "effect": "LOCK_ON",
@@ -2606,7 +2946,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "MIND READER",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0],
+    "description": "Senses the foe's action to\nensure the next move's hit."
   },
   "NIGHTMARE": {
     "effect": "NIGHTMARE",
@@ -2620,7 +2962,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "NIGHTMARE",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "Inflicts 1/4 damage on a\nsleeping foe every turn."
   },
   "FLAME_WHEEL": {
     "effect": "THAW_HIT",
@@ -2634,7 +2978,9 @@
     "flags": ["MAKES_CONTACT", "PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "FLAME WHEEL",
     "apprenticeUsable": false,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1],
+    "description": "A fiery charge attack that\nmay inflict a burn."
   },
   "SNORE": {
     "effect": "SNORE",
@@ -2648,7 +2994,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
     "name": "SNORE",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1],
+    "description": "A loud attack that can be\nused only while asleep."
   },
   "CURSE": {
     "effect": "CURSE",
@@ -2662,7 +3010,9 @@
     "flags": [],
     "name": "CURSE",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "A move that functions\ndifferently for GHOSTS."
   },
   "FLAIL": {
     "effect": "FLAIL",
@@ -2681,7 +3031,9 @@
     ],
     "name": "FLAIL",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "Inflicts more damage when\nthe user's HP is down."
   },
   "CONVERSION_2": {
     "effect": "CONVERSION_2",
@@ -2695,7 +3047,9 @@
     "flags": [],
     "name": "CONVERSION 2",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "Makes the user resistant\nto the last attack's type."
   },
   "AEROBLAST": {
     "effect": "HIGH_CRITICAL",
@@ -2709,7 +3063,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
     "name": "AEROBLAST",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 0],
+    "description": "Launches a vacuumed blast.\nHigh critical-hit ratio."
   },
   "COTTON_SPORE": {
     "effect": "SPEED_DOWN_2",
@@ -2723,7 +3079,9 @@
     "flags": ["PROTECT_AFFECTED", "MAGICCOAT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "COTTON SPORE",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "Spores cling to the foe,\nsharply reducing SPEED."
   },
   "REVERSAL": {
     "effect": "FLAIL",
@@ -2742,7 +3100,9 @@
     ],
     "name": "REVERSAL",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "Inflicts more damage when\nthe user's HP is down."
   },
   "SPITE": {
     "effect": "SPITE",
@@ -2756,7 +3116,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "SPITE",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "Spitefully cuts the PP\nof the foe's last move."
   },
   "POWDER_SNOW": {
     "effect": "FREEZE_HIT",
@@ -2770,7 +3132,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "POWDER SNOW",
     "apprenticeUsable": false,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1],
+    "description": "Blasts the foe with a snowy\ngust. May cause freezing."
   },
   "PROTECT": {
     "effect": "PROTECT",
@@ -2784,7 +3148,9 @@
     "flags": [],
     "name": "PROTECT",
     "apprenticeUsable": true,
-    "battleArenaRating": -1
+    "battleArenaRating": -1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0],
+    "description": "Evades attack, but may fail\nif used in succession."
   },
   "MACH_PUNCH": {
     "effect": "QUICK_ATTACK",
@@ -2803,7 +3169,9 @@
     ],
     "name": "MACH PUNCH",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "A punch is thrown at wicked\nspeed to strike first."
   },
   "SCARY_FACE": {
     "effect": "SPEED_DOWN_2",
@@ -2817,7 +3185,9 @@
     "flags": ["PROTECT_AFFECTED", "MAGICCOAT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "SCARY FACE",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "Frightens with a scary face\nto sharply reduce SPEED."
   },
   "FAINT_ATTACK": {
     "effect": "ALWAYS_HIT",
@@ -2831,7 +3201,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
     "name": "FAINT ATTACK",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "Draws the foe close, then\nstrikes without fail."
   },
   "SWEET_KISS": {
     "effect": "CONFUSE",
@@ -2845,7 +3217,9 @@
     "flags": ["PROTECT_AFFECTED", "MAGICCOAT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "SWEET KISS",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "Demands a kiss with a cute\nlook. May cause confusion."
   },
   "BELLY_DRUM": {
     "effect": "BELLY_DRUM",
@@ -2859,7 +3233,9 @@
     "flags": ["SNATCH_AFFECTED"],
     "name": "BELLY DRUM",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "Maximizes ATTACK while\nsacrificing HP."
   },
   "SLUDGE_BOMB": {
     "effect": "POISON_HIT",
@@ -2873,7 +3249,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "SLUDGE BOMB",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1],
+    "description": "Sludge is hurled to inflict\ndamage. May also poison."
   },
   "MUD_SLAP": {
     "effect": "ACCURACY_DOWN_HIT",
@@ -2887,7 +3265,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "MUD-SLAP",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1],
+    "description": "Hurls mud in the foe's face\nto reduce its accuracy."
   },
   "OCTAZOOKA": {
     "effect": "ACCURACY_DOWN_HIT",
@@ -2901,7 +3281,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "OCTAZOOKA",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1],
+    "description": "Fires a lump of ink to\ndamage and cut accuracy."
   },
   "SPIKES": {
     "effect": "SPIKES",
@@ -2915,7 +3297,9 @@
     "flags": [],
     "name": "SPIKES",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "Sets spikes that hurt a \nfoe switching in."
   },
   "ZAP_CANNON": {
     "effect": "PARALYZE_HIT",
@@ -2929,7 +3313,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "ZAP CANNON",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1],
+    "description": "Powerful and sure to cause\nparalysis, but inaccurate."
   },
   "FORESIGHT": {
     "effect": "FORESIGHT",
@@ -2943,7 +3329,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "FORESIGHT",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "Negates the foe's efforts\nto heighten evasiveness."
   },
   "DESTINY_BOND": {
     "effect": "DESTINY_BOND",
@@ -2957,7 +3345,9 @@
     "flags": [],
     "name": "DESTINY BOND",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0],
+    "description": "If the user faints, the foe\nis also made to faint."
   },
   "PERISH_SONG": {
     "effect": "PERISH_SONG",
@@ -2971,7 +3361,9 @@
     "flags": [],
     "name": "PERISH SONG",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0],
+    "description": "Any POKéMON hearing this\nsong faints in 3 turns."
   },
   "ICY_WIND": {
     "effect": "SPEED_DOWN_HIT",
@@ -2985,7 +3377,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "ICY WIND",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1],
+    "description": "A chilling attack that\nlowers the foe's SPEED."
   },
   "DETECT": {
     "effect": "PROTECT",
@@ -2999,7 +3393,9 @@
     "flags": [],
     "name": "DETECT",
     "apprenticeUsable": true,
-    "battleArenaRating": -1
+    "battleArenaRating": -1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0],
+    "description": "Evades attack, but may fail\nif used in succession."
   },
   "BONE_RUSH": {
     "effect": "MULTI_HIT",
@@ -3013,7 +3409,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
     "name": "BONE RUSH",
     "apprenticeUsable": false,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "Strikes the foe with a bone\nin hand 2 to 5 times."
   },
   "LOCK_ON": {
     "effect": "LOCK_ON",
@@ -3027,7 +3425,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "LOCK-ON",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0],
+    "description": "Locks on to the foe to\nensure the next move hits."
   },
   "OUTRAGE": {
     "effect": "RAMPAGE",
@@ -3046,7 +3446,9 @@
     ],
     "name": "OUTRAGE",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1],
+    "description": "A rampage of 2 to 3 turns\nthat confuses the user."
   },
   "SANDSTORM": {
     "effect": "SANDSTORM",
@@ -3060,7 +3462,9 @@
     "flags": [],
     "name": "SANDSTORM",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "Causes a sandstorm that\nrages for several turns."
   },
   "GIGA_DRAIN": {
     "effect": "ABSORB",
@@ -3074,7 +3478,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "GIGA DRAIN",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0],
+    "description": "An attack that steals half\nthe damage inflicted."
   },
   "ENDURE": {
     "effect": "ENDURE",
@@ -3088,7 +3494,9 @@
     "flags": [],
     "name": "ENDURE",
     "apprenticeUsable": true,
-    "battleArenaRating": -1
+    "battleArenaRating": -1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0],
+    "description": "Endures any attack for\n1 turn, leaving at least 1HP."
   },
   "CHARM": {
     "effect": "ATTACK_DOWN_2",
@@ -3102,7 +3510,9 @@
     "flags": ["PROTECT_AFFECTED", "MAGICCOAT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "CHARM",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "Charms the foe and sharply\nreduces its ATTACK."
   },
   "ROLLOUT": {
     "effect": "ROLLOUT",
@@ -3121,7 +3531,9 @@
     ],
     "name": "ROLLOUT",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "An attack lasting 5 turns\nwith rising intensity."
   },
   "FALSE_SWIPE": {
     "effect": "FALSE_SWIPE",
@@ -3140,7 +3552,9 @@
     ],
     "name": "FALSE SWIPE",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "An attack that leaves the\nfoe with at least 1 HP."
   },
   "SWAGGER": {
     "effect": "SWAGGER",
@@ -3154,7 +3568,9 @@
     "flags": ["PROTECT_AFFECTED", "MAGICCOAT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "SWAGGER",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+    "description": "Confuses the foe, but also\nsharply raises ATTACK."
   },
   "MILK_DRINK": {
     "effect": "SOFTBOILED",
@@ -3168,7 +3584,9 @@
     "flags": ["PROTECT_AFFECTED", "SNATCH_AFFECTED"],
     "name": "MILK DRINK",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "Recovers up to half the\nuser's maximum HP."
   },
   "SPARK": {
     "effect": "PARALYZE_HIT",
@@ -3182,7 +3600,9 @@
     "flags": ["MAKES_CONTACT", "PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "SPARK",
     "apprenticeUsable": false,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1],
+    "description": "An electrified tackle that\nmay paralyze the foe."
   },
   "FURY_CUTTER": {
     "effect": "FURY_CUTTER",
@@ -3201,7 +3621,9 @@
     ],
     "name": "FURY CUTTER",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "An attack that intensifies\non each successive hit."
   },
   "STEEL_WING": {
     "effect": "DEFENSE_UP_HIT",
@@ -3220,7 +3642,9 @@
     ],
     "name": "STEEL WING",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1],
+    "description": "Strikes the foe with hard\nwings spread wide."
   },
   "MEAN_LOOK": {
     "effect": "MEAN_LOOK",
@@ -3234,7 +3658,9 @@
     "flags": ["PROTECT_AFFECTED", "MAGICCOAT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "MEAN LOOK",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0],
+    "description": "Fixes the foe with a mean\nlook that prevents escape."
   },
   "ATTRACT": {
     "effect": "ATTRACT",
@@ -3248,7 +3674,9 @@
     "flags": ["PROTECT_AFFECTED", "MAGICCOAT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "ATTRACT",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "Makes the opposite gender\nless likely to attack."
   },
   "SLEEP_TALK": {
     "effect": "SLEEP_TALK",
@@ -3262,7 +3690,9 @@
     "flags": [],
     "name": "SLEEP TALK",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0],
+    "description": "Uses an available move\nrandomly while asleep."
   },
   "HEAL_BELL": {
     "effect": "HEAL_BELL",
@@ -3276,7 +3706,9 @@
     "flags": ["SNATCH_AFFECTED"],
     "name": "HEAL BELL",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0],
+    "description": "Chimes soothingly to heal\nall status abnormalities."
   },
   "RETURN": {
     "effect": "RETURN",
@@ -3295,7 +3727,9 @@
     ],
     "name": "RETURN",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "An attack that increases\nin power with friendship."
   },
   "PRESENT": {
     "effect": "PRESENT",
@@ -3309,7 +3743,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "PRESENT",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0],
+    "description": "A gift in the form of a\nbomb. May restore HP."
   },
   "FRUSTRATION": {
     "effect": "FRUSTRATION",
@@ -3328,7 +3764,9 @@
     ],
     "name": "FRUSTRATION",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "An attack that is stronger\nif the TRAINER is disliked."
   },
   "SAFEGUARD": {
     "effect": "SAFEGUARD",
@@ -3342,7 +3780,9 @@
     "flags": ["SNATCH_AFFECTED"],
     "name": "SAFEGUARD",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0],
+    "description": "A mystical force prevents\nall status problems."
   },
   "PAIN_SPLIT": {
     "effect": "PAIN_SPLIT",
@@ -3356,7 +3796,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "PAIN SPLIT",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "Adds the user and foe's HP,\nthen shares them equally."
   },
   "SACRED_FIRE": {
     "effect": "THAW_HIT",
@@ -3370,7 +3812,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "SACRED FIRE",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1],
+    "description": "A mystical fire attack that\nmay inflict a burn."
   },
   "MAGNITUDE": {
     "effect": "MAGNITUDE",
@@ -3384,7 +3828,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
     "name": "MAGNITUDE",
     "apprenticeUsable": false,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "A ground-shaking attack\nof random intensity."
   },
   "DYNAMIC_PUNCH": {
     "effect": "CONFUSE_HIT",
@@ -3398,7 +3844,9 @@
     "flags": ["MAKES_CONTACT", "PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "DYNAMICPUNCH",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1],
+    "description": "Powerful and sure to cause\nconfusion, but inaccurate."
   },
   "MEGAHORN": {
     "effect": "HIT",
@@ -3417,7 +3865,9 @@
     ],
     "name": "MEGAHORN",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0],
+    "description": "A brutal ramming attack\nusing out-thrust horns."
   },
   "DRAGON_BREATH": {
     "effect": "PARALYZE_HIT",
@@ -3431,7 +3881,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
     "name": "DRAGONBREATH",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1],
+    "description": "Strikes the foe with an\nincredible blast of breath."
   },
   "BATON_PASS": {
     "effect": "BATON_PASS",
@@ -3445,7 +3897,9 @@
     "flags": [],
     "name": "BATON PASS",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "Switches out the user while\nkeeping effects in play."
   },
   "ENCORE": {
     "effect": "ENCORE",
@@ -3459,7 +3913,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "ENCORE",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0],
+    "description": "Makes the foe repeat its\nlast move over 2 to 6 turns."
   },
   "PURSUIT": {
     "effect": "PURSUIT",
@@ -3473,7 +3929,9 @@
     "flags": ["MAKES_CONTACT", "PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "PURSUIT",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "Inflicts bad damage if used\non a foe switching out."
   },
   "RAPID_SPIN": {
     "effect": "RAPID_SPIN",
@@ -3492,7 +3950,9 @@
     ],
     "name": "RAPID SPIN",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "Spins the body at high\nspeed to strike the foe."
   },
   "SWEET_SCENT": {
     "effect": "EVASION_DOWN",
@@ -3506,7 +3966,9 @@
     "flags": ["PROTECT_AFFECTED", "MAGICCOAT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "SWEET SCENT",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "Allures the foe to reduce\nevasiveness."
   },
   "IRON_TAIL": {
     "effect": "DEFENSE_DOWN_HIT",
@@ -3520,7 +3982,9 @@
     "flags": ["MAKES_CONTACT", "PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "IRON TAIL",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1],
+    "description": "Attacks with a rock-hard\ntail. May lower DEFENSE."
   },
   "METAL_CLAW": {
     "effect": "ATTACK_UP_HIT",
@@ -3534,7 +3998,9 @@
     "flags": ["MAKES_CONTACT", "PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "METAL CLAW",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1],
+    "description": "A claw attack that may\nraise the user's ATTACK."
   },
   "VITAL_THROW": {
     "effect": "VITAL_THROW",
@@ -3553,7 +4019,9 @@
     ],
     "name": "VITAL THROW",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "Makes the user's move last,\nbut it never misses."
   },
   "MORNING_SUN": {
     "effect": "MORNING_SUN",
@@ -3567,7 +4035,9 @@
     "flags": ["SNATCH_AFFECTED"],
     "name": "MORNING SUN",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0],
+    "description": "Restores HP. The amount\nvaries with the weather."
   },
   "SYNTHESIS": {
     "effect": "SYNTHESIS",
@@ -3581,7 +4051,9 @@
     "flags": ["SNATCH_AFFECTED"],
     "name": "SYNTHESIS",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0],
+    "description": "Restores HP. The amount\nvaries with the weather."
   },
   "MOONLIGHT": {
     "effect": "MOONLIGHT",
@@ -3595,7 +4067,9 @@
     "flags": ["SNATCH_AFFECTED"],
     "name": "MOONLIGHT",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0],
+    "description": "Restores HP. The amount\nvaries with the weather."
   },
   "HIDDEN_POWER": {
     "effect": "HIDDEN_POWER",
@@ -3609,7 +4083,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
     "name": "HIDDEN POWER",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "The effectiveness varies\nwith the user."
   },
   "CROSS_CHOP": {
     "effect": "HIGH_CRITICAL",
@@ -3628,7 +4104,9 @@
     ],
     "name": "CROSS CHOP",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0],
+    "description": "A double-chopping attack.\nHigh critical-hit ratio."
   },
   "TWISTER": {
     "effect": "TWISTER",
@@ -3642,7 +4120,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
     "name": "TWISTER",
     "apprenticeUsable": false,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1],
+    "description": "Whips up a vicious twister\nto tear at the foe."
   },
   "RAIN_DANCE": {
     "effect": "RAIN_DANCE",
@@ -3656,7 +4136,9 @@
     "flags": [],
     "name": "RAIN DANCE",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0],
+    "description": "Boosts the power of WATER-\ntype moves for 5 turns."
   },
   "SUNNY_DAY": {
     "effect": "SUNNY_DAY",
@@ -3670,7 +4152,9 @@
     "flags": [],
     "name": "SUNNY DAY",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0],
+    "description": "Boosts the power of FIRE-\ntype moves for 5 turns."
   },
   "CRUNCH": {
     "effect": "SPECIAL_DEFENSE_DOWN_HIT",
@@ -3684,7 +4168,9 @@
     "flags": ["MAKES_CONTACT", "PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "CRUNCH",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1],
+    "description": "Crunches with sharp fangs.\nMay lower SP. DEF."
   },
   "MIRROR_COAT": {
     "effect": "MIRROR_COAT",
@@ -3698,7 +4184,9 @@
     "flags": ["MIRROR_AFFECTED"],
     "name": "MIRROR COAT",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0],
+    "description": "Counters the foe's special\nattack at double the power."
   },
   "PSYCH_UP": {
     "effect": "PSYCH_UP",
@@ -3712,7 +4200,9 @@
     "flags": ["SNATCH_AFFECTED"],
     "name": "PSYCH UP",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "Copies the foe's effect(s)\nand gives to the user."
   },
   "EXTREME_SPEED": {
     "effect": "QUICK_ATTACK",
@@ -3731,7 +4221,9 @@
     ],
     "name": "EXTREMESPEED",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0],
+    "description": "An extremely fast and\npowerful attack."
   },
   "ANCIENT_POWER": {
     "effect": "ALL_STATS_UP_HIT",
@@ -3745,7 +4237,9 @@
     "flags": ["MAKES_CONTACT", "PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "ANCIENTPOWER",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1],
+    "description": "An attack that may raise\nall stats."
   },
   "SHADOW_BALL": {
     "effect": "SPECIAL_DEFENSE_DOWN_HIT",
@@ -3759,7 +4253,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "SHADOW BALL",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1],
+    "description": "Hurls a black blob that may\nlower the foe's SP. DEF."
   },
   "FUTURE_SIGHT": {
     "effect": "FUTURE_SIGHT",
@@ -3773,7 +4269,9 @@
     "flags": [],
     "name": "FUTURE SIGHT",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "Heightens inner power to\nstrike 2 turns later."
   },
   "ROCK_SMASH": {
     "effect": "DEFENSE_DOWN_HIT",
@@ -3787,7 +4285,9 @@
     "flags": ["MAKES_CONTACT", "PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "ROCK SMASH",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1],
+    "description": "A rock-crushing attack\nthat may lower DEFENSE."
   },
   "WHIRLPOOL": {
     "effect": "TRAP",
@@ -3801,7 +4301,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
     "name": "WHIRLPOOL",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1],
+    "description": "Traps and hurts the foe in\na whirlpool for 2 to 5 turns."
   },
   "BEAT_UP": {
     "effect": "BEAT_UP",
@@ -3815,7 +4317,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
     "name": "BEAT UP",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "Summons party POKéMON to\njoin in the attack."
   },
   "FAKE_OUT": {
     "effect": "FAKE_OUT",
@@ -3829,7 +4333,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "FAKE OUT",
     "apprenticeUsable": true,
-    "battleArenaRating": -1
+    "battleArenaRating": -1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "A 1st-turn, 1st-strike move\nthat causes flinching."
   },
   "UPROAR": {
     "effect": "UPROAR",
@@ -3843,7 +4349,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
     "name": "UPROAR",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1],
+    "description": "Causes an uproar for 2 to 5\nturns and prevents sleep."
   },
   "STOCKPILE": {
     "effect": "STOCKPILE",
@@ -3857,7 +4365,9 @@
     "flags": ["SNATCH_AFFECTED"],
     "name": "STOCKPILE",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "Charges up power for up to\n3 turns."
   },
   "SPIT_UP": {
     "effect": "SPIT_UP",
@@ -3871,7 +4381,9 @@
     "flags": ["PROTECT_AFFECTED", "KINGSROCK_AFFECTED"],
     "name": "SPIT UP",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0],
+    "description": "Releases stockpiled power\n(the more the better)."
   },
   "SWALLOW": {
     "effect": "SWALLOW",
@@ -3885,7 +4397,9 @@
     "flags": ["SNATCH_AFFECTED"],
     "name": "SWALLOW",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "Absorbs stockpiled power\nand restores HP."
   },
   "HEAT_WAVE": {
     "effect": "BURN_HIT",
@@ -3899,7 +4413,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "HEAT WAVE",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1],
+    "description": "Exhales a hot breath on the\nfoe. May inflict a burn."
   },
   "HAIL": {
     "effect": "HAIL",
@@ -3913,7 +4429,9 @@
     "flags": ["PROTECT_AFFECTED"],
     "name": "HAIL",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "Summons a hailstorm that\nstrikes every turn."
   },
   "TORMENT": {
     "effect": "TORMENT",
@@ -3927,7 +4445,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "TORMENT",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "Torments the foe and stops\nsuccessive use of a move."
   },
   "FLATTER": {
     "effect": "FLATTER",
@@ -3941,7 +4461,9 @@
     "flags": ["PROTECT_AFFECTED", "MAGICCOAT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "FLATTER",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "Confuses the foe, but\nraises its SP. ATK."
   },
   "WILL_O_WISP": {
     "effect": "WILL_O_WISP",
@@ -3955,7 +4477,9 @@
     "flags": ["PROTECT_AFFECTED", "MAGICCOAT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "WILL-O-WISP",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "Inflicts a burn on the foe\nwith intense fire."
   },
   "MEMENTO": {
     "effect": "MEMENTO",
@@ -3969,7 +4493,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "MEMENTO",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "The user faints and lowers\nthe foe's abilities."
   },
   "FACADE": {
     "effect": "FACADE",
@@ -3983,7 +4509,9 @@
     "flags": ["MAKES_CONTACT", "PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "FACADE",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "Boosts ATTACK when burned,\nparalyzed, or poisoned."
   },
   "FOCUS_PUNCH": {
     "effect": "FOCUS_PUNCH",
@@ -3997,7 +4525,9 @@
     "flags": ["MAKES_CONTACT", "PROTECT_AFFECTED"],
     "name": "FOCUS PUNCH",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0],
+    "description": "A powerful loyalty attack.\nThe user flinches if hit."
   },
   "SMELLING_SALT": {
     "effect": "SMELLINGSALT",
@@ -4011,7 +4541,9 @@
     "flags": ["MAKES_CONTACT", "PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "SMELLINGSALT",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "Powerful against paralyzed\nfoes, but also heals them."
   },
   "FOLLOW_ME": {
     "effect": "FOLLOW_ME",
@@ -4025,7 +4557,9 @@
     "flags": [],
     "name": "FOLLOW ME",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "Draws attention to make\nfoes attack only the user."
   },
   "NATURE_POWER": {
     "effect": "NATURE_POWER",
@@ -4039,7 +4573,9 @@
     "flags": [],
     "name": "NATURE POWER",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "The type of attack varies\ndepending on the location."
   },
   "CHARGE": {
     "effect": "CHARGE",
@@ -4053,7 +4589,9 @@
     "flags": ["SNATCH_AFFECTED"],
     "name": "CHARGE",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "Charges power to boost the\nelectric move used next."
   },
   "TAUNT": {
     "effect": "TAUNT",
@@ -4067,7 +4605,9 @@
     "flags": ["PROTECT_AFFECTED"],
     "name": "TAUNT",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "Taunts the foe into only\nusing attack moves."
   },
   "HELPING_HAND": {
     "effect": "HELPING_HAND",
@@ -4081,7 +4621,9 @@
     "flags": [],
     "name": "HELPING HAND",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "Boosts the power of the\nrecipient's moves."
   },
   "TRICK": {
     "effect": "TRICK",
@@ -4095,7 +4637,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "TRICK",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "Tricks the foe into trading\nheld items."
   },
   "ROLE_PLAY": {
     "effect": "ROLE_PLAY",
@@ -4109,7 +4653,9 @@
     "flags": [],
     "name": "ROLE PLAY",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "Mimics the target and\ncopies its special ability."
   },
   "WISH": {
     "effect": "WISH",
@@ -4123,7 +4669,9 @@
     "flags": ["PROTECT_AFFECTED"],
     "name": "WISH",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "A wish that restores HP.\nIt takes time to work."
   },
   "ASSIST": {
     "effect": "ASSIST",
@@ -4137,7 +4685,9 @@
     "flags": [],
     "name": "ASSIST",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0],
+    "description": "Attacks randomly with one\nof the partner's moves."
   },
   "INGRAIN": {
     "effect": "INGRAIN",
@@ -4151,7 +4701,9 @@
     "flags": ["SNATCH_AFFECTED"],
     "name": "INGRAIN",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0],
+    "description": "Lays roots that restore HP.\nThe user can't switch out."
   },
   "SUPERPOWER": {
     "effect": "SUPERPOWER",
@@ -4165,7 +4717,9 @@
     "flags": ["MAKES_CONTACT", "PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "SUPERPOWER",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 1, 0],
+    "description": "Boosts strength sharply,\nbut lowers abilities."
   },
   "MAGIC_COAT": {
     "effect": "MAGIC_COAT",
@@ -4179,7 +4733,9 @@
     "flags": [],
     "name": "MAGIC COAT",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0],
+    "description": "Reflects special effects\nback to the attacker."
   },
   "RECYCLE": {
     "effect": "RECYCLE",
@@ -4193,7 +4749,9 @@
     "flags": [],
     "name": "RECYCLE",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "Recycles a used item for\none more use."
   },
   "REVENGE": {
     "effect": "REVENGE",
@@ -4212,7 +4770,9 @@
     ],
     "name": "REVENGE",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0],
+    "description": "An attack that gains power\nif injured by the foe."
   },
   "BRICK_BREAK": {
     "effect": "BRICK_BREAK",
@@ -4231,7 +4791,9 @@
     ],
     "name": "BRICK BREAK",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "Destroys barriers such as\nREFLECT and causes damage."
   },
   "YAWN": {
     "effect": "YAWN",
@@ -4245,7 +4807,9 @@
     "flags": ["PROTECT_AFFECTED", "MAGICCOAT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "YAWN",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "Lulls the foe into yawning,\nthen sleeping next turn."
   },
   "KNOCK_OFF": {
     "effect": "KNOCK_OFF",
@@ -4259,7 +4823,9 @@
     "flags": ["MAKES_CONTACT", "PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "KNOCK OFF",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1],
+    "description": "Knocks down the foe's held\nitem to prevent its use."
   },
   "ENDEAVOR": {
     "effect": "ENDEAVOR",
@@ -4278,7 +4844,9 @@
     ],
     "name": "ENDEAVOR",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0],
+    "description": "Gains power if the user's HP\nis lower than the foe's HP."
   },
   "ERUPTION": {
     "effect": "ERUPTION",
@@ -4292,7 +4860,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
     "name": "ERUPTION",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 1, 1, 0],
+    "description": "The higher the user's HP,\nthe more damage caused."
   },
   "SKILL_SWAP": {
     "effect": "SKILL_SWAP",
@@ -4306,7 +4876,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "SKILL SWAP",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "The user swaps special\nabilities with the target."
   },
   "IMPRISON": {
     "effect": "IMPRISON",
@@ -4320,7 +4892,9 @@
     "flags": ["PROTECT_AFFECTED"],
     "name": "IMPRISON",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0],
+    "description": "Prevents foes from using\nmoves known by the user."
   },
   "REFRESH": {
     "effect": "REFRESH",
@@ -4334,7 +4908,9 @@
     "flags": ["SNATCH_AFFECTED"],
     "name": "REFRESH",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "Heals poisoning, paralysis,\nor a burn."
   },
   "GRUDGE": {
     "effect": "GRUDGE",
@@ -4348,7 +4924,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "GRUDGE",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0],
+    "description": "If the user faints, deletes\nall PP of foe's last move."
   },
   "SNATCH": {
     "effect": "SNATCH",
@@ -4362,7 +4940,9 @@
     "flags": ["MIRROR_AFFECTED"],
     "name": "SNATCH",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0],
+    "description": "Steals the effects of the\nmove the target uses next."
   },
   "SECRET_POWER": {
     "effect": "SECRET_POWER",
@@ -4376,7 +4956,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "SECRET POWER",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1],
+    "description": "An attack with effects\nthat vary by location."
   },
   "DIVE": {
     "effect": "SEMI_INVULNERABLE",
@@ -4395,7 +4977,9 @@
     ],
     "name": "DIVE",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "Dives underwater the first\nturn and strikes next turn."
   },
   "ARM_THRUST": {
     "effect": "MULTI_HIT",
@@ -4414,7 +4998,9 @@
     ],
     "name": "ARM THRUST",
     "apprenticeUsable": false,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "Straight-arm punches that\nstrike the foe 2 to 5 times."
   },
   "CAMOUFLAGE": {
     "effect": "CAMOUFLAGE",
@@ -4428,7 +5014,9 @@
     "flags": ["SNATCH_AFFECTED"],
     "name": "CAMOUFLAGE",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "Alters the POKéMON's type\ndepending on the location."
   },
   "TAIL_GLOW": {
     "effect": "SPECIAL_ATTACK_UP_2",
@@ -4442,7 +5030,9 @@
     "flags": ["SNATCH_AFFECTED"],
     "name": "TAIL GLOW",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "Flashes a light that sharply\nraises SP. ATK."
   },
   "LUSTER_PURGE": {
     "effect": "SPECIAL_DEFENSE_DOWN_HIT",
@@ -4456,7 +5046,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "LUSTER PURGE",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1],
+    "description": "Attacks with a burst of\nlight. May lower SP. DEF."
   },
   "MIST_BALL": {
     "effect": "SPECIAL_ATTACK_DOWN_HIT",
@@ -4470,7 +5062,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "MIST BALL",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1],
+    "description": "Attacks with a flurry of\ndown. May lower SP. ATK."
   },
   "FEATHER_DANCE": {
     "effect": "ATTACK_DOWN_2",
@@ -4484,7 +5078,9 @@
     "flags": ["PROTECT_AFFECTED", "MAGICCOAT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "FEATHERDANCE",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "Envelops the foe with down\nto sharply reduce ATTACK."
   },
   "TEETER_DANCE": {
     "effect": "TEETER_DANCE",
@@ -4498,7 +5094,9 @@
     "flags": ["PROTECT_AFFECTED"],
     "name": "TEETER DANCE",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "Confuses all POKéMON on\nthe scene."
   },
   "BLAZE_KICK": {
     "effect": "BLAZE_KICK",
@@ -4512,7 +5110,9 @@
     "flags": ["MAKES_CONTACT", "PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "BLAZE KICK",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1],
+    "description": "A kick with a high critical-\nhit ratio. May cause a burn."
   },
   "MUD_SPORT": {
     "effect": "MUD_SPORT",
@@ -4526,7 +5126,9 @@
     "flags": [],
     "name": "MUD SPORT",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "Covers the user in mud to\nraise electrical resistance."
   },
   "ICE_BALL": {
     "effect": "ROLLOUT",
@@ -4545,7 +5147,9 @@
     ],
     "name": "ICE BALL",
     "apprenticeUsable": false,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "A 5-turn attack that gains\npower on successive hits."
   },
   "NEEDLE_ARM": {
     "effect": "FLINCH_MINIMIZE_HIT",
@@ -4559,7 +5163,9 @@
     "flags": ["MAKES_CONTACT", "PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "NEEDLE ARM",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1],
+    "description": "Attacks with thorny arms.\nMay cause flinching."
   },
   "SLACK_OFF": {
     "effect": "RESTORE_HP",
@@ -4573,7 +5179,9 @@
     "flags": ["SNATCH_AFFECTED"],
     "name": "SLACK OFF",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "Slacks off and restores\nhalf the maximum HP."
   },
   "HYPER_VOICE": {
     "effect": "HIT",
@@ -4587,7 +5195,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "HYPER VOICE",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0],
+    "description": "A loud attack that uses\nsound waves to injure."
   },
   "POISON_FANG": {
     "effect": "POISON_FANG",
@@ -4601,7 +5211,9 @@
     "flags": ["MAKES_CONTACT", "PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "POISON FANG",
     "apprenticeUsable": false,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1],
+    "description": "A sharp-fanged attack.\nMay badly poison the foe."
   },
   "CRUSH_CLAW": {
     "effect": "DEFENSE_DOWN_HIT",
@@ -4615,7 +5227,9 @@
     "flags": ["MAKES_CONTACT", "PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "CRUSH CLAW",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1],
+    "description": "Tears at the foe with sharp\nclaws. May lower DEFENSE."
   },
   "BLAST_BURN": {
     "effect": "RECHARGE",
@@ -4629,7 +5243,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
     "name": "BLAST BURN",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 0],
+    "description": "Powerful, but leaves the\nuser immobile the next turn."
   },
   "HYDRO_CANNON": {
     "effect": "RECHARGE",
@@ -4643,7 +5259,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
     "name": "HYDRO CANNON",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 0],
+    "description": "Powerful, but leaves the\nuser immobile the next turn."
   },
   "METEOR_MASH": {
     "effect": "ATTACK_UP_HIT",
@@ -4662,7 +5280,9 @@
     ],
     "name": "METEOR MASH",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1],
+    "description": "Fires a meteor-like punch.\nMay raise ATTACK."
   },
   "ASTONISH": {
     "effect": "FLINCH_MINIMIZE_HIT",
@@ -4676,7 +5296,9 @@
     "flags": ["MAKES_CONTACT", "PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "ASTONISH",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1],
+    "description": "An attack that may shock\nthe foe into flinching."
   },
   "WEATHER_BALL": {
     "effect": "WEATHER_BALL",
@@ -4690,7 +5312,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
     "name": "WEATHER BALL",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "The move's type and power\nchange with the weather."
   },
   "AROMATHERAPY": {
     "effect": "HEAL_BELL",
@@ -4704,7 +5328,9 @@
     "flags": ["SNATCH_AFFECTED"],
     "name": "AROMATHERAPY",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0],
+    "description": "Heals all status problems\nwith a soothing scent."
   },
   "FAKE_TEARS": {
     "effect": "SPECIAL_DEFENSE_DOWN_2",
@@ -4718,7 +5344,9 @@
     "flags": ["PROTECT_AFFECTED", "MAGICCOAT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "FAKE TEARS",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "Feigns crying to sharply\nlower the foe's SP. DEF."
   },
   "AIR_CUTTER": {
     "effect": "HIGH_CRITICAL",
@@ -4732,7 +5360,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
     "name": "AIR CUTTER",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "Hacks with razorlike wind.\nHigh critical-hit ratio."
   },
   "OVERHEAT": {
     "effect": "OVERHEAT",
@@ -4751,7 +5381,9 @@
     ],
     "name": "OVERHEAT",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1],
+    "description": "Allows a full-power attack,\nbut sharply lowers SP. ATK."
   },
   "ODOR_SLEUTH": {
     "effect": "FORESIGHT",
@@ -4765,7 +5397,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "ODOR SLEUTH",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "Negates the foe's efforts\nto heighten evasiveness."
   },
   "ROCK_TOMB": {
     "effect": "SPEED_DOWN_HIT",
@@ -4779,7 +5413,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "ROCK TOMB",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1],
+    "description": "Stops the foe from moving\nwith rocks and cuts SPEED."
   },
   "SILVER_WIND": {
     "effect": "ALL_STATS_UP_HIT",
@@ -4793,7 +5429,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
     "name": "SILVER WIND",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1],
+    "description": "A powdery attack that may\nraise abilities."
   },
   "METAL_SOUND": {
     "effect": "SPECIAL_DEFENSE_DOWN_2",
@@ -4807,7 +5445,9 @@
     "flags": ["PROTECT_AFFECTED", "MAGICCOAT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "METAL SOUND",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "Emits a horrible screech\nthat sharply lowers SP. DEF."
   },
   "GRASS_WHISTLE": {
     "effect": "SLEEP",
@@ -4821,7 +5461,9 @@
     "flags": ["PROTECT_AFFECTED", "MAGICCOAT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "GRASSWHISTLE",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "Lulls the foe into sleep\nwith a pleasant melody."
   },
   "TICKLE": {
     "effect": "TICKLE",
@@ -4840,7 +5482,9 @@
     ],
     "name": "TICKLE",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "Makes the foe laugh to\nlower ATTACK and DEFENSE."
   },
   "COSMIC_POWER": {
     "effect": "COSMIC_POWER",
@@ -4854,7 +5498,9 @@
     "flags": ["SNATCH_AFFECTED"],
     "name": "COSMIC POWER",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "Raises DEFENSE and SP. DEF\nwith a mystic power."
   },
   "WATER_SPOUT": {
     "effect": "ERUPTION",
@@ -4868,7 +5514,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "WATER SPOUT",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 1, 1, 0],
+    "description": "Inflicts more damage if the\nuser's HP is high."
   },
   "SIGNAL_BEAM": {
     "effect": "CONFUSE_HIT",
@@ -4882,7 +5530,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
     "name": "SIGNAL BEAM",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1],
+    "description": "A strange beam attack that\nmay confuse the foe."
   },
   "SHADOW_PUNCH": {
     "effect": "ALWAYS_HIT",
@@ -4901,7 +5551,9 @@
     ],
     "name": "SHADOW PUNCH",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "An unavoidable punch that\nis thrown from shadows."
   },
   "EXTRASENSORY": {
     "effect": "FLINCH_MINIMIZE_HIT",
@@ -4915,7 +5567,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "EXTRASENSORY",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1],
+    "description": "Attacks with a peculiar\npower. May cause flinching."
   },
   "SKY_UPPERCUT": {
     "effect": "SKY_UPPERCUT",
@@ -4934,7 +5588,9 @@
     ],
     "name": "SKY UPPERCUT",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "An uppercut thrown as if\nleaping into the sky."
   },
   "SAND_TOMB": {
     "effect": "TRAP",
@@ -4948,7 +5604,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
     "name": "SAND TOMB",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1],
+    "description": "Traps and hurts the foe in\nquicksand for 2 to 5 turns."
   },
   "SHEER_COLD": {
     "effect": "OHKO",
@@ -4962,7 +5620,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "SHEER COLD",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0],
+    "description": "A chilling attack that\ncauses fainting if it hits."
   },
   "MUDDY_WATER": {
     "effect": "ACCURACY_DOWN_HIT",
@@ -4976,7 +5636,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
     "name": "MUDDY WATER",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1],
+    "description": "Attacks with muddy water.\nMay lower accuracy."
   },
   "BULLET_SEED": {
     "effect": "MULTI_HIT",
@@ -4990,7 +5652,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
     "name": "BULLET SEED",
     "apprenticeUsable": false,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "Shoots 2 to 5 seeds in a row\nto strike the foe."
   },
   "AERIAL_ACE": {
     "effect": "ALWAYS_HIT",
@@ -5009,7 +5673,9 @@
     ],
     "name": "AERIAL ACE",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "An extremely speedy and\nunavoidable attack."
   },
   "ICICLE_SPEAR": {
     "effect": "MULTI_HIT",
@@ -5023,7 +5689,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
     "name": "ICICLE SPEAR",
     "apprenticeUsable": false,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "Attacks the foe by firing\n2 to 5 icicles in a row."
   },
   "IRON_DEFENSE": {
     "effect": "DEFENSE_UP_2",
@@ -5037,7 +5705,9 @@
     "flags": ["SNATCH_AFFECTED"],
     "name": "IRON DEFENSE",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0],
+    "description": "Hardens the body's surface\nto sharply raise DEFENSE."
   },
   "BLOCK": {
     "effect": "MEAN_LOOK",
@@ -5051,7 +5721,9 @@
     "flags": ["PROTECT_AFFECTED", "MAGICCOAT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "BLOCK",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0],
+    "description": "Blocks the foe's way to\nprevent escape."
   },
   "HOWL": {
     "effect": "ATTACK_UP",
@@ -5065,7 +5737,9 @@
     "flags": ["SNATCH_AFFECTED"],
     "name": "HOWL",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "Howls to raise the spirit\nand boosts ATTACK."
   },
   "DRAGON_CLAW": {
     "effect": "HIT",
@@ -5084,7 +5758,9 @@
     ],
     "name": "DRAGON CLAW",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "Slashes the foe with sharp\nclaws."
   },
   "FRENZY_PLANT": {
     "effect": "RECHARGE",
@@ -5098,7 +5774,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
     "name": "FRENZY PLANT",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 0],
+    "description": "Powerful, but leaves the\nuser immobile the next turn."
   },
   "BULK_UP": {
     "effect": "BULK_UP",
@@ -5112,7 +5790,9 @@
     "flags": ["SNATCH_AFFECTED"],
     "name": "BULK UP",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "Bulks up the body to boost\nboth ATTACK and DEFENSE."
   },
   "BOUNCE": {
     "effect": "SEMI_INVULNERABLE",
@@ -5131,7 +5811,9 @@
     ],
     "name": "BOUNCE",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1],
+    "description": "Bounces up, then down the\nnext turn. May paralyze."
   },
   "MUD_SHOT": {
     "effect": "SPEED_DOWN_HIT",
@@ -5145,7 +5827,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
     "name": "MUD SHOT",
     "apprenticeUsable": false,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1],
+    "description": "Hurls mud at the foe and\nreduces SPEED."
   },
   "POISON_TAIL": {
     "effect": "POISON_TAIL",
@@ -5164,7 +5848,9 @@
     ],
     "name": "POISON TAIL",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1],
+    "description": "Has a high critical-hit\nratio. May also poison."
   },
   "COVET": {
     "effect": "THIEF",
@@ -5178,7 +5864,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED"],
     "name": "COVET",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1],
+    "description": "Cutely begs to obtain an\nitem held by the foe."
   },
   "VOLT_TACKLE": {
     "effect": "DOUBLE_EDGE",
@@ -5197,7 +5885,9 @@
     ],
     "name": "VOLT TACKLE",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0],
+    "description": "A life-risking tackle that\nslightly hurts the user."
   },
   "MAGICAL_LEAF": {
     "effect": "ALWAYS_HIT",
@@ -5211,7 +5901,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
     "name": "MAGICAL LEAF",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "Attacks with a strange leaf\nthat cannot be evaded."
   },
   "WATER_SPORT": {
     "effect": "WATER_SPORT",
@@ -5225,7 +5917,9 @@
     "flags": [],
     "name": "WATER SPORT",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "The user becomes soaked to\nraise resistance to fire."
   },
   "CALM_MIND": {
     "effect": "CALM_MIND",
@@ -5239,7 +5933,9 @@
     "flags": ["SNATCH_AFFECTED"],
     "name": "CALM MIND",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "Raises SP. ATK and SP. DEF\nby focusing the mind."
   },
   "LEAF_BLADE": {
     "effect": "HIGH_CRITICAL",
@@ -5258,7 +5954,9 @@
     ],
     "name": "LEAF BLADE",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0],
+    "description": "Slashes with a sharp leaf.\nHigh critical-hit ratio."
   },
   "DRAGON_DANCE": {
     "effect": "DRAGON_DANCE",
@@ -5272,7 +5970,9 @@
     "flags": ["SNATCH_AFFECTED"],
     "name": "DRAGON DANCE",
     "apprenticeUsable": true,
-    "battleArenaRating": 0
+    "battleArenaRating": 0,
+    "battleDomeRatings": [1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "A mystical dance that ups\nATTACK and SPEED."
   },
   "ROCK_BLAST": {
     "effect": "MULTI_HIT",
@@ -5286,7 +5986,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
     "name": "ROCK BLAST",
     "apprenticeUsable": false,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "Hurls boulders at the foe\n2 to 5 times in a row."
   },
   "SHOCK_WAVE": {
     "effect": "ALWAYS_HIT",
@@ -5300,7 +6002,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
     "name": "SHOCK WAVE",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "A fast and unavoidable\nelectric attack."
   },
   "WATER_PULSE": {
     "effect": "CONFUSE_HIT",
@@ -5314,7 +6018,9 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
     "name": "WATER PULSE",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1],
+    "description": "Attacks with ultrasonic\nwaves. May confuse the foe."
   },
   "DOOM_DESIRE": {
     "effect": "FUTURE_SIGHT",
@@ -5328,7 +6034,9 @@
     "flags": [],
     "name": "DOOM DESIRE",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 0],
+    "description": "Summons strong sunlight to\nattack 2 turns later."
   },
   "PSYCHO_BOOST": {
     "effect": "OVERHEAT",
@@ -5342,6 +6050,8 @@
     "flags": ["PROTECT_AFFECTED", "MIRROR_AFFECTED", "KINGSROCK_AFFECTED"],
     "name": "PSYCHO BOOST",
     "apprenticeUsable": true,
-    "battleArenaRating": 1
+    "battleArenaRating": 1,
+    "battleDomeRatings": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1],
+    "description": "Allows a full-power attack,\nbut sharply lowers SP. ATK."
   }
 }

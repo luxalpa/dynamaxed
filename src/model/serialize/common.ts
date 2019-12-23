@@ -143,7 +143,10 @@ export function writeToASMDataFile(filename: string, contents: string) {
 }
 
 export function escapeForString(str: string): string {
-  return str.replace("\\", "\\\\").replace('"', '\\"');
+  return str
+    .replace("\\", "\\\\")
+    .replace('"', '\\"')
+    .replace("\n", "\\n");
 }
 
 export function headerGuard(name: string, contents: string): string {

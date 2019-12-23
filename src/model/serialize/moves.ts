@@ -10,7 +10,8 @@ import {
   makeBool,
   makeText,
   writeToASMDataFile,
-  declareASM
+  declareASM,
+  ArrayValue
 } from "@/model/serialize/common";
 import { GameModel } from "@/model/model";
 
@@ -20,6 +21,45 @@ export function compileMoves() {
   buildMoveNames();
   buildMoveMindRatings();
   buildMoveAnimIDs();
+  buildMovePointsDome();
+  buildMoveDescriptions();
+}
+
+function buildMoveDescriptions() {
+  let moves = { ...GameModel.model.moves };
+  delete moves.NONE;
+
+  const descriptions = new DictionaryValue(
+    Object.entries(moves).map(([id, move]) => ({
+      key: `MOVE_${id} - 1`,
+      value: "(const u8[]) " + makeText(move.description)
+    }))
+  );
+
+  writeToDataFile(
+    "move_descriptions.h",
+    declareConst(
+      "u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1]",
+      descriptions
+    )
+  );
+}
+
+function buildMovePointsDome() {
+  const ratings = new DictionaryValue(
+    Object.entries(GameModel.model.moves).map(([id, move]) => ({
+      key: `MOVE_${id}`,
+      value: new ArrayValue(move.battleDomeRatings)
+    }))
+  );
+
+  writeToDataFile(
+    "move_dome_ratings.h",
+    declareStaticConst(
+      "u8 sMovePointsForDomeTrainers[MOVES_COUNT][DOME_TOURNAMENT_TRAINERS_COUNT]",
+      ratings
+    )
+  );
 }
 
 function buildMoveAnimIDs() {

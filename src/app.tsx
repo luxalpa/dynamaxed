@@ -42,7 +42,7 @@ cssRule("::selection", {
 
 const styles = stylesheet({
   app: {
-    fontFamily: ["sans-serif", "Arial", "Helvetica", "Roboto", "Fira Sans"],
+    fontFamily: ["sans-serif", "Arial", "Helvetica", "Fira Sans"],
     "-webkit-font-smoothing": "antialiased",
     "-moz-osx-font-smoothing": "grayscale",
     fontSize: "13px",
@@ -61,7 +61,7 @@ const styles = stylesheet({
 @Component({
   name: "App"
 })
-export default class App extends Vue {
+export class App extends Vue {
   render(h: any) {
     let CurView: any;
 

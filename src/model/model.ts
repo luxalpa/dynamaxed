@@ -103,6 +103,8 @@ export interface Move {
   flags: string[];
   apprenticeUsable: boolean; // For Battle Frontier Apprentice
   battleArenaRating: number;
+  battleDomeRatings: number[];
+  description: string;
 }
 
 export interface Model {

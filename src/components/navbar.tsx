@@ -22,6 +22,11 @@ const navElements: NavElement[] = [
     isSubElement: true,
     switchToView: TrainerClassesView,
     text: "Trainer Classes"
+  },
+  {
+    text: "Moves",
+    isSubElement: false,
+    switchToView: TrainersView
   }
 ];
 
