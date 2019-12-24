@@ -23,13 +23,14 @@ export function createList<T>(
         <Table
           entries={this.entries}
           layout={layout}
+          rowKey={([id]: [string, T]) => id}
           onentryclick={([id]: [string, T]) => this.onEntryClick(id)}
         />
       );
     }
   };
 
-  return Component(c);
+  return Component({ name: "DynList" })(c);
 }
 
 export interface CreateOpts<T> {

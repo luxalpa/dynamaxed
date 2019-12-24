@@ -14,6 +14,7 @@ export interface Column<T> {
 export class Table extends Vue {
   @Prop() layout!: Column<any>[];
   @Prop() entries!: any[];
+  @Prop() rowKey!: (x: any) => string;
 
   onRowClick(row: any) {
     this.$emit("entryclick", row);
@@ -31,7 +32,7 @@ export class Table extends Vue {
             ))}
           </tr>
           {this.entries.map(row => (
-            <tr onclick={() => this.onRowClick(row)}>
+            <tr onclick={() => this.onRowClick(row)} key={this.rowKey(row)}>
               {this.layout.map(c => (
                 <td>{c.render(this.$createElement, row)}</td>
               ))}
