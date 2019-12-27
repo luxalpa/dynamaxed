@@ -3,11 +3,15 @@ import { CreateElement } from "vue";
 import { stylesheet } from "typestyle";
 import { Theme } from "@/theming";
 import { Constants } from "@/constants";
+import { TextInput } from "@/components/text-input";
+import { FlexRow } from "@/components/layout";
+import { Label } from "@/components/label";
 
 export interface Column<T> {
   text: string;
   align?: string;
   render(h: CreateElement, e: T): any;
+  filter?(row: T, input: string): boolean;
 }
 
 @Component
@@ -16,29 +20,52 @@ export class Table extends Vue {
   @Prop() entries!: any[];
   @Prop() rowKey!: (x: any) => string;
 
+  filter: string = "";
+
   onRowClick(row: any) {
     this.$emit("entryclick", row);
   }
 
+  get hasFilter() {
+    return this.filterColumns.length != 0;
+  }
+
+  get filterColumns() {
+    return this.layout.filter(col => col.filter !== undefined);
+  }
+
   render() {
+    let entries = this.entries;
+    if (this.hasFilter) {
+      entries = entries.filter(v => {
+        return this.filterColumns.some(col => col.filter!(v, this.filter));
+      });
+    }
+
     return (
       <div>
-        <table class={styles.table}>
-          <tr>
-            {this.layout.map(c => (
-              <th class={styles.tableHeader} style={{ textAlign: c.align }}>
-                {c.text}
-              </th>
-            ))}
-          </tr>
-          {this.entries.map(row => (
-            <tr onclick={() => this.onRowClick(row)} key={this.rowKey(row)}>
+        <FlexRow>
+          <Label width={2}>Filter:</Label>
+          <TextInput vModel={this.filter} />
+        </FlexRow>
+        <div>
+          <table class={styles.table}>
+            <tr>
               {this.layout.map(c => (
-                <td>{c.render(this.$createElement, row)}</td>
+                <th class={styles.tableHeader} style={{ textAlign: c.align }}>
+                  {c.text}
+                </th>
               ))}
             </tr>
-          ))}
-        </table>
+            {entries.map(row => (
+              <tr onclick={() => this.onRowClick(row)} key={this.rowKey(row)}>
+                {this.layout.map(c => (
+                  <td>{c.render(this.$createElement, row)}</td>
+                ))}
+              </tr>
+            ))}
+          </table>
+        </div>
       </div>
     );
   }

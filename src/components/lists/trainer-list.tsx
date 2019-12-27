@@ -26,11 +26,17 @@ export const {
     },
     {
       text: "ID",
-      render: (h, [id, trainer]) => <IDDisplay value={id} />
+      render: (h, [id, trainer]) => <IDDisplay value={id} />,
+      filter([id], input) {
+        return ("#" + id.toUpperCase()).includes(input.toUpperCase());
+      }
     },
     {
       text: "Name",
-      render: (h, [id, trainer]) => trainer.trainerName
+      render: (h, [id, trainer]) => trainer.trainerName,
+      filter([id, trainer], input) {
+        return trainer.trainerName.toUpperCase().includes(input.toLowerCase());
+      }
     },
     {
       text: "Party",
