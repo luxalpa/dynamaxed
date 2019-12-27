@@ -11,14 +11,19 @@ export interface Column<T> {
   text: string;
   align?: string;
   render(h: CreateElement, e: T): any;
-  filter?(row: T, input: string): boolean;
 }
+
+export type FilterFn<T> = (row: T, input: string) => boolean;
 
 @Component
 export class Table extends Vue {
   @Prop() layout!: Column<any>[];
   @Prop() entries!: any[];
   @Prop() rowKey!: (x: any) => string;
+  @Prop({
+    default: () => true
+  })
+  rowFilter!: FilterFn<any>;
 
   filter: string = "";
 
@@ -26,21 +31,11 @@ export class Table extends Vue {
     this.$emit("entryclick", row);
   }
 
-  get hasFilter() {
-    return this.filterColumns.length != 0;
-  }
-
-  get filterColumns() {
-    return this.layout.filter(col => col.filter !== undefined);
-  }
-
   render() {
     let entries = this.entries;
-    if (this.hasFilter) {
-      entries = entries.filter(v => {
-        return this.filterColumns.some(col => col.filter!(v, this.filter));
-      });
-    }
+    entries = entries.filter(v => {
+      return this.rowFilter(v, this.filter);
+    });
 
     return (
       <div>

@@ -13,6 +13,9 @@ export const {
   viewTitle: "All Trainers",
   targetView: EditTrainerView,
   model: () => GameModel.model.trainers,
+  filter: ([id, trainer], input) =>
+    trainer.trainerName.toUpperCase().includes(input.toUpperCase()) ||
+    ("#" + id).toUpperCase().includes(input.toUpperCase()),
   layout: [
     {
       text: "Picture",
@@ -26,17 +29,11 @@ export const {
     },
     {
       text: "ID",
-      render: (h, [id, trainer]) => <IDDisplay value={id} />,
-      filter([id], input) {
-        return ("#" + id.toUpperCase()).includes(input.toUpperCase());
-      }
+      render: (h, [id, trainer]) => <IDDisplay value={id} />
     },
     {
       text: "Name",
-      render: (h, [id, trainer]) => trainer.trainerName,
-      filter([id, trainer], input) {
-        return trainer.trainerName.toUpperCase().includes(input.toLowerCase());
-      }
+      render: (h, [id, trainer]) => trainer.trainerName
     },
     {
       text: "Party",

@@ -1,5 +1,5 @@
 import { Component, Vue } from "vue-property-decorator";
-import { Column, Table } from "@/components/table";
+import { Column, FilterFn, Table } from "@/components/table";
 import { View } from "@/modules/view-manager";
 import { Dialog } from "@/modules/dialog-manager";
 import { ChooseFromListDialog } from "@/components/dialogs/choose-from-list-dialog";
@@ -7,7 +7,8 @@ import { createListView } from "@/components/views/list-view";
 
 export function createList<T>(
   model: () => Record<string, T>,
-  layout: Column<[string, T]>[]
+  layout: Column<[string, T]>[],
+  filter?: FilterFn<[string, T]>
 ): new () => Vue {
   const c = class extends Vue {
     onEntryClick(id: string) {
@@ -24,6 +25,7 @@ export function createList<T>(
           entries={this.entries}
           layout={layout}
           rowKey={([id]: [string, T]) => id}
+          rowFilter={filter}
           onentryclick={([id]: [string, T]) => this.onEntryClick(id)}
         />
       );
@@ -39,6 +41,7 @@ export interface CreateOpts<T> {
   layout: Column<[string, T]>[];
   viewTitle: string;
   targetView: new () => View<string>;
+  filter?: FilterFn<[string, T]>;
 }
 
 export function generateListComponents<T>(
@@ -53,7 +56,7 @@ export function generateListComponents<T>(
   //     </Button>
   //   )
   // };
-  const ListComponent = createList(opts.model, opts.layout);
+  const ListComponent = createList(opts.model, opts.layout, opts.filter);
 
   return {
     dialog: ChooseFromListDialog(ListComponent, {

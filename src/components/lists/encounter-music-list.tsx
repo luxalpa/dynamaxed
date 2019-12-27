@@ -15,10 +15,7 @@ const EncounterMusicList = createList(
   [
     {
       text: "ID",
-      render: (h, e) => <IDDisplay value={e} />,
-      filter([id], input) {
-        return ("#" + id.toUpperCase()).includes(input.toUpperCase());
-      }
+      render: (h, e) => <IDDisplay value={e} />
     }
   ]
 );
