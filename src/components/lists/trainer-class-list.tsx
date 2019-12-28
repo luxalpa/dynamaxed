@@ -22,7 +22,7 @@ export const {
       render: (h, [id, trainerClass]) => <IDDisplay value={id} />
     },
     {
-      text: "Text",
+      text: "Title",
       sort: ([, trainerClass1], [, trainerClass2]) =>
         trainerClass1.name.localeCompare(trainerClass2.name),
       render: (h, [, trainerClass]) => trainerClass.name
@@ -37,7 +37,10 @@ export const {
       ),
       align: "right"
     }
-  ]
+  ],
+  filter: ([id, trainerClass], input) =>
+    ("#" + id.toUpperCase()).includes(input.toUpperCase()) ||
+    trainerClass.name.toUpperCase().includes(input.toUpperCase())
 });
 
 const styleMoney = style({

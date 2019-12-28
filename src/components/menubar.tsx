@@ -36,6 +36,7 @@ const menu: Menu[] = [
         text: "Compile",
         shortcut: "F7",
         async fn() {
+          ProjectManager.Save();
           GameModel.Compile();
           console.log("Compiled");
         }

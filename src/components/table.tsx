@@ -35,14 +35,24 @@ export class Table extends Vue {
   rowFilter!: FilterFn<any>;
 
   filter: string = "";
-  _sortCol = NoColumn;
-
-  mounted() {
-    this._sortCol = this.layout[0];
-  }
+  sortCol = NoColumn;
+  sortDir = false;
 
   onRowClick(row: any) {
     this.$emit("entryclick", row);
+  }
+
+  sortByColumn(c: Column<any>) {
+    if (this.sortCol === c) {
+      if (this.sortDir) {
+        this.sortDir = false;
+        this.sortCol = NoColumn;
+      } else {
+        this.sortDir = true;
+      }
+    } else {
+      this.sortCol = c;
+    }
   }
 
   render() {
@@ -50,6 +60,18 @@ export class Table extends Vue {
     entries = entries.filter(v => {
       return this.rowFilter(v, this.filter);
     });
+
+    if (this.sortCol !== NoColumn) {
+      // We need to make sure sort works on a new array so we can always
+      // get our original back
+      if (entries === this.entries) {
+        entries = [...entries];
+      }
+      entries.sort(this.sortCol.sort);
+      if (this.sortDir) {
+        entries = entries.reverse();
+      }
+    }
 
     return (
       <div>
@@ -61,7 +83,11 @@ export class Table extends Vue {
           <table class={styles.table}>
             <tr>
               {this.layout.map(c => (
-                <th class={styles.tableHeader} style={{ textAlign: c.align }}>
+                <th
+                  class={styles.tableHeader}
+                  style={{ textAlign: c.align }}
+                  onclick={() => this.sortByColumn(c)}
+                >
                   {c.text}
                 </th>
               ))}

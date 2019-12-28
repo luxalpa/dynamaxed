@@ -18,7 +18,8 @@ const EncounterMusicList = createList(
       sort: ([id1], [id2]) => id1.localeCompare(id2),
       render: (h, e) => <IDDisplay value={e} />
     }
-  ]
+  ],
+  ([id], input) => ("#" + id.toUpperCase()).includes(input.toUpperCase())
 );
 
 export const ChooseEncounterMusicDialog = ChooseFromListDialog(

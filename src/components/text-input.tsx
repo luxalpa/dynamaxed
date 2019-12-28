@@ -16,11 +16,11 @@ export class TextInput extends Vue {
   })
   height!: number;
 
-  get _value() {
+  get inputValue() {
     return this.value;
   }
 
-  set _value(v: string) {
+  set inputValue(v: string) {
     this.$emit("input", v);
   }
 
@@ -42,7 +42,7 @@ export class TextInput extends Vue {
           type="text"
           style={style}
           class={styles.textInput}
-          vModel={this._value}
+          vModel={this.inputValue}
           disabled={this.disabled}
           ref="input"
         />
