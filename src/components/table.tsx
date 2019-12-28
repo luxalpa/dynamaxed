@@ -36,7 +36,7 @@ export class Table extends Vue {
 
   filter: string = "";
   sortCol = NoColumn;
-  sortDir = false;
+  sortReversed = false;
 
   onRowClick(row: any) {
     this.$emit("entryclick", row);
@@ -44,11 +44,11 @@ export class Table extends Vue {
 
   sortByColumn(c: Column<any>) {
     if (this.sortCol === c) {
-      if (this.sortDir) {
-        this.sortDir = false;
+      if (this.sortReversed) {
+        this.sortReversed = false;
         this.sortCol = NoColumn;
       } else {
-        this.sortDir = true;
+        this.sortReversed = true;
       }
     } else {
       this.sortCol = c;
@@ -68,7 +68,7 @@ export class Table extends Vue {
         entries = [...entries];
       }
       entries.sort(this.sortCol.sort);
-      if (this.sortDir) {
+      if (this.sortReversed) {
         entries = entries.reverse();
       }
     }
@@ -108,6 +108,7 @@ export class Table extends Vue {
 
 const styles = stylesheet({
   table: {
+    margin: Constants.margin,
     borderCollapse: "collapse",
     $nest: {
       "& tr": {

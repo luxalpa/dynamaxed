@@ -31,6 +31,9 @@ import { TrainersView } from "@/components/lists/trainer-list";
 import { TrainerClassesView } from "@/components/lists/trainer-class-list";
 import { ProjectManager } from "@/modules/project-manager";
 import { restoreState } from "@/store";
+import { EditMapView } from "@/components/views/edit-map-view";
+import { MovesView } from "@/components/lists/move-list";
+import { EditMoveView } from "@/components/views/edit-move-view";
 
 Vue.use(PortalVue);
 
@@ -59,7 +62,10 @@ ViewManager.registerViews({
   "edit-trainer": EditTrainerView,
   trainers: TrainersView,
   "trainer-classes": TrainerClassesView,
-  "edit-trainer-class": EditTrainerClassView
+  "edit-trainer-class": EditTrainerClassView,
+  "edit-map-view": EditMapView,
+  moves: MovesView,
+  "edit-move-view": EditMoveView
 });
 
 ViewManager.push(TrainersView);

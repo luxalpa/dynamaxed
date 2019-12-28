@@ -1,5 +1,6 @@
 import fs from "fs";
 import { PathManager } from "@/modules/path-manager";
+import * as path from "path";
 
 export interface DictionaryEntry {
   key: string;
@@ -127,7 +128,9 @@ export function declareStaticConst(dec: string, contents: CValue) {
 }
 
 export function writeToFile(contents: string, ...filepath: string[]) {
-  fs.writeFileSync(PathManager.projectPath(...filepath), contents);
+  const dirPath = PathManager.projectPath(...filepath);
+  fs.mkdirSync(path.dirname(dirPath), { recursive: true });
+  fs.writeFileSync(dirPath, contents);
 }
 
 export function writeToDataFile(filename: string, contents: string) {
