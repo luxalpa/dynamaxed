@@ -121,3 +121,5 @@ export const EncounterMusic = [
   "INTERVIEWER",
   "RICH"
 ];
+
+export const TrainerClassDefaultMoney = 5;

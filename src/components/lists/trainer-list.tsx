@@ -5,6 +5,22 @@ import { EditTrainerView } from "@/components/views/edit-trainer-view";
 import { stylesheet } from "typestyle";
 import { generateListComponents } from "@/components/lists/list";
 import { IDDisplay } from "@/components/displays/id-display";
+import { TrainerClassDefaultMoney } from "@/model/constants";
+
+function calculateTrainerMoney(t: Trainer): number | undefined {
+  const money =
+    GameModel.model.trainerClasses[t.trainerClass].money ??
+    TrainerClassDefaultMoney;
+  if (t.party.length == 0) {
+    return undefined;
+  }
+  const lastLevel = t.party[t.party.length - 1].lvl;
+  let v = 4 * money * lastLevel;
+  if (t.doubleBattle) {
+    v *= 2;
+  }
+  return v;
+}
 
 export const {
   view: TrainersView,
@@ -19,6 +35,8 @@ export const {
   layout: [
     {
       text: "Picture",
+      sort: ([id1, trainer1], [id2, trainer2]) =>
+        trainer1.trainerPic.localeCompare(trainer2.trainerPic),
       render: (h, [id, trainer]) => (
         <img
           alt=""
@@ -29,14 +47,19 @@ export const {
     },
     {
       text: "ID",
+      sort: ([id1], [id2]) => id1.localeCompare(id2),
       render: (h, [id, trainer]) => <IDDisplay value={id} />
     },
     {
       text: "Name",
+      sort: ([, trainer1], [, trainer2]) =>
+        trainer1.trainerName.localeCompare(trainer2.trainerName),
       render: (h, [id, trainer]) => trainer.trainerName
     },
     {
       text: "Party",
+      sort: ([, trainer1], [, trainer2]) =>
+        trainer1.party.length - trainer2.party.length,
       render: (h, [id, trainer]) => (
         <div class={styles.party}>
           {trainer.party.map(mon => (
@@ -57,19 +80,18 @@ export const {
     {
       text: "Prize",
       align: "right",
+      sort: ([, trainer1], [, trainer2]) =>
+        (calculateTrainerMoney(trainer1) || 0) -
+        (calculateTrainerMoney(trainer2) || 0),
       render(h, [id, t]) {
-        const money = GameModel.model.trainerClasses[t.trainerClass].money ?? 5;
-        if (t.party.length == 0) {
+        const money = calculateTrainerMoney(t);
+        if (money === undefined) {
           return <div class={styles.money}>INVALID</div>;
         }
-        const lastLevel = t.party[t.party.length - 1].lvl;
-        let v = 4 * money * lastLevel;
-        if (t.doubleBattle) {
-          v *= 2;
-        }
+
         return (
           <div class={styles.money}>
-            <span class={styles.moneyValue}>{v}</span>$
+            <span class={styles.moneyValue}>{money}</span>$
           </div>
         );
       }

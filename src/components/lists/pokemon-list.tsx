@@ -9,6 +9,7 @@ import { IDDisplay } from "@/components/displays/id-display";
 const PokemonList = createList<Pokemon>(() => GameModel.model.pokemon, [
   {
     text: "Icon",
+    sort: ([id1], [id2]) => id1.localeCompare(id2),
     render: (h, [id, pokemon]) => (
       <Sprite
         class={styles.pokeIcon}
@@ -19,10 +20,13 @@ const PokemonList = createList<Pokemon>(() => GameModel.model.pokemon, [
   },
   {
     text: "ID",
+    sort: ([id1], [id2]) => id1.localeCompare(id2),
     render: (h, [id, pokemon]) => <IDDisplay value={id} />
   },
   {
     text: "Name",
+    sort: ([, pokemon1], [, pokemon2]) =>
+      pokemon1.name.localeCompare(pokemon2.name),
     render: (h, [id, pokemon]) => pokemon.name
   }
 ]);

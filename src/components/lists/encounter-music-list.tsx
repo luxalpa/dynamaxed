@@ -15,6 +15,7 @@ const EncounterMusicList = createList(
   [
     {
       text: "ID",
+      sort: ([id1], [id2]) => id1.localeCompare(id2),
       render: (h, e) => <IDDisplay value={e} />
     }
   ]

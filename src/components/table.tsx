@@ -11,9 +11,18 @@ export interface Column<T> {
   text: string;
   align?: string;
   render(h: CreateElement, e: T): any;
+  sort: (a: T, b: T) => number;
 }
 
 export type FilterFn<T> = (row: T, input: string) => boolean;
+
+const NoColumn: Column<any> = {
+  text: "",
+  render(h: CreateElement, e: any): any {
+    return "";
+  },
+  sort: (a, b) => 0
+};
 
 @Component
 export class Table extends Vue {
@@ -26,6 +35,11 @@ export class Table extends Vue {
   rowFilter!: FilterFn<any>;
 
   filter: string = "";
+  _sortCol = NoColumn;
+
+  mounted() {
+    this._sortCol = this.layout[0];
+  }
 
   onRowClick(row: any) {
     this.$emit("entryclick", row);
