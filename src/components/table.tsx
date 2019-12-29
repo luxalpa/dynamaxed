@@ -1,4 +1,11 @@
-import { Component, Prop, PropSync, Vue } from "vue-property-decorator";
+import {
+  Component,
+  Prop,
+  PropSync,
+  Ref,
+  Vue,
+  Watch
+} from "vue-property-decorator";
 import { CreateElement } from "vue";
 import { stylesheet } from "typestyle";
 import { Theme } from "@/theming";
@@ -28,13 +35,17 @@ export interface TableState {
   filter: string;
   sortColNum: number;
   sortReversed: boolean;
+  scrollPos: number;
+  focusedElement: string;
 }
 
-export function TableStateInitial() {
+export function TableStateInitial(): TableState {
   return {
     filter: "",
     sortColNum: -1,
-    sortReversed: false
+    sortReversed: false,
+    scrollPos: 0,
+    focusedElement: ""
   };
 }
 
@@ -50,7 +61,21 @@ export class Table extends Vue {
   })
   state!: TableState;
 
+  @Ref("scrollRef") scrollRef!: Element;
+
+  @Watch("state.scrollPos")
+  onScrollChanged(v: number) {}
+
+  async mounted() {
+    await this.$nextTick();
+
+    // setTimeout(() => {
+    this.scrollRef.scrollTop = this.state.scrollPos;
+    // });
+  }
+
   onRowClick(row: any) {
+    this.state.focusedElement = this.rowKey(row);
     this.$emit("entryclick", row);
   }
 
@@ -74,6 +99,11 @@ export class Table extends Vue {
     return this.layout[this.state.sortColNum];
   }
 
+  updateScrollPos(e: Event) {
+    const element = e.target as Element;
+    this.state.scrollPos = element.scrollTop;
+  }
+
   render() {
     let entries = this.entries;
     entries = entries.filter(v => {
@@ -93,7 +123,7 @@ export class Table extends Vue {
     }
 
     return (
-      <div>
+      <div onscroll={(e: Event) => this.updateScrollPos(e)} ref="scrollRef">
         <FlexRow>
           <Label width={2}>Filter:</Label>
           <TextInput vModel={this.state.filter} />
@@ -111,13 +141,23 @@ export class Table extends Vue {
                 </th>
               ))}
             </tr>
-            {entries.map(row => (
-              <tr onclick={() => this.onRowClick(row)} key={this.rowKey(row)}>
-                {this.layout.map(c => (
-                  <td>{c.render(this.$createElement, row)}</td>
-                ))}
-              </tr>
-            ))}
+            {entries.map(row => {
+              const rowKey = this.rowKey(row);
+              return (
+                <tr
+                  onclick={() => this.onRowClick(row)}
+                  key={rowKey}
+                  class={
+                    this.state.focusedElement === rowKey &&
+                    styles.highlightedRow
+                  }
+                >
+                  {this.layout.map(c => (
+                    <td>{c.render(this.$createElement, row)}</td>
+                  ))}
+                </tr>
+              );
+            })}
           </table>
         </div>
       </div>
@@ -162,5 +202,8 @@ const styles = stylesheet({
         backgroundColor: Theme.backgroundHBgColor
       }
     }
+  },
+  highlightedRow: {
+    backgroundColor: Theme.backgroundHBgColor
   }
 });
