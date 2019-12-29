@@ -12,8 +12,9 @@ export interface GenListOpts<T> {
 }
 
 export function createList<T>(opts: GenListOpts<T>): new () => Vue {
-  const c = class extends Vue {
-    tablestate!: TableState;
+  @Component
+  class TableList extends Vue {
+    @Prop() tablestate!: TableState;
 
     onEntryClick(id: string) {
       this.$emit("entryclick", id);
@@ -35,10 +36,9 @@ export function createList<T>(opts: GenListOpts<T>): new () => Vue {
         />
       );
     }
-  };
+  }
 
-  Prop()(c.prototype, "tablestate");
-  return Component({ name: "DynList" })(c);
+  return TableList;
 }
 
 export interface GenListComponentsOpts<T> {

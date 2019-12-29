@@ -19,9 +19,10 @@ interface CreateListViewOpts<T> {
 export function createListView<T>(
   opts: CreateListViewOpts<T>
 ): new () => View<TableState> {
-  const ListView = opts.list;
+  const List = opts.list;
 
-  const c = class extends View<TableState> {
+  @Component
+  class ListView extends View<TableState> {
     createNew() {
       const id = createModelObj(opts.model(), opts.defaultObj);
       ViewManager.push(opts.targetView, id);
@@ -35,7 +36,7 @@ export function createListView<T>(
       return (
         <div class={styles.view}>
           <Portal to="title">{this.title}</Portal>
-          <ListView
+          <List
             onentryclick={(id: string) => ViewManager.push(opts.targetView, id)}
             tablestate={this.args}
             class={styles.list}
@@ -46,9 +47,9 @@ export function createListView<T>(
         </div>
       );
     }
-  };
+  }
 
-  return Component(c);
+  return ListView;
 }
 
 const styles = stylesheet({

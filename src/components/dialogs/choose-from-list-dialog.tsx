@@ -1,6 +1,6 @@
 import { Dialog } from "@/modules/dialog-manager";
 import { stylesheet } from "typestyle";
-import { Component } from "vue-property-decorator";
+import { Component, Vue } from "vue-property-decorator";
 import { Button } from "@/components/button";
 import { FlexRow } from "@/components/layout";
 import { createModelObj } from "@/utils";
@@ -17,7 +17,8 @@ export function ChooseFromListDialog<T>(
   List: any,
   opts?: CreateNewOpts<T>
 ): new () => Dialog<string, string> {
-  const c = class extends Dialog<string, string> {
+  @Component
+  class ListDialog extends Dialog<string, string> {
     createNew() {
       const id = createModelObj(opts!.model(), opts!.defaultObj);
       ViewManager.push(opts!.targetView, id);
@@ -39,9 +40,9 @@ export function ChooseFromListDialog<T>(
         </div>
       );
     }
-  };
+  }
 
-  return Component(c);
+  return ListDialog;
 }
 
 const styles = stylesheet({
