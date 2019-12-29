@@ -105,6 +105,10 @@ export interface Move {
   battleArenaRating: number;
   battleDomeRatings: number[];
   description: string;
+  contestEffect: string;
+  contestCategory: string;
+  contestComboStarterId?: string;
+  contestComboMoves: string[];
 }
 
 export interface Model {

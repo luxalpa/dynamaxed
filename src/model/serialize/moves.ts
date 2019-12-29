@@ -11,7 +11,10 @@ import {
   makeText,
   writeToASMDataFile,
   declareASM,
-  ArrayValue
+  ArrayValue,
+  StructValue,
+  ListValue,
+  makeFlags
 } from "@/model/serialize/common";
 import { GameModel } from "@/model/model";
 
@@ -23,6 +26,58 @@ export function compileMoves() {
   buildMoveAnimIDs();
   buildMovePointsDome();
   buildMoveDescriptions();
+  buildContestMoves();
+  buildBattleMoves();
+}
+
+function buildBattleMoves() {
+  const moves = new DictionaryValue(
+    Object.entries(GameModel.model.moves).map(([id, move]) => ({
+      key: `MOVE_${id}`,
+      value: new StructValue({
+        effect: `EFFECT_${move.effect}`,
+        power: move.power,
+        accuracy: move.accuracy,
+        pp: move.pp,
+        priority: move.priority,
+        secondaryEffectChance: move.secondaryEffectChance,
+        type: `TYPE_${move.type}`,
+        target: `MOVE_TARGET_${move.target}`,
+        flags: makeFlags(move.flags.map(flag => `FLAG_${flag}`))
+      })
+    }))
+  );
+
+  writeToDataFile(
+    "battle_moves.h",
+    declareConst("struct BattleMove gBattleMoves[MOVES_COUNT]", moves)
+  );
+}
+
+function buildContestMoves() {
+  const moves = new DictionaryValue(
+    Object.entries(GameModel.model.moves).map(([id, move]) => ({
+      key: `MOVE_${id}`,
+      value: new StructValue({
+        effect: `CONTEST_EFFECT_${move.contestEffect}`,
+        contestCategory: `CONTEST_CATEGORY_${move.contestCategory}`,
+        comboStarterId: move.contestComboStarterId
+          ? `COMBO_STARTER_${move.contestComboStarterId}`
+          : 0,
+        comboMoves:
+          move.contestComboMoves.length == 0
+            ? "{0}"
+            : new ListValue(
+                move.contestComboMoves.map(cm => `COMBO_STARTER_${cm}`)
+              )
+      })
+    }))
+  );
+
+  writeToDataFile(
+    "contest_moves.h",
+    declareConst("struct ContestMove gContestMoves[MOVES_COUNT]", moves)
+  );
 }
 
 function buildMoveDescriptions() {

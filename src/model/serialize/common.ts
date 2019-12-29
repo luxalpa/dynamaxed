@@ -49,6 +49,13 @@ export function makeText(str: string) {
   return `_("${escapeForString(str)}")`;
 }
 
+export function makeFlags(flags: string[]) {
+  if (flags.length === 0) {
+    return "0";
+  }
+  return flags.join(" | ");
+}
+
 export class ListValue extends ComplexCValue {
   constructor(public entries: CValue[]) {
     super();
