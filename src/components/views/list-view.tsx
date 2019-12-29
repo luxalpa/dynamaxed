@@ -6,6 +6,7 @@ import { stylesheet } from "typestyle";
 import { Constants } from "@/constants";
 import { createModelObj } from "@/utils";
 import { Portal } from "portal-vue";
+import { TableState } from "@/components/table";
 
 interface CreateListViewOpts<T> {
   model: () => Record<string, T>;
@@ -17,10 +18,10 @@ interface CreateListViewOpts<T> {
 
 export function createListView<T>(
   opts: CreateListViewOpts<T>
-): new () => View<void> {
+): new () => View<TableState> {
   const ListView = opts.list;
 
-  const c = class extends View<void> {
+  const c = class extends View<TableState> {
     createNew() {
       const id = createModelObj(opts.model(), opts.defaultObj);
       ViewManager.push(opts.targetView, id);
@@ -36,6 +37,7 @@ export function createListView<T>(
           <Portal to="title">{this.title}</Portal>
           <ListView
             onentryclick={(id: string) => ViewManager.push(opts.targetView, id)}
+            tablestate={this.args}
             class={styles.list}
           />
           <FlexRow class={styles.btn}>

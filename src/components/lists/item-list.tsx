@@ -3,9 +3,9 @@ import { createList } from "@/components/lists/list";
 import { ChooseFromListDialog } from "@/components/dialogs/choose-from-list-dialog";
 import { IDDisplay } from "@/components/displays/id-display";
 
-const ItemList = createList(
-  () => GameModel.model.items,
-  [
+const ItemList = createList({
+  model: () => GameModel.model.items,
+  layout: [
     {
       text: "ID",
       sort: ([id1], [id2]) => id1.localeCompare(id2),
@@ -22,10 +22,10 @@ const ItemList = createList(
       render: (h, [id, item]) => item.pocket
     }
   ],
-  ([id, item], input) =>
+  filter: ([id, item], input) =>
     ("#" + id.toUpperCase()).includes(input.toUpperCase()) ||
     item.name.toUpperCase().includes(input.toUpperCase()) ||
     item.pocket.toUpperCase().includes(input.toUpperCase())
-);
+});
 
 export const ChooseItemDialog = ChooseFromListDialog(ItemList);

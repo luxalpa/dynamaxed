@@ -1,7 +1,8 @@
 import { GameModel } from "@/model/model";
 import { generateListComponents } from "@/components/lists/list";
 import { IDDisplay } from "@/components/displays/id-display";
-import { EditTrainerView } from "@/components/views/edit-trainer-view";
+import { EditMoveView } from "@/components/views/edit-move-view";
+
 export const {
   dialog: ChooseMoveDialog,
   view: MovesView
@@ -46,5 +47,3 @@ export const {
     }
   ]
 });
-
-import { EditMoveView } from "@/components/views/edit-move-view";

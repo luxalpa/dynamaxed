@@ -34,6 +34,7 @@ import { restoreState } from "@/store";
 import { EditMapView } from "@/components/views/edit-map-view";
 import { MovesView } from "@/components/lists/move-list";
 import { EditMoveView } from "@/components/views/edit-move-view";
+import { TableStateInitial } from "@/components/table";
 
 Vue.use(PortalVue);
 
@@ -68,7 +69,7 @@ ViewManager.registerViews({
   "edit-move-view": EditMoveView
 });
 
-ViewManager.push(TrainersView);
+ViewManager.push(TrainersView, TableStateInitial());
 
 window.onbeforeunload = (e: Event) => {
   ProjectManager.Save();

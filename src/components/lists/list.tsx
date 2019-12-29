@@ -1,41 +1,47 @@
-import { Component, Vue } from "vue-property-decorator";
-import { Column, FilterFn, Table } from "@/components/table";
+import { Component, Prop, Vue } from "vue-property-decorator";
+import { Column, FilterFn, Table, TableState } from "@/components/table";
 import { View } from "@/modules/view-manager";
 import { Dialog } from "@/modules/dialog-manager";
 import { ChooseFromListDialog } from "@/components/dialogs/choose-from-list-dialog";
 import { createListView } from "@/components/views/list-view";
 
-export function createList<T>(
-  model: () => Record<string, T>,
-  layout: Column<[string, T]>[],
-  filter?: FilterFn<[string, T]>
-): new () => Vue {
+export interface GenListOpts<T> {
+  model: () => Record<string, T>;
+  layout: Column<[string, T]>[];
+  filter?: FilterFn<[string, T]>;
+}
+
+export function createList<T>(opts: GenListOpts<T>): new () => Vue {
   const c = class extends Vue {
+    tablestate!: TableState;
+
     onEntryClick(id: string) {
       this.$emit("entryclick", id);
     }
 
     get entries() {
-      return Object.entries(model());
+      return Object.entries(opts.model());
     }
 
     render() {
       return (
         <Table
           entries={this.entries}
-          layout={layout}
+          layout={opts.layout}
           rowKey={([id]: [string, T]) => id}
-          rowFilter={filter}
+          rowFilter={opts.filter}
           onentryclick={([id]: [string, T]) => this.onEntryClick(id)}
+          state={this.tablestate}
         />
       );
     }
   };
 
+  Prop()(c.prototype, "tablestate");
   return Component({ name: "DynList" })(c);
 }
 
-export interface CreateOpts<T> {
+export interface GenListComponentsOpts<T> {
   model: () => Record<string, T>;
   defaultObj?: () => T;
   layout: Column<[string, T]>[];
@@ -45,18 +51,16 @@ export interface CreateOpts<T> {
 }
 
 export function generateListComponents<T>(
-  opts: CreateOpts<T>
-): { view: new () => View<void>; dialog: new () => Dialog<string, string> } {
-  // TODO: Find out what we want to do with duplication
-  // const DuplicateCol: Column<[string, T]> = {
-  //   text: "",
-  //   render: (h, [id]) => (
-  //     <Button width={1}>
-  //       <font-awesome-icon icon={["far", "clone"]} size="sm" />
-  //     </Button>
-  //   )
-  // };
-  const ListComponent = createList(opts.model, opts.layout, opts.filter);
+  opts: GenListComponentsOpts<T>
+): {
+  view: new () => View<TableState>;
+  dialog: new () => Dialog<string, string>;
+} {
+  const ListComponent = createList({
+    filter: opts.filter,
+    layout: opts.layout,
+    model: opts.model
+  });
 
   return {
     dialog: ChooseFromListDialog(ListComponent, {

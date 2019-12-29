@@ -1,4 +1,4 @@
-import { Component, Prop, Vue } from "vue-property-decorator";
+import { Component, Prop, PropSync, Vue } from "vue-property-decorator";
 import { CreateElement } from "vue";
 import { stylesheet } from "typestyle";
 import { Theme } from "@/theming";
@@ -24,51 +24,70 @@ const NoColumn: Column<any> = {
   sort: (a, b) => 0
 };
 
+export interface TableState {
+  filter: string;
+  sortColNum: number;
+  sortReversed: boolean;
+}
+
+export function TableStateInitial() {
+  return {
+    filter: "",
+    sortColNum: -1,
+    sortReversed: false
+  };
+}
+
 @Component
 export class Table extends Vue {
   @Prop() layout!: Column<any>[];
   @Prop() entries!: any[];
   @Prop() rowKey!: (x: any) => string;
-  @Prop({
-    default: () => true
-  })
-  rowFilter!: FilterFn<any>;
+  @Prop({ default: () => true }) rowFilter!: FilterFn<any>;
 
-  filter: string = "";
-  sortCol = NoColumn;
-  sortReversed = false;
+  @Prop({
+    default: () => TableStateInitial() as TableState
+  })
+  state!: TableState;
 
   onRowClick(row: any) {
     this.$emit("entryclick", row);
   }
 
-  sortByColumn(c: Column<any>) {
-    if (this.sortCol === c) {
-      if (this.sortReversed) {
-        this.sortReversed = false;
-        this.sortCol = NoColumn;
+  sortByColumn(c: number) {
+    if (this.state.sortColNum === c) {
+      if (this.state.sortReversed) {
+        this.state.sortReversed = false;
+        this.state.sortColNum = -1;
       } else {
-        this.sortReversed = true;
+        this.state.sortReversed = true;
       }
     } else {
-      this.sortCol = c;
+      this.state.sortColNum = c;
     }
+  }
+
+  get sortCol() {
+    if (this.state.sortColNum === -1) {
+      return NoColumn;
+    }
+    return this.layout[this.state.sortColNum];
   }
 
   render() {
     let entries = this.entries;
     entries = entries.filter(v => {
-      return this.rowFilter(v, this.filter);
+      return this.rowFilter(v, this.state.filter);
     });
 
-    if (this.sortCol !== NoColumn) {
+    if (this.state.sortColNum !== -1) {
       // We need to make sure sort works on a new array so we can always
       // get our original back
       if (entries === this.entries) {
         entries = [...entries];
       }
       entries.sort(this.sortCol.sort);
-      if (this.sortReversed) {
+      if (this.state.sortReversed) {
         entries = entries.reverse();
       }
     }
@@ -77,16 +96,16 @@ export class Table extends Vue {
       <div>
         <FlexRow>
           <Label width={2}>Filter:</Label>
-          <TextInput vModel={this.filter} />
+          <TextInput vModel={this.state.filter} />
         </FlexRow>
         <div>
           <table class={styles.table}>
             <tr>
-              {this.layout.map(c => (
+              {this.layout.map((c, cid) => (
                 <th
                   class={styles.tableHeader}
                   style={{ textAlign: c.align }}
-                  onclick={() => this.sortByColumn(c)}
+                  onclick={() => this.sortByColumn(cid)}
                 >
                   {c.text}
                 </th>

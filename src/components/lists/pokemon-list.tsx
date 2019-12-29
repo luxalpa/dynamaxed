@@ -6,9 +6,9 @@ import { createList } from "@/components/lists/list";
 import { ChooseFromListDialog } from "@/components/dialogs/choose-from-list-dialog";
 import { IDDisplay } from "@/components/displays/id-display";
 
-const PokemonList = createList<Pokemon>(
-  () => GameModel.model.pokemon,
-  [
+const PokemonList = createList<Pokemon>({
+  model: () => GameModel.model.pokemon,
+  layout: [
     {
       text: "Icon",
       sort: ([id1], [id2]) => id1.localeCompare(id2),
@@ -32,10 +32,10 @@ const PokemonList = createList<Pokemon>(
       render: (h, [id, pokemon]) => pokemon.name
     }
   ],
-  ([id, item], input) =>
+  filter: ([id, item], input) =>
     ("#" + id.toUpperCase()).includes(input.toUpperCase()) ||
     item.name.toUpperCase().includes(input.toUpperCase())
-);
+});
 
 const styles = stylesheet({
   pokeIcon: {

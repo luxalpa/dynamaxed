@@ -7,19 +7,15 @@ import { TrainersView } from "@/components/lists/trainer-list";
 import { TrainerClassesView } from "@/components/lists/trainer-class-list";
 import { EditMapView } from "@/components/views/edit-map-view";
 import { MovesView } from "@/components/lists/move-list";
+import { TableState, TableStateInitial } from "@/components/table";
 
 interface NavElement {
   isSubElement?: boolean;
   text: string;
-  switchToView: new () => View<void>;
+  switchToView: new () => View<TableState>;
 }
 
 const navElements: NavElement[] = [
-  {
-    text: "Maps",
-    isSubElement: false,
-    switchToView: EditMapView
-  },
   {
     text: "Trainers",
     isSubElement: false,
@@ -42,7 +38,7 @@ const navElements: NavElement[] = [
 })
 export class Navbar extends Vue {
   jumpToEntry(entry: NavElement) {
-    ViewManager.push(entry.switchToView);
+    ViewManager.push(entry.switchToView, TableStateInitial());
   }
 
   render() {
