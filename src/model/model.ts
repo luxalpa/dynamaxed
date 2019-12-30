@@ -10,6 +10,7 @@ import { PathManager } from "@/modules/path-manager";
 import { Vue } from "vue-property-decorator";
 import { compileTrainerClasses } from "@/model/serialize/trainer-classes";
 import { compileMoves } from "@/model/serialize/moves";
+import { compilePokemon } from "@/model/serialize/pokemon";
 
 export interface TrainerPartyMon {
   iv: number;
@@ -82,12 +83,63 @@ export interface Item {
   };
 }
 
+export interface PokemonEvolution {
+  kind: string;
+  param: string | number;
+  evolvedForm: string;
+}
+
 export interface Pokemon {
   name: string;
   moves: {
     level: number;
     move: string;
   }[];
+  baseHP: number;
+  baseAttack: number;
+  baseDefense: number;
+  baseSpeed: number;
+  baseSpAttack: number;
+  baseSpDefense: number;
+  type1: string;
+  type2: string;
+  catchRate: number;
+  expYield: number;
+  evYield_HP: number;
+  evYield_Attack: number;
+  evYield_Defense: number;
+  evYield_Speed: number;
+  evYield_SpAttack: number;
+  evYield_SpDefense: number;
+  item1: string;
+  item2: string;
+  genderRatio: number;
+  eggCycles: number;
+  friendship: number;
+  growthRate: string;
+  eggGroup1: string;
+  eggGroup2: string;
+  abilities: string[];
+  safariZoneFleeRate: number;
+  bodyColor: string;
+  noFlip: boolean;
+  tmhmLearnset: string[];
+  nationalDexId: number;
+  hoennDexId: number;
+  tutorMoves: string[];
+  eggMoves?: string[];
+
+  // Pokedex
+  categoryName: string;
+  height: number;
+  weight: number;
+  description: string;
+  pokemonScale: number;
+  pokemonOffset: number;
+  trainerScale: number;
+  trainerOffset: number;
+
+  evos?: PokemonEvolution[];
 }
 
 export interface Move {
@@ -185,6 +237,7 @@ export const GameModel = new (class {
     compileTrainers();
     compileTrainerClasses();
     compileMoves();
+    compilePokemon();
   }
 })();
 

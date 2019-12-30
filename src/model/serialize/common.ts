@@ -61,6 +61,10 @@ export class ListValue extends ComplexCValue {
     super();
   }
   render(indent: number): string {
+    if (this.entries.length === 1) {
+      return `{${render(this.entries[0], indent + 1)}}`;
+    }
+
     const entries = this.entries
       .map(e => {
         const v = render(e, indent + 1);
@@ -126,6 +130,29 @@ export class TypeCast extends ComplexCValue {
   }
 }
 
+export class FunctionCallValue extends ComplexCValue {
+  constructor(public fn: string, public params: CValue[]) {
+    super();
+  }
+
+  render(indent: number): string {
+    const contents = this.params.map(p => render(p, indent + 1)).join(", ");
+    return `${this.fn}(${contents})`;
+  }
+}
+
+export class OrListValue extends ComplexCValue {
+  constructor(public entries: CValue[]) {
+    super();
+  }
+
+  render(indent: number): string {
+    return this.entries
+      .map(e => render(e, indent + 1))
+      .join("\n" + indentation(indent + 1) + "| ");
+  }
+}
+
 export function declareConst(dec: string, contents: CValue) {
   return `const ${dec} = ${render(contents, 0)};\n`;
 }
@@ -154,9 +181,9 @@ export function writeToASMDataFile(filename: string, contents: string) {
 
 export function escapeForString(str: string): string {
   return str
-    .replace("\\", "\\\\")
-    .replace('"', '\\"')
-    .replace("\n", "\\n");
+    .replace(/\\/g, "\\\\")
+    .replace(/"/g, '\\"')
+    .replace(/\n/g, "\\n");
 }
 
 export function headerGuard(name: string, contents: string): string {

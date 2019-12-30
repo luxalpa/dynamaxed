@@ -67,7 +67,7 @@ function buildContestMoves() {
         comboMoves:
           move.contestComboMoves.length == 0
             ? "{0}"
-            : new ListValue(
+            : new ArrayValue(
                 move.contestComboMoves.map(cm => `COMBO_STARTER_${cm}`)
               )
       })
