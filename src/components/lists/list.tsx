@@ -4,6 +4,27 @@ import { View } from "@/modules/view-manager";
 import { Dialog } from "@/modules/dialog-manager";
 import { ChooseFromListDialog } from "@/components/dialogs/choose-from-list-dialog";
 import { createListView } from "@/components/views/list-view";
+import { MoveTargets } from "@/model/constants";
+
+export function createSimpleListDialog(array: string[]) {
+  const MoveTargetList = createList({
+    model: () =>
+      array.reduce<Record<string, void>>((previousValue, currentValue) => {
+        previousValue[currentValue] = void 0;
+        return previousValue;
+      }, {}),
+    filter: ([id], input) => id.toUpperCase().includes(input.toUpperCase()),
+    layout: [
+      {
+        text: "ID",
+        sort: ([id1], [id2]) => id1.localeCompare(id2),
+        render: (h, e) => e
+      }
+    ]
+  });
+
+  return ChooseFromListDialog(MoveTargetList);
+}
 
 export interface GenListOpts<T> {
   model: () => Record<string, T>;

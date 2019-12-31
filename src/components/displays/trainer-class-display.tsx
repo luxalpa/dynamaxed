@@ -19,7 +19,7 @@ export class TrainerClassDisplay extends Vue {
     return (
       <div>
         <div>{trainerClass.name}</div>
-        <div class={styles.money}>${money * 4}</div>
+        <div class={styles.money}>${money}</div>
       </div>
     );
   }

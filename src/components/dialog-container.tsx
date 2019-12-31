@@ -16,7 +16,7 @@ export class DialogContainer extends Vue {
           return (
             <div
               key={d.id}
-              onclick={modifiers.self(() => DialogManager.reject(d.id))}
+              onmousedown={modifiers.self(() => DialogManager.reject(d.id))}
               class={styles.dialogWrapper}
             >
               <div class={styles.dialog}>

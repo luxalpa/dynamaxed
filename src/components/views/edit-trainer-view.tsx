@@ -21,11 +21,12 @@ import { extendArray, getDefaultMovesForMon } from "@/utils";
 import { ChooseTrainerClassDialog } from "@/components/lists/trainer-class-list";
 import { ChooseItemDialog } from "@/components/lists/item-list";
 import { ChoosePokemonDialog } from "@/components/lists/pokemon-list";
-import { ChooseEncounterMusicDialog } from "@/components/lists/encounter-music-list";
+import { ChooseEncounterMusicDialog } from "@/components/dialogs/simple-list-dialogs";
 import { ChooseMoveDialog } from "@/components/lists/move-list";
 import { Portal } from "portal-vue";
 import { EditTrainerClassView } from "@/components/views/edit-trainer-class-view";
 import { IDDisplay } from "@/components/displays/id-display";
+import { EditMoveView } from "@/components/views/edit-move-view";
 
 @Component
 export class EditTrainerView extends View<string> {
@@ -401,6 +402,7 @@ export class EditTrainerView extends View<string> {
                   width={8}
                   disabled={!this.trainer.customMoves}
                   onclick={() => this.changeMove(mon, moveNum)}
+                  onnavigate={() => ViewManager.push(EditMoveView, move)}
                 >
                   <MoveDisplay move={move} />
                 </Button>

@@ -3,8 +3,41 @@ import { ViewManager } from "@/modules/view-manager";
 import { Vue } from "vue-property-decorator";
 import { EditTrainerClassView } from "@/components/views/edit-trainer-class-view";
 import { EditTrainerView } from "@/components/views/edit-trainer-view";
+import { EditMoveView } from "@/components/views/edit-move-view";
 
 export namespace IDManager {
+  export function changeMoveID(oldID: string, newID: string) {
+    if (oldID === newID) {
+      return;
+    }
+    const move = GameModel.model.moves[oldID];
+    Vue.delete(GameModel.model.moves, oldID);
+    Vue.set(GameModel.model.moves, newID, move);
+
+    for (let viewInstance of ViewManager.viewStack) {
+      if (
+        ViewManager.isView(EditMoveView, viewInstance) &&
+        viewInstance.params === oldID
+      ) {
+        viewInstance.params = newID;
+      }
+    }
+
+    // TODO: Change the moves in all affected pokemon and trainer parties
+  }
+
+  export function removeMove(oldID: string, replaceID: string = "NONE") {
+    const move = GameModel.model.moves[oldID];
+    Vue.delete(GameModel.model.moves, oldID);
+
+    for (let i = 0; i < ViewManager.viewStack.length; i++) {
+      const view = ViewManager.viewStack[i];
+      if (ViewManager.isView(EditMoveView, view) && view.params === oldID) {
+        Vue.delete(ViewManager.viewStack, i);
+      }
+    }
+  }
+
   export function changeTrainerID(oldID: string, newID: string) {
     if (oldID === newID) {
       return;

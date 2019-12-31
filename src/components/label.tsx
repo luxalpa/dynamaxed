@@ -9,9 +9,17 @@ export class Label extends Vue {
   })
   width!: number;
 
+  @Prop({
+    default: 1
+  })
+  height!: number;
+
   render() {
     return (
-      <div class={styles.label} style={{ width: Constants.grid(this.width) }}>
+      <div
+        class={styles.label}
+        style={Constants.gridRect(this.width, this.height)}
+      >
         {this.$slots.default}
       </div>
     );
