@@ -30,6 +30,98 @@ export function compilePokemon() {
   buildDexEntries();
   buildDexOrders();
   buildEvos();
+  buildFrontAnimIds();
+  buildAnimationDelays();
+  buildSpeciesToPokedexNum();
+  buildBackAnimations();
+}
+
+function buildBackAnimations() {
+  const ids = new DictionaryValue(
+    Object.entries(GameModel.model.pokemon).map(([id, mon]) => ({
+      key: `SPECIES_${id}`,
+      value: `BACK_ANIM_${mon.backAnimation}`
+    }))
+  );
+
+  writeToDataFile(
+    "species_back_animations.h",
+    declareStaticConst("u8 sSpeciesToBackAnimSet[]", ids)
+  );
+}
+
+function buildSpeciesToPokedexNum() {
+  let pokemons = { ...GameModel.model.pokemon };
+  delete pokemons.NONE;
+
+  const hoennDex = declareConst(
+    "u16 gSpeciesToHoennPokedexNum[]",
+    new DictionaryValue(
+      Object.entries(pokemons).map(([id, mon]) => ({
+        key: `SPECIES_${id} - 1`,
+        value: `HOENN_DEX_${id}`
+      }))
+    )
+  );
+
+  const nationalDex = declareConst(
+    "u16 gSpeciesToNationalPokedexNum[]",
+    new DictionaryValue(
+      Object.entries(pokemons).map(([id, mon]) => ({
+        key: `SPECIES_${id} - 1`,
+        value: `NATIONAL_DEX_${id}`
+      }))
+    )
+  );
+
+  const hoenn2national = declareConst(
+    "u16 gHoennToNationalOrder[]",
+    new DictionaryValue(
+      Object.entries(pokemons).map(([id, mon]) => ({
+        key: `HOENN_DEX_${id} - 1`,
+        value: `NATIONAL_DEX_${id}`
+      }))
+    )
+  );
+
+  writeToDataFile(
+    "species_dex_mappings.h",
+    `${hoennDex}\n${nationalDex}\n${hoenn2national}`
+  );
+}
+
+function buildAnimationDelays() {
+  let pokemons = { ...GameModel.model.pokemon };
+  delete pokemons.NONE;
+
+  const ids = new DictionaryValue(
+    Object.entries(pokemons).map(([id, mon]) => ({
+      key: `SPECIES_${id} - 1`,
+      value: mon.animationDelay
+    }))
+  );
+
+  writeToDataFile(
+    "species_animation_delays.h",
+    declareStaticConst("u8 sMonAnimationDelayTable[NUM_SPECIES - 1]", ids)
+  );
+}
+
+function buildFrontAnimIds() {
+  let pokemons = { ...GameModel.model.pokemon };
+  delete pokemons.NONE;
+
+  const ids = new DictionaryValue(
+    Object.entries(pokemons).map(([id, mon]) => ({
+      key: `SPECIES_${id} - 1`,
+      value: mon.frontAnimId
+    }))
+  );
+
+  writeToDataFile(
+    "species_front_anim_ids.h",
+    declareStaticConst("u8 sMonFrontAnimIdsTable[]", ids)
+  );
 }
 
 function buildEvos() {

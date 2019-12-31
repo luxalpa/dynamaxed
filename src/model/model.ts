@@ -140,6 +140,10 @@ export interface Pokemon {
   trainerOffset: number;
 
   evos?: PokemonEvolution[];
+
+  frontAnimId: number;
+  animationDelay: number;
+  backAnimation: string;
 }
 
 export interface Move {

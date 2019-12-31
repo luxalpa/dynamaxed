@@ -53,7 +53,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 0,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 0,
+    "animationDelay": 0,
+    "backAnimation": "NONE"
   },
   "BULBASAUR": {
     "name": "BULBASAUR",
@@ -153,7 +156,10 @@
     "pokemonOffset": 17,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 16, "evolvedForm": "IVYSAUR" }]
+    "evos": [{ "kind": "LEVEL", "param": 16, "evolvedForm": "IVYSAUR" }],
+    "frontAnimId": 6,
+    "animationDelay": 0,
+    "backAnimation": "DIP_RIGHT_SIDE"
   },
   "IVYSAUR": {
     "name": "IVYSAUR",
@@ -245,7 +251,10 @@
     "pokemonOffset": 13,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 32, "evolvedForm": "VENUSAUR" }]
+    "evos": [{ "kind": "LEVEL", "param": 32, "evolvedForm": "VENUSAUR" }],
+    "frontAnimId": 23,
+    "animationDelay": 0,
+    "backAnimation": "H_SLIDE"
   },
   "VENUSAUR": {
     "name": "VENUSAUR",
@@ -340,7 +349,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 0,
     "trainerScale": 388,
-    "trainerOffset": 6
+    "trainerOffset": 6,
+    "frontAnimId": 47,
+    "animationDelay": 0,
+    "backAnimation": "HORIZONTAL_SHAKE"
   },
   "CHARMANDER": {
     "name": "CHARMANDER",
@@ -451,7 +463,10 @@
     "pokemonOffset": 18,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 16, "evolvedForm": "CHARMELEON" }]
+    "evos": [{ "kind": "LEVEL", "param": 16, "evolvedForm": "CHARMELEON" }],
+    "frontAnimId": 82,
+    "animationDelay": 0,
+    "backAnimation": "CONCAVE_UP_ARC_SWAY_LARGE"
   },
   "CHARMELEON": {
     "name": "CHARMELEON",
@@ -553,7 +568,10 @@
     "pokemonOffset": 9,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 36, "evolvedForm": "CHARIZARD" }]
+    "evos": [{ "kind": "LEVEL", "param": 36, "evolvedForm": "CHARIZARD" }],
+    "frontAnimId": 37,
+    "animationDelay": 0,
+    "backAnimation": "JOLT_RIGHT"
   },
   "CHARIZARD": {
     "name": "CHARIZARD",
@@ -661,7 +679,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 1,
     "trainerScale": 302,
-    "trainerOffset": 3
+    "trainerOffset": 3,
+    "frontAnimId": 16,
+    "animationDelay": 0,
+    "backAnimation": "FADE_RED_WITH_SHAKE"
   },
   "SQUIRTLE": {
     "name": "SQUIRTLE",
@@ -772,7 +793,10 @@
     "pokemonOffset": 18,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 16, "evolvedForm": "WARTORTLE" }]
+    "evos": [{ "kind": "LEVEL", "param": 16, "evolvedForm": "WARTORTLE" }],
+    "frontAnimId": 11,
+    "animationDelay": 0,
+    "backAnimation": "CONCAVE_UP_ARC_SWAY_LARGE"
   },
   "WARTORTLE": {
     "name": "WARTORTLE",
@@ -875,7 +899,10 @@
     "pokemonOffset": 10,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 36, "evolvedForm": "BLASTOISE" }]
+    "evos": [{ "kind": "LEVEL", "param": 36, "evolvedForm": "BLASTOISE" }],
+    "frontAnimId": 19,
+    "animationDelay": 0,
+    "backAnimation": "CONCAVE_UP_ARC_SWAY_LARGE"
   },
   "BLASTOISE": {
     "name": "BLASTOISE",
@@ -981,7 +1008,10 @@
     "pokemonScale": 256,
     "pokemonOffset": -1,
     "trainerScale": 293,
-    "trainerOffset": 2
+    "trainerOffset": 2,
+    "frontAnimId": 25,
+    "animationDelay": 50,
+    "backAnimation": "FADE_BLUE_WITH_SHAKE"
   },
   "CATERPIE": {
     "name": "CATERPIE",
@@ -1029,7 +1059,10 @@
     "pokemonOffset": 22,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 7, "evolvedForm": "METAPOD" }]
+    "evos": [{ "kind": "LEVEL", "param": 7, "evolvedForm": "METAPOD" }],
+    "frontAnimId": 11,
+    "animationDelay": 0,
+    "backAnimation": "H_SLIDE"
   },
   "METAPOD": {
     "name": "METAPOD",
@@ -1077,7 +1110,10 @@
     "pokemonOffset": 18,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 10, "evolvedForm": "BUTTERFREE" }]
+    "evos": [{ "kind": "LEVEL", "param": 10, "evolvedForm": "BUTTERFREE" }],
+    "frontAnimId": 11,
+    "animationDelay": 0,
+    "backAnimation": "DIP_RIGHT_SIDE"
   },
   "BUTTERFREE": {
     "name": "BUTTERFREE",
@@ -1166,7 +1202,10 @@
     "pokemonScale": 312,
     "pokemonOffset": 2,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 29,
+    "animationDelay": 0,
+    "backAnimation": "CONCAVE_DOWN_ARC_SWAY_LARGE"
   },
   "WEEDLE": {
     "name": "WEEDLE",
@@ -1214,7 +1253,10 @@
     "pokemonOffset": 22,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 7, "evolvedForm": "KAKUNA" }]
+    "evos": [{ "kind": "LEVEL", "param": 7, "evolvedForm": "KAKUNA" }],
+    "frontAnimId": 70,
+    "animationDelay": 10,
+    "backAnimation": "H_SLIDE"
   },
   "KAKUNA": {
     "name": "KAKUNA",
@@ -1262,7 +1304,10 @@
     "pokemonOffset": 17,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 10, "evolvedForm": "BEEDRILL" }]
+    "evos": [{ "kind": "LEVEL", "param": 10, "evolvedForm": "BEEDRILL" }],
+    "frontAnimId": 32,
+    "animationDelay": 20,
+    "backAnimation": "DIP_RIGHT_SIDE"
   },
   "BEEDRILL": {
     "name": "BEEDRILL",
@@ -1348,7 +1393,10 @@
     "pokemonScale": 366,
     "pokemonOffset": 2,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 2,
+    "animationDelay": 35,
+    "backAnimation": "H_SLIDE_QUICK"
   },
   "PIDGEY": {
     "name": "PIDGEY",
@@ -1437,7 +1485,10 @@
     "pokemonOffset": -3,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 18, "evolvedForm": "PIDGEOTTO" }]
+    "evos": [{ "kind": "LEVEL", "param": 18, "evolvedForm": "PIDGEOTTO" }],
+    "frontAnimId": 71,
+    "animationDelay": 0,
+    "backAnimation": "CIRCLE_MOVE_CLOCKWISE"
   },
   "PIDGEOTTO": {
     "name": "PIDGEOTTO",
@@ -1521,7 +1572,10 @@
     "pokemonOffset": 10,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 36, "evolvedForm": "PIDGEOT" }]
+    "evos": [{ "kind": "LEVEL", "param": 36, "evolvedForm": "PIDGEOT" }],
+    "frontAnimId": 23,
+    "animationDelay": 25,
+    "backAnimation": "JOLT_RIGHT"
   },
   "PIDGEOT": {
     "name": "PIDGEOT",
@@ -1606,7 +1660,10 @@
     "pokemonScale": 269,
     "pokemonOffset": 0,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 41,
+    "animationDelay": 0,
+    "backAnimation": "CIRCLE_MOVE_CLOCKWISE"
   },
   "RATTATA": {
     "name": "RATTATA",
@@ -1710,7 +1767,10 @@
     "pokemonOffset": 21,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 20, "evolvedForm": "RATICATE" }]
+    "evos": [{ "kind": "LEVEL", "param": 20, "evolvedForm": "RATICATE" }],
+    "frontAnimId": 67,
+    "animationDelay": 0,
+    "backAnimation": "V_SHAKE_WITH_H_SLIDE"
   },
   "RATICATE": {
     "name": "RATICATE",
@@ -1807,7 +1867,10 @@
     "pokemonScale": 459,
     "pokemonOffset": 18,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 43,
+    "animationDelay": 0,
+    "backAnimation": "V_SHAKE_WITH_H_SLIDE"
   },
   "SPEAROW": {
     "name": "SPEAROW",
@@ -1898,7 +1961,10 @@
     "pokemonOffset": 22,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 20, "evolvedForm": "FEAROW" }]
+    "evos": [{ "kind": "LEVEL", "param": 20, "evolvedForm": "FEAROW" }],
+    "frontAnimId": 24,
+    "animationDelay": 0,
+    "backAnimation": "CIRCLE_MOVE_CLOCKWISE"
   },
   "FEAROW": {
     "name": "FEAROW",
@@ -1981,7 +2047,10 @@
     "pokemonScale": 278,
     "pokemonOffset": 1,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 43,
+    "animationDelay": 2,
+    "backAnimation": "JOLT_RIGHT"
   },
   "EKANS": {
     "name": "EKANS",
@@ -2071,7 +2140,10 @@
     "pokemonOffset": 12,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 22, "evolvedForm": "ARBOK" }]
+    "evos": [{ "kind": "LEVEL", "param": 22, "evolvedForm": "ARBOK" }],
+    "frontAnimId": 22,
+    "animationDelay": 30,
+    "backAnimation": "CIRCLE_MOVE_CLOCKWISE"
   },
   "ARBOK": {
     "name": "ARBOK",
@@ -2162,7 +2234,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 0,
     "trainerScale": 296,
-    "trainerOffset": 2
+    "trainerOffset": 2,
+    "frontAnimId": 23,
+    "animationDelay": 0,
+    "backAnimation": "VERTICAL_SHAKE"
   },
   "PIKACHU": {
     "name": "PIKACHU",
@@ -2264,7 +2339,10 @@
     "trainerOffset": 0,
     "evos": [
       { "kind": "ITEM", "param": "THUNDER_STONE", "evolvedForm": "RAICHU" }
-    ]
+    ],
+    "frontAnimId": 44,
+    "animationDelay": 0,
+    "backAnimation": "FLASH_YELLOW_WITH_SHAKE"
   },
   "RAICHU": {
     "name": "RAICHU",
@@ -2358,7 +2436,10 @@
     "pokemonScale": 426,
     "pokemonOffset": 13,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 23,
+    "animationDelay": 0,
+    "backAnimation": "FLASH_YELLOW_WITH_SHAKE"
   },
   "SANDSHREW": {
     "name": "SANDSHREW",
@@ -2466,7 +2547,10 @@
     "pokemonOffset": 18,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 22, "evolvedForm": "SANDSLASH" }]
+    "evos": [{ "kind": "LEVEL", "param": 22, "evolvedForm": "SANDSLASH" }],
+    "frontAnimId": 45,
+    "animationDelay": 0,
+    "backAnimation": "CONCAVE_UP_ARC_SWAY_LARGE"
   },
   "SANDSLASH": {
     "name": "SANDSLASH",
@@ -2566,7 +2650,10 @@
     "pokemonScale": 341,
     "pokemonOffset": 11,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 23,
+    "animationDelay": 0,
+    "backAnimation": "CONCAVE_DOWN_ARC_SWAY_SMALL"
   },
   "NIDORAN_F": {
     "name": "NIDORAN♀",
@@ -2670,7 +2757,10 @@
     "pokemonOffset": 21,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 16, "evolvedForm": "NIDORINA" }]
+    "evos": [{ "kind": "LEVEL", "param": 16, "evolvedForm": "NIDORINA" }],
+    "frontAnimId": 0,
+    "animationDelay": 28,
+    "backAnimation": "CONCAVE_UP_ARC_SWAY_LARGE"
   },
   "NIDORINA": {
     "name": "NIDORINA",
@@ -2767,7 +2857,10 @@
     "trainerOffset": 0,
     "evos": [
       { "kind": "ITEM", "param": "MOON_STONE", "evolvedForm": "NIDOQUEEN" }
-    ]
+    ],
+    "frontAnimId": 23,
+    "animationDelay": 0,
+    "backAnimation": "JOLT_RIGHT"
   },
   "NIDOQUEEN": {
     "name": "NIDOQUEEN",
@@ -2879,7 +2972,10 @@
     "pokemonScale": 293,
     "pokemonOffset": 4,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 15,
+    "animationDelay": 0,
+    "backAnimation": "VERTICAL_SHAKE"
   },
   "NIDORAN_M": {
     "name": "NIDORAN♂",
@@ -2982,7 +3078,10 @@
     "pokemonOffset": 20,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 16, "evolvedForm": "NIDORINO" }]
+    "evos": [{ "kind": "LEVEL", "param": 16, "evolvedForm": "NIDORINO" }],
+    "frontAnimId": 9,
+    "animationDelay": 0,
+    "backAnimation": "CONCAVE_UP_ARC_SWAY_LARGE"
   },
   "NIDORINO": {
     "name": "NIDORINO",
@@ -3078,7 +3177,10 @@
     "trainerOffset": 0,
     "evos": [
       { "kind": "ITEM", "param": "MOON_STONE", "evolvedForm": "NIDOKING" }
-    ]
+    ],
+    "frontAnimId": 19,
+    "animationDelay": 0,
+    "backAnimation": "JOLT_RIGHT"
   },
   "NIDOKING": {
     "name": "NIDOKING",
@@ -3189,7 +3291,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 0,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 15,
+    "animationDelay": 25,
+    "backAnimation": "VERTICAL_SHAKE"
   },
   "CLEFAIRY": {
     "name": "CLEFAIRY",
@@ -3310,7 +3415,10 @@
     "trainerOffset": 0,
     "evos": [
       { "kind": "ITEM", "param": "MOON_STONE", "evolvedForm": "CLEFABLE" }
-    ]
+    ],
+    "frontAnimId": 0,
+    "animationDelay": 0,
+    "backAnimation": "DIP_RIGHT_SIDE"
   },
   "CLEFABLE": {
     "name": "CLEFABLE",
@@ -3420,7 +3528,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 5,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 74,
+    "animationDelay": 0,
+    "backAnimation": "DIP_RIGHT_SIDE"
   },
   "VULPIX": {
     "name": "VULPIX",
@@ -3518,7 +3629,10 @@
     "trainerOffset": 0,
     "evos": [
       { "kind": "ITEM", "param": "FIRE_STONE", "evolvedForm": "NINETALES" }
-    ]
+    ],
+    "frontAnimId": 23,
+    "animationDelay": 0,
+    "backAnimation": "CONCAVE_DOWN_ARC_SWAY_SMALL"
   },
   "NINETALES": {
     "name": "NINETALES",
@@ -3598,7 +3712,10 @@
     "pokemonScale": 339,
     "pokemonOffset": 10,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 16,
+    "animationDelay": 0,
+    "backAnimation": "H_SLIDE_QUICK"
   },
   "JIGGLYPUFF": {
     "name": "JIGGLYPUFF",
@@ -3713,7 +3830,10 @@
     "trainerOffset": 0,
     "evos": [
       { "kind": "ITEM", "param": "MOON_STONE", "evolvedForm": "WIGGLYTUFF" }
-    ]
+    ],
+    "frontAnimId": 72,
+    "animationDelay": 0,
+    "backAnimation": "DIP_RIGHT_SIDE"
   },
   "WIGGLYTUFF": {
     "name": "WIGGLYTUFF",
@@ -3819,7 +3939,10 @@
     "pokemonScale": 328,
     "pokemonOffset": 11,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 49,
+    "animationDelay": 0,
+    "backAnimation": "GROW_1"
   },
   "ZUBAT": {
     "name": "ZUBAT",
@@ -3914,7 +4037,10 @@
     "pokemonOffset": -5,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 22, "evolvedForm": "GOLBAT" }]
+    "evos": [{ "kind": "LEVEL", "param": 22, "evolvedForm": "GOLBAT" }],
+    "frontAnimId": 0,
+    "animationDelay": 0,
+    "backAnimation": "CONCAVE_DOWN_ARC_SWAY_LARGE"
   },
   "GOLBAT": {
     "name": "GOLBAT",
@@ -4005,7 +4131,10 @@
     "pokemonOffset": 1,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "FRIENDSHIP", "param": 0, "evolvedForm": "CROBAT" }]
+    "evos": [{ "kind": "FRIENDSHIP", "param": 0, "evolvedForm": "CROBAT" }],
+    "frontAnimId": 29,
+    "animationDelay": 0,
+    "backAnimation": "VERTICAL_SHAKE"
   },
   "ODDISH": {
     "name": "ODDISH",
@@ -4094,7 +4223,10 @@
     "pokemonOffset": 19,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 21, "evolvedForm": "GLOOM" }]
+    "evos": [{ "kind": "LEVEL", "param": 21, "evolvedForm": "GLOOM" }],
+    "frontAnimId": 0,
+    "animationDelay": 0,
+    "backAnimation": "H_SLIDE"
   },
   "GLOOM": {
     "name": "GLOOM",
@@ -4180,7 +4312,10 @@
     "evos": [
       { "kind": "ITEM", "param": "LEAF_STONE", "evolvedForm": "VILEPLUME" },
       { "kind": "ITEM", "param": "SUN_STONE", "evolvedForm": "BELLOSSOM" }
-    ]
+    ],
+    "frontAnimId": 69,
+    "animationDelay": 0,
+    "backAnimation": "H_SLIDE"
   },
   "VILEPLUME": {
     "name": "VILEPLUME",
@@ -4259,7 +4394,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 4,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 73,
+    "animationDelay": 0,
+    "backAnimation": "SHRINK_GROW_2"
   },
   "PARAS": {
     "name": "PARAS",
@@ -4358,7 +4496,10 @@
     "pokemonOffset": 22,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 24, "evolvedForm": "PARASECT" }]
+    "evos": [{ "kind": "LEVEL", "param": 24, "evolvedForm": "PARASECT" }],
+    "frontAnimId": 70,
+    "animationDelay": 10,
+    "backAnimation": "H_SLIDE"
   },
   "PARASECT": {
     "name": "PARASECT",
@@ -4449,7 +4590,10 @@
     "pokemonScale": 307,
     "pokemonOffset": 8,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 15,
+    "animationDelay": 45,
+    "backAnimation": "HORIZONTAL_SHAKE"
   },
   "VENONAT": {
     "name": "VENONAT",
@@ -4535,7 +4679,10 @@
     "pokemonOffset": 0,
     "trainerScale": 256,
     "trainerOffset": -1,
-    "evos": [{ "kind": "LEVEL", "param": 31, "evolvedForm": "VENOMOTH" }]
+    "evos": [{ "kind": "LEVEL", "param": 31, "evolvedForm": "VENOMOTH" }],
+    "frontAnimId": 6,
+    "animationDelay": 20,
+    "backAnimation": "V_SHAKE_WITH_H_SLIDE"
   },
   "VENOMOTH": {
     "name": "VENOMOTH",
@@ -4624,7 +4771,10 @@
     "pokemonScale": 285,
     "pokemonOffset": 2,
     "trainerScale": 256,
-    "trainerOffset": 1
+    "trainerOffset": 1,
+    "frontAnimId": 75,
+    "animationDelay": 0,
+    "backAnimation": "CONCAVE_DOWN_ARC_SWAY_LARGE"
   },
   "DIGLETT": {
     "name": "DIGLETT",
@@ -4719,7 +4869,10 @@
     "pokemonOffset": 25,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 26, "evolvedForm": "DUGTRIO" }]
+    "evos": [{ "kind": "LEVEL", "param": 26, "evolvedForm": "DUGTRIO" }],
+    "frontAnimId": 16,
+    "animationDelay": 25,
+    "backAnimation": "VERTICAL_SHAKE"
   },
   "DUGTRIO": {
     "name": "DUGTRIO",
@@ -4808,7 +4961,10 @@
     "pokemonScale": 406,
     "pokemonOffset": 18,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 76,
+    "animationDelay": 35,
+    "backAnimation": "VERTICAL_SHAKE"
   },
   "MEOWTH": {
     "name": "MEOWTH",
@@ -4906,7 +5062,10 @@
     "pokemonOffset": 19,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 28, "evolvedForm": "PERSIAN" }]
+    "evos": [{ "kind": "LEVEL", "param": 28, "evolvedForm": "PERSIAN" }],
+    "frontAnimId": 82,
+    "animationDelay": 40,
+    "backAnimation": "CONCAVE_DOWN_ARC_SWAY_SMALL"
   },
   "PERSIAN": {
     "name": "PERSIAN",
@@ -5005,7 +5164,10 @@
     "pokemonScale": 320,
     "pokemonOffset": 10,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 23,
+    "animationDelay": 20,
+    "backAnimation": "CIRCLE_MOVE_CLOCKWISE"
   },
   "PSYDUCK": {
     "name": "PSYDUCK",
@@ -5117,7 +5279,10 @@
     "pokemonOffset": 15,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 33, "evolvedForm": "GOLDUCK" }]
+    "evos": [{ "kind": "LEVEL", "param": 33, "evolvedForm": "GOLDUCK" }],
+    "frontAnimId": 6,
+    "animationDelay": 0,
+    "backAnimation": "H_SLIDE"
   },
   "GOLDUCK": {
     "name": "GOLDUCK",
@@ -5222,7 +5387,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 1,
     "trainerScale": 273,
-    "trainerOffset": 1
+    "trainerOffset": 1,
+    "frontAnimId": 76,
+    "animationDelay": 0,
+    "backAnimation": "SHRINK_GROW_2"
   },
   "MANKEY": {
     "name": "MANKEY",
@@ -5339,7 +5507,10 @@
     "pokemonOffset": 19,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 28, "evolvedForm": "PRIMEAPE" }]
+    "evos": [{ "kind": "LEVEL", "param": 28, "evolvedForm": "PRIMEAPE" }],
+    "frontAnimId": 50,
+    "animationDelay": 20,
+    "backAnimation": "CONCAVE_DOWN_ARC_SWAY_SMALL"
   },
   "PRIMEAPE": {
     "name": "PRIMEAPE",
@@ -5449,7 +5620,10 @@
     "pokemonScale": 326,
     "pokemonOffset": 10,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 72,
+    "animationDelay": 0,
+    "backAnimation": "CONCAVE_DOWN_ARC_SWAY_SMALL"
   },
   "GROWLITHE": {
     "name": "GROWLITHE",
@@ -5548,7 +5722,10 @@
     "trainerOffset": 0,
     "evos": [
       { "kind": "ITEM", "param": "FIRE_STONE", "evolvedForm": "ARCANINE" }
-    ]
+    ],
+    "frontAnimId": 37,
+    "animationDelay": 30,
+    "backAnimation": "JOLT_RIGHT"
   },
   "ARCANINE": {
     "name": "ARCANINE",
@@ -5631,7 +5808,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 1,
     "trainerScale": 312,
-    "trainerOffset": 4
+    "trainerOffset": 4,
+    "frontAnimId": 2,
+    "animationDelay": 40,
+    "backAnimation": "JOLT_RIGHT"
   },
   "POLIWAG": {
     "name": "POLIWAG",
@@ -5727,7 +5907,10 @@
     "pokemonOffset": 20,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 25, "evolvedForm": "POLIWHIRL" }]
+    "evos": [{ "kind": "LEVEL", "param": 25, "evolvedForm": "POLIWHIRL" }],
+    "frontAnimId": 0,
+    "animationDelay": 0,
+    "backAnimation": "CONCAVE_UP_ARC_SWAY_LARGE"
   },
   "POLIWHIRL": {
     "name": "POLIWHIRL",
@@ -5831,7 +6014,10 @@
     "evos": [
       { "kind": "ITEM", "param": "WATER_STONE", "evolvedForm": "POLIWRATH" },
       { "kind": "TRADE_ITEM", "param": "KINGS_ROCK", "evolvedForm": "POLITOED" }
-    ]
+    ],
+    "frontAnimId": 50,
+    "animationDelay": 5,
+    "backAnimation": "VERTICAL_SHAKE"
   },
   "POLIWRATH": {
     "name": "POLIWRATH",
@@ -5931,7 +6117,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 6,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 25,
+    "animationDelay": 0,
+    "backAnimation": "V_SHAKE_WITH_PAUSE"
   },
   "ABRA": {
     "name": "ABRA",
@@ -6033,7 +6222,10 @@
     "pokemonOffset": 14,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 16, "evolvedForm": "KADABRA" }]
+    "evos": [{ "kind": "LEVEL", "param": 16, "evolvedForm": "KADABRA" }],
+    "frontAnimId": 49,
+    "animationDelay": 0,
+    "backAnimation": "SHRINK_GROW_2"
   },
   "KADABRA": {
     "name": "KADABRA",
@@ -6140,7 +6332,10 @@
     "pokemonOffset": 3,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "TRADE", "param": 0, "evolvedForm": "ALAKAZAM" }]
+    "evos": [{ "kind": "TRADE", "param": 0, "evolvedForm": "ALAKAZAM" }],
+    "frontAnimId": 9,
+    "animationDelay": 0,
+    "backAnimation": "SHRINK_GROW_2"
   },
   "ALAKAZAM": {
     "name": "ALAKAZAM",
@@ -6247,7 +6442,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 3,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 23,
+    "animationDelay": 0,
+    "backAnimation": "GROW_2"
   },
   "MACHOP": {
     "name": "MACHOP",
@@ -6358,7 +6556,10 @@
     "pokemonOffset": 14,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 28, "evolvedForm": "MACHOKE" }]
+    "evos": [{ "kind": "LEVEL", "param": 28, "evolvedForm": "MACHOKE" }],
+    "frontAnimId": 0,
+    "animationDelay": 0,
+    "backAnimation": "JOLT_RIGHT"
   },
   "MACHOKE": {
     "name": "MACHOKE",
@@ -6461,7 +6662,10 @@
     "pokemonOffset": 9,
     "trainerScale": 257,
     "trainerOffset": 0,
-    "evos": [{ "kind": "TRADE", "param": 0, "evolvedForm": "MACHAMP" }]
+    "evos": [{ "kind": "TRADE", "param": 0, "evolvedForm": "MACHAMP" }],
+    "frontAnimId": 16,
+    "animationDelay": 0,
+    "backAnimation": "VERTICAL_SHAKE"
   },
   "MACHAMP": {
     "name": "MACHAMP",
@@ -6564,7 +6768,10 @@
     "pokemonScale": 280,
     "pokemonOffset": 1,
     "trainerScale": 269,
-    "trainerOffset": -1
+    "trainerOffset": -1,
+    "frontAnimId": 49,
+    "animationDelay": 0,
+    "backAnimation": "VERTICAL_SHAKE"
   },
   "BELLSPROUT": {
     "name": "BELLSPROUT",
@@ -6657,7 +6864,10 @@
     "pokemonOffset": 16,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 21, "evolvedForm": "WEEPINBELL" }]
+    "evos": [{ "kind": "LEVEL", "param": 21, "evolvedForm": "WEEPINBELL" }],
+    "frontAnimId": 23,
+    "animationDelay": 0,
+    "backAnimation": "VERTICAL_STRETCH"
   },
   "WEEPINBELL": {
     "name": "WEEPINBELL",
@@ -6745,7 +6955,10 @@
     "trainerOffset": 0,
     "evos": [
       { "kind": "ITEM", "param": "LEAF_STONE", "evolvedForm": "VICTREEBEL" }
-    ]
+    ],
+    "frontAnimId": 13,
+    "animationDelay": 3,
+    "backAnimation": "VERTICAL_STRETCH"
   },
   "VICTREEBEL": {
     "name": "VICTREEBEL",
@@ -6824,7 +7037,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 1,
     "trainerScale": 312,
-    "trainerOffset": 3
+    "trainerOffset": 3,
+    "frontAnimId": 50,
+    "animationDelay": 0,
+    "backAnimation": "VERTICAL_STRETCH"
   },
   "TENTACOOL": {
     "name": "TENTACOOL",
@@ -6920,7 +7136,10 @@
     "pokemonOffset": 0,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 30, "evolvedForm": "TENTACRUEL" }]
+    "evos": [{ "kind": "LEVEL", "param": 30, "evolvedForm": "TENTACRUEL" }],
+    "frontAnimId": 0,
+    "animationDelay": 0,
+    "backAnimation": "H_SLIDE"
   },
   "TENTACRUEL": {
     "name": "TENTACRUEL",
@@ -7010,7 +7229,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 0,
     "trainerScale": 312,
-    "trainerOffset": 1
+    "trainerOffset": 1,
+    "frontAnimId": 0,
+    "animationDelay": 0,
+    "backAnimation": "H_SLIDE"
   },
   "GEODUDE": {
     "name": "GEODUDE",
@@ -7110,7 +7332,10 @@
     "pokemonOffset": 18,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 25, "evolvedForm": "GRAVELER" }]
+    "evos": [{ "kind": "LEVEL", "param": 25, "evolvedForm": "GRAVELER" }],
+    "frontAnimId": 72,
+    "animationDelay": 0,
+    "backAnimation": "V_SHAKE_WITH_PAUSE"
   },
   "GRAVELER": {
     "name": "GRAVELER",
@@ -7211,7 +7436,10 @@
     "pokemonOffset": 2,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "TRADE", "param": 0, "evolvedForm": "GOLEM" }]
+    "evos": [{ "kind": "TRADE", "param": 0, "evolvedForm": "GOLEM" }],
+    "frontAnimId": 72,
+    "animationDelay": 0,
+    "backAnimation": "HORIZONTAL_SHAKE"
   },
   "GOLEM": {
     "name": "GOLEM",
@@ -7315,7 +7543,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 3,
     "trainerScale": 296,
-    "trainerOffset": 2
+    "trainerOffset": 2,
+    "frontAnimId": 47,
+    "animationDelay": 0,
+    "backAnimation": "HORIZONTAL_SHAKE"
   },
   "PONYTA": {
     "name": "PONYTA",
@@ -7407,7 +7638,10 @@
     "pokemonOffset": 8,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 40, "evolvedForm": "RAPIDASH" }]
+    "evos": [{ "kind": "LEVEL", "param": 40, "evolvedForm": "RAPIDASH" }],
+    "frontAnimId": 32,
+    "animationDelay": 0,
+    "backAnimation": "FADE_RED_WITH_SHAKE"
   },
   "RAPIDASH": {
     "name": "RAPIDASH",
@@ -7495,7 +7729,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 0,
     "trainerScale": 289,
-    "trainerOffset": 1
+    "trainerOffset": 1,
+    "frontAnimId": 17,
+    "animationDelay": 0,
+    "backAnimation": "JOLT_RIGHT"
   },
   "SLOWPOKE": {
     "name": "SLOWPOKE",
@@ -7609,7 +7846,10 @@
     "evos": [
       { "kind": "LEVEL", "param": 37, "evolvedForm": "SLOWBRO" },
       { "kind": "TRADE_ITEM", "param": "KINGS_ROCK", "evolvedForm": "SLOWKING" }
-    ]
+    ],
+    "frontAnimId": 69,
+    "animationDelay": 0,
+    "backAnimation": "H_SLIDE"
   },
   "SLOWBRO": {
     "name": "SLOWBRO",
@@ -7723,7 +7963,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 6,
     "trainerScale": 296,
-    "trainerOffset": 2
+    "trainerOffset": 2,
+    "frontAnimId": 11,
+    "animationDelay": 0,
+    "backAnimation": "DIP_RIGHT_SIDE"
   },
   "MAGNEMITE": {
     "name": "MAGNEMITE",
@@ -7808,7 +8051,10 @@
     "pokemonOffset": -9,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 30, "evolvedForm": "MAGNETON" }]
+    "evos": [{ "kind": "LEVEL", "param": 30, "evolvedForm": "MAGNETON" }],
+    "frontAnimId": 84,
+    "animationDelay": 0,
+    "backAnimation": "CIRCLE_MOVE_CLOCKWISE"
   },
   "MAGNETON": {
     "name": "MAGNETON",
@@ -7895,7 +8141,10 @@
     "pokemonScale": 292,
     "pokemonOffset": 1,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 44,
+    "animationDelay": 0,
+    "backAnimation": "CIRCLE_MOVE_CLOCKWISE"
   },
   "FARFETCHD": {
     "name": "FARFETCH'D",
@@ -7991,7 +8240,10 @@
     "pokemonScale": 330,
     "pokemonOffset": 2,
     "trainerScale": 293,
-    "trainerOffset": 2
+    "trainerOffset": 2,
+    "frontAnimId": 72,
+    "animationDelay": 0,
+    "backAnimation": "H_SLIDE"
   },
   "DODUO": {
     "name": "DODUO",
@@ -8081,7 +8333,10 @@
     "pokemonOffset": 3,
     "trainerScale": 257,
     "trainerOffset": -1,
-    "evos": [{ "kind": "LEVEL", "param": 31, "evolvedForm": "DODRIO" }]
+    "evos": [{ "kind": "LEVEL", "param": 31, "evolvedForm": "DODRIO" }],
+    "frontAnimId": 76,
+    "animationDelay": 0,
+    "backAnimation": "CIRCLE_MOVE_CLOCKWISE"
   },
   "DODRIO": {
     "name": "DODRIO",
@@ -8167,7 +8422,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 0,
     "trainerScale": 268,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 65,
+    "animationDelay": 0,
+    "backAnimation": "JOLT_RIGHT"
   },
   "SEEL": {
     "name": "SEEL",
@@ -8262,7 +8520,10 @@
     "pokemonOffset": 8,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 34, "evolvedForm": "DEWGONG" }]
+    "evos": [{ "kind": "LEVEL", "param": 34, "evolvedForm": "DEWGONG" }],
+    "frontAnimId": 11,
+    "animationDelay": 0,
+    "backAnimation": "DIP_RIGHT_SIDE"
   },
   "DEWGONG": {
     "name": "DEWGONG",
@@ -8351,7 +8612,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 0,
     "trainerScale": 275,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 69,
+    "animationDelay": 0,
+    "backAnimation": "H_SLIDE"
   },
   "GRIMER": {
     "name": "GRIMER",
@@ -8455,7 +8719,10 @@
     "pokemonOffset": 10,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 38, "evolvedForm": "MUK" }]
+    "evos": [{ "kind": "LEVEL", "param": 38, "evolvedForm": "MUK" }],
+    "frontAnimId": 70,
+    "animationDelay": 0,
+    "backAnimation": "VERTICAL_STRETCH"
   },
   "MUK": {
     "name": "MUK",
@@ -8555,7 +8822,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 2,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 48,
+    "animationDelay": 45,
+    "backAnimation": "HORIZONTAL_STRETCH"
   },
   "SHELLDER": {
     "name": "SHELLDER",
@@ -8648,7 +8918,10 @@
     "trainerOffset": 0,
     "evos": [
       { "kind": "ITEM", "param": "WATER_STONE", "evolvedForm": "CLOYSTER" }
-    ]
+    ],
+    "frontAnimId": 18,
+    "animationDelay": 20,
+    "backAnimation": "DIP_RIGHT_SIDE"
   },
   "CLOYSTER": {
     "name": "CLOYSTER",
@@ -8730,7 +9003,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 0,
     "trainerScale": 269,
-    "trainerOffset": 1
+    "trainerOffset": 1,
+    "frontAnimId": 29,
+    "animationDelay": 0,
+    "backAnimation": "CIRCLE_MOVE_CLOCKWISE"
   },
   "GASTLY": {
     "name": "GASTLY",
@@ -8827,7 +9103,10 @@
     "pokemonOffset": 0,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 25, "evolvedForm": "HAUNTER" }]
+    "evos": [{ "kind": "LEVEL", "param": 25, "evolvedForm": "HAUNTER" }],
+    "frontAnimId": 21,
+    "animationDelay": 0,
+    "backAnimation": "H_SLIDE_QUICK"
   },
   "HAUNTER": {
     "name": "HAUNTER",
@@ -8917,7 +9196,10 @@
     "pokemonOffset": 2,
     "trainerScale": 293,
     "trainerOffset": 2,
-    "evos": [{ "kind": "TRADE", "param": 0, "evolvedForm": "GENGAR" }]
+    "evos": [{ "kind": "TRADE", "param": 0, "evolvedForm": "GENGAR" }],
+    "frontAnimId": 53,
+    "animationDelay": 23,
+    "backAnimation": "H_SLIDE_QUICK"
   },
   "GENGAR": {
     "name": "GENGAR",
@@ -9023,7 +9305,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 2,
     "trainerScale": 302,
-    "trainerOffset": 2
+    "trainerOffset": 2,
+    "frontAnimId": 58,
+    "animationDelay": 0,
+    "backAnimation": "SHRINK_GROW_2"
   },
   "ONIX": {
     "name": "ONIX",
@@ -9118,7 +9403,10 @@
     "trainerOffset": 14,
     "evos": [
       { "kind": "TRADE_ITEM", "param": "METAL_COAT", "evolvedForm": "STEELIX" }
-    ]
+    ],
+    "frontAnimId": 67,
+    "animationDelay": 0,
+    "backAnimation": "VERTICAL_SHAKE"
   },
   "DROWZEE": {
     "name": "DROWZEE",
@@ -9230,7 +9518,10 @@
     "pokemonOffset": 6,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 26, "evolvedForm": "HYPNO" }]
+    "evos": [{ "kind": "LEVEL", "param": 26, "evolvedForm": "HYPNO" }],
+    "frontAnimId": 79,
+    "animationDelay": 48,
+    "backAnimation": "DIP_RIGHT_SIDE"
   },
   "HYPNO": {
     "name": "HYPNO",
@@ -9336,7 +9627,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 3,
     "trainerScale": 257,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 9,
+    "animationDelay": 40,
+    "backAnimation": "SHRINK_GROW_2"
   },
   "KRABBY": {
     "name": "KRABBY",
@@ -9437,7 +9731,10 @@
     "pokemonOffset": 20,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 28, "evolvedForm": "KINGLER" }]
+    "evos": [{ "kind": "LEVEL", "param": 28, "evolvedForm": "KINGLER" }],
+    "frontAnimId": 3,
+    "animationDelay": 0,
+    "backAnimation": "V_SHAKE_WITH_H_SLIDE"
   },
   "KINGLER": {
     "name": "KINGLER",
@@ -9531,7 +9828,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 2,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 75,
+    "animationDelay": 0,
+    "backAnimation": "VERTICAL_SHAKE"
   },
   "VOLTORB": {
     "name": "VOLTORB",
@@ -9618,7 +9918,10 @@
     "pokemonOffset": -8,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 30, "evolvedForm": "ELECTRODE" }]
+    "evos": [{ "kind": "LEVEL", "param": 30, "evolvedForm": "ELECTRODE" }],
+    "frontAnimId": 0,
+    "animationDelay": 0,
+    "backAnimation": "JOLT_RIGHT"
   },
   "ELECTRODE": {
     "name": "ELECTRODE",
@@ -9707,7 +10010,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 0,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 0,
+    "animationDelay": 0,
+    "backAnimation": "JOLT_RIGHT"
   },
   "EXEGGCUTE": {
     "name": "EXEGGCUTE",
@@ -9809,7 +10115,10 @@
     "trainerOffset": 0,
     "evos": [
       { "kind": "ITEM", "param": "LEAF_STONE", "evolvedForm": "EXEGGUTOR" }
-    ]
+    ],
+    "frontAnimId": 70,
+    "animationDelay": 0,
+    "backAnimation": "H_SLIDE"
   },
   "EXEGGUTOR": {
     "name": "EXEGGUTOR",
@@ -9895,7 +10204,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 0,
     "trainerScale": 309,
-    "trainerOffset": 5
+    "trainerOffset": 5,
+    "frontAnimId": 50,
+    "animationDelay": 0,
+    "backAnimation": "CONCAVE_DOWN_ARC_SWAY_SMALL"
   },
   "CUBONE": {
     "name": "CUBONE",
@@ -10009,7 +10321,10 @@
     "pokemonOffset": 21,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 28, "evolvedForm": "MAROWAK" }]
+    "evos": [{ "kind": "LEVEL", "param": 28, "evolvedForm": "MAROWAK" }],
+    "frontAnimId": 72,
+    "animationDelay": 0,
+    "backAnimation": "JOLT_RIGHT"
   },
   "MAROWAK": {
     "name": "MAROWAK",
@@ -10117,7 +10432,10 @@
     "pokemonScale": 293,
     "pokemonOffset": 12,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 5,
+    "animationDelay": 0,
+    "backAnimation": "CONCAVE_DOWN_ARC_SWAY_SMALL"
   },
   "HITMONLEE": {
     "name": "HITMONLEE",
@@ -10214,7 +10532,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 3,
     "trainerScale": 259,
-    "trainerOffset": 1
+    "trainerOffset": 1,
+    "frontAnimId": 22,
+    "animationDelay": 0,
+    "backAnimation": "H_SLIDE"
   },
   "HITMONCHAN": {
     "name": "HITMONCHAN",
@@ -10313,7 +10634,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 2,
     "trainerScale": 277,
-    "trainerOffset": 2
+    "trainerOffset": 2,
+    "frontAnimId": 9,
+    "animationDelay": 25,
+    "backAnimation": "CIRCLE_MOVE_CLOCKWISE"
   },
   "LICKITUNG": {
     "name": "LICKITUNG",
@@ -10439,7 +10763,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 4,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 69,
+    "animationDelay": 0,
+    "backAnimation": "H_SLIDE"
   },
   "KOFFING": {
     "name": "KOFFING",
@@ -10536,7 +10863,10 @@
     "pokemonOffset": -1,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 35, "evolvedForm": "WEEZING" }]
+    "evos": [{ "kind": "LEVEL", "param": 35, "evolvedForm": "WEEZING" }],
+    "frontAnimId": 19,
+    "animationDelay": 0,
+    "backAnimation": "GROW_1"
   },
   "WEEZING": {
     "name": "WEEZING",
@@ -10627,7 +10957,10 @@
     "pokemonScale": 305,
     "pokemonOffset": 3,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 4,
+    "animationDelay": 0,
+    "backAnimation": "GROW_1"
   },
   "RHYHORN": {
     "name": "RHYHORN",
@@ -10737,7 +11070,10 @@
     "pokemonOffset": 6,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 42, "evolvedForm": "RHYDON" }]
+    "evos": [{ "kind": "LEVEL", "param": 42, "evolvedForm": "RHYDON" }],
+    "frontAnimId": 16,
+    "animationDelay": 0,
+    "backAnimation": "V_SHAKE_WITH_PAUSE"
   },
   "RHYDON": {
     "name": "RHYDON",
@@ -10850,7 +11186,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 1,
     "trainerScale": 299,
-    "trainerOffset": 2
+    "trainerOffset": 2,
+    "frontAnimId": 19,
+    "animationDelay": 0,
+    "backAnimation": "V_SHAKE_WITH_PAUSE"
   },
   "CHANSEY": {
     "name": "CHANSEY",
@@ -10978,7 +11317,10 @@
     "pokemonOffset": 7,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "FRIENDSHIP", "param": 0, "evolvedForm": "BLISSEY" }]
+    "evos": [{ "kind": "FRIENDSHIP", "param": 0, "evolvedForm": "BLISSEY" }],
+    "frontAnimId": 69,
+    "animationDelay": 0,
+    "backAnimation": "CONCAVE_UP_ARC_SWAY_LARGE"
   },
   "TANGELA": {
     "name": "TANGELA",
@@ -11076,7 +11418,10 @@
     "pokemonScale": 304,
     "pokemonOffset": 1,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 72,
+    "animationDelay": 0,
+    "backAnimation": "VERTICAL_STRETCH"
   },
   "KANGASKHAN": {
     "name": "KANGASKHAN",
@@ -11201,7 +11546,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 0,
     "trainerScale": 387,
-    "trainerOffset": 8
+    "trainerOffset": 8,
+    "frontAnimId": 23,
+    "animationDelay": 0,
+    "backAnimation": "CONCAVE_UP_ARC_SWAY_LARGE"
   },
   "HORSEA": {
     "name": "HORSEA",
@@ -11293,7 +11641,10 @@
     "pokemonOffset": -1,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 32, "evolvedForm": "SEADRA" }]
+    "evos": [{ "kind": "LEVEL", "param": 32, "evolvedForm": "SEADRA" }],
+    "frontAnimId": 18,
+    "animationDelay": 0,
+    "backAnimation": "DIP_RIGHT_SIDE"
   },
   "SEADRA": {
     "name": "SEADRA",
@@ -11386,7 +11737,10 @@
         "param": "DRAGON_SCALE",
         "evolvedForm": "KINGDRA"
       }
-    ]
+    ],
+    "frontAnimId": 4,
+    "animationDelay": 0,
+    "backAnimation": "CONCAVE_DOWN_ARC_SWAY_LARGE"
   },
   "GOLDEEN": {
     "name": "GOLDEEN",
@@ -11472,7 +11826,10 @@
     "pokemonOffset": 4,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 33, "evolvedForm": "SEAKING" }]
+    "evos": [{ "kind": "LEVEL", "param": 33, "evolvedForm": "SEAKING" }],
+    "frontAnimId": 13,
+    "animationDelay": 0,
+    "backAnimation": "CONCAVE_DOWN_ARC_SWAY_LARGE"
   },
   "SEAKING": {
     "name": "SEAKING",
@@ -11558,7 +11915,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 3,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 28,
+    "animationDelay": 0,
+    "backAnimation": "CONCAVE_DOWN_ARC_SWAY_LARGE"
   },
   "STARYU": {
     "name": "STARYU",
@@ -11654,7 +12014,10 @@
     "trainerOffset": 0,
     "evos": [
       { "kind": "ITEM", "param": "WATER_STONE", "evolvedForm": "STARMIE" }
-    ]
+    ],
+    "frontAnimId": 78,
+    "animationDelay": 0,
+    "backAnimation": "DIP_RIGHT_SIDE"
   },
   "STARMIE": {
     "name": "STARMIE",
@@ -11743,7 +12106,10 @@
     "pokemonScale": 301,
     "pokemonOffset": 3,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 18,
+    "animationDelay": 0,
+    "backAnimation": "FADE_BLUE_WITH_SHAKE"
   },
   "MR_MIME": {
     "name": "MR. MIME",
@@ -11864,7 +12230,10 @@
     "pokemonScale": 258,
     "pokemonOffset": 6,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 70,
+    "animationDelay": 0,
+    "backAnimation": "SHRINK_GROW_2"
   },
   "SCYTHER": {
     "name": "SCYTHER",
@@ -11964,7 +12333,10 @@
     "trainerOffset": 2,
     "evos": [
       { "kind": "TRADE_ITEM", "param": "METAL_COAT", "evolvedForm": "SCIZOR" }
-    ]
+    ],
+    "frontAnimId": 2,
+    "animationDelay": 10,
+    "backAnimation": "CIRCLE_MOVE_CLOCKWISE"
   },
   "JYNX": {
     "name": "JYNX",
@@ -12071,7 +12443,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 3,
     "trainerScale": 300,
-    "trainerOffset": 1
+    "trainerOffset": 1,
+    "frontAnimId": 23,
+    "animationDelay": 0,
+    "backAnimation": "DIP_RIGHT_SIDE"
   },
   "ELECTABUZZ": {
     "name": "ELECTABUZZ",
@@ -12170,7 +12545,10 @@
     "pokemonScale": 351,
     "pokemonOffset": 8,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 44,
+    "animationDelay": 0,
+    "backAnimation": "FLASH_YELLOW_WITH_SHAKE"
   },
   "MAGMAR": {
     "name": "MAGMAR",
@@ -12266,7 +12644,10 @@
     "pokemonScale": 277,
     "pokemonOffset": 5,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 15,
+    "animationDelay": 0,
+    "backAnimation": "FADE_RED_WITH_SHAKE"
   },
   "PINSIR": {
     "name": "PINSIR",
@@ -12359,7 +12740,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 2,
     "trainerScale": 257,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 9,
+    "animationDelay": 0,
+    "backAnimation": "V_SHAKE_WITH_PAUSE"
   },
   "TAUROS": {
     "name": "TAUROS",
@@ -12453,7 +12837,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 0,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 25,
+    "animationDelay": 10,
+    "backAnimation": "V_SHAKE_WITH_PAUSE"
   },
   "MAGIKARP": {
     "name": "MAGIKARP",
@@ -12502,7 +12889,10 @@
     "pokemonOffset": 4,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 20, "evolvedForm": "GYARADOS" }]
+    "evos": [{ "kind": "LEVEL", "param": 20, "evolvedForm": "GYARADOS" }],
+    "frontAnimId": 5,
+    "animationDelay": 0,
+    "backAnimation": "CONCAVE_DOWN_ARC_SWAY_SMALL"
   },
   "GYARADOS": {
     "name": "GYARADOS",
@@ -12598,7 +12988,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 6,
     "trainerScale": 481,
-    "trainerOffset": 13
+    "trainerOffset": 13,
+    "frontAnimId": 72,
+    "animationDelay": 0,
+    "backAnimation": "VERTICAL_SHAKE"
   },
   "LAPRAS": {
     "name": "LAPRAS",
@@ -12705,7 +13098,10 @@
     "pokemonScale": 257,
     "pokemonOffset": 10,
     "trainerScale": 423,
-    "trainerOffset": 8
+    "trainerOffset": 8,
+    "frontAnimId": 23,
+    "animationDelay": 0,
+    "backAnimation": "FADE_BLUE_WITH_SHAKE"
   },
   "DITTO": {
     "name": "DITTO",
@@ -12749,7 +13145,10 @@
     "pokemonScale": 633,
     "pokemonOffset": 23,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 1,
+    "animationDelay": 0,
+    "backAnimation": "SHRINK_GROW_1"
   },
   "EEVEE": {
     "name": "EEVEE",
@@ -12838,7 +13237,10 @@
       { "kind": "ITEM", "param": "FIRE_STONE", "evolvedForm": "FLAREON" },
       { "kind": "FRIENDSHIP_DAY", "param": 0, "evolvedForm": "ESPEON" },
       { "kind": "FRIENDSHIP_NIGHT", "param": 0, "evolvedForm": "UMBREON" }
-    ]
+    ],
+    "frontAnimId": 23,
+    "animationDelay": 0,
+    "backAnimation": "CONCAVE_UP_ARC_SWAY_LARGE"
   },
   "VAPOREON": {
     "name": "VAPOREON",
@@ -12931,7 +13333,10 @@
     "pokemonScale": 316,
     "pokemonOffset": 8,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 23,
+    "animationDelay": 0,
+    "backAnimation": "FADE_BLUE_WITH_SHAKE"
   },
   "JOLTEON": {
     "name": "JOLTEON",
@@ -13021,7 +13426,10 @@
     "pokemonScale": 283,
     "pokemonOffset": 8,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 0,
+    "animationDelay": 0,
+    "backAnimation": "FLASH_YELLOW_WITH_SHAKE"
   },
   "FLAREON": {
     "name": "FLAREON",
@@ -13109,7 +13517,10 @@
     "pokemonScale": 306,
     "pokemonOffset": 12,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 23,
+    "animationDelay": 0,
+    "backAnimation": "FADE_RED_WITH_SHAKE"
   },
   "PORYGON": {
     "name": "PORYGON",
@@ -13206,7 +13617,10 @@
     "trainerOffset": 0,
     "evos": [
       { "kind": "TRADE_ITEM", "param": "UP_GRADE", "evolvedForm": "PORYGON2" }
-    ]
+    ],
+    "frontAnimId": 82,
+    "animationDelay": 0,
+    "backAnimation": "H_SLIDE_QUICK"
   },
   "OMANYTE": {
     "name": "OMANYTE",
@@ -13306,7 +13720,10 @@
     "pokemonOffset": 22,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 40, "evolvedForm": "OMASTAR" }]
+    "evos": [{ "kind": "LEVEL", "param": 40, "evolvedForm": "OMASTAR" }],
+    "frontAnimId": 81,
+    "animationDelay": 0,
+    "backAnimation": "DIP_RIGHT_SIDE"
   },
   "OMASTAR": {
     "name": "OMASTAR",
@@ -13400,7 +13817,10 @@
     "pokemonScale": 307,
     "pokemonOffset": 7,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 9,
+    "animationDelay": 0,
+    "backAnimation": "DIP_RIGHT_SIDE"
   },
   "KABUTO": {
     "name": "KABUTO",
@@ -13502,7 +13922,10 @@
     "pokemonOffset": 21,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 40, "evolvedForm": "KABUTOPS" }]
+    "evos": [{ "kind": "LEVEL", "param": 40, "evolvedForm": "KABUTOPS" }],
+    "frontAnimId": 29,
+    "animationDelay": 0,
+    "backAnimation": "DIP_RIGHT_SIDE"
   },
   "KABUTOPS": {
     "name": "KABUTOPS",
@@ -13604,7 +14027,10 @@
     "pokemonScale": 271,
     "pokemonOffset": 3,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 15,
+    "animationDelay": 0,
+    "backAnimation": "JOLT_RIGHT"
   },
   "AERODACTYL": {
     "name": "AERODACTYL",
@@ -13705,7 +14131,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 0,
     "trainerScale": 302,
-    "trainerOffset": 4
+    "trainerOffset": 4,
+    "frontAnimId": 71,
+    "animationDelay": 0,
+    "backAnimation": "JOLT_RIGHT"
   },
   "SNORLAX": {
     "name": "SNORLAX",
@@ -13827,7 +14256,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 4,
     "trainerScale": 423,
-    "trainerOffset": 11
+    "trainerOffset": 11,
+    "frontAnimId": 11,
+    "animationDelay": 0,
+    "backAnimation": "DIP_RIGHT_SIDE"
   },
   "ARTICUNO": {
     "name": "ARTICUNO",
@@ -13916,7 +14348,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 0,
     "trainerScale": 309,
-    "trainerOffset": 2
+    "trainerOffset": 2,
+    "frontAnimId": 9,
+    "animationDelay": 0,
+    "backAnimation": "FADE_BLUE_WITH_SHAKE"
   },
   "ZAPDOS": {
     "name": "ZAPDOS",
@@ -14005,7 +14440,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 0,
     "trainerScale": 318,
-    "trainerOffset": 3
+    "trainerOffset": 3,
+    "frontAnimId": 44,
+    "animationDelay": 0,
+    "backAnimation": "FLASH_YELLOW_WITH_SHAKE"
   },
   "MOLTRES": {
     "name": "MOLTRES",
@@ -14092,7 +14530,10 @@
     "pokemonScale": 270,
     "pokemonOffset": 0,
     "trainerScale": 387,
-    "trainerOffset": 8
+    "trainerOffset": 8,
+    "frontAnimId": 69,
+    "animationDelay": 0,
+    "backAnimation": "FADE_RED_WITH_SHAKE"
   },
   "DRATINI": {
     "name": "DRATINI",
@@ -14195,7 +14636,10 @@
     "pokemonOffset": 8,
     "trainerScale": 386,
     "trainerOffset": 6,
-    "evos": [{ "kind": "LEVEL", "param": 30, "evolvedForm": "DRAGONAIR" }]
+    "evos": [{ "kind": "LEVEL", "param": 30, "evolvedForm": "DRAGONAIR" }],
+    "frontAnimId": 0,
+    "animationDelay": 0,
+    "backAnimation": "H_SLIDE"
   },
   "DRAGONAIR": {
     "name": "DRAGONAIR",
@@ -14292,7 +14736,10 @@
     "pokemonOffset": 0,
     "trainerScale": 411,
     "trainerOffset": 5,
-    "evos": [{ "kind": "LEVEL", "param": 55, "evolvedForm": "DRAGONITE" }]
+    "evos": [{ "kind": "LEVEL", "param": 55, "evolvedForm": "DRAGONITE" }],
+    "frontAnimId": 16,
+    "animationDelay": 0,
+    "backAnimation": "CIRCLE_MOVE_CLOCKWISE"
   },
   "DRAGONITE": {
     "name": "DRAGONITE",
@@ -14409,7 +14856,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 0,
     "trainerScale": 309,
-    "trainerOffset": 4
+    "trainerOffset": 4,
+    "frontAnimId": 71,
+    "animationDelay": 0,
+    "backAnimation": "VERTICAL_SHAKE"
   },
   "MEWTWO": {
     "name": "MEWTWO",
@@ -14533,7 +14983,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 0,
     "trainerScale": 309,
-    "trainerOffset": 4
+    "trainerOffset": 4,
+    "frontAnimId": 9,
+    "animationDelay": 0,
+    "backAnimation": "GROW_2"
   },
   "MEW": {
     "name": "MEW",
@@ -14674,7 +15127,10 @@
     "pokemonScale": 457,
     "pokemonOffset": -2,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 13,
+    "animationDelay": 0,
+    "backAnimation": "CONCAVE_UP_ARC_SWAY_LARGE"
   },
   "CHIKORITA": {
     "name": "CHIKORITA",
@@ -14773,7 +15229,10 @@
     "pokemonOffset": 20,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 16, "evolvedForm": "BAYLEEF" }]
+    "evos": [{ "kind": "LEVEL", "param": 16, "evolvedForm": "BAYLEEF" }],
+    "frontAnimId": 0,
+    "animationDelay": 0,
+    "backAnimation": "CONCAVE_UP_ARC_SWAY_LARGE"
   },
   "BAYLEEF": {
     "name": "BAYLEEF",
@@ -14867,7 +15326,10 @@
     "pokemonOffset": 4,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 32, "evolvedForm": "MEGANIUM" }]
+    "evos": [{ "kind": "LEVEL", "param": 32, "evolvedForm": "MEGANIUM" }],
+    "frontAnimId": 0,
+    "animationDelay": 0,
+    "backAnimation": "H_SLIDE"
   },
   "MEGANIUM": {
     "name": "MEGANIUM",
@@ -14962,7 +15424,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 0,
     "trainerScale": 277,
-    "trainerOffset": 1
+    "trainerOffset": 1,
+    "frontAnimId": 23,
+    "animationDelay": 0,
+    "backAnimation": "VERTICAL_SHAKE"
   },
   "CYNDAQUIL": {
     "name": "CYNDAQUIL",
@@ -15057,7 +15522,10 @@
     "pokemonOffset": 21,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 14, "evolvedForm": "QUILAVA" }]
+    "evos": [{ "kind": "LEVEL", "param": 14, "evolvedForm": "QUILAVA" }],
+    "frontAnimId": 82,
+    "animationDelay": 0,
+    "backAnimation": "CONCAVE_UP_ARC_SWAY_LARGE"
   },
   "QUILAVA": {
     "name": "QUILAVA",
@@ -15149,7 +15617,10 @@
     "pokemonOffset": 11,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 36, "evolvedForm": "TYPHLOSION" }]
+    "evos": [{ "kind": "LEVEL", "param": 36, "evolvedForm": "TYPHLOSION" }],
+    "frontAnimId": 23,
+    "animationDelay": 0,
+    "backAnimation": "JOLT_RIGHT"
   },
   "TYPHLOSION": {
     "name": "TYPHLOSION",
@@ -15251,7 +15722,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 0,
     "trainerScale": 268,
-    "trainerOffset": 1
+    "trainerOffset": 1,
+    "frontAnimId": 16,
+    "animationDelay": 20,
+    "backAnimation": "FADE_RED_WITH_SHAKE"
   },
   "TOTODILE": {
     "name": "TOTODILE",
@@ -15360,7 +15834,10 @@
     "pokemonOffset": 20,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 18, "evolvedForm": "CROCONAW" }]
+    "evos": [{ "kind": "LEVEL", "param": 18, "evolvedForm": "CROCONAW" }],
+    "frontAnimId": 49,
+    "animationDelay": 0,
+    "backAnimation": "JOLT_RIGHT"
   },
   "CROCONAW": {
     "name": "CROCONAW",
@@ -15464,7 +15941,10 @@
     "pokemonOffset": 13,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 30, "evolvedForm": "FERALIGATR" }]
+    "evos": [{ "kind": "LEVEL", "param": 30, "evolvedForm": "FERALIGATR" }],
+    "frontAnimId": 15,
+    "animationDelay": 0,
+    "backAnimation": "JOLT_RIGHT"
   },
   "FERALIGATR": {
     "name": "FERALIGATR",
@@ -15571,7 +16051,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 0,
     "trainerScale": 342,
-    "trainerOffset": 7
+    "trainerOffset": 7,
+    "frontAnimId": 15,
+    "animationDelay": 5,
+    "backAnimation": "VERTICAL_SHAKE"
   },
   "SENTRET": {
     "name": "SENTRET",
@@ -15681,7 +16164,10 @@
     "pokemonOffset": 12,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 15, "evolvedForm": "FURRET" }]
+    "evos": [{ "kind": "LEVEL", "param": 15, "evolvedForm": "FURRET" }],
+    "frontAnimId": 0,
+    "animationDelay": 0,
+    "backAnimation": "CONCAVE_UP_ARC_SWAY_LARGE"
   },
   "FURRET": {
     "name": "FURRET",
@@ -15787,7 +16273,10 @@
     "pokemonScale": 346,
     "pokemonOffset": 11,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 50,
+    "animationDelay": 0,
+    "backAnimation": "CONCAVE_DOWN_ARC_SWAY_SMALL"
   },
   "HOOTHOOT": {
     "name": "HOOTHOOT",
@@ -15883,7 +16372,10 @@
     "pokemonOffset": -2,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 20, "evolvedForm": "NOCTOWL" }]
+    "evos": [{ "kind": "LEVEL", "param": 20, "evolvedForm": "NOCTOWL" }],
+    "frontAnimId": 71,
+    "animationDelay": 0,
+    "backAnimation": "CONCAVE_DOWN_ARC_SWAY_LARGE"
   },
   "NOCTOWL": {
     "name": "NOCTOWL",
@@ -15972,7 +16464,10 @@
     "pokemonScale": 278,
     "pokemonOffset": 3,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 23,
+    "animationDelay": 0,
+    "backAnimation": "CIRCLE_MOVE_CLOCKWISE"
   },
   "LEDYBA": {
     "name": "LEDYBA",
@@ -16067,7 +16562,10 @@
     "pokemonOffset": 4,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 18, "evolvedForm": "LEDIAN" }]
+    "evos": [{ "kind": "LEVEL", "param": 18, "evolvedForm": "LEDIAN" }],
+    "frontAnimId": 82,
+    "animationDelay": 0,
+    "backAnimation": "V_SHAKE_WITH_H_SLIDE"
   },
   "LEDIAN": {
     "name": "LEDIAN",
@@ -16162,7 +16660,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 2,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 71,
+    "animationDelay": 0,
+    "backAnimation": "CONCAVE_DOWN_ARC_SWAY_LARGE"
   },
   "SPINARAK": {
     "name": "SPINARAK",
@@ -16254,7 +16755,10 @@
     "pokemonOffset": 21,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 22, "evolvedForm": "ARIADOS" }]
+    "evos": [{ "kind": "LEVEL", "param": 22, "evolvedForm": "ARIADOS" }],
+    "frontAnimId": 79,
+    "animationDelay": 0,
+    "backAnimation": "V_SHAKE_WITH_H_SLIDE"
   },
   "ARIADOS": {
     "name": "ARIADOS",
@@ -16340,7 +16844,10 @@
     "pokemonScale": 316,
     "pokemonOffset": 8,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 15,
+    "animationDelay": 0,
+    "backAnimation": "H_SLIDE"
   },
   "CROBAT": {
     "name": "CROBAT",
@@ -16431,7 +16938,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 0,
     "trainerScale": 281,
-    "trainerOffset": 1
+    "trainerOffset": 1,
+    "frontAnimId": 0,
+    "animationDelay": 0,
+    "backAnimation": "CIRCLE_MOVE_CLOCKWISE"
   },
   "CHINCHOU": {
     "name": "CHINCHOU",
@@ -16520,7 +17030,10 @@
     "pokemonOffset": -2,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 27, "evolvedForm": "LANTURN" }]
+    "evos": [{ "kind": "LEVEL", "param": 27, "evolvedForm": "LANTURN" }],
+    "frontAnimId": 69,
+    "animationDelay": 0,
+    "backAnimation": "VERTICAL_STRETCH"
   },
   "LANTURN": {
     "name": "LANTURN",
@@ -16609,7 +17122,10 @@
     "pokemonScale": 269,
     "pokemonOffset": 6,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 81,
+    "animationDelay": 0,
+    "backAnimation": "FLASH_YELLOW_WITH_SHAKE"
   },
   "PICHU": {
     "name": "PICHU",
@@ -16705,7 +17221,10 @@
     "pokemonOffset": 20,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "FRIENDSHIP", "param": 0, "evolvedForm": "PIKACHU" }]
+    "evos": [{ "kind": "FRIENDSHIP", "param": 0, "evolvedForm": "PIKACHU" }],
+    "frontAnimId": 30,
+    "animationDelay": 0,
+    "backAnimation": "CONCAVE_UP_ARC_SWAY_LARGE"
   },
   "CLEFFA": {
     "name": "CLEFFA",
@@ -16814,7 +17333,10 @@
     "pokemonOffset": 23,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "FRIENDSHIP", "param": 0, "evolvedForm": "CLEFAIRY" }]
+    "evos": [{ "kind": "FRIENDSHIP", "param": 0, "evolvedForm": "CLEFAIRY" }],
+    "frontAnimId": 82,
+    "animationDelay": 0,
+    "backAnimation": "DIP_RIGHT_SIDE"
   },
   "IGGLYBUFF": {
     "name": "IGGLYBUFF",
@@ -16917,7 +17439,10 @@
     "pokemonOffset": -1,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "FRIENDSHIP", "param": 0, "evolvedForm": "JIGGLYPUFF" }]
+    "evos": [{ "kind": "FRIENDSHIP", "param": 0, "evolvedForm": "JIGGLYPUFF" }],
+    "frontAnimId": 12,
+    "animationDelay": 0,
+    "backAnimation": "DIP_RIGHT_SIDE"
   },
   "TOGEPI": {
     "name": "TOGEPI",
@@ -17029,7 +17554,10 @@
     "pokemonOffset": 23,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "FRIENDSHIP", "param": 0, "evolvedForm": "TOGETIC" }]
+    "evos": [{ "kind": "FRIENDSHIP", "param": 0, "evolvedForm": "TOGETIC" }],
+    "frontAnimId": 11,
+    "animationDelay": 0,
+    "backAnimation": "DIP_RIGHT_SIDE"
   },
   "TOGETIC": {
     "name": "TOGETIC",
@@ -17137,7 +17665,10 @@
     "pokemonScale": 424,
     "pokemonOffset": 17,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 0,
+    "animationDelay": 0,
+    "backAnimation": "CONCAVE_DOWN_ARC_SWAY_LARGE"
   },
   "NATU": {
     "name": "NATU",
@@ -17238,7 +17769,10 @@
     "pokemonOffset": 25,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 25, "evolvedForm": "XATU" }]
+    "evos": [{ "kind": "LEVEL", "param": 25, "evolvedForm": "XATU" }],
+    "frontAnimId": 49,
+    "animationDelay": 30,
+    "backAnimation": "CONCAVE_UP_ARC_SWAY_LARGE"
   },
   "XATU": {
     "name": "XATU",
@@ -17330,7 +17864,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 6,
     "trainerScale": 318,
-    "trainerOffset": 4
+    "trainerOffset": 4,
+    "frontAnimId": 9,
+    "animationDelay": 0,
+    "backAnimation": "SHRINK_GROW_2"
   },
   "MAREEP": {
     "name": "MAREEP",
@@ -17422,7 +17959,10 @@
     "pokemonOffset": 18,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 15, "evolvedForm": "FLAAFFY" }]
+    "evos": [{ "kind": "LEVEL", "param": 15, "evolvedForm": "FLAAFFY" }],
+    "frontAnimId": 0,
+    "animationDelay": 50,
+    "backAnimation": "CONCAVE_UP_ARC_SWAY_LARGE"
   },
   "FLAAFFY": {
     "name": "FLAAFFY",
@@ -17517,7 +18057,10 @@
     "pokemonOffset": 15,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 30, "evolvedForm": "AMPHAROS" }]
+    "evos": [{ "kind": "LEVEL", "param": 30, "evolvedForm": "AMPHAROS" }],
+    "frontAnimId": 30,
+    "animationDelay": 0,
+    "backAnimation": "DIP_RIGHT_SIDE"
   },
   "AMPHAROS": {
     "name": "AMPHAROS",
@@ -17614,7 +18157,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 4,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 44,
+    "animationDelay": 10,
+    "backAnimation": "FLASH_YELLOW_WITH_SHAKE"
   },
   "BELLOSSOM": {
     "name": "BELLOSSOM",
@@ -17694,7 +18240,10 @@
     "pokemonScale": 472,
     "pokemonOffset": 21,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 11,
+    "animationDelay": 0,
+    "backAnimation": "CONCAVE_DOWN_ARC_SWAY_LARGE"
   },
   "MARILL": {
     "name": "MARILL",
@@ -17803,7 +18352,10 @@
     "pokemonOffset": 20,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 18, "evolvedForm": "AZUMARILL" }]
+    "evos": [{ "kind": "LEVEL", "param": 18, "evolvedForm": "AZUMARILL" }],
+    "frontAnimId": 0,
+    "animationDelay": 0,
+    "backAnimation": "CONCAVE_UP_ARC_SWAY_LARGE"
   },
   "AZUMARILL": {
     "name": "AZUMARILL",
@@ -17905,7 +18457,10 @@
     "pokemonScale": 448,
     "pokemonOffset": 16,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 74,
+    "animationDelay": 0,
+    "backAnimation": "DIP_RIGHT_SIDE"
   },
   "SUDOWOODO": {
     "name": "SUDOWOODO",
@@ -18006,7 +18561,10 @@
     "pokemonScale": 305,
     "pokemonOffset": 8,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 70,
+    "animationDelay": 0,
+    "backAnimation": "H_SLIDE"
   },
   "POLITOED": {
     "name": "POLITOED",
@@ -18103,7 +18661,10 @@
     "pokemonScale": 289,
     "pokemonOffset": 6,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 50,
+    "animationDelay": 40,
+    "backAnimation": "CONCAVE_DOWN_ARC_SWAY_SMALL"
   },
   "HOPPIP": {
     "name": "HOPPIP",
@@ -18195,7 +18756,10 @@
     "pokemonOffset": -7,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 18, "evolvedForm": "SKIPLOOM" }]
+    "evos": [{ "kind": "LEVEL", "param": 18, "evolvedForm": "SKIPLOOM" }],
+    "frontAnimId": 28,
+    "animationDelay": 0,
+    "backAnimation": "CONCAVE_DOWN_ARC_SWAY_LARGE"
   },
   "SKIPLOOM": {
     "name": "SKIPLOOM",
@@ -18281,7 +18845,10 @@
     "pokemonOffset": 0,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 27, "evolvedForm": "JUMPLUFF" }]
+    "evos": [{ "kind": "LEVEL", "param": 27, "evolvedForm": "JUMPLUFF" }],
+    "frontAnimId": 24,
+    "animationDelay": 0,
+    "backAnimation": "CONCAVE_DOWN_ARC_SWAY_LARGE"
   },
   "JUMPLUFF": {
     "name": "JUMPLUFF",
@@ -18367,7 +18934,10 @@
     "pokemonScale": 418,
     "pokemonOffset": -4,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 81,
+    "animationDelay": 0,
+    "backAnimation": "CONCAVE_DOWN_ARC_SWAY_LARGE"
   },
   "AIPOM": {
     "name": "AIPOM",
@@ -18486,7 +19056,10 @@
     "pokemonScale": 363,
     "pokemonOffset": 6,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 50,
+    "animationDelay": 0,
+    "backAnimation": "CONCAVE_DOWN_ARC_SWAY_SMALL"
   },
   "SUNKERN": {
     "name": "SUNKERN",
@@ -18579,7 +19152,10 @@
     "trainerOffset": 0,
     "evos": [
       { "kind": "ITEM", "param": "SUN_STONE", "evolvedForm": "SUNFLORA" }
-    ]
+    ],
+    "frontAnimId": 82,
+    "animationDelay": 0,
+    "backAnimation": "DIP_RIGHT_SIDE"
   },
   "SUNFLORA": {
     "name": "SUNFLORA",
@@ -18663,7 +19239,10 @@
     "pokemonScale": 444,
     "pokemonOffset": 15,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 0,
+    "animationDelay": 0,
+    "backAnimation": "H_SLIDE"
   },
   "YANMA": {
     "name": "YANMA",
@@ -18755,7 +19334,10 @@
     "pokemonScale": 274,
     "pokemonOffset": -1,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 43,
+    "animationDelay": 0,
+    "backAnimation": "CONCAVE_DOWN_ARC_SWAY_LARGE"
   },
   "WOOPER": {
     "name": "WOOPER",
@@ -18861,7 +19443,10 @@
     "pokemonOffset": 21,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 20, "evolvedForm": "QUAGSIRE" }]
+    "evos": [{ "kind": "LEVEL", "param": 20, "evolvedForm": "QUAGSIRE" }],
+    "frontAnimId": 0,
+    "animationDelay": 0,
+    "backAnimation": "VERTICAL_STRETCH"
   },
   "QUAGSIRE": {
     "name": "QUAGSIRE",
@@ -18965,7 +19550,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 4,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 22,
+    "animationDelay": 0,
+    "backAnimation": "H_SLIDE"
   },
   "ESPEON": {
     "name": "ESPEON",
@@ -19058,7 +19646,10 @@
     "pokemonScale": 363,
     "pokemonOffset": 14,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 9,
+    "animationDelay": 0,
+    "backAnimation": "SHRINK_GROW_2"
   },
   "UMBREON": {
     "name": "UMBREON",
@@ -19150,7 +19741,10 @@
     "pokemonScale": 317,
     "pokemonOffset": 11,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 16,
+    "animationDelay": 0,
+    "backAnimation": "SHRINK_GROW_2"
   },
   "MURKROW": {
     "name": "MURKROW",
@@ -19249,7 +19843,10 @@
     "pokemonScale": 401,
     "pokemonOffset": -8,
     "trainerScale": 256,
-    "trainerOffset": 1
+    "trainerOffset": 1,
+    "frontAnimId": 0,
+    "animationDelay": 0,
+    "backAnimation": "CONCAVE_UP_ARC_SWAY_LARGE"
   },
   "SLOWKING": {
     "name": "SLOWKING",
@@ -19361,7 +19958,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 0,
     "trainerScale": 309,
-    "trainerOffset": 5
+    "trainerOffset": 5,
+    "frontAnimId": 19,
+    "animationDelay": 0,
+    "backAnimation": "DIP_RIGHT_SIDE"
   },
   "MISDREAVUS": {
     "name": "MISDREAVUS",
@@ -19456,7 +20056,10 @@
     "pokemonScale": 407,
     "pokemonOffset": -8,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 28,
+    "animationDelay": 0,
+    "backAnimation": "H_SLIDE_QUICK"
   },
   "UNOWN": {
     "name": "UNOWN",
@@ -19500,7 +20103,10 @@
     "pokemonScale": 411,
     "pokemonOffset": 2,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 10,
+    "animationDelay": 0,
+    "backAnimation": "SHRINK_GROW_2"
   },
   "WOBBUFFET": {
     "name": "WOBBUFFET",
@@ -19549,7 +20155,10 @@
     "pokemonScale": 274,
     "pokemonOffset": 4,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 48,
+    "animationDelay": 0,
+    "backAnimation": "VERTICAL_STRETCH"
   },
   "GIRAFARIG": {
     "name": "GIRAFARIG",
@@ -19656,7 +20265,10 @@
     "pokemonScale": 281,
     "pokemonOffset": 1,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 30,
+    "animationDelay": 0,
+    "backAnimation": "SHRINK_GROW_2"
   },
   "PINECO": {
     "name": "PINECO",
@@ -19754,7 +20366,10 @@
     "pokemonOffset": 2,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 31, "evolvedForm": "FORRETRESS" }]
+    "evos": [{ "kind": "LEVEL", "param": 31, "evolvedForm": "FORRETRESS" }],
+    "frontAnimId": 11,
+    "animationDelay": 0,
+    "backAnimation": "HORIZONTAL_SHAKE"
   },
   "FORRETRESS": {
     "name": "FORRETRESS",
@@ -19845,7 +20460,10 @@
     "pokemonScale": 293,
     "pokemonOffset": 5,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 16,
+    "animationDelay": 0,
+    "backAnimation": "VERTICAL_SHAKE"
   },
   "DUNSPARCE": {
     "name": "DUNSPARCE",
@@ -19956,7 +20574,10 @@
     "pokemonScale": 316,
     "pokemonOffset": 17,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 0,
+    "animationDelay": 10,
+    "backAnimation": "CIRCLE_MOVE_CLOCKWISE"
   },
   "GLIGAR": {
     "name": "GLIGAR",
@@ -20055,7 +20676,10 @@
     "pokemonScale": 350,
     "pokemonOffset": -1,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 19,
+    "animationDelay": 0,
+    "backAnimation": "SHRINK_GROW_1"
   },
   "STEELIX": {
     "name": "STEELIX",
@@ -20149,7 +20773,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 0,
     "trainerScale": 516,
-    "trainerOffset": 13
+    "trainerOffset": 13,
+    "frontAnimId": 15,
+    "animationDelay": 45,
+    "backAnimation": "VERTICAL_SHAKE"
   },
   "SNUBBULL": {
     "name": "SNUBBULL",
@@ -20270,7 +20897,10 @@
     "pokemonOffset": 19,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 23, "evolvedForm": "GRANBULL" }]
+    "evos": [{ "kind": "LEVEL", "param": 23, "evolvedForm": "GRANBULL" }],
+    "frontAnimId": 23,
+    "animationDelay": 0,
+    "backAnimation": "JOLT_RIGHT"
   },
   "GRANBULL": {
     "name": "GRANBULL",
@@ -20384,7 +21014,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 4,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 16,
+    "animationDelay": 0,
+    "backAnimation": "VERTICAL_SHAKE"
   },
   "QWILFISH": {
     "name": "QWILFISH",
@@ -20475,7 +21108,10 @@
     "pokemonScale": 430,
     "pokemonOffset": 0,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 58,
+    "animationDelay": 39,
+    "backAnimation": "GROW_2"
   },
   "SCIZOR": {
     "name": "SCIZOR",
@@ -20564,7 +21200,10 @@
     "pokemonScale": 278,
     "pokemonOffset": 1,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 2,
+    "animationDelay": 19,
+    "backAnimation": "JOLT_RIGHT"
   },
   "SHUCKLE": {
     "name": "SHUCKLE",
@@ -20651,7 +21290,10 @@
     "pokemonScale": 485,
     "pokemonOffset": 18,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 11,
+    "animationDelay": 0,
+    "backAnimation": "DIP_RIGHT_SIDE"
   },
   "HERACROSS": {
     "name": "HERACROSS",
@@ -20745,7 +21387,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 0,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 65,
+    "animationDelay": 0,
+    "backAnimation": "JOLT_RIGHT"
   },
   "SNEASEL": {
     "name": "SNEASEL",
@@ -20861,7 +21506,10 @@
     "pokemonScale": 413,
     "pokemonOffset": -3,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 22,
+    "animationDelay": 0,
+    "backAnimation": "CIRCLE_MOVE_CLOCKWISE"
   },
   "TEDDIURSA": {
     "name": "TEDDIURSA",
@@ -20977,7 +21625,10 @@
     "pokemonOffset": 19,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 30, "evolvedForm": "URSARING" }]
+    "evos": [{ "kind": "LEVEL", "param": 30, "evolvedForm": "URSARING" }],
+    "frontAnimId": 23,
+    "animationDelay": 0,
+    "backAnimation": "DIP_RIGHT_SIDE"
   },
   "URSARING": {
     "name": "URSARING",
@@ -21087,7 +21738,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 0,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 16,
+    "animationDelay": 0,
+    "backAnimation": "VERTICAL_SHAKE"
   },
   "SLUGMA": {
     "name": "SLUGMA",
@@ -21174,7 +21828,10 @@
     "pokemonOffset": 15,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 38, "evolvedForm": "MAGCARGO" }]
+    "evos": [{ "kind": "LEVEL", "param": 38, "evolvedForm": "MAGCARGO" }],
+    "frontAnimId": 23,
+    "animationDelay": 0,
+    "backAnimation": "FADE_RED_WITH_SHAKE"
   },
   "MAGCARGO": {
     "name": "MAGCARGO",
@@ -21266,7 +21923,10 @@
     "pokemonScale": 332,
     "pokemonOffset": 15,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 23,
+    "animationDelay": 0,
+    "backAnimation": "FADE_RED_WITH_SHAKE"
   },
   "SWINUB": {
     "name": "SWINUB",
@@ -21367,7 +22027,10 @@
     "pokemonOffset": 20,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 33, "evolvedForm": "PILOSWINE" }]
+    "evos": [{ "kind": "LEVEL", "param": 33, "evolvedForm": "PILOSWINE" }],
+    "frontAnimId": 0,
+    "animationDelay": 0,
+    "backAnimation": "V_SHAKE_WITH_H_SLIDE"
   },
   "PILOSWINE": {
     "name": "PILOSWINE",
@@ -21461,7 +22124,10 @@
     "pokemonScale": 306,
     "pokemonOffset": 10,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 15,
+    "animationDelay": 0,
+    "backAnimation": "HORIZONTAL_SHAKE"
   },
   "CORSOLA": {
     "name": "CORSOLA",
@@ -21570,7 +22236,10 @@
     "pokemonScale": 410,
     "pokemonOffset": 15,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 3,
+    "animationDelay": 0,
+    "backAnimation": "H_SLIDE"
   },
   "REMORAID": {
     "name": "REMORAID",
@@ -21669,7 +22338,10 @@
     "pokemonOffset": 4,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 25, "evolvedForm": "OCTILLERY" }]
+    "evos": [{ "kind": "LEVEL", "param": 25, "evolvedForm": "OCTILLERY" }],
+    "frontAnimId": 82,
+    "animationDelay": 0,
+    "backAnimation": "H_SLIDE"
   },
   "OCTILLERY": {
     "name": "OCTILLERY",
@@ -21762,7 +22434,10 @@
     "pokemonScale": 296,
     "pokemonOffset": 3,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 23,
+    "animationDelay": 20,
+    "backAnimation": "SHRINK_GROW_1"
   },
   "DELIBIRD": {
     "name": "DELIBIRD",
@@ -21850,7 +22525,10 @@
     "pokemonScale": 293,
     "pokemonOffset": 11,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 82,
+    "animationDelay": 0,
+    "backAnimation": "CIRCLE_MOVE_CLOCKWISE"
   },
   "MANTINE": {
     "name": "MANTINE",
@@ -21945,7 +22623,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 0,
     "trainerScale": 342,
-    "trainerOffset": 7
+    "trainerOffset": 7,
+    "frontAnimId": 13,
+    "animationDelay": 0,
+    "backAnimation": "H_SLIDE"
   },
   "SKARMORY": {
     "name": "SKARMORY",
@@ -22035,7 +22716,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 0,
     "trainerScale": 271,
-    "trainerOffset": 1
+    "trainerOffset": 1,
+    "frontAnimId": 23,
+    "animationDelay": 0,
+    "backAnimation": "JOLT_RIGHT"
   },
   "HOUNDOUR": {
     "name": "HOUNDOUR",
@@ -22139,7 +22823,10 @@
     "pokemonOffset": 16,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 24, "evolvedForm": "HOUNDOOM" }]
+    "evos": [{ "kind": "LEVEL", "param": 24, "evolvedForm": "HOUNDOOM" }],
+    "frontAnimId": 23,
+    "animationDelay": 0,
+    "backAnimation": "VERTICAL_SHAKE"
   },
   "HOUNDOOM": {
     "name": "HOUNDOOM",
@@ -22235,7 +22922,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 4,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 16,
+    "animationDelay": 0,
+    "backAnimation": "VERTICAL_SHAKE"
   },
   "KINGDRA": {
     "name": "KINGDRA",
@@ -22322,7 +23012,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 0,
     "trainerScale": 287,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 66,
+    "animationDelay": 0,
+    "backAnimation": "FADE_BLUE_WITH_SHAKE"
   },
   "PHANPY": {
     "name": "PHANPY",
@@ -22417,7 +23110,10 @@
     "pokemonOffset": 21,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 25, "evolvedForm": "DONPHAN" }]
+    "evos": [{ "kind": "LEVEL", "param": 25, "evolvedForm": "DONPHAN" }],
+    "frontAnimId": 50,
+    "animationDelay": 0,
+    "backAnimation": "JOLT_RIGHT"
   },
   "DONPHAN": {
     "name": "DONPHAN",
@@ -22505,7 +23201,10 @@
     "pokemonScale": 313,
     "pokemonOffset": 9,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 25,
+    "animationDelay": 0,
+    "backAnimation": "V_SHAKE_WITH_PAUSE"
   },
   "PORYGON2": {
     "name": "PORYGON2",
@@ -22600,7 +23299,10 @@
     "pokemonScale": 320,
     "pokemonOffset": 17,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 0,
+    "animationDelay": 0,
+    "backAnimation": "H_SLIDE_QUICK"
   },
   "STANTLER": {
     "name": "STANTLER",
@@ -22704,7 +23406,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 0,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 0,
+    "animationDelay": 0,
+    "backAnimation": "DIP_RIGHT_SIDE"
   },
   "SMEARGLE": {
     "name": "SMEARGLE",
@@ -22759,7 +23464,10 @@
     "pokemonScale": 287,
     "pokemonOffset": 5,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 49,
+    "animationDelay": 0,
+    "backAnimation": "H_SLIDE"
   },
   "TYROGUE": {
     "name": "TYROGUE",
@@ -22849,7 +23557,10 @@
       { "kind": "LEVEL_ATK_LT_DEF", "param": 20, "evolvedForm": "HITMONCHAN" },
       { "kind": "LEVEL_ATK_GT_DEF", "param": 20, "evolvedForm": "HITMONLEE" },
       { "kind": "LEVEL_ATK_EQ_DEF", "param": 20, "evolvedForm": "HITMONTOP" }
-    ]
+    ],
+    "frontAnimId": 22,
+    "animationDelay": 0,
+    "backAnimation": "CIRCLE_MOVE_CLOCKWISE"
   },
   "HITMONTOP": {
     "name": "HITMONTOP",
@@ -22941,7 +23652,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 2,
     "trainerScale": 257,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 2,
+    "animationDelay": 0,
+    "backAnimation": "CIRCLE_MOVE_COUNTERCLOCKWISE"
   },
   "SMOOCHUM": {
     "name": "SMOOCHUM",
@@ -23043,7 +23757,10 @@
     "pokemonOffset": 20,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 30, "evolvedForm": "JYNX" }]
+    "evos": [{ "kind": "LEVEL", "param": 30, "evolvedForm": "JYNX" }],
+    "frontAnimId": 9,
+    "animationDelay": 40,
+    "backAnimation": "H_SLIDE"
   },
   "ELEKID": {
     "name": "ELEKID",
@@ -23148,7 +23865,10 @@
     "pokemonOffset": 14,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 30, "evolvedForm": "ELECTABUZZ" }]
+    "evos": [{ "kind": "LEVEL", "param": 30, "evolvedForm": "ELECTABUZZ" }],
+    "frontAnimId": 44,
+    "animationDelay": 0,
+    "backAnimation": "HORIZONTAL_SHAKE"
   },
   "MAGBY": {
     "name": "MAGBY",
@@ -23248,7 +23968,10 @@
     "pokemonOffset": 13,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 30, "evolvedForm": "MAGMAR" }]
+    "evos": [{ "kind": "LEVEL", "param": 30, "evolvedForm": "MAGMAR" }],
+    "frontAnimId": 0,
+    "animationDelay": 0,
+    "backAnimation": "FADE_RED_WITH_SHAKE"
   },
   "MILTANK": {
     "name": "MILTANK",
@@ -23368,7 +24091,10 @@
     "pokemonScale": 280,
     "pokemonOffset": 5,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 69,
+    "animationDelay": 0,
+    "backAnimation": "H_SLIDE"
   },
   "BLISSEY": {
     "name": "BLISSEY",
@@ -23487,7 +24213,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 4,
     "trainerScale": 310,
-    "trainerOffset": 3
+    "trainerOffset": 3,
+    "frontAnimId": 0,
+    "animationDelay": 0,
+    "backAnimation": "DIP_RIGHT_SIDE"
   },
   "RAIKOU": {
     "name": "RAIKOU",
@@ -23581,7 +24310,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 0,
     "trainerScale": 345,
-    "trainerOffset": 7
+    "trainerOffset": 7,
+    "frontAnimId": 44,
+    "animationDelay": 0,
+    "backAnimation": "FLASH_YELLOW_WITH_SHAKE"
   },
   "ENTEI": {
     "name": "ENTEI",
@@ -23674,7 +24406,10 @@
     "pokemonScale": 259,
     "pokemonOffset": 0,
     "trainerScale": 345,
-    "trainerOffset": 7
+    "trainerOffset": 7,
+    "frontAnimId": 9,
+    "animationDelay": 0,
+    "backAnimation": "FADE_RED_WITH_SHAKE"
   },
   "SUICUNE": {
     "name": "SUICUNE",
@@ -23770,7 +24505,10 @@
     "pokemonScale": 269,
     "pokemonOffset": 0,
     "trainerScale": 345,
-    "trainerOffset": 7
+    "trainerOffset": 7,
+    "frontAnimId": 16,
+    "animationDelay": 0,
+    "backAnimation": "FADE_BLUE_WITH_SHAKE"
   },
   "LARVITAR": {
     "name": "LARVITAR",
@@ -23867,7 +24605,10 @@
     "pokemonOffset": 18,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 30, "evolvedForm": "PUPITAR" }]
+    "evos": [{ "kind": "LEVEL", "param": 30, "evolvedForm": "PUPITAR" }],
+    "frontAnimId": 82,
+    "animationDelay": 0,
+    "backAnimation": "V_SHAKE_WITH_PAUSE"
   },
   "PUPITAR": {
     "name": "PUPITAR",
@@ -23957,7 +24698,10 @@
     "pokemonOffset": 8,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 55, "evolvedForm": "TYRANITAR" }]
+    "evos": [{ "kind": "LEVEL", "param": 55, "evolvedForm": "TYRANITAR" }],
+    "frontAnimId": 16,
+    "animationDelay": 0,
+    "backAnimation": "VERTICAL_SHAKE"
   },
   "TYRANITAR": {
     "name": "TYRANITAR",
@@ -24071,7 +24815,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 0,
     "trainerScale": 345,
-    "trainerOffset": 7
+    "trainerOffset": 7,
+    "frontAnimId": 15,
+    "animationDelay": 10,
+    "backAnimation": "V_SHAKE_WITH_PAUSE"
   },
   "LUGIA": {
     "name": "LUGIA",
@@ -24181,7 +24928,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 0,
     "trainerScale": 721,
-    "trainerOffset": 19
+    "trainerOffset": 19,
+    "frontAnimId": 58,
+    "animationDelay": 20,
+    "backAnimation": "FADE_BLUE_WITH_SHAKE"
   },
   "HO_OH": {
     "name": "HO-OH",
@@ -24285,7 +25035,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 0,
     "trainerScale": 610,
-    "trainerOffset": 17
+    "trainerOffset": 17,
+    "frontAnimId": 9,
+    "animationDelay": 0,
+    "backAnimation": "FADE_RED_WITH_SHAKE"
   },
   "CELEBI": {
     "name": "CELEBI",
@@ -24382,7 +25135,10 @@
     "pokemonScale": 393,
     "pokemonOffset": -10,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 24,
+    "animationDelay": 0,
+    "backAnimation": "FADE_GREEN_WITH_SHAKE"
   },
   "OLD_UNOWN_B": {
     "name": "?",
@@ -24426,7 +25182,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 0,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 0,
+    "animationDelay": 0,
+    "backAnimation": "NONE"
   },
   "OLD_UNOWN_C": {
     "name": "?",
@@ -24470,7 +25229,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 0,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 0,
+    "animationDelay": 0,
+    "backAnimation": "NONE"
   },
   "OLD_UNOWN_D": {
     "name": "?",
@@ -24514,7 +25276,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 0,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 0,
+    "animationDelay": 0,
+    "backAnimation": "NONE"
   },
   "OLD_UNOWN_E": {
     "name": "?",
@@ -24558,7 +25323,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 0,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 0,
+    "animationDelay": 0,
+    "backAnimation": "NONE"
   },
   "OLD_UNOWN_F": {
     "name": "?",
@@ -24602,7 +25370,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 0,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 0,
+    "animationDelay": 0,
+    "backAnimation": "NONE"
   },
   "OLD_UNOWN_G": {
     "name": "?",
@@ -24646,7 +25417,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 0,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 0,
+    "animationDelay": 0,
+    "backAnimation": "NONE"
   },
   "OLD_UNOWN_H": {
     "name": "?",
@@ -24690,7 +25464,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 0,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 0,
+    "animationDelay": 0,
+    "backAnimation": "NONE"
   },
   "OLD_UNOWN_I": {
     "name": "?",
@@ -24734,7 +25511,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 0,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 0,
+    "animationDelay": 0,
+    "backAnimation": "NONE"
   },
   "OLD_UNOWN_J": {
     "name": "?",
@@ -24778,7 +25558,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 0,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 0,
+    "animationDelay": 0,
+    "backAnimation": "NONE"
   },
   "OLD_UNOWN_K": {
     "name": "?",
@@ -24822,7 +25605,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 0,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 0,
+    "animationDelay": 0,
+    "backAnimation": "NONE"
   },
   "OLD_UNOWN_L": {
     "name": "?",
@@ -24866,7 +25652,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 0,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 0,
+    "animationDelay": 0,
+    "backAnimation": "NONE"
   },
   "OLD_UNOWN_M": {
     "name": "?",
@@ -24910,7 +25699,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 0,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 0,
+    "animationDelay": 0,
+    "backAnimation": "NONE"
   },
   "OLD_UNOWN_N": {
     "name": "?",
@@ -24954,7 +25746,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 0,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 0,
+    "animationDelay": 0,
+    "backAnimation": "NONE"
   },
   "OLD_UNOWN_O": {
     "name": "?",
@@ -24998,7 +25793,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 0,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 0,
+    "animationDelay": 0,
+    "backAnimation": "NONE"
   },
   "OLD_UNOWN_P": {
     "name": "?",
@@ -25042,7 +25840,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 0,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 0,
+    "animationDelay": 0,
+    "backAnimation": "NONE"
   },
   "OLD_UNOWN_Q": {
     "name": "?",
@@ -25086,7 +25887,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 0,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 0,
+    "animationDelay": 0,
+    "backAnimation": "NONE"
   },
   "OLD_UNOWN_R": {
     "name": "?",
@@ -25130,7 +25934,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 0,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 0,
+    "animationDelay": 0,
+    "backAnimation": "NONE"
   },
   "OLD_UNOWN_S": {
     "name": "?",
@@ -25174,7 +25981,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 0,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 0,
+    "animationDelay": 0,
+    "backAnimation": "NONE"
   },
   "OLD_UNOWN_T": {
     "name": "?",
@@ -25218,7 +26028,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 0,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 0,
+    "animationDelay": 0,
+    "backAnimation": "NONE"
   },
   "OLD_UNOWN_U": {
     "name": "?",
@@ -25262,7 +26075,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 0,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 0,
+    "animationDelay": 0,
+    "backAnimation": "NONE"
   },
   "OLD_UNOWN_V": {
     "name": "?",
@@ -25306,7 +26122,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 0,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 0,
+    "animationDelay": 0,
+    "backAnimation": "NONE"
   },
   "OLD_UNOWN_W": {
     "name": "?",
@@ -25350,7 +26169,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 0,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 0,
+    "animationDelay": 0,
+    "backAnimation": "NONE"
   },
   "OLD_UNOWN_X": {
     "name": "?",
@@ -25394,7 +26216,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 0,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 0,
+    "animationDelay": 0,
+    "backAnimation": "NONE"
   },
   "OLD_UNOWN_Y": {
     "name": "?",
@@ -25438,7 +26263,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 0,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 0,
+    "animationDelay": 0,
+    "backAnimation": "NONE"
   },
   "OLD_UNOWN_Z": {
     "name": "?",
@@ -25482,7 +26310,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 0,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 0,
+    "animationDelay": 0,
+    "backAnimation": "NONE"
   },
   "TREECKO": {
     "name": "TREECKO",
@@ -25592,7 +26423,10 @@
     "pokemonOffset": 19,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 16, "evolvedForm": "GROVYLE" }]
+    "evos": [{ "kind": "LEVEL", "param": 16, "evolvedForm": "GROVYLE" }],
+    "frontAnimId": 0,
+    "animationDelay": 0,
+    "backAnimation": "CONCAVE_DOWN_ARC_SWAY_SMALL"
   },
   "GROVYLE": {
     "name": "GROVYLE",
@@ -25697,7 +26531,10 @@
     "pokemonOffset": 5,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 36, "evolvedForm": "SCEPTILE" }]
+    "evos": [{ "kind": "LEVEL", "param": 36, "evolvedForm": "SCEPTILE" }],
+    "frontAnimId": 23,
+    "animationDelay": 0,
+    "backAnimation": "JOLT_RIGHT"
   },
   "SCEPTILE": {
     "name": "SCEPTILE",
@@ -25805,7 +26642,10 @@
     "pokemonScale": 256,
     "pokemonOffset": -1,
     "trainerScale": 275,
-    "trainerOffset": 2
+    "trainerOffset": 2,
+    "frontAnimId": 16,
+    "animationDelay": 0,
+    "backAnimation": "VERTICAL_SHAKE"
   },
   "TORCHIC": {
     "name": "TORCHIC",
@@ -25908,7 +26748,10 @@
     "pokemonOffset": 19,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 16, "evolvedForm": "COMBUSKEN" }]
+    "evos": [{ "kind": "LEVEL", "param": 16, "evolvedForm": "COMBUSKEN" }],
+    "frontAnimId": 22,
+    "animationDelay": 0,
+    "backAnimation": "CONCAVE_UP_ARC_SWAY_LARGE"
   },
   "COMBUSKEN": {
     "name": "COMBUSKEN",
@@ -26013,7 +26856,10 @@
     "pokemonOffset": 5,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 36, "evolvedForm": "BLAZIKEN" }]
+    "evos": [{ "kind": "LEVEL", "param": 36, "evolvedForm": "BLAZIKEN" }],
+    "frontAnimId": 6,
+    "animationDelay": 0,
+    "backAnimation": "CONCAVE_DOWN_ARC_SWAY_SMALL"
   },
   "BLAZIKEN": {
     "name": "BLAZIKEN",
@@ -26122,7 +26968,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 0,
     "trainerScale": 301,
-    "trainerOffset": 4
+    "trainerOffset": 4,
+    "frontAnimId": 15,
+    "animationDelay": 0,
+    "backAnimation": "FADE_RED_WITH_SHAKE"
   },
   "MUDKIP": {
     "name": "MUDKIP",
@@ -26225,7 +27074,10 @@
     "pokemonOffset": 20,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 16, "evolvedForm": "MARSHTOMP" }]
+    "evos": [{ "kind": "LEVEL", "param": 16, "evolvedForm": "MARSHTOMP" }],
+    "frontAnimId": 1,
+    "animationDelay": 0,
+    "backAnimation": "H_SLIDE"
   },
   "MARSHTOMP": {
     "name": "MARSHTOMP",
@@ -26331,7 +27183,10 @@
     "pokemonOffset": 7,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 36, "evolvedForm": "SWAMPERT" }]
+    "evos": [{ "kind": "LEVEL", "param": 36, "evolvedForm": "SWAMPERT" }],
+    "frontAnimId": 4,
+    "animationDelay": 0,
+    "backAnimation": "CONCAVE_UP_ARC_SWAY_LARGE"
   },
   "SWAMPERT": {
     "name": "SWAMPERT",
@@ -26440,7 +27295,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 0,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 30,
+    "animationDelay": 0,
+    "backAnimation": "FADE_BLUE_WITH_SHAKE"
   },
   "POOCHYENA": {
     "name": "POOCHYENA",
@@ -26533,7 +27391,10 @@
     "pokemonOffset": 19,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 18, "evolvedForm": "MIGHTYENA" }]
+    "evos": [{ "kind": "LEVEL", "param": 18, "evolvedForm": "MIGHTYENA" }],
+    "frontAnimId": 16,
+    "animationDelay": 0,
+    "backAnimation": "CONCAVE_UP_ARC_SWAY_LARGE"
   },
   "MIGHTYENA": {
     "name": "MIGHTYENA",
@@ -26629,7 +27490,10 @@
     "pokemonScale": 362,
     "pokemonOffset": 9,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 16,
+    "animationDelay": 0,
+    "backAnimation": "HORIZONTAL_SHAKE"
   },
   "ZIGZAGOON": {
     "name": "ZIGZAGOON",
@@ -26730,7 +27594,10 @@
     "pokemonOffset": 22,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 20, "evolvedForm": "LINOONE" }]
+    "evos": [{ "kind": "LEVEL", "param": 20, "evolvedForm": "LINOONE" }],
+    "frontAnimId": 3,
+    "animationDelay": 0,
+    "backAnimation": "CIRCLE_MOVE_CLOCKWISE"
   },
   "LINOONE": {
     "name": "LINOONE",
@@ -26834,7 +27701,10 @@
     "pokemonScale": 321,
     "pokemonOffset": 7,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 9,
+    "animationDelay": 0,
+    "backAnimation": "JOLT_RIGHT"
   },
   "WURMPLE": {
     "name": "WURMPLE",
@@ -26886,7 +27756,10 @@
     "evos": [
       { "kind": "LEVEL_SILCOON", "param": 7, "evolvedForm": "SILCOON" },
       { "kind": "LEVEL_CASCOON", "param": 7, "evolvedForm": "CASCOON" }
-    ]
+    ],
+    "frontAnimId": 0,
+    "animationDelay": 0,
+    "backAnimation": "VERTICAL_STRETCH"
   },
   "SILCOON": {
     "name": "SILCOON",
@@ -26934,7 +27807,10 @@
     "pokemonOffset": 19,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 10, "evolvedForm": "BEAUTIFLY" }]
+    "evos": [{ "kind": "LEVEL", "param": 10, "evolvedForm": "BEAUTIFLY" }],
+    "frontAnimId": 0,
+    "animationDelay": 0,
+    "backAnimation": "HORIZONTAL_SHAKE"
   },
   "BEAUTIFLY": {
     "name": "BEAUTIFLY",
@@ -27019,7 +27895,10 @@
     "pokemonScale": 298,
     "pokemonOffset": -1,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 4,
+    "animationDelay": 0,
+    "backAnimation": "CONCAVE_DOWN_ARC_SWAY_LARGE"
   },
   "CASCOON": {
     "name": "CASCOON",
@@ -27067,7 +27946,10 @@
     "pokemonOffset": 20,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 10, "evolvedForm": "DUSTOX" }]
+    "evos": [{ "kind": "LEVEL", "param": 10, "evolvedForm": "DUSTOX" }],
+    "frontAnimId": 4,
+    "animationDelay": 0,
+    "backAnimation": "HORIZONTAL_SHAKE"
   },
   "DUSTOX": {
     "name": "DUSTOX",
@@ -27153,7 +28035,10 @@
     "pokemonScale": 269,
     "pokemonOffset": 1,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 6,
+    "animationDelay": 0,
+    "backAnimation": "CIRCLE_MOVE_CLOCKWISE"
   },
   "LOTAD": {
     "name": "LOTAD",
@@ -27248,7 +28133,10 @@
     "pokemonOffset": 19,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 14, "evolvedForm": "LOMBRE" }]
+    "evos": [{ "kind": "LEVEL", "param": 14, "evolvedForm": "LOMBRE" }],
+    "frontAnimId": 0,
+    "animationDelay": 0,
+    "backAnimation": "H_SLIDE"
   },
   "LOMBRE": {
     "name": "LOMBRE",
@@ -27350,7 +28238,10 @@
     "trainerOffset": 0,
     "evos": [
       { "kind": "ITEM", "param": "WATER_STONE", "evolvedForm": "LUDICOLO" }
-    ]
+    ],
+    "frontAnimId": 0,
+    "animationDelay": 0,
+    "backAnimation": "CONCAVE_DOWN_ARC_SWAY_SMALL"
   },
   "LUDICOLO": {
     "name": "LUDICOLO",
@@ -27450,7 +28341,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 0,
     "trainerScale": 268,
-    "trainerOffset": -1
+    "trainerOffset": -1,
+    "frontAnimId": 73,
+    "animationDelay": 0,
+    "backAnimation": "CONCAVE_DOWN_ARC_SWAY_SMALL"
   },
   "SEEDOT": {
     "name": "SEEDOT",
@@ -27543,7 +28437,10 @@
     "pokemonOffset": 20,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 14, "evolvedForm": "NUZLEAF" }]
+    "evos": [{ "kind": "LEVEL", "param": 14, "evolvedForm": "NUZLEAF" }],
+    "frontAnimId": 5,
+    "animationDelay": 0,
+    "backAnimation": "DIP_RIGHT_SIDE"
   },
   "NUZLEAF": {
     "name": "NUZLEAF",
@@ -27645,7 +28542,10 @@
     "trainerOffset": 0,
     "evos": [
       { "kind": "ITEM", "param": "LEAF_STONE", "evolvedForm": "SHIFTRY" }
-    ]
+    ],
+    "frontAnimId": 0,
+    "animationDelay": 0,
+    "backAnimation": "VERTICAL_SHAKE"
   },
   "SHIFTRY": {
     "name": "SHIFTRY",
@@ -27739,7 +28639,10 @@
     "pokemonScale": 290,
     "pokemonOffset": 4,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 2,
+    "animationDelay": 0,
+    "backAnimation": "SHRINK_GROW_2"
   },
   "NINCADA": {
     "name": "NINCADA",
@@ -27828,7 +28731,10 @@
     "evos": [
       { "kind": "LEVEL_NINJASK", "param": 20, "evolvedForm": "NINJASK" },
       { "kind": "LEVEL_SHEDINJA", "param": 20, "evolvedForm": "SHEDINJA" }
-    ]
+    ],
+    "frontAnimId": 0,
+    "animationDelay": 0,
+    "backAnimation": "V_SHAKE_WITH_H_SLIDE"
   },
   "NINJASK": {
     "name": "NINJASK",
@@ -27922,7 +28828,10 @@
     "pokemonScale": 383,
     "pokemonOffset": -9,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 70,
+    "animationDelay": 0,
+    "backAnimation": "H_SLIDE_QUICK"
   },
   "SHEDINJA": {
     "name": "SHEDINJA",
@@ -28009,7 +28918,10 @@
     "pokemonScale": 372,
     "pokemonOffset": -8,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 28,
+    "animationDelay": 0,
+    "backAnimation": "SHRINK_GROW_2"
   },
   "TAILLOW": {
     "name": "TAILLOW",
@@ -28100,7 +29012,10 @@
     "pokemonOffset": 21,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 22, "evolvedForm": "SWELLOW" }]
+    "evos": [{ "kind": "LEVEL", "param": 22, "evolvedForm": "SWELLOW" }],
+    "frontAnimId": 30,
+    "animationDelay": 0,
+    "backAnimation": "CONCAVE_UP_ARC_SWAY_LARGE"
   },
   "SWELLOW": {
     "name": "SWELLOW",
@@ -28185,7 +29100,10 @@
     "pokemonScale": 428,
     "pokemonOffset": 15,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 1,
+    "animationDelay": 0,
+    "backAnimation": "JOLT_RIGHT"
   },
   "SHROOMISH": {
     "name": "SHROOMISH",
@@ -28277,7 +29195,10 @@
     "pokemonOffset": 22,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 23, "evolvedForm": "BRELOOM" }]
+    "evos": [{ "kind": "LEVEL", "param": 23, "evolvedForm": "BRELOOM" }],
+    "frontAnimId": 0,
+    "animationDelay": 0,
+    "backAnimation": "DIP_RIGHT_SIDE"
   },
   "BRELOOM": {
     "name": "BRELOOM",
@@ -28381,7 +29302,10 @@
     "pokemonScale": 324,
     "pokemonOffset": 6,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 0,
+    "animationDelay": 0,
+    "backAnimation": "JOLT_RIGHT"
   },
   "SPINDA": {
     "name": "SPINDA",
@@ -28502,7 +29426,10 @@
     "pokemonScale": 321,
     "pokemonOffset": 4,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 49,
+    "animationDelay": 0,
+    "backAnimation": "CIRCLE_MOVE_COUNTERCLOCKWISE"
   },
   "WINGULL": {
     "name": "WINGULL",
@@ -28589,7 +29516,10 @@
     "pokemonOffset": -2,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 25, "evolvedForm": "PELIPPER" }]
+    "evos": [{ "kind": "LEVEL", "param": 25, "evolvedForm": "PELIPPER" }],
+    "frontAnimId": 27,
+    "animationDelay": 0,
+    "backAnimation": "CONCAVE_DOWN_ARC_SWAY_LARGE"
   },
   "PELIPPER": {
     "name": "PELIPPER",
@@ -28681,7 +29611,10 @@
     "pokemonScale": 288,
     "pokemonOffset": 1,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 28,
+    "animationDelay": 0,
+    "backAnimation": "CONCAVE_DOWN_ARC_SWAY_LARGE"
   },
   "SURSKIT": {
     "name": "SURSKIT",
@@ -28774,7 +29707,10 @@
     "pokemonOffset": 17,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 22, "evolvedForm": "MASQUERAIN" }]
+    "evos": [{ "kind": "LEVEL", "param": 22, "evolvedForm": "MASQUERAIN" }],
+    "frontAnimId": 0,
+    "animationDelay": 0,
+    "backAnimation": "H_SLIDE_WITH_V_COMPRESS_1"
   },
   "MASQUERAIN": {
     "name": "MASQUERAIN",
@@ -28865,7 +29801,10 @@
     "pokemonScale": 378,
     "pokemonOffset": 8,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 0,
+    "animationDelay": 0,
+    "backAnimation": "CONCAVE_DOWN_ARC_SWAY_LARGE"
   },
   "WAILMER": {
     "name": "WAILMER",
@@ -28969,7 +29908,10 @@
     "pokemonOffset": 2,
     "trainerScale": 493,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 40, "evolvedForm": "WAILORD" }]
+    "evos": [{ "kind": "LEVEL", "param": 40, "evolvedForm": "WAILORD" }],
+    "frontAnimId": 1,
+    "animationDelay": 0,
+    "backAnimation": "FADE_BLUE_WITH_SHAKE"
   },
   "WAILORD": {
     "name": "WAILORD",
@@ -29066,7 +30008,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 0,
     "trainerScale": 1352,
-    "trainerOffset": 18
+    "trainerOffset": 18,
+    "frontAnimId": 28,
+    "animationDelay": 10,
+    "backAnimation": "FADE_BLUE_WITH_SHAKE"
   },
   "SKITTY": {
     "name": "SKITTY",
@@ -29179,7 +30124,10 @@
     "trainerOffset": 0,
     "evos": [
       { "kind": "ITEM", "param": "MOON_STONE", "evolvedForm": "DELCATTY" }
-    ]
+    ],
+    "frontAnimId": 0,
+    "animationDelay": 0,
+    "backAnimation": "DIP_RIGHT_SIDE"
   },
   "DELCATTY": {
     "name": "DELCATTY",
@@ -29274,7 +30222,10 @@
     "pokemonScale": 322,
     "pokemonOffset": 10,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 23,
+    "animationDelay": 0,
+    "backAnimation": "CONCAVE_UP_ARC_SWAY_LARGE"
   },
   "KECLEON": {
     "name": "KECLEON",
@@ -29396,7 +30347,10 @@
     "pokemonScale": 316,
     "pokemonOffset": 10,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 53,
+    "animationDelay": 30,
+    "backAnimation": "H_SLIDE_QUICK"
   },
   "BALTOY": {
     "name": "BALTOY",
@@ -29490,7 +30444,10 @@
     "pokemonOffset": 21,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 36, "evolvedForm": "CLAYDOL" }]
+    "evos": [{ "kind": "LEVEL", "param": 36, "evolvedForm": "CLAYDOL" }],
+    "frontAnimId": 29,
+    "animationDelay": 0,
+    "backAnimation": "DIP_RIGHT_SIDE"
   },
   "CLAYDOL": {
     "name": "CLAYDOL",
@@ -29590,7 +30547,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 3,
     "trainerScale": 280,
-    "trainerOffset": 1
+    "trainerOffset": 1,
+    "frontAnimId": 81,
+    "animationDelay": 0,
+    "backAnimation": "SHRINK_GROW_2"
   },
   "NOSEPASS": {
     "name": "NOSEPASS",
@@ -29687,7 +30647,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 9,
     "trainerScale": 289,
-    "trainerOffset": 3
+    "trainerOffset": 3,
+    "frontAnimId": 73,
+    "animationDelay": 0,
+    "backAnimation": "V_SHAKE_WITH_PAUSE"
   },
   "TORKOAL": {
     "name": "TORKOAL",
@@ -29776,7 +30739,10 @@
     "pokemonScale": 390,
     "pokemonOffset": 9,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 23,
+    "animationDelay": 0,
+    "backAnimation": "FADE_RED_WITH_SHAKE"
   },
   "SABLEYE": {
     "name": "SABLEYE",
@@ -29887,7 +30853,10 @@
     "pokemonScale": 451,
     "pokemonOffset": 17,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 21,
+    "animationDelay": 0,
+    "backAnimation": "H_SLIDE_QUICK"
   },
   "BARBOACH": {
     "name": "BARBOACH",
@@ -29977,7 +30946,10 @@
     "pokemonOffset": -3,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 30, "evolvedForm": "WHISCASH" }]
+    "evos": [{ "kind": "LEVEL", "param": 30, "evolvedForm": "WHISCASH" }],
+    "frontAnimId": 73,
+    "animationDelay": 0,
+    "backAnimation": "VERTICAL_STRETCH"
   },
   "WHISCASH": {
     "name": "WHISCASH",
@@ -30072,7 +31044,10 @@
     "pokemonScale": 317,
     "pokemonOffset": 1,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 73,
+    "animationDelay": 0,
+    "backAnimation": "VERTICAL_SHAKE"
   },
   "LUVDISC": {
     "name": "LUVDISC",
@@ -30158,7 +31133,10 @@
     "pokemonScale": 371,
     "pokemonOffset": 2,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 29,
+    "animationDelay": 0,
+    "backAnimation": "H_SLIDE_WITH_V_COMPRESS_2"
   },
   "CORPHISH": {
     "name": "CORPHISH",
@@ -30257,7 +31235,10 @@
     "pokemonOffset": 19,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 30, "evolvedForm": "CRAWDAUNT" }]
+    "evos": [{ "kind": "LEVEL", "param": 30, "evolvedForm": "CRAWDAUNT" }],
+    "frontAnimId": 16,
+    "animationDelay": 0,
+    "backAnimation": "CIRCLE_MOVE_CLOCKWISE"
   },
   "CRAWDAUNT": {
     "name": "CRAWDAUNT",
@@ -30360,7 +31341,10 @@
     "pokemonScale": 365,
     "pokemonOffset": 9,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 9,
+    "animationDelay": 0,
+    "backAnimation": "JOLT_RIGHT"
   },
   "FEEBAS": {
     "name": "FEEBAS",
@@ -30446,7 +31430,10 @@
     "pokemonOffset": -4,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "BEAUTY", "param": 170, "evolvedForm": "MILOTIC" }]
+    "evos": [{ "kind": "BEAUTY", "param": 170, "evolvedForm": "MILOTIC" }],
+    "frontAnimId": 73,
+    "animationDelay": 0,
+    "backAnimation": "H_SLIDE_WITH_V_COMPRESS_1"
   },
   "MILOTIC": {
     "name": "MILOTIC",
@@ -30537,7 +31524,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 0,
     "trainerScale": 360,
-    "trainerOffset": 7
+    "trainerOffset": 7,
+    "frontAnimId": 34,
+    "animationDelay": 45,
+    "backAnimation": "FADE_BLUE_WITH_SHAKE"
   },
   "CARVANHA": {
     "name": "CARVANHA",
@@ -30628,7 +31618,10 @@
     "pokemonOffset": 0,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 30, "evolvedForm": "SHARPEDO" }]
+    "evos": [{ "kind": "LEVEL", "param": 30, "evolvedForm": "SHARPEDO" }],
+    "frontAnimId": 73,
+    "animationDelay": 0,
+    "backAnimation": "H_SLIDE_WITH_V_COMPRESS_2"
   },
   "SHARPEDO": {
     "name": "SHARPEDO",
@@ -30727,7 +31720,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 0,
     "trainerScale": 317,
-    "trainerOffset": 3
+    "trainerOffset": 3,
+    "frontAnimId": 86,
+    "animationDelay": 0,
+    "backAnimation": "JOLT_RIGHT"
   },
   "TRAPINCH": {
     "name": "TRAPINCH",
@@ -30814,7 +31810,10 @@
     "pokemonOffset": 17,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 35, "evolvedForm": "VIBRAVA" }]
+    "evos": [{ "kind": "LEVEL", "param": 35, "evolvedForm": "VIBRAVA" }],
+    "frontAnimId": 16,
+    "animationDelay": 0,
+    "backAnimation": "DIP_RIGHT_SIDE"
   },
   "VIBRAVA": {
     "name": "VIBRAVA",
@@ -30907,7 +31906,10 @@
     "pokemonOffset": 11,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 45, "evolvedForm": "FLYGON" }]
+    "evos": [{ "kind": "LEVEL", "param": 45, "evolvedForm": "FLYGON" }],
+    "frontAnimId": 15,
+    "animationDelay": 0,
+    "backAnimation": "H_SLIDE_QUICK"
   },
   "FLYGON": {
     "name": "FLYGON",
@@ -31005,7 +32007,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 0,
     "trainerScale": 268,
-    "trainerOffset": 1
+    "trainerOffset": 1,
+    "frontAnimId": 75,
+    "animationDelay": 0,
+    "backAnimation": "CIRCLE_MOVE_CLOCKWISE"
   },
   "MAKUHITA": {
     "name": "MAKUHITA",
@@ -31116,7 +32121,10 @@
     "pokemonOffset": 10,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 24, "evolvedForm": "HARIYAMA" }]
+    "evos": [{ "kind": "LEVEL", "param": 24, "evolvedForm": "HARIYAMA" }],
+    "frontAnimId": 11,
+    "animationDelay": 0,
+    "backAnimation": "V_SHAKE_WITH_PAUSE"
   },
   "HARIYAMA": {
     "name": "HARIYAMA",
@@ -31219,7 +32227,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 0,
     "trainerScale": 343,
-    "trainerOffset": 7
+    "trainerOffset": 7,
+    "frontAnimId": 52,
+    "animationDelay": 0,
+    "backAnimation": "V_SHAKE_WITH_PAUSE"
   },
   "ELECTRIKE": {
     "name": "ELECTRIKE",
@@ -31309,7 +32320,10 @@
     "pokemonOffset": 15,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 26, "evolvedForm": "MANECTRIC" }]
+    "evos": [{ "kind": "LEVEL", "param": 26, "evolvedForm": "MANECTRIC" }],
+    "frontAnimId": 0,
+    "animationDelay": 0,
+    "backAnimation": "JOLT_RIGHT"
   },
   "MANECTRIC": {
     "name": "MANECTRIC",
@@ -31401,7 +32415,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 3,
     "trainerScale": 257,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 0,
+    "animationDelay": 0,
+    "backAnimation": "VERTICAL_SHAKE"
   },
   "NUMEL": {
     "name": "NUMEL",
@@ -31499,7 +32516,10 @@
     "pokemonOffset": 17,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 33, "evolvedForm": "CAMERUPT" }]
+    "evos": [{ "kind": "LEVEL", "param": 33, "evolvedForm": "CAMERUPT" }],
+    "frontAnimId": 4,
+    "animationDelay": 0,
+    "backAnimation": "V_SHAKE_WITH_PAUSE"
   },
   "CAMERUPT": {
     "name": "CAMERUPT",
@@ -31594,7 +32614,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 7,
     "trainerScale": 345,
-    "trainerOffset": 6
+    "trainerOffset": 6,
+    "frontAnimId": 16,
+    "animationDelay": 0,
+    "backAnimation": "FADE_RED_WITH_SHAKE"
   },
   "SPHEAL": {
     "name": "SPHEAL",
@@ -31700,7 +32723,10 @@
     "pokemonOffset": 16,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 32, "evolvedForm": "SEALEO" }]
+    "evos": [{ "kind": "LEVEL", "param": 32, "evolvedForm": "SEALEO" }],
+    "frontAnimId": 83,
+    "animationDelay": 15,
+    "backAnimation": "DIP_RIGHT_SIDE"
   },
   "SEALEO": {
     "name": "SEALEO",
@@ -31798,7 +32824,10 @@
     "pokemonOffset": 13,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 44, "evolvedForm": "WALREIN" }]
+    "evos": [{ "kind": "LEVEL", "param": 44, "evolvedForm": "WALREIN" }],
+    "frontAnimId": 23,
+    "animationDelay": 0,
+    "backAnimation": "VERTICAL_SHAKE"
   },
   "WALREIN": {
     "name": "WALREIN",
@@ -31896,7 +32925,10 @@
     "pokemonScale": 316,
     "pokemonOffset": 4,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 15,
+    "animationDelay": 0,
+    "backAnimation": "VERTICAL_SHAKE"
   },
   "CACNEA": {
     "name": "CACNEA",
@@ -31998,7 +33030,10 @@
     "pokemonOffset": 20,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 32, "evolvedForm": "CACTURNE" }]
+    "evos": [{ "kind": "LEVEL", "param": 32, "evolvedForm": "CACTURNE" }],
+    "frontAnimId": 73,
+    "animationDelay": 0,
+    "backAnimation": "V_SHAKE_WITH_H_SLIDE"
   },
   "CACTURNE": {
     "name": "CACTURNE",
@@ -32097,7 +33132,10 @@
     "pokemonScale": 327,
     "pokemonOffset": 5,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 4,
+    "animationDelay": 0,
+    "backAnimation": "HORIZONTAL_SHAKE"
   },
   "SNORUNT": {
     "name": "SNORUNT",
@@ -32185,7 +33223,10 @@
     "pokemonOffset": 15,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 42, "evolvedForm": "GLALIE" }]
+    "evos": [{ "kind": "LEVEL", "param": 42, "evolvedForm": "GLALIE" }],
+    "frontAnimId": 69,
+    "animationDelay": 20,
+    "backAnimation": "CIRCLE_MOVE_CLOCKWISE"
   },
   "GLALIE": {
     "name": "GLALIE",
@@ -32281,7 +33322,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 3,
     "trainerScale": 344,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 10,
+    "animationDelay": 0,
+    "backAnimation": "CIRCLE_MOVE_CLOCKWISE"
   },
   "LUNATONE": {
     "name": "LUNATONE",
@@ -32376,7 +33420,10 @@
     "pokemonScale": 300,
     "pokemonOffset": 3,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 14,
+    "animationDelay": 0,
+    "backAnimation": "DIP_RIGHT_SIDE"
   },
   "SOLROCK": {
     "name": "SOLROCK",
@@ -32474,7 +33521,10 @@
     "pokemonScale": 328,
     "pokemonOffset": 0,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 8,
+    "animationDelay": 0,
+    "backAnimation": "DIP_RIGHT_SIDE"
   },
   "AZURILL": {
     "name": "AZURILL",
@@ -32560,7 +33610,10 @@
     "pokemonOffset": 23,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "FRIENDSHIP", "param": 0, "evolvedForm": "MARILL" }]
+    "evos": [{ "kind": "FRIENDSHIP", "param": 0, "evolvedForm": "MARILL" }],
+    "frontAnimId": 0,
+    "animationDelay": 0,
+    "backAnimation": "CONCAVE_DOWN_ARC_SWAY_SMALL"
   },
   "SPOINK": {
     "name": "SPOINK",
@@ -32657,7 +33710,10 @@
     "pokemonOffset": 17,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 32, "evolvedForm": "GRUMPIG" }]
+    "evos": [{ "kind": "LEVEL", "param": 32, "evolvedForm": "GRUMPIG" }],
+    "frontAnimId": 86,
+    "animationDelay": 0,
+    "backAnimation": "CONCAVE_DOWN_ARC_SWAY_SMALL"
   },
   "GRUMPIG": {
     "name": "GRUMPIG",
@@ -32766,7 +33822,10 @@
     "pokemonScale": 358,
     "pokemonOffset": 10,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 50,
+    "animationDelay": 15,
+    "backAnimation": "SHRINK_GROW_2"
   },
   "PLUSLE": {
     "name": "PLUSLE",
@@ -32862,7 +33921,10 @@
     "pokemonScale": 515,
     "pokemonOffset": -9,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 0,
+    "animationDelay": 0,
+    "backAnimation": "CONCAVE_UP_ARC_SWAY_LARGE"
   },
   "MINUN": {
     "name": "MINUN",
@@ -32958,7 +34020,10 @@
     "pokemonScale": 512,
     "pokemonOffset": -7,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 1,
+    "animationDelay": 0,
+    "backAnimation": "CONCAVE_UP_ARC_SWAY_LARGE"
   },
   "MAWILE": {
     "name": "MAWILE",
@@ -33071,7 +34136,10 @@
     "pokemonScale": 466,
     "pokemonOffset": 17,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 0,
+    "animationDelay": 0,
+    "backAnimation": "VERTICAL_SHAKE"
   },
   "MEDITITE": {
     "name": "MEDITITE",
@@ -33184,7 +34252,10 @@
     "pokemonOffset": 17,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 37, "evolvedForm": "MEDICHAM" }]
+    "evos": [{ "kind": "LEVEL", "param": 37, "evolvedForm": "MEDICHAM" }],
+    "frontAnimId": 5,
+    "animationDelay": 0,
+    "backAnimation": "SHRINK_GROW_2"
   },
   "MEDICHAM": {
     "name": "MEDICHAM",
@@ -33295,7 +34366,10 @@
     "pokemonScale": 298,
     "pokemonOffset": 5,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 69,
+    "animationDelay": 0,
+    "backAnimation": "SHRINK_GROW_2"
   },
   "SWABLU": {
     "name": "SWABLU",
@@ -33386,7 +34460,10 @@
     "pokemonOffset": -8,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 35, "evolvedForm": "ALTARIA" }]
+    "evos": [{ "kind": "LEVEL", "param": 35, "evolvedForm": "ALTARIA" }],
+    "frontAnimId": 4,
+    "animationDelay": 0,
+    "backAnimation": "CONCAVE_DOWN_ARC_SWAY_LARGE"
   },
   "ALTARIA": {
     "name": "ALTARIA",
@@ -33487,7 +34564,10 @@
     "pokemonScale": 327,
     "pokemonOffset": 0,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 22,
+    "animationDelay": 0,
+    "backAnimation": "CONCAVE_DOWN_ARC_SWAY_LARGE"
   },
   "WYNAUT": {
     "name": "WYNAUT",
@@ -33540,7 +34620,10 @@
     "pokemonOffset": 19,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 15, "evolvedForm": "WOBBUFFET" }]
+    "evos": [{ "kind": "LEVEL", "param": 15, "evolvedForm": "WOBBUFFET" }],
+    "frontAnimId": 50,
+    "animationDelay": 15,
+    "backAnimation": "CONCAVE_UP_ARC_SWAY_LARGE"
   },
   "DUSKULL": {
     "name": "DUSKULL",
@@ -33641,7 +34724,10 @@
     "pokemonOffset": -4,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 37, "evolvedForm": "DUSCLOPS" }]
+    "evos": [{ "kind": "LEVEL", "param": 37, "evolvedForm": "DUSCLOPS" }],
+    "frontAnimId": 10,
+    "animationDelay": 0,
+    "backAnimation": "H_SLIDE_QUICK"
   },
   "DUSCLOPS": {
     "name": "DUSCLOPS",
@@ -33753,7 +34839,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 3,
     "trainerScale": 299,
-    "trainerOffset": 1
+    "trainerOffset": 1,
+    "frontAnimId": 2,
+    "animationDelay": 30,
+    "backAnimation": "H_SLIDE_QUICK"
   },
   "ROSELIA": {
     "name": "ROSELIA",
@@ -33847,7 +34936,10 @@
     "pokemonScale": 677,
     "pokemonOffset": 20,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 69,
+    "animationDelay": 0,
+    "backAnimation": "FADE_GREEN_WITH_SHAKE"
   },
   "SLAKOTH": {
     "name": "SLAKOTH",
@@ -33962,7 +35054,10 @@
     "pokemonOffset": 16,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 18, "evolvedForm": "VIGOROTH" }]
+    "evos": [{ "kind": "LEVEL", "param": 18, "evolvedForm": "VIGOROTH" }],
+    "frontAnimId": 69,
+    "animationDelay": 0,
+    "backAnimation": "H_SLIDE"
   },
   "VIGOROTH": {
     "name": "VIGOROTH",
@@ -34074,7 +35169,10 @@
     "pokemonOffset": 2,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 36, "evolvedForm": "SLAKING" }]
+    "evos": [{ "kind": "LEVEL", "param": 36, "evolvedForm": "SLAKING" }],
+    "frontAnimId": 49,
+    "animationDelay": 0,
+    "backAnimation": "CONCAVE_DOWN_ARC_SWAY_SMALL"
   },
   "SLAKING": {
     "name": "SLAKING",
@@ -34186,7 +35284,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 2,
     "trainerScale": 300,
-    "trainerOffset": 1
+    "trainerOffset": 1,
+    "frontAnimId": 69,
+    "animationDelay": 0,
+    "backAnimation": "HORIZONTAL_SHAKE"
   },
   "GULPIN": {
     "name": "GULPIN",
@@ -34287,7 +35388,10 @@
     "pokemonOffset": 23,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 26, "evolvedForm": "SWALOT" }]
+    "evos": [{ "kind": "LEVEL", "param": 26, "evolvedForm": "SWALOT" }],
+    "frontAnimId": 0,
+    "animationDelay": 0,
+    "backAnimation": "VERTICAL_STRETCH"
   },
   "SWALOT": {
     "name": "SWALOT",
@@ -34391,7 +35495,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 6,
     "trainerScale": 345,
-    "trainerOffset": 3
+    "trainerOffset": 3,
+    "frontAnimId": 69,
+    "animationDelay": 0,
+    "backAnimation": "VERTICAL_STRETCH"
   },
   "TROPIUS": {
     "name": "TROPIUS",
@@ -34492,7 +35599,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 0,
     "trainerScale": 344,
-    "trainerOffset": 7
+    "trainerOffset": 7,
+    "frontAnimId": 16,
+    "animationDelay": 0,
+    "backAnimation": "V_SHAKE_WITH_PAUSE"
   },
   "WHISMUR": {
     "name": "WHISMUR",
@@ -34600,7 +35710,10 @@
     "pokemonOffset": 17,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 20, "evolvedForm": "LOUDRED" }]
+    "evos": [{ "kind": "LEVEL", "param": 20, "evolvedForm": "LOUDRED" }],
+    "frontAnimId": 3,
+    "animationDelay": 0,
+    "backAnimation": "DIP_RIGHT_SIDE"
   },
   "LOUDRED": {
     "name": "LOUDRED",
@@ -34712,7 +35825,10 @@
     "pokemonOffset": 10,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 40, "evolvedForm": "EXPLOUD" }]
+    "evos": [{ "kind": "LEVEL", "param": 40, "evolvedForm": "EXPLOUD" }],
+    "frontAnimId": 73,
+    "animationDelay": 0,
+    "backAnimation": "VERTICAL_SHAKE"
   },
   "EXPLOUD": {
     "name": "EXPLOUD",
@@ -34825,7 +35941,10 @@
     "pokemonScale": 284,
     "pokemonOffset": 1,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 25,
+    "animationDelay": 0,
+    "backAnimation": "GROW_2"
   },
   "CLAMPERL": {
     "name": "CLAMPERL",
@@ -34923,7 +36042,10 @@
         "param": "DEEP_SEA_SCALE",
         "evolvedForm": "GOREBYSS"
       }
-    ]
+    ],
+    "frontAnimId": 18,
+    "animationDelay": 0,
+    "backAnimation": "DIP_RIGHT_SIDE"
   },
   "HUNTAIL": {
     "name": "HUNTAIL",
@@ -35010,7 +36132,10 @@
     "pokemonScale": 307,
     "pokemonOffset": 1,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 9,
+    "animationDelay": 0,
+    "backAnimation": "CONCAVE_DOWN_ARC_SWAY_LARGE"
   },
   "GOREBYSS": {
     "name": "GOREBYSS",
@@ -35098,7 +36223,10 @@
     "pokemonScale": 278,
     "pokemonOffset": 5,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 28,
+    "animationDelay": 0,
+    "backAnimation": "CONCAVE_DOWN_ARC_SWAY_LARGE"
   },
   "ABSOL": {
     "name": "ABSOL",
@@ -35217,7 +36345,10 @@
     "pokemonScale": 301,
     "pokemonOffset": 3,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 17,
+    "animationDelay": 45,
+    "backAnimation": "SHRINK_GROW_2"
   },
   "SHUPPET": {
     "name": "SHUPPET",
@@ -35318,7 +36449,10 @@
     "pokemonOffset": 20,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 37, "evolvedForm": "BANETTE" }]
+    "evos": [{ "kind": "LEVEL", "param": 37, "evolvedForm": "BANETTE" }],
+    "frontAnimId": 28,
+    "animationDelay": 0,
+    "backAnimation": "H_SLIDE_QUICK"
   },
   "BANETTE": {
     "name": "BANETTE",
@@ -35417,7 +36551,10 @@
     "pokemonScale": 262,
     "pokemonOffset": 9,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 13,
+    "animationDelay": 0,
+    "backAnimation": "H_SLIDE_QUICK"
   },
   "SEVIPER": {
     "name": "SEVIPER",
@@ -35509,7 +36646,10 @@
     "pokemonScale": 275,
     "pokemonOffset": 7,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 23,
+    "animationDelay": 0,
+    "backAnimation": "VERTICAL_STRETCH"
   },
   "ZANGOOSE": {
     "name": "ZANGOOSE",
@@ -35633,7 +36773,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 3,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 9,
+    "animationDelay": 0,
+    "backAnimation": "JOLT_RIGHT"
   },
   "RELICANTH": {
     "name": "RELICANTH",
@@ -35736,7 +36879,10 @@
     "pokemonScale": 316,
     "pokemonOffset": 7,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 26,
+    "animationDelay": 0,
+    "backAnimation": "H_SLIDE"
   },
   "ARON": {
     "name": "ARON",
@@ -35834,7 +36980,10 @@
     "pokemonOffset": 23,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 32, "evolvedForm": "LAIRON" }]
+    "evos": [{ "kind": "LEVEL", "param": 32, "evolvedForm": "LAIRON" }],
+    "frontAnimId": 69,
+    "animationDelay": 0,
+    "backAnimation": "JOLT_RIGHT"
   },
   "LAIRON": {
     "name": "LAIRON",
@@ -35934,7 +37083,10 @@
     "pokemonOffset": 12,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 42, "evolvedForm": "AGGRON" }]
+    "evos": [{ "kind": "LEVEL", "param": 42, "evolvedForm": "AGGRON" }],
+    "frontAnimId": 0,
+    "animationDelay": 0,
+    "backAnimation": "VERTICAL_SHAKE"
   },
   "AGGRON": {
     "name": "AGGRON",
@@ -36056,7 +37208,10 @@
     "pokemonScale": 256,
     "pokemonOffset": -1,
     "trainerScale": 350,
-    "trainerOffset": 6
+    "trainerOffset": 6,
+    "frontAnimId": 25,
+    "animationDelay": 0,
+    "backAnimation": "V_SHAKE_WITH_PAUSE"
   },
   "CASTFORM": {
     "name": "CASTFORM",
@@ -36151,7 +37306,10 @@
     "pokemonScale": 435,
     "pokemonOffset": -5,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 29,
+    "animationDelay": 0,
+    "backAnimation": "CONCAVE_DOWN_ARC_SWAY_LARGE"
   },
   "VOLBEAT": {
     "name": "VOLBEAT",
@@ -36254,7 +37412,10 @@
     "pokemonScale": 442,
     "pokemonOffset": 16,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 0,
+    "animationDelay": 0,
+    "backAnimation": "CONCAVE_DOWN_ARC_SWAY_LARGE"
   },
   "ILLUMISE": {
     "name": "ILLUMISE",
@@ -36357,7 +37518,10 @@
     "pokemonScale": 572,
     "pokemonOffset": 19,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 5,
+    "animationDelay": 0,
+    "backAnimation": "CONCAVE_DOWN_ARC_SWAY_LARGE"
   },
   "LILEEP": {
     "name": "LILEEP",
@@ -36443,7 +37607,10 @@
     "pokemonOffset": 8,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 40, "evolvedForm": "CRADILY" }]
+    "evos": [{ "kind": "LEVEL", "param": 40, "evolvedForm": "CRADILY" }],
+    "frontAnimId": 23,
+    "animationDelay": 0,
+    "backAnimation": "HORIZONTAL_STRETCH"
   },
   "CRADILY": {
     "name": "CRADILY",
@@ -36535,7 +37702,10 @@
     "pokemonScale": 267,
     "pokemonOffset": 0,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 25,
+    "animationDelay": 0,
+    "backAnimation": "VERTICAL_STRETCH"
   },
   "ANORITH": {
     "name": "ANORITH",
@@ -36625,7 +37795,10 @@
     "pokemonOffset": 4,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 40, "evolvedForm": "ARMALDO" }]
+    "evos": [{ "kind": "LEVEL", "param": 40, "evolvedForm": "ARMALDO" }],
+    "frontAnimId": 18,
+    "animationDelay": 0,
+    "backAnimation": "CIRCLE_MOVE_CLOCKWISE"
   },
   "ARMALDO": {
     "name": "ARMALDO",
@@ -36721,7 +37894,10 @@
     "pokemonScale": 312,
     "pokemonOffset": 3,
     "trainerScale": 271,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 16,
+    "animationDelay": 0,
+    "backAnimation": "VERTICAL_SHAKE"
   },
   "RALTS": {
     "name": "RALTS",
@@ -36829,7 +38005,10 @@
     "pokemonOffset": -3,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 20, "evolvedForm": "KIRLIA" }]
+    "evos": [{ "kind": "LEVEL", "param": 20, "evolvedForm": "KIRLIA" }],
+    "frontAnimId": 69,
+    "animationDelay": 0,
+    "backAnimation": "SHRINK_GROW_2"
   },
   "KIRLIA": {
     "name": "KIRLIA",
@@ -36933,7 +38112,10 @@
     "pokemonOffset": 0,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 30, "evolvedForm": "GARDEVOIR" }]
+    "evos": [{ "kind": "LEVEL", "param": 30, "evolvedForm": "GARDEVOIR" }],
+    "frontAnimId": 0,
+    "animationDelay": 0,
+    "backAnimation": "SHRINK_GROW_2"
   },
   "GARDEVOIR": {
     "name": "GARDEVOIR",
@@ -37037,7 +38219,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 0,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 0,
+    "animationDelay": 0,
+    "backAnimation": "SHRINK_GROW_2"
   },
   "BAGON": {
     "name": "BAGON",
@@ -37136,7 +38321,10 @@
     "pokemonOffset": 18,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 30, "evolvedForm": "SHELGON" }]
+    "evos": [{ "kind": "LEVEL", "param": 30, "evolvedForm": "SHELGON" }],
+    "frontAnimId": 25,
+    "animationDelay": 0,
+    "backAnimation": "VERTICAL_SHAKE"
   },
   "SHELGON": {
     "name": "SHELGON",
@@ -37234,7 +38422,10 @@
     "pokemonOffset": 12,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 50, "evolvedForm": "SALAMENCE" }]
+    "evos": [{ "kind": "LEVEL", "param": 50, "evolvedForm": "SALAMENCE" }],
+    "frontAnimId": 4,
+    "animationDelay": 0,
+    "backAnimation": "VERTICAL_SHAKE"
   },
   "SALAMENCE": {
     "name": "SALAMENCE",
@@ -37338,7 +38529,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 0,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 15,
+    "animationDelay": 70,
+    "backAnimation": "HORIZONTAL_SHAKE"
   },
   "BELDUM": {
     "name": "BELDUM",
@@ -37383,7 +38577,10 @@
     "pokemonOffset": -1,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 20, "evolvedForm": "METANG" }]
+    "evos": [{ "kind": "LEVEL", "param": 20, "evolvedForm": "METANG" }],
+    "frontAnimId": 15,
+    "animationDelay": 0,
+    "backAnimation": "CIRCLE_MOVE_CLOCKWISE"
   },
   "METANG": {
     "name": "METANG",
@@ -37487,7 +38684,10 @@
     "pokemonOffset": 6,
     "trainerScale": 256,
     "trainerOffset": 0,
-    "evos": [{ "kind": "LEVEL", "param": 45, "evolvedForm": "METAGROSS" }]
+    "evos": [{ "kind": "LEVEL", "param": 45, "evolvedForm": "METAGROSS" }],
+    "frontAnimId": 4,
+    "animationDelay": 0,
+    "backAnimation": "JOLT_RIGHT"
   },
   "METAGROSS": {
     "name": "METAGROSS",
@@ -37593,7 +38793,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 4,
     "trainerScale": 447,
-    "trainerOffset": 9
+    "trainerOffset": 9,
+    "frontAnimId": 16,
+    "animationDelay": 0,
+    "backAnimation": "VERTICAL_SHAKE"
   },
   "REGIROCK": {
     "name": "REGIROCK",
@@ -37695,7 +38898,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 2,
     "trainerScale": 309,
-    "trainerOffset": 1
+    "trainerOffset": 1,
+    "frontAnimId": 1,
+    "animationDelay": 0,
+    "backAnimation": "VERTICAL_SHAKE"
   },
   "REGICE": {
     "name": "REGICE",
@@ -37797,7 +39003,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 0,
     "trainerScale": 301,
-    "trainerOffset": 2
+    "trainerOffset": 2,
+    "frontAnimId": 68,
+    "animationDelay": 0,
+    "backAnimation": "VERTICAL_SHAKE"
   },
   "REGISTEEL": {
     "name": "REGISTEEL",
@@ -37900,7 +39109,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 0,
     "trainerScale": 359,
-    "trainerOffset": 6
+    "trainerOffset": 6,
+    "frontAnimId": 9,
+    "animationDelay": 0,
+    "backAnimation": "VERTICAL_SHAKE"
   },
   "KYOGRE": {
     "name": "KYOGRE",
@@ -38002,7 +39214,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 0,
     "trainerScale": 614,
-    "trainerOffset": 13
+    "trainerOffset": 13,
+    "frontAnimId": 45,
+    "animationDelay": 60,
+    "backAnimation": "FADE_BLUE_WITH_SHAKE"
   },
   "GROUDON": {
     "name": "GROUDON",
@@ -38116,7 +39331,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 0,
     "trainerScale": 515,
-    "trainerOffset": 14
+    "trainerOffset": 14,
+    "frontAnimId": 16,
+    "animationDelay": 0,
+    "backAnimation": "FADE_RED_WITH_SHAKE"
   },
   "RAYQUAZA": {
     "name": "RAYQUAZA",
@@ -38225,7 +39443,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 0,
     "trainerScale": 448,
-    "trainerOffset": 12
+    "trainerOffset": 12,
+    "frontAnimId": 15,
+    "animationDelay": 60,
+    "backAnimation": "GROW_2"
   },
   "LATIAS": {
     "name": "LATIAS",
@@ -38335,7 +39556,10 @@
     "pokemonScale": 304,
     "pokemonOffset": 3,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 45,
+    "animationDelay": 0,
+    "backAnimation": "H_SLIDE_QUICK"
   },
   "LATIOS": {
     "name": "LATIOS",
@@ -38445,7 +39669,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 0,
     "trainerScale": 294,
-    "trainerOffset": 3
+    "trainerOffset": 3,
+    "frontAnimId": 16,
+    "animationDelay": 0,
+    "backAnimation": "H_SLIDE_QUICK"
   },
   "JIRACHI": {
     "name": "JIRACHI",
@@ -38550,7 +39777,10 @@
     "pokemonScale": 608,
     "pokemonOffset": -8,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 13,
+    "animationDelay": 0,
+    "backAnimation": "CONCAVE_DOWN_ARC_SWAY_LARGE"
   },
   "DEOXYS": {
     "name": "DEOXYS",
@@ -38668,7 +39898,10 @@
     "pokemonScale": 256,
     "pokemonOffset": 0,
     "trainerScale": 290,
-    "trainerOffset": 2
+    "trainerOffset": 2,
+    "frontAnimId": 27,
+    "animationDelay": 0,
+    "backAnimation": "SHRINK_GROW_2"
   },
   "CHIMECHO": {
     "name": "CHIMECHO",
@@ -38764,6 +39997,9 @@
     "pokemonScale": 505,
     "pokemonOffset": 0,
     "trainerScale": 256,
-    "trainerOffset": 0
+    "trainerOffset": 0,
+    "frontAnimId": 29,
+    "animationDelay": 0,
+    "backAnimation": "CONCAVE_DOWN_ARC_SWAY_LARGE"
   }
 }
