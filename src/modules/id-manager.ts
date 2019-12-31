@@ -7,104 +7,132 @@ import { EditMoveView } from "@/components/views/edit-move-view";
 
 export namespace IDManager {
   export function changeMoveID(oldID: string, newID: string) {
-    if (oldID === newID) {
-      return;
-    }
-    const move = GameModel.model.moves[oldID];
-    Vue.delete(GameModel.model.moves, oldID);
-    Vue.set(GameModel.model.moves, newID, move);
-
-    for (let viewInstance of ViewManager.viewStack) {
-      if (
-        ViewManager.isView(EditMoveView, viewInstance) &&
-        viewInstance.params === oldID
-      ) {
-        viewInstance.params = newID;
-      }
-    }
-
-    // TODO: Change the moves in all affected pokemon and trainer parties
+    alterMoveID(oldID, newID, false);
   }
 
   export function removeMove(oldID: string, replaceID: string = "NONE") {
-    const move = GameModel.model.moves[oldID];
-    Vue.delete(GameModel.model.moves, oldID);
-
-    for (let i = 0; i < ViewManager.viewStack.length; i++) {
-      const view = ViewManager.viewStack[i];
-      if (ViewManager.isView(EditMoveView, view) && view.params === oldID) {
-        Vue.delete(ViewManager.viewStack, i);
-      }
-    }
+    alterMoveID(oldID, replaceID, true);
   }
 
-  export function changeTrainerID(oldID: string, newID: string) {
-    if (oldID === newID) {
+  function alterMoveID(id: string, replaceID: string, doDelete: boolean) {
+    if (id === replaceID) {
       return;
     }
-    const trainer = GameModel.model.trainers[oldID];
-    Vue.delete(GameModel.model.trainers, oldID);
-    Vue.set(GameModel.model.trainers, newID, trainer);
 
-    for (let viewInstance of ViewManager.viewStack) {
+    const move = GameModel.model.moves[id];
+    Vue.delete(GameModel.model.moves, id);
+    if (!doDelete) {
+      Vue.set(GameModel.model.moves, replaceID, move);
+    }
+
+    Object.values(GameModel.model.trainers)
+      .flatMap(t => t.party)
+      .map(mon =>
+        mon.moves.forEach((move, i) => {
+          if (move === id) {
+            Vue.set(mon.moves, i, replaceID);
+          }
+        })
+      );
+
+    Object.values(GameModel.model.pokemon).map(mon => {
+      if (mon.eggMoves) {
+        mon.eggMoves.forEach((move, i) => {
+          if (move === id) {
+            Vue.set(mon.eggMoves!, i, replaceID);
+          }
+        });
+      }
+
+      mon.moves.forEach((move, i) => {
+        if (move.move === id) {
+          move.move = replaceID;
+        }
+      });
+
+      // TODO: Consider HM / TM and Tutors.
+    });
+
+    for (let [index, viewInstance] of ViewManager.viewStack.entries()) {
       if (
-        ViewManager.isView(EditTrainerView, viewInstance) &&
-        viewInstance.params === oldID
+        ViewManager.isView(EditMoveView, viewInstance) &&
+        viewInstance.params === id
       ) {
-        viewInstance.params = newID;
+        if (doDelete) {
+          Vue.delete(ViewManager.viewStack, index);
+        } else {
+          viewInstance.params = replaceID;
+        }
       }
     }
   }
 
   export function changeTrainerClassID(oldID: string, newID: string) {
-    if (oldID === newID) {
-      return;
-    }
-    const trainerClass = GameModel.model.trainerClasses[oldID];
-    Vue.delete(GameModel.model.trainerClasses, oldID);
-    Vue.set(GameModel.model.trainerClasses, newID, trainerClass);
-
-    for (let trainer of Object.values(GameModel.model.trainers)) {
-      if (trainer.trainerClass === oldID) {
-        trainer.trainerClass = newID;
-      }
-    }
-
-    for (let viewInstance of ViewManager.viewStack) {
-      if (
-        ViewManager.isView(EditTrainerClassView, viewInstance) &&
-        viewInstance.params === oldID
-      ) {
-        viewInstance.params = newID;
-      }
-    }
+    alterTrainerClass(oldID, newID, false);
   }
 
   export function removeTrainerClass(id: string, replacement: string) {
+    alterTrainerClass(id, replacement, true);
+  }
+
+  function alterTrainerClass(id: string, replaceID: string, doDelete: boolean) {
+    if (id === replaceID) {
+      return;
+    }
+    const trainerClass = GameModel.model.trainerClasses[id];
     Vue.delete(GameModel.model.trainerClasses, id);
-    for (let i = 0; i < ViewManager.viewStack.length; i++) {
-      const view = ViewManager.viewStack[i];
-      if (
-        ViewManager.isView(EditTrainerClassView, view) &&
-        view.params === id
-      ) {
-        Vue.delete(ViewManager.viewStack, i);
-      }
+    if (!doDelete) {
+      Vue.set(GameModel.model.trainerClasses, replaceID, trainerClass);
     }
 
     for (let trainer of Object.values(GameModel.model.trainers)) {
       if (trainer.trainerClass === id) {
-        trainer.trainerClass = replacement;
+        trainer.trainerClass = replaceID;
+      }
+    }
+
+    for (let [index, viewInstance] of ViewManager.viewStack.entries()) {
+      if (
+        ViewManager.isView(EditTrainerClassView, viewInstance) &&
+        viewInstance.params === id
+      ) {
+        if (doDelete) {
+          Vue.delete(ViewManager.viewStack, index);
+        } else {
+          viewInstance.params = replaceID;
+        }
       }
     }
   }
 
+  export function changeTrainerID(oldID: string, newID: string) {
+    alterTrainer(oldID, newID, false);
+  }
+
   export function removeTrainer(id: string, replacement: string = "NONE") {
+    alterTrainer(id, replacement, true);
+  }
+
+  function alterTrainer(id: string, replaceID: string, doDelete: boolean) {
+    if (id === replaceID) {
+      return;
+    }
+    const trainer = GameModel.model.trainers[id];
     Vue.delete(GameModel.model.trainers, id);
-    for (let i = 0; i < ViewManager.viewStack.length; i++) {
-      const view = ViewManager.viewStack[i];
-      if (ViewManager.isView(EditTrainerView, view) && view.params === id) {
-        Vue.delete(ViewManager.viewStack, i);
+    if (!doDelete) {
+      Vue.set(GameModel.model.trainers, replaceID, trainer);
+    }
+
+    for (let [index, viewInstance] of ViewManager.viewStack.entries()) {
+      if (
+        ViewManager.isView(EditTrainerView, viewInstance) &&
+        viewInstance.params === id
+      ) {
+        if (doDelete) {
+          Vue.delete(ViewManager.viewStack, index);
+        } else {
+          viewInstance.params = replaceID;
+        }
       }
     }
   }
