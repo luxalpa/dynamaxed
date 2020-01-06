@@ -5,8 +5,8 @@ import { View, ViewManager } from "@/modules/view-manager";
 import { px } from "csx";
 import { TrainersView } from "@/components/lists/trainer-list";
 import { TrainerClassesView } from "@/components/lists/trainer-class-list";
-import { EditMapView } from "@/components/views/edit-map-view";
 import { MovesView } from "@/components/lists/move-list";
+import { PokemonsView } from "@/components/lists/pokemon-list";
 import { TableState, TableStateInitial } from "@/components/table";
 
 interface NavElement {
@@ -30,6 +30,11 @@ const navElements: NavElement[] = [
     text: "Moves",
     isSubElement: false,
     switchToView: MovesView
+  },
+  {
+    text: "Pokemon",
+    isSubElement: false,
+    switchToView: PokemonsView
   }
 ];
 

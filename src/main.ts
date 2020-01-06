@@ -33,8 +33,10 @@ import { ProjectManager } from "@/modules/project-manager";
 import { restoreState } from "@/store";
 import { EditMapView } from "@/components/views/edit-map-view";
 import { MovesView } from "@/components/lists/move-list";
+import { PokemonsView } from "@/components/lists/pokemon-list";
 import { EditMoveView } from "@/components/views/edit-move-view";
 import { TableStateInitial } from "@/components/table";
+import { EditPokemonView } from "@/components/views/edit-pokemon-view";
 
 Vue.use(PortalVue);
 
@@ -66,7 +68,9 @@ ViewManager.registerViews({
   "edit-trainer-class": EditTrainerClassView,
   "edit-map-view": EditMapView,
   moves: MovesView,
-  "edit-move-view": EditMoveView
+  "edit-move-view": EditMoveView,
+  "edit-pokemon-view": EditPokemonView,
+  pokemons: PokemonsView
 });
 
 ViewManager.push(TrainersView, TableStateInitial());
