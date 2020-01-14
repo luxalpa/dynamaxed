@@ -1,14 +1,18 @@
 import { Component } from "vue-property-decorator";
 import { View } from "@/modules/view-manager";
-import { FlexRow, Window, WindowLayout } from "@/components/layout";
+import { FlexColumn, FlexRow, Window, WindowLayout } from "@/components/layout";
 import { Portal } from "portal-vue";
 import { IDDisplay } from "@/components/displays/id-display";
-import { GameModel } from "@/model/model";
+import { GameModel, PokemonEvolution } from "@/model/model";
 import { Label } from "@/components/label";
 import { Button } from "@/components/button";
 import { Sprite } from "@/components/sprite";
 import { PathManager } from "@/modules/path-manager";
 import { Spacer } from "@/components/spacer";
+import { MoveDisplay } from "@/components/displays/move-display";
+import { DialogManager } from "@/modules/dialog-manager";
+import { InputTextDialog } from "@/components/dialogs/input-text-dialog";
+import { validateID } from "@/input-validators";
 
 @Component
 export class EditPokemonView extends View<string> {
@@ -18,6 +22,10 @@ export class EditPokemonView extends View<string> {
 
   get pokemon() {
     return GameModel.model.pokemon[this.pokemonID];
+  }
+
+  get evos(): PokemonEvolution[] {
+    return this.pokemon.evos || [];
   }
 
   get genderRatio() {
@@ -31,6 +39,13 @@ export class EditPokemonView extends View<string> {
       return "MALE";
     }
     return Math.floor((this.pokemon.genderRatio / 254) * 1000) / 10 + "%";
+  }
+
+  async changeID() {
+    const newID = await DialogManager.openDialog(InputTextDialog, {
+      value: this.pokemonID,
+      check: validateID
+    });
   }
 
   render() {
@@ -47,7 +62,7 @@ export class EditPokemonView extends View<string> {
           </FlexRow>
           <FlexRow>
             <Label width={2}>ID</Label>
-            <Button width={6}>
+            <Button width={6} onclick={() => this.changeID()}>
               <IDDisplay value={this.pokemonID} />
             </Button>
           </FlexRow>
@@ -136,6 +151,102 @@ export class EditPokemonView extends View<string> {
           <FlexRow>
             <Label width={5}>Gender Ratio (M / F)</Label>
             <Button width={3}>{this.genderRatio}</Button>
+          </FlexRow>
+          <FlexRow />
+          <FlexRow>
+            <Label>Evolutions</Label>
+          </FlexRow>
+          {this.evos.map(evo => (
+            <FlexRow>
+              <Button width={3} height={3}>
+                <Sprite src={PathManager.pokePic(evo.evolvedForm)} />
+              </Button>
+              <FlexColumn>
+                <FlexRow>
+                  <Spacer width={4} />
+                  <Button width={1}>
+                    <font-awesome-icon icon={["fas", "times"]} />
+                  </Button>
+                </FlexRow>
+                <FlexRow>
+                  <Button>{evo.kind}</Button>
+                </FlexRow>
+                <FlexRow>
+                  <Button>{evo.param}</Button>
+                </FlexRow>
+              </FlexColumn>
+            </FlexRow>
+          ))}
+          <FlexRow>
+            <Button width={8}>Add</Button>
+          </FlexRow>
+        </Window>
+        <Window>
+          <FlexRow>
+            <Label>Learn Set</Label>
+          </FlexRow>
+          {this.pokemon.moves.map(move => (
+            <FlexRow>
+              <Button width={2}>{move.level}</Button>
+              <Button width={5}>
+                <MoveDisplay move={move.move} />
+              </Button>
+              <Button width={1}>
+                <font-awesome-icon icon={["fas", "times"]} />
+              </Button>
+            </FlexRow>
+          ))}
+          <FlexRow>
+            <Button width={8}>Add</Button>
+          </FlexRow>
+
+          <FlexRow>
+            <Label>TMs / HMs</Label>
+          </FlexRow>
+          {this.pokemon.tmhmLearnset.map(tm => (
+            <FlexRow>
+              <Button width={7}>{tm}</Button>
+              <Button width={1}>
+                <font-awesome-icon icon={["fas", "times"]} />
+              </Button>
+            </FlexRow>
+          ))}
+          <FlexRow>
+            <Button width={8}>Add</Button>
+          </FlexRow>
+
+          <FlexRow>
+            <Label>Tutor Moves</Label>
+          </FlexRow>
+          {this.pokemon.tutorMoves.map(tm => (
+            <FlexRow>
+              <Button width={7}>
+                <MoveDisplay move={tm} />
+              </Button>
+              <Button width={1}>
+                <font-awesome-icon icon={["fas", "times"]} />
+              </Button>
+            </FlexRow>
+          ))}
+          <FlexRow>
+            <Button width={8}>Add</Button>
+          </FlexRow>
+
+          <FlexRow>
+            <Label>Egg Moves</Label>
+          </FlexRow>
+          {this.pokemon.eggMoves?.map(em => (
+            <FlexRow>
+              <Button width={7}>
+                <MoveDisplay move={em} />
+              </Button>
+              <Button width={1}>
+                <font-awesome-icon icon={["fas", "times"]} />
+              </Button>
+            </FlexRow>
+          ))}
+          <FlexRow>
+            <Button width={8}>Add</Button>
           </FlexRow>
         </Window>
       </WindowLayout>

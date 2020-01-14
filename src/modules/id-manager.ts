@@ -136,4 +136,6 @@ export namespace IDManager {
       }
     }
   }
+
+  function alterPokemon(id: string, replaceID: string, doDelete: boolean) {}
 }
