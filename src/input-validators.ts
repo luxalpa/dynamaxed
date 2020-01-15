@@ -9,3 +9,12 @@ export function validateID(v: string): string | false {
 
   return "Only capital letters, numbers and underscore are allowed";
 }
+
+export function createTextValidator(maxlen?: number) {
+  return function(v: string) {
+    if (maxlen !== undefined && v.length > maxlen) {
+      return `Must be at max ${maxlen} characters`;
+    }
+    return false;
+  };
+}

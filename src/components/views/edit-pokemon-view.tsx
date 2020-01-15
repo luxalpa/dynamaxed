@@ -1,9 +1,9 @@
-import { Component } from "vue-property-decorator";
+import { Component, Vue } from "vue-property-decorator";
 import { View } from "@/modules/view-manager";
 import { FlexColumn, FlexRow, Window, WindowLayout } from "@/components/layout";
 import { Portal } from "portal-vue";
 import { IDDisplay } from "@/components/displays/id-display";
-import { GameModel, PokemonEvolution } from "@/model/model";
+import { GameModel, Pokemon, PokemonEvolution } from "@/model/model";
 import { Label } from "@/components/label";
 import { Button } from "@/components/button";
 import { Sprite } from "@/components/sprite";
@@ -12,7 +12,14 @@ import { Spacer } from "@/components/spacer";
 import { MoveDisplay } from "@/components/displays/move-display";
 import { DialogManager } from "@/modules/dialog-manager";
 import { InputTextDialog } from "@/components/dialogs/input-text-dialog";
-import { validateID } from "@/input-validators";
+import { createTextValidator, validateID } from "@/input-validators";
+import { IDManager } from "@/modules/id-manager";
+import {
+  ChooseAbilityDialog,
+  ChooseGrowthRateDialog,
+  ChooseTypeDialog
+} from "@/components/dialogs/simple-list-dialogs";
+import { InputNumberDialog } from "@/components/dialogs/input-number-dialog";
 
 @Component
 export class EditPokemonView extends View<string> {
@@ -46,6 +53,92 @@ export class EditPokemonView extends View<string> {
       value: this.pokemonID,
       check: validateID
     });
+
+    if (newID !== undefined) {
+      IDManager.changePokemonID(this.pokemonID, newID);
+    }
+  }
+
+  async changeName() {
+    const name = await DialogManager.openDialog(InputTextDialog, {
+      value: this.pokemon.name,
+      check: createTextValidator(10)
+    });
+
+    if (name !== undefined) {
+      this.pokemon.name = name;
+    }
+  }
+
+  async changeType1() {
+    const type = await DialogManager.openDialog(
+      ChooseTypeDialog,
+      this.pokemon.type1
+    );
+
+    if (type !== undefined) {
+      this.pokemon.type1 = type;
+    }
+  }
+
+  async changeType2() {
+    const type = await DialogManager.openDialog(
+      ChooseTypeDialog,
+      this.pokemon.type2
+    );
+
+    if (type !== undefined) {
+      this.pokemon.type2 = type;
+    }
+  }
+
+  async changeAbility1() {
+    const ability = await DialogManager.openDialog(
+      ChooseAbilityDialog,
+      this.pokemon.abilities[0]
+    );
+
+    if (ability !== undefined) {
+      Vue.set(this.pokemon.abilities, 0, ability);
+    }
+  }
+
+  async changeAbility2() {
+    const ability = await DialogManager.openDialog(
+      ChooseAbilityDialog,
+      this.pokemon.abilities[1]
+    );
+
+    if (ability !== undefined) {
+      Vue.set(this.pokemon.abilities, 1, ability);
+    }
+  }
+
+  async changeGrowthRate() {
+    const rate = await DialogManager.openDialog(
+      ChooseGrowthRateDialog,
+      this.pokemon.growthRate
+    );
+    if (rate !== undefined) {
+      this.pokemon.growthRate = rate;
+    }
+  }
+
+  async adjustNumericStat(stat: keyof Pokemon, max?: number) {
+    const originalValue = this.pokemon[stat];
+
+    if (typeof originalValue !== "number") {
+      throw new Error("Only works for numeric stats!");
+    }
+
+    const v = await DialogManager.openDialog(InputNumberDialog, {
+      value: originalValue,
+      min: 0,
+      max: max || 255
+    });
+    if (v !== undefined) {
+      Vue.set(this.pokemon, stat, v);
+    }
   }
 
   render() {
@@ -68,20 +161,30 @@ export class EditPokemonView extends View<string> {
           </FlexRow>
           <FlexRow>
             <Label width={2}>Name</Label>
-            <Button width={6}>{this.pokemon.name}</Button>
+            <Button width={6} onclick={() => this.changeName()}>
+              {this.pokemon.name}
+            </Button>
           </FlexRow>
           <FlexRow>
             <Label width={2}>Type</Label>
-            <Button width={3}>{this.pokemon.type1}</Button>
-            <Button width={3}>{this.pokemon.type2}</Button>
+            <Button width={3} onclick={() => this.changeType1()}>
+              {this.pokemon.type1}
+            </Button>
+            <Button width={3} onclick={() => this.changeType2()}>
+              {this.pokemon.type2}
+            </Button>
           </FlexRow>
           <FlexRow>
             <Label width={3}>Abilities</Label>
-            <Button width={5}>{this.pokemon.abilities[0]}</Button>
+            <Button width={5} onclick={() => this.changeAbility1()}>
+              {this.pokemon.abilities[0]}
+            </Button>
           </FlexRow>
           <FlexRow>
             <Spacer width={3} />
-            <Button width={5}>{this.pokemon.abilities[1]}</Button>
+            <Button width={5} onclick={() => this.changeAbility2()}>
+              {this.pokemon.abilities[1]}
+            </Button>
           </FlexRow>
           <FlexRow />
           <FlexRow>
@@ -89,25 +192,54 @@ export class EditPokemonView extends View<string> {
           </FlexRow>
           <FlexRow>
             <Label width={2}>HP</Label>
-            <Button width={2}>{this.pokemon.baseHP}</Button>
+            <Button width={2} onclick={() => this.adjustNumericStat("baseHP")}>
+              {this.pokemon.baseHP}
+            </Button>
             <Label width={2}>Speed</Label>
-            <Button width={2}>{this.pokemon.baseSpeed}</Button>
+            <Button
+              width={2}
+              onclick={() => this.adjustNumericStat("baseSpeed")}
+            >
+              {this.pokemon.baseSpeed}
+            </Button>
           </FlexRow>
           <FlexRow>
             <Label width={2}>Attack</Label>
-            <Button width={2}>{this.pokemon.baseAttack}</Button>
+            <Button
+              width={2}
+              onclick={() => this.adjustNumericStat("baseAttack")}
+            >
+              {this.pokemon.baseAttack}
+            </Button>
             <Label width={2}>Defense</Label>
-            <Button width={2}>{this.pokemon.baseDefense}</Button>
+            <Button
+              width={2}
+              onclick={() => this.adjustNumericStat("baseDefense")}
+            >
+              {this.pokemon.baseDefense}
+            </Button>
           </FlexRow>
           <FlexRow>
             <Label width={2}>Sp. Att.</Label>
-            <Button width={2}>{this.pokemon.baseSpAttack}</Button>
+            <Button
+              width={2}
+              onclick={() => this.adjustNumericStat("baseSpAttack")}
+            >
+              {this.pokemon.baseSpAttack}
+            </Button>
             <Label width={2}>Sp. Def.</Label>
-            <Button width={2}>{this.pokemon.baseSpDefense}</Button>
+            <Button
+              width={2}
+              onclick={() => this.adjustNumericStat("baseSpDefense")}
+            >
+              {this.pokemon.baseSpDefense}
+            </Button>
           </FlexRow>
           <FlexRow>
             <Label width={3}>Exp. gain</Label>
-            <Button width={5}>{this.pokemon.growthRate}</Button>
+            <Button width={5} onclick={() => this.changeGrowthRate()}>
+              {this.pokemon.growthRate}
+            </Button>
           </FlexRow>
           <FlexRow />
           <FlexRow>
@@ -115,30 +247,70 @@ export class EditPokemonView extends View<string> {
           </FlexRow>
           <FlexRow>
             <Label width={2}>HP</Label>
-            <Button width={2}>{this.pokemon.evYield_HP}</Button>
+            <Button
+              width={2}
+              onclick={() => this.adjustNumericStat("evYield_HP")}
+            >
+              {this.pokemon.evYield_HP}
+            </Button>
             <Label width={2}>Speed</Label>
-            <Button width={2}>{this.pokemon.evYield_Speed}</Button>
+            <Button
+              width={2}
+              onclick={() => this.adjustNumericStat("evYield_Speed")}
+            >
+              {this.pokemon.evYield_Speed}
+            </Button>
           </FlexRow>
           <FlexRow>
             <Label width={2}>Attack</Label>
-            <Button width={2}>{this.pokemon.evYield_Attack}</Button>
+            <Button
+              width={2}
+              onclick={() => this.adjustNumericStat("evYield_Attack")}
+            >
+              {this.pokemon.evYield_Attack}
+            </Button>
             <Label width={2}>Defense</Label>
-            <Button width={2}>{this.pokemon.evYield_Defense}</Button>
+            <Button
+              width={2}
+              onclick={() => this.adjustNumericStat("evYield_Defense")}
+            >
+              {this.pokemon.evYield_Defense}
+            </Button>
           </FlexRow>
           <FlexRow>
             <Label width={2}>Sp. Att.</Label>
-            <Button width={2}>{this.pokemon.evYield_SpAttack}</Button>
+            <Button
+              width={2}
+              onclick={() => this.adjustNumericStat("evYield_SpAttack")}
+            >
+              {this.pokemon.evYield_SpAttack}
+            </Button>
             <Label width={2}>Sp. Def.</Label>
-            <Button width={2}>{this.pokemon.evYield_SpDefense}</Button>
+            <Button
+              width={2}
+              onclick={() => this.adjustNumericStat("evYield_SpDefense")}
+            >
+              {this.pokemon.evYield_SpDefense}
+            </Button>
           </FlexRow>
           <FlexRow>
             <Label width={4}>Experience yield</Label>
-            <Button width={2}>{this.pokemon.expYield}</Button>
+            <Button
+              width={2}
+              onclick={() => this.adjustNumericStat("expYield")}
+            >
+              {this.pokemon.expYield}
+            </Button>
           </FlexRow>
           <FlexRow />
           <FlexRow>
             <Label width={3}>Catch rate</Label>
-            <Button width={2}>{this.pokemon.catchRate}</Button>
+            <Button
+              width={2}
+              onclick={() => this.adjustNumericStat("catchRate")}
+            >
+              {this.pokemon.catchRate}
+            </Button>
           </FlexRow>
           <FlexRow>
             <Label width={3}>Held items</Label>

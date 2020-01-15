@@ -4,6 +4,7 @@ import { Vue } from "vue-property-decorator";
 import { EditTrainerClassView } from "@/components/views/edit-trainer-class-view";
 import { EditTrainerView } from "@/components/views/edit-trainer-view";
 import { EditMoveView } from "@/components/views/edit-move-view";
+import { EditPokemonView } from "@/components/views/edit-pokemon-view";
 
 export namespace IDManager {
   export function changeMoveID(oldID: string, newID: string) {
@@ -137,5 +138,43 @@ export namespace IDManager {
     }
   }
 
-  function alterPokemon(id: string, replaceID: string, doDelete: boolean) {}
+  export function changePokemonID(oldID: string, newID: string) {
+    alterPokemon(oldID, newID, false);
+  }
+
+  export function removePokemon(id: string, replacement: string = "NONE") {
+    alterPokemon(id, replacement, true);
+  }
+  function alterPokemon(id: string, replaceID: string, doDelete: boolean) {
+    if (id === replaceID) {
+      return;
+    }
+
+    const mon = GameModel.model.pokemon[id];
+    Vue.delete(GameModel.model.pokemon, id);
+    if (!doDelete) {
+      Vue.set(GameModel.model.pokemon, replaceID, mon);
+    }
+
+    for (let [index, viewInstance] of ViewManager.viewStack.entries()) {
+      if (
+        ViewManager.isView(EditPokemonView, viewInstance) &&
+        viewInstance.params === id
+      ) {
+        if (doDelete) {
+          Vue.delete(ViewManager.viewStack, index);
+        } else {
+          viewInstance.params = replaceID;
+        }
+      }
+    }
+
+    for (let trainerMon of Object.values(GameModel.model.trainers).flatMap(
+      t => t.party
+    )) {
+      if (trainerMon.species === id) {
+        trainerMon.species = replaceID;
+      }
+    }
+  }
 }
