@@ -407,7 +407,10 @@ function buildPokemonBaseStats() {
         growthRate: `GROWTH_${mon.growthRate}`,
         eggGroup1: `EGG_GROUP_${mon.eggGroup1}`,
         eggGroup2: `EGG_GROUP_${mon.eggGroup2}`,
-        abilities: new ArrayValue(mon.abilities.map(a => `ABILITY_${a}`)),
+        abilities: new ArrayValue([
+          `ABILITY_${mon.ability1}`,
+          `ABILITY_${mon.ability2}`
+        ]),
         safariZoneFleeRate: mon.safariZoneFleeRate,
         bodyColor: `BODY_COLOR_${mon.bodyColor}`,
         noFlip: makeBool(mon.noFlip)

@@ -10,7 +10,7 @@ import { Sprite } from "@/components/sprite";
 import { PathManager } from "@/modules/path-manager";
 import { Spacer } from "@/components/spacer";
 import { MoveDisplay } from "@/components/displays/move-display";
-import { DialogManager } from "@/modules/dialog-manager";
+import { Dialog, DialogManager } from "@/modules/dialog-manager";
 import { InputTextDialog } from "@/components/dialogs/input-text-dialog";
 import { createTextValidator, validateID } from "@/input-validators";
 import { IDManager } from "@/modules/id-manager";
@@ -70,57 +70,13 @@ export class EditPokemonView extends View<string> {
     }
   }
 
-  async changeType1() {
-    const type = await DialogManager.openDialog(
-      ChooseTypeDialog,
-      this.pokemon.type1
-    );
-
-    if (type !== undefined) {
-      this.pokemon.type1 = type;
-    }
-  }
-
-  async changeType2() {
-    const type = await DialogManager.openDialog(
-      ChooseTypeDialog,
-      this.pokemon.type2
-    );
-
-    if (type !== undefined) {
-      this.pokemon.type2 = type;
-    }
-  }
-
-  async changeAbility1() {
-    const ability = await DialogManager.openDialog(
-      ChooseAbilityDialog,
-      this.pokemon.abilities[0]
-    );
-
-    if (ability !== undefined) {
-      Vue.set(this.pokemon.abilities, 0, ability);
-    }
-  }
-
-  async changeAbility2() {
-    const ability = await DialogManager.openDialog(
-      ChooseAbilityDialog,
-      this.pokemon.abilities[1]
-    );
-
-    if (ability !== undefined) {
-      Vue.set(this.pokemon.abilities, 1, ability);
-    }
-  }
-
-  async changeGrowthRate() {
-    const rate = await DialogManager.openDialog(
-      ChooseGrowthRateDialog,
-      this.pokemon.growthRate
-    );
-    if (rate !== undefined) {
-      this.pokemon.growthRate = rate;
+  async chooseFromList(
+    prop: keyof Pokemon,
+    dialog: new () => Dialog<string, string>
+  ) {
+    const v = await DialogManager.openDialog(dialog, this.pokemon[prop]);
+    if (v !== undefined) {
+      Vue.set(this.pokemon, prop, v);
     }
   }
 
@@ -167,23 +123,39 @@ export class EditPokemonView extends View<string> {
           </FlexRow>
           <FlexRow>
             <Label width={2}>Type</Label>
-            <Button width={3} onclick={() => this.changeType1()}>
+            <Button
+              width={3}
+              onclick={() => this.chooseFromList("type1", ChooseTypeDialog)}
+            >
               {this.pokemon.type1}
             </Button>
-            <Button width={3} onclick={() => this.changeType2()}>
+            <Button
+              width={3}
+              onclick={() => this.chooseFromList("type2", ChooseTypeDialog)}
+            >
               {this.pokemon.type2}
             </Button>
           </FlexRow>
           <FlexRow>
             <Label width={3}>Abilities</Label>
-            <Button width={5} onclick={() => this.changeAbility1()}>
-              {this.pokemon.abilities[0]}
+            <Button
+              width={5}
+              onclick={() =>
+                this.chooseFromList("ability1", ChooseAbilityDialog)
+              }
+            >
+              {this.pokemon.ability1}
             </Button>
           </FlexRow>
           <FlexRow>
             <Spacer width={3} />
-            <Button width={5} onclick={() => this.changeAbility2()}>
-              {this.pokemon.abilities[1]}
+            <Button
+              width={5}
+              onclick={() =>
+                this.chooseFromList("ability2", ChooseAbilityDialog)
+              }
+            >
+              {this.pokemon.ability2}
             </Button>
           </FlexRow>
           <FlexRow />
@@ -237,7 +209,12 @@ export class EditPokemonView extends View<string> {
           </FlexRow>
           <FlexRow>
             <Label width={3}>Exp. gain</Label>
-            <Button width={5} onclick={() => this.changeGrowthRate()}>
+            <Button
+              width={5}
+              onclick={() =>
+                this.chooseFromList("growthRate", ChooseGrowthRateDialog)
+              }
+            >
               {this.pokemon.growthRate}
             </Button>
           </FlexRow>

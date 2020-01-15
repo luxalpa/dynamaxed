@@ -119,7 +119,6 @@ export interface Pokemon {
   growthRate: string;
   eggGroup1: string;
   eggGroup2: string;
-  abilities: string[];
   safariZoneFleeRate: number;
   bodyColor: string;
   noFlip: boolean;
@@ -128,6 +127,8 @@ export interface Pokemon {
   hoennDexId: number;
   tutorMoves: string[];
   eggMoves?: string[];
+  ability1: string;
+  ability2: string;
 
   // Pokedex
   categoryName: string;
