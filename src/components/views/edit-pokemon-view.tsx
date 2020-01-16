@@ -20,6 +20,7 @@ import {
   ChooseTypeDialog
 } from "@/components/dialogs/simple-list-dialogs";
 import { InputNumberDialog } from "@/components/dialogs/input-number-dialog";
+import { ChooseItemDialog } from "@/components/lists/item-list";
 
 @Component
 export class EditPokemonView extends View<string> {
@@ -40,12 +41,14 @@ export class EditPokemonView extends View<string> {
       return "GENDERLESS";
     }
     if (this.pokemon.genderRatio === 254) {
-      return "FEMALE";
+      return "ALWAYS FEMALE";
     }
     if (this.pokemon.genderRatio === 0) {
-      return "MALE";
+      return "ALWAYS MALE";
     }
-    return Math.floor((this.pokemon.genderRatio / 254) * 1000) / 10 + "%";
+    const v = Math.floor((this.pokemon.genderRatio / 254) * 1000) / 10;
+
+    return `${100 - v}% M / ${v}% F`;
   }
 
   async changeID() {
@@ -291,15 +294,30 @@ export class EditPokemonView extends View<string> {
           </FlexRow>
           <FlexRow>
             <Label width={3}>Held items</Label>
-            <Button width={5}>{this.pokemon.item1}</Button>
+            <Button
+              width={5}
+              onclick={() => this.chooseFromList("item1", ChooseItemDialog)}
+            >
+              {this.pokemon.item1}
+            </Button>
           </FlexRow>
           <FlexRow>
             <Spacer width={3} />
-            <Button width={5}>{this.pokemon.item2}</Button>
+            <Button
+              width={5}
+              onclick={() => this.chooseFromList("item2", ChooseItemDialog)}
+            >
+              {this.pokemon.item2}
+            </Button>
           </FlexRow>
           <FlexRow>
-            <Label width={5}>Gender Ratio (M / F)</Label>
-            <Button width={3}>{this.genderRatio}</Button>
+            <Label width={3}>Gender %</Label>
+            <Button
+              width={5}
+              onclick={() => this.adjustNumericStat("genderRatio")}
+            >
+              {this.genderRatio}
+            </Button>
           </FlexRow>
           <FlexRow />
           <FlexRow>
