@@ -472,3 +472,21 @@ export const GrowthRates = [
   "FAST",
   "SLOW"
 ];
+
+export const EvoKinds = [
+  "FRIENDSHIP",
+  "FRIENDSHIP_DAY",
+  "FRIENDSHIP_NIGHT",
+  "LEVEL",
+  "TRADE",
+  "TRADE_ITEM",
+  "ITEM",
+  "LEVEL_ATK_GT_DEF",
+  "LEVEL_ATK_EQ_DEF",
+  "LEVEL_ATK_LT_DEF",
+  "LEVEL_SILCOON",
+  "LEVEL_CASCOON",
+  "LEVEL_NINJASK",
+  "LEVEL_SHEDINJA",
+  "BEAUTY"
+];

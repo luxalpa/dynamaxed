@@ -2,6 +2,7 @@ import { createSimpleListDialog } from "@/components/lists/list";
 import {
   Abilities,
   EncounterMusic,
+  EvoKinds,
   GrowthRates,
   MoveEffects,
   MoveTargets,
@@ -17,3 +18,4 @@ export const ChooseEncounterMusicDialog = createSimpleListDialog(
 export const ChooseTypeDialog = createSimpleListDialog(Types);
 export const ChooseAbilityDialog = createSimpleListDialog(Abilities);
 export const ChooseGrowthRateDialog = createSimpleListDialog(GrowthRates);
+export const ChooseEvoKindDialog = createSimpleListDialog(EvoKinds);
