@@ -37,7 +37,9 @@ export function createListView<T>(
         <div class={styles.view}>
           <Portal to="title">{this.title}</Portal>
           <List
-            onentryclick={(id: string) => ViewManager.push(opts.targetView, id)}
+            onentryclick={(id: string) => {
+              ViewManager.push(opts.targetView, id);
+            }}
             tablestate={this.args}
             class={styles.list}
           />

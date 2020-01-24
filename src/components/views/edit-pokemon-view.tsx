@@ -1,4 +1,4 @@
-import { Component, Vue } from "vue-property-decorator";
+import { Component, Prop, Vue } from "vue-property-decorator";
 import { View } from "@/modules/view-manager";
 import { FlexColumn, FlexRow, Window, WindowLayout } from "@/components/layout";
 import { Portal } from "portal-vue";
@@ -16,11 +16,14 @@ import { createTextValidator, validateID } from "@/input-validators";
 import { IDManager } from "@/modules/id-manager";
 import {
   ChooseAbilityDialog,
+  ChooseEvoKindDialog,
   ChooseGrowthRateDialog,
   ChooseTypeDialog
 } from "@/components/dialogs/simple-list-dialogs";
 import { InputNumberDialog } from "@/components/dialogs/input-number-dialog";
 import { ChooseItemDialog } from "@/components/lists/item-list";
+import { ChoosePokemonDialog } from "@/components/lists/pokemon-list";
+import { ItemDisplay } from "@/components/displays/item-display";
 
 async function changeID(pokemonID: string) {
   const newID = await DialogManager.openDialog(InputTextDialog, {
@@ -78,6 +81,29 @@ async function chooseNumber<T extends Object>(
   });
   if (v !== undefined) {
     Vue.set(obj, stat, v);
+  }
+}
+
+function removeEvo(mon: Pokemon, pos: number) {
+  if (mon.evos !== undefined) {
+    Vue.delete(mon.evos, 3);
+  }
+}
+
+function defaultEvoParam(kind: string): string | number {
+  switch (kind) {
+    case "ITEM":
+      return "NONE";
+    default:
+      return 0;
+  }
+}
+
+async function changeEvoKind(evo: PokemonEvolution) {
+  const before = evo.kind;
+  await chooseFromList(evo, "kind", ChooseEvoKindDialog);
+  if (evo.kind !== before) {
+    evo.param = defaultEvoParam(evo.kind);
   }
 }
 
@@ -333,26 +359,8 @@ export class EditPokemonView extends View<string> {
           <FlexRow>
             <Label>Evolutions</Label>
           </FlexRow>
-          {this.evos.map(evo => (
-            <FlexRow>
-              <Button width={3} height={3}>
-                <Sprite src={PathManager.pokePic(evo.evolvedForm)} />
-              </Button>
-              <FlexColumn>
-                <FlexRow>
-                  <Spacer width={4} />
-                  <Button width={1}>
-                    <font-awesome-icon icon={["fas", "times"]} />
-                  </Button>
-                </FlexRow>
-                <FlexRow>
-                  <Button>{evo.kind}</Button>
-                </FlexRow>
-                <FlexRow>
-                  <Button>{evo.param}</Button>
-                </FlexRow>
-              </FlexColumn>
-            </FlexRow>
+          {this.evos.map((evo, i) => (
+            <EvoEntry evo={evo} onremove={() => removeEvo(pokemon, i)} />
           ))}
           <FlexRow>
             <Button width={8}>Add</Button>
@@ -427,6 +435,64 @@ export class EditPokemonView extends View<string> {
           </FlexRow>
         </Window>
       </WindowLayout>
+    );
+  }
+}
+
+@Component
+class EvoEntry extends Vue {
+  @Prop() evo!: PokemonEvolution;
+
+  render() {
+    const evo = this.evo;
+
+    const param = (function() {
+      switch (evo.kind) {
+        case "ITEM":
+          return (
+            <Button
+              onclick={() => chooseFromList(evo, "param", ChooseItemDialog)}
+            >
+              {typeof evo.param === "string" ? (
+                <ItemDisplay item={evo.param} />
+              ) : (
+                evo.param
+              )}
+            </Button>
+          );
+        default:
+          return (
+            <Button onclick={() => chooseNumber(evo, "param")}>
+              {evo.param}
+            </Button>
+          );
+      }
+    })();
+
+    return (
+      <FlexRow>
+        <Button
+          width={3}
+          height={3}
+          onclick={() =>
+            chooseFromList(evo, "evolvedForm", ChoosePokemonDialog)
+          }
+        >
+          <Sprite src={PathManager.pokePic(evo.evolvedForm)} />
+        </Button>
+        <FlexColumn>
+          <FlexRow>
+            <Spacer width={4} />
+            <Button width={1} onclick={() => this.$emit("remove")}>
+              <font-awesome-icon icon={["fas", "times"]} />
+            </Button>
+          </FlexRow>
+          <FlexRow>
+            <Button onclick={() => changeEvoKind(this.evo)}>{evo.kind}</Button>
+          </FlexRow>
+          <FlexRow>{param}</FlexRow>
+        </FlexColumn>
+      </FlexRow>
     );
   }
 }

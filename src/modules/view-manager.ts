@@ -75,7 +75,7 @@ export const ViewManager = new (class {
   push<T>(view: new () => View<T>, params?: T): void {
     const name = view2name.get(view);
     if (!name) {
-      throw new Error("View not registered!");
+      throw new Error(`View not registered!`);
     }
 
     const currentView = {
