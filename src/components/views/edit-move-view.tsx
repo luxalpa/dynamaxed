@@ -12,13 +12,10 @@ import { DialogManager } from "@/modules/dialog-manager";
 import { InputTextDialog } from "@/components/dialogs/input-text-dialog";
 import { IDManager } from "@/modules/id-manager";
 import { InputTextAreaDialog } from "@/components/dialogs/input-text-area-dialog";
-import {
-  ChooseMoveEffectDialog,
-  ChooseMoveTargetDialog,
-  ChooseTypeDialog
-} from "@/components/dialogs/simple-list-dialogs";
 import { InputNumberDialog } from "@/components/dialogs/input-number-dialog";
 import { Spacer } from "@/components/spacer";
+import { ListDialog } from "@/components/lists/list";
+import { List } from "@/constants";
 
 @Component
 export class EditMoveView extends View<string> {
@@ -67,8 +64,8 @@ export class EditMoveView extends View<string> {
   }
 
   async changeEffect() {
-    const effect = await DialogManager.openDialog(
-      ChooseMoveEffectDialog,
+    const effect = await DialogManager.openListDialog(
+      List.MoveEffects,
       this.move.effect
     );
     if (effect !== undefined) {
@@ -77,8 +74,8 @@ export class EditMoveView extends View<string> {
   }
 
   async changeMoveTarget() {
-    const target = await DialogManager.openDialog(
-      ChooseMoveTargetDialog,
+    const target = await DialogManager.openListDialog(
+      List.MoveTargets,
       this.move.target
     );
     if (target !== undefined) {
@@ -87,8 +84,8 @@ export class EditMoveView extends View<string> {
   }
 
   async changeType() {
-    const target = await DialogManager.openDialog(
-      ChooseTypeDialog,
+    const target = await DialogManager.openListDialog(
+      List.Types,
       this.move.type
     );
     if (target !== undefined) {

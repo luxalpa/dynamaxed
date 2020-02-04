@@ -27,16 +27,32 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { ViewManager } from "@/modules/view-manager";
 import { EditTrainerView } from "@/components/views/edit-trainer-view";
 import { EditTrainerClassView } from "@/components/views/edit-trainer-class-view";
-import { TrainersView } from "@/components/lists/trainer-list";
-import { TrainerClassesView } from "@/components/lists/trainer-class-list";
+import { TrainerList } from "@/components/lists/trainer-list";
+import { TrainerClassList } from "@/components/lists/trainer-class-list";
 import { ProjectManager } from "@/modules/project-manager";
 import { restoreState } from "@/store";
 import { EditMapView } from "@/components/views/edit-map-view";
-import { MovesView } from "@/components/lists/move-list";
-import { PokemonsView } from "@/components/lists/pokemon-list";
+import { MoveList } from "@/components/lists/move-list";
+import { PokemonList } from "@/components/lists/pokemon-list";
 import { EditMoveView } from "@/components/views/edit-move-view";
 import { TableStateInitial } from "@/components/table";
 import { EditPokemonView } from "@/components/views/edit-pokemon-view";
+import {
+  createSimpleListDialog,
+  ListView,
+  registerLists
+} from "@/components/lists/list";
+import { List } from "@/constants";
+import {
+  Abilities,
+  EncounterMusic,
+  EvoKinds,
+  GrowthRates,
+  MoveEffects,
+  MoveTargets,
+  Types
+} from "@/model/constants";
+import { ItemList } from "@/components/lists/item-list";
 
 Vue.use(PortalVue);
 
@@ -63,17 +79,27 @@ Vue.component("font-awesome-icon", FontAwesomeIcon);
 
 ViewManager.registerViews({
   "edit-trainer": EditTrainerView,
-  trainers: TrainersView,
-  "trainer-classes": TrainerClassesView,
   "edit-trainer-class": EditTrainerClassView,
   "edit-map-view": EditMapView,
-  moves: MovesView,
   "edit-move-view": EditMoveView,
   "edit-pokemon-view": EditPokemonView,
-  pokemons: PokemonsView
+  "list-view": ListView
 });
 
-ViewManager.push(TrainersView, TableStateInitial());
+registerLists({
+  [List.Pokemon]: PokemonList,
+  [List.Move]: MoveList,
+  [List.Trainer]: TrainerList,
+  [List.TrainerClass]: TrainerClassList,
+  [List.MoveTargets]: createSimpleListDialog(MoveTargets),
+  [List.MoveEffects]: createSimpleListDialog(MoveEffects),
+  [List.Types]: createSimpleListDialog(Types),
+  [List.Abilities]: createSimpleListDialog(Abilities),
+  [List.GrowthRates]: createSimpleListDialog(GrowthRates),
+  [List.EvoKinds]: createSimpleListDialog(EvoKinds),
+  [List.EncounterMusic]: createSimpleListDialog(EncounterMusic),
+  [List.Items]: ItemList
+});
 
 window.onbeforeunload = (e: Event) => {
   ProjectManager.Save();
@@ -83,8 +109,8 @@ if (process.env.NODE_ENV === "development") {
   const req = require.context("@/", false, /^\.\/dev\.ts$/);
   try {
     req("./dev.ts");
-  } catch {
-    console.log("You can run your own startup code by creating /src/dev.ts");
+  } catch (e) {
+    console.log("You can run your own startup code by creating /src/dev.ts", e);
   }
 } else {
   restoreState();

@@ -1,9 +1,8 @@
-import { GameModel } from "@/model/model";
-import { createList } from "@/components/lists/list";
-import { ChooseFromListDialog } from "@/components/dialogs/choose-from-list-dialog";
+import { GameModel, Item } from "@/model/model";
+import { ListSettings } from "@/components/lists/list";
 import { IDDisplay } from "@/components/displays/id-display";
 
-const ItemList = createList({
+export const ItemList: ListSettings<Item> = {
   model: () => GameModel.model.items,
   layout: [
     {
@@ -26,6 +25,4 @@ const ItemList = createList({
     ("#" + id.toUpperCase()).includes(input.toUpperCase()) ||
     item.name.toUpperCase().includes(input.toUpperCase()) ||
     item.pocket.toUpperCase().includes(input.toUpperCase())
-});
-
-export const ChooseItemDialog = ChooseFromListDialog(ItemList);
+};

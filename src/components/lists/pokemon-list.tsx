@@ -2,16 +2,13 @@ import { GameModel, Pokemon } from "@/model/model";
 import { Sprite } from "@/components/sprite";
 import { PathManager } from "@/modules/path-manager";
 import { stylesheet } from "typestyle";
-import { generateListComponents } from "@/components/lists/list";
+import { ListSettings } from "@/components/lists/list";
 import { IDDisplay } from "@/components/displays/id-display";
 import { EditPokemonView } from "@/components/views/edit-pokemon-view";
 
-export const {
-  view: PokemonsView,
-  dialog: ChoosePokemonDialog
-} = generateListComponents<Pokemon>({
+export const PokemonList: ListSettings<Pokemon> = {
   model: () => GameModel.model.pokemon,
-  viewTitle: "All Pokemon",
+  title: "All Pokemon",
   targetView: EditPokemonView,
   layout: [
     {
@@ -58,7 +55,7 @@ export const {
   filter: ([id, item], input) =>
     ("#" + id.toUpperCase()).includes(input.toUpperCase()) ||
     item.name.toUpperCase().includes(input.toUpperCase())
-});
+};
 
 const styles = stylesheet({
   pokeIcon: {

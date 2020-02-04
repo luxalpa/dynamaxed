@@ -1,15 +1,12 @@
-import { GameModel } from "@/model/model";
-import { generateListComponents } from "@/components/lists/list";
+import { GameModel, Move } from "@/model/model";
+import { ListSettings } from "@/components/lists/list";
 import { IDDisplay } from "@/components/displays/id-display";
 import { EditMoveView } from "@/components/views/edit-move-view";
 
-export const {
-  dialog: ChooseMoveDialog,
-  view: MovesView
-} = generateListComponents({
+export const MoveList: ListSettings<Move> = {
   model: () => GameModel.model.moves,
   targetView: EditMoveView,
-  viewTitle: "All Moves",
+  title: "All Moves",
   filter: ([id, move], input) =>
     ("#" + id.toUpperCase()).includes(input.toUpperCase()) ||
     move.name.toUpperCase().includes(input.toUpperCase()) ||
@@ -46,4 +43,4 @@ export const {
       render: (h, [, move]) => move.pp
     }
   ]
-});
+};

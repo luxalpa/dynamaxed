@@ -3,7 +3,7 @@ import { url } from "csx";
 import { GameModel, Trainer } from "@/model/model";
 import { EditTrainerView } from "@/components/views/edit-trainer-view";
 import { stylesheet } from "typestyle";
-import { generateListComponents } from "@/components/lists/list";
+import { ListSettings } from "@/components/lists/list";
 import { IDDisplay } from "@/components/displays/id-display";
 import { TrainerClassDefaultMoney } from "@/model/constants";
 
@@ -22,11 +22,8 @@ function calculateTrainerMoney(t: Trainer): number | undefined {
   return v;
 }
 
-export const {
-  view: TrainersView,
-  dialog: ChooseTrainerDialog
-} = generateListComponents<Trainer>({
-  viewTitle: "All Trainers",
+export const TrainerList: ListSettings<Trainer> = {
+  title: "All Trainers",
   targetView: EditTrainerView,
   model: () => GameModel.model.trainers,
   filter: ([id, trainer], input) =>
@@ -97,7 +94,7 @@ export const {
       }
     }
   ]
-});
+};
 
 const styles = stylesheet({
   trainerPic: {

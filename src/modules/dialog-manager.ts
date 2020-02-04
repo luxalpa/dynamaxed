@@ -1,4 +1,6 @@
 import { Prop, Vue } from "vue-property-decorator";
+import { List } from "@/constants";
+import { ListDialog } from "@/components/lists/list";
 
 export class Dialog<T, U> extends Vue {
   @Prop() args!: T;
@@ -50,6 +52,13 @@ export const DialogManager = new (class {
 
   reject(id: number) {
     this.closeDialog(id).resolve(undefined);
+  }
+
+  async openListDialog(list: List, key: string = "") {
+    return this.openDialog(ListDialog, {
+      list,
+      key
+    });
   }
 
   async openDialog<T, U>(

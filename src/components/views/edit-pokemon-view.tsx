@@ -14,16 +14,9 @@ import { Dialog, DialogManager } from "@/modules/dialog-manager";
 import { InputTextDialog } from "@/components/dialogs/input-text-dialog";
 import { createTextValidator, validateID } from "@/input-validators";
 import { IDManager } from "@/modules/id-manager";
-import {
-  ChooseAbilityDialog,
-  ChooseEvoKindDialog,
-  ChooseGrowthRateDialog,
-  ChooseTypeDialog
-} from "@/components/dialogs/simple-list-dialogs";
 import { InputNumberDialog } from "@/components/dialogs/input-number-dialog";
-import { ChooseItemDialog } from "@/components/lists/item-list";
-import { ChoosePokemonDialog } from "@/components/lists/pokemon-list";
 import { ItemDisplay } from "@/components/displays/item-display";
+import { List } from "@/constants";
 
 async function changeID(pokemonID: string) {
   const newID = await DialogManager.openDialog(InputTextDialog, {
@@ -50,14 +43,14 @@ async function changeName(mon: Pokemon) {
 async function chooseFromList<T extends Object>(
   obj: T,
   prop: keyof T & string,
-  dialog: new () => Dialog<string, string>
+  list: List
 ) {
   const x = obj[prop];
   if (typeof x !== "string") {
     throw new Error("Needs a string");
   }
 
-  const v = await DialogManager.openDialog(dialog, x);
+  const v = await DialogManager.openListDialog(list, x);
   if (v !== undefined) {
     Vue.set(obj, prop, v);
   }
@@ -101,7 +94,7 @@ function defaultEvoParam(kind: string): string | number {
 
 async function changeEvoKind(evo: PokemonEvolution) {
   const before = evo.kind;
-  await chooseFromList(evo, "kind", ChooseEvoKindDialog);
+  await chooseFromList(evo, "kind", List.EvoKinds);
   if (evo.kind !== before) {
     evo.param = defaultEvoParam(evo.kind);
   }
@@ -167,13 +160,13 @@ export class EditPokemonView extends View<string> {
             <Label width={2}>Type</Label>
             <Button
               width={3}
-              onclick={() => chooseFromList(pokemon, "type1", ChooseTypeDialog)}
+              onclick={() => chooseFromList(pokemon, "type1", List.Types)}
             >
               {this.pokemon.type1}
             </Button>
             <Button
               width={3}
-              onclick={() => chooseFromList(pokemon, "type2", ChooseTypeDialog)}
+              onclick={() => chooseFromList(pokemon, "type2", List.Types)}
             >
               {this.pokemon.type2}
             </Button>
@@ -183,7 +176,7 @@ export class EditPokemonView extends View<string> {
             <Button
               width={5}
               onclick={() =>
-                chooseFromList(pokemon, "ability1", ChooseAbilityDialog)
+                chooseFromList(pokemon, "ability1", List.Abilities)
               }
             >
               {this.pokemon.ability1}
@@ -194,7 +187,7 @@ export class EditPokemonView extends View<string> {
             <Button
               width={5}
               onclick={() =>
-                chooseFromList(pokemon, "ability2", ChooseAbilityDialog)
+                chooseFromList(pokemon, "ability2", List.Abilities)
               }
             >
               {this.pokemon.ability2}
@@ -254,7 +247,7 @@ export class EditPokemonView extends View<string> {
             <Button
               width={5}
               onclick={() =>
-                chooseFromList(pokemon, "growthRate", ChooseGrowthRateDialog)
+                chooseFromList(pokemon, "growthRate", List.GrowthRates)
               }
             >
               {this.pokemon.growthRate}
@@ -332,7 +325,7 @@ export class EditPokemonView extends View<string> {
             <Label width={3}>Held items</Label>
             <Button
               width={5}
-              onclick={() => chooseFromList(pokemon, "item1", ChooseItemDialog)}
+              onclick={() => chooseFromList(pokemon, "item1", List.Items)}
             >
               {this.pokemon.item1}
             </Button>
@@ -341,7 +334,7 @@ export class EditPokemonView extends View<string> {
             <Spacer width={3} />
             <Button
               width={5}
-              onclick={() => chooseFromList(pokemon, "item2", ChooseItemDialog)}
+              onclick={() => chooseFromList(pokemon, "item2", List.Items)}
             >
               {this.pokemon.item2}
             </Button>
@@ -450,9 +443,7 @@ class EvoEntry extends Vue {
       switch (evo.kind) {
         case "ITEM":
           return (
-            <Button
-              onclick={() => chooseFromList(evo, "param", ChooseItemDialog)}
-            >
+            <Button onclick={() => chooseFromList(evo, "param", List.Items)}>
               {typeof evo.param === "string" ? (
                 <ItemDisplay item={evo.param} />
               ) : (
@@ -474,9 +465,9 @@ class EvoEntry extends Vue {
         <Button
           width={3}
           height={3}
-          onclick={() =>
-            chooseFromList(evo, "evolvedForm", ChoosePokemonDialog)
-          }
+          // onclick={() =>
+          // chooseFromList(evo, "evolvedForm", ChoosePokemonDialog)
+          //}
         >
           <Sprite src={PathManager.pokePic(evo.evolvedForm)} />
         </Button>

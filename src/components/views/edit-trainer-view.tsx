@@ -18,15 +18,12 @@ import { IDManager } from "@/modules/id-manager";
 import { ItemDisplay } from "@/components/displays/item-display";
 import { MoveDisplay } from "@/components/displays/move-display";
 import { extendArray, getDefaultMovesForMon } from "@/utils";
-import { ChooseTrainerClassDialog } from "@/components/lists/trainer-class-list";
-import { ChooseItemDialog } from "@/components/lists/item-list";
-import { ChoosePokemonDialog } from "@/components/lists/pokemon-list";
-import { ChooseEncounterMusicDialog } from "@/components/dialogs/simple-list-dialogs";
-import { ChooseMoveDialog } from "@/components/lists/move-list";
 import { Portal } from "portal-vue";
 import { EditTrainerClassView } from "@/components/views/edit-trainer-class-view";
 import { IDDisplay } from "@/components/displays/id-display";
 import { EditMoveView } from "@/components/views/edit-move-view";
+import { ListDialog } from "@/components/lists/list";
+import { List } from "@/constants";
 
 @Component
 export class EditTrainerView extends View<string> {
@@ -84,18 +81,18 @@ export class EditTrainerView extends View<string> {
   }
 
   async changeTrainerClass() {
-    const trainerClass = await DialogManager.openDialog(
-      ChooseTrainerClassDialog,
-      this.trainer.trainerClass
-    );
+    const trainerClass = await DialogManager.openDialog(ListDialog, {
+      list: List.TrainerClass,
+      key: this.trainer.trainerClass
+    });
     if (trainerClass !== undefined) {
       this.trainer.trainerClass = trainerClass;
     }
   }
 
   async changeEncounterMusic() {
-    const encounterMusic = await DialogManager.openDialog(
-      ChooseEncounterMusicDialog,
+    const encounterMusic = await DialogManager.openListDialog(
+      List.EncounterMusic,
       this.trainer.encounterMusic
     );
     if (encounterMusic !== undefined) {
@@ -104,8 +101,8 @@ export class EditTrainerView extends View<string> {
   }
 
   async changeItem(pos: number) {
-    const item = await DialogManager.openDialog(
-      ChooseItemDialog,
+    const item = await DialogManager.openListDialog(
+      List.Items,
       this.trainer.items[pos]
     );
     if (item !== undefined) {
@@ -118,7 +115,7 @@ export class EditTrainerView extends View<string> {
   }
 
   async addItem() {
-    const item = await DialogManager.openDialog(ChooseItemDialog, "");
+    const item = await DialogManager.openListDialog(List.Items, "");
     if (item !== undefined) {
       this.trainer.items.push(item);
     }
@@ -138,17 +135,20 @@ export class EditTrainerView extends View<string> {
   }
 
   async changePokemon(pos: number) {
-    const species = await DialogManager.openDialog(
-      ChoosePokemonDialog,
-      this.trainer.party[pos].species
-    );
+    const species = await DialogManager.openDialog(ListDialog, {
+      list: List.Pokemon,
+      key: this.trainer.party[pos].species
+    });
     if (species !== undefined) {
       this.trainer.party[pos].species = species;
     }
   }
 
   async addMon() {
-    const species = await DialogManager.openDialog(ChoosePokemonDialog, "");
+    const species = await DialogManager.openDialog(ListDialog, {
+      list: List.Pokemon,
+      key: ""
+    });
     if (species !== undefined) {
       this.trainer.party.push({
         lvl: -1,
@@ -165,7 +165,7 @@ export class EditTrainerView extends View<string> {
   }
 
   async changeHeldItem(mon: TrainerPartyMon) {
-    const item = await DialogManager.openDialog(ChooseItemDialog, mon.heldItem);
+    const item = await DialogManager.openListDialog(List.Items, mon.heldItem);
     if (item !== undefined) {
       mon.heldItem = item;
     }
@@ -192,10 +192,10 @@ export class EditTrainerView extends View<string> {
   }
 
   async changeMove(mon: TrainerPartyMon, pos: number) {
-    const move = await DialogManager.openDialog(
-      ChooseMoveDialog,
-      mon.moves?.[pos] || ""
-    );
+    const move = await DialogManager.openDialog(ListDialog, {
+      list: List.Move,
+      key: mon.moves?.[pos] || ""
+    });
     if (move === undefined) {
       return;
     }

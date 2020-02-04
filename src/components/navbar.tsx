@@ -1,40 +1,38 @@
 import { Component, Vue } from "vue-property-decorator";
 import { classes, stylesheet } from "typestyle";
 import { Theme } from "@/theming";
-import { View, ViewManager } from "@/modules/view-manager";
+import { ViewManager } from "@/modules/view-manager";
 import { px } from "csx";
-import { TrainersView } from "@/components/lists/trainer-list";
-import { TrainerClassesView } from "@/components/lists/trainer-class-list";
-import { MovesView } from "@/components/lists/move-list";
-import { PokemonsView } from "@/components/lists/pokemon-list";
-import { TableState, TableStateInitial } from "@/components/table";
+import { TableStateInitial } from "@/components/table";
+import { List } from "@/constants";
+import { ListView } from "@/components/lists/list";
 
 interface NavElement {
   isSubElement?: boolean;
   text: string;
-  switchToView: new () => View<TableState>;
+  switchToList: List;
 }
 
 const navElements: NavElement[] = [
   {
     text: "Trainers",
     isSubElement: false,
-    switchToView: TrainersView
+    switchToList: List.Trainer
   },
   {
     text: "Trainer Classes",
     isSubElement: true,
-    switchToView: TrainerClassesView
+    switchToList: List.TrainerClass
   },
   {
     text: "Moves",
     isSubElement: false,
-    switchToView: MovesView
+    switchToList: List.Move
   },
   {
     text: "Pokemon",
     isSubElement: false,
-    switchToView: PokemonsView
+    switchToList: List.Pokemon
   }
 ];
 
@@ -43,7 +41,10 @@ const navElements: NavElement[] = [
 })
 export class Navbar extends Vue {
   jumpToEntry(entry: NavElement) {
-    ViewManager.push(entry.switchToView, TableStateInitial());
+    ViewManager.push(ListView, {
+      tableState: TableStateInitial(),
+      list: entry.switchToList
+    });
   }
 
   render() {

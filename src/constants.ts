@@ -1,5 +1,15 @@
 import { px } from "csx";
 import { NestedCSSProperties } from "typestyle/lib/types";
+import { createSimpleListDialog } from "@/components/lists/list";
+import {
+  Abilities,
+  EncounterMusic,
+  EvoKinds,
+  GrowthRates,
+  MoveEffects,
+  MoveTargets,
+  Types
+} from "@/model/constants";
 
 const gridSize = 25;
 const margin = 2;
@@ -28,3 +38,18 @@ export const Constants = {
     };
   }
 };
+
+export enum List {
+  Pokemon = "pokemons",
+  Trainer = "trainers",
+  Move = "moves",
+  TrainerClass = "trainer-classes",
+  MoveTargets = "move-targets",
+  MoveEffects = "move-effects",
+  Types = "types",
+  Abilities = "abilities",
+  GrowthRates = "growth-rates",
+  EvoKinds = "evo-kinds",
+  EncounterMusic = "encounter-music",
+  Items = "items"
+}

@@ -1,15 +1,12 @@
 import { GameModel, TrainerClass } from "@/model/model";
 import { EditTrainerClassView } from "@/components/views/edit-trainer-class-view";
-import { generateListComponents } from "@/components/lists/list";
+import { ListSettings } from "@/components/lists/list";
 import { style } from "typestyle";
 import { IDDisplay } from "@/components/displays/id-display";
 import { TrainerClassDefaultMoney } from "@/model/constants";
 
-export const {
-  view: TrainerClassesView,
-  dialog: ChooseTrainerClassDialog
-} = generateListComponents<TrainerClass>({
-  viewTitle: "All Trainer Classes",
+export const TrainerClassList: ListSettings<TrainerClass> = {
+  title: "All Trainer Classes",
   targetView: EditTrainerClassView,
   model: () => GameModel.model.trainerClasses,
   defaultObj: () => ({
@@ -41,7 +38,7 @@ export const {
   filter: ([id, trainerClass], input) =>
     ("#" + id.toUpperCase()).includes(input.toUpperCase()) ||
     trainerClass.name.toUpperCase().includes(input.toUpperCase())
-});
+};
 
 const styleMoney = style({
   textAlign: "right"

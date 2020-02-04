@@ -10,6 +10,8 @@ import { InputTextDialog } from "@/components/dialogs/input-text-dialog";
 import { IDManager } from "@/modules/id-manager";
 import { Portal } from "portal-vue";
 import { IDDisplay } from "@/components/displays/id-display";
+import { ListDialog } from "@/components/lists/list";
+import { List } from "@/constants";
 
 @Component
 export class EditTrainerClassView extends View<string> {
@@ -68,15 +70,13 @@ export class EditTrainerClassView extends View<string> {
         t => t.trainerClass === this.classID
       )
     ) {
-      // We must lazy load this to avoid import cycle -_-
-      const { ChooseTrainerClassDialog } = await import(
-        "@/components/lists/trainer-class-list"
-      );
-
       const replaceID = await DialogManager.openDialogWithLabel(
         `Select another TrainerClass to replace all usages of this one`,
-        ChooseTrainerClassDialog,
-        ""
+        ListDialog,
+        {
+          list: List.TrainerClass,
+          key: ""
+        }
       );
       if (!replaceID) {
         return;
