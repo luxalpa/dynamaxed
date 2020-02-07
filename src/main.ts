@@ -53,6 +53,7 @@ import {
   Types
 } from "@/model/constants";
 import { ItemList } from "@/components/lists/item-list";
+import { TMHMList } from "@/components/lists/tm-hm-list";
 
 Vue.use(PortalVue);
 
@@ -98,7 +99,8 @@ registerLists({
   [List.GrowthRates]: createSimpleListDialog(GrowthRates),
   [List.EvoKinds]: createSimpleListDialog(EvoKinds),
   [List.EncounterMusic]: createSimpleListDialog(EncounterMusic),
-  [List.Items]: ItemList
+  [List.Items]: ItemList,
+  [List.TMHMs]: TMHMList
 });
 
 window.onbeforeunload = (e: Event) => {

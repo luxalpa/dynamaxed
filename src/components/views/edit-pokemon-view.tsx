@@ -10,7 +10,7 @@ import { Sprite } from "@/components/sprite";
 import { PathManager } from "@/modules/path-manager";
 import { Spacer } from "@/components/spacer";
 import { MoveDisplay } from "@/components/displays/move-display";
-import { Dialog, DialogManager } from "@/modules/dialog-manager";
+import { DialogManager } from "@/modules/dialog-manager";
 import { InputTextDialog } from "@/components/dialogs/input-text-dialog";
 import { createTextValidator, validateID } from "@/input-validators";
 import { IDManager } from "@/modules/id-manager";
@@ -79,8 +79,19 @@ async function chooseNumber<T extends Object>(
 
 function removeEvo(mon: Pokemon, pos: number) {
   if (mon.evos !== undefined) {
-    Vue.delete(mon.evos, 3);
+    Vue.delete(mon.evos, pos);
   }
+}
+
+function addEvo(mon: Pokemon) {
+  if (mon.evos === undefined) {
+    Vue.set(mon, "evos", []);
+  }
+  mon.evos!.push({
+    kind: "LEVEL",
+    param: 0,
+    evolvedForm: "NONE"
+  });
 }
 
 function defaultEvoParam(kind: string): string | number {
@@ -98,6 +109,84 @@ async function changeEvoKind(evo: PokemonEvolution) {
   if (evo.kind !== before) {
     evo.param = defaultEvoParam(evo.kind);
   }
+}
+
+function sortMoves(mon: Pokemon) {
+  mon.moves.sort((a, b) => a.level - b.level);
+}
+
+function removeMove(mon: Pokemon, pos: number) {
+  Vue.delete(mon.moves, pos);
+}
+
+function addMove(mon: Pokemon) {
+  mon.moves.push({
+    level: 999,
+    move: "NONE"
+  });
+}
+
+function removeTutorMove(mon: Pokemon, pos: number) {
+  Vue.delete(mon.tutorMoves, pos);
+}
+
+async function addTutorMove(mon: Pokemon) {
+  const v = await DialogManager.openListDialog(List.Move);
+  if (v !== undefined) {
+    mon.tutorMoves.push(v);
+  }
+}
+
+async function changeTutorMove(mon: Pokemon, pos: number) {
+  const v = await DialogManager.openListDialog(List.Move, mon.tutorMoves[pos]);
+  if (v !== undefined) {
+    Vue.set(mon.tutorMoves, pos, v);
+  }
+}
+function removeEggMove(mon: Pokemon, pos: number) {
+  Vue.delete(mon.eggMoves!, pos);
+}
+
+async function addEggMove(mon: Pokemon) {
+  const v = await DialogManager.openListDialog(List.Move);
+  if (v !== undefined) {
+    if (mon.eggMoves === undefined) {
+      Vue.set(mon, "eggMoves", [v]);
+    } else {
+      mon.eggMoves.push(v);
+    }
+  }
+}
+
+async function changeEggMove(mon: Pokemon, pos: number) {
+  const v = await DialogManager.openListDialog(List.Move, mon.eggMoves![pos]);
+  if (v !== undefined) {
+    Vue.set(mon.eggMoves!, pos, v);
+  }
+}
+
+async function changeTM(mon: Pokemon, pos: number) {
+  const v = await DialogManager.openListDialog(List.TMHMs);
+  if (v !== undefined) {
+    Vue.set(mon.tmhmLearnset, pos, v);
+    sortTMs(mon);
+  }
+}
+
+async function addTM(mon: Pokemon) {
+  const v = await DialogManager.openListDialog(List.TMHMs);
+  if (v !== undefined) {
+    mon.tmhmLearnset.push(v);
+    sortTMs(mon);
+  }
+}
+
+function sortTMs(mon: Pokemon) {
+  mon.tmhmLearnset.sort();
+}
+
+function removeTM(mon: Pokemon, pos: number) {
+  Vue.delete(mon.tmhmLearnset, pos);
 }
 
 @Component
@@ -356,75 +445,97 @@ export class EditPokemonView extends View<string> {
             <EvoEntry evo={evo} onremove={() => removeEvo(pokemon, i)} />
           ))}
           <FlexRow>
-            <Button width={8}>Add</Button>
+            <Button width={8} onclick={() => addEvo(pokemon)}>
+              Add
+            </Button>
           </FlexRow>
         </Window>
         <Window>
           <FlexRow>
             <Label>Learn Set</Label>
           </FlexRow>
-          {this.pokemon.moves.map(move => (
+          {this.pokemon.moves.map((move, i) => (
             <FlexRow>
-              <Button width={2}>{move.level}</Button>
-              <Button width={5}>
+              <Button
+                width={2}
+                onclick={() =>
+                  chooseNumber(move, "level").then(() => sortMoves(pokemon))
+                }
+              >
+                {move.level}
+              </Button>
+              <Button
+                width={5}
+                onclick={() => chooseFromList(move, "move", List.Move)}
+              >
                 <MoveDisplay move={move.move} />
               </Button>
-              <Button width={1}>
+              <Button width={1} onclick={() => removeMove(pokemon, i)}>
                 <font-awesome-icon icon={["fas", "times"]} />
               </Button>
             </FlexRow>
           ))}
           <FlexRow>
-            <Button width={8}>Add</Button>
+            <Button width={8} onclick={() => addMove(pokemon)}>
+              Add
+            </Button>
           </FlexRow>
 
           <FlexRow>
             <Label>TMs / HMs</Label>
           </FlexRow>
-          {this.pokemon.tmhmLearnset.map(tm => (
+          {pokemon.tmhmLearnset.map((tm, i) => (
             <FlexRow>
-              <Button width={7}>{tm}</Button>
-              <Button width={1}>
+              <Button width={7} onclick={() => changeTM(pokemon, i)}>
+                {tm}
+              </Button>
+              <Button width={1} onclick={() => removeTM(pokemon, i)}>
                 <font-awesome-icon icon={["fas", "times"]} />
               </Button>
             </FlexRow>
           ))}
           <FlexRow>
-            <Button width={8}>Add</Button>
+            <Button width={8} onclick={() => addTM(pokemon)}>
+              Add
+            </Button>
           </FlexRow>
 
           <FlexRow>
             <Label>Tutor Moves</Label>
           </FlexRow>
-          {this.pokemon.tutorMoves.map(tm => (
+          {pokemon.tutorMoves.map((tm, i) => (
             <FlexRow>
-              <Button width={7}>
+              <Button width={7} onclick={() => changeTutorMove(pokemon, i)}>
                 <MoveDisplay move={tm} />
               </Button>
-              <Button width={1}>
+              <Button width={1} onclick={() => removeTutorMove(pokemon, i)}>
                 <font-awesome-icon icon={["fas", "times"]} />
               </Button>
             </FlexRow>
           ))}
           <FlexRow>
-            <Button width={8}>Add</Button>
+            <Button width={8} onclick={() => addTutorMove(pokemon)}>
+              Add
+            </Button>
           </FlexRow>
 
           <FlexRow>
             <Label>Egg Moves</Label>
           </FlexRow>
-          {this.pokemon.eggMoves?.map(em => (
+          {pokemon.eggMoves?.map((em, i) => (
             <FlexRow>
-              <Button width={7}>
+              <Button width={7} onclick={() => changeEggMove(pokemon, i)}>
                 <MoveDisplay move={em} />
               </Button>
-              <Button width={1}>
+              <Button width={1} onclick={() => removeEggMove(pokemon, i)}>
                 <font-awesome-icon icon={["fas", "times"]} />
               </Button>
             </FlexRow>
           ))}
           <FlexRow>
-            <Button width={8}>Add</Button>
+            <Button width={8} onclick={() => addEggMove(pokemon)}>
+              Add
+            </Button>
           </FlexRow>
         </Window>
       </WindowLayout>
@@ -465,9 +576,7 @@ class EvoEntry extends Vue {
         <Button
           width={3}
           height={3}
-          // onclick={() =>
-          // chooseFromList(evo, "evolvedForm", ChoosePokemonDialog)
-          //}
+          onclick={() => chooseFromList(evo, "evolvedForm", List.Pokemon)}
         >
           <Sprite src={PathManager.pokePic(evo.evolvedForm)} />
         </Button>

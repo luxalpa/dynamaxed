@@ -51,5 +51,6 @@ export enum List {
   GrowthRates = "growth-rates",
   EvoKinds = "evo-kinds",
   EncounterMusic = "encounter-music",
-  Items = "items"
+  Items = "items",
+  TMHMs = "tmhms"
 }
