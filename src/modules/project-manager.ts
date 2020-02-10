@@ -4,6 +4,10 @@ import fs from "fs";
 import path from "path";
 import { makePersistent, persistState } from "@/store";
 import { Vue } from "vue-property-decorator";
+import { ViewManager } from "@/modules/view-manager";
+import { ListView } from "@/components/lists/list";
+import { List } from "@/constants";
+import { TableStateInitial } from "@/components/table";
 
 export interface IRecentProject {
   name: string;
@@ -56,6 +60,10 @@ export const ProjectManager = new (class {
     }
 
     this.openProject(filePaths[0]);
+    ViewManager.push(ListView, {
+      tableState: TableStateInitial(),
+      list: List.Trainer
+    });
   }
 
   Save() {

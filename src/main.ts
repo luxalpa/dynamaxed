@@ -107,7 +107,7 @@ window.onbeforeunload = (e: Event) => {
   ProjectManager.Save();
 };
 
-if (process.env.NODE_ENV === "development") {
+if (process.env.NODE_ENV == "development") {
   const req = require.context("@/", false, /^\.\/dev\.ts$/);
   try {
     req("./dev.ts");

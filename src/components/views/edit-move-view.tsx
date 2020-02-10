@@ -14,7 +14,6 @@ import { IDManager } from "@/modules/id-manager";
 import { InputTextAreaDialog } from "@/components/dialogs/input-text-area-dialog";
 import { InputNumberDialog } from "@/components/dialogs/input-number-dialog";
 import { Spacer } from "@/components/spacer";
-import { ListDialog } from "@/components/lists/list";
 import { List } from "@/constants";
 
 @Component
@@ -107,8 +106,8 @@ export class EditMoveView extends View<string> {
   async changePP() {
     const pp = await DialogManager.openDialog(InputNumberDialog, {
       value: this.move.pp,
-      min: -127,
-      max: 128
+      min: 0,
+      max: 99
     });
     if (pp !== undefined) {
       this.move.pp = pp;
@@ -117,8 +116,8 @@ export class EditMoveView extends View<string> {
   async changePower() {
     const power = await DialogManager.openDialog(InputNumberDialog, {
       value: this.move.power,
-      min: -127,
-      max: 128
+      min: 0,
+      max: 255
     });
     if (power !== undefined) {
       this.move.power = power;
@@ -127,8 +126,8 @@ export class EditMoveView extends View<string> {
   async changeAccuracy() {
     const accuracy = await DialogManager.openDialog(InputNumberDialog, {
       value: this.move.accuracy,
-      min: -127,
-      max: 128
+      min: 0,
+      max: 255
     });
     if (accuracy !== undefined) {
       this.move.accuracy = accuracy;
