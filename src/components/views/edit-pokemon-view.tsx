@@ -1,5 +1,5 @@
 import { Component, Prop, Vue } from "vue-property-decorator";
-import { View } from "@/modules/view-manager";
+import { View, ViewManager } from "@/modules/view-manager";
 import { FlexColumn, FlexRow, Window, WindowLayout } from "@/components/layout";
 import { Portal } from "portal-vue";
 import { IDDisplay } from "@/components/displays/id-display";
@@ -18,6 +18,7 @@ import { InputNumberDialog } from "@/components/dialogs/input-number-dialog";
 import { ItemDisplay } from "@/components/displays/item-display";
 import { List } from "@/constants";
 import { chooseFromList, chooseNumber } from "@/components/views/utils";
+import { EditMoveView } from "@/components/views/edit-move-view";
 
 async function changeID(pokemonID: string) {
   const newID = await DialogManager.openDialog(InputTextDialog, {
@@ -434,6 +435,7 @@ export class EditPokemonView extends View<string> {
               <Button
                 width={5}
                 onclick={() => chooseFromList(move, "move", List.Move)}
+                onnavigate={() => ViewManager.push(EditMoveView, move.move)}
               >
                 <MoveDisplay move={move.move} />
               </Button>
@@ -472,7 +474,11 @@ export class EditPokemonView extends View<string> {
           </FlexRow>
           {pokemon.tutorMoves.map((tm, i) => (
             <FlexRow>
-              <Button width={7} onclick={() => changeTutorMove(pokemon, i)}>
+              <Button
+                width={7}
+                onnavigate={() => ViewManager.push(EditMoveView, tm)}
+                onclick={() => changeTutorMove(pokemon, i)}
+              >
                 <MoveDisplay move={tm} />
               </Button>
               <Button width={1} onclick={() => removeTutorMove(pokemon, i)}>
@@ -491,7 +497,11 @@ export class EditPokemonView extends View<string> {
           </FlexRow>
           {pokemon.eggMoves?.map((em, i) => (
             <FlexRow>
-              <Button width={7} onclick={() => changeEggMove(pokemon, i)}>
+              <Button
+                width={7}
+                onnavigate={() => ViewManager.push(EditMoveView, em)}
+                onclick={() => changeEggMove(pokemon, i)}
+              >
                 <MoveDisplay move={em} />
               </Button>
               <Button width={1} onclick={() => removeEggMove(pokemon, i)}>
@@ -543,6 +553,7 @@ class EvoEntry extends Vue {
         <Button
           width={3}
           height={3}
+          onnavigate={() => ViewManager.push(EditPokemonView, evo.evolvedForm)}
           onclick={() => chooseFromList(evo, "evolvedForm", List.Pokemon)}
         >
           <Sprite src={PathManager.pokePic(evo.evolvedForm)} />
