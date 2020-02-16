@@ -1,15 +1,5 @@
 import { px } from "csx";
 import { NestedCSSProperties } from "typestyle/lib/types";
-import { createSimpleListDialog } from "@/components/lists/list";
-import {
-  Abilities,
-  EncounterMusic,
-  EvoKinds,
-  GrowthRates,
-  MoveEffects,
-  MoveTargets,
-  Types
-} from "@/model/constants";
 
 const gridSize = 25;
 const margin = 2;

@@ -464,14 +464,42 @@ export const Abilities = [
   "AIR_LOCK"
 ];
 
-export const GrowthRates = [
-  "MEDIUM_FAST",
-  "ERRATIC",
-  "FLUCTUATING",
-  "MEDIUM_SLOW",
-  "FAST",
-  "SLOW"
-];
+export interface GrowthRate {
+  atLevel: (level: number) => number;
+}
+
+export const GrowthRates: Record<string, GrowthRate> = {
+  MEDIUM_FAST: {
+    atLevel: level => level ** 3
+  },
+  ERRATIC: {
+    atLevel: n =>
+      n <= 50
+        ? ((100 - n) * n ** 3) / 50
+        : n <= 68
+        ? ((150 - n) * n ** 3) / 100
+        : n <= 98
+        ? (((1911 - 10 * n) / 3) * n ** 3) / 500
+        : ((160 - n) * n ** 3) / 100
+  },
+  FLUCTUATING: {
+    atLevel: n =>
+      n <= 15
+        ? (((n + 1) / 3 + 24) * n ** 3) / 50
+        : n <= 36
+        ? ((n + 14) * n ** 3) / 50
+        : ((n / 2 + 32) * n ** 3) / 50
+  },
+  MEDIUM_SLOW: {
+    atLevel: n => (6 * n ** 3) / 5 - 15 * n ** 2 + 100 * n - 140
+  },
+  FAST: {
+    atLevel: n => (4 * n ** 3) / 5
+  },
+  SLOW: {
+    atLevel: n => (5 * n ** 3) / 4
+  }
+};
 
 export const EvoKinds = [
   "FRIENDSHIP",

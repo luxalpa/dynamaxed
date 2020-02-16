@@ -35,7 +35,6 @@ import { EditMapView } from "@/components/views/edit-map-view";
 import { MoveList } from "@/components/lists/move-list";
 import { PokemonList } from "@/components/lists/pokemon-list";
 import { EditMoveView } from "@/components/views/edit-move-view";
-import { TableStateInitial } from "@/components/table";
 import { EditPokemonView } from "@/components/views/edit-pokemon-view";
 import {
   createSimpleListDialog,
@@ -47,13 +46,13 @@ import {
   Abilities,
   EncounterMusic,
   EvoKinds,
-  GrowthRates,
   MoveEffects,
   MoveTargets,
   Types
 } from "@/model/constants";
 import { ItemList } from "@/components/lists/item-list";
 import { TMHMList } from "@/components/lists/tm-hm-list";
+import { GrowthRatesList } from "@/components/lists/growth-rates-list";
 
 Vue.use(PortalVue);
 
@@ -96,7 +95,7 @@ registerLists({
   [List.MoveEffects]: createSimpleListDialog(MoveEffects),
   [List.Types]: createSimpleListDialog(Types),
   [List.Abilities]: createSimpleListDialog(Abilities),
-  [List.GrowthRates]: createSimpleListDialog(GrowthRates),
+  [List.GrowthRates]: GrowthRatesList,
   [List.EvoKinds]: createSimpleListDialog(EvoKinds),
   [List.EncounterMusic]: createSimpleListDialog(EncounterMusic),
   [List.Items]: ItemList,

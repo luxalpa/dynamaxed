@@ -17,6 +17,7 @@ import { IDManager } from "@/modules/id-manager";
 import { InputNumberDialog } from "@/components/dialogs/input-number-dialog";
 import { ItemDisplay } from "@/components/displays/item-display";
 import { List } from "@/constants";
+import { chooseFromList, chooseNumber } from "@/components/views/utils";
 
 async function changeID(pokemonID: string) {
   const newID = await DialogManager.openDialog(InputTextDialog, {
@@ -37,43 +38,6 @@ async function changeName(mon: Pokemon) {
 
   if (name !== undefined) {
     mon.name = name;
-  }
-}
-
-async function chooseFromList<T extends Object>(
-  obj: T,
-  prop: keyof T & string,
-  list: List
-) {
-  const x = obj[prop];
-  if (typeof x !== "string") {
-    throw new Error("Needs a string");
-  }
-
-  const v = await DialogManager.openListDialog(list, x);
-  if (v !== undefined) {
-    Vue.set(obj, prop, v);
-  }
-}
-
-async function chooseNumber<T extends Object>(
-  obj: T,
-  stat: keyof T & string,
-  max?: number
-) {
-  const originalValue = obj[stat];
-
-  if (typeof originalValue !== "number") {
-    throw new Error("Only works for numeric stats!");
-  }
-
-  const v = await DialogManager.openDialog(InputNumberDialog, {
-    value: originalValue,
-    min: 0,
-    max: max || 255
-  });
-  if (v !== undefined) {
-    Vue.set(obj, stat, v);
   }
 }
 

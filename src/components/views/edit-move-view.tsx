@@ -15,6 +15,7 @@ import { InputTextAreaDialog } from "@/components/dialogs/input-text-area-dialog
 import { InputNumberDialog } from "@/components/dialogs/input-number-dialog";
 import { Spacer } from "@/components/spacer";
 import { List } from "@/constants";
+import { chooseNumber } from "@/components/views/utils";
 
 @Component
 export class EditMoveView extends View<string> {
@@ -188,7 +189,14 @@ export class EditMoveView extends View<string> {
           </FlexRow>
           <FlexRow>
             <Label width={5}>Secondary Effect %</Label>
-            <Button width={3}>{this.move.secondaryEffectChance}</Button>
+            <Button
+              onclick={() =>
+                chooseNumber(this.move, "secondaryEffectChance", 255)
+              }
+              width={3}
+            >
+              {this.move.secondaryEffectChance}
+            </Button>
           </FlexRow>
           <FlexRow>
             <Label width={3}>Target</Label>

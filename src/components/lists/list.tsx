@@ -14,7 +14,7 @@ export interface ListSettings<T> {
   defaultObj?: () => T;
   layout: Column<[string, T]>[];
   targetView?: new () => View<string>;
-  filter?: FilterFn<[string, T]>;
+  filter: FilterFn<[string, T]>;
   title?: string;
 }
 
