@@ -95,14 +95,17 @@ function removeTutorMove(mon: Pokemon, pos: number) {
 }
 
 async function addTutorMove(mon: Pokemon) {
-  const v = await DialogManager.openListDialog(List.Move);
+  const v = await DialogManager.openListDialog(List.TutorMoves);
   if (v !== undefined) {
     mon.tutorMoves.push(v);
   }
 }
 
 async function changeTutorMove(mon: Pokemon, pos: number) {
-  const v = await DialogManager.openListDialog(List.Move, mon.tutorMoves[pos]);
+  const v = await DialogManager.openListDialog(
+    List.TutorMoves,
+    mon.tutorMoves[pos]
+  );
   if (v !== undefined) {
     Vue.set(mon.tutorMoves, pos, v);
   }

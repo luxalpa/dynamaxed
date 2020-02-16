@@ -518,3 +518,36 @@ export const EvoKinds = [
   "LEVEL_SHEDINJA",
   "BEAUTY"
 ];
+
+export const TutorMoves = [
+  "MEGA_PUNCH",
+  "SWORDS_DANCE",
+  "MEGA_KICK",
+  "BODY_SLAM",
+  "DOUBLE_EDGE",
+  "COUNTER",
+  "SEISMIC_TOSS",
+  "MIMIC",
+  "METRONOME",
+  "SOFT_BOILED",
+  "DREAM_EATER",
+  "THUNDER_WAVE",
+  "EXPLOSION",
+  "ROCK_SLIDE",
+  "SUBSTITUTE",
+  "DYNAMIC_PUNCH",
+  "ROLLOUT",
+  "PSYCH_UP",
+  "SNORE",
+  "ICY_WIND",
+  "ENDURE",
+  "MUD_SLAP",
+  "ICE_PUNCH",
+  "SWAGGER",
+  "SLEEP_TALK",
+  "SWIFT",
+  "DEFENSE_CURL",
+  "THUNDER_PUNCH",
+  "FIRE_PUNCH",
+  "FURY_CUTTER"
+];

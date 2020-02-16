@@ -48,11 +48,13 @@ import {
   EvoKinds,
   MoveEffects,
   MoveTargets,
+  TutorMoves,
   Types
 } from "@/model/constants";
 import { ItemList } from "@/components/lists/item-list";
 import { TMHMList } from "@/components/lists/tm-hm-list";
 import { GrowthRatesList } from "@/components/lists/growth-rates-list";
+import { TutorMoveList } from "@/components/lists/tutor-move-list";
 
 Vue.use(PortalVue);
 
@@ -99,7 +101,8 @@ registerLists({
   [List.EvoKinds]: createSimpleListDialog(EvoKinds),
   [List.EncounterMusic]: createSimpleListDialog(EncounterMusic),
   [List.Items]: ItemList,
-  [List.TMHMs]: TMHMList
+  [List.TMHMs]: TMHMList,
+  [List.TutorMoves]: TutorMoveList
 });
 
 window.onbeforeunload = (e: Event) => {

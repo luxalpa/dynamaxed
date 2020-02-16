@@ -33,6 +33,7 @@ export enum List {
   Pokemon = "pokemons",
   Trainer = "trainers",
   Move = "moves",
+  TutorMoves = "tutor-moves",
   TrainerClass = "trainer-classes",
   MoveTargets = "move-targets",
   MoveEffects = "move-effects",
