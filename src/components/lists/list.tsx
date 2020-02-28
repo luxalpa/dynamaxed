@@ -89,6 +89,8 @@ export class ListView extends View<ListViewOptions> {
   }
 
   render() {
+    console.log("Table State", this.args.tableState);
+
     return (
       <div class={styles.view}>
         <Portal to="title">{this.opts.title}</Portal>
@@ -100,7 +102,7 @@ export class ListView extends View<ListViewOptions> {
           onentryclick={([id]: [string]) => {
             ViewManager.push(this.opts.targetView!, id);
           }}
-          tablestate={this.args.tableState}
+          state={this.args.tableState}
           class={styles.list}
         />
         <FlexRow class={styles.btn}>
