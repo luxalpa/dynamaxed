@@ -77,10 +77,15 @@ export class EditItemView extends View<string> {
 
           <FlexRow />
           <FlexRow>
-            <Label width={5}>Hold Effect Function:</Label>
-          </FlexRow>
-          <FlexRow>
-            <Button width={8}>{item.holdEffect || "(none)"}</Button>
+            <Label width={3}>Hold Effect</Label>
+            <Button
+              width={5}
+              onclick={() =>
+                chooseFromList(item, "holdEffect", List.HoldEffects)
+              }
+            >
+              {item.holdEffect}
+            </Button>
           </FlexRow>
           <FlexRow>
             <Label width={5}>Parameter</Label>

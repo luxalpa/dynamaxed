@@ -46,6 +46,7 @@ import {
   Abilities,
   EncounterMusic,
   EvoKinds,
+  HoldEffects,
   MoveEffects,
   MoveTargets,
   Pockets,
@@ -104,6 +105,7 @@ registerLists({
   [List.EvoKinds]: createSimpleListDialog(EvoKinds),
   [List.EncounterMusic]: createSimpleListDialog(EncounterMusic),
   [List.Pockets]: createSimpleListDialog(Pockets),
+  [List.HoldEffects]: createSimpleListDialog(HoldEffects),
   [List.Items]: ItemList,
   [List.TMHMs]: TMHMList,
   [List.TutorMoves]: TutorMoveList

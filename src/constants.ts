@@ -44,5 +44,6 @@ export enum List {
   EncounterMusic = "encounter-music",
   Items = "items",
   TMHMs = "tmhms",
-  Pockets = "pockets"
+  Pockets = "pockets",
+  HoldEffects = "hold-effects"
 }

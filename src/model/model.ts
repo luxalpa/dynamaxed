@@ -11,6 +11,7 @@ import { Vue } from "vue-property-decorator";
 import { compileTrainerClasses } from "@/model/serialize/trainer-classes";
 import { compileMoves } from "@/model/serialize/moves";
 import { compilePokemon } from "@/model/serialize/pokemon";
+import { compileItems } from "@/model/serialize/items";
 
 export interface TrainerPartyMon {
   iv: number;
@@ -243,6 +244,7 @@ export const GameModel = new (class {
     compileTrainerClasses();
     compileMoves();
     compilePokemon();
+    compileItems();
   }
 })();
 
