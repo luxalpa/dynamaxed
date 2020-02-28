@@ -68,7 +68,7 @@ export interface Item {
   price: number;
   holdEffect?: string;
   holdEffectParam?: number;
-  description?: string;
+  description: string;
   importance?: number;
   unk19?: number;
   pocket: string;

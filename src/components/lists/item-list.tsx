@@ -1,6 +1,7 @@
 import { GameModel, Item } from "@/model/model";
 import { ListSettings } from "@/components/lists/list";
 import { IDDisplay } from "@/components/displays/id-display";
+import { EditItemView } from "@/components/views/edit-item-view";
 
 export const ItemList: ListSettings<Item> = {
   model: () => GameModel.model.items,
@@ -24,5 +25,6 @@ export const ItemList: ListSettings<Item> = {
   filter: ([id, item], input) =>
     ("#" + id.toUpperCase()).includes(input.toUpperCase()) ||
     item.name.toUpperCase().includes(input.toUpperCase()) ||
-    item.pocket.toUpperCase().includes(input.toUpperCase())
+    item.pocket.toUpperCase().includes(input.toUpperCase()),
+  targetView: EditItemView
 };

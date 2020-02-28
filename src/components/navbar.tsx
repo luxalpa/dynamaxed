@@ -33,6 +33,11 @@ const navElements: NavElement[] = [
     text: "Pokemon",
     isSubElement: false,
     switchToList: List.Pokemon
+  },
+  {
+    text: "Items",
+    isSubElement: false,
+    switchToList: List.Items
   }
 ];
 

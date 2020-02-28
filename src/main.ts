@@ -55,6 +55,7 @@ import { ItemList } from "@/components/lists/item-list";
 import { TMHMList } from "@/components/lists/tm-hm-list";
 import { GrowthRatesList } from "@/components/lists/growth-rates-list";
 import { TutorMoveList } from "@/components/lists/tutor-move-list";
+import { EditItemView } from "@/components/views/edit-item-view";
 
 Vue.use(PortalVue);
 
@@ -85,6 +86,7 @@ ViewManager.registerViews({
   "edit-map-view": EditMapView,
   "edit-move-view": EditMoveView,
   "edit-pokemon-view": EditPokemonView,
+  "edit-item-view": EditItemView,
   "list-view": ListView
 });
 
