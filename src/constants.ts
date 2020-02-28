@@ -43,5 +43,6 @@ export enum List {
   EvoKinds = "evo-kinds",
   EncounterMusic = "encounter-music",
   Items = "items",
-  TMHMs = "tmhms"
+  TMHMs = "tmhms",
+  Pockets = "pockets"
 }

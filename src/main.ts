@@ -48,6 +48,7 @@ import {
   EvoKinds,
   MoveEffects,
   MoveTargets,
+  Pockets,
   TutorMoves,
   Types
 } from "@/model/constants";
@@ -102,6 +103,7 @@ registerLists({
   [List.GrowthRates]: GrowthRatesList,
   [List.EvoKinds]: createSimpleListDialog(EvoKinds),
   [List.EncounterMusic]: createSimpleListDialog(EncounterMusic),
+  [List.Pockets]: createSimpleListDialog(Pockets),
   [List.Items]: ItemList,
   [List.TMHMs]: TMHMList,
   [List.TutorMoves]: TutorMoveList

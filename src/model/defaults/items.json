@@ -8,7 +8,12 @@
     "battleUsage": 2,
     "battleUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "fieldUseFunc": "",
+    "importance": 0,
+    "unk19": 0
   },
   "MASTER_BALL": {
     "name": "MASTER BALL",
@@ -19,7 +24,12 @@
     "battleUsage": 2,
     "battleUseFunc": "ItemUseInBattle_PokeBall",
     "secondaryId": 0,
-    "icon": { "image": "MasterBall", "palette": "MasterBall" }
+    "icon": { "image": "MasterBall", "palette": "MasterBall" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "fieldUseFunc": "",
+    "importance": 0,
+    "unk19": 0
   },
   "ULTRA_BALL": {
     "name": "ULTRA BALL",
@@ -30,7 +40,12 @@
     "battleUsage": 2,
     "battleUseFunc": "ItemUseInBattle_PokeBall",
     "secondaryId": 1,
-    "icon": { "image": "UltraBall", "palette": "UltraBall" }
+    "icon": { "image": "UltraBall", "palette": "UltraBall" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "fieldUseFunc": "",
+    "importance": 0,
+    "unk19": 0
   },
   "GREAT_BALL": {
     "name": "GREAT BALL",
@@ -41,7 +56,12 @@
     "battleUsage": 2,
     "battleUseFunc": "ItemUseInBattle_PokeBall",
     "secondaryId": 2,
-    "icon": { "image": "GreatBall", "palette": "GreatBall" }
+    "icon": { "image": "GreatBall", "palette": "GreatBall" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "fieldUseFunc": "",
+    "importance": 0,
+    "unk19": 0
   },
   "POKE_BALL": {
     "name": "POKé BALL",
@@ -52,7 +72,12 @@
     "battleUsage": 2,
     "battleUseFunc": "ItemUseInBattle_PokeBall",
     "secondaryId": 3,
-    "icon": { "image": "PokeBall", "palette": "PokeBall" }
+    "icon": { "image": "PokeBall", "palette": "PokeBall" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "fieldUseFunc": "",
+    "importance": 0,
+    "unk19": 0
   },
   "SAFARI_BALL": {
     "name": "SAFARI BALL",
@@ -63,7 +88,12 @@
     "battleUsage": 2,
     "battleUseFunc": "ItemUseInBattle_PokeBall",
     "secondaryId": 4,
-    "icon": { "image": "SafariBall", "palette": "SafariBall" }
+    "icon": { "image": "SafariBall", "palette": "SafariBall" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "fieldUseFunc": "",
+    "importance": 0,
+    "unk19": 0
   },
   "NET_BALL": {
     "name": "NET BALL",
@@ -74,7 +104,12 @@
     "battleUsage": 2,
     "battleUseFunc": "ItemUseInBattle_PokeBall",
     "secondaryId": 5,
-    "icon": { "image": "NetBall", "palette": "NetBall" }
+    "icon": { "image": "NetBall", "palette": "NetBall" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "fieldUseFunc": "",
+    "importance": 0,
+    "unk19": 0
   },
   "DIVE_BALL": {
     "name": "DIVE BALL",
@@ -85,7 +120,12 @@
     "battleUsage": 2,
     "battleUseFunc": "ItemUseInBattle_PokeBall",
     "secondaryId": 6,
-    "icon": { "image": "DiveBall", "palette": "DiveBall" }
+    "icon": { "image": "DiveBall", "palette": "DiveBall" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "fieldUseFunc": "",
+    "importance": 0,
+    "unk19": 0
   },
   "NEST_BALL": {
     "name": "NEST BALL",
@@ -96,7 +136,12 @@
     "battleUsage": 2,
     "battleUseFunc": "ItemUseInBattle_PokeBall",
     "secondaryId": 7,
-    "icon": { "image": "NestBall", "palette": "NestBall" }
+    "icon": { "image": "NestBall", "palette": "NestBall" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "fieldUseFunc": "",
+    "importance": 0,
+    "unk19": 0
   },
   "REPEAT_BALL": {
     "name": "REPEAT BALL",
@@ -107,7 +152,12 @@
     "battleUsage": 2,
     "battleUseFunc": "ItemUseInBattle_PokeBall",
     "secondaryId": 8,
-    "icon": { "image": "RepeatBall", "palette": "RepeatBall" }
+    "icon": { "image": "RepeatBall", "palette": "RepeatBall" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "fieldUseFunc": "",
+    "importance": 0,
+    "unk19": 0
   },
   "TIMER_BALL": {
     "name": "TIMER BALL",
@@ -118,7 +168,12 @@
     "battleUsage": 2,
     "battleUseFunc": "ItemUseInBattle_PokeBall",
     "secondaryId": 9,
-    "icon": { "image": "TimerBall", "palette": "RepeatBall" }
+    "icon": { "image": "TimerBall", "palette": "RepeatBall" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "fieldUseFunc": "",
+    "importance": 0,
+    "unk19": 0
   },
   "LUXURY_BALL": {
     "name": "LUXURY BALL",
@@ -129,7 +184,12 @@
     "battleUsage": 2,
     "battleUseFunc": "ItemUseInBattle_PokeBall",
     "secondaryId": 10,
-    "icon": { "image": "LuxuryBall", "palette": "LuxuryBall" }
+    "icon": { "image": "LuxuryBall", "palette": "LuxuryBall" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "fieldUseFunc": "",
+    "importance": 0,
+    "unk19": 0
   },
   "PREMIER_BALL": {
     "name": "PREMIER BALL",
@@ -140,7 +200,12 @@
     "battleUsage": 2,
     "battleUseFunc": "ItemUseInBattle_PokeBall",
     "secondaryId": 11,
-    "icon": { "image": "PremierBall", "palette": "LuxuryBall" }
+    "icon": { "image": "PremierBall", "palette": "LuxuryBall" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "fieldUseFunc": "",
+    "importance": 0,
+    "unk19": 0
   },
   "POTION": {
     "name": "POTION",
@@ -153,7 +218,10 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_Medicine",
     "secondaryId": 0,
-    "icon": { "image": "Potion", "palette": "Potion" }
+    "icon": { "image": "Potion", "palette": "Potion" },
+    "holdEffect": "",
+    "importance": 0,
+    "unk19": 0
   },
   "ANTIDOTE": {
     "name": "ANTIDOTE",
@@ -165,7 +233,11 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_Medicine",
     "secondaryId": 0,
-    "icon": { "image": "Antidote", "palette": "Antidote" }
+    "icon": { "image": "Antidote", "palette": "Antidote" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "importance": 0,
+    "unk19": 0
   },
   "BURN_HEAL": {
     "name": "BURN HEAL",
@@ -177,7 +249,11 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_Medicine",
     "secondaryId": 0,
-    "icon": { "image": "StatusHeal", "palette": "BurnHeal" }
+    "icon": { "image": "StatusHeal", "palette": "BurnHeal" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "importance": 0,
+    "unk19": 0
   },
   "ICE_HEAL": {
     "name": "ICE HEAL",
@@ -189,7 +265,11 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_Medicine",
     "secondaryId": 0,
-    "icon": { "image": "StatusHeal", "palette": "IceHeal" }
+    "icon": { "image": "StatusHeal", "palette": "IceHeal" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "importance": 0,
+    "unk19": 0
   },
   "AWAKENING": {
     "name": "AWAKENING",
@@ -201,7 +281,11 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_Medicine",
     "secondaryId": 0,
-    "icon": { "image": "StatusHeal", "palette": "Awakening" }
+    "icon": { "image": "StatusHeal", "palette": "Awakening" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "importance": 0,
+    "unk19": 0
   },
   "PARALYZE_HEAL": {
     "name": "PARLYZ HEAL",
@@ -213,7 +297,11 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_Medicine",
     "secondaryId": 0,
-    "icon": { "image": "StatusHeal", "palette": "ParalyzeHeal" }
+    "icon": { "image": "StatusHeal", "palette": "ParalyzeHeal" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "importance": 0,
+    "unk19": 0
   },
   "FULL_RESTORE": {
     "name": "FULL RESTORE",
@@ -226,7 +314,10 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_Medicine",
     "secondaryId": 0,
-    "icon": { "image": "LargePotion", "palette": "FullRestore" }
+    "icon": { "image": "LargePotion", "palette": "FullRestore" },
+    "holdEffect": "",
+    "importance": 0,
+    "unk19": 0
   },
   "MAX_POTION": {
     "name": "MAX POTION",
@@ -239,7 +330,10 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_Medicine",
     "secondaryId": 0,
-    "icon": { "image": "LargePotion", "palette": "MaxPotion" }
+    "icon": { "image": "LargePotion", "palette": "MaxPotion" },
+    "holdEffect": "",
+    "importance": 0,
+    "unk19": 0
   },
   "HYPER_POTION": {
     "name": "HYPER POTION",
@@ -252,7 +346,10 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_Medicine",
     "secondaryId": 0,
-    "icon": { "image": "Potion", "palette": "HyperPotion" }
+    "icon": { "image": "Potion", "palette": "HyperPotion" },
+    "holdEffect": "",
+    "importance": 0,
+    "unk19": 0
   },
   "SUPER_POTION": {
     "name": "SUPER POTION",
@@ -265,7 +362,10 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_Medicine",
     "secondaryId": 0,
-    "icon": { "image": "Potion", "palette": "SuperPotion" }
+    "icon": { "image": "Potion", "palette": "SuperPotion" },
+    "holdEffect": "",
+    "importance": 0,
+    "unk19": 0
   },
   "FULL_HEAL": {
     "name": "FULL HEAL",
@@ -277,7 +377,11 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_Medicine",
     "secondaryId": 0,
-    "icon": { "image": "FullHeal", "palette": "FullHeal" }
+    "icon": { "image": "FullHeal", "palette": "FullHeal" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "importance": 0,
+    "unk19": 0
   },
   "REVIVE": {
     "name": "REVIVE",
@@ -289,7 +393,11 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_Medicine",
     "secondaryId": 0,
-    "icon": { "image": "Revive", "palette": "Revive" }
+    "icon": { "image": "Revive", "palette": "Revive" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "importance": 0,
+    "unk19": 0
   },
   "MAX_REVIVE": {
     "name": "MAX REVIVE",
@@ -301,7 +409,11 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_Medicine",
     "secondaryId": 0,
-    "icon": { "image": "MaxRevive", "palette": "Revive" }
+    "icon": { "image": "MaxRevive", "palette": "Revive" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "importance": 0,
+    "unk19": 0
   },
   "FRESH_WATER": {
     "name": "FRESH WATER",
@@ -314,7 +426,10 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_Medicine",
     "secondaryId": 0,
-    "icon": { "image": "FreshWater", "palette": "FreshWater" }
+    "icon": { "image": "FreshWater", "palette": "FreshWater" },
+    "holdEffect": "",
+    "importance": 0,
+    "unk19": 0
   },
   "SODA_POP": {
     "name": "SODA POP",
@@ -327,7 +442,10 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_Medicine",
     "secondaryId": 0,
-    "icon": { "image": "SodaPop", "palette": "SodaPop" }
+    "icon": { "image": "SodaPop", "palette": "SodaPop" },
+    "holdEffect": "",
+    "importance": 0,
+    "unk19": 0
   },
   "LEMONADE": {
     "name": "LEMONADE",
@@ -340,7 +458,10 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_Medicine",
     "secondaryId": 0,
-    "icon": { "image": "Lemonade", "palette": "Lemonade" }
+    "icon": { "image": "Lemonade", "palette": "Lemonade" },
+    "holdEffect": "",
+    "importance": 0,
+    "unk19": 0
   },
   "MOOMOO_MILK": {
     "name": "MOOMOO MILK",
@@ -353,7 +474,10 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_Medicine",
     "secondaryId": 0,
-    "icon": { "image": "MoomooMilk", "palette": "MoomooMilk" }
+    "icon": { "image": "MoomooMilk", "palette": "MoomooMilk" },
+    "holdEffect": "",
+    "importance": 0,
+    "unk19": 0
   },
   "ENERGY_POWDER": {
     "name": "ENERGYPOWDER",
@@ -365,7 +489,11 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_Medicine",
     "secondaryId": 0,
-    "icon": { "image": "Powder", "palette": "EnergyPowder" }
+    "icon": { "image": "Powder", "palette": "EnergyPowder" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "importance": 0,
+    "unk19": 0
   },
   "ENERGY_ROOT": {
     "name": "ENERGY ROOT",
@@ -377,7 +505,11 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_Medicine",
     "secondaryId": 0,
-    "icon": { "image": "EnergyRoot", "palette": "EnergyRoot" }
+    "icon": { "image": "EnergyRoot", "palette": "EnergyRoot" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "importance": 0,
+    "unk19": 0
   },
   "HEAL_POWDER": {
     "name": "HEAL POWDER",
@@ -389,7 +521,11 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_Medicine",
     "secondaryId": 0,
-    "icon": { "image": "Powder", "palette": "HealPowder" }
+    "icon": { "image": "Powder", "palette": "HealPowder" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "importance": 0,
+    "unk19": 0
   },
   "REVIVAL_HERB": {
     "name": "REVIVAL HERB",
@@ -401,7 +537,11 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_Medicine",
     "secondaryId": 0,
-    "icon": { "image": "RevivalHerb", "palette": "RevivalHerb" }
+    "icon": { "image": "RevivalHerb", "palette": "RevivalHerb" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "importance": 0,
+    "unk19": 0
   },
   "ETHER": {
     "name": "ETHER",
@@ -414,7 +554,10 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_PPRecovery",
     "secondaryId": 0,
-    "icon": { "image": "Ether", "palette": "Ether" }
+    "icon": { "image": "Ether", "palette": "Ether" },
+    "holdEffect": "",
+    "importance": 0,
+    "unk19": 0
   },
   "MAX_ETHER": {
     "name": "MAX ETHER",
@@ -427,7 +570,10 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_PPRecovery",
     "secondaryId": 0,
-    "icon": { "image": "Ether", "palette": "MaxEther" }
+    "icon": { "image": "Ether", "palette": "MaxEther" },
+    "holdEffect": "",
+    "importance": 0,
+    "unk19": 0
   },
   "ELIXIR": {
     "name": "ELIXIR",
@@ -440,7 +586,10 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_PPRecovery",
     "secondaryId": 0,
-    "icon": { "image": "Ether", "palette": "Elixir" }
+    "icon": { "image": "Ether", "palette": "Elixir" },
+    "holdEffect": "",
+    "importance": 0,
+    "unk19": 0
   },
   "MAX_ELIXIR": {
     "name": "MAX ELIXIR",
@@ -453,7 +602,10 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_PPRecovery",
     "secondaryId": 0,
-    "icon": { "image": "Ether", "palette": "MaxElixir" }
+    "icon": { "image": "Ether", "palette": "MaxElixir" },
+    "holdEffect": "",
+    "importance": 0,
+    "unk19": 0
   },
   "LAVA_COOKIE": {
     "name": "LAVA COOKIE",
@@ -465,7 +617,11 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_Medicine",
     "secondaryId": 0,
-    "icon": { "image": "LavaCookie", "palette": "LavaCookieAndLetter" }
+    "icon": { "image": "LavaCookie", "palette": "LavaCookieAndLetter" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "importance": 0,
+    "unk19": 0
   },
   "BLUE_FLUTE": {
     "name": "BLUE FLUTE",
@@ -477,7 +633,11 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_Medicine",
     "secondaryId": 0,
-    "icon": { "image": "Flute", "palette": "BlueFlute" }
+    "icon": { "image": "Flute", "palette": "BlueFlute" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "importance": 0,
+    "unk19": 0
   },
   "YELLOW_FLUTE": {
     "name": "YELLOW FLUTE",
@@ -489,7 +649,11 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_Medicine",
     "secondaryId": 0,
-    "icon": { "image": "Flute", "palette": "YellowFlute" }
+    "icon": { "image": "Flute", "palette": "YellowFlute" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "importance": 0,
+    "unk19": 0
   },
   "RED_FLUTE": {
     "name": "RED FLUTE",
@@ -501,7 +665,11 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_Medicine",
     "secondaryId": 0,
-    "icon": { "image": "Flute", "palette": "RedFlute" }
+    "icon": { "image": "Flute", "palette": "RedFlute" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "importance": 0,
+    "unk19": 0
   },
   "BLACK_FLUTE": {
     "name": "BLACK FLUTE",
@@ -512,7 +680,12 @@
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_BlackWhiteFlute",
     "secondaryId": 0,
-    "icon": { "image": "Flute", "palette": "BlackFlute" }
+    "icon": { "image": "Flute", "palette": "BlackFlute" },
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "WHITE_FLUTE": {
     "name": "WHITE FLUTE",
@@ -523,7 +696,12 @@
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_BlackWhiteFlute",
     "secondaryId": 0,
-    "icon": { "image": "Flute", "palette": "WhiteFlute" }
+    "icon": { "image": "Flute", "palette": "WhiteFlute" },
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "BERRY_JUICE": {
     "name": "BERRY JUICE",
@@ -537,7 +715,9 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_Medicine",
     "secondaryId": 0,
-    "icon": { "image": "BerryJuice", "palette": "BerryJuice" }
+    "icon": { "image": "BerryJuice", "palette": "BerryJuice" },
+    "importance": 0,
+    "unk19": 0
   },
   "SACRED_ASH": {
     "name": "SACRED ASH",
@@ -547,7 +727,13 @@
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_SacredAsh",
     "secondaryId": 0,
-    "icon": { "image": "SacredAsh", "palette": "SacredAsh" }
+    "icon": { "image": "SacredAsh", "palette": "SacredAsh" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "SHOAL_SALT": {
     "name": "SHOAL SALT",
@@ -557,7 +743,13 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "Powder", "palette": "ShoalSalt" }
+    "icon": { "image": "Powder", "palette": "ShoalSalt" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "SHOAL_SHELL": {
     "name": "SHOAL SHELL",
@@ -567,7 +759,13 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "ShoalShell", "palette": "Shell" }
+    "icon": { "image": "ShoalShell", "palette": "Shell" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "RED_SHARD": {
     "name": "RED SHARD",
@@ -577,7 +775,13 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "Shard", "palette": "RedShard" }
+    "icon": { "image": "Shard", "palette": "RedShard" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "BLUE_SHARD": {
     "name": "BLUE SHARD",
@@ -587,7 +791,13 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "Shard", "palette": "BlueShard" }
+    "icon": { "image": "Shard", "palette": "BlueShard" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "YELLOW_SHARD": {
     "name": "YELLOW SHARD",
@@ -597,7 +807,13 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "Shard", "palette": "YellowShard" }
+    "icon": { "image": "Shard", "palette": "YellowShard" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "GREEN_SHARD": {
     "name": "GREEN SHARD",
@@ -607,7 +823,13 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "Shard", "palette": "GreenShard" }
+    "icon": { "image": "Shard", "palette": "GreenShard" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "034": {
     "name": "????????",
@@ -616,7 +838,14 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" },
+    "description": "?????",
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "035": {
     "name": "????????",
@@ -625,7 +854,14 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" },
+    "description": "?????",
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "036": {
     "name": "????????",
@@ -634,7 +870,14 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" },
+    "description": "?????",
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "037": {
     "name": "????????",
@@ -643,7 +886,14 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" },
+    "description": "?????",
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "038": {
     "name": "????????",
@@ -652,7 +902,14 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" },
+    "description": "?????",
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "039": {
     "name": "????????",
@@ -661,7 +918,14 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" },
+    "description": "?????",
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "03A": {
     "name": "????????",
@@ -670,7 +934,14 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" },
+    "description": "?????",
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "03B": {
     "name": "????????",
@@ -679,7 +950,14 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" },
+    "description": "?????",
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "03C": {
     "name": "????????",
@@ -688,7 +966,14 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" },
+    "description": "?????",
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "03D": {
     "name": "????????",
@@ -697,7 +982,14 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" },
+    "description": "?????",
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "03E": {
     "name": "????????",
@@ -706,7 +998,14 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" },
+    "description": "?????",
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "HP_UP": {
     "name": "HP UP",
@@ -716,7 +1015,13 @@
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_Medicine",
     "secondaryId": 0,
-    "icon": { "image": "HPUp", "palette": "HPUp" }
+    "icon": { "image": "HPUp", "palette": "HPUp" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "PROTEIN": {
     "name": "PROTEIN",
@@ -726,7 +1031,13 @@
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_Medicine",
     "secondaryId": 0,
-    "icon": { "image": "Vitamin", "palette": "Protein" }
+    "icon": { "image": "Vitamin", "palette": "Protein" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "IRON": {
     "name": "IRON",
@@ -736,7 +1047,13 @@
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_Medicine",
     "secondaryId": 0,
-    "icon": { "image": "Vitamin", "palette": "Iron" }
+    "icon": { "image": "Vitamin", "palette": "Iron" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "CARBOS": {
     "name": "CARBOS",
@@ -746,7 +1063,13 @@
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_Medicine",
     "secondaryId": 0,
-    "icon": { "image": "Vitamin", "palette": "Carbos" }
+    "icon": { "image": "Vitamin", "palette": "Carbos" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "CALCIUM": {
     "name": "CALCIUM",
@@ -756,7 +1079,13 @@
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_Medicine",
     "secondaryId": 0,
-    "icon": { "image": "Vitamin", "palette": "Calcium" }
+    "icon": { "image": "Vitamin", "palette": "Calcium" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "RARE_CANDY": {
     "name": "RARE CANDY",
@@ -766,7 +1095,13 @@
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_RareCandy",
     "secondaryId": 0,
-    "icon": { "image": "RareCandy", "palette": "RareCandy" }
+    "icon": { "image": "RareCandy", "palette": "RareCandy" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "PP_UP": {
     "name": "PP UP",
@@ -776,7 +1111,13 @@
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_PPUp",
     "secondaryId": 0,
-    "icon": { "image": "PPUp", "palette": "PPUp" }
+    "icon": { "image": "PPUp", "palette": "PPUp" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "ZINC": {
     "name": "ZINC",
@@ -786,7 +1127,13 @@
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_Medicine",
     "secondaryId": 0,
-    "icon": { "image": "Vitamin", "palette": "Zinc" }
+    "icon": { "image": "Vitamin", "palette": "Zinc" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "PP_MAX": {
     "name": "PP MAX",
@@ -796,7 +1143,13 @@
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_PPUp",
     "secondaryId": 0,
-    "icon": { "image": "PPMax", "palette": "PPMax" }
+    "icon": { "image": "PPMax", "palette": "PPMax" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "048": {
     "name": "????????",
@@ -805,7 +1158,14 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" },
+    "description": "?????",
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "GUARD_SPEC": {
     "name": "GUARD SPEC.",
@@ -817,7 +1177,11 @@
     "battleUsage": 2,
     "battleUseFunc": "ItemUseInBattle_StatIncrease",
     "secondaryId": 0,
-    "icon": { "image": "BattleStatItem", "palette": "GuardSpec" }
+    "icon": { "image": "BattleStatItem", "palette": "GuardSpec" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "importance": 0,
+    "unk19": 0
   },
   "DIRE_HIT": {
     "name": "DIRE HIT",
@@ -829,7 +1193,11 @@
     "battleUsage": 2,
     "battleUseFunc": "ItemUseInBattle_StatIncrease",
     "secondaryId": 0,
-    "icon": { "image": "BattleStatItem", "palette": "DireHit" }
+    "icon": { "image": "BattleStatItem", "palette": "DireHit" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "importance": 0,
+    "unk19": 0
   },
   "X_ATTACK": {
     "name": "X ATTACK",
@@ -841,7 +1209,11 @@
     "battleUsage": 2,
     "battleUseFunc": "ItemUseInBattle_StatIncrease",
     "secondaryId": 0,
-    "icon": { "image": "BattleStatItem", "palette": "XAttack" }
+    "icon": { "image": "BattleStatItem", "palette": "XAttack" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "importance": 0,
+    "unk19": 0
   },
   "X_DEFEND": {
     "name": "X DEFEND",
@@ -853,7 +1225,11 @@
     "battleUsage": 2,
     "battleUseFunc": "ItemUseInBattle_StatIncrease",
     "secondaryId": 0,
-    "icon": { "image": "BattleStatItem", "palette": "XDefend" }
+    "icon": { "image": "BattleStatItem", "palette": "XDefend" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "importance": 0,
+    "unk19": 0
   },
   "X_SPEED": {
     "name": "X SPEED",
@@ -865,7 +1241,11 @@
     "battleUsage": 2,
     "battleUseFunc": "ItemUseInBattle_StatIncrease",
     "secondaryId": 0,
-    "icon": { "image": "BattleStatItem", "palette": "XSpeed" }
+    "icon": { "image": "BattleStatItem", "palette": "XSpeed" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "importance": 0,
+    "unk19": 0
   },
   "X_ACCURACY": {
     "name": "X ACCURACY",
@@ -877,7 +1257,11 @@
     "battleUsage": 2,
     "battleUseFunc": "ItemUseInBattle_StatIncrease",
     "secondaryId": 0,
-    "icon": { "image": "BattleStatItem", "palette": "XAccuracy" }
+    "icon": { "image": "BattleStatItem", "palette": "XAccuracy" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "importance": 0,
+    "unk19": 0
   },
   "X_SPECIAL": {
     "name": "X SPECIAL",
@@ -889,7 +1273,11 @@
     "battleUsage": 2,
     "battleUseFunc": "ItemUseInBattle_StatIncrease",
     "secondaryId": 0,
-    "icon": { "image": "BattleStatItem", "palette": "XSpecial" }
+    "icon": { "image": "BattleStatItem", "palette": "XSpecial" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "importance": 0,
+    "unk19": 0
   },
   "POKE_DOLL": {
     "name": "POKé DOLL",
@@ -901,7 +1289,11 @@
     "battleUsage": 2,
     "battleUseFunc": "ItemUseInBattle_Escape",
     "secondaryId": 0,
-    "icon": { "image": "PokeDoll", "palette": "PokeDoll" }
+    "icon": { "image": "PokeDoll", "palette": "PokeDoll" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "importance": 0,
+    "unk19": 0
   },
   "FLUFFY_TAIL": {
     "name": "FLUFFY TAIL",
@@ -913,7 +1305,11 @@
     "battleUsage": 2,
     "battleUseFunc": "ItemUseInBattle_Escape",
     "secondaryId": 0,
-    "icon": { "image": "FluffyTail", "palette": "FluffyTail" }
+    "icon": { "image": "FluffyTail", "palette": "FluffyTail" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "importance": 0,
+    "unk19": 0
   },
   "052": {
     "name": "????????",
@@ -922,7 +1318,14 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" },
+    "description": "?????",
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "SUPER_REPEL": {
     "name": "SUPER REPEL",
@@ -933,7 +1336,12 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_Repel",
     "secondaryId": 0,
-    "icon": { "image": "Repel", "palette": "SuperRepel" }
+    "icon": { "image": "Repel", "palette": "SuperRepel" },
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "MAX_REPEL": {
     "name": "MAX REPEL",
@@ -944,7 +1352,12 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_Repel",
     "secondaryId": 0,
-    "icon": { "image": "Repel", "palette": "MaxRepel" }
+    "icon": { "image": "Repel", "palette": "MaxRepel" },
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "ESCAPE_ROPE": {
     "name": "ESCAPE ROPE",
@@ -954,7 +1367,13 @@
     "type": 2,
     "fieldUseFunc": "ItemUseOutOfBattle_EscapeRope",
     "secondaryId": 0,
-    "icon": { "image": "EscapeRope", "palette": "EscapeRope" }
+    "icon": { "image": "EscapeRope", "palette": "EscapeRope" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "REPEL": {
     "name": "REPEL",
@@ -965,7 +1384,12 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_Repel",
     "secondaryId": 0,
-    "icon": { "image": "Repel", "palette": "Repel" }
+    "icon": { "image": "Repel", "palette": "Repel" },
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "057": {
     "name": "????????",
@@ -974,7 +1398,14 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" },
+    "description": "?????",
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "058": {
     "name": "????????",
@@ -983,7 +1414,14 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" },
+    "description": "?????",
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "059": {
     "name": "????????",
@@ -992,7 +1430,14 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" },
+    "description": "?????",
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "05A": {
     "name": "????????",
@@ -1001,7 +1446,14 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" },
+    "description": "?????",
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "05B": {
     "name": "????????",
@@ -1010,7 +1462,14 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" },
+    "description": "?????",
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "05C": {
     "name": "????????",
@@ -1019,7 +1478,14 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" },
+    "description": "?????",
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "SUN_STONE": {
     "name": "SUN STONE",
@@ -1029,7 +1495,13 @@
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_EvolutionStone",
     "secondaryId": 0,
-    "icon": { "image": "SunStone", "palette": "SunStone" }
+    "icon": { "image": "SunStone", "palette": "SunStone" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "MOON_STONE": {
     "name": "MOON STONE",
@@ -1039,7 +1511,13 @@
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_EvolutionStone",
     "secondaryId": 0,
-    "icon": { "image": "MoonStone", "palette": "MoonStone" }
+    "icon": { "image": "MoonStone", "palette": "MoonStone" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "FIRE_STONE": {
     "name": "FIRE STONE",
@@ -1049,7 +1527,13 @@
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_EvolutionStone",
     "secondaryId": 0,
-    "icon": { "image": "FireStone", "palette": "FireStone" }
+    "icon": { "image": "FireStone", "palette": "FireStone" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "THUNDER_STONE": {
     "name": "THUNDERSTONE",
@@ -1059,7 +1543,13 @@
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_EvolutionStone",
     "secondaryId": 0,
-    "icon": { "image": "ThunderStone", "palette": "ThunderStone" }
+    "icon": { "image": "ThunderStone", "palette": "ThunderStone" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "WATER_STONE": {
     "name": "WATER STONE",
@@ -1069,7 +1559,13 @@
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_EvolutionStone",
     "secondaryId": 0,
-    "icon": { "image": "WaterStone", "palette": "WaterStone" }
+    "icon": { "image": "WaterStone", "palette": "WaterStone" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "LEAF_STONE": {
     "name": "LEAF STONE",
@@ -1079,7 +1575,13 @@
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_EvolutionStone",
     "secondaryId": 0,
-    "icon": { "image": "LeafStone", "palette": "LeafStone" }
+    "icon": { "image": "LeafStone", "palette": "LeafStone" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "063": {
     "name": "????????",
@@ -1088,7 +1590,14 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" },
+    "description": "?????",
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "064": {
     "name": "????????",
@@ -1097,7 +1606,14 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" },
+    "description": "?????",
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "065": {
     "name": "????????",
@@ -1106,7 +1622,14 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" },
+    "description": "?????",
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "066": {
     "name": "????????",
@@ -1115,7 +1638,14 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" },
+    "description": "?????",
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "TINY_MUSHROOM": {
     "name": "TINYMUSHROOM",
@@ -1125,7 +1655,13 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "TinyMushroom", "palette": "Mushroom" }
+    "icon": { "image": "TinyMushroom", "palette": "Mushroom" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "BIG_MUSHROOM": {
     "name": "BIG MUSHROOM",
@@ -1135,7 +1671,13 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "BigMushroom", "palette": "Mushroom" }
+    "icon": { "image": "BigMushroom", "palette": "Mushroom" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "069": {
     "name": "????????",
@@ -1144,7 +1686,14 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" },
+    "description": "?????",
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "PEARL": {
     "name": "PEARL",
@@ -1154,7 +1703,13 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "Pearl", "palette": "Pearl" }
+    "icon": { "image": "Pearl", "palette": "Pearl" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "BIG_PEARL": {
     "name": "BIG PEARL",
@@ -1164,7 +1719,13 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "BigPearl", "palette": "Pearl" }
+    "icon": { "image": "BigPearl", "palette": "Pearl" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "STARDUST": {
     "name": "STARDUST",
@@ -1174,7 +1735,13 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "Stardust", "palette": "Star" }
+    "icon": { "image": "Stardust", "palette": "Star" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "STAR_PIECE": {
     "name": "STAR PIECE",
@@ -1184,7 +1751,13 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "StarPiece", "palette": "Star" }
+    "icon": { "image": "StarPiece", "palette": "Star" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "NUGGET": {
     "name": "NUGGET",
@@ -1194,7 +1767,13 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "Nugget", "palette": "Nugget" }
+    "icon": { "image": "Nugget", "palette": "Nugget" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "HEART_SCALE": {
     "name": "HEART SCALE",
@@ -1204,7 +1783,13 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "HeartScale", "palette": "HeartScale" }
+    "icon": { "image": "HeartScale", "palette": "HeartScale" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "070": {
     "name": "????????",
@@ -1213,7 +1798,14 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" },
+    "description": "?????",
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "071": {
     "name": "????????",
@@ -1222,7 +1814,14 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" },
+    "description": "?????",
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "072": {
     "name": "????????",
@@ -1231,7 +1830,14 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" },
+    "description": "?????",
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "073": {
     "name": "????????",
@@ -1240,7 +1846,14 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" },
+    "description": "?????",
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "074": {
     "name": "????????",
@@ -1249,7 +1862,14 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" },
+    "description": "?????",
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "075": {
     "name": "????????",
@@ -1258,7 +1878,14 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" },
+    "description": "?????",
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "076": {
     "name": "????????",
@@ -1267,7 +1894,14 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" },
+    "description": "?????",
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "077": {
     "name": "????????",
@@ -1276,7 +1910,14 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" },
+    "description": "?????",
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "078": {
     "name": "????????",
@@ -1285,7 +1926,14 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" },
+    "description": "?????",
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "ORANGE_MAIL": {
     "name": "ORANGE MAIL",
@@ -1295,7 +1943,13 @@
     "type": 0,
     "fieldUseFunc": "ItemUseOutOfBattle_Mail",
     "secondaryId": 0,
-    "icon": { "image": "OrangeMail", "palette": "OrangeMail" }
+    "icon": { "image": "OrangeMail", "palette": "OrangeMail" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "HARBOR_MAIL": {
     "name": "HARBOR MAIL",
@@ -1305,7 +1959,13 @@
     "type": 0,
     "fieldUseFunc": "ItemUseOutOfBattle_Mail",
     "secondaryId": 1,
-    "icon": { "image": "HarborMail", "palette": "HarborMail" }
+    "icon": { "image": "HarborMail", "palette": "HarborMail" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "GLITTER_MAIL": {
     "name": "GLITTER MAIL",
@@ -1315,7 +1975,13 @@
     "type": 0,
     "fieldUseFunc": "ItemUseOutOfBattle_Mail",
     "secondaryId": 2,
-    "icon": { "image": "GlitterMail", "palette": "GlitterMail" }
+    "icon": { "image": "GlitterMail", "palette": "GlitterMail" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "MECH_MAIL": {
     "name": "MECH MAIL",
@@ -1325,7 +1991,13 @@
     "type": 0,
     "fieldUseFunc": "ItemUseOutOfBattle_Mail",
     "secondaryId": 3,
-    "icon": { "image": "MechMail", "palette": "MechMail" }
+    "icon": { "image": "MechMail", "palette": "MechMail" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "WOOD_MAIL": {
     "name": "WOOD MAIL",
@@ -1335,7 +2007,13 @@
     "type": 0,
     "fieldUseFunc": "ItemUseOutOfBattle_Mail",
     "secondaryId": 4,
-    "icon": { "image": "WoodMail", "palette": "WoodMail" }
+    "icon": { "image": "WoodMail", "palette": "WoodMail" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "WAVE_MAIL": {
     "name": "WAVE MAIL",
@@ -1345,7 +2023,13 @@
     "type": 0,
     "fieldUseFunc": "ItemUseOutOfBattle_Mail",
     "secondaryId": 5,
-    "icon": { "image": "WaveMail", "palette": "WaveMail" }
+    "icon": { "image": "WaveMail", "palette": "WaveMail" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "BEAD_MAIL": {
     "name": "BEAD MAIL",
@@ -1355,7 +2039,13 @@
     "type": 0,
     "fieldUseFunc": "ItemUseOutOfBattle_Mail",
     "secondaryId": 6,
-    "icon": { "image": "BeadMail", "palette": "BeadMail" }
+    "icon": { "image": "BeadMail", "palette": "BeadMail" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "SHADOW_MAIL": {
     "name": "SHADOW MAIL",
@@ -1365,7 +2055,13 @@
     "type": 0,
     "fieldUseFunc": "ItemUseOutOfBattle_Mail",
     "secondaryId": 7,
-    "icon": { "image": "ShadowMail", "palette": "ShadowMail" }
+    "icon": { "image": "ShadowMail", "palette": "ShadowMail" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "TROPIC_MAIL": {
     "name": "TROPIC MAIL",
@@ -1375,7 +2071,13 @@
     "type": 0,
     "fieldUseFunc": "ItemUseOutOfBattle_Mail",
     "secondaryId": 8,
-    "icon": { "image": "TropicMail", "palette": "TropicMail" }
+    "icon": { "image": "TropicMail", "palette": "TropicMail" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "DREAM_MAIL": {
     "name": "DREAM MAIL",
@@ -1385,7 +2087,13 @@
     "type": 0,
     "fieldUseFunc": "ItemUseOutOfBattle_Mail",
     "secondaryId": 9,
-    "icon": { "image": "DreamMail", "palette": "DreamMail" }
+    "icon": { "image": "DreamMail", "palette": "DreamMail" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "FAB_MAIL": {
     "name": "FAB MAIL",
@@ -1395,7 +2103,13 @@
     "type": 0,
     "fieldUseFunc": "ItemUseOutOfBattle_Mail",
     "secondaryId": 10,
-    "icon": { "image": "FabMail", "palette": "FabMail" }
+    "icon": { "image": "FabMail", "palette": "FabMail" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "RETRO_MAIL": {
     "name": "RETRO MAIL",
@@ -1405,7 +2119,13 @@
     "type": 0,
     "fieldUseFunc": "ItemUseOutOfBattle_Mail",
     "secondaryId": 11,
-    "icon": { "image": "RetroMail", "palette": "RetroMail" }
+    "icon": { "image": "RetroMail", "palette": "RetroMail" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "CHERI_BERRY": {
     "name": "CHERI BERRY",
@@ -1418,7 +2138,10 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_Medicine",
     "secondaryId": 0,
-    "icon": { "image": "CheriBerry", "palette": "CheriBerry" }
+    "icon": { "image": "CheriBerry", "palette": "CheriBerry" },
+    "holdEffectParam": 0,
+    "importance": 0,
+    "unk19": 0
   },
   "CHESTO_BERRY": {
     "name": "CHESTO BERRY",
@@ -1431,7 +2154,10 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_Medicine",
     "secondaryId": 0,
-    "icon": { "image": "ChestoBerry", "palette": "ChestoBerry" }
+    "icon": { "image": "ChestoBerry", "palette": "ChestoBerry" },
+    "holdEffectParam": 0,
+    "importance": 0,
+    "unk19": 0
   },
   "PECHA_BERRY": {
     "name": "PECHA BERRY",
@@ -1444,7 +2170,10 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_Medicine",
     "secondaryId": 0,
-    "icon": { "image": "PechaBerry", "palette": "PechaBerry" }
+    "icon": { "image": "PechaBerry", "palette": "PechaBerry" },
+    "holdEffectParam": 0,
+    "importance": 0,
+    "unk19": 0
   },
   "RAWST_BERRY": {
     "name": "RAWST BERRY",
@@ -1457,7 +2186,10 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_Medicine",
     "secondaryId": 0,
-    "icon": { "image": "RawstBerry", "palette": "RawstBerry" }
+    "icon": { "image": "RawstBerry", "palette": "RawstBerry" },
+    "holdEffectParam": 0,
+    "importance": 0,
+    "unk19": 0
   },
   "ASPEAR_BERRY": {
     "name": "ASPEAR BERRY",
@@ -1470,7 +2202,10 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_Medicine",
     "secondaryId": 0,
-    "icon": { "image": "AspearBerry", "palette": "AspearBerry" }
+    "icon": { "image": "AspearBerry", "palette": "AspearBerry" },
+    "holdEffectParam": 0,
+    "importance": 0,
+    "unk19": 0
   },
   "LEPPA_BERRY": {
     "name": "LEPPA BERRY",
@@ -1484,7 +2219,9 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_PPRecovery",
     "secondaryId": 0,
-    "icon": { "image": "LeppaBerry", "palette": "LeppaBerry" }
+    "icon": { "image": "LeppaBerry", "palette": "LeppaBerry" },
+    "importance": 0,
+    "unk19": 0
   },
   "ORAN_BERRY": {
     "name": "ORAN BERRY",
@@ -1498,7 +2235,9 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_Medicine",
     "secondaryId": 0,
-    "icon": { "image": "OranBerry", "palette": "OranBerry" }
+    "icon": { "image": "OranBerry", "palette": "OranBerry" },
+    "importance": 0,
+    "unk19": 0
   },
   "PERSIM_BERRY": {
     "name": "PERSIM BERRY",
@@ -1511,7 +2250,10 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_Medicine",
     "secondaryId": 0,
-    "icon": { "image": "PersimBerry", "palette": "PersimBerry" }
+    "icon": { "image": "PersimBerry", "palette": "PersimBerry" },
+    "holdEffectParam": 0,
+    "importance": 0,
+    "unk19": 0
   },
   "LUM_BERRY": {
     "name": "LUM BERRY",
@@ -1524,7 +2266,10 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_Medicine",
     "secondaryId": 0,
-    "icon": { "image": "LumBerry", "palette": "LumBerry" }
+    "icon": { "image": "LumBerry", "palette": "LumBerry" },
+    "holdEffectParam": 0,
+    "importance": 0,
+    "unk19": 0
   },
   "SITRUS_BERRY": {
     "name": "SITRUS BERRY",
@@ -1538,7 +2283,9 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_Medicine",
     "secondaryId": 0,
-    "icon": { "image": "SitrusBerry", "palette": "SitrusBerry" }
+    "icon": { "image": "SitrusBerry", "palette": "SitrusBerry" },
+    "importance": 0,
+    "unk19": 0
   },
   "FIGY_BERRY": {
     "name": "FIGY BERRY",
@@ -1550,7 +2297,11 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "FigyBerry", "palette": "FigyBerry" }
+    "icon": { "image": "FigyBerry", "palette": "FigyBerry" },
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "WIKI_BERRY": {
     "name": "WIKI BERRY",
@@ -1562,7 +2313,11 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "WikiBerry", "palette": "WikiBerry" }
+    "icon": { "image": "WikiBerry", "palette": "WikiBerry" },
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "MAGO_BERRY": {
     "name": "MAGO BERRY",
@@ -1574,7 +2329,11 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "MagoBerry", "palette": "MagoBerry" }
+    "icon": { "image": "MagoBerry", "palette": "MagoBerry" },
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "AGUAV_BERRY": {
     "name": "AGUAV BERRY",
@@ -1586,7 +2345,11 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "AguavBerry", "palette": "AguavBerry" }
+    "icon": { "image": "AguavBerry", "palette": "AguavBerry" },
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "IAPAPA_BERRY": {
     "name": "IAPAPA BERRY",
@@ -1598,7 +2361,11 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "IapapaBerry", "palette": "IapapaBerry" }
+    "icon": { "image": "IapapaBerry", "palette": "IapapaBerry" },
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "RAZZ_BERRY": {
     "name": "RAZZ BERRY",
@@ -1608,7 +2375,13 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "RazzBerry", "palette": "RazzBerry" }
+    "icon": { "image": "RazzBerry", "palette": "RazzBerry" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "BLUK_BERRY": {
     "name": "BLUK BERRY",
@@ -1618,7 +2391,13 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "BlukBerry", "palette": "BlukBerry" }
+    "icon": { "image": "BlukBerry", "palette": "BlukBerry" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "NANAB_BERRY": {
     "name": "NANAB BERRY",
@@ -1628,7 +2407,13 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "NanabBerry", "palette": "NanabBerry" }
+    "icon": { "image": "NanabBerry", "palette": "NanabBerry" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "WEPEAR_BERRY": {
     "name": "WEPEAR BERRY",
@@ -1638,7 +2423,13 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "WepearBerry", "palette": "WepearBerry" }
+    "icon": { "image": "WepearBerry", "palette": "WepearBerry" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "PINAP_BERRY": {
     "name": "PINAP BERRY",
@@ -1648,7 +2439,13 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "PinapBerry", "palette": "PinapBerry" }
+    "icon": { "image": "PinapBerry", "palette": "PinapBerry" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "POMEG_BERRY": {
     "name": "POMEG BERRY",
@@ -1658,7 +2455,13 @@
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_ReduceEV",
     "secondaryId": 0,
-    "icon": { "image": "PomegBerry", "palette": "PomegBerry" }
+    "icon": { "image": "PomegBerry", "palette": "PomegBerry" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "KELPSY_BERRY": {
     "name": "KELPSY BERRY",
@@ -1668,7 +2471,13 @@
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_ReduceEV",
     "secondaryId": 0,
-    "icon": { "image": "KelpsyBerry", "palette": "KelpsyBerry" }
+    "icon": { "image": "KelpsyBerry", "palette": "KelpsyBerry" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "QUALOT_BERRY": {
     "name": "QUALOT BERRY",
@@ -1678,7 +2487,13 @@
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_ReduceEV",
     "secondaryId": 0,
-    "icon": { "image": "QualotBerry", "palette": "QualotBerry" }
+    "icon": { "image": "QualotBerry", "palette": "QualotBerry" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "HONDEW_BERRY": {
     "name": "HONDEW BERRY",
@@ -1688,7 +2503,13 @@
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_ReduceEV",
     "secondaryId": 0,
-    "icon": { "image": "HondewBerry", "palette": "HondewBerry" }
+    "icon": { "image": "HondewBerry", "palette": "HondewBerry" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "GREPA_BERRY": {
     "name": "GREPA BERRY",
@@ -1698,7 +2519,13 @@
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_ReduceEV",
     "secondaryId": 0,
-    "icon": { "image": "GrepaBerry", "palette": "GrepaBerry" }
+    "icon": { "image": "GrepaBerry", "palette": "GrepaBerry" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "TAMATO_BERRY": {
     "name": "TAMATO BERRY",
@@ -1708,7 +2535,13 @@
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_ReduceEV",
     "secondaryId": 0,
-    "icon": { "image": "TamatoBerry", "palette": "TamatoBerry" }
+    "icon": { "image": "TamatoBerry", "palette": "TamatoBerry" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "CORNN_BERRY": {
     "name": "CORNN BERRY",
@@ -1718,7 +2551,13 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "CornnBerry", "palette": "CornnBerry" }
+    "icon": { "image": "CornnBerry", "palette": "CornnBerry" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "MAGOST_BERRY": {
     "name": "MAGOST BERRY",
@@ -1728,7 +2567,13 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "MagostBerry", "palette": "MagostBerry" }
+    "icon": { "image": "MagostBerry", "palette": "MagostBerry" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "RABUTA_BERRY": {
     "name": "RABUTA BERRY",
@@ -1738,7 +2583,13 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "RabutaBerry", "palette": "RabutaBerry" }
+    "icon": { "image": "RabutaBerry", "palette": "RabutaBerry" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "NOMEL_BERRY": {
     "name": "NOMEL BERRY",
@@ -1748,7 +2599,13 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "NomelBerry", "palette": "NomelBerry" }
+    "icon": { "image": "NomelBerry", "palette": "NomelBerry" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "SPELON_BERRY": {
     "name": "SPELON BERRY",
@@ -1758,7 +2615,13 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "SpelonBerry", "palette": "SpelonBerry" }
+    "icon": { "image": "SpelonBerry", "palette": "SpelonBerry" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "PAMTRE_BERRY": {
     "name": "PAMTRE BERRY",
@@ -1768,7 +2631,13 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "PamtreBerry", "palette": "PamtreBerry" }
+    "icon": { "image": "PamtreBerry", "palette": "PamtreBerry" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "WATMEL_BERRY": {
     "name": "WATMEL BERRY",
@@ -1778,7 +2647,13 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "WatmelBerry", "palette": "WatmelBerry" }
+    "icon": { "image": "WatmelBerry", "palette": "WatmelBerry" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "DURIN_BERRY": {
     "name": "DURIN BERRY",
@@ -1788,7 +2663,13 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "DurinBerry", "palette": "DurinBerry" }
+    "icon": { "image": "DurinBerry", "palette": "DurinBerry" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "BELUE_BERRY": {
     "name": "BELUE BERRY",
@@ -1798,7 +2679,13 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "BelueBerry", "palette": "BelueBerry" }
+    "icon": { "image": "BelueBerry", "palette": "BelueBerry" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "LIECHI_BERRY": {
     "name": "LIECHI BERRY",
@@ -1810,7 +2697,11 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "LiechiBerry", "palette": "LiechiBerry" }
+    "icon": { "image": "LiechiBerry", "palette": "LiechiBerry" },
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "GANLON_BERRY": {
     "name": "GANLON BERRY",
@@ -1822,7 +2713,11 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "GanlonBerry", "palette": "GanlonBerry" }
+    "icon": { "image": "GanlonBerry", "palette": "GanlonBerry" },
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "SALAC_BERRY": {
     "name": "SALAC BERRY",
@@ -1834,7 +2729,11 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "SalacBerry", "palette": "SalacBerry" }
+    "icon": { "image": "SalacBerry", "palette": "SalacBerry" },
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "PETAYA_BERRY": {
     "name": "PETAYA BERRY",
@@ -1846,7 +2745,11 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "PetayaBerry", "palette": "PetayaBerry" }
+    "icon": { "image": "PetayaBerry", "palette": "PetayaBerry" },
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "APICOT_BERRY": {
     "name": "APICOT BERRY",
@@ -1858,7 +2761,11 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "ApicotBerry", "palette": "ApicotBerry" }
+    "icon": { "image": "ApicotBerry", "palette": "ApicotBerry" },
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "LANSAT_BERRY": {
     "name": "LANSAT BERRY",
@@ -1870,7 +2777,11 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "LansatBerry", "palette": "LansatBerry" }
+    "icon": { "image": "LansatBerry", "palette": "LansatBerry" },
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "STARF_BERRY": {
     "name": "STARF BERRY",
@@ -1882,7 +2793,11 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "StarfBerry", "palette": "StarfBerry" }
+    "icon": { "image": "StarfBerry", "palette": "StarfBerry" },
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "ENIGMA_BERRY": {
     "name": "ENIGMA BERRY",
@@ -1894,7 +2809,11 @@
     "battleUsage": 1,
     "battleUseFunc": "ItemUseInBattle_EnigmaBerry",
     "secondaryId": 0,
-    "icon": { "image": "EnigmaBerry", "palette": "EnigmaBerry" }
+    "icon": { "image": "EnigmaBerry", "palette": "EnigmaBerry" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "importance": 0,
+    "unk19": 0
   },
   "0B0": {
     "name": "????????",
@@ -1903,7 +2822,14 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" },
+    "description": "?????",
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "0B1": {
     "name": "????????",
@@ -1912,7 +2838,14 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" },
+    "description": "?????",
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "0B2": {
     "name": "????????",
@@ -1921,7 +2854,14 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" },
+    "description": "?????",
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "BRIGHT_POWDER": {
     "name": "BRIGHTPOWDER",
@@ -1933,7 +2873,11 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "BrightPowder", "palette": "BrightPowder" }
+    "icon": { "image": "BrightPowder", "palette": "BrightPowder" },
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "WHITE_HERB": {
     "name": "WHITE HERB",
@@ -1944,7 +2888,12 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "InBattleHerb", "palette": "WhiteHerb" }
+    "icon": { "image": "InBattleHerb", "palette": "WhiteHerb" },
+    "holdEffectParam": 0,
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "MACHO_BRACE": {
     "name": "MACHO BRACE",
@@ -1955,7 +2904,12 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "MachoBrace", "palette": "MachoBrace" }
+    "icon": { "image": "MachoBrace", "palette": "MachoBrace" },
+    "holdEffectParam": 0,
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "EXP_SHARE": {
     "name": "EXP. SHARE",
@@ -1966,7 +2920,12 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "ExpShare", "palette": "ExpShare" }
+    "icon": { "image": "ExpShare", "palette": "ExpShare" },
+    "holdEffectParam": 0,
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "QUICK_CLAW": {
     "name": "QUICK CLAW",
@@ -1978,7 +2937,11 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "QuickClaw", "palette": "QuickClaw" }
+    "icon": { "image": "QuickClaw", "palette": "QuickClaw" },
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "SOOTHE_BELL": {
     "name": "SOOTHE BELL",
@@ -1989,7 +2952,12 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "SootheBell", "palette": "SootheBell" }
+    "icon": { "image": "SootheBell", "palette": "SootheBell" },
+    "holdEffectParam": 0,
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "MENTAL_HERB": {
     "name": "MENTAL HERB",
@@ -2000,7 +2968,12 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "InBattleHerb", "palette": "MentalHerb" }
+    "icon": { "image": "InBattleHerb", "palette": "MentalHerb" },
+    "holdEffectParam": 0,
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "CHOICE_BAND": {
     "name": "CHOICE BAND",
@@ -2011,7 +2984,12 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "ChoiceBand", "palette": "ChoiceBand" }
+    "icon": { "image": "ChoiceBand", "palette": "ChoiceBand" },
+    "holdEffectParam": 0,
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "KINGS_ROCK": {
     "name": "KING'S ROCK",
@@ -2023,7 +3001,11 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "KingsRock", "palette": "KingsRock" }
+    "icon": { "image": "KingsRock", "palette": "KingsRock" },
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "SILVER_POWDER": {
     "name": "SILVERPOWDER",
@@ -2035,7 +3017,11 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "SilverPowder", "palette": "SilverPowder" }
+    "icon": { "image": "SilverPowder", "palette": "SilverPowder" },
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "AMULET_COIN": {
     "name": "AMULET COIN",
@@ -2047,7 +3033,11 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "AmuletCoin", "palette": "AmuletCoin" }
+    "icon": { "image": "AmuletCoin", "palette": "AmuletCoin" },
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "CLEANSE_TAG": {
     "name": "CLEANSE TAG",
@@ -2058,7 +3048,12 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "CleanseTag", "palette": "CleanseTag" }
+    "icon": { "image": "CleanseTag", "palette": "CleanseTag" },
+    "holdEffectParam": 0,
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "SOUL_DEW": {
     "name": "SOUL DEW",
@@ -2069,7 +3064,12 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "SoulDew", "palette": "SoulDew" }
+    "icon": { "image": "SoulDew", "palette": "SoulDew" },
+    "holdEffectParam": 0,
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "DEEP_SEA_TOOTH": {
     "name": "DEEPSEATOOTH",
@@ -2080,7 +3080,12 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "DeepSeaTooth", "palette": "DeepSeaTooth" }
+    "icon": { "image": "DeepSeaTooth", "palette": "DeepSeaTooth" },
+    "holdEffectParam": 0,
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "DEEP_SEA_SCALE": {
     "name": "DEEPSEASCALE",
@@ -2091,7 +3096,12 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "DeepSeaScale", "palette": "DeepSeaScale" }
+    "icon": { "image": "DeepSeaScale", "palette": "DeepSeaScale" },
+    "holdEffectParam": 0,
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "SMOKE_BALL": {
     "name": "SMOKE BALL",
@@ -2102,7 +3112,12 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "SmokeBall", "palette": "SmokeBall" }
+    "icon": { "image": "SmokeBall", "palette": "SmokeBall" },
+    "holdEffectParam": 0,
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "EVERSTONE": {
     "name": "EVERSTONE",
@@ -2113,7 +3128,12 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "Everstone", "palette": "Everstone" }
+    "icon": { "image": "Everstone", "palette": "Everstone" },
+    "holdEffectParam": 0,
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "FOCUS_BAND": {
     "name": "FOCUS BAND",
@@ -2125,7 +3145,11 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "FocusBand", "palette": "FocusBand" }
+    "icon": { "image": "FocusBand", "palette": "FocusBand" },
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "LUCKY_EGG": {
     "name": "LUCKY EGG",
@@ -2136,7 +3160,12 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "LuckyEgg", "palette": "LuckyEgg" }
+    "icon": { "image": "LuckyEgg", "palette": "LuckyEgg" },
+    "holdEffectParam": 0,
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "SCOPE_LENS": {
     "name": "SCOPE LENS",
@@ -2147,7 +3176,12 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "ScopeLens", "palette": "ScopeLens" }
+    "icon": { "image": "ScopeLens", "palette": "ScopeLens" },
+    "holdEffectParam": 0,
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "METAL_COAT": {
     "name": "METAL COAT",
@@ -2159,7 +3193,11 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "MetalCoat", "palette": "MetalCoat" }
+    "icon": { "image": "MetalCoat", "palette": "MetalCoat" },
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "LEFTOVERS": {
     "name": "LEFTOVERS",
@@ -2171,7 +3209,11 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "Leftovers", "palette": "Leftovers" }
+    "icon": { "image": "Leftovers", "palette": "Leftovers" },
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "DRAGON_SCALE": {
     "name": "DRAGON SCALE",
@@ -2183,7 +3225,11 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "DragonScale", "palette": "DragonScale" }
+    "icon": { "image": "DragonScale", "palette": "DragonScale" },
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "LIGHT_BALL": {
     "name": "LIGHT BALL",
@@ -2194,7 +3240,12 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "LightBall", "palette": "LightBall" }
+    "icon": { "image": "LightBall", "palette": "LightBall" },
+    "holdEffectParam": 0,
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "SOFT_SAND": {
     "name": "SOFT SAND",
@@ -2206,7 +3257,11 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "SoftSand", "palette": "SoftSand" }
+    "icon": { "image": "SoftSand", "palette": "SoftSand" },
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "HARD_STONE": {
     "name": "HARD STONE",
@@ -2218,7 +3273,11 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "HardStone", "palette": "HardStone" }
+    "icon": { "image": "HardStone", "palette": "HardStone" },
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "MIRACLE_SEED": {
     "name": "MIRACLE SEED",
@@ -2230,7 +3289,11 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "MiracleSeed", "palette": "MiracleSeed" }
+    "icon": { "image": "MiracleSeed", "palette": "MiracleSeed" },
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "BLACK_GLASSES": {
     "name": "BLACKGLASSES",
@@ -2242,10 +3305,11 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": {
-      "image": "BlackGlasses",
-      "palette": "BlackTypeEnhancingItem"
-    }
+    "icon": { "image": "BlackGlasses", "palette": "BlackTypeEnhancingItem" },
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "BLACK_BELT": {
     "name": "BLACK BELT",
@@ -2257,7 +3321,11 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "BlackBelt", "palette": "BlackTypeEnhancingItem" }
+    "icon": { "image": "BlackBelt", "palette": "BlackTypeEnhancingItem" },
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "MAGNET": {
     "name": "MAGNET",
@@ -2269,7 +3337,11 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "Magnet", "palette": "Magnet" }
+    "icon": { "image": "Magnet", "palette": "Magnet" },
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "MYSTIC_WATER": {
     "name": "MYSTIC WATER",
@@ -2281,7 +3353,11 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "MysticWater", "palette": "MysticWater" }
+    "icon": { "image": "MysticWater", "palette": "MysticWater" },
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "SHARP_BEAK": {
     "name": "SHARP BEAK",
@@ -2293,7 +3369,11 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "SharpBeak", "palette": "SharpBeak" }
+    "icon": { "image": "SharpBeak", "palette": "SharpBeak" },
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "POISON_BARB": {
     "name": "POISON BARB",
@@ -2305,7 +3385,11 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "PoisonBarb", "palette": "PoisonBarb" }
+    "icon": { "image": "PoisonBarb", "palette": "PoisonBarb" },
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "NEVER_MELT_ICE": {
     "name": "NEVERMELTICE",
@@ -2317,7 +3401,11 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "NeverMeltIce", "palette": "NeverMeltIce" }
+    "icon": { "image": "NeverMeltIce", "palette": "NeverMeltIce" },
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "SPELL_TAG": {
     "name": "SPELL TAG",
@@ -2329,7 +3417,11 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "SpellTag", "palette": "SpellTag" }
+    "icon": { "image": "SpellTag", "palette": "SpellTag" },
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "TWISTED_SPOON": {
     "name": "TWISTEDSPOON",
@@ -2341,7 +3433,11 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "TwistedSpoon", "palette": "TwistedSpoon" }
+    "icon": { "image": "TwistedSpoon", "palette": "TwistedSpoon" },
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "CHARCOAL": {
     "name": "CHARCOAL",
@@ -2353,7 +3449,11 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "Charcoal", "palette": "Charcoal" }
+    "icon": { "image": "Charcoal", "palette": "Charcoal" },
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "DRAGON_FANG": {
     "name": "DRAGON FANG",
@@ -2365,7 +3465,11 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "DragonFang", "palette": "DragonFang" }
+    "icon": { "image": "DragonFang", "palette": "DragonFang" },
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "SILK_SCARF": {
     "name": "SILK SCARF",
@@ -2377,7 +3481,11 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "SilkScarf", "palette": "SilkScarf" }
+    "icon": { "image": "SilkScarf", "palette": "SilkScarf" },
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "UP_GRADE": {
     "name": "UP-GRADE",
@@ -2388,7 +3496,12 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "UpGrade", "palette": "UpGrade" }
+    "icon": { "image": "UpGrade", "palette": "UpGrade" },
+    "holdEffectParam": 0,
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "SHELL_BELL": {
     "name": "SHELL BELL",
@@ -2400,7 +3513,11 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "ShellBell", "palette": "Shell" }
+    "icon": { "image": "ShellBell", "palette": "Shell" },
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "SEA_INCENSE": {
     "name": "SEA INCENSE",
@@ -2412,7 +3529,11 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "SeaIncense", "palette": "SeaIncense" }
+    "icon": { "image": "SeaIncense", "palette": "SeaIncense" },
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "LAX_INCENSE": {
     "name": "LAX INCENSE",
@@ -2424,7 +3545,11 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "LaxIncense", "palette": "LaxIncense" }
+    "icon": { "image": "LaxIncense", "palette": "LaxIncense" },
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "LUCKY_PUNCH": {
     "name": "LUCKY PUNCH",
@@ -2435,7 +3560,12 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "LuckyPunch", "palette": "LuckyPunch" }
+    "icon": { "image": "LuckyPunch", "palette": "LuckyPunch" },
+    "holdEffectParam": 0,
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "METAL_POWDER": {
     "name": "METAL POWDER",
@@ -2446,7 +3576,12 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "MetalPowder", "palette": "MetalPowder" }
+    "icon": { "image": "MetalPowder", "palette": "MetalPowder" },
+    "holdEffectParam": 0,
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "THICK_CLUB": {
     "name": "THICK CLUB",
@@ -2457,7 +3592,12 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "ThickClub", "palette": "ThickClub" }
+    "icon": { "image": "ThickClub", "palette": "ThickClub" },
+    "holdEffectParam": 0,
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "STICK": {
     "name": "STICK",
@@ -2468,7 +3608,12 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "Stick", "palette": "Stick" }
+    "icon": { "image": "Stick", "palette": "Stick" },
+    "holdEffectParam": 0,
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "0E2": {
     "name": "????????",
@@ -2477,7 +3622,14 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" },
+    "description": "?????",
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "0E3": {
     "name": "????????",
@@ -2486,7 +3638,14 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" },
+    "description": "?????",
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "0E4": {
     "name": "????????",
@@ -2495,7 +3654,14 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" },
+    "description": "?????",
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "0E5": {
     "name": "????????",
@@ -2504,7 +3670,14 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" },
+    "description": "?????",
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "0E6": {
     "name": "????????",
@@ -2513,7 +3686,14 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" },
+    "description": "?????",
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "0E7": {
     "name": "????????",
@@ -2522,7 +3702,14 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" },
+    "description": "?????",
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "0E8": {
     "name": "????????",
@@ -2531,7 +3718,14 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" },
+    "description": "?????",
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "0E9": {
     "name": "????????",
@@ -2540,7 +3734,14 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" },
+    "description": "?????",
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "0EA": {
     "name": "????????",
@@ -2549,7 +3750,14 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" },
+    "description": "?????",
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "0EB": {
     "name": "????????",
@@ -2558,7 +3766,14 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" },
+    "description": "?????",
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "0EC": {
     "name": "????????",
@@ -2567,7 +3782,14 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" },
+    "description": "?????",
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "0ED": {
     "name": "????????",
@@ -2576,7 +3798,14 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" },
+    "description": "?????",
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "0EE": {
     "name": "????????",
@@ -2585,7 +3814,14 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" },
+    "description": "?????",
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "0EF": {
     "name": "????????",
@@ -2594,7 +3830,14 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" },
+    "description": "?????",
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "0F0": {
     "name": "????????",
@@ -2603,7 +3846,14 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" },
+    "description": "?????",
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "0F1": {
     "name": "????????",
@@ -2612,7 +3862,14 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" },
+    "description": "?????",
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "0F2": {
     "name": "????????",
@@ -2621,7 +3878,14 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" },
+    "description": "?????",
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "0F3": {
     "name": "????????",
@@ -2630,7 +3894,14 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" },
+    "description": "?????",
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "0F4": {
     "name": "????????",
@@ -2639,7 +3910,14 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" },
+    "description": "?????",
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "0F5": {
     "name": "????????",
@@ -2648,7 +3926,14 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" },
+    "description": "?????",
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "0F6": {
     "name": "????????",
@@ -2657,7 +3942,14 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" },
+    "description": "?????",
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "0F7": {
     "name": "????????",
@@ -2666,7 +3958,14 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" },
+    "description": "?????",
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "0F8": {
     "name": "????????",
@@ -2675,7 +3974,14 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" },
+    "description": "?????",
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "0F9": {
     "name": "????????",
@@ -2684,7 +3990,14 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" },
+    "description": "?????",
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "0FA": {
     "name": "????????",
@@ -2693,7 +4006,14 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" },
+    "description": "?????",
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "0FB": {
     "name": "????????",
@@ -2702,7 +4022,14 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" },
+    "description": "?????",
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "0FC": {
     "name": "????????",
@@ -2711,7 +4038,14 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" },
+    "description": "?????",
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "0FD": {
     "name": "????????",
@@ -2720,7 +4054,14 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" },
+    "description": "?????",
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "RED_SCARF": {
     "name": "RED SCARF",
@@ -2730,7 +4071,13 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "Scarf", "palette": "RedScarf" }
+    "icon": { "image": "Scarf", "palette": "RedScarf" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "BLUE_SCARF": {
     "name": "BLUE SCARF",
@@ -2740,7 +4087,13 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "Scarf", "palette": "BlueScarf" }
+    "icon": { "image": "Scarf", "palette": "BlueScarf" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "PINK_SCARF": {
     "name": "PINK SCARF",
@@ -2750,7 +4103,13 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "Scarf", "palette": "PinkScarf" }
+    "icon": { "image": "Scarf", "palette": "PinkScarf" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "GREEN_SCARF": {
     "name": "GREEN SCARF",
@@ -2760,7 +4119,13 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "Scarf", "palette": "GreenScarf" }
+    "icon": { "image": "Scarf", "palette": "GreenScarf" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "YELLOW_SCARF": {
     "name": "YELLOW SCARF",
@@ -2770,7 +4135,13 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "Scarf", "palette": "YellowScarf" }
+    "icon": { "image": "Scarf", "palette": "YellowScarf" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "MACH_BIKE": {
     "name": "MACH BIKE",
@@ -2782,7 +4153,11 @@
     "type": 2,
     "fieldUseFunc": "ItemUseOutOfBattle_Bike",
     "secondaryId": 0,
-    "icon": { "image": "MachBike", "palette": "MachBike" }
+    "icon": { "image": "MachBike", "palette": "MachBike" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "battleUsage": 0
   },
   "COIN_CASE": {
     "name": "COIN CASE",
@@ -2793,7 +4168,12 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CoinCase",
     "secondaryId": 0,
-    "icon": { "image": "CoinCase", "palette": "CoinCase" }
+    "icon": { "image": "CoinCase", "palette": "CoinCase" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "unk19": 0,
+    "battleUsage": 0
   },
   "ITEMFINDER": {
     "name": "ITEMFINDER",
@@ -2805,7 +4185,11 @@
     "type": 2,
     "fieldUseFunc": "ItemUseOutOfBattle_Itemfinder",
     "secondaryId": 0,
-    "icon": { "image": "Itemfinder", "palette": "Itemfinder" }
+    "icon": { "image": "Itemfinder", "palette": "Itemfinder" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "battleUsage": 0
   },
   "OLD_ROD": {
     "name": "OLD ROD",
@@ -2817,7 +4201,11 @@
     "type": 2,
     "fieldUseFunc": "ItemUseOutOfBattle_Rod",
     "secondaryId": 0,
-    "icon": { "image": "OldRod", "palette": "OldRod" }
+    "icon": { "image": "OldRod", "palette": "OldRod" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "battleUsage": 0
   },
   "GOOD_ROD": {
     "name": "GOOD ROD",
@@ -2829,7 +4217,11 @@
     "type": 2,
     "fieldUseFunc": "ItemUseOutOfBattle_Rod",
     "secondaryId": 1,
-    "icon": { "image": "GoodRod", "palette": "GoodRod" }
+    "icon": { "image": "GoodRod", "palette": "GoodRod" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "battleUsage": 0
   },
   "SUPER_ROD": {
     "name": "SUPER ROD",
@@ -2841,7 +4233,11 @@
     "type": 2,
     "fieldUseFunc": "ItemUseOutOfBattle_Rod",
     "secondaryId": 2,
-    "icon": { "image": "SuperRod", "palette": "SuperRod" }
+    "icon": { "image": "SuperRod", "palette": "SuperRod" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "battleUsage": 0
   },
   "SS_TICKET": {
     "name": "S.S. TICKET",
@@ -2852,7 +4248,12 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "SSTicket", "palette": "SSTicket" }
+    "icon": { "image": "SSTicket", "palette": "SSTicket" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "unk19": 0,
+    "battleUsage": 0
   },
   "CONTEST_PASS": {
     "name": "CONTEST PASS",
@@ -2863,7 +4264,12 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "ContestPass", "palette": "ContestPass" }
+    "icon": { "image": "ContestPass", "palette": "ContestPass" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "unk19": 0,
+    "battleUsage": 0
   },
   "10B": {
     "name": "????????",
@@ -2872,7 +4278,14 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" },
+    "description": "?????",
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "WAILMER_PAIL": {
     "name": "WAILMER PAIL",
@@ -2883,7 +4296,12 @@
     "type": 2,
     "fieldUseFunc": "ItemUseOutOfBattle_WailmerPail",
     "secondaryId": 0,
-    "icon": { "image": "WailmerPail", "palette": "WailmerPail" }
+    "icon": { "image": "WailmerPail", "palette": "WailmerPail" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "unk19": 0,
+    "battleUsage": 0
   },
   "DEVON_GOODS": {
     "name": "DEVON GOODS",
@@ -2894,7 +4312,12 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "DevonGoods", "palette": "DevonGoods" }
+    "icon": { "image": "DevonGoods", "palette": "DevonGoods" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "unk19": 0,
+    "battleUsage": 0
   },
   "SOOT_SACK": {
     "name": "SOOT SACK",
@@ -2905,7 +4328,12 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "SootSack", "palette": "SootSack" }
+    "icon": { "image": "SootSack", "palette": "SootSack" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "unk19": 0,
+    "battleUsage": 0
   },
   "BASEMENT_KEY": {
     "name": "BASEMENT KEY",
@@ -2916,7 +4344,12 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "BasementKey", "palette": "OldKey" }
+    "icon": { "image": "BasementKey", "palette": "OldKey" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "unk19": 0,
+    "battleUsage": 0
   },
   "ACRO_BIKE": {
     "name": "ACRO BIKE",
@@ -2928,7 +4361,11 @@
     "type": 2,
     "fieldUseFunc": "ItemUseOutOfBattle_Bike",
     "secondaryId": 1,
-    "icon": { "image": "AcroBike", "palette": "AcroBike" }
+    "icon": { "image": "AcroBike", "palette": "AcroBike" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "battleUsage": 0
   },
   "POKEBLOCK_CASE": {
     "name": "{POKEBLOCK} CASE",
@@ -2940,7 +4377,11 @@
     "type": 3,
     "fieldUseFunc": "ItemUseOutOfBattle_PokeblockCase",
     "secondaryId": 0,
-    "icon": { "image": "PokeblockCase", "palette": "PokeblockCase" }
+    "icon": { "image": "PokeblockCase", "palette": "PokeblockCase" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "battleUsage": 0
   },
   "LETTER": {
     "name": "LETTER",
@@ -2951,7 +4392,12 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "Letter", "palette": "LavaCookieAndLetter" }
+    "icon": { "image": "Letter", "palette": "LavaCookieAndLetter" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "unk19": 0,
+    "battleUsage": 0
   },
   "EON_TICKET": {
     "name": "EON TICKET",
@@ -2962,7 +4408,12 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 1,
-    "icon": { "image": "EonTicket", "palette": "EonTicket" }
+    "icon": { "image": "EonTicket", "palette": "EonTicket" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "unk19": 0,
+    "battleUsage": 0
   },
   "RED_ORB": {
     "name": "RED ORB",
@@ -2973,7 +4424,12 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "Orb", "palette": "RedOrb" }
+    "icon": { "image": "Orb", "palette": "RedOrb" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "unk19": 0,
+    "battleUsage": 0
   },
   "BLUE_ORB": {
     "name": "BLUE ORB",
@@ -2984,7 +4440,12 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "Orb", "palette": "BlueOrb" }
+    "icon": { "image": "Orb", "palette": "BlueOrb" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "unk19": 0,
+    "battleUsage": 0
   },
   "SCANNER": {
     "name": "SCANNER",
@@ -2995,7 +4456,12 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "Scanner", "palette": "Scanner" }
+    "icon": { "image": "Scanner", "palette": "Scanner" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "unk19": 0,
+    "battleUsage": 0
   },
   "GO_GOGGLES": {
     "name": "GO-GOGGLES",
@@ -3006,7 +4472,12 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "GoGoggles", "palette": "GoGoggles" }
+    "icon": { "image": "GoGoggles", "palette": "GoGoggles" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "unk19": 0,
+    "battleUsage": 0
   },
   "METEORITE": {
     "name": "METEORITE",
@@ -3017,7 +4488,12 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "Meteorite", "palette": "Meteorite" }
+    "icon": { "image": "Meteorite", "palette": "Meteorite" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "unk19": 0,
+    "battleUsage": 0
   },
   "ROOM_1_KEY": {
     "name": "RM. 1 KEY",
@@ -3028,7 +4504,12 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "Room1Key", "palette": "Key" }
+    "icon": { "image": "Room1Key", "palette": "Key" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "unk19": 0,
+    "battleUsage": 0
   },
   "ROOM_2_KEY": {
     "name": "RM. 2 KEY",
@@ -3039,7 +4520,12 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "Room2Key", "palette": "Key" }
+    "icon": { "image": "Room2Key", "palette": "Key" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "unk19": 0,
+    "battleUsage": 0
   },
   "ROOM_4_KEY": {
     "name": "RM. 4 KEY",
@@ -3050,7 +4536,12 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "Room4Key", "palette": "Key" }
+    "icon": { "image": "Room4Key", "palette": "Key" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "unk19": 0,
+    "battleUsage": 0
   },
   "ROOM_6_KEY": {
     "name": "RM. 6 KEY",
@@ -3061,7 +4552,12 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "Room6Key", "palette": "Key" }
+    "icon": { "image": "Room6Key", "palette": "Key" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "unk19": 0,
+    "battleUsage": 0
   },
   "STORAGE_KEY": {
     "name": "STORAGE KEY",
@@ -3072,7 +4568,12 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "StorageKey", "palette": "OldKey" }
+    "icon": { "image": "StorageKey", "palette": "OldKey" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "unk19": 0,
+    "battleUsage": 0
   },
   "ROOT_FOSSIL": {
     "name": "ROOT FOSSIL",
@@ -3083,7 +4584,12 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "RootFossil", "palette": "HoennFossil" }
+    "icon": { "image": "RootFossil", "palette": "HoennFossil" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "unk19": 0,
+    "battleUsage": 0
   },
   "CLAW_FOSSIL": {
     "name": "CLAW FOSSIL",
@@ -3094,7 +4600,12 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "ClawFossil", "palette": "HoennFossil" }
+    "icon": { "image": "ClawFossil", "palette": "HoennFossil" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "unk19": 0,
+    "battleUsage": 0
   },
   "DEVON_SCOPE": {
     "name": "DEVON SCOPE",
@@ -3105,7 +4616,12 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "DevonScope", "palette": "DevonScope" }
+    "icon": { "image": "DevonScope", "palette": "DevonScope" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "unk19": 0,
+    "battleUsage": 0
   },
   "TM01_FOCUS_PUNCH": {
     "name": "TM01",
@@ -3114,7 +4630,13 @@
     "pocket": "TM_HM",
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_TMHM",
-    "secondaryId": 0
+    "secondaryId": 0,
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "TM02_DRAGON_CLAW": {
     "name": "TM02",
@@ -3123,7 +4645,13 @@
     "pocket": "TM_HM",
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_TMHM",
-    "secondaryId": 0
+    "secondaryId": 0,
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "TM03_WATER_PULSE": {
     "name": "TM03",
@@ -3132,7 +4660,13 @@
     "pocket": "TM_HM",
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_TMHM",
-    "secondaryId": 0
+    "secondaryId": 0,
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "TM04_CALM_MIND": {
     "name": "TM04",
@@ -3141,7 +4675,13 @@
     "pocket": "TM_HM",
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_TMHM",
-    "secondaryId": 0
+    "secondaryId": 0,
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "TM05_ROAR": {
     "name": "TM05",
@@ -3150,7 +4690,13 @@
     "pocket": "TM_HM",
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_TMHM",
-    "secondaryId": 0
+    "secondaryId": 0,
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "TM06_TOXIC": {
     "name": "TM06",
@@ -3159,7 +4705,13 @@
     "pocket": "TM_HM",
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_TMHM",
-    "secondaryId": 0
+    "secondaryId": 0,
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "TM07_HAIL": {
     "name": "TM07",
@@ -3168,7 +4720,13 @@
     "pocket": "TM_HM",
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_TMHM",
-    "secondaryId": 0
+    "secondaryId": 0,
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "TM08_BULK_UP": {
     "name": "TM08",
@@ -3177,7 +4735,13 @@
     "pocket": "TM_HM",
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_TMHM",
-    "secondaryId": 0
+    "secondaryId": 0,
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "TM09_BULLET_SEED": {
     "name": "TM09",
@@ -3186,7 +4750,13 @@
     "pocket": "TM_HM",
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_TMHM",
-    "secondaryId": 0
+    "secondaryId": 0,
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "TM10_HIDDEN_POWER": {
     "name": "TM10",
@@ -3195,7 +4765,13 @@
     "pocket": "TM_HM",
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_TMHM",
-    "secondaryId": 0
+    "secondaryId": 0,
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "TM11_SUNNY_DAY": {
     "name": "TM11",
@@ -3204,7 +4780,13 @@
     "pocket": "TM_HM",
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_TMHM",
-    "secondaryId": 0
+    "secondaryId": 0,
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "TM12_TAUNT": {
     "name": "TM12",
@@ -3213,7 +4795,13 @@
     "pocket": "TM_HM",
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_TMHM",
-    "secondaryId": 0
+    "secondaryId": 0,
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "TM13_ICE_BEAM": {
     "name": "TM13",
@@ -3222,7 +4810,13 @@
     "pocket": "TM_HM",
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_TMHM",
-    "secondaryId": 0
+    "secondaryId": 0,
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "TM14_BLIZZARD": {
     "name": "TM14",
@@ -3231,7 +4825,13 @@
     "pocket": "TM_HM",
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_TMHM",
-    "secondaryId": 0
+    "secondaryId": 0,
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "TM15_HYPER_BEAM": {
     "name": "TM15",
@@ -3240,7 +4840,13 @@
     "pocket": "TM_HM",
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_TMHM",
-    "secondaryId": 0
+    "secondaryId": 0,
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "TM16_LIGHT_SCREEN": {
     "name": "TM16",
@@ -3249,7 +4855,13 @@
     "pocket": "TM_HM",
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_TMHM",
-    "secondaryId": 0
+    "secondaryId": 0,
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "TM17_PROTECT": {
     "name": "TM17",
@@ -3258,7 +4870,13 @@
     "pocket": "TM_HM",
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_TMHM",
-    "secondaryId": 0
+    "secondaryId": 0,
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "TM18_RAIN_DANCE": {
     "name": "TM18",
@@ -3267,7 +4885,13 @@
     "pocket": "TM_HM",
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_TMHM",
-    "secondaryId": 0
+    "secondaryId": 0,
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "TM19_GIGA_DRAIN": {
     "name": "TM19",
@@ -3276,7 +4900,13 @@
     "pocket": "TM_HM",
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_TMHM",
-    "secondaryId": 0
+    "secondaryId": 0,
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "TM20_SAFEGUARD": {
     "name": "TM20",
@@ -3285,7 +4915,13 @@
     "pocket": "TM_HM",
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_TMHM",
-    "secondaryId": 0
+    "secondaryId": 0,
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "TM21_FRUSTRATION": {
     "name": "TM21",
@@ -3294,7 +4930,13 @@
     "pocket": "TM_HM",
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_TMHM",
-    "secondaryId": 0
+    "secondaryId": 0,
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "TM22_SOLARBEAM": {
     "name": "TM22",
@@ -3303,7 +4945,13 @@
     "pocket": "TM_HM",
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_TMHM",
-    "secondaryId": 0
+    "secondaryId": 0,
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "TM23_IRON_TAIL": {
     "name": "TM23",
@@ -3312,7 +4960,13 @@
     "pocket": "TM_HM",
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_TMHM",
-    "secondaryId": 0
+    "secondaryId": 0,
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "TM24_THUNDERBOLT": {
     "name": "TM24",
@@ -3321,7 +4975,13 @@
     "pocket": "TM_HM",
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_TMHM",
-    "secondaryId": 0
+    "secondaryId": 0,
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "TM25_THUNDER": {
     "name": "TM25",
@@ -3330,7 +4990,13 @@
     "pocket": "TM_HM",
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_TMHM",
-    "secondaryId": 0
+    "secondaryId": 0,
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "TM26_EARTHQUAKE": {
     "name": "TM26",
@@ -3339,7 +5005,13 @@
     "pocket": "TM_HM",
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_TMHM",
-    "secondaryId": 0
+    "secondaryId": 0,
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "TM27_RETURN": {
     "name": "TM27",
@@ -3348,7 +5020,13 @@
     "pocket": "TM_HM",
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_TMHM",
-    "secondaryId": 0
+    "secondaryId": 0,
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "TM28_DIG": {
     "name": "TM28",
@@ -3357,7 +5035,13 @@
     "pocket": "TM_HM",
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_TMHM",
-    "secondaryId": 0
+    "secondaryId": 0,
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "TM29_PSYCHIC": {
     "name": "TM29",
@@ -3366,7 +5050,13 @@
     "pocket": "TM_HM",
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_TMHM",
-    "secondaryId": 0
+    "secondaryId": 0,
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "TM30_SHADOW_BALL": {
     "name": "TM30",
@@ -3375,7 +5065,13 @@
     "pocket": "TM_HM",
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_TMHM",
-    "secondaryId": 0
+    "secondaryId": 0,
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "TM31_BRICK_BREAK": {
     "name": "TM31",
@@ -3384,7 +5080,13 @@
     "pocket": "TM_HM",
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_TMHM",
-    "secondaryId": 0
+    "secondaryId": 0,
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "TM32_DOUBLE_TEAM": {
     "name": "TM32",
@@ -3393,7 +5095,13 @@
     "pocket": "TM_HM",
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_TMHM",
-    "secondaryId": 0
+    "secondaryId": 0,
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "TM33_REFLECT": {
     "name": "TM33",
@@ -3402,7 +5110,13 @@
     "pocket": "TM_HM",
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_TMHM",
-    "secondaryId": 0
+    "secondaryId": 0,
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "TM34_SHOCK_WAVE": {
     "name": "TM34",
@@ -3411,7 +5125,13 @@
     "pocket": "TM_HM",
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_TMHM",
-    "secondaryId": 0
+    "secondaryId": 0,
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "TM35_FLAMETHROWER": {
     "name": "TM35",
@@ -3420,7 +5140,13 @@
     "pocket": "TM_HM",
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_TMHM",
-    "secondaryId": 0
+    "secondaryId": 0,
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "TM36_SLUDGE_BOMB": {
     "name": "TM36",
@@ -3429,7 +5155,13 @@
     "pocket": "TM_HM",
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_TMHM",
-    "secondaryId": 0
+    "secondaryId": 0,
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "TM37_SANDSTORM": {
     "name": "TM37",
@@ -3438,7 +5170,13 @@
     "pocket": "TM_HM",
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_TMHM",
-    "secondaryId": 0
+    "secondaryId": 0,
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "TM38_FIRE_BLAST": {
     "name": "TM38",
@@ -3447,7 +5185,13 @@
     "pocket": "TM_HM",
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_TMHM",
-    "secondaryId": 0
+    "secondaryId": 0,
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "TM39_ROCK_TOMB": {
     "name": "TM39",
@@ -3456,7 +5200,13 @@
     "pocket": "TM_HM",
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_TMHM",
-    "secondaryId": 0
+    "secondaryId": 0,
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "TM40_AERIAL_ACE": {
     "name": "TM40",
@@ -3465,7 +5215,13 @@
     "pocket": "TM_HM",
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_TMHM",
-    "secondaryId": 0
+    "secondaryId": 0,
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "TM41_TORMENT": {
     "name": "TM41",
@@ -3474,7 +5230,13 @@
     "pocket": "TM_HM",
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_TMHM",
-    "secondaryId": 0
+    "secondaryId": 0,
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "TM42_FACADE": {
     "name": "TM42",
@@ -3483,7 +5245,13 @@
     "pocket": "TM_HM",
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_TMHM",
-    "secondaryId": 0
+    "secondaryId": 0,
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "TM43_SECRET_POWER": {
     "name": "TM43",
@@ -3492,7 +5260,13 @@
     "pocket": "TM_HM",
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_TMHM",
-    "secondaryId": 0
+    "secondaryId": 0,
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "TM44_REST": {
     "name": "TM44",
@@ -3501,7 +5275,13 @@
     "pocket": "TM_HM",
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_TMHM",
-    "secondaryId": 0
+    "secondaryId": 0,
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "TM45_ATTRACT": {
     "name": "TM45",
@@ -3510,7 +5290,13 @@
     "pocket": "TM_HM",
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_TMHM",
-    "secondaryId": 0
+    "secondaryId": 0,
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "TM46_THIEF": {
     "name": "TM46",
@@ -3519,7 +5305,13 @@
     "pocket": "TM_HM",
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_TMHM",
-    "secondaryId": 0
+    "secondaryId": 0,
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "TM47_STEEL_WING": {
     "name": "TM47",
@@ -3528,7 +5320,13 @@
     "pocket": "TM_HM",
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_TMHM",
-    "secondaryId": 0
+    "secondaryId": 0,
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "TM48_SKILL_SWAP": {
     "name": "TM48",
@@ -3537,7 +5335,13 @@
     "pocket": "TM_HM",
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_TMHM",
-    "secondaryId": 0
+    "secondaryId": 0,
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "TM49_SNATCH": {
     "name": "TM49",
@@ -3546,7 +5350,13 @@
     "pocket": "TM_HM",
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_TMHM",
-    "secondaryId": 0
+    "secondaryId": 0,
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "TM50_OVERHEAT": {
     "name": "TM50",
@@ -3555,7 +5365,13 @@
     "pocket": "TM_HM",
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_TMHM",
-    "secondaryId": 0
+    "secondaryId": 0,
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "HM01_CUT": {
     "name": "HM01",
@@ -3565,7 +5381,12 @@
     "pocket": "TM_HM",
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_TMHM",
-    "secondaryId": 0
+    "secondaryId": 0,
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "unk19": 0,
+    "battleUsage": 0
   },
   "HM02_FLY": {
     "name": "HM02",
@@ -3575,7 +5396,12 @@
     "pocket": "TM_HM",
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_TMHM",
-    "secondaryId": 0
+    "secondaryId": 0,
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "unk19": 0,
+    "battleUsage": 0
   },
   "HM03_SURF": {
     "name": "HM03",
@@ -3585,7 +5411,12 @@
     "pocket": "TM_HM",
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_TMHM",
-    "secondaryId": 0
+    "secondaryId": 0,
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "unk19": 0,
+    "battleUsage": 0
   },
   "HM04_STRENGTH": {
     "name": "HM04",
@@ -3595,7 +5426,12 @@
     "pocket": "TM_HM",
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_TMHM",
-    "secondaryId": 0
+    "secondaryId": 0,
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "unk19": 0,
+    "battleUsage": 0
   },
   "HM05_FLASH": {
     "name": "HM05",
@@ -3605,7 +5441,12 @@
     "pocket": "TM_HM",
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_TMHM",
-    "secondaryId": 0
+    "secondaryId": 0,
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "unk19": 0,
+    "battleUsage": 0
   },
   "HM06_ROCK_SMASH": {
     "name": "HM06",
@@ -3615,7 +5456,12 @@
     "pocket": "TM_HM",
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_TMHM",
-    "secondaryId": 0
+    "secondaryId": 0,
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "unk19": 0,
+    "battleUsage": 0
   },
   "HM07_WATERFALL": {
     "name": "HM07",
@@ -3625,7 +5471,12 @@
     "pocket": "TM_HM",
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_TMHM",
-    "secondaryId": 0
+    "secondaryId": 0,
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "unk19": 0,
+    "battleUsage": 0
   },
   "HM08_DIVE": {
     "name": "HM08",
@@ -3635,7 +5486,12 @@
     "pocket": "TM_HM",
     "type": 1,
     "fieldUseFunc": "ItemUseOutOfBattle_TMHM",
-    "secondaryId": 0
+    "secondaryId": 0,
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "unk19": 0,
+    "battleUsage": 0
   },
   "15B": {
     "name": "????????",
@@ -3644,7 +5500,14 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" },
+    "description": "?????",
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "15C": {
     "name": "????????",
@@ -3653,7 +5516,14 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "QuestionMark", "palette": "QuestionMark" }
+    "icon": { "image": "QuestionMark", "palette": "QuestionMark" },
+    "description": "?????",
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "importance": 0,
+    "unk19": 0,
+    "battleUsage": 0
   },
   "OAKS_PARCEL": {
     "name": "OAK'S PARCEL",
@@ -3664,7 +5534,12 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "OaksParcel", "palette": "OaksParcel" }
+    "icon": { "image": "OaksParcel", "palette": "OaksParcel" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "unk19": 0,
+    "battleUsage": 0
   },
   "POKE_FLUTE": {
     "name": "POKé FLUTE",
@@ -3675,7 +5550,12 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "PokeFlute", "palette": "PokeFlute" }
+    "icon": { "image": "PokeFlute", "palette": "PokeFlute" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "unk19": 0,
+    "battleUsage": 0
   },
   "SECRET_KEY": {
     "name": "SECRET KEY",
@@ -3686,7 +5566,12 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "SecretKey", "palette": "SecretKey" }
+    "icon": { "image": "SecretKey", "palette": "SecretKey" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "unk19": 0,
+    "battleUsage": 0
   },
   "BIKE_VOUCHER": {
     "name": "BIKE VOUCHER",
@@ -3697,7 +5582,12 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "BikeVoucher", "palette": "BikeVoucher" }
+    "icon": { "image": "BikeVoucher", "palette": "BikeVoucher" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "unk19": 0,
+    "battleUsage": 0
   },
   "GOLD_TEETH": {
     "name": "GOLD TEETH",
@@ -3708,7 +5598,12 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "GoldTeeth", "palette": "GoldTeeth" }
+    "icon": { "image": "GoldTeeth", "palette": "GoldTeeth" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "unk19": 0,
+    "battleUsage": 0
   },
   "OLD_AMBER": {
     "name": "OLD AMBER",
@@ -3719,7 +5614,12 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "OldAmber", "palette": "OldAmber" }
+    "icon": { "image": "OldAmber", "palette": "OldAmber" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "unk19": 0,
+    "battleUsage": 0
   },
   "CARD_KEY": {
     "name": "CARD KEY",
@@ -3730,7 +5630,12 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "CardKey", "palette": "CardKey" }
+    "icon": { "image": "CardKey", "palette": "CardKey" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "unk19": 0,
+    "battleUsage": 0
   },
   "LIFT_KEY": {
     "name": "LIFT KEY",
@@ -3741,7 +5646,12 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "LiftKey", "palette": "Key" }
+    "icon": { "image": "LiftKey", "palette": "Key" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "unk19": 0,
+    "battleUsage": 0
   },
   "HELIX_FOSSIL": {
     "name": "HELIX FOSSIL",
@@ -3752,7 +5662,12 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "HelixFossil", "palette": "KantoFossil" }
+    "icon": { "image": "HelixFossil", "palette": "KantoFossil" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "unk19": 0,
+    "battleUsage": 0
   },
   "DOME_FOSSIL": {
     "name": "DOME FOSSIL",
@@ -3763,7 +5678,12 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "DomeFossil", "palette": "KantoFossil" }
+    "icon": { "image": "DomeFossil", "palette": "KantoFossil" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "unk19": 0,
+    "battleUsage": 0
   },
   "SILPH_SCOPE": {
     "name": "SILPH SCOPE",
@@ -3774,7 +5694,12 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "SilphScope", "palette": "SilphScope" }
+    "icon": { "image": "SilphScope", "palette": "SilphScope" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "unk19": 0,
+    "battleUsage": 0
   },
   "BICYCLE": {
     "name": "BICYCLE",
@@ -3786,7 +5711,11 @@
     "type": 2,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "Bicycle", "palette": "Bicycle" }
+    "icon": { "image": "Bicycle", "palette": "Bicycle" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "battleUsage": 0
   },
   "TOWN_MAP": {
     "name": "TOWN MAP",
@@ -3798,7 +5727,11 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "TownMap", "palette": "TownMap" }
+    "icon": { "image": "TownMap", "palette": "TownMap" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "battleUsage": 0
   },
   "VS_SEEKER": {
     "name": "VS SEEKER",
@@ -3810,7 +5743,11 @@
     "type": 2,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "VSSeeker", "palette": "VSSeeker" }
+    "icon": { "image": "VSSeeker", "palette": "VSSeeker" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "battleUsage": 0
   },
   "FAME_CHECKER": {
     "name": "FAME CHECKER",
@@ -3822,7 +5759,11 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "FameChecker", "palette": "FameChecker" }
+    "icon": { "image": "FameChecker", "palette": "FameChecker" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "battleUsage": 0
   },
   "TM_CASE": {
     "name": "TM CASE",
@@ -3834,7 +5775,11 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "TMCase", "palette": "TMCase" }
+    "icon": { "image": "TMCase", "palette": "TMCase" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "battleUsage": 0
   },
   "BERRY_POUCH": {
     "name": "BERRY POUCH",
@@ -3846,7 +5791,11 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "BerryPouch", "palette": "BerryPouch" }
+    "icon": { "image": "BerryPouch", "palette": "BerryPouch" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "battleUsage": 0
   },
   "TEACHY_TV": {
     "name": "TEACHY TV",
@@ -3858,7 +5807,11 @@
     "type": 2,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "TeachyTV", "palette": "TeachyTV" }
+    "icon": { "image": "TeachyTV", "palette": "TeachyTV" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "battleUsage": 0
   },
   "TRI_PASS": {
     "name": "TRI-PASS",
@@ -3870,7 +5823,11 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "TriPass", "palette": "TriPass" }
+    "icon": { "image": "TriPass", "palette": "TriPass" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "battleUsage": 0
   },
   "RAINBOW_PASS": {
     "name": "RAINBOW PASS",
@@ -3882,7 +5839,11 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "RainbowPass", "palette": "RainbowPass" }
+    "icon": { "image": "RainbowPass", "palette": "RainbowPass" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "battleUsage": 0
   },
   "TEA": {
     "name": "TEA",
@@ -3894,7 +5855,11 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "Tea", "palette": "Tea" }
+    "icon": { "image": "Tea", "palette": "Tea" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "battleUsage": 0
   },
   "MYSTIC_TICKET": {
     "name": "MYSTICTICKET",
@@ -3906,7 +5871,11 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "MysticTicket", "palette": "MysticTicket" }
+    "icon": { "image": "MysticTicket", "palette": "MysticTicket" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "battleUsage": 0
   },
   "AURORA_TICKET": {
     "name": "AURORATICKET",
@@ -3918,7 +5887,11 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "AuroraTicket", "palette": "AuroraTicket" }
+    "icon": { "image": "AuroraTicket", "palette": "AuroraTicket" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "battleUsage": 0
   },
   "POWDER_JAR": {
     "name": "POWDER JAR",
@@ -3930,7 +5903,11 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_PowderJar",
     "secondaryId": 0,
-    "icon": { "image": "PowderJar", "palette": "PowderJar" }
+    "icon": { "image": "PowderJar", "palette": "PowderJar" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "battleUsage": 0
   },
   "RUBY": {
     "name": "RUBY",
@@ -3942,7 +5919,11 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "Gem", "palette": "Ruby" }
+    "icon": { "image": "Gem", "palette": "Ruby" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "battleUsage": 0
   },
   "SAPPHIRE": {
     "name": "SAPPHIRE",
@@ -3954,7 +5935,11 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "Gem", "palette": "Sapphire" }
+    "icon": { "image": "Gem", "palette": "Sapphire" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "battleUsage": 0
   },
   "MAGMA_EMBLEM": {
     "name": "MAGMA EMBLEM",
@@ -3966,7 +5951,11 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "MagmaEmblem", "palette": "MagmaEmblem" }
+    "icon": { "image": "MagmaEmblem", "palette": "MagmaEmblem" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "battleUsage": 0
   },
   "OLD_SEA_MAP": {
     "name": "OLD SEA MAP",
@@ -3978,6 +5967,10 @@
     "type": 4,
     "fieldUseFunc": "ItemUseOutOfBattle_CannotUse",
     "secondaryId": 0,
-    "icon": { "image": "OldSeaMap", "palette": "OldSeaMap" }
+    "icon": { "image": "OldSeaMap", "palette": "OldSeaMap" },
+    "holdEffectParam": 0,
+    "holdEffect": "",
+    "battleUseFunc": "",
+    "battleUsage": 0
   }
 }

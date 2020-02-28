@@ -66,16 +66,16 @@ export const NoTrainerPartyMon: TrainerPartyMon = {
 export interface Item {
   name: string;
   price: number;
-  holdEffect?: string;
-  holdEffectParam?: number;
+  holdEffect: string;
+  holdEffectParam: number;
   description: string;
-  importance?: number;
-  unk19?: number;
+  importance: number;
+  unk19: number;
   pocket: string;
   type: number;
-  fieldUseFunc?: string;
-  battleUsage?: number;
-  battleUseFunc?: string;
+  fieldUseFunc: string;
+  battleUsage: number;
+  battleUseFunc: string;
   secondaryId: number;
   icon?: {
     image: string;

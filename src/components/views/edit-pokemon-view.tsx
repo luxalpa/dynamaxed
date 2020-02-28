@@ -17,7 +17,11 @@ import { IDManager } from "@/modules/id-manager";
 import { InputNumberDialog } from "@/components/dialogs/input-number-dialog";
 import { ItemDisplay } from "@/components/displays/item-display";
 import { List } from "@/constants";
-import { chooseFromList, chooseNumber } from "@/components/views/utils";
+import {
+  chooseFromList,
+  chooseNumber,
+  chooseText
+} from "@/components/views/utils";
 import { EditMoveView } from "@/components/views/edit-move-view";
 
 async function changeID(pokemonID: string) {
@@ -209,7 +213,7 @@ export class EditPokemonView extends View<string> {
           </FlexRow>
           <FlexRow>
             <Label width={2}>Name</Label>
-            <Button width={6} onclick={() => changeName(pokemon)}>
+            <Button width={6} onclick={() => chooseText(pokemon, "name", 10)}>
               {this.pokemon.name}
             </Button>
           </FlexRow>

@@ -2,6 +2,8 @@ import { List } from "@/constants";
 import { DialogManager } from "@/modules/dialog-manager";
 import { Vue } from "vue-property-decorator";
 import { InputNumberDialog } from "@/components/dialogs/input-number-dialog";
+import { InputTextDialog } from "@/components/dialogs/input-text-dialog";
+import { createTextValidator } from "@/input-validators";
 
 export async function chooseFromList<T extends Object>(
   obj: T,
@@ -38,5 +40,25 @@ export async function chooseNumber<T extends Object>(
   });
   if (v !== undefined) {
     Vue.set(obj, stat, v);
+  }
+}
+
+export async function chooseText<T extends Object>(
+  obj: T,
+  prop: keyof T & string,
+  maxLen: number
+) {
+  const x = obj[prop];
+  if (typeof x !== "string") {
+    throw new Error("Needs a string");
+  }
+
+  const text = await DialogManager.openDialog(InputTextDialog, {
+    value: x,
+    check: createTextValidator(maxLen)
+  });
+
+  if (text !== undefined) {
+    Vue.set(obj, prop, text);
   }
 }

@@ -551,3 +551,12 @@ export const TutorMoves = [
   "FIRE_PUNCH",
   "FURY_CUTTER"
 ];
+
+export const Pockets = [
+  "NONE",
+  "ITEMS",
+  "POKE_BALLS",
+  "TM_HM",
+  "BERRIES",
+  "KEY_ITEMS"
+];
