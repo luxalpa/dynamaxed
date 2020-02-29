@@ -16,6 +16,7 @@ export interface ListSettings<T> {
   targetView?: new () => View<string>;
   filter: FilterFn<[string, T]>;
   title?: string;
+  allowCreation?: boolean;
 }
 
 export interface ListDialogOptions {
@@ -59,7 +60,7 @@ export class ListDialog extends Dialog<ListDialogOptions, string> {
           onentryclick={([id]: [string, any]) => this.accept(id)}
           class={styles.tableWrapper}
         />
-        {this.opts.targetView && (
+        {this.opts.targetView && this.opts.allowCreation && (
           <FlexRow class={styles.btn}>
             <Button onclick={() => this.createNew()}>Create new</Button>
           </FlexRow>
@@ -105,9 +106,11 @@ export class ListView extends View<ListViewOptions> {
           state={this.args.tableState}
           class={styles.list}
         />
-        <FlexRow class={styles.btn}>
-          <Button onclick={() => this.createNew()}>Create new</Button>
-        </FlexRow>
+        {this.opts.targetView && this.opts.allowCreation && (
+          <FlexRow class={styles.btn}>
+            <Button onclick={() => this.createNew()}>Create new</Button>
+          </FlexRow>
+        )}
       </div>
     );
   }

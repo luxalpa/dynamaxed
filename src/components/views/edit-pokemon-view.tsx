@@ -23,6 +23,7 @@ import {
   chooseText
 } from "@/components/views/utils";
 import { EditMoveView } from "@/components/views/edit-move-view";
+import { EditItemView } from "@/components/views/edit-item-view";
 
 async function changeID(pokemonID: string) {
   const newID = await DialogManager.openDialog(InputTextDialog, {
@@ -387,8 +388,9 @@ export class EditPokemonView extends View<string> {
             <Button
               width={5}
               onclick={() => chooseFromList(pokemon, "item1", List.Items)}
+              onnavigate={() => ViewManager.push(EditItemView, pokemon.item1)}
             >
-              {this.pokemon.item1}
+              <ItemDisplay item={this.pokemon.item1} />
             </Button>
           </FlexRow>
           <FlexRow>
@@ -396,8 +398,9 @@ export class EditPokemonView extends View<string> {
             <Button
               width={5}
               onclick={() => chooseFromList(pokemon, "item2", List.Items)}
+              onnavigate={() => ViewManager.push(EditItemView, pokemon.item2)}
             >
-              {this.pokemon.item2}
+              <ItemDisplay item={this.pokemon.item2} />
             </Button>
           </FlexRow>
           <FlexRow>
@@ -417,7 +420,11 @@ export class EditPokemonView extends View<string> {
             <EvoEntry evo={evo} onremove={() => removeEvo(pokemon, i)} />
           ))}
           <FlexRow>
-            <Button width={8} onclick={() => addEvo(pokemon)}>
+            <Button
+              width={8}
+              onclick={() => addEvo(pokemon)}
+              disabled={this.evos.length >= 5}
+            >
               Add
             </Button>
           </FlexRow>

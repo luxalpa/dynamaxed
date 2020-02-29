@@ -25,6 +25,7 @@ function calculateTrainerMoney(t: Trainer): number | undefined {
 export const TrainerList: ListSettings<Trainer> = {
   title: "All Trainers",
   targetView: EditTrainerView,
+  allowCreation: true,
   model: () => GameModel.model.trainers,
   filter: ([id, trainer], input) =>
     trainer.trainerName.toUpperCase().includes(input.toUpperCase()) ||

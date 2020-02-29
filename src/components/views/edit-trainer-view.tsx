@@ -24,6 +24,7 @@ import { IDDisplay } from "@/components/displays/id-display";
 import { EditMoveView } from "@/components/views/edit-move-view";
 import { ListDialog } from "@/components/lists/list";
 import { List } from "@/constants";
+import { EditItemView } from "@/components/views/edit-item-view";
 
 @Component
 export class EditTrainerView extends View<string> {
@@ -301,7 +302,11 @@ export class EditTrainerView extends View<string> {
           {this.trainer.items.map((item, i) => (
             <FlexRow>
               <Spacer width={1} />
-              <Button width={5} onclick={() => this.changeItem(i)}>
+              <Button
+                width={5}
+                onclick={() => this.changeItem(i)}
+                onnavigate={() => ViewManager.push(EditItemView, item)}
+              >
                 <ItemDisplay item={item} />
               </Button>
               <Button width={1} onclick={() => this.removeItem(i)}>
@@ -379,7 +384,12 @@ export class EditTrainerView extends View<string> {
                 <Sprite src={PathManager.pokePic(mon.species)} />
               </Button>
               <FlexColumn>
-                <Button onclick={() => this.changeHeldItem(mon)}>
+                <Button
+                  onclick={() => this.changeHeldItem(mon)}
+                  onnavigate={() =>
+                    ViewManager.push(EditItemView, mon.heldItem)
+                  }
+                >
                   <ItemDisplay item={mon.heldItem} />
                 </Button>
                 <FlexRow>

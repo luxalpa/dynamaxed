@@ -4,6 +4,8 @@ import { Vue } from "vue-property-decorator";
 import { InputNumberDialog } from "@/components/dialogs/input-number-dialog";
 import { InputTextDialog } from "@/components/dialogs/input-text-dialog";
 import { createTextValidator } from "@/input-validators";
+import { TextAreaInput } from "@/text-area-input";
+import { InputTextAreaDialog } from "@/components/dialogs/input-text-area-dialog";
 
 export async function chooseFromList<T extends Object>(
   obj: T,
@@ -54,6 +56,26 @@ export async function chooseText<T extends Object>(
   }
 
   const text = await DialogManager.openDialog(InputTextDialog, {
+    value: x,
+    check: createTextValidator(maxLen)
+  });
+
+  if (text !== undefined) {
+    Vue.set(obj, prop, text);
+  }
+}
+
+export async function chooseTextArea<T extends Object>(
+  obj: T,
+  prop: keyof T & string,
+  maxLen: number
+) {
+  const x = obj[prop];
+  if (typeof x !== "string") {
+    throw new Error("Needs a string");
+  }
+
+  const text = await DialogManager.openDialog(InputTextAreaDialog, {
     value: x,
     check: createTextValidator(maxLen)
   });

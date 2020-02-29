@@ -9,7 +9,8 @@ import { Portal } from "portal-vue";
 import {
   chooseFromList,
   chooseNumber,
-  chooseText
+  chooseText,
+  chooseTextArea
 } from "@/components/views/utils";
 import { List } from "@/constants";
 
@@ -38,6 +39,20 @@ export class EditItemView extends View<string> {
               {item.name}
             </Button>
           </FlexRow>
+          <FlexRow />
+
+          <FlexRow>
+            <Button
+              width={8}
+              height={3}
+              style={{ whiteSpace: "pre-line" }}
+              onclick={() => chooseTextArea(item, "description", 256)}
+            >
+              {item.description}
+            </Button>
+          </FlexRow>
+
+          <FlexRow />
           <FlexRow>
             <Label width={3}>Pocket</Label>
             <Button
