@@ -17,7 +17,7 @@ import { FlexColumn, FlexRow, Window, WindowLayout } from "@/components/layout";
 import { IDManager } from "@/modules/id-manager";
 import { ItemDisplay } from "@/components/displays/item-display";
 import { MoveDisplay } from "@/components/displays/move-display";
-import { extendArray, getDefaultMovesForMon } from "@/utils";
+import { getDefaultMovesForMon } from "@/utils";
 import { Portal } from "portal-vue";
 import { EditTrainerClassView } from "@/components/views/edit-trainer-class-view";
 import { IDDisplay } from "@/components/displays/id-display";
@@ -25,6 +25,11 @@ import { EditMoveView } from "@/components/views/edit-move-view";
 import { ListDialog } from "@/components/lists/list";
 import { List } from "@/constants";
 import { EditItemView } from "@/components/views/edit-item-view";
+import {
+  chooseFromList,
+  chooseNumber,
+  chooseText
+} from "@/components/views/utils";
 
 @Component
 export class EditTrainerView extends View<string> {
@@ -54,15 +59,6 @@ export class EditTrainerView extends View<string> {
     }
   }
 
-  async changeTrainerName() {
-    const text = await DialogManager.openDialog(InputTextDialog, {
-      value: this.trainer.trainerName
-    });
-    if (text !== undefined) {
-      this.trainer.trainerName = text;
-    }
-  }
-
   async changeTrainerID() {
     const text = await DialogManager.openDialog(InputTextDialog, {
       value: this.trainerID,
@@ -78,36 +74,6 @@ export class EditTrainerView extends View<string> {
     });
     if (text !== undefined) {
       IDManager.changeTrainerID(this.trainerID, text);
-    }
-  }
-
-  async changeTrainerClass() {
-    const trainerClass = await DialogManager.openDialog(ListDialog, {
-      list: List.TrainerClass,
-      key: this.trainer.trainerClass
-    });
-    if (trainerClass !== undefined) {
-      this.trainer.trainerClass = trainerClass;
-    }
-  }
-
-  async changeEncounterMusic() {
-    const encounterMusic = await DialogManager.openListDialog(
-      List.EncounterMusic,
-      this.trainer.encounterMusic
-    );
-    if (encounterMusic !== undefined) {
-      this.trainer.encounterMusic = encounterMusic;
-    }
-  }
-
-  async changeItem(pos: number) {
-    const item = await DialogManager.openListDialog(
-      List.Items,
-      this.trainer.items[pos]
-    );
-    if (item !== undefined) {
-      Vue.set(this.trainer.items, pos, item);
     }
   }
 
@@ -135,16 +101,6 @@ export class EditTrainerView extends View<string> {
     }
   }
 
-  async changePokemon(pos: number) {
-    const species = await DialogManager.openDialog(ListDialog, {
-      list: List.Pokemon,
-      key: this.trainer.party[pos].species
-    });
-    if (species !== undefined) {
-      this.trainer.party[pos].species = species;
-    }
-  }
-
   async addMon() {
     const species = await DialogManager.openDialog(ListDialog, {
       list: List.Pokemon,
@@ -163,13 +119,6 @@ export class EditTrainerView extends View<string> {
 
   removeMon(pos: number) {
     this.trainer.party.splice(pos, 1);
-  }
-
-  async changeHeldItem(mon: TrainerPartyMon) {
-    const item = await DialogManager.openListDialog(List.Items, mon.heldItem);
-    if (item !== undefined) {
-      mon.heldItem = item;
-    }
   }
 
   swapMons(posA: number, posB: number) {
@@ -192,47 +141,13 @@ export class EditTrainerView extends View<string> {
     this.swapMons(pos, pos + 1);
   }
 
-  async changeMove(mon: TrainerPartyMon, pos: number) {
-    const move = await DialogManager.openDialog(ListDialog, {
-      list: List.Move,
-      key: mon.moves?.[pos] || ""
-    });
-    if (move === undefined) {
-      return;
-    }
-
-    if (!mon.moves) {
-      Vue.set(mon, "moves", []);
-    }
-    if (pos >= mon.moves!.length) {
-      extendArray(mon.moves!, pos + 1, "NONE");
-    }
-    Vue.set(mon.moves!, pos, move);
-  }
-
-  async changeLevel(mon: TrainerPartyMon) {
-    const lvl = await DialogManager.openDialog(InputTextDialog, {
-      value: mon.lvl.toString()
-    });
-    if (lvl !== undefined) {
-      mon.lvl = parseInt(lvl);
-    }
-  }
-
-  async changeIV(mon: TrainerPartyMon) {
-    const lvl = await DialogManager.openDialog(InputTextDialog, {
-      value: mon.iv.toString()
-    });
-    if (lvl !== undefined) {
-      mon.iv = parseInt(lvl);
-    }
-  }
-
   removeTrainer() {
     IDManager.removeTrainer(this.trainerID);
   }
 
   render() {
+    const trainer = this.trainer;
+
     return (
       <WindowLayout>
         <Portal to="title">
@@ -253,8 +168,8 @@ export class EditTrainerView extends View<string> {
           </FlexRow>
           <FlexRow>
             <Label width={3}>Name</Label>
-            <Button onclick={() => this.changeTrainerName()}>
-              {this.trainer.trainerName}
+            <Button onclick={() => chooseText(trainer, "trainerName", 12)}>
+              {trainer.trainerName}
             </Button>
           </FlexRow>
           <FlexRow>
@@ -267,44 +182,44 @@ export class EditTrainerView extends View<string> {
             <Label width={3}>Trainer Class</Label>
             <Button
               height={2}
-              onclick={() => this.changeTrainerClass()}
+              onclick={() =>
+                chooseFromList(trainer, "trainerClass", List.TrainerClass)
+              }
               onnavigate={() =>
-                ViewManager.push(
-                  EditTrainerClassView,
-                  this.trainer.trainerClass
-                )
+                ViewManager.push(EditTrainerClassView, trainer.trainerClass)
               }
             >
-              <TrainerClassDisplay classId={this.trainer.trainerClass} />
+              <TrainerClassDisplay classId={trainer.trainerClass} />
             </Button>
           </FlexRow>
           <FlexRow>
             <Label width={4}>Encounter Music</Label>
-            <Button width={4} onclick={() => this.changeEncounterMusic()}>
-              {this.trainer.encounterMusic}
+            <Button
+              width={4}
+              onclick={() =>
+                chooseFromList(trainer, "encounterMusic", List.EncounterMusic)
+              }
+            >
+              {trainer.encounterMusic}
             </Button>
           </FlexRow>
           <FlexRow />
           <FlexRow>
             <Spacer width={1} />
-            <Checkbox vModel={this.trainer.doubleBattle}>
-              Double Battle
-            </Checkbox>
+            <Checkbox vModel={trainer.doubleBattle}>Double Battle</Checkbox>
           </FlexRow>
           <FlexRow>
             <Spacer width={1} />
-            <Checkbox vModel={this.trainer.isFemaleEncounter}>
-              Is Female
-            </Checkbox>
+            <Checkbox vModel={trainer.isFemaleEncounter}>Is Female</Checkbox>
           </FlexRow>
           <FlexRow />
           <Label width={4}>Items</Label>
-          {this.trainer.items.map((item, i) => (
+          {trainer.items.map((item, i) => (
             <FlexRow>
               <Spacer width={1} />
               <Button
                 width={5}
-                onclick={() => this.changeItem(i)}
+                onclick={() => chooseFromList(trainer.items, i, List.Items)}
                 onnavigate={() => ViewManager.push(EditItemView, item)}
               >
                 <ItemDisplay item={item} />
@@ -319,7 +234,7 @@ export class EditTrainerView extends View<string> {
             <Button
               width={6}
               onclick={() => this.addItem()}
-              disabled={this.trainer.items.length >= 4}
+              disabled={trainer.items.length >= 4}
             >
               Add
             </Button>
@@ -341,7 +256,7 @@ export class EditTrainerView extends View<string> {
           <Label>Pokemon</Label>
           <FlexRow>
             <Spacer width={1} />
-            <Checkbox width={6} vModel={this.trainer.customMoves}>
+            <Checkbox width={6} vModel={trainer.customMoves}>
               Custom Moves
             </Checkbox>
           </FlexRow>
@@ -354,7 +269,7 @@ export class EditTrainerView extends View<string> {
           </FlexRow>
         </Window>
         <Window>
-          {this.trainer.party.map((mon, i) => [
+          {trainer.party.map((mon, i) => [
             <FlexRow>
               <Spacer width={5} />
               <Button
@@ -366,7 +281,7 @@ export class EditTrainerView extends View<string> {
               </Button>
               <Button
                 width={1}
-                disabled={i == this.trainer.party.length - 1}
+                disabled={i == trainer.party.length - 1}
                 onclick={() => this.moveMonDown(i)}
               >
                 <font-awesome-icon icon={["fas", "arrow-down"]} />
@@ -379,13 +294,13 @@ export class EditTrainerView extends View<string> {
               <Button
                 height={3}
                 width={3}
-                onclick={() => this.changePokemon(i)}
+                onclick={() => chooseFromList(mon, "species", List.Pokemon)}
               >
                 <Sprite src={PathManager.pokePic(mon.species)} />
               </Button>
               <FlexColumn>
                 <Button
-                  onclick={() => this.changeHeldItem(mon)}
+                  onclick={() => chooseFromList(mon, "heldItem", List.Items)}
                   onnavigate={() =>
                     ViewManager.push(EditItemView, mon.heldItem)
                   }
@@ -394,13 +309,19 @@ export class EditTrainerView extends View<string> {
                 </Button>
                 <FlexRow>
                   <Label width={1}>Lv.</Label>
-                  <Button width={4} onclick={() => this.changeLevel(mon)}>
+                  <Button
+                    width={4}
+                    onclick={() => chooseNumber(mon, "lvl", 100)}
+                  >
                     {mon.lvl}
                   </Button>
                 </FlexRow>
                 <FlexRow>
                   <Label width={1}>IV</Label>
-                  <Button width={4} onclick={() => this.changeIV(mon)}>
+                  <Button
+                    width={4}
+                    onclick={() => chooseNumber(mon, "iv", 255)}
+                  >
                     {mon.iv}
                   </Button>
                 </FlexRow>
@@ -410,8 +331,8 @@ export class EditTrainerView extends View<string> {
               <FlexRow>
                 <Button
                   width={8}
-                  disabled={!this.trainer.customMoves}
-                  onclick={() => this.changeMove(mon, moveNum)}
+                  disabled={!trainer.customMoves}
+                  onclick={() => chooseFromList(mon.moves, moveNum, List.Move)}
                   onnavigate={() => ViewManager.push(EditMoveView, move)}
                 >
                   <MoveDisplay move={move} />
@@ -423,7 +344,7 @@ export class EditTrainerView extends View<string> {
           <FlexRow>
             <Button
               width={8}
-              disabled={this.trainer.party.length >= 6}
+              disabled={trainer.party.length >= 6}
               onclick={() => this.addMon()}
             >
               Add

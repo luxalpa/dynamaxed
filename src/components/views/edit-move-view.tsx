@@ -11,11 +11,14 @@ import { IDDisplay } from "@/components/displays/id-display";
 import { DialogManager } from "@/modules/dialog-manager";
 import { InputTextDialog } from "@/components/dialogs/input-text-dialog";
 import { IDManager } from "@/modules/id-manager";
-import { InputTextAreaDialog } from "@/components/dialogs/input-text-area-dialog";
-import { InputNumberDialog } from "@/components/dialogs/input-number-dialog";
 import { Spacer } from "@/components/spacer";
 import { List } from "@/constants";
-import { chooseNumber } from "@/components/views/utils";
+import {
+  chooseFromList,
+  chooseNumber,
+  chooseText,
+  chooseTextArea
+} from "@/components/views/utils";
 
 @Component
 export class EditMoveView extends View<string> {
@@ -45,96 +48,6 @@ export class EditMoveView extends View<string> {
     }
   }
 
-  async changeName() {
-    const text = await DialogManager.openDialog(InputTextDialog, {
-      value: this.move.name
-    });
-    if (text !== undefined) {
-      this.move.name = text;
-    }
-  }
-
-  async changeDescription() {
-    const text = await DialogManager.openDialog(InputTextAreaDialog, {
-      value: this.move.description
-    });
-    if (text !== undefined) {
-      this.move.description = text;
-    }
-  }
-
-  async changeEffect() {
-    const effect = await DialogManager.openListDialog(
-      List.MoveEffects,
-      this.move.effect
-    );
-    if (effect !== undefined) {
-      this.move.effect = effect;
-    }
-  }
-
-  async changeMoveTarget() {
-    const target = await DialogManager.openListDialog(
-      List.MoveTargets,
-      this.move.target
-    );
-    if (target !== undefined) {
-      this.move.target = target;
-    }
-  }
-
-  async changeType() {
-    const target = await DialogManager.openListDialog(
-      List.Types,
-      this.move.type
-    );
-    if (target !== undefined) {
-      this.move.type = target;
-    }
-  }
-
-  async changePriority() {
-    const prio = await DialogManager.openDialog(InputNumberDialog, {
-      value: this.move.priority,
-      min: -127,
-      max: 128
-    });
-    if (prio !== undefined) {
-      this.move.priority = prio;
-    }
-  }
-
-  async changePP() {
-    const pp = await DialogManager.openDialog(InputNumberDialog, {
-      value: this.move.pp,
-      min: 0,
-      max: 99
-    });
-    if (pp !== undefined) {
-      this.move.pp = pp;
-    }
-  }
-  async changePower() {
-    const power = await DialogManager.openDialog(InputNumberDialog, {
-      value: this.move.power,
-      min: 0,
-      max: 255
-    });
-    if (power !== undefined) {
-      this.move.power = power;
-    }
-  }
-  async changeAccuracy() {
-    const accuracy = await DialogManager.openDialog(InputNumberDialog, {
-      value: this.move.accuracy,
-      min: 0,
-      max: 255
-    });
-    if (accuracy !== undefined) {
-      this.move.accuracy = accuracy;
-    }
-  }
-
   async deleteMove() {
     IDManager.removeMove(this.moveID);
   }
@@ -153,6 +66,8 @@ export class EditMoveView extends View<string> {
   }
 
   render() {
+    const move = this.move;
+
     return (
       <WindowLayout>
         <Portal to="title">
@@ -167,7 +82,9 @@ export class EditMoveView extends View<string> {
           </FlexRow>
           <FlexRow>
             <Label width={3}>Name</Label>
-            <Button onclick={() => this.changeName()}>{this.move.name}</Button>
+            <Button onclick={() => chooseText(move, "name", 12)}>
+              {move.name}
+            </Button>
           </FlexRow>
           <FlexRow />
           <FlexRow>
@@ -175,63 +92,74 @@ export class EditMoveView extends View<string> {
               height={2}
               width={8}
               style={{ whiteSpace: "pre-line" }}
-              onclick={() => this.changeDescription()}
+              onclick={() => chooseTextArea(move, "description", 999)}
             >
-              {this.move.description}
+              {move.description}
             </Button>
           </FlexRow>
           <FlexRow />
           <FlexRow>
             <Label width={3}>Effect</Label>
-            <Button onclick={() => this.changeEffect()}>
-              {this.move.effect}
+            <Button
+              onclick={() => chooseFromList(move, "effect", List.MoveEffects)}
+            >
+              {move.effect}
             </Button>
           </FlexRow>
           <FlexRow>
             <Label width={5}>Secondary Effect %</Label>
             <Button
-              onclick={() =>
-                chooseNumber(this.move, "secondaryEffectChance", 255)
-              }
+              onclick={() => chooseNumber(move, "secondaryEffectChance", 255)}
               width={3}
             >
-              {this.move.secondaryEffectChance}
+              {move.secondaryEffectChance}
             </Button>
           </FlexRow>
           <FlexRow>
             <Label width={3}>Target</Label>
-            <Button onclick={() => this.changeMoveTarget()}>
-              {this.move.target}
+            <Button
+              onclick={() => chooseFromList(move, "target", List.MoveTargets)}
+            >
+              {move.target}
             </Button>
           </FlexRow>
           <FlexRow>
             <Label width={3}>Type</Label>
-            <Button width={5} onclick={() => this.changeType()}>
-              {this.move.type}
+            <Button
+              width={5}
+              onclick={() => chooseFromList(move, "type", List.Types)}
+            >
+              {move.type}
             </Button>
           </FlexRow>
           <FlexRow>
             <Label width={3}>Priority</Label>
-            <Button width={2} onclick={() => this.changePriority()}>
-              {this.move.priority}
+            <Button
+              width={2}
+              onclick={() => chooseNumber(move, "priority", 128, -127)}
+            >
+              {move.priority}
             </Button>
           </FlexRow>
           <FlexRow>
             <Label width={3}>PP</Label>
-            <Button width={2} onclick={() => this.changePP()}>
-              {this.move.pp}
+            <Button width={2} onclick={() => chooseNumber(move, "pp", 99)}>
+              {move.pp}
             </Button>
           </FlexRow>
           <FlexRow>
             <Label width={3}>Power</Label>
-            <Button width={2} onclick={() => this.changePower()}>
-              {this.move.power}
+            <Button width={2} onclick={() => chooseNumber(move, "power", 255)}>
+              {move.power}
             </Button>
           </FlexRow>
           <FlexRow>
             <Label width={3}>Accuracy</Label>
-            <Button width={2} onclick={() => this.changeAccuracy()}>
-              {this.move.accuracy}
+            <Button
+              width={2}
+              onclick={() => chooseNumber(move, "accuracy", 255)}
+            >
+              {move.accuracy}
             </Button>
           </FlexRow>
           <FlexRow />
@@ -247,7 +175,7 @@ export class EditMoveView extends View<string> {
           ))}
           <FlexRow />
           <FlexRow>
-            <Checkbox width={6} vModel={this.move.apprenticeUsable}>
+            <Checkbox width={6} vModel={move.apprenticeUsable}>
               Usable by apprentice
             </Checkbox>
           </FlexRow>

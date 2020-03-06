@@ -4,12 +4,11 @@ import { Vue } from "vue-property-decorator";
 import { InputNumberDialog } from "@/components/dialogs/input-number-dialog";
 import { InputTextDialog } from "@/components/dialogs/input-text-dialog";
 import { createTextValidator } from "@/input-validators";
-import { TextAreaInput } from "@/text-area-input";
 import { InputTextAreaDialog } from "@/components/dialogs/input-text-area-dialog";
 
 export async function chooseFromList<T extends Object>(
   obj: T,
-  prop: keyof T & string,
+  prop: keyof T & (string | number),
   list: List
 ) {
   const x = obj[prop];
@@ -25,7 +24,7 @@ export async function chooseFromList<T extends Object>(
 
 export async function chooseNumber<T extends Object>(
   obj: T,
-  stat: keyof T & string,
+  stat: keyof T & (string | number),
   max: number = 255,
   min: number = 0
 ) {
@@ -47,7 +46,7 @@ export async function chooseNumber<T extends Object>(
 
 export async function chooseText<T extends Object>(
   obj: T,
-  prop: keyof T & string,
+  prop: keyof T & (string | number),
   maxLen: number
 ) {
   const x = obj[prop];
@@ -67,7 +66,7 @@ export async function chooseText<T extends Object>(
 
 export async function chooseTextArea<T extends Object>(
   obj: T,
-  prop: keyof T & string,
+  prop: keyof T & (string | number),
   maxLen: number
 ) {
   const x = obj[prop];

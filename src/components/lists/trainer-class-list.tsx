@@ -10,7 +10,8 @@ export const TrainerClassList: ListSettings<TrainerClass> = {
   targetView: EditTrainerClassView,
   model: () => GameModel.model.trainerClasses,
   defaultObj: () => ({
-    name: "CUSTOM CLASS"
+    name: "CUSTOM CLASS",
+    money: 5
   }),
   layout: [
     {
@@ -27,8 +28,7 @@ export const TrainerClassList: ListSettings<TrainerClass> = {
     {
       text: "Money",
       sort: ([, trainerClass1], [, trainerClass2]) =>
-        (trainerClass1.money || TrainerClassDefaultMoney) -
-        (trainerClass2.money || TrainerClassDefaultMoney),
+        trainerClass1.money - trainerClass2.money,
       render: (h, [id, trainerClass]) => (
         <div class={styleMoney}>{trainerClass.money || "-"}</div>
       ),

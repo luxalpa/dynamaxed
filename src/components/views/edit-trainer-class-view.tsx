@@ -12,6 +12,7 @@ import { Portal } from "portal-vue";
 import { IDDisplay } from "@/components/displays/id-display";
 import { ListDialog } from "@/components/lists/list";
 import { List } from "@/constants";
+import { chooseNumber, chooseText } from "@/components/views/utils";
 
 @Component
 export class EditTrainerClassView extends View<string> {
@@ -21,28 +22,6 @@ export class EditTrainerClassView extends View<string> {
 
   get trainerClass(): TrainerClass {
     return GameModel.model.trainerClasses[this.classID];
-  }
-
-  async changeTitle() {
-    const title = await DialogManager.openDialog(InputTextDialog, {
-      value: this.trainerClass.name
-    });
-    if (title !== undefined) {
-      this.trainerClass.name = title;
-    }
-  }
-
-  async changeMoney() {
-    const money = await DialogManager.openDialog(InputTextDialog, {
-      value: this.trainerClass.money ? this.trainerClass.money.toString() : ""
-    });
-    if (money !== undefined) {
-      if (money == "") {
-        Vue.delete(this.trainerClass, "money");
-      } else {
-        Vue.set(this.trainerClass, "money", parseInt(money));
-      }
-    }
   }
 
   async changeID() {
@@ -89,6 +68,8 @@ export class EditTrainerClassView extends View<string> {
   }
 
   render() {
+    const trainerClass = this.trainerClass;
+
     return (
       <WindowLayout>
         <Portal to="title">
@@ -104,15 +85,15 @@ export class EditTrainerClassView extends View<string> {
 
           <FlexRow>
             <Label width={3}>Title</Label>
-            <Button onclick={() => this.changeTitle()}>
-              {this.trainerClass.name}
+            <Button onclick={() => chooseText(trainerClass, "name", 13)}>
+              {trainerClass.name}
             </Button>
           </FlexRow>
 
           <FlexRow>
             <Label width={3}>Money</Label>
-            <Button onclick={() => this.changeMoney()}>
-              {this.trainerClass.money}
+            <Button onclick={() => chooseNumber(trainerClass, "money", 255)}>
+              {trainerClass.money}
             </Button>
           </FlexRow>
           <FlexRow />

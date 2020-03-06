@@ -90,8 +90,6 @@ export class ListView extends View<ListViewOptions> {
   }
 
   render() {
-    console.log("Table State", this.args.tableState);
-
     return (
       <div class={styles.view}>
         <Portal to="title">{this.opts.title}</Portal>

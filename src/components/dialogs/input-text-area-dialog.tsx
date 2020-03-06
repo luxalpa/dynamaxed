@@ -7,7 +7,7 @@ import { Button } from "@/components/button";
 import { modifiers } from "vue-tsx-support";
 import { Label } from "@/components/label";
 import { stylesheet } from "typestyle";
-import { TextAreaInput } from "@/text-area-input";
+import { TextAreaInput } from "@/components/text-area-input";
 
 interface InputTextDialogProps {
   value: string;

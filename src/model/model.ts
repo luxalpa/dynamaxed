@@ -49,11 +49,12 @@ export const NoTrainer: Trainer = {
 
 export interface TrainerClass {
   name: string;
-  money?: number;
+  money: number;
 }
 
 export const NoTrainerClass: TrainerClass = {
-  name: ""
+  name: "",
+  money: 5
 };
 
 export const NoTrainerPartyMon: TrainerPartyMon = {
