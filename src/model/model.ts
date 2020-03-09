@@ -3,6 +3,7 @@ import trainerClassDefaults from "@/model/defaults/trainer-classes.json";
 import itemDefaults from "@/model/defaults/items.json";
 import pokemonDefaults from "@/model/defaults/pokemon.json";
 import moveDefaults from "@/model/defaults/moves.json";
+import statModDefaults from "@/model/defaults/statmods.json";
 import fs from "fs";
 import path from "path";
 import { compileTrainers } from "@/model/serialize/trainers";
@@ -12,6 +13,7 @@ import { compileTrainerClasses } from "@/model/serialize/trainer-classes";
 import { compileMoves } from "@/model/serialize/moves";
 import { compilePokemon } from "@/model/serialize/pokemon";
 import { compileItems } from "@/model/serialize/items";
+import { compileStatStages } from "@/model/serialize/statstages";
 
 export interface TrainerPartyMon {
   iv: number;
@@ -176,6 +178,7 @@ export interface Model {
   items: Record<string, Item>;
   pokemon: Record<string, Pokemon>;
   moves: Record<string, Move>;
+  statMods: number[][];
 }
 
 type Files = {
@@ -187,7 +190,8 @@ const files: Files = {
   trainerClasses: ["trainer-classes.json", trainerClassDefaults],
   items: ["items.json", itemDefaults],
   pokemon: ["pokemon.json", pokemonDefaults],
-  moves: ["moves.json", moveDefaults]
+  moves: ["moves.json", moveDefaults],
+  statMods: ["statmods.json", statModDefaults]
 };
 
 export const GameModel = new (class {
@@ -196,11 +200,17 @@ export const GameModel = new (class {
     trainerClasses: {},
     items: {},
     pokemon: {},
-    moves: {}
+    moves: {},
+    statMods: []
   };
   createFromDefaults() {
     this.model = (Object.fromEntries(
-      Object.entries(files).map(([key, [filename, obj]]) => [key, { ...obj }])
+      Object.entries(files).map(([key, [filename, obj]]) => {
+        if (Array.isArray(obj)) {
+          return [key, [...obj]];
+        }
+        return [key, { ...obj }];
+      })
     ) as unknown) as Model;
   }
 
@@ -246,6 +256,7 @@ export const GameModel = new (class {
     compileMoves();
     compilePokemon();
     compileItems();
+    compileStatStages();
   }
 })();
 

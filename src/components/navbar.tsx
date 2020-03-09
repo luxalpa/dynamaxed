@@ -1,16 +1,18 @@
 import { Component, Vue } from "vue-property-decorator";
 import { classes, stylesheet } from "typestyle";
 import { Theme } from "@/theming";
-import { ViewManager } from "@/modules/view-manager";
+import { View, ViewManager } from "@/modules/view-manager";
 import { px } from "csx";
 import { TableStateInitial } from "@/components/table";
 import { List } from "@/constants";
 import { ListView } from "@/components/lists/list";
+import { EditStatmodsView } from "@/components/views/edit-statmods-view";
 
 interface NavElement {
   isSubElement?: boolean;
   text: string;
-  switchToList: List;
+  switchToList?: List;
+  targetView?: new () => View<void>;
 }
 
 const navElements: NavElement[] = [
@@ -38,6 +40,11 @@ const navElements: NavElement[] = [
     text: "Items",
     isSubElement: false,
     switchToList: List.Items
+  },
+  {
+    text: "Stat Modifiers",
+    isSubElement: false,
+    targetView: EditStatmodsView
   }
 ];
 
@@ -46,10 +53,16 @@ const navElements: NavElement[] = [
 })
 export class Navbar extends Vue {
   jumpToEntry(entry: NavElement) {
-    ViewManager.push(ListView, {
-      tableState: TableStateInitial(),
-      list: entry.switchToList
-    });
+    if (entry.switchToList) {
+      ViewManager.push(ListView, {
+        tableState: TableStateInitial(),
+        list: entry.switchToList
+      });
+    } else if (entry.targetView) {
+      ViewManager.push(entry.targetView);
+    } else {
+      throw new Error("Neither list nor view set!");
+    }
   }
 
   render() {

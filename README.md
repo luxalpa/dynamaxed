@@ -22,6 +22,8 @@ yarn electron:build
 - Auto Filtering for Held Items and Trainer usable items
 - Drag & Drop Pokemon
 - Name length and entity verification
-- Non-Deletable trainers
+- Non-Deletable objects
 - Trainer Rematches
 - Display Pokemon Type and Stats
+
+- Serialization for stats
