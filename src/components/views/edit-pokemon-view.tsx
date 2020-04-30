@@ -20,10 +20,12 @@ import { List } from "@/constants";
 import {
   chooseFromList,
   chooseNumber,
-  chooseText
+  chooseText,
+  chooseTextArea
 } from "@/components/views/utils";
 import { EditMoveView } from "@/components/views/edit-move-view";
 import { EditItemView } from "@/components/views/edit-item-view";
+import { stylesheet } from "typestyle";
 
 async function changeID(pokemonID: string) {
   const newID = await DialogManager.openDialog(InputTextDialog, {
@@ -33,17 +35,6 @@ async function changeID(pokemonID: string) {
 
   if (newID !== undefined) {
     IDManager.changePokemonID(pokemonID, newID);
-  }
-}
-
-async function changeName(mon: Pokemon) {
-  const name = await DialogManager.openDialog(InputTextDialog, {
-    value: mon.name,
-    check: createTextValidator(10)
-  });
-
-  if (name !== undefined) {
-    mon.name = name;
   }
 }
 
@@ -526,10 +517,118 @@ export class EditPokemonView extends View<string> {
             </Button>
           </FlexRow>
         </Window>
+        <PokedexEntry mon={pokemon} />
       </WindowLayout>
     );
   }
 }
+
+@Component
+class PokedexEntry extends Vue {
+  @Prop() mon!: Pokemon;
+  render() {
+    const mon = this.mon;
+
+    return (
+      <Window>
+        <FlexRow>
+          <Label>Pokedex Data</Label>
+        </FlexRow>
+        <FlexRow>
+          <Label width={4}>Category</Label>
+          <Button width={4} onclick={() => chooseText(mon, "categoryName", 11)}>
+            {mon.categoryName}
+          </Button>
+        </FlexRow>
+        <FlexRow>
+          <Button
+            width={8}
+            height={5}
+            class={styles.pokedexDesc}
+            onclick={() => chooseTextArea(mon, "description", 65535)}
+          >
+            {mon.description}
+          </Button>
+        </FlexRow>
+        <FlexRow />
+
+        <FlexRow>
+          <Label width={4}>National Dex #</Label>
+          <Button
+            width={2}
+            onclick={() => chooseNumber(mon, "nationalDexId", 65535)}
+          >
+            {mon.nationalDexId}
+          </Button>
+        </FlexRow>
+        <FlexRow>
+          <Label width={4}>Hoenn Dex #</Label>
+          <Button
+            width={2}
+            onclick={() => chooseNumber(mon, "hoennDexId", 65535)}
+          >
+            {mon.hoennDexId}
+          </Button>
+        </FlexRow>
+
+        <FlexRow>
+          <Label width={4}>Height</Label>
+          <Button width={2} onclick={() => chooseNumber(mon, "height", 65535)}>
+            {mon.height}
+          </Button>
+        </FlexRow>
+        <FlexRow>
+          <Label width={4}>Weight</Label>
+          <Button width={2} onclick={() => chooseNumber(mon, "weight", 65535)}>
+            {mon.weight}
+          </Button>
+        </FlexRow>
+        <FlexRow>
+          <Label width={4}>Pokemon Scale</Label>
+          <Button
+            width={2}
+            onclick={() => chooseNumber(mon, "pokemonScale", 65535)}
+          >
+            {mon.pokemonScale}
+          </Button>
+        </FlexRow>
+        <FlexRow>
+          <Label width={4}>Pokemon Offset</Label>
+          <Button
+            width={2}
+            onclick={() => chooseNumber(mon, "pokemonOffset", 65535)}
+          >
+            {mon.pokemonOffset}
+          </Button>
+        </FlexRow>
+        <FlexRow>
+          <Label width={4}>Trainer Scale</Label>
+          <Button
+            width={2}
+            onclick={() => chooseNumber(mon, "trainerScale", 65535)}
+          >
+            {mon.trainerScale}
+          </Button>
+        </FlexRow>
+        <FlexRow>
+          <Label width={4}>Trainer Offset</Label>
+          <Button
+            width={2}
+            onclick={() => chooseNumber(mon, "trainerOffset", 65535)}
+          >
+            {mon.trainerOffset}
+          </Button>
+        </FlexRow>
+      </Window>
+    );
+  }
+}
+
+const styles = stylesheet({
+  pokedexDesc: {
+    padding: "20px"
+  }
+});
 
 @Component
 class EvoEntry extends Vue {

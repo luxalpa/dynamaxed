@@ -73,6 +73,6 @@ const styles = stylesheet({
     padding: "6px 6px",
     lineHeight: "1.6",
     boxSizing: "border-box",
-    overflow: "hidden"
+    overflow: "scroll"
   }
 });

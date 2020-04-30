@@ -45,37 +45,30 @@ export class InputTextAreaDialog extends Dialog<InputTextDialogProps, string> {
 
   render() {
     return (
-      <div onkeyup={modifiers.enter(() => this.tryAccept())}>
-        <div>
-          <FlexRow>
-            <TextAreaInput
-              vModel={this.text}
-              width={8}
-              ref="input"
-              height={4}
-            />
-          </FlexRow>
-          <FlexRow>
-            {this.currentError && (
-              <Label width={8} class={styles.error}>
-                {this.currentError}
-              </Label>
-            )}
-          </FlexRow>
-          <FlexRow>
-            <Spacer width={2} />
-            <Button width={3} onclick={() => this.reject()}>
-              Cancel
-            </Button>
-            <Button
-              disabled={!this.isValidInput}
-              width={3}
-              onclick={() => this.tryAccept()}
-            >
-              OK
-            </Button>
-          </FlexRow>
-        </div>
+      <div>
+        <FlexRow>
+          <TextAreaInput vModel={this.text} width={10} ref="input" height={5} />
+        </FlexRow>
+        <FlexRow>
+          {this.currentError && (
+            <Label width={8} class={styles.error}>
+              {this.currentError}
+            </Label>
+          )}
+        </FlexRow>
+        <FlexRow>
+          <Spacer width={2} />
+          <Button width={3} onclick={() => this.reject()}>
+            Cancel
+          </Button>
+          <Button
+            disabled={!this.isValidInput}
+            width={3}
+            onclick={() => this.tryAccept()}
+          >
+            OK
+          </Button>
+        </FlexRow>
       </div>
     );
   }
