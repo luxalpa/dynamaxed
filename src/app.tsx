@@ -5,6 +5,7 @@ import { MainView } from "@/components/views/main-view";
 import { cssRule, stylesheet } from "typestyle";
 import { Theme } from "@/theming";
 import { DialogContainer } from "@/components/dialog-container";
+import { VueConstructor } from "vue";
 
 cssRule("html, body", {
   height: "100%"
@@ -63,7 +64,7 @@ const styles = stylesheet({
 })
 export class App extends Vue {
   render(h: any) {
-    let CurView: any;
+    let CurView: new () => Vue;
 
     if (ProjectManager.enableEditing) {
       CurView = MainView;

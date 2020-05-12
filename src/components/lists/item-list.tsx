@@ -26,5 +26,6 @@ export const ItemList: ListSettings<Item> = {
     ("#" + id.toUpperCase()).includes(input.toUpperCase()) ||
     item.name.toUpperCase().includes(input.toUpperCase()) ||
     item.pocket.toUpperCase().includes(input.toUpperCase()),
-  targetView: EditItemView
+  targetView: EditItemView,
+  title: "All Items"
 };
