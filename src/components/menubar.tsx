@@ -8,6 +8,7 @@ import { ViewManager } from "@/modules/view-manager";
 import { PortalTarget } from "portal-vue";
 import { ProjectManager } from "@/modules/project-manager";
 import { GameModel } from "@/model/model";
+import { BuildManager } from "@/modules/build-manager";
 
 interface Menu {
   text: string;
@@ -44,19 +45,19 @@ const menu: Menu[] = [
       {
         text: "Close",
         shortcut: "Ctrl+Shift+Q",
-        fn(): void {
+        fn() {
           ProjectManager.closeProject();
         }
       }
     ]
   },
   {
-    text: "View",
+    text: "Build",
     entries: [
       {
-        text: "Some bar",
-        fn(): void {
-          console.log("Some bar!");
+        text: "Build Project",
+        fn() {
+          BuildManager.build();
         }
       }
     ]
