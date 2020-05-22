@@ -60,7 +60,24 @@ const menu: Menu[] = [
       {
         text: "Build Project",
         async fn() {
+          ProjectManager.Save();
+          GameModel.Compile();
           await BuildManager.build();
+        }
+      },
+      {
+        text: "Run",
+        async fn() {
+          await BuildManager.runOnEmulator();
+        }
+      },
+      {
+        text: "Build & Run",
+        async fn() {
+          ProjectManager.Save();
+          GameModel.Compile();
+          await BuildManager.build();
+          await BuildManager.runOnEmulator();
         }
       }
     ]
@@ -235,7 +252,9 @@ const buildBoxStates = {
   success: {
     text: "Build Successful!",
     style: styles.buildSuccess,
-    click() {}
+    click() {
+      BuildManager.runOnEmulator();
+    }
   },
   failed: {
     text: "Build failed!",

@@ -28,3 +28,6 @@ yarn electron:build
 
 - Serialization for stats
 - Entangle Menubar into 3 components
+- Dependency Injection for the modules
+- return Vue.observable().
+- Allow customization of run path
