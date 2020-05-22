@@ -30,6 +30,7 @@ import {
   chooseNumber,
   chooseText
 } from "@/components/views/utils";
+import { EditPokemonView } from "@/components/views/edit-pokemon-view";
 
 @Component
 export class EditTrainerView extends View<string> {
@@ -295,6 +296,9 @@ export class EditTrainerView extends View<string> {
                 height={3}
                 width={3}
                 onclick={() => chooseFromList(mon, "species", List.Pokemon)}
+                onnavigate={() =>
+                  ViewManager.push(EditPokemonView, mon.species)
+                }
               >
                 <Sprite src={PathManager.pokePic(mon.species)} />
               </Button>

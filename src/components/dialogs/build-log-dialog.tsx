@@ -21,7 +21,7 @@ export class BuildLogDialog extends Dialog<void, void> {
 
   created() {
     this.$watch(
-      () => BuildManager.BuildLog.lines,
+      () => BuildManager.BuildState.lines,
       n => {
         this.$nextTick(() => {
           this.buildWindow.scrollTop = this.buildWindow.scrollHeight;
@@ -31,7 +31,7 @@ export class BuildLogDialog extends Dialog<void, void> {
   }
 
   render() {
-    const lines = BuildManager.BuildLog.lines;
+    const lines = BuildManager.BuildState.lines;
 
     return (
       <div>

@@ -27,3 +27,4 @@ yarn electron:build
 - Display Pokemon Type and Stats
 
 - Serialization for stats
+- Entangle Menubar into 3 components

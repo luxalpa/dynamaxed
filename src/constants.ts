@@ -26,7 +26,8 @@ export const Constants = {
       width: Constants.gridWrap(x),
       height: Constants.gridWrap(y)
     };
-  }
+  },
+  navWidth: "180px"
 };
 
 export enum List {

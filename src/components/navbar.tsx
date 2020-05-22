@@ -4,7 +4,7 @@ import { Theme } from "@/theming";
 import { View, ViewManager } from "@/modules/view-manager";
 import { px } from "csx";
 import { TableStateInitial } from "@/components/table";
-import { List } from "@/constants";
+import { Constants, List } from "@/constants";
 import { ListView } from "@/components/lists/list";
 import { EditStatmodsView } from "@/components/views/edit-statmods-view";
 
@@ -81,11 +81,9 @@ export class Navbar extends Vue {
   }
 }
 
-export const navbarWidth = 180;
-
 const styles = stylesheet({
   navbar: {
-    width: px(navbarWidth),
+    width: Constants.navWidth,
     height: "100%",
     paddingTop: "15px",
     backgroundColor: Theme.middlegroundBgColor
