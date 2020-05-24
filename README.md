@@ -1,3 +1,5 @@
+![Screenshot 1](doc/screenshot.png)
+
 ## Purpose
 
 Dynamaxed is a graphical editor for the PRET/pokeemerald project in order to make it easier to add, remove and change things like trainers, pokemon, items, etc. It will also come with a full MSYS2 dev environment so you won't need to go through the tedious process of creating one yourself.
