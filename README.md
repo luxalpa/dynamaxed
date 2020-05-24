@@ -23,7 +23,32 @@ yarn electron:serve
 yarn electron:build
 ```
 
-### TODO:
+### Libraries
+Library|Purpose
+---|---
+TypeScript / TSX | Main programming language
+TypeStyle | For typed CSS in JS
+VueJS | UI / Reactivity framework
+Electron | To use JavaScript as a Desktop Application
+Portal-Vue | In order to update the page title according to View changes
+
+### Folder Structure
+Folder | Purpose
+---|---
+`src`| contains all typescript source files
+`src/build-tools` | TODO: builds the MSYS2 System from scratch
+`src/components` | All the VueJS components
+`src/components/dialogs` | The dialogs to use with `DialogManager.openDialog()`
+`src/components/displays` | Components for displaying singular properties (like Money, items, etc), mostly for use on buttons or list entries.
+`src/components/lists` | All the overview lists
+`src/components/views` | The views to use with `ViewManager.openView()`
+`src/model` | The GameModel which serializes the data into the `.dynamaxed`-folder in the dynamaxed-emerald project.
+`src/model/defaults` | The initial defaults for all elements. Will be moved to a different repo in the future.
+`src/model/serialize` | Functions to transform the JSONs to `.h`, `.c` and `.s` files into their respective directories for use with `make`
+`src/modules` | Global objects which constitute the state of the program (store).
+
+
+## TODO-List
 
 - Auto ID system
 - Filter options
