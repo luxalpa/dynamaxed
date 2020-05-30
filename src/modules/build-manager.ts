@@ -28,7 +28,7 @@ export namespace BuildManager {
       const emitter = spawn(bashPath, [
         "-l",
         "-c",
-        `cd ${projectPath} && make -j$(nproc)`
+        `cd ${projectPath} && make -j$(nproc) CC1:=/opt/agbcc/bin/agbcc LIBPATH:="-L /opt/agbcc/lib"`
       ]);
 
       emitter.stdout.on("data", data => {
