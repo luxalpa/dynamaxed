@@ -161,10 +161,10 @@ export function declareStaticConst(dec: string, contents: CValue) {
   return `static ${declareConst(dec, contents)}`;
 }
 
-export function writeToFile(contents: string, ...filepath: string[]) {
+export function writeToFile(contents: string | Buffer, ...filepath: string[]) {
   const dirPath = PathManager.projectPath(...filepath);
   fs.mkdirSync(path.dirname(dirPath), { recursive: true });
-  fs.writeFileSync(dirPath, contents);
+  writeFileIfChanged(dirPath, contents);
 }
 
 export function writeToDataFile(filename: string, contents: string) {
@@ -194,4 +194,17 @@ export function headerGuard(name: string, contents: string): string {
 export function declareASM(name: string, commands: string[]) {
   const body = commands.map(c => `\t${c}\n`).join("");
   return `${name}::\n${body}`;
+}
+
+export function writeFileIfChanged(
+  filepath: string,
+  contents: string | Buffer
+) {
+  if (typeof contents == "string") {
+    contents = new Buffer(contents);
+  }
+  const original = fs.readFileSync(filepath);
+  if (!original.equals(contents)) {
+    fs.writeFileSync(filepath, contents);
+  }
 }

@@ -55,23 +55,21 @@ Folder | Purpose
 - Auto ID system
 - Filter options
 - Auto Filtering for Held Items and Trainer usable items
-- Drag & Drop Pokemon
+- Drag & Drop Pokemon (and other types of lists)
 - Name length and entity verification
 - Undeletable objects
 - Trainer Rematches
 - Type effectiveness chart
 - Display Pokemon Type and Stats
 
-- Serialization for stats
 - Untangle Menubar into 3 components
 - Dependency Injection for the modules
 - return Vue.observable().
 - Allow customization of run path
 - Get ABGCC into the msys build system
-- Move the defaults to dynamaxed-emerald/defaults
 - Watch folder and update dynamaxed automatically
 - Remove the . from .dynamaxed folder 
-- migrate dynamaxed-emerald to the current version
+- migrate dynamaxed-emerald to the current version -- consider import functionality from non-dynamaxed projects
 - implement forward button
 - auto update and version checking
 - Support to edit maps and tilesets

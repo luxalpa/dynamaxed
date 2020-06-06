@@ -14,6 +14,8 @@ import { compileMoves } from "@/model/serialize/moves";
 import { compilePokemon } from "@/model/serialize/pokemon";
 import { compileItems } from "@/model/serialize/items";
 import { compileStatStages } from "@/model/serialize/statstages";
+import { ProjectManager } from "@/modules/project-manager";
+import { compileTilesets } from "@/model/serialize/tilesets";
 
 export interface TrainerPartyMon {
   iv: number;
@@ -172,6 +174,15 @@ export interface Move {
   contestComboMoves: string[];
 }
 
+export interface Tileset {
+  compressed: boolean;
+  secondary: boolean;
+  palettes: string[][];
+  metatiles: number[][];
+  metatileAttributes: number[];
+  animated: boolean;
+}
+
 export interface Model {
   trainers: Record<string, Trainer>;
   trainerClasses: Record<string, TrainerClass>;
@@ -179,85 +190,102 @@ export interface Model {
   pokemon: Record<string, Pokemon>;
   moves: Record<string, Move>;
   statMods: number[][];
+  tilesets: Record<string, Tileset>;
 }
 
 type Files = {
-  [P in keyof Model]: [string, Model[P]];
+  [P in keyof Model]: string;
 };
 
 const files: Files = {
-  trainers: ["trainers.json", trainerDefaults],
-  trainerClasses: ["trainer-classes.json", trainerClassDefaults],
-  items: ["items.json", itemDefaults],
-  pokemon: ["pokemon.json", pokemonDefaults],
-  moves: ["moves.json", moveDefaults],
-  statMods: ["statmods.json", statModDefaults]
+  trainers: "trainers.json",
+  trainerClasses: "trainer-classes.json",
+  items: "items.json",
+  pokemon: "pokemon.json",
+  moves: "moves.json",
+  statMods: "statmods.json",
+  tilesets: "tilesets.json"
 };
 
-export const GameModel = new (class {
-  model: Model = {
-    trainers: {},
-    trainerClasses: {},
-    items: {},
-    pokemon: {},
-    moves: {},
-    statMods: []
-  };
-  createFromDefaults() {
-    this.model = (Object.fromEntries(
-      Object.entries(files).map(([key, [filename, obj]]) => {
-        if (Array.isArray(obj)) {
-          return [key, [...obj]];
+export const GameModel = Vue.observable(
+  new (class {
+    model: Model = {
+      trainers: {},
+      trainerClasses: {},
+      items: {},
+      pokemon: {},
+      moves: {},
+      statMods: [],
+      tilesets: {}
+    };
+    createFromDefaults() {
+      this.model = (Object.fromEntries(
+        Object.entries(files).map(([key, filename]) => {
+          const obj = JSON.parse(
+            fs
+              .readFileSync(
+                PathManager.projectPath("dynamaxed-defaults", filename)
+              )
+              .toString()
+          );
+
+          if (Array.isArray(obj)) {
+            return [key, [...obj]];
+          }
+          return [key, { ...obj }];
+        })
+      ) as unknown) as Model;
+    }
+
+    Save() {
+      this.Serialize();
+    }
+
+    Deserialize() {
+      for (const [key, file] of Object.entries(files)) {
+        const filepath = PathManager.metaPath(file);
+        if (fs.existsSync(filepath)) {
+          this.model[key as keyof Model] = JSON.parse(
+            fs.readFileSync(filepath).toString()
+          );
+        } else {
+          const defaults = JSON.parse(
+            fs
+              .readFileSync(PathManager.projectPath("dynamaxed-defaults", file))
+              .toString()
+          );
+          this.model[key as keyof Model] = {
+            ...defaults
+          } as any;
         }
-        return [key, { ...obj }];
-      })
-    ) as unknown) as Model;
-  }
-
-  Save() {
-    this.Serialize();
-  }
-
-  Deserialize() {
-    for (const [key, [file, defaults]] of Object.entries(files)) {
-      const filepath = PathManager.metaPath(file);
-      if (fs.existsSync(filepath)) {
-        this.model[key as keyof Model] = JSON.parse(
-          fs.readFileSync(filepath).toString()
-        );
-      } else {
-        this.model[key as keyof Model] = {
-          ...defaults
-        } as any;
       }
     }
-  }
 
-  // Creates the .json files in our own project folder.
-  Serialize() {
-    const projectPath = PathManager.metaPath();
+    // Creates the .json files in our own project folder.
+    Serialize() {
+      const projectPath = PathManager.metaPath();
 
-    if (!fs.existsSync(projectPath)) {
-      fs.mkdirSync(path.join(projectPath));
+      if (!fs.existsSync(projectPath)) {
+        fs.mkdirSync(path.join(projectPath));
+      }
+
+      for (const [key, [filename]] of Object.entries(files)) {
+        fs.writeFileSync(
+          PathManager.metaPath(filename),
+          JSON.stringify(this.model[key as keyof typeof GameModel.model])
+        );
+      }
     }
 
-    for (const [key, [filename]] of Object.entries(files)) {
-      fs.writeFileSync(
-        PathManager.metaPath(filename),
-        JSON.stringify(this.model[key as keyof typeof GameModel.model])
-      );
+    // Creates the .h and .inc files etc.
+    Compile() {
+      compileTrainers();
+      compileTrainerClasses();
+      compileMoves();
+      compilePokemon();
+      compileItems();
+      compileStatStages();
+      compileTilesets();
     }
-  }
-
-  // Creates the .h and .inc files etc.
-  Compile() {
-    compileTrainers();
-    compileTrainerClasses();
-    compileMoves();
-    compilePokemon();
-    compileItems();
-    compileStatStages();
-  }
-})();
-
-Vue.observable(GameModel);
+  })()
+);

@@ -5429,6 +5429,13 @@ isstream@~0.1.2:
   resolved "https://registry.yarnpkg.com/isstream/-/isstream-0.1.2.tgz#47e63f7af55afa6f92e1500e690eb8b8529c099a"
   integrity sha1-R+Y/evVa+m+S4VAOaQ64uFKcCZo=
 
+jascpal@^0.1.4:
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/jascpal/-/jascpal-0.1.4.tgz#00b1664a535831df43eed75e792a9a3dc64735b4"
+  integrity sha1-ALFmSlNYMd9D7tdeeSqaPcZHNbQ=
+  dependencies:
+    object-assign "^4.1.0"
+
 javascript-stringify@^2.0.0, javascript-stringify@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/javascript-stringify/-/javascript-stringify-2.0.1.tgz#6ef358035310e35d667c675ed63d3eb7c1aa19e5"

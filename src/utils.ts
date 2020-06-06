@@ -18,6 +18,15 @@ export function extendArray<T>(arr: Array<T>, len: number, value: T): Array<T> {
   return arr;
 }
 
+export function pascalToSnake(str: string): string {
+  return (
+    str[0].toLowerCase() +
+    str
+      .slice(1, str.length)
+      .replace(/[A-Z]/g, letter => `_${letter.toLowerCase()}`)
+  );
+}
+
 export function clearSelection() {
   (window as any).getSelection().removeAllRanges();
 }

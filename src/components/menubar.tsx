@@ -62,7 +62,7 @@ const menu: Menu[] = [
         async fn() {
           ProjectManager.Save();
           GameModel.Compile();
-          await BuildManager.build();
+          await BuildManager.make();
         }
       },
       {
@@ -76,8 +76,20 @@ const menu: Menu[] = [
         async fn() {
           ProjectManager.Save();
           GameModel.Compile();
-          await BuildManager.build();
+          await BuildManager.make();
           await BuildManager.runOnEmulator();
+        }
+      },
+      {
+        text: "Tidy",
+        async fn() {
+          await BuildManager.make("tidy");
+        }
+      },
+      {
+        text: "Clean",
+        async fn() {
+          await BuildManager.make("clean");
         }
       }
     ]
