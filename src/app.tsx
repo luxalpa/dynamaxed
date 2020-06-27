@@ -5,7 +5,6 @@ import { MainView } from "@/components/views/main-view";
 import { cssRule, stylesheet } from "typestyle";
 import { Theme } from "@/theming";
 import { DialogContainer } from "@/components/dialog-container";
-import { VueConstructor } from "vue";
 
 cssRule("html, body", {
   height: "100%"

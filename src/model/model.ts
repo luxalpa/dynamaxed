@@ -1,9 +1,3 @@
-import trainerDefaults from "@/model/defaults/trainers.json";
-import trainerClassDefaults from "@/model/defaults/trainer-classes.json";
-import itemDefaults from "@/model/defaults/items.json";
-import pokemonDefaults from "@/model/defaults/pokemon.json";
-import moveDefaults from "@/model/defaults/moves.json";
-import statModDefaults from "@/model/defaults/statmods.json";
 import fs from "fs";
 import path from "path";
 import { compileTrainers } from "@/model/serialize/trainers";
@@ -14,7 +8,6 @@ import { compileMoves } from "@/model/serialize/moves";
 import { compilePokemon } from "@/model/serialize/pokemon";
 import { compileItems } from "@/model/serialize/items";
 import { compileStatStages } from "@/model/serialize/statstages";
-import { ProjectManager } from "@/modules/project-manager";
 import { compileTilesets } from "@/model/serialize/tilesets";
 
 export interface TrainerPartyMon {

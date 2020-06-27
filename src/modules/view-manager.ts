@@ -1,23 +1,26 @@
 import { ipcRenderer } from "electron";
-import { Prop, Vue } from "vue-property-decorator";
+import { Prop, PropSync, Vue } from "vue-property-decorator";
 import { makePersistent } from "@/store";
 
-export abstract class View<T> extends Vue {
+export abstract class View<T, U = void> extends Vue {
   @Prop() args!: T;
+  @PropSync("syncedState") state!: U;
 }
 
-interface ViewInstance<T> {
+interface ViewInstance<T, U> {
   name: string;
   params: T;
+  state: U;
 }
 
-const NoView: ViewInstance<void> = {
+const NoView: ViewInstance<void, void> = {
   name: "",
-  params: void 0
+  params: void 0,
+  state: void 0
 };
 
 let registeredViews = new Map<string, new () => View<any>>();
-let view2name = new Map<new () => View<any>, string>();
+let view2name = new Map<new () => View<any, any>, string>();
 
 // Currently broken (https://github.com/electron/electron/issues/17134)
 ipcRenderer.on("app-command", (e, cmd: string) => {
@@ -33,12 +36,12 @@ window.addEventListener("mousedown", event => {
 });
 
 export const ViewManager = new (class {
-  viewStack: ViewInstance<unknown>[] = [];
+  viewStack: ViewInstance<unknown, unknown>[] = [];
 
-  isView<T>(
-    view: new () => View<T>,
-    instance: ViewInstance<any>
-  ): instance is ViewInstance<T> {
+  isView<T, U>(
+    view: new () => View<T, U>,
+    instance: ViewInstance<any, any>
+  ): instance is ViewInstance<T, U> {
     return instance.name === view2name.get(view);
   }
 
@@ -47,7 +50,7 @@ export const ViewManager = new (class {
     view2name.set(view, name);
   }
 
-  registerViews(views: Record<string, new () => View<any>>) {
+  registerViews(views: Record<string, new () => View<any, any>>) {
     for (const [name, cmp] of Object.entries(views)) {
       this.registerView(cmp, name);
     }
@@ -70,9 +73,9 @@ export const ViewManager = new (class {
     }
   }
 
-  push<T>(view: new () => View<void>): void;
-  push<T>(view: new () => View<T>, params: T): void;
-  push<T>(view: new () => View<T>, params?: T): void {
+  push<T, U = void>(view: new () => View<void, U>): void;
+  push<T, U = void>(view: new () => View<T, U>, params: T): void;
+  push<T, U = void>(view: new () => View<T, U>, params?: T): void {
     const name = view2name.get(view);
     if (!name) {
       throw new Error(`View not registered!`);
@@ -80,7 +83,8 @@ export const ViewManager = new (class {
 
     const currentView = {
       name,
-      params
+      params,
+      state: null
     };
 
     this.viewStack.push(currentView);

@@ -15,7 +15,17 @@ export class MainView extends Vue {
         <div class={styles.navsplit}>
           <Navbar />
           <div class={styles.content}>
-            <Content args={ViewManager.currentView.params} />
+            <Content
+              args={ViewManager.currentView.params}
+              syncedState={ViewManager.currentView.state}
+              {...{
+                on: {
+                  "update:syncedState": (state: unknown) => {
+                    ViewManager.currentView.state = state;
+                  }
+                }
+              }}
+            />
           </div>
         </div>
       </div>

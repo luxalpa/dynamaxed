@@ -16,7 +16,7 @@ export function compileTilesets() {
   buildHeadersInc();
 }
 
-function getTilesetPath(name: string): string {
+export function getTilesetPath(name: string): string {
   const subpath = GameModel.model.tilesets[name].secondary
     ? "secondary"
     : "primary";

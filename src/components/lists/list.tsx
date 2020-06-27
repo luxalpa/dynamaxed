@@ -13,7 +13,7 @@ export interface ListSettings<T> {
   model: () => Record<string, T>;
   defaultObj?: () => T;
   layout: Column<[string, T]>[];
-  targetView?: new () => View<string>;
+  targetView?: new () => View<string, any>;
   filter: FilterFn<[string, T]>;
   title?: string;
   allowCreation?: boolean;

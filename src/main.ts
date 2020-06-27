@@ -16,6 +16,7 @@ import {
   faCaretLeft,
   faCheck,
   faTimes,
+  faTint,
   faTrashAlt
 } from "@fortawesome/free-solid-svg-icons";
 import "typeface-fira-sans";
@@ -78,7 +79,8 @@ library.add(
   faArrowRight,
   faCheck,
   faTrashAlt,
-  faClone
+  faClone,
+  faTint
 );
 
 enableTheme();
