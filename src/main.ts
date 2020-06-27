@@ -59,6 +59,8 @@ import { GrowthRatesList } from "@/components/lists/growth-rates-list";
 import { TutorMoveList } from "@/components/lists/tutor-move-list";
 import { EditItemView } from "@/components/views/edit-item-view";
 import { EditStatmodsView } from "@/components/views/edit-statmods-view";
+import { TilesetList } from "@/components/lists/tileset-list";
+import { EditTilesetView } from "@/components/views/edit-tileset-view";
 
 Vue.use(PortalVue);
 
@@ -91,7 +93,8 @@ ViewManager.registerViews({
   "edit-pokemon-view": EditPokemonView,
   "edit-item-view": EditItemView,
   "list-view": ListView,
-  "edit-statmods-view": EditStatmodsView
+  "edit-statmods-view": EditStatmodsView,
+  "edit-tileset-view": EditTilesetView
 });
 
 registerLists({
@@ -110,7 +113,8 @@ registerLists({
   [List.HoldEffects]: createSimpleListDialog(HoldEffects),
   [List.Items]: ItemList,
   [List.TMHMs]: TMHMList,
-  [List.TutorMoves]: TutorMoveList
+  [List.TutorMoves]: TutorMoveList,
+  [List.Tilesets]: TilesetList
 });
 
 window.onbeforeunload = (e: Event) => {

@@ -99,7 +99,7 @@ export class ListView extends View<ListViewOptions> {
           rowKey={([id]: [string, any]) => id}
           rowFilter={this.opts.filter}
           onentryclick={([id]: [string]) => {
-            ViewManager.push(this.opts.targetView!, id);
+            this.opts.targetView && ViewManager.push(this.opts.targetView!, id);
           }}
           state={this.args.tableState}
           class={styles.list}

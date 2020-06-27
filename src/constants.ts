@@ -46,5 +46,6 @@ export enum List {
   Items = "items",
   TMHMs = "tmhms",
   Pockets = "pockets",
-  HoldEffects = "hold-effects"
+  HoldEffects = "hold-effects",
+  Tilesets = "tilesets"
 }

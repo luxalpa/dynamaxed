@@ -17,6 +17,11 @@ interface NavElement {
 
 const navElements: NavElement[] = [
   {
+    text: "Tilesets",
+    isSubElement: false,
+    switchToList: List.Tilesets
+  },
+  {
     text: "Trainers",
     isSubElement: false,
     switchToList: List.Trainer
