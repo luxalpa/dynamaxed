@@ -1,17 +1,14 @@
-import { Component, Ref, Vue } from "vue-property-decorator";
+import { Component } from "vue-property-decorator";
 import { View } from "@/modules/view-manager";
-import { Window, WindowLayout } from "@/components/layout";
+import { FlexRow, Window, WindowLayout } from "@/components/layout";
 import { stylesheet } from "typestyle";
 import { GameModel } from "@/model/model";
 import { Button } from "@/components/button";
 import { Label } from "@/components/label";
-import { ProjectManager } from "@/modules/project-manager";
-import { PathManager } from "@/modules/path-manager";
-import { getTilesetPath } from "@/model/serialize/tilesets";
-
-import { decode } from "upng-js";
-import fs from "fs";
 import { TilesetCanvas } from "@/components/tileset-canvas";
+import { chooseText } from "@/components/views/utils";
+import { DialogManager } from "@/modules/dialog-manager";
+import { PaletteSelectDialog } from "@/components/dialogs/palette-select-dialog";
 
 function colorBrightness(color: string) {
   if (color.length === 3) {
@@ -64,37 +61,59 @@ export class EditTilesetView extends View<string, State> {
     this.state.currentPaletteIdx = idx;
   }
 
+  async choosePalette() {
+    const p = await DialogManager.openDialog(
+      PaletteSelectDialog,
+      this.tilesetName
+    );
+    if (p === undefined) {
+      return;
+    }
+    this.state.currentPaletteIdx = p;
+  }
+
   render() {
     return (
       <WindowLayout>
         <Window>
-          <TilesetCanvas tilesetID={this.tilesetName} palette={this.palette} />
-          {this.tileset.palettes.map((p, i) => (
-            <div class={styles.palette}>
-              {this.state?.currentPaletteIdx === i ? (
-                <Label width={2}>Using</Label>
-              ) : (
-                <Button width={2} onclick={() => this.selectPalette(i)}>
-                  Use
-                </Button>
-              )}
-
-              {p.map(color => (
-                <Button
-                  class={styles.paletteIcon}
-                  style={{ backgroundColor: "#" + color }}
-                  width={1}
-                >
-                  <font-awesome-icon
-                    icon="tint"
-                    style={{
-                      color: colorBrightness(color) > 0.5 ? "black" : "white"
-                    }}
-                  />
-                </Button>
-              ))}
-            </div>
-          ))}
+          <Label width={8}>Meta tiles</Label>
+        </Window>
+        <Window>
+          <Label width={8}>Current Selection</Label>
+        </Window>
+        <Window>
+          <FlexRow>
+            <Button width={3} onclick={() => this.choosePalette()}>
+              Palette {this.state?.currentPaletteIdx}
+            </Button>
+            {this.palette.map((color, i) => (
+              <Button
+                class={styles.paletteIcon}
+                style={{ backgroundColor: "#" + color }}
+                width={1}
+                onclick={() => chooseText(this.palette, i, 6)}
+              >
+                <font-awesome-icon
+                  icon="tint"
+                  style={{
+                    color: colorBrightness(color) > 0.5 ? "black" : "white"
+                  }}
+                />
+              </Button>
+            ))}
+          </FlexRow>
+          <FlexRow>
+            <TilesetCanvas
+              tilesetID={this.tilesetName}
+              palette={this.palette}
+            />
+            {this.tileset.assoc !== "" && (
+              <TilesetCanvas
+                tilesetID={this.tileset.assoc}
+                palette={this.palette}
+              />
+            )}
+          </FlexRow>
         </Window>
       </WindowLayout>
     );
@@ -109,9 +128,6 @@ const styles = stylesheet({
     margin: "3px"
   },
   paletteIcon: {
-    backgroundColor: "red",
-    // border: "1px solid white",
-    boxShadow: "1px 1px 3px black",
     $nest: {
       "& .fa-tint": {
         display: "none"

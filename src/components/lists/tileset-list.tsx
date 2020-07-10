@@ -15,7 +15,8 @@ export const TilesetList: ListSettings<Tileset> = {
     animated: false,
     compressed: false,
     palettes: [],
-    metatileAttributes: []
+    metatileAttributes: [],
+    assoc: ""
   }),
   layout: [
     {

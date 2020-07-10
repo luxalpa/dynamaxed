@@ -174,6 +174,7 @@ export interface Tileset {
   metatiles: number[][];
   metatileAttributes: number[];
   animated: boolean;
+  assoc: string;
 }
 
 export interface Model {

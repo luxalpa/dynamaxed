@@ -62,6 +62,7 @@ Folder | Purpose
 - Type effectiveness chart
 - Display Pokemon Type and Stats
 
+- Use the new internal system for table state
 - Untangle Menubar into 3 components
 - Dependency Injection for the modules
 - return Vue.observable().
