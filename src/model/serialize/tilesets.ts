@@ -17,7 +17,7 @@ export function compileTilesets() {
 }
 
 export function getTilesetPath(name: string): string {
-  const subpath = GameModel.model.tilesets[name].secondary
+  const subpath = GameModel.model.tilesets[name].extension
     ? "secondary"
     : "primary";
 
@@ -82,7 +82,7 @@ function buildMetatilesInc() {
   const str = Object.entries(GameModel.model.tilesets)
     .map(([name, obj]) => {
       const snakeName = pascalToSnake(name);
-      const order = obj.secondary ? "secondary" : "primary";
+      const order = obj.extension ? "secondary" : "primary";
       return (
         `\t.align 1\ngMetatiles_${name}::\n` +
         `\t.incbin "data/tilesets/${order}/${snakeName}/metatiles.bin"\n\n` +
@@ -99,7 +99,7 @@ function buildGraphicsInc() {
   const str = Object.entries(GameModel.model.tilesets)
     .map(([name, obj]) => {
       const snakeName = pascalToSnake(name);
-      const order = obj.secondary ? "secondary" : "primary";
+      const order = obj.extension ? "secondary" : "primary";
       const ext = obj.compressed ? ".lz" : "";
 
       const palList = obj.palettes
@@ -133,7 +133,7 @@ function buildHeadersInc() {
         `\t.align 2\n` +
         `gTileset_${name}::\n` +
         `\t.byte ${makeBool(obj.compressed)} @ is compressed\n` +
-        `\t.byte ${makeBool(obj.secondary)} @ is secondary tileset\n` +
+        `\t.byte ${makeBool(obj.extension)} @ is secondary tileset\n` +
         `\t.2byte 0 @ padding\n` +
         `\t.4byte gTilesetTiles_${name}\n` +
         `\t.4byte gTilesetPalettes_${name}\n` +

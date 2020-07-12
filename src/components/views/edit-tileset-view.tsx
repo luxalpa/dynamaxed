@@ -1,14 +1,19 @@
-import { Component } from "vue-property-decorator";
+import { Component, Watch } from "vue-property-decorator";
 import { View } from "@/modules/view-manager";
 import { FlexRow, Window, WindowLayout } from "@/components/layout";
 import { stylesheet } from "typestyle";
 import { GameModel } from "@/model/model";
 import { Button } from "@/components/button";
 import { Label } from "@/components/label";
-import { TilesetCanvas } from "@/components/tileset-canvas";
-import { chooseText } from "@/components/views/utils";
+import { TilesetDisplay } from "@/components/displays/tileset-display";
+import { chooseFromList, chooseText } from "@/components/views/utils";
 import { DialogManager } from "@/modules/dialog-manager";
 import { PaletteSelectDialog } from "@/components/dialogs/palette-select-dialog";
+import { Constants, List } from "@/constants";
+import { px } from "csx";
+import { MetatilesDisplay } from "@/components/displays/metatiles-display";
+import { Portal } from "portal-vue";
+import { getTilesetPalettes } from "@/tiles";
 
 function colorBrightness(color: string) {
   if (color.length === 3) {
@@ -30,10 +35,6 @@ interface State {
   name: "EditTilesetView"
 })
 export class EditTilesetView extends View<string, State> {
-  constructor() {
-    super();
-  }
-
   created() {
     if (this.state === null) {
       this.state = {
@@ -54,7 +55,12 @@ export class EditTilesetView extends View<string, State> {
     if (this.state === null) {
       return [];
     }
-    return this.tileset.palettes[this.state.currentPaletteIdx];
+
+    const palettes = getTilesetPalettes(this.tilesetName);
+    if (this.state.currentPaletteIdx >= 6) {
+      return palettes.extension![this.state.currentPaletteIdx - 6];
+    }
+    return palettes.base[this.state.currentPaletteIdx];
   }
 
   selectPalette(idx: number) {
@@ -75,8 +81,12 @@ export class EditTilesetView extends View<string, State> {
   render() {
     return (
       <WindowLayout>
+        <Portal to="title">
+          {this.tileset.extension ? "" : "Base "}Tileset #{this.tilesetName}
+        </Portal>
         <Window>
-          <Label width={8}>Meta tiles</Label>
+          <Label width={4}>Meta tiles</Label>
+          <MetatilesDisplay tilesetID={this.tilesetName} />
         </Window>
         <Window>
           <Label width={8}>Current Selection</Label>
@@ -103,16 +113,36 @@ export class EditTilesetView extends View<string, State> {
             ))}
           </FlexRow>
           <FlexRow>
-            <TilesetCanvas
-              tilesetID={this.tilesetName}
-              palette={this.palette}
-            />
-            {this.tileset.assoc !== "" && (
-              <TilesetCanvas
-                tilesetID={this.tileset.assoc}
+            <div class={styles.tilesetContainer}>
+              <Label>From this tileset</Label>
+              {!this.tileset.extension ? (
+                <div />
+              ) : (
+                <FlexRow style={{ marginLeft: "-2px" }}>
+                  <Label width={2}>From</Label>
+                  <Button
+                    width={7}
+                    onclick={() =>
+                      chooseFromList(this.tileset, "assoc", List.Tilesets)
+                    }
+                  >
+                    {this.tileset.assoc}
+                  </Button>
+                </FlexRow>
+              )}
+              <TilesetDisplay
+                tilesetID={this.tilesetName}
                 palette={this.palette}
               />
-            )}
+              {this.tileset.assoc !== "" ? (
+                <TilesetDisplay
+                  tilesetID={this.tileset.assoc}
+                  palette={this.palette}
+                />
+              ) : (
+                <div />
+              )}
+            </div>
           </FlexRow>
         </Window>
       </WindowLayout>
@@ -121,12 +151,6 @@ export class EditTilesetView extends View<string, State> {
 }
 
 const styles = stylesheet({
-  palette: {
-    display: "grid",
-    gridAutoFlow: "column",
-    columnGap: "3px",
-    margin: "3px"
-  },
   paletteIcon: {
     $nest: {
       "& .fa-tint": {
@@ -136,5 +160,13 @@ const styles = stylesheet({
         display: "unset"
       }
     }
+  },
+  tilesetContainer: {
+    display: "grid",
+    gridTemplateRows: "auto auto",
+    gridTemplateColumns: "auto auto",
+    margin: Constants.margin,
+    columnGap: px(25 + 8),
+    rowGap: "4px"
   }
 });

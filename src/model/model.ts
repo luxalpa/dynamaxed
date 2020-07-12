@@ -169,7 +169,7 @@ export interface Move {
 
 export interface Tileset {
   compressed: boolean;
-  secondary: boolean;
+  extension: boolean;
   palettes: string[][];
   metatiles: number[][];
   metatileAttributes: number[];

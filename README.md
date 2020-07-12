@@ -62,6 +62,7 @@ Folder | Purpose
 - Type effectiveness chart
 - Display Pokemon Type and Stats
 
+- Have List's Create New use a function instead of defaulting to `defaultObj`
 - Use the new internal system for table state
 - Untangle Menubar into 3 components
 - Dependency Injection for the modules

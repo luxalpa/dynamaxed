@@ -11,7 +11,7 @@ export const TilesetList: ListSettings<Tileset> = {
   targetView: EditTilesetView,
   defaultObj: () => ({
     metatiles: [],
-    secondary: false,
+    extension: false,
     animated: false,
     compressed: false,
     palettes: [],
@@ -25,10 +25,10 @@ export const TilesetList: ListSettings<Tileset> = {
       sort: ([id1], [id2]) => id1.localeCompare(id2)
     },
     {
-      text: "Order",
-      render: (h, [, tileset]) => (tileset.secondary ? "secondary" : "primary"),
+      text: "Kind",
+      render: (h, [, tileset]) => (tileset.extension ? "extension" : "base"),
       sort: ([, tileset1], [, tileset2]) =>
-        (tileset1.secondary ? 1 : 0) - (tileset2.secondary ? 1 : 0)
+        (tileset1.extension ? 1 : 0) - (tileset2.extension ? 1 : 0)
     },
     {
       text: "Tiles",
