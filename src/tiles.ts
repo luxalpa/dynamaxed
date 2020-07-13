@@ -1,7 +1,10 @@
 import { GameModel, Tileset } from "@/model/model";
+import fs from "fs";
+import { PathManager } from "@/modules/path-manager";
+import { getTilesetPath } from "@/model/serialize/tilesets";
+import { decode } from "upng-js";
 
-export function renderTileOnTile(
-  imgData: ImageData,
+export function renderTile(
   buffer: Buffer,
   id: number,
   palette: string[],
@@ -9,7 +12,8 @@ export function renderTileOnTile(
   flipx: boolean = false,
   flipy: boolean = false,
   useTransparency = false
-) {
+): ImageData {
+  const imgData = new ImageData(8 * scale, 8 * scale);
   for (let i = 0; i < 8 * 8; i++) {
     const sourceX = (id % 16) * 8 + (i % 8);
     const sourceY = Math.floor(id / 16) * 8 + Math.floor(i / 8);
@@ -55,18 +59,6 @@ export function renderTileOnTile(
       }
     }
   }
-}
-
-export function renderTile(
-  buffer: Buffer,
-  id: number,
-  palette: string[],
-  scale: number = 1,
-  flipx: boolean = false,
-  flipy: boolean = false
-): ImageData {
-  const imgData = new ImageData(8 * scale, 8 * scale);
-  renderTileOnTile(imgData, buffer, id, palette, scale, flipx, flipy, false);
   return imgData;
 }
 
@@ -88,8 +80,42 @@ function getTileInfo(compressedTile: number): TileInfo {
 
 export function renderMetaTile(
   metatile: number[],
-  primaryTileset: Buffer | undefined,
-  secondaryTileset: Buffer | undefined,
+  baseTileset: Buffer | undefined,
+  extensionTileset: Buffer | undefined,
+  palettes: string[][],
+  scale: number = 1
+): OffscreenCanvas {
+  const canvas = new OffscreenCanvas(16 * scale, 16 * scale);
+  const context = canvas.getContext("2d");
+  if (!context) {
+    throw new Error("2D Context is null!");
+  }
+
+  const lower = renderMetatileLayer(
+    metatile.slice(0, 4),
+    baseTileset,
+    extensionTileset,
+    palettes,
+    scale
+  );
+  const upper = renderMetatileLayer(
+    metatile.slice(4, 8),
+    baseTileset,
+    extensionTileset,
+    palettes,
+    scale
+  );
+
+  context.drawImage(lower, 0, 0);
+  context.drawImage(upper, 0, 0);
+
+  return canvas;
+}
+
+export function renderMetatileLayer(
+  layer: number[],
+  baseTileset: Buffer | undefined,
+  extensionTileset: Buffer | undefined,
   palettes: string[][],
   scale: number = 1
 ): OffscreenCanvas {
@@ -101,26 +127,16 @@ export function renderMetaTile(
 
   for (let x = 0; x < 2; x++) {
     for (let y = 0; y < 2; y++) {
-      const lower = getTileInfo(metatile[y * 2 + x]);
-      const upper = getTileInfo(metatile[4 + y * 2 + x]);
+      const tileInfo = getTileInfo(layer[y * 2 + x]);
       // TODO: Let's not crash if the required primary / secondary tileset is not given
 
       const tile = renderTile(
-        lower.tileID < 0x200 ? primaryTileset! : secondaryTileset!,
-        lower.tileID < 0x200 ? lower.tileID : lower.tileID - 0x200,
-        palettes[lower.paletteID],
+        tileInfo.tileID < 0x200 ? baseTileset! : extensionTileset!,
+        tileInfo.tileID < 0x200 ? tileInfo.tileID : tileInfo.tileID - 0x200,
+        palettes[tileInfo.paletteID],
         scale,
-        lower.flipx,
-        lower.flipy
-      );
-      renderTileOnTile(
-        tile,
-        upper.tileID < 0x200 ? primaryTileset! : secondaryTileset!,
-        upper.tileID < 0x200 ? upper.tileID : upper.tileID - 0x200,
-        palettes[upper.paletteID],
-        scale,
-        upper.flipx,
-        upper.flipy,
+        tileInfo.flipx,
+        tileInfo.flipy,
         true
       );
       context.putImageData(tile, x * 8 * scale, y * 8 * scale);
@@ -164,5 +180,37 @@ export function getTilesetPalettes(tilesetID: string): TilesetPalettesInfo {
     extension: info.extension
       ? GameModel.model.tilesets[info.extension].palettes.slice(6, 13)
       : undefined
+  };
+}
+
+export interface TilesInfo {
+  buffer: Buffer;
+  name: string;
+  numTiles: number;
+}
+
+export const NoTilesInfo: TilesInfo = {
+  buffer: new Buffer(""),
+  name: "",
+  numTiles: 0
+};
+
+export function getTilesInfo(id: string): TilesInfo {
+  if (id === "") {
+    return NoTilesInfo;
+  }
+
+  const pngData = fs.readFileSync(
+    PathManager.projectPath(getTilesetPath(id), "tiles.png")
+  );
+
+  const img = decode(pngData);
+
+  const buffer = new Buffer(img.data);
+
+  return {
+    buffer,
+    numTiles: (img.height / 8) * (img.width / 8),
+    name: id
   };
 }

@@ -1,25 +1,17 @@
 import { Component, Prop, Ref, Vue, Watch } from "vue-property-decorator";
-import fs from "fs";
-import { PathManager } from "@/modules/path-manager";
-import { getTilesetPath } from "@/model/serialize/tilesets";
-import { decode } from "upng-js";
 import { stylesheet } from "typestyle";
 import { Constants } from "@/constants";
 import { GameModel } from "@/model/model";
-import { getTilesetExtInfo, getTilesetPalettes, renderMetaTile } from "@/tiles";
-
-function getTilesBuffer(tilesetID: string): Buffer {
-  const pngData = fs.readFileSync(
-    PathManager.projectPath(getTilesetPath(tilesetID), "tiles.png")
-  );
-  return new Buffer(decode(pngData).data);
-}
+import { getTilesetPalettes, renderMetaTile, TilesInfo } from "@/tiles";
 
 @Component({
   name: "MetatilesDisplay"
 })
 export class MetatilesDisplay extends Vue {
   @Prop() tilesetID!: string;
+  @Prop() baseTilesetInfo!: TilesInfo;
+  @Prop() extTilesetInfo!: TilesInfo;
+
   numTilesX = 8;
 
   @Ref("canvas") canvas!: HTMLCanvasElement;
@@ -29,18 +21,25 @@ export class MetatilesDisplay extends Vue {
     return GameModel.model.tilesets[this.tilesetID];
   }
 
+  get palettes() {
+    return getTilesetPalettes(this.tilesetID);
+  }
+
   @Watch("tileset", {
     deep: true
   })
+  @Watch("palettes")
   updateCanvas() {
-    const info = getTilesetExtInfo(this.tilesetID);
+    this.canvas.width = 16 * this.scaleFactor * this.numTilesX;
+    this.canvas.height =
+      16 *
+      this.scaleFactor *
+      Math.ceil(this.tileset.metatiles.length / this.numTilesX);
 
-    const primaryTileset = getTilesBuffer(info.base);
-    const secondaryTileset = info.extension
-      ? getTilesBuffer(info.extension)
-      : undefined;
+    const primaryTileset = this.baseTilesetInfo.buffer;
+    const secondaryTileset = this.extTilesetInfo.buffer;
 
-    const { base, extension } = getTilesetPalettes(this.tilesetID);
+    const { base, extension } = this.palettes;
 
     let palettes = [...base];
 
@@ -52,6 +51,8 @@ export class MetatilesDisplay extends Vue {
     if (context == null) {
       throw new Error("Context is null");
     }
+
+    context.clearRect(0, 0, this.canvas.width, this.canvas.height);
 
     const metatiles = GameModel.model.tilesets[this.tilesetID].metatiles;
 
@@ -72,34 +73,27 @@ export class MetatilesDisplay extends Vue {
     }
   }
 
-  loadNewTileset() {
-    this.canvas.width = 16 * this.scaleFactor * this.numTilesX;
-    this.canvas.height =
-      16 *
-      this.scaleFactor *
-      Math.ceil(
-        GameModel.model.tilesets[this.tilesetID].metatiles.length /
-          this.numTilesX
-      );
-    this.updateCanvas();
+  clickMetatile(event: MouseEvent) {
+    const x = Math.floor(event.offsetX / (16 * this.scaleFactor));
+    const y = Math.floor(event.offsetY / (16 * this.scaleFactor));
+    const i = y * this.numTilesX + x;
+    if (i >= this.tileset.metatiles.length) {
+      return;
+    }
+    this.$emit("select", i);
   }
 
   async mounted() {
     await this.$nextTick();
-    this.loadNewTileset();
+    this.updateCanvas();
   }
 
   render() {
     return (
-      <div class={styles.container}>
-        <canvas ref="canvas" />
-      </div>
+      <canvas
+        ref="canvas"
+        onclick={(event: MouseEvent) => this.clickMetatile(event)}
+      />
     );
   }
 }
-
-const styles = stylesheet({
-  container: {
-    width: Constants.grid(5)
-  }
-});
