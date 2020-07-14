@@ -47,7 +47,7 @@
     "@vue/cli-plugin-babel": "^4.0.5",
     "@vue/cli-plugin-typescript": "^4.0.5",
     "@vue/cli-service": "^4.0.5",
-    "electron": "7.1.7",
+    "electron": "7.2.4",
     "electron-devtools-installer": "^2.2.4",
     "prettier": "^1.18.2",
     "rimraf": "^3.0.2",
